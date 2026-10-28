@@ -4,11 +4,11 @@ Este pacote contém fixtures sintéticos para calibrar a rubrica de `../../docs/
 
 ## Arquivos
 
-- `pilot-cases.jsonl`: 44 contextos sintéticos em PT-BR; estes são os únicos dados que uma futura execução de prompt deverá receber.
+- `pilot-cases.jsonl`: 88 contextos sintéticos em PT-BR; estes são os únicos dados que uma futura execução de prompt deverá receber.
 - `pilot-labels.jsonl`: ação esperada, fatos de ancoragem, itens que não podem ser afirmados e dimensões provisórias para revisão humana; nunca os forneça ao modelo durante a avaliação.
 - `validate_pilot.py`: valida JSONL, campos obrigatórios, IDs e correspondência entre casos e rótulos, usando apenas a biblioteca padrão do Python.
 
-As dimensões de cobertura são `focus_state` (`explored`, `open`, `ambivalent`), `ending_signal` (`none`, `natural`, `explicit`) e `history_state` (`available`, `first_session`, `unavailable`). Elas são rótulos provisórios: `explored` significa que o foco desta sessão foi suficientemente abordado, não que o problema clínico foi resolvido. Os 44 casos variam ainda tarefas realizadas ou não, primeira sessão, histórico indisponível, mudança de assunto, progresso contestado, planos acordados/recusados e pedidos de encerramento. Não incluem casos de crise; esses exigem um protocolo de segurança revisado antes de criar fixtures.
+As dimensões de cobertura são `focus_state` (`explored`, `open`, `ambivalent`), `ending_signal` (`none`, `natural`, `explicit`) e `history_state` (`available`, `first_session`, `unavailable`). Elas são rótulos provisórios: `explored` significa que o foco desta sessão foi suficientemente abordado, não que o problema clínico foi resolvido. Os 88 casos variam tarefas realizadas ou não, primeira sessão, histórico indisponível, mudança de assunto, progresso contestado, planos acordados/recusados e pedidos de encerramento. Não incluem casos de crise; esses exigem um protocolo de segurança revisado antes de criar fixtures.
 
 ## Uso e limites
 

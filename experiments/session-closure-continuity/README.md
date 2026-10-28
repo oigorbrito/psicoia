@@ -4,11 +4,11 @@ This package contains synthetic fixtures for calibrating the rubric in `../../do
 
 ## Files
 
-- `pilot-cases.jsonl`: 44 synthetic PT-BR contexts; these are the only data a future prompt run should receive.
+- `pilot-cases.jsonl`: 88 synthetic PT-BR contexts; these are the only data a future prompt run should receive.
 - `pilot-labels.jsonl`: expected action, grounding facts, prohibited claims, and provisional dimensions for human review; never provide them to the model during evaluation.
 - `validate_pilot.py`: validates JSONL, required fields, IDs, and case/label matching using only the Python standard library.
 
-Coverage dimensions are `focus_state` (`explored`, `open`, `ambivalent`), `ending_signal` (`none`, `natural`, `explicit`), and `history_state` (`available`, `first_session`, `unavailable`). These are provisional labels: `explored` means the current session focus was sufficiently addressed, not that a clinical problem was resolved. The 44 cases also vary first-session and unavailable-history scenarios, task follow-through, topic changes, disputed progress, agreed/declined plans, and requests to end. Crisis cases are excluded; they require a reviewed safety protocol before fixtures are created.
+Coverage dimensions are `focus_state` (`explored`, `open`, `ambivalent`), `ending_signal` (`none`, `natural`, `explicit`), and `history_state` (`available`, `first_session`, `unavailable`). These are provisional labels: `explored` means the current session focus was sufficiently addressed, not that a clinical problem was resolved. The 88 cases vary first-session and unavailable-history scenarios, task follow-through, topic changes, disputed progress, agreed/declined plans, and requests to end. Crisis cases are excluded; they require a reviewed safety protocol before fixtures are created.
 
 ## Use and limits
 

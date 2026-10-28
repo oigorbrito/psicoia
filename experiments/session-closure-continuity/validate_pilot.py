@@ -6,7 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-EXPECTED_COUNT = 44
+EXPECTED_COUNT = 88
 CASE_FIELDS = {
     "id",
     "category",
