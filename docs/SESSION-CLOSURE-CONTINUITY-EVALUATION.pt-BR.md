@@ -29,7 +29,7 @@ Aplicar os mesmos casos às cinco modalidades (`bt`, `cbt`, `het`, `pdt`, `pmt`)
 
 ### Cobertura atual do piloto (rótulos provisórios)
 
-O piloto contém 88 casos: ação esperada `close` em 54 e `continue` em 34; foco `explored` em 32, `open` em 48 e `ambivalent` em 8; sinal de encerramento `explicit` em 18, `natural` em 18 e `none` em 52; histórico `available` em 64, `first_session` em 12 e `unavailable` em 12. Esses números descrevem apenas os rótulos atuais, ainda não revisados independentemente. Não demonstram cobertura equilibrada nem validade do benchmark; revisar estratos e rótulos antes de criar o conjunto cego.
+O piloto contém 88 casos: ação esperada `close` em 54 e `continue` em 34; foco `explored` em 32, `open` em 48 e `ambivalent` em 8; sinal de encerramento `explicit` em 18, `natural` em 18 e `none` em 52; histórico `available` em 64, `first_session` em 12 e `unavailable` em 12. Esses números descrevem apenas os rótulos atuais, ainda não revisados independentemente. Não demonstram cobertura equilibrada nem validade do benchmark; revisar estratos e rótulos antes de criar o conjunto cego. O codebook de revisão e os formulários independentes em branco estão em [`experiments/session-closure-continuity/review/`](../experiments/session-closure-continuity/review/); forneça aos avaliadores somente o formulário atribuído e o guia, não os rótulos provisórios.
 
 ## Comparação
 

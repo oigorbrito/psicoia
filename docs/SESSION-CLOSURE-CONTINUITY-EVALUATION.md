@@ -29,7 +29,7 @@ Apply the same cases to all five modalities (`bt`, `cbt`, `het`, `pdt`, `pmt`) i
 
 ### Current pilot coverage (provisional labels)
 
-The pilot has 88 cases: expected action `close` in 54 and `continue` in 34; focus `explored` in 32, `open` in 48, and `ambivalent` in 8; ending signal `explicit` in 18, `natural` in 18, and `none` in 52; history `available` in 64, `first_session` in 12, and `unavailable` in 12. These numbers describe the current labels only; they have not yet been independently reviewed. They do not establish balanced coverage or benchmark validity. Review strata and labels before creating the blind set.
+The pilot has 88 cases: expected action `close` in 54 and `continue` in 34; focus `explored` in 32, `open` in 48, and `ambivalent` in 8; ending signal `explicit` in 18, `natural` in 18, and `none` in 52; history `available` in 64, `first_session` in 12, and `unavailable` in 12. These numbers describe the current labels only; they have not yet been independently reviewed. They do not establish balanced coverage or benchmark validity. Review strata and labels before creating the blind set. The label-review codebook and blank independent forms are in [`experiments/session-closure-continuity/review/`](../experiments/session-closure-continuity/review/); provide reviewers only their assigned form and guide, not the provisional labels.
 
 ## Comparison
 
