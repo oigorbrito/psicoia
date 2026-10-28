@@ -30,11 +30,11 @@ Esta contagem é apenas uma fotografia da comparação por caminho e conteúdo. 
 - A árvore de trabalho tinha 113 MB e 1.389 caminhos não rastreados na fotografia inicial deste passo.
 - Foi criado fora do repositório `../psicoia-worktree-before-integration.tar.gz` (52 MB), excluindo `.git`; o teste `tar -tzf` passou. SHA-256: `bf5ea3b95581ded2e29ff1a97243a23d63759f7a65c0086d097f6fc18b597bc0`.
 - Os refs/histórico Git foram salvos em `../psicoia-git-refs-before-integration.bundle` (54 MB); `git bundle verify` passou e registrou sete refs. SHA-256: `0fef368c5132d1bba52e8b8b08905f47df510ae837999adce8cc6150276ec939`.
-- Os dois arquivos estão no mesmo volume local, portanto não protegem contra falha desse disco. Não foi feito checkout nem integração.
+- Os dois arquivos estão no mesmo volume local, portanto não protegem contra falha desse disco. Na fotografia da etapa de salvaguarda ainda não havia checkout nem integração.
 
 ## Decisão de escopo atual
 
-- PT-BR permanece o idioma principal/padrão; inglês continua secundário.
+- PT-BR é o idioma-alvo principal e inglês continua secundário; a interface e os padrões do código upstream ainda não foram localizados neste candidato.
 - Alterações locais de mecanismo de locale, propagação de `output_language`, contratos/API e seleção de catálogos por idioma estão **pendentes de revisão separada**. Não expandir, integrar nem remover esse trabalho enquanto estiver pendente.
 - A cópia upstream literal e as traduções documentais/de apresentação aprovadas podem avançar sem esperar por essa decisão. Prompts de avaliação e catálogo de habilidades continuam sujeitos a validação comportamental/recuperação própria.
 
@@ -43,8 +43,8 @@ Esta contagem é apenas uma fotografia da comparação por caminho e conteúdo. 
 - Foi criada a branch local `integration/psicoia`, em worktree separada `../psicoia-integration`, baseada em `origin/main`.
 - O merge local de `original` foi concluído no commit `af5cc72` (`Integrate PsychAgent upstream and evidence template`); o único conflito de árvore foi `README.md`, resolvido com a versão local de apresentação PsicoIA.
 - A comparação por blob do commit de integração confirma que **1.392 dos 1.393 arquivos upstream estão idênticos** ao commit `original`; `README.md` é a única exceção de apresentação/documentação. Diferenças de EOL na cópia de trabalho do Windows não foram confundidas com mudanças de blob.
-- A camada de locale/API/output_language, catálogos traduzidos e testes associados permanece fora do candidato por estar pendente. Foram adicionados os documentos de governança, pares de documentação PT-BR/inglês aprovados, harness e testes de documentação/harness.
-- O commit existe somente localmente e ainda não foi enviado ao remoto. A árvore de origem e `master` permanecem intactos.
+- A camada de locale/API/output_language, catálogos traduzidos e testes associados permanece fora do candidato por estar pendente. O commit `10a251f` adicionou governança, pares de documentação PT-BR/inglês aprovados, harness e testes de documentação/harness.
+- Os commits `af5cc72` e `10a251f` existem somente localmente e ainda não foram enviados ao remoto. A árvore de origem e `master` permanecem intactos.
 
 ## Estado e limites
 
