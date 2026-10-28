@@ -29,7 +29,7 @@ Aplicar os mesmos casos às cinco modalidades (`bt`, `cbt`, `het`, `pdt`, `pmt`)
 
 ### Cobertura atual do piloto (rótulos provisórios)
 
-O piloto contém 36 casos: ação esperada `close` em 22 e `continue` em 14; foco `explored` em 15, `open` em 19 e `ambivalent` em 2; sinal de encerramento `explicit` em 7, `natural` em 7 e `none` em 22; histórico `available` em 32, `first_session` em 2 e `unavailable` em 2. Esses números descrevem apenas os rótulos atuais, ainda não revisados independentemente. Não demonstram cobertura equilibrada nem validade do benchmark; revisar estratos e rótulos antes de criar o conjunto cego.
+O piloto contém 44 casos: ação esperada `close` em 27 e `continue` em 17; foco `explored` em 17, `open` em 25 e `ambivalent` em 2; sinal de encerramento `explicit` em 9, `natural` em 9 e `none` em 26; histórico `available` em 32, `first_session` em 6 e `unavailable` em 6. Esses números descrevem apenas os rótulos atuais, ainda não revisados independentemente. Não demonstram cobertura equilibrada nem validade do benchmark; revisar estratos e rótulos antes de criar o conjunto cego.
 
 ## Comparação
 
