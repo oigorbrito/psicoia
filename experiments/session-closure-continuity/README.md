@@ -4,11 +4,11 @@ This package contains synthetic fixtures for calibrating the rubric in `../../do
 
 ## Files
 
-- `pilot-cases.jsonl`: 12 synthetic PT-BR contexts; these are the only data a future prompt run should receive.
+- `pilot-cases.jsonl`: 36 synthetic PT-BR contexts; these are the only data a future prompt run should receive.
 - `pilot-labels.jsonl`: reference labels and expected facts for human review; never provide them to the model during evaluation.
 - `validate_pilot.py`: validates JSONL, required fields, IDs, and case/label matching using only the Python standard library.
 
-Cases cover completed or partial focus, a topic change near closure, completed or uncompleted tasks, missing history, ambivalence, and an explicit request to end. Crisis cases are excluded; they require a reviewed safety protocol before fixtures are created.
+The 36 cases expand coverage of completed or partial focus, late topic changes, completed or uncompleted tasks, missing or unavailable history, ambivalence, correction of overstated progress, agreed or declined plans, and explicit requests to end. Crisis cases are excluded; they require a reviewed safety protocol before fixtures are created.
 
 ## Use and limits
 

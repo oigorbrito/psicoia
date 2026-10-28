@@ -4,11 +4,11 @@ Este pacote contém fixtures sintéticos para calibrar a rubrica de `../../docs/
 
 ## Arquivos
 
-- `pilot-cases.jsonl`: 12 contextos sintéticos em PT-BR; estes são os únicos dados que uma futura execução de prompt deverá receber.
+- `pilot-cases.jsonl`: 36 contextos sintéticos em PT-BR; estes são os únicos dados que uma futura execução de prompt deverá receber.
 - `pilot-labels.jsonl`: rótulos de referência e fatos esperados para revisão humana; nunca os forneça ao modelo durante a avaliação.
 - `validate_pilot.py`: valida JSONL, campos obrigatórios, IDs e correspondência entre casos e rótulos, usando apenas a biblioteca padrão do Python.
 
-Os casos cobrem foco concluído ou parcial, mudança de assunto perto do encerramento, tarefa realizada ou não, ausência de histórico, ambivalência e pedido explícito para encerrar. Não incluem casos de crise; esses exigem um protocolo de segurança revisado antes de criar fixtures.
+Os 36 casos ampliam a cobertura de foco concluído ou parcial, mudança de assunto perto do encerramento, tarefas realizadas ou não, histórico ausente ou indisponível, ambivalência, correção de progresso superestimado, plano acordado ou recusado e pedido explícito para encerrar. Não incluem casos de crise; esses exigem um protocolo de segurança revisado antes de criar fixtures.
 
 ## Uso e limites
 

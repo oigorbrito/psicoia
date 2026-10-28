@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-EXPECTED_COUNT = 12
+EXPECTED_COUNT = 36
 CASE_FIELDS = {
     "id",
     "category",
