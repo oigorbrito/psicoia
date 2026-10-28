@@ -1,8 +1,8 @@
 # `assets/profiles/`
 
-本目录保存不同流派的来访者画像资产，供 `src/sample` 与 `src/rft` 通过 dataset 配置复用。
+This directory stores client profile assets for different counseling modalities. They can be used by `src/sample` and `src/rft` through dataset configuration.
 
-目录结构遵循 `DatasetLoader` 约定：
+The directory structure follows the `DatasetLoader` convention:
 
 ```text
 profiles/
@@ -13,13 +13,11 @@ profiles/
   ...
 ```
 
-说明：
+- `sample/`: profile split used by `src/sample`.
+- `rft/`: profile split used by `src/rft`.
+- Only the `sample` and `rft` splits are currently organized here; historical `dev` and `rl` splits were not included in the formal `v0402` asset directory.
 
-- `sample/`：供 `src/sample` 使用的画像切分。
-- `rft/`：供 `src/rft` 使用的画像切分。
-- 当前只整理了 `sample` 与 `rft` 两个切分；历史 `dev` / `rl` 未并入 `v0402` 的正式资产目录。
-
-推荐配套配置：
+Recommended configurations:
 
 - [`../../configs/datasets/profiles_sample.yaml`](../../configs/datasets/profiles_sample.yaml)
 - [`../../configs/datasets/profiles_rft.yaml`](../../configs/datasets/profiles_rft.yaml)

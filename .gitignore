@@ -1,6 +1,4 @@
 /.pytest_cache/
-/tests/
-/docs/
 .DS_Store
 __pycache__/
 *.pyc
