@@ -20,7 +20,7 @@ Além dos 1.393 caminhos upstream, a árvore contém **73 arquivos locais adicio
 |---|---:|---|
 | Catálogos localizados | 26 (17 PT-BR, 9 inglês) | Dados de recuperação; validação estrutural existe, qualidade/recuperação e caches por idioma precisam de avaliação |
 | Testes | 12 | Cobertura local nova; manter separados da cópia upstream; um teste de contagem atualmente falha (23 esperado, 24 observado) |
-| Documentação/readmes de localização | 14 | Texto local de apresentação; revisar e manter em PT-BR principal/inglês secundário |
+| Documentação/readmes locais | 14 | Guias, apresentação e governança raiz; código de exemplos comparado, revisão semântica da prosa ainda pendente |
 | Documentação de governança | 12 | Adaptação local do template; não é código upstream nem prova de conformidade |
 | Scripts de localização/harness | 3 | Ferramentas locais novas; revisar como tooling separado |
 | Estado e schema de política | 2 | Dados de controle local, não estado autoritativo de GitHub |
@@ -28,11 +28,44 @@ Além dos 1.393 caminhos upstream, a árvore contém **73 arquivos locais adicio
 | Recurso de locale web | 1 | Texto de interface; sua ligação à aplicação faz parte da implementação de locale pendente |
 | `.gitattributes` | 1 | Configuração local do repositório |
 
+## Manifesto e decisão dos 73 caminhos locais adicionais
+
+A contagem é mutuamente exclusiva por categoria. O candidato `integration/psicoia` inclui **33/73** adições locais selecionadas (14 arquivos de documentação/localização, 12 de governança, 2 skills de agente, 2 arquivos de política, 2 testes documentais/harness e `scripts/harness.py`). Exclui os outros **40** (26 catálogos, 10 testes ligados à localização, dois scripts de catálogo, um recurso i18n web e `.gitattributes`). O candidato também contém 21 arquivos do template `origin/main`; assim, tem 54 caminhos além da árvore upstream `original`.
+
+### Catálogos localizados (26; dados de recuperação — excluídos do candidato)
+
+- `assets/skills/sect/bt/stage1/`: `meta_skills.pt-BR.json`, `micro_skills.pt-BR.json`.
+- `assets/skills/sect/bt/stage2/`: `meta_skills.pt-BR.json`, `micro_skills.pt-BR.json.partial`.
+- `assets/skills/sect/bt/stage3/`: `meta_skills.en.json`, `meta_skills.pt-BR.json`, `micro_skills.en.json`, `micro_skills.pt-BR.json`.
+- `assets/skills/sect/cbt/stage1/`: `meta_skills.pt-BR.json`; `stage3/`: `meta_skills.en.json`, `meta_skills.pt-BR.json`.
+- `assets/skills/sect/het/stage3/`: `meta_skills.en.json`, `meta_skills.pt-BR.json`, `micro_skills.en.json`, `micro_skills.pt-BR.json`.
+- `assets/skills/sect/pdt/stage3/`: `meta_skills.en.json`, `meta_skills.pt-BR.json`, `micro_skills.en.json.partial`.
+- `assets/skills/sect/pmt/stage1/`: `meta_skills.pt-BR.json`, `micro_skills.pt-BR.json`; `stage2/`: os mesmos dois tipos PT-BR; `stage3/`: `meta_skills.en.json`, `meta_skills.pt-BR.json`, `micro_skills.en.json`, `micro_skills.pt-BR.json`.
+
+Os 24 arquivos completos `.json` passam na validação estrutural local; o comando de inglês reporta 8/30 catálogos e 141/5.158 registros, e PT-BR 16/30 e 1.233/5.158. Os dois `.partial` não são parseados nem contados por esses validadores. `pytest tests/test_skill_catalog_localization_validation.py` resulta em 2 passed/1 failed: o teste espera 23, mas encontra 24 arquivos completos. A expectativa correta não foi determinada; não alterar teste nem catálogo sem confirmar o critério. Validação estrutural não prova qualidade linguística, proveniência, equivalência de retrieval ou validade dos caches por idioma.
+
+### Testes locais adicionais (12)
+
+- Incluídos no candidato: `tests/test_harness.py`, `tests/test_localized_documentation.py`.
+- Excluídos por dependerem de runtime, API, prompts ou dados de locale pendentes: `src/web/tests/i18n.test.js`; `tests/test_behavioral_therapy_prompt_localization.py`; `tests/test_client_simulator_localization.py`; `tests/test_dummy_backend_localization.py`; `tests/test_eval_retry_localization.py`; `tests/test_generate_skill_catalog_locales.py`; `tests/test_runner_localization.py`; `tests/test_skill_catalog_locale_loading.py`; `tests/test_skill_catalog_localization_validation.py`; `tests/test_web_output_language.py`.
+
+### Documentação/localização e governança
+
+Os 14 arquivos Markdown locais incluídos são: `AGENTS.md`, `CONTRIBUTING.md`, `LOCALIZATION.md`, `LOCALIZATION.pt-BR.md`, `README.pt-BR.md`, `SECURITY.md`, `assets/README.pt-BR.md`, `assets/profiles/README.pt-BR.md`, `assets/skills/README.md`, `assets/skills/README.pt-BR.md`, `configs/README.pt-BR.md`, `prompts/README.pt-BR.md`, `src/README.pt-BR.md`, `src/web/README.pt-BR.md`. A prosa de localização ainda requer revisão semântica; ver a auditoria de exemplos acima.
+
+Os 12 documentos de governança incluídos são `docs/ARCHITECTURE.md`, `docs/HARNESS.md`, `docs/INVENTARIO-DIFERENCAS-UPSTREAM.pt-BR.md`, `docs/MATURITY.md`, `docs/MIGRACAO-UPSTREAM.pt-BR.md`, `docs/MIGRATION-POLICY.md`, `docs/MIGRATION-POLICY.pt-BR.md`, `docs/RELEASE.md`, `docs/ROADMAP.md`, `docs/ROADMAP.pt-BR.md`, `docs/SOURCES.md` e `docs/TESTING.md`. Também foram incluídos `policy/project-state.json`, `policy/project-state.schema.json` e as duas skills `.agents/skills/{localization-guardrails,psicoia-migration-translation}/SKILL.md`; são controles locais, não evidência autoritativa de estado externo.
+
+### Ferramentas e alterações de runtime ainda fora do candidato
+
+- `scripts/harness.py` foi incluído; `scripts/generate_skill_catalog_locales.py` e `scripts/validate_skill_catalog_locales.py` ficaram fora junto dos catálogos pendentes. O gerador chama Ollama e escreve/retoma arquivos `.partial`; não foi executado nesta revisão.
+- `src/web/src/i18n.js` ficou fora por ser runtime locale; seus testes também ficaram fora.
+- `.gitattributes` ficou fora: contém `* text=auto` e padrões Git comentados. Sua política de normalização de EOL requer decisão do repositório antes de adoção.
+
 Dois catálogos têm sufixo `.partial` e não devem ser tratados como entregas completas: `assets/skills/sect/bt/stage2/micro_skills.pt-BR.json.partial` e `assets/skills/sect/pdt/stage3/micro_skills.en.json.partial`. Não adicione esses arquivos em bloco sem revisão individual de conteúdo, proveniência e necessidade.
 
 ## Classificação inicial
 
-As classificações abaixo são por grupo de arquivos e representam triagem, não revisão semântica linha a linha. “Pendente/bloqueador” significa que o diff não deve ser aceito como cópia literal até ser explicado, aprovado separadamente ou revertido.
+A tabela abaixo é a classificação inicial por grupo; as revisões detalhadas subsequentes registram os diffs técnicos e a estrutura Jinja. “Pendente/bloqueador” significa que o diff não deve ser aceito como cópia literal até ser explicado, aprovado separadamente ou revertido. Classificação do tipo de mudança não equivale a aprovação semântica.
 
 | Grupo | Qtde. | Classificação inicial | Próxima decisão |
 |---|---:|---|---|
