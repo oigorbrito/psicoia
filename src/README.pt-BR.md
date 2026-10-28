@@ -1,42 +1,71 @@
 # Guia do código-fonte (`src/`)
 
-O código está organizado em quatro módulos principais:
+Este guia descreve os pontos de entrada do código, os limites entre módulos e uma ordem recomendada de leitura. O [README principal](../README.pt-BR.md) apresenta o projeto em alto nível.
 
-- `sample/`: geração de diálogos de aconselhamento em múltiplas sessões.
-- `eval/`: avaliação de escalas e métricas.
-- `rft/`: seleção de trajetórias best-of-n baseada em rollouts e recompensas.
-- `shared/`: utilitários de caminhos, arquivos e YAML compartilhados.
+## Módulos e fluxo de execução
 
-## Fluxo geral
+- `sample/`: gera diálogos de aconselhamento em múltiplas sessões.
+- `eval/`: avalia escalas e métricas.
+- `rft/`: seleciona as melhores trajetórias (*best-of-n*) usando rollouts e recompensas.
+- `shared/`: utilitários compartilhados para caminhos, arquivos e YAML.
 
-1. `sample` lê casos em `assets/profiles` e gera `course.json` e `session_*.json`.
-2. `eval` avalia casos ou adapta resultados de `sample` para avaliação.
-3. `rft` reutiliza `sample` para gerar rollouts e `eval.reward` para calcular recompensas e selecionar resultados.
-4. `shared` fornece utilitários comuns.
+O fluxo geral é:
 
-## Arquivos de entrada e leitura
+1. `sample` lê casos de `assets/profiles` e grava `course.json` e `session_*.json`.
+2. `eval` avalia casos padrão ou adapta resultados de `sample` para avaliação.
+3. `rft` reutiliza `sample` para vários rollouts e `eval.reward` para seleção baseada em recompensa.
+4. `shared` fornece infraestrutura comum.
 
-### `sample`
+## `sample/`
 
-Entradas: `sample/__main__.py` e `sample/main.py`. A execução principal está em `sample/runner.py`; descoberta de dados em `sample/io/dataset_loader.py`; persistência em `sample/io/store.py`; simulação do cliente em `sample/client/simulator.py`; recuperação de habilidades em `sample/skill_manager.py`. Os gerenciadores de prompts em `sample/core/prompt_manager.py` e `sample/prompt_manager.py` carregam diretórios de prompts diferentes.
+Pontos de entrada: `sample/__main__.py` e `sample/main.py`.
 
-### `eval`
+Arquivos úteis:
 
-Entradas: `eval/__main__.py` e `eval/main.py`. A orquestração está em `eval/manager/evaluation_orchestrator.py`, a adaptação de entradas em `eval/io/input_adapter.py`, e a interface de recompensa reutilizada por `rft` em `eval/reward.py`. Os métodos ficam em `eval/methods/client/`, `eval/methods/counselor/` e no nível raiz de `eval/methods/`.
+- `sample/main.py`: argumentos da CLI, carregamento da configuração e inicialização do runner.
+- `sample/runner.py`: concorrência entre casos, diálogo das sessões, atualização de resumos/perfis, persistência dos resultados e retomada da execução.
+- `sample/io/dataset_loader.py`: descoberta e validação de casos.
+- `sample/io/store.py`: organização dos resultados, incluindo `save_root/<baseline>/<modality>/<case_id>/session_*.json` e `course.json`.
+- `sample/core/prompt_manager.py`: carrega `prompts/public/` e `prompts/client/`.
+- `sample/prompt_manager.py`: carrega `prompts/psychagent/<modality>/...`.
+- `sample/client/simulator.py`: simulador de clientes.
+- `sample/skill_manager.py`: recuperação de habilidades, usada quando a biblioteca de habilidades está habilitada.
+- `sample/models.py`: esquemas de resumo/perfil por modalidade.
 
-### `rft`
+Os dois gerenciadores de prompts carregam diretórios diferentes.
 
-Entradas: `rft/__main__.py` e `rft/main.py`. `rft/runner.py` estende `sample.runner.PsychAgentRunner` para incorporar rollouts e seleção por recompensa; `rft/reward.py` agrega e calcula pontuações.
+## `eval/`
 
-### `shared`
+Pontos de entrada: `eval/__main__.py` e `eval/main.py`.
 
-`shared/file_utils.py` oferece utilitários de raiz do projeto, nomes de arquivo e gravação JSON. `shared/config_utils.py` carrega YAML e mantém uma alternativa leve quando `PyYAML` não está disponível.
+- `eval/main.py`: argumentos da CLI e configuração de execução.
+- `eval/manager/evaluation_orchestrator.py`: descoberta de casos, orquestração de sessões, concorrência dos métodos e agregação de resultados.
+- `eval/io/input_adapter.py`: adapta dados entre `eval_case` e resultados de `sample`.
+- `eval/reward.py`: interface programática de recompensa reutilizada por `rft`.
+- `eval/methods/`: registro e implementações de avaliação, organizados em `client/`, `counselor/` e métodos no diretório raiz, como `rro.py`.
 
-## Relação com outros diretórios
+Os métodos de avaliação normalmente carregam prompts de pontuação em `prompts/eval/` e reutilizam a lógica de reparo de saída JSON de `core/base.py`.
 
-- `configs/`: parâmetros lidos pelas entradas dos módulos.
-- `prompts/`: templates carregados por `sample`, `rft` e `eval`.
-- `data/` e `assets/`: entradas para avaliação e geração.
-- `tests/`: referência executável para o comportamento esperado, quando disponível.
+## `rft/`
 
-Os três módulos podem ser executados com `python -m src.<module>`. `rft` reutiliza explicitamente partes de `sample` e `eval`; não é uma stack independente.
+Pontos de entrada: `rft/__main__.py` e `rft/main.py`.
+
+- `rft/main.py`: carrega as configurações baseline, runtime de sample, dataset e runtime de RFT.
+- `rft/runner.py`: estende `sample.runner.PsychAgentRunner` para adicionar rollouts e seleção por recompensa no nível da sessão.
+- `rft/reward.py`: agrega recompensas e calcula pontuações.
+
+Compare `sample/runner.py` e `rft/runner.py` para entender os limites entre os dois módulos.
+
+## `shared/`
+
+- `shared/file_utils.py`: `project_root()`, nomes de arquivo seguros e utilitários para gravação JSON.
+- `shared/config_utils.py`: carregamento de YAML com uma alternativa leve quando `PyYAML` não está disponível.
+
+## Relações e observações
+
+- `configs/` fornece configurações aos pontos de entrada dos módulos.
+- `prompts/` contém recursos de prompt carregados por `sample`, `rft` e `eval`.
+- `data/` e `assets/` fornecem entradas para avaliação e geração.
+- Testes, quando disponíveis, servem como referência executável do comportamento esperado.
+
+Execute os módulos com `python -m src.<module>`. `rft` reutiliza explicitamente `sample` e `eval`; não é uma pilha independente. Vários métodos de avaliação usam APIs do Pydantic v2, como `ConfigDict` e `model_validate()`.

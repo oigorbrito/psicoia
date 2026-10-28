@@ -186,7 +186,27 @@ Backend:  http://localhost:8000
 Health:   http://localhost:8000/health
 ```
 
-Fluxo de uso típico: entrar ou cadastrar-se, escolher uma abordagem, criar um curso, iniciar a sessão e encerrar a sessão atual para continuar na próxima.
+Fluxo de uso típico:
+
+1. entre ou cadastre-se;
+2. escolha uma abordagem;
+3. crie um curso;
+4. inicie a sessão;
+5. encerre a sessão atual para continuar na próxima.
+
+Capturas de tela:
+
+#### Criar curso
+
+![Criar curso](paper/web/新建疗程.png)
+
+#### Trocar abordagem
+
+![Trocar abordagem](paper/web/切换流派.png)
+
+#### Visão da consulta
+
+![Visão da consulta](paper/web/咨询.png)
 
 ## Guia de configuração
 

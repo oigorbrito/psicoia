@@ -1,15 +1,29 @@
 # Prompts
 
-Este diretório contém templates Jinja2 e prompts de avaliação em texto puro. Os prompts são parte do comportamento de execução, não apenas documentação. São carregados por `src/sample/core/prompt_manager.py`, `src/sample/prompt_manager.py`, `src/sample/skill_manager.py` e `src/eval/utils.py`.
+Este diretório contém os recursos de prompt usados pelo projeto, incluindo templates Jinja2 e prompts de avaliação em texto puro. Prompts fazem parte do comportamento de execução. São carregados por:
 
-## Categorias
+- `src/sample/core/prompt_manager.py`
+- `src/sample/prompt_manager.py`
+- `src/sample/skill_manager.py`
+- `src/eval/utils.py`
 
-- `public/`: contexto compartilhado, abertura de sessão e recapitulação.
-- `client/dialogue.jinja2`: entrada principal do simulador de clientes. Recebe perfil inicial, resumo histórico, tarefa anterior e fala recente do terapeuta.
-- `psychagent/`: prompts de geração e resumo para `bt/`, `cbt/`, `het/`, `pdt/`, `pmt/` e `skill/`.
-- `eval/`: prompts de pontuação por método, normalmente organizados como `prompts/eval/<method_name>/<prompt_name>.txt`.
+## Grupos de prompts
 
-Os templates por modalidade usam uma estrutura como:
+- Geração: simulação de clientes, diálogo do terapeuta, resumos e atualização de perfis.
+- Habilidades: seleção e reescrita de habilidades quando a biblioteca está habilitada.
+- Avaliação: instruções padronizadas de pontuação para escalas e métricas.
+
+### `public/`
+
+Prompts compartilhados usados por `src/sample/core/prompt_manager.py`: `counselor_system.jinja2`, `session_opening.jinja2` e `public_recap.jinja2`. Eles definem contexto comum, como informações de histórico, conversas anteriores, revisão de tarefas e abertura de sessão.
+
+### `client/`
+
+`dialogue.jinja2` é o template principal do simulador de clientes, chamado por `ClientSimulator.generate_client_utterance()`. Ele recebe `intake_profile`, o histórico da conversa, tarefas anteriores e a fala mais recente do terapeuta.
+
+### `psychagent/`
+
+Prompts usados diretamente por `sample` e `rft`, organizados em `bt/`, `cbt/`, `het/`, `pdt/`, `pmt/` e `skill/`. Os diretórios de prompts por modalidade seguem esta estrutura:
 
 ```text
 <modality>/
@@ -20,20 +34,24 @@ Os templates por modalidade usam uma estrutura como:
   profile/user.jinja2
 ```
 
-Os prompts de avaliação costumam ficar neste caminho:
+Os caminhos e nomes de arquivo são lidos diretamente por `src/sample/prompt_manager.py`. Prompts de aconselhamento costumam exigir as seções `<think>` e `<response>`; `src/sample/runner.py` extrai `<response>` para o transcript. Os prompts em `skill/select_skill/` e `skill/rewrite/` são carregados por `src/sample/skill_manager.py`.
+
+### `eval/`
+
+Prompts de pontuação usados por `src.eval`, normalmente armazenados em:
 
 ```text
 prompts/eval/<method_name>/<prompt_name>.txt
 ```
 
-## Contratos e cuidados
+Por exemplo: `ctrs/collaboration.txt`, `miti/empathy.txt`, `psc/transference.txt` e `tes/warmth.txt`. Alguns prompts, como `human_vs_llm_eval.txt`, ficam diretamente em `prompts/eval/`; `src/eval/utils.py::load_prompt()` aceita os dois formatos.
 
-Os caminhos e nomes de arquivo são usados diretamente pelo código; renomeá-los pode interromper a execução. Alguns prompts de aconselhamento requerem `<think>` e `<response>`, e o runner extrai `<response>` para o transcript. O loader de avaliação também aceita arquivos diretamente em `prompts/eval/`.
+## Compatibilidade e edição segura
 
-Não altere nomes de arquivos, placeholders Jinja, tags de saída ou formato esperado como parte de uma tradução. A tradução de prompts pode alterar o comportamento do modelo; trate-a como uma mudança separada e valide-a explicitamente. A existência de prompts de habilidades não significa que o carregamento da biblioteca de habilidades esteja ativado por padrão.
+A estrutura dos diretórios e os nomes dos arquivos são referenciados pelo código e não devem ser alterados sem necessidade. Preserve placeholders Jinja, tags de saída e formatos esperados. Traduzir um prompt pode alterar o comportamento do modelo; trate isso como uma mudança de escopo separado e valide-a explicitamente. A existência de arquivos de prompt para habilidades não significa que o runtime de exemplo habilite a biblioteca por padrão.
 
 ## Leitura recomendada
 
 1. Leia `public/counselor_system.jinja2` e `client/dialogue.jinja2`.
-2. Compare os prompts `counsel`, `summary` e `profile` de uma modalidade.
-3. Consulte `src/eval/methods/` junto com os prompts de avaliação correspondentes.
+2. Examine os prompts de aconselhamento, resumo e perfil de uma modalidade.
+3. Compare os prompts de avaliação com as implementações em `src/eval/methods/`.
