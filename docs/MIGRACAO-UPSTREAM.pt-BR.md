@@ -36,7 +36,8 @@ Esta contagem é uma fotografia histórica da árvore fonte. Os 101 diffs já fo
 
 - No commit upstream `original` consultado, os 1.393 caminhos rastreados não incluem nomes `LICENSE`, `COPYING`, `NOTICE` ou `PATENT`; `git grep` não encontrou marcadores `SPDX-License-Identifier`, copyright ou declaração `Licensed under` no conteúdo rastreado.
 - `origin/main` contém 22 caminhos; o único nome parecido com licença é `evidence-repo-template/LICENSE-SELECT.md`. O próprio arquivo explica que é apenas um gate/template, não uma licença concedida nem uma escolha pelo projeto.
-- O harness do candidato retorna `GAP` para licença reconhecida. Não foi selecionada nem declarada licença. Essa constatação local não determina direitos autorais, autorização de redistribuição ou termos de dependências, modelos, datasets, perfis, imagens e artigo; tampouco substitui consulta jurídica ou evidência autoritativa dos titulares.
+- O usuário selecionou MIT como licença desejada, mas isso registra apenas a preferência; não foi criado `LICENSE` nem feita declaração jurídica. O harness continua em `GAP` para licença reconhecida.
+- A ausência de licença no snapshot upstream não determina titularidade, permissão para relicenciar o código ou autorização de redistribuição de dependências, modelos, datasets, perfis, imagens e artigo. Ainda faltam evidência de autoridade para cobrir todo o conteúdo e a identificação exata do titular/ano do aviso de copyright; esta constatação não substitui orientação jurídica ou evidência dos titulares.
 - A busca é limitada aos refs/snapshots locais indicados; não é uma consulta atualizada à plataforma ou aos autores.
 
 ## Decisão de escopo atual
@@ -50,10 +51,10 @@ Esta contagem é uma fotografia histórica da árvore fonte. Os 101 diffs já fo
 - Foi criada a branch local `integration/psicoia`, em worktree separada `../psicoia-integration`, baseada em `origin/main`.
 - O merge local de `original` foi concluído no commit `af5cc72` (`Integrate PsychAgent upstream and evidence template`); o único conflito de árvore foi `README.md`, resolvido com a versão local de apresentação PsicoIA.
 - A comparação por blob do commit de integração confirma que **1.392 dos 1.393 arquivos upstream estão idênticos** ao commit `original`; `README.md` é a única exceção inicial de apresentação/documentação. Diferenças de EOL na cópia de trabalho do Windows não foram confundidas com mudanças de blob.
-- No `HEAD` candidato `6b34cd5`, a comparação por blob encontrou **1.384 idênticos, 9 diferentes e 0 ausentes** entre os 1.393 caminhos upstream. As nove diferenças são `.gitignore` e oito READMEs (raiz, legado chinês, assets, perfis, configs, prompts, src e src/web); os demais caminhos, inclusive código/runtime, permanecem byte-a-byte idênticos. `.gitignore` remove apenas as regras que ocultavam `docs/` e `tests/` locais. Os nove são `.gitignore` e oito READMEs (raiz, legado chinês, assets, perfis, configs, prompts, src e src/web); os demais arquivos upstream, inclusive código/runtime, permanecem byte-a-byte idênticos. `.gitignore` remove apenas as regras que ocultavam `docs/` e `tests/` locais.
+- No snapshot `d2f6556`, a comparação por blob encontrou **1.384 idênticos, 9 diferentes e 0 ausentes** entre os 1.393 caminhos upstream. As nove diferenças são `.gitignore` e oito READMEs (raiz, legado chinês, assets, perfis, configs, prompts, src e src/web); os demais caminhos, inclusive código/runtime, permanecem byte-a-byte idênticos. `.gitignore` remove apenas as regras que ocultavam `docs/` e `tests/` locais. Commits posteriores, se houver, devem manter esse resultado ou registrar nova comparação.
 - Dos 73 caminhos locais adicionais da árvore fonte, 33 foram selecionados para o candidato (documentação/readmes, governança, skills, política, dois testes documentais/harness e harness); os outros 40 permanecem fora: 26 catálogos, dez testes vinculados à localização, dois scripts de catálogo, recurso i18n web e `.gitattributes`. O candidato também preserva 21 caminhos do template em `origin/main`.
 - A camada de locale/API/output_language e catálogos traduzidos permanece fora por estar pendente. O commit `10a251f` adicionou governança, documentação PT-BR/inglês, harness e testes documentais/harness; commits posteriores registram a classificação e corrigem exemplos de documentação.
-- O commit de integração de código é `af5cc72`; o candidato está atualmente em `6b34cd5`, branch `integration/psicoia`, 11 commits à frente de `origin/main`. Todos os commits do candidato são locais e ainda não foram enviados ao remoto. A árvore de origem e `master` permanecem intactos.
+- O commit de integração de código é `af5cc72`; o snapshot atual documentado está em `d2f6556`, branch `integration/psicoia`, 12 commits à frente de `origin/main`. Os commits do candidato são locais e ainda não foram enviados ao remoto. A árvore de origem e `master` permanecem intactos.
 
 ## Estado e limites
 
@@ -64,7 +65,7 @@ Esta contagem é uma fotografia histórica da árvore fonte. Os 101 diffs já fo
 
 ## Próxima etapa segura
 
-1. Obter decisão documentada sobre licença/proveniência antes de qualquer publicação; o harness ainda reporta `GAP`.
+1. Confirmar evidência de autoridade para licenciar sob MIT todo o conteúdo pretendido e informar titular/ano do aviso de copyright. Até isso, não criar `LICENSE`; o harness ainda reporta `GAP`.
 2. Revisar semanticamente os READMEs e prompts pendentes, incluindo tags/defaults de Jinja; só considerar avaliação comparativa de prompts após autorização e definição de conjunto fixo.
 3. Classificar individualmente os 73 arquivos adicionais; manter os dois catálogos `.partial`, testes de contagem e alterações de locale/API/retrieval separados até validação/autorização.
 4. Atualizar o SHA upstream antes de qualquer comparação futura e registrar diferenças novas.

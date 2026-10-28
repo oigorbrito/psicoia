@@ -26,17 +26,17 @@ Este roadmap prioriza ações com base nas evidências locais registradas. **Nã
 
 ## Prioridade 1 — licença e proveniência
 
-**Estado: lacuna confirmada localmente.** O harness não encontrou arquivo de licença reconhecido; o snapshot upstream consultado também não lista `LICENSE`, `COPYING` ou `LICENSES`. Isso não determina a titularidade nem autoriza redistribuição.
+**Estado: preferência do usuário registrada; aplicação bloqueada por proveniência/autoridade.** O usuário escolheu MIT como licença desejada. O harness ainda não encontra arquivo de licença reconhecido; o snapshot upstream não lista `LICENSE`, `COPYING` ou `LICENSES`. A escolha não comprova titularidade nem autorização para relicenciar o código upstream.
 
-- Verificar direitos e termos aplicáveis ao código, modelos, datasets, perfis, imagens, prompts e demais dependências.
-- Obter orientação/autorização apropriada antes de escolher ou declarar uma licença para o conjunto migrado.
-- Não adicionar uma licença por conveniência nem publicar conteúdo cuja proveniência esteja incerta.
+- Confirmar evidência de autoridade para aplicar MIT ao conteúdo pretendido, incluindo código upstream, modelos, datasets, perfis, imagens, prompts e dependências.
+- Obter o nome exato do titular e o ano para o aviso de copyright.
+- Não criar nem declarar `LICENSE` até esses pontos serem resolvidos; não publicar conteúdo de proveniência incerta.
 
-**Critério de conclusão:** decisão documentada com evidência e texto de licença aplicável, ou restrições explícitas de distribuição.
+**Critério de conclusão:** evidência de autoridade, titular/ano confirmados e texto MIT aplicável, ou restrições explícitas de distribuição.
 
 ## Prioridade 2 — validação técnica
 
-**Estado: verificado parcialmente no candidato `9e547ed`.** `python -m pytest -q --import-mode=importlib`: 9 passaram. `python -m pytest -q`: falha na coleta por colisão de módulo entre os dois arquivos `test_harness.py` do repositório e do template. Harness: lacuna de licença e testes web ausentes; estado externo desconhecido. A suíte web e os validadores de catálogos não foram incluídos porque dependem de localização pendente.
+**Estado: verificado parcialmente no snapshot candidato `d2f6556`.** `python -m pytest -q --import-mode=importlib`: 9 passaram. `python -m pytest -q`: falha na coleta por colisão de módulo entre os dois arquivos `test_harness.py` do repositório e do template. Harness: lacuna de licença e testes web ausentes; estado externo desconhecido. A suíte web e os validadores de catálogos não foram incluídos porque dependem de localização pendente.
 
 - Registrar e investigar a discrepância entre a expectativa de 23 e a contagem observada de 24; não alterar testes ou código para eliminar a falha sem autorização explícita e confirmação do critério esperado.
 - Reexecutar pytest, testes web, validadores e harness na branch de integração após a revisão final; documentar a limitação de coleta do pytest padrão e a ausência atual de testes web.

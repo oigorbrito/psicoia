@@ -26,17 +26,17 @@ This roadmap prioritizes work based on recorded local evidence. It is **not a de
 
 ## Priority 1 — licensing and provenance
 
-**Status: locally confirmed gap.** The harness found no recognized license file; the consulted upstream snapshot also has no `LICENSE`, `COPYING`, or `LICENSES` path. This does not determine ownership or authorize redistribution.
+**Status: user preference recorded; application blocked on provenance/authority.** The user selected MIT as the desired license. The harness still finds no recognized license file; the consulted upstream snapshot has no `LICENSE`, `COPYING`, or `LICENSES` path. The selection does not establish ownership or permission to relicense upstream code.
 
-- Review rights and terms for code, models, datasets, profiles, images, prompts, and other dependencies.
-- Obtain appropriate guidance/authorization before selecting or declaring a license for the migrated work.
-- Do not add a license for convenience or publish content with uncertain provenance.
+- Confirm authority to apply MIT to the intended content, including upstream code, models, datasets, profiles, images, prompts, and dependencies.
+- Confirm the exact copyright holder and year for the notice.
+- Do not create or declare `LICENSE` until these points are resolved; do not publish content with uncertain provenance.
 
-**Completion evidence:** documented decision backed by evidence and applicable license text, or explicit distribution restrictions.
+**Completion evidence:** evidence of authority, confirmed holder/year, and applicable MIT text, or explicit distribution restrictions.
 
 ## Priority 2 — technical validation
 
-**Status: partially verified on candidate `9e547ed`.** `python -m pytest -q --import-mode=importlib`: 9 passed. `python -m pytest -q`: collection fails due to a module-name collision between the repository and template `test_harness.py` files. Harness: license and web-test gaps; external status unknown. Web tests and catalog validators were not included because they depend on pending localization work.
+**Status: partially verified on candidate snapshot `d2f6556`.** `python -m pytest -q --import-mode=importlib`: 9 passed. `python -m pytest -q`: collection fails due to a module-name collision between the repository and template `test_harness.py` files. Harness: license and web-test gaps; external status unknown. Web tests and catalog validators were not included because they depend on pending localization work.
 
 - Keep the default pytest collection failure documented; do not hide it by changing the tests or deleting template content.
 - Rerun pytest, web tests, catalog validators, and the harness on the integration branch after final review; document the current absence of web tests.
