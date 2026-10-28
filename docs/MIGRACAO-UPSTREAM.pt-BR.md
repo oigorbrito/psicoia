@@ -42,9 +42,10 @@ Esta contagem é apenas uma fotografia da comparação por caminho e conteúdo. 
 
 - Foi criada a branch local `integration/psicoia`, em worktree separada `../psicoia-integration`, baseada em `origin/main`.
 - O merge local de `original` foi concluído no commit `af5cc72` (`Integrate PsychAgent upstream and evidence template`); o único conflito de árvore foi `README.md`, resolvido com a versão local de apresentação PsicoIA.
-- A comparação por blob do commit de integração confirma que **1.392 dos 1.393 arquivos upstream estão idênticos** ao commit `original`; `README.md` é a única exceção de apresentação/documentação. Diferenças de EOL na cópia de trabalho do Windows não foram confundidas com mudanças de blob.
+- A comparação por blob do commit de integração confirma que **1.392 dos 1.393 arquivos upstream estão idênticos** ao commit `original`; `README.md` é a única exceção inicial de apresentação/documentação. Diferenças de EOL na cópia de trabalho do Windows não foram confundidas com mudanças de blob.
+- No `HEAD` candidato `5d06503`, a comparação final encontrou **1.384 blobs idênticos, 9 diferentes e 0 ausentes** entre os 1.393 caminhos upstream. Os nove são `.gitignore` e oito READMEs (raiz, legado chinês, assets, perfis, configs, prompts, src e src/web); os demais arquivos upstream, inclusive código/runtime, permanecem byte-a-byte idênticos. `.gitignore` remove apenas as regras que ocultavam `docs/` e `tests/` locais.
 - A camada de locale/API/output_language, catálogos traduzidos e testes associados permanece fora do candidato por estar pendente. O commit `10a251f` adicionou governança, pares de documentação PT-BR/inglês aprovados, harness e testes de documentação/harness.
-- Os commits `af5cc72` e `10a251f` existem somente localmente e ainda não foram enviados ao remoto. A árvore de origem e `master` permanecem intactos.
+- Os commits `af5cc72`, `10a251f` e `5d06503` existem somente localmente e ainda não foram enviados ao remoto. A árvore de origem e `master` permanecem intactos.
 
 ## Estado e limites
 
