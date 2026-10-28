@@ -48,7 +48,7 @@ Por exemplo: `ctrs/collaboration.txt`, `miti/empathy.txt`, `psc/transference.txt
 
 ## Compatibilidade e edição segura
 
-A estrutura dos diretórios e os nomes dos arquivos são referenciados pelo código e não devem ser alterados sem necessidade. Preserve placeholders Jinja, tags de saída e formatos esperados. Traduzir um prompt pode alterar o comportamento do modelo; trate isso como uma mudança de escopo separado e valide-a explicitamente. A existência de arquivos de prompt para habilidades não significa que o runtime de exemplo habilite a biblioteca por padrão.
+A estrutura dos diretórios e os nomes dos arquivos são referenciados pelo código e não devem ser alterados sem necessidade. Preserve placeholders Jinja, tags de saída e formatos esperados. Traduzir um prompt pode alterar o comportamento do modelo; trate isso como uma mudança de escopo separado e valide-a explicitamente. A existência de arquivos de prompt para habilidades não significa que o runtime de exemplo habilite a biblioteca por padrão. Antes de propor mudanças nos prompts de encerramento, consulte o [protocolo de avaliação de fechamento e continuidade](../docs/SESSION-CLOSURE-CONTINUITY-EVALUATION.pt-BR.md).
 
 ## Leitura recomendada
 

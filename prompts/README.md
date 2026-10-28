@@ -48,7 +48,7 @@ For example, `ctrs/collaboration.txt`, `miti/empathy.txt`, `psc/transference.txt
 
 ## Compatibility and safe editing
 
-Prompt directory structure and filenames are referenced by code and should not be changed casually. Preserve Jinja placeholders, output tags, and expected formats. Translating a prompt can affect model behavior, so treat prompt translation as a separately scoped change and validate it explicitly. Skill prompt files exist in the repository, but the example runtime disables skill-library loading by default.
+Prompt directory structure and filenames are referenced by code and should not be changed casually. Preserve Jinja placeholders, output tags, and expected formats. Translating a prompt can affect model behavior, so treat prompt translation as a separately scoped change and validate it explicitly. Skill prompt files exist in the repository, but the example runtime disables skill-library loading by default. See the [session-closure and continuity evaluation protocol](../docs/SESSION-CLOSURE-CONTINUITY-EVALUATION.md) before proposing changes to session-ending prompts.
 
 ## Suggested reading order
 
