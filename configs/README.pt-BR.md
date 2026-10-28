@@ -1,8 +1,8 @@
-# Configurações
+# `configs/`
 
-Este guia indica quais configurações usar nos fluxos `sample`, `eval` e `rft`, e onde ajustar parâmetros sem alterar o código.
+Este guia explica quais arquivos de configuração são usados por `sample`, `eval` e `rft`, e onde ajustar as opções.
 
-## Configurações por fluxo
+## Configuração por fluxo
 
 ```text
 sample: baseline + runtime + dataset
@@ -10,44 +10,50 @@ eval: runtime
 rft: baseline + runtime + dataset + rft runtime
 ```
 
-### `sample`
+O [README principal](../README.pt-BR.md) contém comandos para começar. Consulte este guia ao alterar parâmetros, endpoints, tamanho dos datasets ou limites entre configurações.
 
-Exemplo típico:
+## `sample`
+
+Uma execução típica lê:
 
 - [`baselines/psychagent_sglang_local.yaml`](baselines/psychagent_sglang_local.yaml)
 - [`runtime/psychagent_sglang_local.yaml`](runtime/psychagent_sglang_local.yaml)
-- [`datasets/profiles_sample.yaml`](datasets/profiles_sample.yaml)
+- [`datasets/profiles_sample.yaml`](datasets/profiles_sample.yaml) ou outro arquivo YAML de dataset
 
-`baseline` define endpoint e parâmetros do modelo, como `backend`, `model`, `base_url`, `api_key_env`, `temperature` e `max_tokens`. `runtime` controla execução, como `concurrency`, `resume`, `overwrite`, `save_dir`, `output_language` e opções `client_*` e `psychagent_*`. `dataset` determina os casos de entrada, por meio de opções como `root_data_path`, `supported_modalities`, `split` e limites de casos.
+`baseline` controla o endpoint do modelo terapeuta e os parâmetros de geração, incluindo `backend`, `model`, `base_url`, `api_key_env`, `temperature`, `max_tokens`, `max_sessions`, `max_counselor_turns` e `end_token`.
 
-Neste candidato de integração, os prompts/defaults upstream de `sample` permanecem em chinês. A implementação local de respostas em PT-BR/inglês está pendente de revisão separada e não foi incluída. A presença de `output_language` na configuração não significa que a localização PT-BR esteja habilitada.
+`runtime` controla a execução, incluindo `concurrency`, `resume`, `overwrite`, `save_dir`, `output_language`, configurações do simulador de clientes (`client_*`), configurações de sessão e recuperação de habilidades (`psychagent_*`) e configurações de embeddings (`psychagent_embedding_*`).
 
-Para trocar o serviço do modelo, ajuste `baselines/*.yaml`; para alterar parâmetros de execução upstream, ajuste o runtime; para trocar ou limitar os dados, ajuste `datasets/*.yaml`. Mudanças no comportamento de idioma de saída estão fora deste candidato de cópia literal.
+Neste candidato de integração, os prompts e padrões upstream de `sample` permanecem em chinês. A implementação local de resposta nos idiomas PT-BR/inglês está pendente de revisão separada e não foi incluída. A presença de `output_language` na configuração não significa que a localização PT-BR esteja habilitada.
 
-### `eval`
+`dataset` seleciona os casos por meio de opções como `root_data_path`, `supported_modalities`, `split`, `max_cases`, `max_cases_per_modality`, `case_selection_strategy` e `filename_sort_policy`.
 
-A avaliação usa o runtime [`runtime/eval_default.yaml`](runtime/eval_default.yaml), que controla caminhos (`data_root`, `output_root`), formato de entrada, endpoint, concorrência, retomada e métodos/modalidades. Opções de linha de comando como `--input-format`, `--data-root`, `--output-root` e `--modalities` podem substituir valores do YAML numa execução.
+Alterações comuns: edite `baselines/*.yaml` para trocar serviços de modelo, o YAML de runtime para ajustar a execução upstream e `datasets/*.yaml` para trocar ou limitar os dados. Mudanças no comportamento do idioma de saída permanecem fora deste candidato de cópia literal.
 
-### `rft`
+## `eval`
 
-`rft` reutiliza as configurações de `sample` e acrescenta [`runtime/rft_default.yaml`](runtime/rft_default.yaml), que define quantidade e concorrência de rollouts, endpoint de recompensa, métodos e política de retenção de resultados. Para separar o avaliador de recompensa do endpoint principal, configure `reward_api_*` nesse arquivo.
+A avaliação usa [`runtime/eval_default.yaml`](runtime/eval_default.yaml). Esse arquivo controla caminhos de entrada/saída, formato de entrada, endpoint de avaliação, concorrência, retomada e sobrescrita, limites de casos, modalidades aceitas e mapeamento de métodos. Opções da CLI como `--input-format`, `--data-root`, `--output-root` e `--modalities` podem substituir valores do YAML durante uma execução.
+
+## `rft`
+
+`rft` reutiliza os três tipos de configuração de `sample` e acrescenta [`runtime/rft_default.yaml`](runtime/rft_default.yaml). Esse runtime controla quantidade e concorrência de rollouts, concorrência e endpoint de recompensa (`reward_api_*`), retenção de transcrições e mapeamento dos métodos de recompensa. Configure `reward_api_*` para usar um endpoint separado para o avaliador de recompensa.
 
 ## Arquivos de exemplo
 
-- `baselines/psychagent_sglang_local.yaml`: conexão do modelo de aconselhamento.
+- `baselines/psychagent_sglang_local.yaml`: conexão com o modelo terapeuta.
 - `datasets/profiles_sample.yaml` e `datasets/profiles_rft.yaml`: datasets baseados nos perfis incluídos.
-- `datasets/psycheval.yaml` e `datasets/psycheval_bt_cbt_het_pdt_pmt.yaml`: configurações do benchmark `PsychEval`.
-- `runtime/psychagent_sglang_local.yaml`: runtime compartilhado por `sample` e `rft`.
+- `datasets/psycheval.yaml` e `datasets/psycheval_bt_cbt_het_pdt_pmt.yaml`: configurações do dataset `PsychEval`.
+- `runtime/psychagent_sglang_local.yaml`: runtime principal compartilhado por `sample` e `rft`.
 - `runtime/eval_default.yaml`: runtime de avaliação.
-- `runtime/rft_default.yaml`: opções de rollout e recompensa.
+- `runtime/rft_default.yaml`: configurações de rollout e recompensa.
 
-## Caminhos e validação
+## Caminhos e análise
 
-Caminhos relativos nos YAML de dataset são resolvidos em relação ao diretório do arquivo de configuração. `sample` e `rft` carregam datasets por `src/sample/io/config_loader.py` e `src/sample/io/dataset_loader.py`; o schema de avaliação fica em `src/eval/core/schemas.py`.
+Caminhos relativos em `datasets/*.yaml` são resolvidos em relação ao diretório do arquivo de configuração, não ao diretório atual do shell. Os arquivos YAML de dataset de `sample` e `rft` são analisados por [`../src/sample/io/config_loader.py`](../src/sample/io/config_loader.py) e encaminhados a [`../src/sample/io/dataset_loader.py`](../src/sample/io/dataset_loader.py). O YAML de runtime da avaliação é analisado e validado por [`../src/eval/core/schemas.py`](../src/eval/core/schemas.py).
 
 ## Ordem de leitura recomendada
 
-1. Consulte o [README principal](../README.md) para os comandos de execução.
-2. Para `sample`, examine baseline, runtime e dataset correspondentes.
+1. Leia o [README principal](../README.pt-BR.md) para conhecer os comandos principais.
+2. Para `sample`, examine os arquivos baseline, runtime e dataset usados na execução.
 3. Para `eval`, examine `runtime/eval_default.yaml`.
-4. Para `rft`, examine `runtime/rft_default.yaml` e `datasets/profiles_rft.yaml`.
+4. Para `rft`, examine também `runtime/rft_default.yaml` e `datasets/profiles_rft.yaml`.
