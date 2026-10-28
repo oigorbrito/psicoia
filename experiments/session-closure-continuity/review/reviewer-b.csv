@@ -1,0 +1,265 @@
+﻿id_caso,indice_da_sessao,resumo_previo_disponivel,acordo_previo_disponivel,foco_da_sessao,dialogo,decisao_esperada,estado_do_foco,sinal_de_encerramento,estado_do_historico,fatos_de_ancoragem,continuidade_a_preservar,afirmacoes_nao_sustentadas,justificativa,observacoes
+SC-01,2,"Na sessão anterior, a pessoa relatou aceitar tarefas extras sem verificar a própria disponibilidade.",Fazer uma pausa antes de responder a novos pedidos de trabalho.,- Perceber a sobrecarga e praticar uma resposta deliberada a pedidos adicionais.,"Pessoa: Na segunda, eu disse que verificaria minha agenda antes de responder ao pedido do gerente.
+Terapeuta: O que aconteceu quando você fez isso?
+Pessoa: Ele aceitou. Fiquei aliviada. Ainda tenho medo de parecer pouco prestativa, mas não aceitei no automático.",,,,,,,,,
+SC-37,1,,,- Esclarecer o que a pessoa quer dizer com ter mais previsibilidade no dia a dia.,"Pessoa: Queria que meus dias fossem menos imprevisíveis.
+Terapeuta: Em que momento isso pesa mais para você?
+Pessoa: Ainda não sei. Talvez em vários momentos.",,,,,,,,,
+SC-84,2,A pessoa queria perceber o que dificulta organizar tarefas da semana.,Escolher uma situação para explorar.,- Identificar um fator que dificulta o planejamento.,"Pessoa: Não consegui escolher uma situação.
+Terapeuta: O que torna difícil escolher?
+Pessoa: Não sei. Ainda não consigo responder.",,,,,,,,,
+SC-43,2,,,- Refletir sobre uma decisão recente sem supor que uma tarefa tenha sido combinada anteriormente.,"Pessoa: Anotei uma situação, mas não lembro se alguém sugeriu isso ou se foi ideia minha.
+Terapeuta: O que você percebeu na situação?
+Pessoa: Continuei trabalhando mesmo com fome. Agora entendo que eu poderia ter feito uma pausa. Por hoje, é suficiente.",,,,,,,,,
+SC-35,2,A pessoa queria organizar uma conversa com uma colega.,Identificar o principal ponto que deseja comunicar.,- Esclarecer o que a pessoa quer comunicar.,"Pessoa: Acho que quero dizer que preciso de mais antecedência para me organizar.
+Terapeuta: Esse seria um ponto que você gostaria de retomar?
+Pessoa: Sim. Podemos começar por isso na próxima sessão. Por hoje, acho que está bom.",,,,,,,,,
+SC-80,3,A pessoa queria experimentar preparar uma lista antes de fazer compras.,Testar a lista uma vez e observar o que mudou.,- Revisar o uso da lista e o que ainda permanece incerto.,"Pessoa: Usei a lista, mas ainda esqueci um item.
+Terapeuta: O que você gostaria de compreender sobre isso?
+Pessoa: Não sei se a lista ajudou ou se só tive sorte nas outras coisas.",,,,,,,,,
+SC-77,3,A pessoa queria observar quando interrompia o próprio descanso.,"Notar uma ocasião, se surgisse naturalmente.",- Entender se surgiu uma ocasião e o que a pessoa percebeu.,"Pessoa: Não anotei nenhuma situação.
+Terapeuta: O que você percebeu mesmo sem anotar?
+Pessoa: Ainda não sei. Não pensei nisso durante a semana.",,,,,,,,,
+SC-69,2,,,- Compreender uma preferência atual sem usar detalhes de sessões ausentes.,"Pessoa: Acho que já falei sobre isso, mas não lembro do que conversamos.
+Terapeuta: O que você consegue dizer sobre isso agora?
+Pessoa: Só sei que envolve uma decisão sobre meu tempo livre.",,,,,,,,,
+SC-63,3,A pessoa queria revisar uma conversa de trabalho.,Retomar a conversa apenas se a pessoa considerasse útil.,- Explorar o que a pessoa gostaria de compreender na conversa.,"Pessoa: Ainda não sei o que penso sobre aquela conversa.
+Terapeuta: Podemos manter isso em aberto.
+Pessoa: Sim. Por hoje, acho que basta.",,,,,,,,,
+SC-18,2,A pessoa queria conversar sobre uma decisão de rotina.,Listar o que ainda está incerto.,- Esclarecer uma dúvida sobre a rotina atual.,"Pessoa: Ainda não organizei essa dúvida. Surgiu outro assunto sobre minha família, mas não consigo falar agora.
+Terapeuta: Podemos deixar esse assunto para quando você quiser.
+Pessoa: Sim, preciso encerrar por hoje.",,,,,,,,,
+SC-76,2,A pessoa queria analisar uma conversa sobre divisão de tarefas.,Trazer um exemplo concreto.,- Identificar o que a pessoa gostaria de pedir na conversa.,"Pessoa: Ainda não sei exatamente o que pedir.
+Terapeuta: O que já está claro até agora?
+Pessoa: Só que preciso de algum tempo para pensar.",,,,,,,,,
+SC-62,1,,,- Explorar o que a pessoa considera importante em uma decisão recente.,"Pessoa: Ainda não sei por que aquela decisão foi tão difícil.
+Terapeuta: Podemos continuar explorando isso.
+Pessoa: Prefiro deixar para outra hora. Obrigada por hoje.",,,,,,,,,
+SC-05,3,A pessoa queria notar situações em que interrompia o descanso para atender a outras pessoas.,Registrar uma situação e o que levou à decisão.,"- Revisar o registro e identificar um padrão, sem presumir que ele se aplica a todas as situações.","Pessoa: Anotei uma situação. Eu estava descansando e aceitei ajudar porque achei que demoraria pouco.
+Terapeuta: O que você concluiu ao rever isso?
+Pessoa: Percebi que nem perguntei quanto tempo levaria. Quero observar isso de novo.",,,,,,,,,
+SC-67,2,A pessoa queria pensar em como distribuir tarefas domésticas.,Conversar sobre uma divisão que parecesse viável.,"- Identificar uma preferência, sem decidir por outras pessoas.","Pessoa: Eu preferiria combinar as tarefas no começo da semana.
+Terapeuta: O que gostaria de fazer com essa preferência?
+Pessoa: Ainda não sei. Não quero combinar uma tarefa agora e vou encerrar por hoje.",,,,,,,,,
+SC-72,2,A pessoa queria entender uma preferência sobre visitas em casa.,Conversar sobre uma visita recente.,- Explorar o que foi confortável ou desconfortável na visita.,"Pessoa: A visita aconteceu, mas não sei dizer se gostei.
+Terapeuta: Que parte é mais difícil de avaliar?
+Pessoa: Ainda não sei. Preciso pensar.",,,,,,,,,
+SC-33,3,A pessoa queria observar se uma pausa antes de responder ajudaria a decidir.,Testar a pausa em uma situação.,- Revisar o resultado sem presumir que a estratégia sempre funciona.,"Pessoa: Fiz a pausa, mas mesmo assim aceitei o pedido.
+Terapeuta: O que a pausa mudou, se mudou algo?
+Pessoa: Pelo menos percebi que estava com pressa. Ainda não sei se eu queria aceitar.",,,,,,,,,
+SC-17,3,A pessoa estava explorando como organizar uma conversa com um colega.,Examinar uma situação recente de comunicação.,- Identificar o que a pessoa deseja comunicar ao colega.,"Pessoa: Ainda não tenho certeza do que quero dizer.
+Terapeuta: Podemos continuar explorando isso.
+Pessoa: Também recebi uma notícia sobre mudança de horário no trabalho e isso me deixou confusa.",,,,,,,,,
+SC-30,2,A pessoa queria falar sobre uma decisão recente.,Explorar uma situação concreta.,- Compreender o que influenciou a decisão.,"Pessoa: Consegui dizer que precisava de mais tempo para decidir.
+Terapeuta: O que você percebeu ao fazer isso?
+Pessoa: Ainda quero entender por que fiquei tão preocupada com a reação.",,,,,,,,,
+SC-26,2,A pessoa queria avaliar se deseja retomar uma atividade de lazer.,Notar como se sente ao pensar na atividade.,- Explorar a preferência atual sem pressionar por uma decisão.,"Pessoa: Continuo sem saber se quero voltar a essa atividade.
+Terapeuta: Não precisamos decidir isso agora.
+Pessoa: Obrigada. Acho que terminamos por hoje.",,,,,,,,,
+SC-14,3,A pessoa queria notar como se sente ao expressar uma preferência.,Escolher uma situação recente para conversar.,- Descrever uma situação e o que a pessoa percebeu.,"Pessoa: Falei que preferia ficar em casa no sábado.
+Terapeuta: O que você percebeu depois?
+Pessoa: Senti alívio. Por enquanto não quero planejar outra tentativa; prefiro só observar.",,,,,,,,,
+SC-28,2,A pessoa queria pensar em uma conversa que está adiando.,Explorar o tema sem definir uma ação antes de ouvir a pessoa.,- Entender o que a pessoa deseja fazer com o tema.,"Pessoa: Não quero falar mais disso hoje.
+Terapeuta: Tudo bem.
+Pessoa: Talvez eu queira retomar na próxima sessão, mas vou decidir depois.",,,,,,,,,
+SC-45,1,,,- Revisar se um lembrete escolhido pela pessoa ajudou a organizar o compromisso.,"Pessoa: Coloquei o compromisso no meu calendário assim que recebi a mensagem.
+Terapeuta: O que aconteceu depois?
+Pessoa: Lembrei no dia e cheguei no horário. Esse jeito funcionou para mim.",,,,,,,,,
+SC-09,2,A pessoa queria entender por que uma mudança de rotina parecia difícil de manter.,Observar o que ajudou ou atrapalhou em uma tentativa recente.,- Explorar fatores que influenciaram a manutenção da rotina.,"Pessoa: Tentei por um dia, mas não sei se fez diferença.
+Terapeuta: O que foi mais fácil ou mais difícil naquele dia?
+Pessoa: Não sei. Talvez não valha a pena falar disso.",,,,,,,,,
+SC-36,2,A pessoa queria falar sobre como tem organizado o tempo livre.,Explorar uma situação recente.,- Compreender a preferência da pessoa sem impor uma meta.,"Pessoa: Foi bom falar disso, mas ainda não quero decidir o que fazer.
+Terapeuta: Tudo bem deixar a decisão para depois.
+Pessoa: Obrigada, por hoje é suficiente.",,,,,,,,,
+SC-65,3,,,- Compreender uma preocupação atual sem presumir o que foi discutido anteriormente.,"Pessoa: Não lembro os detalhes da outra vez e não quero falar disso hoje.
+Terapeuta: Entendido, podemos deixar o assunto.
+Pessoa: Sim, quero encerrar por agora.",,,,,,,,,
+SC-61,2,A pessoa queria conversar sobre uma decisão ainda pendente.,Identificar o que já sabe e o que permanece em aberto.,- Distinguir o que está decidido do que ainda precisa de tempo.,"Pessoa: Já sei qual informação preciso buscar, mas ainda não escolhi.
+Terapeuta: O que permanece em aberto?
+Pessoa: A escolha mesmo. Preciso terminar por hoje.",,,,,,,,,
+SC-15,2,A pessoa queria entender por que adia algumas conversas.,Retomar uma conversa que ficou para depois.,- Explorar fatores que contribuem para adiar conversas.,"Pessoa: Pensei naquela conversa durante a semana.
+Terapeuta: O que apareceu quando você pensou nela?
+Pessoa: Não sei dizer. Prefiro falar de outra coisa.",,,,,,,,,
+SC-38,1,,,- Identificar uma situação em que a pessoa gostaria de ter mais previsibilidade.,"Pessoa: Fico mais tranquila quando sei com antecedência quanto tempo uma atividade vai durar.
+Terapeuta: O que ficou mais claro ao falar disso?
+Pessoa: Isso já me ajuda a entender o que eu queria explicar. Por hoje está bom.",,,,,,,,,
+SC-08,2,,,- Esclarecer o tema que a pessoa gostaria de retomar.,"Pessoa: Como eu disse na outra vez, isso ainda me incomoda.
+Terapeuta: O que você gostaria de retomar hoje?
+Pessoa: Não lembro exatamente como expliquei, mas é sobre uma conversa com um colega.",,,,,,,,,
+SC-86,2,A pessoa queria pensar se vale a pena aceitar um convite recorrente.,"Notar o que pesa na decisão, sem obrigação de escolher.",- Explorar os fatores que influenciam a decisão.,"Pessoa: Ainda não sei se quero continuar indo.
+Terapeuta: O que você já sabe sobre o que pesa nessa escolha?
+Pessoa: Só que gosto de encontrar as pessoas e também valorizo meu tempo livre. Podemos parar aqui.",,,,,,,,,
+SC-71,3,A pessoa queria conversar sobre planejar tarefas em casa.,Trazer um exemplo recente.,- Compreender como a pessoa decide por onde começar.,"Pessoa: Ainda não sei por onde começo.
+Terapeuta: O que aconteceu na última vez?
+Pessoa: Lembrei que recebi uma mensagem importante enquanto estava organizando as coisas.",,,,,,,,,
+SC-73,2,A pessoa queria notar se dividir uma tarefa em etapas parecia útil.,Testar uma etapa pequena.,- Revisar o que ocorreu e o que ainda não está claro.,"Pessoa: Fiz a primeira etapa, mas não continuei.
+Terapeuta: O que você percebeu?
+Pessoa: Foi possível começar. Ainda não sei o que me fez parar.",,,,,,,,,
+SC-07,1,,,- Entender o que a pessoa espera obter da conversa.,"Pessoa: Não sei bem por onde começar. Só queria organizar algumas coisas que estão acontecendo.
+Terapeuta: O que seria mais útil organizar primeiro?
+Pessoa: Ainda estou tentando escolher. Acho que preciso pensar um pouco mais.",,,,,,,,,
+SC-40,1,,,- Identificar uma preferência da pessoa sobre combinar encontros sociais.,"Pessoa: Eu prefiro saber o horário de término antes de aceitar um convite.
+Terapeuta: O que esse detalhe muda para você?
+Pessoa: Assim consigo decidir sem ficar preocupada em ter que sair de repente. Era isso que eu queria explicar.",,,,,,,,,
+SC-34,2,A pessoa queria entender uma dificuldade de organização.,Falar de uma situação recente.,- Descrever uma situação e identificar uma dúvida atual.,"Pessoa: Não consegui explicar muito bem hoje.
+Terapeuta: Podemos retomar em outro momento, se você quiser.
+Pessoa: Sim, prefiro encerrar agora.",,,,,,,,,
+SC-46,2,,,"- Explorar uma preferência atual sobre o ambiente compartilhado, sem supor histórico ausente.","Pessoa: Pedi à minha colega de casa para avisar antes de usar a sala para uma reunião.
+Terapeuta: Como foi fazer esse pedido?
+Pessoa: Ela aceitou. Fiquei mais tranquila, embora ainda me preocupe parecer exigente.",,,,,,,,,
+SC-41,2,,,- Esclarecer o que a pessoa gostaria de retomar sem presumir o conteúdo do histórico ausente.,"Pessoa: Acho que falei de pedir ajuda na outra vez, mas não lembro o que combinamos.
+Terapeuta: O que você gostaria de olhar sobre isso hoje?
+Pessoa: Ainda não sei. Queria começar pelo que está acontecendo agora.",,,,,,,,,
+SC-31,2,A pessoa queria explorar uma conversa que ainda não aconteceu.,Identificar o que permanece incerto.,- Esclarecer o que a pessoa deseja comunicar.,"Pessoa: Ainda não sei o que quero dizer.
+Terapeuta: Podemos deixar isso em aberto por enquanto.
+Pessoa: Sim, por hoje está bom. Quero parar aqui.",,,,,,,,,
+SC-75,3,A pessoa queria conversar sobre receio de decepcionar alguém ao recusar um convite.,Explorar o que a pessoa teme que aconteça.,- Distinguir o receio de uma reação de uma reação que de fato ocorreu.,"Pessoa: Se eu disser não, talvez pensem mal de mim.
+Terapeuta: Isso já aconteceu nessa situação?
+Pessoa: Ainda não respondi. Não sei o que vai acontecer.",,,,,,,,,
+SC-54,1,,,- Identificar uma preferência que a pessoa gostaria que fosse compreendida.,"Pessoa: Para mim ajuda saber com antecedência quando um compromisso vai terminar.
+Terapeuta: O que gostaria que eu entendesse sobre isso?
+Pessoa: Só isso já explica bem. Acho que por hoje é suficiente.",,,,,,,,,
+SC-25,2,A pessoa queria entender o que torna uma rotina difícil de manter.,Conversar sobre uma tentativa recente.,- Explorar fatores que influenciaram a rotina.,"Pessoa: Fiz a rotina um dia e depois parei.
+Terapeuta: O que aconteceu depois daquele dia?
+Pessoa: Não sei se quero continuar falando disso.",,,,,,,,,
+SC-39,1,,,- Entender o que a pessoa gostaria de organizar primeiro.,"Pessoa: Ainda estou escolhendo por onde começar.
+Terapeuta: Podemos retomar quando for melhor para você.
+Pessoa: Preciso encerrar agora porque minha carona chegou.",,,,,,,,,
+SC-13,2,A pessoa queria reservar tempo de descanso sem cancelar encontros no último momento.,Comunicar com antecedência um limite de horário para um encontro.,- Observar como comunicar um limite de tempo afeta a experiência do encontro.,"Pessoa: Avisei a uma amiga que poderia ficar até as 19h.
+Terapeuta: O que você notou enquanto decidia?
+Pessoa: Ela concordou. Fiquei aliviada por saber meu horário, mas ainda me preocupo que ela interprete isso como falta de interesse.",,,,,,,,,
+SC-55,3,,,- Compreender o assunto que a pessoa escolheu trazer hoje.,"Pessoa: Queria falar sobre como divido meu tempo entre estudo e descanso.
+Terapeuta: O que parece mais importante nesse equilíbrio?
+Pessoa: Percebi que não quero montar um plano hoje. Podemos parar por aqui.",,,,,,,,,
+SC-24,2,,,- Compreender o assunto que a pessoa quer retomar.,"Pessoa: Eu queria voltar ao tema que mencionei antes: uma conversa com um colega.
+Terapeuta: O que é importante retomar hoje?
+Pessoa: Acho que por enquanto basta dizer que ainda não aconteceu. Podemos continuar outra vez.",,,,,,,,,
+SC-23,1,,,- Entender o que a pessoa gostaria de organizar nesta conversa.,"Pessoa: Consegui explicar que estou tentando decidir entre duas opções de curso.
+Terapeuta: O que ficou mais claro ao falar disso?
+Pessoa: Percebi que ainda não tenho informação suficiente. Por hoje, já consigo parar por aqui.",,,,,,,,,
+SC-74,2,A pessoa queria pensar em como equilibrar encontros e tempo sozinha.,Notar uma situação recente.,- Explorar as preferências da pessoa sem exigir uma escolha definitiva.,"Pessoa: Quero ver meus amigos, mas também quero ficar sozinha.
+Terapeuta: O que está mais presente hoje?
+Pessoa: As duas coisas. Não sei como escolher.",,,,,,,,,
+SC-22,2,A pessoa queria experimentar anotar uma situação de sobrecarga.,Fazer um registro curto se isso fosse viável.,- Entender a barreira e decidir junto com a pessoa se o registro ainda faz sentido.,"Pessoa: Não consegui fazer o registro.
+Terapeuta: O que tornaria isso mais viável, se você ainda quiser tentar?
+Pessoa: Talvez só uma palavra no celular. Quero testar assim, sem obrigação de preencher tudo.",,,,,,,,,
+SC-64,2,A pessoa queria pensar em uma atividade que talvez queira retomar.,"Conversar sobre o interesse atual, sem forçar uma decisão.",- Explorar o interesse atual da pessoa.,"Pessoa: Ainda não sei se quero voltar a fazer isso.
+Terapeuta: Não precisamos decidir agora.
+Pessoa: É verdade. Acho que por hoje podemos parar.",,,,,,,,,
+SC-59,2,,,- Explorar o tema que a pessoa quer retomar usando somente as informações disponíveis.,"Pessoa: Não lembro o que eu disse na outra sessão e não quero tentar reconstruir agora.
+Terapeuta: Tudo bem, não precisamos reconstruir.
+Pessoa: Prefiro parar por hoje.",,,,,,,,,
+SC-27,3,A pessoa vinha explorando como se sente ao conversar com um familiar.,Continuar somente se a pessoa quisesse.,- Verificar se a pessoa deseja continuar a conversa hoje.,"Pessoa: Não quero continuar esse assunto hoje.
+Terapeuta: Entendido, vamos parar por aqui.
+Pessoa: Sim, prefiro encerrar agora.",,,,,,,,,
+SC-50,2,A pessoa queria pedir ajuda em uma tarefa cotidiana em vez de tentar fazer tudo sozinha.,Escolher uma tarefa pequena em que pedir ajuda parecesse adequado.,- Revisar como foi pedir ajuda e qual foi a resposta recebida.,"Pessoa: Pedi ao meu irmão para buscar uma encomenda.
+Terapeuta: O que aconteceu quando você pediu?
+Pessoa: Ele concordou. Eu poderia ter pedido antes, mas estou satisfeita por ter tentado.",,,,,,,,,
+SC-19,2,A pessoa queria notar como decide adiar o descanso quando há tarefas domésticas pendentes.,Anotar uma situação e o que aconteceu.,- Revisar o registro e compreender a decisão tomada.,"Pessoa: Anotei que terminei as tarefas de casa antes de descansar.
+Terapeuta: O que você percebeu sobre essa decisão?
+Pessoa: Não sei. Só lembrei de escrever, ainda não pensei muito sobre por que fiz essa escolha.",,,,,,,,,
+SC-10,2,A pessoa queria explorar uma conversa difícil que ainda não aconteceu.,"Identificar o que gostaria de comunicar, sem decidir por ela o que fazer.",- Esclarecer o que a pessoa gostaria de comunicar e o que permanece incerto.,"Pessoa: Ainda não sei o que dizer. Preciso encerrar agora porque tenho outro compromisso.
+Terapeuta: Tudo bem, podemos respeitar seu horário.
+Pessoa: Obrigada. Podemos voltar a isso na próxima sessão.",,,,,,,,,
+SC-48,3,A pessoa queria perceber quando escolhia continuar tarefas apesar de estar cansada.,Observar uma decisão de descanso durante a semana.,- Revisar uma decisão de descanso sem transformar um episódio em regra geral.,"Pessoa: Na terça, parei depois de terminar a parte mais urgente.
+Terapeuta: O que você notou ao fazer isso?
+Pessoa: Fiquei menos irritada à noite. Ainda tenho dificuldade de parar, mas dessa vez consegui.",,,,,,,,,
+SC-32,3,A pessoa queria observar como se sente ao dizer não a convites.,Conversar sobre um convite recente.,- Revisar uma situação sem pressupor que a pessoa queira mudar sua resposta.,"Pessoa: Recusei o convite porque não queria ir.
+Terapeuta: Como você se sente em relação a essa decisão agora?
+Pessoa: Tranquila. Não quero combinar nenhuma tarefa para a próxima semana; por hoje, terminamos.",,,,,,,,,
+SC-04,2,A sessão atual deveria explorar como a pessoa decide quando aceitar tarefas extras.,Examinar uma situação recente de pedido de trabalho.,- Entender como a pessoa avalia pedidos adicionais de trabalho.,"Pessoa: Ainda não sei o que responder quando me pedem algo.
+Terapeuta: Podemos olhar para um exemplo recente.
+Pessoa: Antes disso, preciso falar de uma reunião importante amanhã; estou preocupada com ela.",,,,,,,,,
+SC-60,3,A pessoa queria conversar sobre como avisar que precisa de mais tempo para responder.,Revisar uma situação recente de comunicação.,- Identificar uma forma que a pessoa considerou adequada para pedir tempo.,"Pessoa: Disse que responderia no dia seguinte, e isso me deu tempo para pensar.
+Terapeuta: O que funcionou para você?
+Pessoa: Foi claro e respeitoso. Quero parar por aqui hoje.",,,,,,,,,
+SC-85,1,,,- Explorar como a pessoa se sente sobre retomar uma atividade de lazer.,"Pessoa: Uma parte de mim quer voltar a desenhar e outra prefere não criar mais uma obrigação.
+Terapeuta: Não precisamos decidir agora.
+Pessoa: Obrigada. Por hoje, está bom.",,,,,,,,,
+SC-66,2,A pessoa queria explorar uma dúvida sobre organização do tempo.,Examinar uma situação recente.,- Entender uma dúvida sobre a rotina.,"Pessoa: Não consegui esclarecer a dúvida. Também não quero abrir outro assunto hoje.
+Terapeuta: Tudo bem, não precisamos abrir outro assunto.
+Pessoa: Prefiro encerrar a sessão agora.",,,,,,,,,
+SC-87,2,,,- Compreender a preferência atual da pessoa sem presumir histórico ausente.,"Pessoa: Não sei se quero continuar com essa atividade.
+Terapeuta: Podemos deixar a decisão em aberto.
+Pessoa: Sim, mas preciso encerrar agora.",,,,,,,,,
+SC-20,2,A pessoa queria observar como escolhe entre descanso e tarefas.,"Notar uma decisão durante a semana, se surgisse uma oportunidade.",- Entender se houve oportunidade de observar a decisão e o que aconteceu.,"Pessoa: Não anotei nada.
+Terapeuta: O que dificultou isso?
+Pessoa: Não sei, não pensei sobre o assunto.",,,,,,,,,
+SC-11,3,A pessoa vinha tentando falar sobre uma preferência que costuma deixar de expressar.,Retomar o tema somente se a pessoa quisesse continuar explorando-o.,- Verificar se a pessoa quer continuar ou prefere deixar o tema para outro momento.,"Pessoa: Prefiro não falar mais disso hoje.
+Terapeuta: Entendo. Podemos parar por aqui.
+Pessoa: Sim. Talvez eu queira retomar na próxima semana.",,,,,,,,,
+SC-47,3,A pessoa queria entender por que reuniões sem pauta prévia a deixavam desconfortável.,Observar uma reunião e notar que informação teria ajudado.,- Revisar o que a pessoa percebeu sobre pedir informações antes de uma reunião.,"Pessoa: Pedi a pauta antes da reunião.
+Terapeuta: Isso mudou sua experiência?
+Pessoa: Sim, consegui me preparar melhor. Não resolveu tudo, mas foi útil.",,,,,,,,,
+SC-52,2,A pessoa queria notar o que a ajuda a manter a atenção durante um período de estudo.,Testar deixar o celular fora do alcance por um período curto.,"- Revisar a tentativa e o efeito observado, sem generalizar além dela.","Pessoa: Deixei o celular em outro cômodo enquanto estudava.
+Terapeuta: O que você notou nesse período?
+Pessoa: Olhei menos para ele. Ainda me distraí, mas consegui terminar a leitura que tinha planejado.",,,,,,,,,
+SC-57,3,A pessoa queria refletir sobre uma escolha recente sem transformar a conversa em uma lista de tarefas.,Conversar sobre uma escolha concreta.,- Descrever a escolha e o que a pessoa gostaria de levar dela.,"Pessoa: Escolhi não aceitar um convite porque queria ficar em casa.
+Terapeuta: O que você leva dessa escolha?
+Pessoa: Que eu posso escolher sem precisar criar uma tarefa para a semana. Podemos encerrar.",,,,,,,,,
+SC-21,3,A pessoa queria experimentar reservar um horário para uma atividade pessoal.,Testar o horário uma vez e observar como se sentiu.,- Revisar a tentativa e o que foi útil ou difícil.,"Pessoa: Reservei meia hora no domingo.
+Terapeuta: Como foi?
+Pessoa: Gostei de ter o tempo, mas fiquei pensando em outras tarefas. Quero tentar de novo com menos expectativa.",,,,,,,,,
+SC-06,2,A pessoa queria testar uma pausa curta antes de responder a pedidos familiares.,"Experimentar a pausa em uma situação, se surgisse uma oportunidade adequada.",- Entender o que dificultou a tentativa e decidir se ainda faz sentido retomá-la.,"Pessoa: Não fiz a pausa. Minha semana ficou cheia e eu esqueci.
+Terapeuta: O que você gostaria de fazer com esse plano agora?
+Pessoa: Não quero transformar isso em obrigação. Se surgir uma situação, posso tentar; se não, tudo bem.",,,,,,,,,
+SC-44,3,,,- Esclarecer o que a pessoa quer retomar quando não há histórico anterior disponível.,"Pessoa: Qual era mesmo a tarefa que eu tinha para esta semana?
+Terapeuta: Não tenho esse registro aqui. O que você lembra ou gostaria de conversar agora?
+Pessoa: Não lembro e ainda não sei o que quero trazer.",,,,,,,,,
+SC-81,2,A pessoa queria reservar um momento para uma atividade de interesse pessoal.,Experimentar uma vez e observar como foi.,- Explorar o que ajudou e o que atrapalhou a tentativa.,"Pessoa: Fiz a atividade por alguns minutos.
+Terapeuta: Como foi para você?
+Pessoa: Gostei no começo, depois fiquei pensando em outras coisas. Não sei o que isso significa.",,,,,,,,,
+SC-56,2,A pessoa queria observar quando se sente pressionada a responder imediatamente.,Reparar em uma situação e no tempo que gostaria de ter para decidir.,- Revisar a situação observada e a preferência expressa.,"Pessoa: Pedi até amanhã para responder a um convite.
+Terapeuta: O que você percebeu ao fazer isso?
+Pessoa: Consegui conferir meus planos. Por hoje, acho que chegamos ao que eu queria conversar.",,,,,,,,,
+SC-02,3,A pessoa queria comunicar uma necessidade sem se desculpar repetidamente.,Observar uma conversa em que pudesse expressar uma preferência com clareza.,- Revisar uma tentativa de expressar uma preferência e o que a pessoa percebeu.,"Pessoa: Contei à minha irmã que preferia nos encontrarmos mais cedo.
+Terapeuta: Como foi dizer isso?
+Pessoa: Fiquei tensa, mas falei sem me desculpar. Ela concordou. Eu gostaria de conseguir fazer isso também com colegas.",,,,,,,,,
+SC-12,2,A pessoa queria compreender uma dificuldade recente em manter contato com amizades.,"Conversar sobre uma situação recente, sem pressupor que a pessoa queira mudar sua rotina.",- Descrever uma situação recente e identificar o que a pessoa gostaria de fazer a respeito.,"Pessoa: Acho que por hoje é isso. Ainda não decidi se quero mudar alguma coisa.
+Terapeuta: Tudo bem não decidir agora.
+Pessoa: Obrigada por ouvir.",,,,,,,,,
+SC-29,2,A pessoa queria observar uma situação em que expressa uma necessidade.,Conversar sobre uma situação recente.,- Explorar como foi expressar uma necessidade.,"Pessoa: Eu pedi uma mudança no horário, mas não acho que isso tenha sido um grande avanço.
+Terapeuta: O que parece importante registrar sobre isso?
+Pessoa: Só que consegui fazer o pedido. Não quero que isso vire uma história de sucesso.",,,,,,,,,
+SC-51,3,A pessoa queria distinguir vontade própria de pressão ao responder a convites.,Notar o que influenciou uma resposta recente.,- Descrever a decisão e os fatores que a pessoa identificou.,"Pessoa: Pensei um pouco antes de responder ao convite e decidi não ir.
+Terapeuta: O que pesou mais para você?
+Pessoa: Eu realmente queria descansar. Não fiquei esperando que a outra pessoa aprovasse a escolha.",,,,,,,,,
+SC-68,1,,,- Esclarecer que parte de uma rotina a pessoa deseja mudar ou manter.,"Pessoa: Minha rotina anda confusa.
+Terapeuta: Qual parte você gostaria de olhar primeiro?
+Pessoa: Não sei. Talvez o começo da manhã, mas não tenho certeza.",,,,,,,,,
+SC-88,3,A pessoa queria decidir se prefere uma rotina mais estruturada.,Explorar o que é útil e o que parece limitador.,- Identificar uma preferência sem exigir decisão definitiva.,"Pessoa: Gosto de alguma estrutura, mas não quero seguir um horário rígido.
+Terapeuta: O que gostaria de fazer com essa percepção?
+Pessoa: Ainda não sei. Quero parar por hoje.",,,,,,,,,
+SC-78,2,A pessoa queria revisar uma decisão sobre seu horário de estudo.,Conversar sobre o que influenciou a decisão.,- Explorar a decisão e seus efeitos.,"Pessoa: Ainda não entendi por que escolhi aquele horário.
+Terapeuta: O que mais você percebeu?
+Pessoa: Também aconteceu uma coisa com uma amiga, mas não falei sobre isso ainda.",,,,,,,,,
+SC-83,3,A pessoa queria pensar em como pedir aviso prévio sobre mudanças de plano.,Identificar o que gostaria de pedir.,"- Especificar um pedido possível, sem presumir que já foi feito.","Pessoa: Acho que gostaria de receber uma mensagem antes.
+Terapeuta: O que você gostaria que a mensagem esclarecesse?
+Pessoa: Não sei ainda. Não fiz esse pedido.",,,,,,,,,
+SC-03,2,A pessoa relatou adiar respostas a mensagens por receio de escolher as palavras erradas.,Explorar o que costuma passar pela cabeça antes de adiar uma resposta.,- Identificar pensamentos e efeitos associados ao adiamento de respostas.,"Pessoa: Recebi uma mensagem ontem e deixei para depois.
+Terapeuta: O que você percebeu naquele momento?
+Pessoa: Não sei. Só fiquei desconfortável e mudei de assunto.",,,,,,,,,
+SC-49,2,A pessoa queria decidir com mais calma quando aceitava compromissos voluntários.,Considerar a própria disponibilidade antes de responder.,- Revisar uma resposta a um convite voluntário e o que pesou na decisão.,"Pessoa: Desta vez recusei a função porque já tinha outros compromissos.
+Terapeuta: Como foi tomar essa decisão?
+Pessoa: Senti alívio e um pouco de culpa. Mesmo assim, foi a resposta que eu queria dar.",,,,,,,,,
+SC-79,2,A pessoa queria observar uma dificuldade ao pedir ajuda.,Conversar sobre uma situação recente.,- Explorar o que tornou difícil pedir ajuda.,"Pessoa: Eu não pedi ajuda naquela situação.
+Terapeuta: O que dificultou?
+Pessoa: Não sei. Ainda não quero resumir isso como uma lição.",,,,,,,,,
+SC-70,2,A pessoa queria entender por que evita pedir esclarecimentos em reuniões.,Observar uma dúvida que não perguntou.,- Explorar o que a pessoa imagina que aconteceria ao pedir esclarecimento.,"Pessoa: Tive uma dúvida na reunião e não perguntei.
+Terapeuta: O que passou pela sua cabeça?
+Pessoa: Não sei, só percebi que fiquei quieta.",,,,,,,,,
+SC-16,2,A pessoa queria falar sobre uma preferência que costuma esconder.,Explorar o que torna difícil dizer o que prefere.,- Identificar pensamentos e sentimentos associados a expressar uma preferência.,"Pessoa: Quando pensei em dizer o que queria, fiquei com medo de criar um conflito.
+Terapeuta: O que esse medo faz você imaginar?
+Pessoa: Ainda não quero entrar nisso agora.",,,,,,,,,
+SC-58,1,,,- Esclarecer uma prioridade para a conversa.,"Pessoa: Ainda não consegui escolher qual assunto trazer primeiro.
+Terapeuta: Podemos deixar essa escolha em aberto.
+Pessoa: Preciso encerrar agora para chegar a um compromisso.",,,,,,,,,
+SC-82,2,A pessoa queria decidir se preferia receber visitas em casa ou encontrar pessoas fora.,Pensar em uma situação recente.,- Identificar o que a pessoa prefere e em quais condições.,"Pessoa: Na semana passada encontrei alguém fora de casa.
+Terapeuta: O que foi diferente para você?
+Pessoa: Não sei dizer se prefiro assim ou se foi só aquela situação.",,,,,,,,,
+SC-53,2,A pessoa queria entender o que torna difícil iniciar contato com uma amizade.,Notar uma oportunidade de contato que parecesse confortável.,- Revisar uma iniciativa de contato e a experiência da pessoa.,"Pessoa: Enviei uma mensagem para uma amiga propondo um horário para conversarmos.
+Terapeuta: Como foi tomar essa iniciativa?
+Pessoa: Fiquei um pouco nervosa, mas gostei de ter sido direta. Ela ainda não respondeu.",,,,,,,,,
+SC-42,3,,,- Compreender o tema que a pessoa quer abordar hoje sem inventar o conteúdo das sessões ausentes.,"Pessoa: Não consigo lembrar o que conversamos antes.
+Terapeuta: Podemos partir do que você quiser trazer agora.
+Pessoa: Prefiro parar por hoje e pensar no que quero conversar depois.",,,,,,,,,

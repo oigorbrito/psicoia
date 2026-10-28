@@ -7,6 +7,9 @@ Este pacote contém fixtures sintéticos para calibrar a rubrica de `../../docs/
 - `pilot-cases.jsonl`: 88 contextos sintéticos em PT-BR; estes são os únicos dados que uma futura execução de prompt deverá receber.
 - `pilot-labels.jsonl`: ação esperada, fatos de ancoragem, itens que não podem ser afirmados e dimensões provisórias para revisão humana; nunca os forneça ao modelo durante a avaliação.
 - `validate_pilot.py`: valida JSONL, campos obrigatórios, IDs e correspondência entre casos e rótulos, usando apenas a biblioteca padrão do Python.
+- `build_review_forms.py`: cria dois formulários cegos de revisão, com ordem separada, usando apenas `pilot-cases.jsonl`.
+- `review/reviewer-a.csv` e `review/reviewer-b.csv`: formulários independentes em branco; não incluem os rótulos provisórios.
+- `validate_review_forms.py`: verifica se ambos contêm os mesmos 88 casos, em ordens diferentes, sem avaliações preenchidas.
 
 As dimensões de cobertura são `focus_state` (`explored`, `open`, `ambivalent`), `ending_signal` (`none`, `natural`, `explicit`) e `history_state` (`available`, `first_session`, `unavailable`). Elas são rótulos provisórios: `explored` significa que o foco desta sessão foi suficientemente abordado, não que o problema clínico foi resolvido. Os 88 casos variam tarefas realizadas ou não, primeira sessão, histórico indisponível, mudança de assunto, progresso contestado, planos acordados/recusados e pedidos de encerramento. Não incluem casos de crise; esses exigem um protocolo de segurança revisado antes de criar fixtures.
 
@@ -14,4 +17,11 @@ As dimensões de cobertura são `focus_state` (`explored`, `open`, `ambivalent`)
 
 Os casos e rótulos são sintéticos e provisórios, escritos para iniciar a revisão da rubrica. Exigem revisão humana independente, inclusive para confirmar que o encerramento esperado e o foco a levar adiante são apropriados. Não use este piloto para ajustar e reportar desempenho final: o conjunto é conhecido e não tem separação cega.
 
-O pacote não é carregado pelo runtime, não altera prompts upstream e não faz chamadas a modelos. A versão de teste cego deve ser criada separadamente, congelada antes de qualquer comparação e dimensionada com base na diferença mínima relevante e na variabilidade do piloto.
+Para recriar e validar os formulários a partir da raiz do repositório:
+
+```bash
+python experiments/session-closure-continuity/build_review_forms.py
+python experiments/session-closure-continuity/validate_review_forms.py
+```
+
+Não compare as respostas dos avaliadores antes de ambos concluírem os formulários independentes. O pacote não é carregado pelo runtime, não altera prompts upstream e não faz chamadas a modelos. A versão de teste cego deve ser criada separadamente, congelada antes de qualquer comparação e dimensionada com base na diferença mínima relevante e na variabilidade do piloto.
