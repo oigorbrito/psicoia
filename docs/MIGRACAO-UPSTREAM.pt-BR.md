@@ -43,21 +43,21 @@ Esta contagem é apenas uma fotografia da comparação por caminho e conteúdo. 
 - Foi criada a branch local `integration/psicoia`, em worktree separada `../psicoia-integration`, baseada em `origin/main`.
 - O merge local de `original` foi concluído no commit `af5cc72` (`Integrate PsychAgent upstream and evidence template`); o único conflito de árvore foi `README.md`, resolvido com a versão local de apresentação PsicoIA.
 - A comparação por blob do commit de integração confirma que **1.392 dos 1.393 arquivos upstream estão idênticos** ao commit `original`; `README.md` é a única exceção inicial de apresentação/documentação. Diferenças de EOL na cópia de trabalho do Windows não foram confundidas com mudanças de blob.
-- No `HEAD` candidato `5d06503`, a comparação final encontrou **1.384 blobs idênticos, 9 diferentes e 0 ausentes** entre os 1.393 caminhos upstream. Os nove são `.gitignore` e oito READMEs (raiz, legado chinês, assets, perfis, configs, prompts, src e src/web); os demais arquivos upstream, inclusive código/runtime, permanecem byte-a-byte idênticos. `.gitignore` remove apenas as regras que ocultavam `docs/` e `tests/` locais.
+- No snapshot do candidato `9e547ed`, a comparação por blob encontrou **1.384 idênticos, 9 diferentes e 0 ausentes** entre os 1.393 caminhos upstream. Os nove são `.gitignore` e oito READMEs (raiz, legado chinês, assets, perfis, configs, prompts, src e src/web); os demais arquivos upstream, inclusive código/runtime, permanecem byte-a-byte idênticos. `.gitignore` remove apenas as regras que ocultavam `docs/` e `tests/` locais.
 - A camada de locale/API/output_language, catálogos traduzidos e testes associados permanece fora do candidato por estar pendente. O commit `10a251f` adicionou governança, pares de documentação PT-BR/inglês aprovados, harness e testes de documentação/harness.
-- Os commits `af5cc72`, `10a251f` e `5d06503` existem somente localmente e ainda não foram enviados ao remoto. A árvore de origem e `master` permanecem intactos.
+- Os commits de integração/documentação/auditoria `af5cc72`, `10a251f`, `5d06503`, `b39e662`, `e896ba1` e `9e547ed` existem somente localmente e ainda não foram enviados ao remoto. A árvore de origem e `master` permanecem intactos.
 
 ## Estado e limites
 
 - Além dos caminhos upstream, a árvore fonte contém 73 arquivos locais adicionais nesta fotografia (excluídos caches e arquivos de editor); a lista e classificação inicial estão no inventário. Não se deve inferir que estejam commitados ou publicados.
-- A classificação dos 101 arquivos diferentes permanece **pendente**; não há caminhos upstream ausentes na comparação corrigida. Nenhuma diferença funcional está autorizada pela política de cópia literal. Arquivos de prompts, dados, perfis, catálogos e documentação exigem revisão apropriada à sua natureza.
+- Os 101 diffs estão listados e classificados por grupo; a revisão semântica dos oito READMEs e dos 33 prompts, a validação por benchmark e o aceite individual permanecem **pendentes**. Não há caminhos upstream ausentes. Nenhuma diferença funcional está autorizada pela política de cópia literal. Arquivos de prompts, dados, perfis e catálogos exigem revisão apropriada à sua natureza.
 - O nome do projeto de destino é `psicoia`. A atribuição acadêmica, referências, identificadores técnicos e proveniência do PsychAgent upstream devem ser preservados; diferenças de nome não provam autoria ou licença.
 - A localização aprovada para conteúdo novo é PT-BR principal e inglês secundário. Não se declara que a localização do repositório esteja completa.
 
 ## Próxima etapa segura
 
-1. Atualizar o snapshot upstream (`git fetch upstream`) e registrar o novo SHA antes de uma comparação futura.
-2. Gerar uma lista reproduzível dos caminhos alterados/adicionados/removidos e classificar cada mudança com evidência.
-3. Revisar licença e proveniência antes de preparar a integração.
-4. Integrar em uma branch de trabalho baseada na base acordada, sem rebase entre históricos sem ancestral comum e sem force push.
-5. Registrar testes executados e falhas preexistentes; revisar o diff final antes de qualquer publicação.
+1. Obter decisão documentada sobre licença/proveniência antes de qualquer publicação; o harness ainda reporta `GAP`.
+2. Revisar semanticamente os READMEs e prompts pendentes, incluindo tags/defaults de Jinja; só considerar avaliação comparativa de prompts após autorização e definição de conjunto fixo.
+3. Classificar individualmente os 73 arquivos adicionais; manter os dois catálogos `.partial`, testes de contagem e alterações de locale/API/retrieval separados até validação/autorização.
+4. Atualizar o SHA upstream antes de qualquer comparação futura e registrar diferenças novas.
+5. Reexecutar testes apropriados, registrar limitações e revisar o diff final; não fazer push sem revisão explícita.

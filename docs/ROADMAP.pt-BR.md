@@ -15,12 +15,12 @@ Este roadmap prioriza ações com base nas evidências locais registradas. **Nã
 
 ## Prioridade 1 — classificar diferenças em relação ao upstream
 
-**Estado: triagem por grupos concluída; revisão linha a linha pendente.** No snapshot `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`, 1.292 dos 1.393 caminhos rastreados pelo upstream estavam idênticos; 101 diferiam e nenhum estava ausente. A árvore também contém 73 arquivos locais adicionais (excluindo caches e lixo de editor); dois catálogos têm sufixo `.partial`. Consulte o inventário para as categorias e decisões pendentes.
+**Estado: todos os 101 diffs estão listados e classificados por grupo; validação semântica e aceite individual permanecem pendentes.** No snapshot `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`, 1.292 dos 1.393 caminhos upstream estavam idênticos; 101 diferiam e nenhum estava ausente. Os diffs completos de código/configuração e avaliação foram examinados; os 33 prompts tiveram comparação estrutural Jinja, mas falta avaliação semântica/com benchmark. A árvore também contém 73 arquivos locais adicionais (excluindo caches e lixo de editor); dois catálogos têm sufixo `.partial`. Consulte o inventário para evidências e decisões pendentes.
 
-- Classificar cada caminho diferente como tradução aprovada, alteração de marca em prosa, arquivo upstream adicionado/removido ou desconhecido.
-- Tratar qualquer diferença de lógica, dependência, dado, interface técnica ou identificador como desvio: não incorporar como parte da cópia literal; reverter ou pedir autorização separada antes de alterar.
-- Inspecionar com prioridade prompts, configurações, dados, perfis, catálogos e contratos técnicos, preservando-os sem alteração não autorizada.
-- Atualizar `docs/MIGRACAO-UPSTREAM.pt-BR.md` e `docs/INVENTARIO-DIFERENCAS-UPSTREAM.pt-BR.md` com decisões e evidência, inclusive itens ainda sem resolução.
+- Revisar semanticamente a prosa dos oito READMEs localizados e os 33 prompts (incluindo diferenças de placeholders/defaults e a perda de três ocorrências de `{{number}}` no seletor de habilidades).
+- Tratar mudanças de API, runtime, defaults, parsing e recuperação como desvios bloqueadores; não incorporá-las sem autorização separada e validação adequada.
+- Manter em revisão específica prompts de avaliação/reparo, dados, perfis, catálogos e contratos técnicos; nunca inferir que teste estrutural comprova equivalência clínica ou comportamental.
+- Registrar em `docs/MIGRACAO-UPSTREAM.pt-BR.md` qualquer nova decisão, validação ou evidência; manter itens sem evidência como pendentes.
 
 **Critério de conclusão:** inventário reproduzível com classificação e justificativa para cada diferença relevante; itens sem evidência permanecem marcados como pendentes.
 
@@ -36,7 +36,7 @@ Este roadmap prioriza ações com base nas evidências locais registradas. **Nã
 
 ## Prioridade 2 — validação técnica
 
-**Estado: verificado parcialmente no candidato `af5cc72` e na documentação staged.** `python -m pytest -q --import-mode=importlib`: 9 passaram. `python -m pytest -q`: falha na coleta por colisão de módulo entre os dois arquivos `test_harness.py` do repositório e do template. Harness: lacuna de licença e testes web ausentes; estado externo desconhecido. A suíte web e os validadores de catálogos não foram incluídos porque dependem de localização pendente.
+**Estado: verificado parcialmente no candidato `9e547ed`.** `python -m pytest -q --import-mode=importlib`: 9 passaram. `python -m pytest -q`: falha na coleta por colisão de módulo entre os dois arquivos `test_harness.py` do repositório e do template. Harness: lacuna de licença e testes web ausentes; estado externo desconhecido. A suíte web e os validadores de catálogos não foram incluídos porque dependem de localização pendente.
 
 - Registrar e investigar a discrepância entre a expectativa de 23 e a contagem observada de 24; não alterar testes ou código para eliminar a falha sem autorização explícita e confirmação do critério esperado.
 - Reexecutar pytest, testes web, validadores e harness na branch de integração após a revisão final; documentar a limitação de coleta do pytest padrão e a ausência atual de testes web.

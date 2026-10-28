@@ -15,12 +15,12 @@ This roadmap prioritizes work based on recorded local evidence. It is **not a de
 
 ## Priority 1 — classify upstream differences
 
-**Status: group-level triage complete; line-by-line review pending.** At snapshot `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`, 1,292 of 1,393 upstream-tracked paths were identical; 101 differed and none were missing. The local tree also contains 73 additional files (excluding caches/editor clutter); two catalogs have a `.partial` suffix. See the inventory for categories and pending decisions.
+**Status: all 101 diffs are listed and classified by group; semantic validation and individual acceptance remain pending.** At snapshot `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`, 1,292 of 1,393 upstream-tracked paths were identical; 101 differed and none were missing. Complete code/config and evaluation diffs were examined; the 33 prompts received a structural Jinja comparison, but still need semantic review and benchmark evaluation. The local tree also contains 73 additional files (excluding caches/editor clutter); two catalogs have a `.partial` suffix. See the inventory for evidence and pending decisions.
 
-- Classify each differing path as approved translation, prose branding change, upstream file addition/removal, or unknown.
-- Treat any logic, dependency, data, technical interface, or identifier difference as a deviation: do not include it as part of the literal copy; revert it or obtain separate authorization before changing it.
-- Review prompts, configs, data, profiles, catalogs, and technical contracts while preserving them against unauthorized changes.
-- Update `docs/MIGRACAO-UPSTREAM.pt-BR.md` and `docs/INVENTARIO-DIFERENCAS-UPSTREAM.pt-BR.md` with decisions and evidence, including unresolved items.
+- Semantically review the prose in the eight localized READMEs and the 33 prompts, including placeholder/default changes and three removed `{{number}}` occurrences in the skill selector.
+- Treat API, runtime, default, parsing, and retrieval changes as blocking deviations; do not include them without separate authorization and appropriate validation.
+- Keep evaluation/repair prompts, data, profiles, catalogs, and technical contracts under specific review; structural tests do not prove clinical or behavioral equivalence.
+- Record new decisions, validation, or evidence in `docs/MIGRACAO-UPSTREAM.pt-BR.md`; leave items without evidence pending.
 
 **Completion evidence:** reproducible inventory with a rationale for each material difference; items lacking evidence remain pending.
 
@@ -36,7 +36,7 @@ This roadmap prioritizes work based on recorded local evidence. It is **not a de
 
 ## Priority 2 — technical validation
 
-**Status: partially verified on candidate `af5cc72` and staged documentation.** `python -m pytest -q --import-mode=importlib`: 9 passed. `python -m pytest -q`: collection fails due to a module-name collision between the repository and template `test_harness.py` files. Harness: license and web-test gaps; external status unknown. Web tests and catalog validators were not included because they depend on pending localization work.
+**Status: partially verified on candidate `9e547ed`.** `python -m pytest -q --import-mode=importlib`: 9 passed. `python -m pytest -q`: collection fails due to a module-name collision between the repository and template `test_harness.py` files. Harness: license and web-test gaps; external status unknown. Web tests and catalog validators were not included because they depend on pending localization work.
 
 - Keep the default pytest collection failure documented; do not hide it by changing the tests or deleting template content.
 - Rerun pytest, web tests, catalog validators, and the harness on the integration branch after final review; document the current absence of web tests.
