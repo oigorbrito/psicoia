@@ -20,6 +20,12 @@ Os templates por modalidade usam uma estrutura como:
   profile/user.jinja2
 ```
 
+Os prompts de avaliação costumam ficar neste caminho:
+
+```text
+prompts/eval/<method_name>/<prompt_name>.txt
+```
+
 ## Contratos e cuidados
 
 Os caminhos e nomes de arquivo são usados diretamente pelo código; renomeá-los pode interromper a execução. Alguns prompts de aconselhamento requerem `<think>` e `<response>`, e o runner extrai `<response>` para o transcript. O loader de avaliação também aceita arquivos diretamente em `prompts/eval/`.

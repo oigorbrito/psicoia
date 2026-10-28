@@ -7,7 +7,7 @@ This guide explains which configuration files are used by `sample`, `eval`, and 
 ```text
 sample: baseline + runtime + dataset
 eval: runtime
-rft: baseline + runtime + dataset + RFT runtime
+rft: baseline + runtime + dataset + rft runtime
 ```
 
 The root [`../README.md`](../README.md) contains commands for getting started. Use this guide when changing parameters, endpoints, dataset size, or configuration boundaries.

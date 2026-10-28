@@ -59,27 +59,37 @@ FRONTEND_PORT=5173
 BACKEND_HOST=localhost
 ```
 
-Inicie o backend e o frontend em terminais separados:
+Inicie o backend:
 
 ```bash
 ./run_backend.sh
+```
+
+Em um segundo terminal, inicie o frontend:
+
+```bash
 ./run_frontend.sh
 ```
 
-Endpoints padrão:
+O endpoint padrão do backend é:
 
 ```text
-Frontend: http://localhost:5173
-Backend:  http://localhost:8000
-Health:   http://localhost:8000/health
+http://localhost:8000
 ```
+
+O frontend é servido em `http://localhost:5173`; o endpoint de saúde do backend é `http://localhost:8000/health`.
 
 ## Configuração manual
 
-No diretório `src/web`:
+No diretório `src/web`, instale as dependências do frontend:
 
 ```bash
 npm install
+```
+
+Prepare o ambiente Python do backend:
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install --upgrade pip
@@ -141,12 +151,23 @@ O arquivo padrão do banco de dados local é `data.db`.
 
 ## Build
 
+Gere o build do frontend:
+
 ```bash
 npm run build
+```
+
+Para visualizar o build de produção:
+
+```bash
 npm run preview
 ```
 
-Os arquivos gerados pelo build são gravados em `dist/`.
+Os arquivos de build são gravados em:
+
+```text
+dist/
+```
 
 ## Requisitos e solução de problemas
 

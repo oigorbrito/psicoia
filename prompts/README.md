@@ -38,7 +38,13 @@ The paths and filenames are read directly by `src/sample/prompt_manager.py`. Cou
 
 ### `eval/`
 
-Scoring prompts for `src.eval`, usually stored as `prompts/eval/<method_name>/<prompt_name>.txt`, for example `ctrs/collaboration.txt`, `miti/empathy.txt`, `psc/transference.txt`, and `tes/warmth.txt`. Some prompts, such as `human_vs_llm_eval.txt`, are directly in `prompts/eval/`; `src/eval/utils.py::load_prompt()` supports both layouts.
+Scoring prompts for `src.eval`, usually stored as:
+
+```text
+prompts/eval/<method_name>/<prompt_name>.txt
+```
+
+For example, `ctrs/collaboration.txt`, `miti/empathy.txt`, `psc/transference.txt`, and `tes/warmth.txt`. Some prompts, such as `human_vs_llm_eval.txt`, are directly in `prompts/eval/`; `src/eval/utils.py::load_prompt()` supports both layouts.
 
 ## Compatibility and safe editing
 

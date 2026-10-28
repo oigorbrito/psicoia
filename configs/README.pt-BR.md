@@ -7,7 +7,7 @@ Este guia indica quais configurações usar nos fluxos `sample`, `eval` e `rft`,
 ```text
 sample: baseline + runtime + dataset
 eval: runtime
-rft: baseline + runtime + dataset + RFT runtime
+rft: baseline + runtime + dataset + rft runtime
 ```
 
 ### `sample`

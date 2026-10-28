@@ -59,27 +59,37 @@ FRONTEND_PORT=5173
 BACKEND_HOST=localhost
 ```
 
-Start the backend and frontend in separate terminals:
+Start the backend:
 
 ```bash
 ./run_backend.sh
+```
+
+In a second terminal, start the frontend:
+
+```bash
 ./run_frontend.sh
 ```
 
-Default endpoints:
+The default backend endpoint is:
 
 ```text
-Frontend: http://localhost:5173
-Backend:  http://localhost:8000
-Health:   http://localhost:8000/health
+http://localhost:8000
 ```
+
+The frontend is served at `http://localhost:5173`; the backend health endpoint is `http://localhost:8000/health`.
 
 ## Manual setup
 
-From `src/web`:
+From `src/web`, install the frontend dependencies:
 
 ```bash
 npm install
+```
+
+Prepare the Python backend environment:
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install --upgrade pip
@@ -141,12 +151,23 @@ The default local database file is `data.db`.
 
 ## Build
 
+Build the frontend:
+
 ```bash
 npm run build
+```
+
+Preview the production build:
+
+```bash
 npm run preview
 ```
 
-Build output is written to `dist/`.
+Build output is written to:
+
+```text
+dist/
+```
 
 ## Requirements and troubleshooting
 

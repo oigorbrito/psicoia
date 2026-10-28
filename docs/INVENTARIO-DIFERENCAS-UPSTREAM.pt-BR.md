@@ -10,7 +10,7 @@ Este inventário compara a árvore de trabalho local com os **1.393 caminhos** d
 
 **Correção de auditoria:** a primeira contagem deste trabalho usou a saída com quoting padrão do Git e interpretou cinco caminhos não ASCII como ausentes. A comparação foi repetida com quoting desativado; esses arquivos existem localmente. Os números acima substituem os números anteriores.
 
-**Progresso da revisão:** os diffs completos de 26 caminhos `src/web`, sete caminhos `src/sample`, um YAML de runtime, 25 módulos de avaliação e 33 templates de prompt foram examinados/classificados abaixo; nenhum desses desvios técnicos/comportamentais foi levado ao candidato. Para avaliação, AST mascarando strings não mostrou mudança estrutural; para prompts, sintaxe Jinja foi analisada e referências/variáveis comparadas. Benchmarks e revisão semântica de prompts continuam pendentes. O `.gitignore` foi conferido. A revisão semântica dos oito READMEs também permanece pendente; nenhuma classe ainda sem validação ganha autorização implícita.
+**Progresso da revisão:** os diffs completos de 26 caminhos `src/web`, sete caminhos `src/sample`, um YAML de runtime, 25 módulos de avaliação e 33 templates de prompt foram examinados/classificados abaixo; nenhum desses desvios técnicos/comportamentais foi levado ao candidato. Para avaliação, AST mascarando strings não mostrou mudança estrutural; para prompts, sintaxe Jinja foi analisada e referências/variáveis comparadas. Benchmarks e revisão semântica de prompts continuam pendentes. Os exemplos/fences dos oito READMEs foram comparados com upstream; prosa continua pendente de revisão semântica. O `.gitignore` foi conferido; nenhuma classe ainda sem validação ganha autorização implícita.
 
 ## Arquivos locais adicionais
 
@@ -71,6 +71,15 @@ Essas mudanças não são cópia literal. Decisão atual do usuário: manter PT-
 - `prompts/README.md`
 - `src/README.md`
 - `src/web/README.md`
+
+## Revisão dos exemplos técnicos nos READMEs
+
+Comparação de conteúdo dos blocos cercados entre upstream e documentação inglesa do candidato (normalizando apenas duplicatas dos READMEs upstream bilíngues): `README.md` (11/11 idênticos), `assets/profiles/README.md` (1/1), `configs/README.md` (1/1), `prompts/README.md` (2/2 após restaurar o exemplo `prompts/eval/<method_name>/<prompt_name>.txt`), além de `assets/README.md` e `src/README.md` sem blocos cercados. O exemplo `rft runtime` em `configs/README.md` foi restaurado com a mesma grafia do upstream. Em `src/web/README.md`, os comandos de iniciar backend/frontend e build/preview foram separados em blocos para não sugerir execução simultânea no mesmo terminal; os blocos técnicos correspondem ao upstream depois de consolidar duplicatas, exceto pelos itens abaixo.
+
+- `cd PsychAgent_v0402` foi omitido por ser um nome antigo de diretório do projeto, não o diretório garantido do destino.
+- `cd src/web` foi movido para a instrução em prosa “From `src/web`” / “No diretório `src/web`”.
+- O bloco original com endpoints em três linhas foi substituído por um bloco preservando `http://localhost:8000` e texto com os endpoints frontend/health.
+- `README_CN.md` foi deliberadamente convertido em ponte curta para os READMEs mantidos; seus 11 blocos originais não foram preservados nesse caminho. O conteúdo de apresentação e comandos é coberto pelos READMEs atuais, mas a equivalência semântica completa da prosa dos oito READMEs permanece pendente.
 
 ## Revisão detalhada do grupo web (26 arquivos upstream diferentes)
 
