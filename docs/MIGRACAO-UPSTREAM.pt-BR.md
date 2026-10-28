@@ -23,7 +23,7 @@ Na comparação byte a byte da árvore de trabalho local com os caminhos rastrea
 - presentes e diferentes: **101**;
 - não encontrados localmente: **0**.
 
-Esta contagem é apenas uma fotografia da comparação por caminho e conteúdo. As diferenças ainda não foram classificadas. Pela política acordada, somente tradução aprovada e alteração de marca em prosa de apresentação são permitidas; qualquer mudança funcional ou de identificador técnico é um desvio bloqueador, não uma adaptação aceita. A contagem também não valida arquivos locais adicionais, conteúdo, licenças, direitos de redistribuição ou qualidade das traduções.
+Esta contagem é uma fotografia histórica da árvore fonte. Os 101 diffs já foram listados e classificados por grupo no inventário; a revisão semântica e o aceite de conteúdo continuam pendentes. Pela política acordada, somente tradução aprovada e alteração de marca em prosa de apresentação são permitidas; qualquer mudança funcional ou de identificador técnico é um desvio bloqueador, não uma adaptação aceita. A contagem não valida arquivos locais adicionais, conteúdo, licença, direitos de redistribuição ou qualidade de tradução.
 
 ## Salvaguarda local antes da integração
 
@@ -31,6 +31,13 @@ Esta contagem é apenas uma fotografia da comparação por caminho e conteúdo. 
 - Foi criado fora do repositório `../psicoia-worktree-before-integration.tar.gz` (52 MB), excluindo `.git`; o teste `tar -tzf` passou. SHA-256: `bf5ea3b95581ded2e29ff1a97243a23d63759f7a65c0086d097f6fc18b597bc0`.
 - Os refs/histórico Git foram salvos em `../psicoia-git-refs-before-integration.bundle` (54 MB); `git bundle verify` passou e registrou sete refs. SHA-256: `0fef368c5132d1bba52e8b8b08905f47df510ae837999adce8cc6150276ec939`.
 - Os dois arquivos estão no mesmo volume local, portanto não protegem contra falha desse disco. Na fotografia da etapa de salvaguarda ainda não havia checkout nem integração.
+
+## Evidência local de licença e proveniência
+
+- No commit upstream `original` consultado, os 1.393 caminhos rastreados não incluem nomes `LICENSE`, `COPYING`, `NOTICE` ou `PATENT`; `git grep` não encontrou marcadores `SPDX-License-Identifier`, copyright ou declaração `Licensed under` no conteúdo rastreado.
+- `origin/main` contém 22 caminhos; o único nome parecido com licença é `evidence-repo-template/LICENSE-SELECT.md`. O próprio arquivo explica que é apenas um gate/template, não uma licença concedida nem uma escolha pelo projeto.
+- O harness do candidato retorna `GAP` para licença reconhecida. Não foi selecionada nem declarada licença. Essa constatação local não determina direitos autorais, autorização de redistribuição ou termos de dependências, modelos, datasets, perfis, imagens e artigo; tampouco substitui consulta jurídica ou evidência autoritativa dos titulares.
+- A busca é limitada aos refs/snapshots locais indicados; não é uma consulta atualizada à plataforma ou aos autores.
 
 ## Decisão de escopo atual
 
@@ -43,10 +50,10 @@ Esta contagem é apenas uma fotografia da comparação por caminho e conteúdo. 
 - Foi criada a branch local `integration/psicoia`, em worktree separada `../psicoia-integration`, baseada em `origin/main`.
 - O merge local de `original` foi concluído no commit `af5cc72` (`Integrate PsychAgent upstream and evidence template`); o único conflito de árvore foi `README.md`, resolvido com a versão local de apresentação PsicoIA.
 - A comparação por blob do commit de integração confirma que **1.392 dos 1.393 arquivos upstream estão idênticos** ao commit `original`; `README.md` é a única exceção inicial de apresentação/documentação. Diferenças de EOL na cópia de trabalho do Windows não foram confundidas com mudanças de blob.
-- No snapshot do candidato `9e547ed`, a comparação por blob encontrou **1.384 idênticos, 9 diferentes e 0 ausentes** entre os 1.393 caminhos upstream. O commit atual `17564a9` acrescentou apenas registros de auditoria; a lista de blobs upstream permanece a mesma. Os nove são `.gitignore` e oito READMEs (raiz, legado chinês, assets, perfis, configs, prompts, src e src/web); os demais arquivos upstream, inclusive código/runtime, permanecem byte-a-byte idênticos. `.gitignore` remove apenas as regras que ocultavam `docs/` e `tests/` locais.
+- No `HEAD` candidato `6b34cd5`, a comparação por blob encontrou **1.384 idênticos, 9 diferentes e 0 ausentes** entre os 1.393 caminhos upstream. As nove diferenças são `.gitignore` e oito READMEs (raiz, legado chinês, assets, perfis, configs, prompts, src e src/web); os demais caminhos, inclusive código/runtime, permanecem byte-a-byte idênticos. `.gitignore` remove apenas as regras que ocultavam `docs/` e `tests/` locais. Os nove são `.gitignore` e oito READMEs (raiz, legado chinês, assets, perfis, configs, prompts, src e src/web); os demais arquivos upstream, inclusive código/runtime, permanecem byte-a-byte idênticos. `.gitignore` remove apenas as regras que ocultavam `docs/` e `tests/` locais.
 - Dos 73 caminhos locais adicionais da árvore fonte, 33 foram selecionados para o candidato (documentação/readmes, governança, skills, política, dois testes documentais/harness e harness); os outros 40 permanecem fora: 26 catálogos, dez testes vinculados à localização, dois scripts de catálogo, recurso i18n web e `.gitattributes`. O candidato também preserva 21 caminhos do template em `origin/main`.
 - A camada de locale/API/output_language e catálogos traduzidos permanece fora por estar pendente. O commit `10a251f` adicionou governança, documentação PT-BR/inglês, harness e testes documentais/harness; commits posteriores registram a classificação e corrigem exemplos de documentação.
-- Os commits de integração/documentação/auditoria `af5cc72`, `10a251f`, `5d06503`, `b39e662`, `e896ba1` e `9e547ed` existem somente localmente e ainda não foram enviados ao remoto. A árvore de origem e `master` permanecem intactos.
+- O commit de integração de código é `af5cc72`; o candidato está atualmente em `6b34cd5`, branch `integration/psicoia`, 11 commits à frente de `origin/main`. Todos os commits do candidato são locais e ainda não foram enviados ao remoto. A árvore de origem e `master` permanecem intactos.
 
 ## Estado e limites
 
