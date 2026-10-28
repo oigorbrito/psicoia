@@ -27,6 +27,10 @@ Cover at least these situations:
 
 Apply the same cases to all five modalities (`bt`, `cbt`, `het`, `pdt`, `pmt`) if the block is shared. Keep separate development and blind test sets; size the test set based on the minimum relevant difference and variability observed in the pilot, without tuning the prompt on the blind set.
 
+### Current pilot coverage (provisional labels)
+
+The pilot has 36 cases: expected action `close` in 22 and `continue` in 14; focus `explored` in 15, `open` in 19, and `ambivalent` in 2; ending signal `explicit` in 7, `natural` in 7, and `none` in 22; history `available` in 32, `first_session` in 2, and `unavailable` in 2. These numbers describe the current labels only; they have not yet been independently reviewed. They do not establish balanced coverage or benchmark validity. Review strata and labels before creating the blind set.
+
 ## Comparison
 
 - Freeze and record the baseline prompt, variant, model/version, generation parameters, tools, and run date.

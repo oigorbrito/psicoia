@@ -2,6 +2,7 @@
 """Validate the synthetic session-closure pilot fixtures; makes no model calls."""
 
 import json
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -24,6 +25,14 @@ LABEL_FIELDS = {
     "carry_forward",
     "must_not_claim",
     "rationale",
+    "focus_state",
+    "ending_signal",
+    "history_state",
+}
+LABEL_DIMENSIONS = {
+    "focus_state": {"explored", "open", "ambivalent"},
+    "ending_signal": {"none", "natural", "explicit"},
+    "history_state": {"available", "first_session", "unavailable"},
 }
 
 
@@ -75,12 +84,19 @@ def main() -> None:
         case_id = row["id"]
         require(LABEL_FIELDS <= row.keys(), f"{case_id}: missing label fields {sorted(LABEL_FIELDS - row.keys())}")
         require(row["expected_action"] in {"close", "continue"}, f"{case_id}: invalid expected_action")
+        for field, allowed in LABEL_DIMENSIONS.items():
+            require(row[field] in allowed, f"{case_id}: invalid {field}={row[field]!r}")
         require(isinstance(row["grounding_facts"], list) and row["grounding_facts"], f"{case_id}: grounding_facts must be non-empty")
         require(isinstance(row["must_not_claim"], list), f"{case_id}: must_not_claim must be a list")
         require(isinstance(row["carry_forward"], str) and row["carry_forward"].strip(), f"{case_id}: carry_forward must be non-empty")
         require(isinstance(row["rationale"], str) and row["rationale"].strip(), f"{case_id}: rationale must be non-empty")
 
     print(f"Pilot fixtures valid: {EXPECTED_COUNT} synthetic cases and labels; no model calls performed.")
+    for field in LABEL_DIMENSIONS:
+        counts = Counter(row[field] for row in labels)
+        print(f"{field}: {dict(sorted(counts.items()))}")
+    action_by_signal = Counter((row["ending_signal"], row["expected_action"]) for row in labels)
+    print(f"ending_signal × expected_action: {dict(sorted(action_by_signal.items()))}")
 
 
 if __name__ == "__main__":
