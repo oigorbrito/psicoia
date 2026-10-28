@@ -293,6 +293,12 @@ Arquivos com instruções de reparo de JSON modificadas: `src/eval/core/base.py`
 - `configs/runtime/psychagent_sglang_local.yaml`
 - `.gitignore`
 
-## Próximo passo
+## Próximos gates seguros
 
-Revisar os grupos bloqueadores em diffs menores e separar: (a) localização de UI/documentação aprovada; (b) alterações comportamentais ou contratos, que não entram na cópia literal sem autorização específica; (c) prompts e recuperação, que precisam de validação comportamental própria. Não reverter automaticamente: preserve primeiro a árvore local e decida cada classe com o usuário.
+1. Revisar semanticamente a prosa dos READMEs localizados; links e blocos técnicos foram verificados, mas isso não comprova fidelidade da tradução.
+2. Manter os 33 prompts e as instruções de reparo de avaliação fora do candidato até autorização de comparação comportamental em conjunto fixo e revisão humana. Preservar placeholders/valores de compatibilidade e investigar as diferenças registradas (`output_language`, defaults traduzidos e contagem `{{number}}`).
+3. Manter fora do candidato os 26 catálogos localizados e a implementação de runtime de locale/retrieval; resolver a discrepância 23/24 sem editar o teste por conveniência, validar provenance, idioma e recuperação/cache antes de habilitar.
+4. Classificar individualmente os 10 testes de locale restantes, os dois scripts de catálogo e `.gitattributes`; não copiá-los em bloco.
+5. Obter evidência de licença/proveniência antes de qualquer distribuição. Não escolher licença por conveniência.
+
+Não descarte nem sobrescreva o trabalho pendente na árvore fonte. Toda inclusão adicional deve ser revisada contra `original` e registrada no manifesto.
