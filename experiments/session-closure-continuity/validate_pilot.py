@@ -96,7 +96,7 @@ def main() -> None:
         counts = Counter(row[field] for row in labels)
         print(f"{field}: {dict(sorted(counts.items()))}")
     action_by_signal = Counter((row["ending_signal"], row["expected_action"]) for row in labels)
-    print(f"ending_signal × expected_action: {dict(sorted(action_by_signal.items()))}")
+    print(f"ending_signal by expected_action: {dict(sorted(action_by_signal.items()))}")
 
 
 if __name__ == "__main__":

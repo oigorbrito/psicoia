@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build two independent, label-blind human-review CSVs from pilot cases only."""
 
+import argparse
 import csv
 import json
 import random
@@ -55,7 +56,29 @@ def form_row(case: dict) -> dict[str, str | int]:
     }
 
 
+def has_completed_reviews() -> bool:
+    for reviewer in ("reviewer-a.csv", "reviewer-b.csv"):
+        path = REVIEW_DIR / reviewer
+        if not path.exists():
+            continue
+        with path.open(encoding="utf-8-sig", newline="") as handle:
+            for row in csv.DictReader(handle):
+                if any(row.get(column, "").strip() for column in REVIEW_COLUMNS):
+                    return True
+    return False
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="overwrite existing review entries (destructive; use only after backing them up)",
+    )
+    args = parser.parse_args()
+    if has_completed_reviews() and not args.force:
+        raise SystemExit("Refusing to overwrite filled review forms; back them up and pass --force only if intended.")
+
     cases = load_cases()
     REVIEW_DIR.mkdir(parents=True, exist_ok=True)
     base_rows = [form_row(case) for case in cases]
