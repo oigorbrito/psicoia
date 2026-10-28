@@ -320,6 +320,6 @@ Migration policy: the upstream code is copied literally; no fixes, improvements,
 
 - [Migration and localization roadmap](docs/ROADMAP.md) records evidence-based priorities without promising delivery dates.
 - [Agent instructions](AGENTS.md) describe local evidence and change-safety rules.
-- [Testing guide](docs/TESTING.md) lists verification commands and their limits.
-- [Maturity notes](docs/MATURITY.md) and [project state](policy/project-state.json) record the target and known unknowns; they do not claim compliance.
-- [Security reporting status](SECURITY.md) documents that a private reporting channel has not been verified.
+- [Testing guide](docs/TESTING.en.md) lists verification commands and their limits.
+- [Maturity notes](docs/MATURITY.en.md) and [project state](policy/project-state.json) record the target and known unknowns; they do not claim compliance.
+- [Security reporting status](SECURITY.en.md) documents that a private reporting channel has not been verified.
