@@ -63,4 +63,4 @@ O benchmark PsychEval e as métricas atualmente presentes no repositório não m
 
 ## Próximo passo
 
-Antes de redigir uma variante, montar e revisar o conjunto congelado, os rótulos de encerramento e os exemplos-âncora da rubrica. Preservar o prompt upstream como baseline; manter qualquer variante experimental fora do fluxo padrão até revisão humana e validação no conjunto cego.
+O piloto sintético em `experiments/session-closure-continuity/` serve apenas para calibrar a rubrica; seus casos e rótulos ainda exigem revisão humana independente. Depois dessa revisão, criar e congelar um conjunto cego separado antes de redigir ou ajustar uma variante. Preservar o prompt upstream como baseline; manter qualquer variante experimental fora do fluxo padrão até validação cega e revisão humana.

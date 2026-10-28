@@ -63,4 +63,4 @@ PsychEval and the metrics currently in the repository do not, by themselves, mea
 
 ## Next step
 
-Before drafting a variant, build and review the frozen case set, closure labels, and rubric anchor examples. Preserve the upstream prompt as the baseline; keep any experimental variant out of the default flow until human review and validation on the blind set.
+The synthetic pilot in `experiments/session-closure-continuity/` is only for rubric calibration; its cases and labels still require independent human review. After that review, create and freeze a separate blind set before drafting or tuning a variant. Preserve the upstream prompt as the baseline; keep any experimental variant out of the default flow until blind validation and human review.
