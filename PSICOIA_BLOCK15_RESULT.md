@@ -57,6 +57,20 @@ A inspeção de texto CJK alcançou `src/web/src`, `src/web/backend`, `prompts/p
 
 Nenhuma rota, campo, enum, status HTTP, identificador, contrato de persistência, catálogo ou prompt foi alterado neste bloco. O idioma selecionado continua usando os valores existentes de `output_language` (`Português (Brasil)` / `English`).
 
+### Arquivos alterados
+
+- `src/sample/skill_manager.py`
+- `src/web/src/App.jsx`
+- `src/web/src/components/chat/ChatMessages.jsx`
+- `src/web/src/components/common/schoolText.js`
+- `src/web/src/components/common/stageText.js`
+- `src/web/src/components/layout/RightPanel.jsx`
+- `src/web/src/i18n.jsx`
+- `src/web/src/locale.js`
+- `src/web/tests/statusText.test.js`
+- `tests/test_skill_catalog_locale_loading.py`
+- `PSICOIA_BLOCK15_RESULT.md`
+
 ## Verificações
 
 | Estado | Comando/atividade | Resultado e limites |
