@@ -1,0 +1,268 @@
+{
+  "model": "qwen3.5:4b",
+  "server_args": [
+    "C:\\Users\\igorb\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe",
+    "-m",
+    "C:\\Users\\igorb\\.ollama\\models\\blobs\\sha256-a9d0a3e1d8c91732a3812becd31f8d4a8ff57414903f226306069f0437e2ac50",
+    "--embedding",
+    "--pooling",
+    "mean",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "19387",
+    "-c",
+    "512",
+    "-ngl",
+    "0",
+    "--no-webui"
+  ],
+  "embedding_device": "llama-server CPU-only (-ngl 0)",
+  "cpu_logical_count": 8,
+  "cold_server_ready_seconds": 76.7,
+  "server_pid": 47856,
+  "server_log": "C:\\Users\\igorb\\AppData\\Local\\Temp\\psicoia-b13-qwen-f470iid2\\llama-server.log",
+  "tokenization": [
+    {
+      "characters": 66,
+      "tokens": 13,
+      "tokenization_ms": 9.86
+    },
+    {
+      "characters": 119,
+      "tokens": 21,
+      "tokenization_ms": 1.13
+    },
+    {
+      "characters": 121,
+      "tokens": 22,
+      "tokenization_ms": 1.19
+    },
+    {
+      "characters": 58,
+      "tokens": 13,
+      "tokenization_ms": 0.89
+    }
+  ],
+  "embedding_before_chat_loaded": [
+    {
+      "characters": 66,
+      "items": 1,
+      "embedding_ms": 797.75
+    },
+    {
+      "characters": 119,
+      "items": 1,
+      "embedding_ms": 906.48
+    },
+    {
+      "characters": 121,
+      "items": 1,
+      "embedding_ms": 1016.12
+    },
+    {
+      "characters": 58,
+      "items": 1,
+      "embedding_ms": 936.71
+    }
+  ],
+  "embedding_after_chat_loaded": [
+    {
+      "characters": 66,
+      "items": 1,
+      "embedding_ms": 731.16
+    },
+    {
+      "characters": 119,
+      "items": 1,
+      "embedding_ms": 934.29
+    },
+    {
+      "characters": 121,
+      "items": 1,
+      "embedding_ms": 1059.74
+    },
+    {
+      "characters": 58,
+      "items": 1,
+      "embedding_ms": 602.2
+    }
+  ],
+  "cold_chat": {
+    "elapsed_ms": 123999.84,
+    "finish_reason": "length",
+    "prompt_tokens": 32,
+    "completion_tokens": 256,
+    "public_text_characters": 0,
+    "reasoning_field_characters": 879
+  },
+  "concurrent_stress": {
+    "wall_ms": 31645.9,
+    "embedding_ms": 1284.8,
+    "chat_ms": 31638.32
+  },
+  "snapshots": {
+    "after_embedding_server_load": {
+      "pid": 47856,
+      "ram_total_gib": 15.87,
+      "ram_available_gib": 0.88,
+      "ram_load_percent": 94,
+      "process_working_set_mib": 4038.1,
+      "process_peak_working_set_mib": 4038.1,
+      "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 108 MiB, 3828 MiB, 22 %",
+      "ollama_loaded_models": [],
+      "model_processes": [
+        [
+          "ollama.exe",
+          "11788",
+          "Console",
+          "1",
+          "20.312 K"
+        ],
+        [
+          "llama-server.exe",
+          "47856",
+          "Console",
+          "1",
+          "4.135.032 K"
+        ]
+      ]
+    },
+    "after_initial_embeddings": {
+      "pid": 47856,
+      "ram_total_gib": 15.87,
+      "ram_available_gib": 0.85,
+      "ram_load_percent": 94,
+      "process_working_set_mib": 4046.0,
+      "process_peak_working_set_mib": 4046.0,
+      "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 108 MiB, 3828 MiB, 23 %",
+      "ollama_loaded_models": [],
+      "model_processes": [
+        [
+          "ollama.exe",
+          "11788",
+          "Console",
+          "1",
+          "20.316 K"
+        ],
+        [
+          "llama-server.exe",
+          "47856",
+          "Console",
+          "1",
+          "4.143.108 K"
+        ]
+      ]
+    },
+    "both_models_loaded": {
+      "pid": 47856,
+      "ram_total_gib": 15.87,
+      "ram_available_gib": 2.06,
+      "ram_load_percent": 87,
+      "process_working_set_mib": 3374.4,
+      "process_peak_working_set_mib": 4046.0,
+      "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 2555 MiB, 1381 MiB, 31 %",
+      "ollama_loaded_models": [
+        {
+          "name": "qwen3.5:4b",
+          "model": "qwen3.5:4b",
+          "size": 3758106865,
+          "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen35",
+            "families": [
+              "qwen35"
+            ],
+            "parameter_size": "4.2B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-29T17:32:32.4997643-03:00",
+          "size_vram": 1822519457,
+          "context_length": 4096,
+          "runner": "llamacpp"
+        }
+      ],
+      "model_processes": [
+        [
+          "ollama.exe",
+          "11788",
+          "Console",
+          "1",
+          "23.688 K"
+        ],
+        [
+          "llama-server.exe",
+          "47856",
+          "Console",
+          "1",
+          "3.455.408 K"
+        ],
+        [
+          "llama-server.exe",
+          "36436",
+          "Console",
+          "1",
+          "2.400.640 K"
+        ]
+      ]
+    },
+    "after_concurrent_stress": {
+      "pid": 47856,
+      "ram_total_gib": 15.87,
+      "ram_available_gib": 2.14,
+      "ram_load_percent": 86,
+      "process_working_set_mib": 3374.5,
+      "process_peak_working_set_mib": 4046.0,
+      "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 2555 MiB, 1381 MiB, 36 %",
+      "ollama_loaded_models": [
+        {
+          "name": "qwen3.5:4b",
+          "model": "qwen3.5:4b",
+          "size": 3758106865,
+          "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen35",
+            "families": [
+              "qwen35"
+            ],
+            "parameter_size": "4.2B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-29T17:33:08.2746275-03:00",
+          "size_vram": 1822519457,
+          "context_length": 4096,
+          "runner": "llamacpp"
+        }
+      ],
+      "model_processes": [
+        [
+          "ollama.exe",
+          "11788",
+          "Console",
+          "1",
+          "23.812 K"
+        ],
+        [
+          "llama-server.exe",
+          "47856",
+          "Console",
+          "1",
+          "3.455.468 K"
+        ],
+        [
+          "llama-server.exe",
+          "36436",
+          "Console",
+          "1",
+          "2.512.820 K"
+        ]
+      ]
+    }
+  },
+  "concurrency_note": "The live request flow is sequential; the concurrent pair is a separate contention probe.",
+  "limitations": "Four synthetic probes are diagnostic, not a retrieval quality benchmark. Local GPU and RAM observations are machine-specific."
+}
