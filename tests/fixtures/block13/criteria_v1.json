@@ -1,0 +1,36 @@
+{
+  "experiment_id": "psicoia-block13-retrieval-v1",
+  "criteria_locked_before_model_runs": true,
+  "dataset": "retrieval_eval_v1.json",
+  "labels": "Relevance labels and calibration/test split are fixed in the versioned dataset before scoring either candidate.",
+  "models": ["phi4-mini:3.8b", "qwen3.5:4b"],
+  "specialized_embedding_candidate_policy": "Test only a dedicated local embedding model already installed and compatible with the existing embedding endpoint. Do not download models for this experiment.",
+  "ranking": {
+    "top_k": 5,
+    "answerable_test_quality_gate_per_locale": {
+      "recall_at_5_min": 0.9,
+      "ndcg_at_5_min": 0.8,
+      "useful_context_in_prompt_min": 0.9
+    },
+    "no_answer_gate_on_held_out_test": {
+      "false_context_rate_max": 0.1,
+      "definition": "Fraction of test queries with no relevant document for which the operational candidate inserts any retrieved skill context into the prompt."
+    },
+    "point_metrics": ["Recall@1", "Recall@5", "MRR", "nDCG@5", "useful-context-in-prompt rate", "no-answer false-context rate"],
+    "uncertainty": "Report 95% Wilson intervals for binary query-level rates and 10,000 paired bootstrap resamples for model differences, seeded with 13013. Small sample intervals are descriptive and do not establish population performance."
+  },
+  "open_set_threshold_experiment": {
+    "purpose": "Diagnostic only unless the selected threshold also passes held-out quality gates and is explicitly wired and verified in the live pipeline.",
+    "calibration_split_only": true,
+    "threshold_grid": [0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7],
+    "selection": "Maximize balanced accuracy for answerable versus no-answer classification on calibration queries; on ties choose the largest threshold. Never select the threshold from test outcomes."
+  },
+  "operational_experiment_budgets": {
+    "query_embedding_p95_ms_max": 2000,
+    "index_12_skills_per_locale_wall_seconds_max": 120,
+    "live_turn_wall_seconds_max": 180,
+    "cold_model_start_seconds_max": 120,
+    "qualification": "These are predeclared local experiment budgets for the available workstation, not an existing PsicoIA product SLO, clinical requirement, or production SLA. Report measured conditions and sample counts; for the three-turn integration, apply the 180-second limit per observed turn rather than claiming a statistical p95."
+  },
+  "selection_rule": "A candidate is operationally selectable only if the unmodified live generation flow completes with it, held-out ranking and no-answer gates pass in both locales, measured local budgets pass, and persistence/restart/failure-recovery checks pass. Prefer the less operationally complex candidate when evidence is tied. Preserve the Block 12 Phi embedding configuration if no alternative satisfies every gate."
+}

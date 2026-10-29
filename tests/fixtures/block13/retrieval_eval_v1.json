@@ -1,0 +1,116 @@
+{
+  "dataset_id": "psicoia-block13-retrieval-v1",
+  "schema_version": 1,
+  "synthetic_only": true,
+  "nonclinical_domain": "household, hobby, travel, cooking and office tasks",
+  "independence_note": "Queries and documents are newly authored for Block 13; no Block 11/12 query text or relevance labels are reused.",
+  "split_order": "For each locale, 12 held-out test queries precede 4 calibration queries. Threshold calibration must use only split=calibration.",
+  "skill_documents": [
+    {
+      "id": "d01_water_pot",
+      "en": {"skill_name": "Check potting soil before watering", "skill_description": "Check the top layer of potting mix and water only when it is dry; let excess water drain from the saucer.", "trigger": "dry potting mix, drooping leaves, watering", "when_to_use": "When deciding whether or when to water a potted plant."},
+      "pt-BR": {"skill_name": "Verificar o substrato antes de regar", "skill_description": "Verifique a camada superior do substrato e regue somente quando estiver seca; deixe o excesso de água escorrer pelo prato.", "trigger": "substrato seco, folhas caídas, rega", "when_to_use": "Ao decidir se ou quando regar uma planta em vaso."},
+      "context_length": "short"
+    },
+    {
+      "id": "d02_prune_basil",
+      "en": {"skill_name": "Prune basil above a leaf pair", "skill_description": "Use clean scissors to cut the stem just above a pair of leaves so the plant can branch; remove damaged leaves separately.", "trigger": "basil pruning, leggy stems, branching", "when_to_use": "When a basil plant is tall, sparse, or needs shaping."},
+      "pt-BR": {"skill_name": "Podar o manjericão acima de um par de folhas", "skill_description": "Use uma tesoura limpa para cortar o caule logo acima de um par de folhas e estimular novas ramificações; retire folhas danificadas separadamente.", "trigger": "poda de manjericão, caules compridos, ramificação", "when_to_use": "Quando o manjericão estiver alto, ralo ou precisar de ajuste."},
+      "context_length": "short"
+    },
+    {
+      "id": "d03_bike_flat",
+      "en": {"skill_name": "Patch a bicycle inner tube", "skill_description": "Remove the wheel and tube, locate the puncture, roughen and dry the area, apply a patch, then reinflate and check for leaks.", "trigger": "flat bicycle tire, puncture, inner tube, patch kit", "when_to_use": "When a bicycle tire loses air because its inner tube is punctured."},
+      "pt-BR": {"skill_name": "Remendar a câmara de ar da bicicleta", "skill_description": "Retire a roda e a câmara, localize o furo, lixe e seque a área, aplique o remendo, depois encha e verifique se há vazamentos.", "trigger": "pneu de bicicleta furado, câmara de ar, kit de remendo", "when_to_use": "Quando o pneu da bicicleta perde ar por causa de um furo na câmara."},
+      "context_length": "short"
+    },
+    {
+      "id": "d04_bike_chain",
+      "en": {"skill_name": "Clean and lubricate a bicycle chain", "skill_description": "Wipe dirt from the chain, apply bicycle chain lubricant sparingly to each link, rotate the pedals, and wipe away excess lubricant.", "trigger": "noisy bicycle chain, chain dirt, chain lubricant", "when_to_use": "When a bicycle chain is dirty, noisy, or needs routine maintenance."},
+      "pt-BR": {"skill_name": "Limpar e lubrificar a corrente da bicicleta", "skill_description": "Remova a sujeira da corrente, aplique pouco lubrificante próprio em cada elo, gire os pedais e retire o excesso.", "trigger": "corrente barulhenta, sujeira na corrente, lubrificante", "when_to_use": "Quando a corrente estiver suja, barulhenta ou precisar de manutenção de rotina."},
+      "context_length": "short"
+    },
+    {
+      "id": "d05_meeting_agenda",
+      "en": {"skill_name": "Draft a meeting agenda", "skill_description": "List the meeting objective, topics in priority order, time allocated to each topic, and the person responsible for leading it.", "trigger": "meeting agenda, objectives, topics, time allocation", "when_to_use": "Before a meeting that needs a clear plan and time limits."},
+      "pt-BR": {"skill_name": "Preparar uma pauta de reunião", "skill_description": "Liste o objetivo da reunião, os tópicos em ordem de prioridade, o tempo reservado a cada tópico e a pessoa responsável por conduzi-lo.", "trigger": "pauta de reunião, objetivos, tópicos, duração", "when_to_use": "Antes de uma reunião que precise de plano claro e limites de tempo."},
+      "context_length": "short"
+    },
+    {
+      "id": "d06_meeting_minutes",
+      "en": {"skill_name": "Write concise meeting minutes", "skill_description": "Record decisions, action items, owners, and due dates; separate confirmed decisions from topics that were only discussed.", "trigger": "meeting minutes, decisions, action items, owners", "when_to_use": "After a meeting when participants need a concise record of outcomes."},
+      "pt-BR": {"skill_name": "Redigir uma ata concisa de reunião", "skill_description": "Registre decisões, tarefas, responsáveis e prazos; separe decisões confirmadas dos assuntos apenas discutidos.", "trigger": "ata de reunião, decisões, tarefas, responsáveis", "when_to_use": "Após uma reunião, quando as pessoas precisarem de um registro conciso dos resultados."},
+      "context_length": "short"
+    },
+    {
+      "id": "d07_train_packing",
+      "en": {"skill_name": "Pack for an overnight train trip", "skill_description": "Make a compact list for identification, ticket, phone charger, earplugs, water, and one change of clothes; check the rail operator's baggage limits.", "trigger": "overnight train, packing list, luggage, travel essentials", "when_to_use": "When preparing a small bag for an overnight train journey."},
+      "pt-BR": {"skill_name": "Arrumar a mala para uma viagem noturna de trem", "skill_description": "Faça uma lista compacta com documento, passagem, carregador, protetores auriculares, água e uma troca de roupa; confira os limites de bagagem da empresa ferroviária.", "trigger": "trem noturno, lista de bagagem, mala, itens de viagem", "when_to_use": "Ao preparar uma bolsa pequena para uma viagem noturna de trem."},
+      "context_length": "short"
+    },
+    {
+      "id": "d08_rain_gear",
+      "en": {"skill_name": "Choose rain gear from the forecast", "skill_description": "Check the hourly forecast and expected rainfall, then choose a waterproof outer layer and shoes suitable for the planned time outside.", "trigger": "rain forecast, waterproof jacket, wet weather", "when_to_use": "When choosing clothing for an outdoor plan with possible rain."},
+      "pt-BR": {"skill_name": "Escolher proteção para chuva pela previsão", "skill_description": "Confira a previsão por hora e o volume esperado de chuva; escolha uma camada externa impermeável e calçados adequados ao tempo ao ar livre.", "trigger": "previsão de chuva, jaqueta impermeável, tempo chuvoso", "when_to_use": "Ao escolher roupas para um plano ao ar livre com possibilidade de chuva."},
+      "context_length": "short"
+    },
+    {
+      "id": "d09_ingredient_substitute",
+      "en": {"skill_name": "Substitute a missing baking ingredient", "skill_description": "Identify the ingredient's role in the recipe, choose a substitute with a similar function, and adjust liquid or leavening only when the recipe requires it.", "trigger": "baking substitute, missing ingredient, recipe replacement", "when_to_use": "When an ingredient is unavailable and a recipe substitution is needed."},
+      "pt-BR": {"skill_name": "Substituir um ingrediente de confeitaria", "skill_description": "Identifique a função do ingrediente na receita, escolha um substituto com função semelhante e ajuste líquidos ou fermentação somente quando necessário.", "trigger": "substituto para receita, ingrediente em falta, troca na confeitaria", "when_to_use": "Quando um ingrediente não estiver disponível e for preciso substituí-lo numa receita."},
+      "context_length": "short"
+    },
+    {
+      "id": "d10_oven_temperature",
+      "en": {"skill_name": "Convert an oven temperature", "skill_description": "Convert between Celsius and Fahrenheit using the standard formula, check whether the recipe specifies fan-assisted heat, and allow the oven to preheat fully.", "trigger": "oven temperature, Celsius Fahrenheit conversion, preheat", "when_to_use": "When a recipe uses a different temperature scale or oven setting."},
+      "pt-BR": {"skill_name": "Converter a temperatura do forno", "skill_description": "Converta entre Celsius e Fahrenheit pela fórmula padrão, confira se a receita indica ventilação e deixe o forno aquecer completamente.", "trigger": "temperatura do forno, conversão Celsius Fahrenheit, pré-aquecer", "when_to_use": "Quando a receita usar outra escala ou configuração de forno."},
+      "context_length": "short"
+    },
+    {
+      "id": "d11_file_backup",
+      "en": {"skill_name": "Create and verify a file backup", "skill_description": "Choose the files and folders to protect, make a dated copy to a separate drive or trusted storage location, verify that representative files open from the copy, and record where the backup is stored. Keep the original unchanged until verification succeeds. For repeated backups, use a documented schedule and check that the latest copy completed without errors.", "trigger": "file backup, copy files, external drive, restore check", "when_to_use": "When protecting important computer files or checking whether a backup is usable."},
+      "pt-BR": {"skill_name": "Criar e verificar uma cópia de segurança", "skill_description": "Escolha os arquivos e pastas a proteger, faça uma cópia datada em outra unidade ou local de armazenamento confiável, verifique se alguns arquivos abrem a partir da cópia e registre onde ela está. Mantenha os originais inalterados até a verificação terminar. Para cópias recorrentes, use um calendário documentado e confira se a cópia mais recente terminou sem erros.", "trigger": "backup de arquivos, copiar arquivos, unidade externa, verificar restauração", "when_to_use": "Ao proteger arquivos importantes do computador ou verificar se uma cópia de segurança pode ser usada."},
+      "context_length": "long"
+    },
+    {
+      "id": "d12_file_search",
+      "en": {"skill_name": "Find a document in a large folder", "skill_description": "Narrow the search by file type, approximate creation period, and distinctive words from the document. Search the likely project folders first, then include archived folders. Sort results by date or name, compare neighboring files with similar titles, and open a candidate to confirm its contents before moving or renaming anything. If several versions exist, identify the newest confirmed version and preserve the others until the choice is verified.", "trigger": "search for file, locate document, folder, filename, archive", "when_to_use": "When a document is difficult to locate among many folders or similarly named versions."},
+      "pt-BR": {"skill_name": "Localizar um documento em muitas pastas", "skill_description": "Restrinja a busca por tipo de arquivo, período aproximado de criação e palavras distintivas do documento. Pesquise primeiro as pastas prováveis do projeto e depois inclua os arquivos arquivados. Ordene os resultados por data ou nome, compare arquivos próximos com títulos semelhantes e abra uma opção para confirmar o conteúdo antes de mover ou renomear qualquer item. Se houver várias versões, identifique a mais recente que foi confirmada e preserve as demais até verificar a escolha.", "trigger": "buscar arquivo, localizar documento, pasta, nome de arquivo, arquivo morto", "when_to_use": "Quando for difícil localizar um documento entre muitas pastas ou versões com nomes parecidos."},
+      "context_length": "long"
+    }
+  ],
+  "queries": [
+    {"id":"en-t01","locale":"en","split":"test","type":"direct","query_length":"short","answerable":true,"query":"How do I clean and oil a noisy bicycle chain?","relevance":{"d04_bike_chain":3},"relevant_ids":["d04_bike_chain"]},
+    {"id":"en-t02","locale":"en","split":"test","type":"direct","query_length":"short","answerable":true,"query":"What should go on a meeting agenda?","relevance":{"d05_meeting_agenda":3},"relevant_ids":["d05_meeting_agenda"]},
+    {"id":"en-t03","locale":"en","split":"test","type":"direct","query_length":"short","answerable":true,"query":"What essentials belong in a small bag for an overnight train?","relevance":{"d07_train_packing":3},"relevant_ids":["d07_train_packing"]},
+    {"id":"en-t04","locale":"en","split":"test","type":"paraphrase","query_length":"short","query":"The recipe calls for something I don't have. How can I choose a replacement without ruining the bake?","relevance":{"d09_ingredient_substitute":3},"relevant_ids":["d09_ingredient_substitute"]},
+    {"id":"en-t05","locale":"en","split":"test","type":"semantic_distractor","query_length":"long","query":"I have several versions of the same work document spread across folders. I want to protect them before I decide which copy is current, and I need a way to confirm that the saved copies are readable.","relevance":{"d11_file_backup":3,"d12_file_search":1},"relevant_ids":["d11_file_backup","d12_file_search"]},
+    {"id":"en-t06","locale":"en","split":"test","type":"paraphrase","query_length":"short","query":"My basil has one tall bare stem. Where should I snip it so it grows fuller?","relevance":{"d02_prune_basil":3},"relevant_ids":["d02_prune_basil"]},
+    {"id":"en-t07","locale":"en","split":"test","type":"ambiguous","query_length":"short","query":"I missed the meeting. I need to know the planned topics and what decisions people made.","relevance":{"d05_meeting_agenda":2,"d06_meeting_minutes":2},"relevant_ids":["d05_meeting_agenda","d06_meeting_minutes"]},
+    {"id":"en-t08","locale":"en","split":"test","type":"lexical_distractor","query_length":"short","query":"The rear tire keeps losing air. How do I find and patch the hole? The chain is also dirty.","relevance":{"d03_bike_flat":3,"d04_bike_chain":1},"relevant_ids":["d03_bike_flat","d04_bike_chain"]},
+    {"id":"en-t09","locale":"en","split":"test","type":"lexical_distractor","query_length":"short","query":"I want to back up my packing checklist before my overnight train trip.","relevance":{"d07_train_packing":3,"d11_file_backup":1},"relevant_ids":["d07_train_packing","d11_file_backup"]},
+    {"id":"en-t10","locale":"en","split":"test","type":"no_answer","query_length":"short","query":"How should I cycle a new aquarium filter before adding fish?","relevance":{},"relevant_ids":[]},
+    {"id":"en-t11","locale":"en","split":"test","type":"no_answer","query_length":"long","query":"I spilled a drink on a wool coat and need to know which cleaning solvent and stain-removal sequence is safe for this particular fabric.","relevance":{},"relevant_ids":[]},
+    {"id":"en-t12","locale":"en","split":"test","type":"long_context","query_length":"long","query":"A shared project folder contains many old exports, drafts, and files with nearly identical names. I remember a few words from the document but not its exact filename. I want to narrow down the search, compare possible versions, and confirm the contents before changing or deleting anything.","relevance":{"d12_file_search":3,"d11_file_backup":1},"relevant_ids":["d12_file_search","d11_file_backup"]},
+    {"id":"en-c01","locale":"en","split":"calibration","type":"direct","query_length":"short","query":"When should I water a potted plant if the top of its soil is dry?","relevance":{"d01_water_pot":3},"relevant_ids":["d01_water_pot"]},
+    {"id":"en-c02","locale":"en","split":"calibration","type":"paraphrase","query_length":"short","query":"My bicycle tube has a puncture and I have a patch kit. What are the repair steps?","relevance":{"d03_bike_flat":3},"relevant_ids":["d03_bike_flat"]},
+    {"id":"en-c03","locale":"en","split":"calibration","type":"no_answer","query_length":"short","query":"How do I set the water chemistry for a tropical fish tank?","relevance":{},"relevant_ids":[]},
+    {"id":"en-c04","locale":"en","split":"calibration","type":"lexical_distractor","query_length":"short","query":"Please back up my meeting agenda file before tomorrow's meeting.","relevance":{"d05_meeting_agenda":3,"d11_file_backup":1},"relevant_ids":["d05_meeting_agenda","d11_file_backup"]},
+    {"id":"pt-t01","locale":"pt-BR","split":"test","type":"direct","query_length":"short","query":"Como limpo e lubrifico uma corrente barulhenta de bicicleta?","relevance":{"d04_bike_chain":3},"relevant_ids":["d04_bike_chain"]},
+    {"id":"pt-t02","locale":"pt-BR","split":"test","type":"direct","query_length":"short","query":"O que deve entrar na pauta de uma reunião?","relevance":{"d05_meeting_agenda":3},"relevant_ids":["d05_meeting_agenda"]},
+    {"id":"pt-t03","locale":"pt-BR","split":"test","type":"direct","query_length":"short","query":"Quais itens levar numa bolsa pequena para uma viagem noturna de trem?","relevance":{"d07_train_packing":3},"relevant_ids":["d07_train_packing"]},
+    {"id":"pt-t04","locale":"pt-BR","split":"test","type":"paraphrase","query_length":"short","query":"A receita pede um ingrediente que acabou. Como escolho algo para colocar no lugar sem estragar o preparo?","relevance":{"d09_ingredient_substitute":3},"relevant_ids":["d09_ingredient_substitute"]},
+    {"id":"pt-t05","locale":"pt-BR","split":"test","type":"semantic_distractor","query_length":"long","query":"Tenho várias versões do mesmo documento de trabalho em pastas diferentes. Quero protegê-las antes de decidir qual é a atual e preciso conferir se as cópias salvas podem ser abertas.","relevance":{"d11_file_backup":3,"d12_file_search":1},"relevant_ids":["d11_file_backup","d12_file_search"]},
+    {"id":"pt-t06","locale":"pt-BR","split":"test","type":"paraphrase","query_length":"short","query":"Meu manjericão ficou com um caule comprido e sem folhas. Onde corto para ele ficar mais cheio?","relevance":{"d02_prune_basil":3},"relevant_ids":["d02_prune_basil"]},
+    {"id":"pt-t07","locale":"pt-BR","split":"test","type":"ambiguous","query_length":"short","query":"Perdi a reunião. Quero saber quais assuntos estavam previstos e quais decisões foram tomadas.","relevance":{"d05_meeting_agenda":2,"d06_meeting_minutes":2},"relevant_ids":["d05_meeting_agenda","d06_meeting_minutes"]},
+    {"id":"pt-t08","locale":"pt-BR","split":"test","type":"lexical_distractor","query_length":"short","query":"O pneu traseiro está perdendo ar. Como localizo e remendo o furo? A corrente também está suja.","relevance":{"d03_bike_flat":3,"d04_bike_chain":1},"relevant_ids":["d03_bike_flat","d04_bike_chain"]},
+    {"id":"pt-t09","locale":"pt-BR","split":"test","type":"lexical_distractor","query_length":"short","query":"Quero fazer backup da minha lista de bagagem antes da viagem noturna de trem.","relevance":{"d07_train_packing":3,"d11_file_backup":1},"relevant_ids":["d07_train_packing","d11_file_backup"]},
+    {"id":"pt-t10","locale":"pt-BR","split":"test","type":"no_answer","query_length":"short","query":"Como preparo o filtro de um aquário novo antes de colocar os peixes?","relevance":{},"relevant_ids":[]},
+    {"id":"pt-t11","locale":"pt-BR","split":"test","type":"no_answer","query_length":"long","query":"Derramei uma bebida em um casaco de lã e preciso saber qual solvente e sequência de remoção de manchas são seguros para esse tecido específico.","relevance":{},"relevant_ids":[]},
+    {"id":"pt-t12","locale":"pt-BR","split":"test","type":"long_context","query_length":"long","query":"Uma pasta compartilhada do projeto tem exportações antigas, rascunhos e arquivos com nomes quase iguais. Lembro algumas palavras do documento, mas não o nome exato. Quero restringir a busca, comparar versões possíveis e confirmar o conteúdo antes de alterar ou apagar qualquer arquivo.","relevance":{"d12_file_search":3,"d11_file_backup":1},"relevant_ids":["d12_file_search","d11_file_backup"]},
+    {"id":"pt-c01","locale":"pt-BR","split":"calibration","type":"direct","query_length":"short","query":"Quando devo regar uma planta em vaso se a parte de cima do substrato está seca?","relevance":{"d01_water_pot":3},"relevant_ids":["d01_water_pot"]},
+    {"id":"pt-c02","locale":"pt-BR","split":"calibration","type":"paraphrase","query_length":"short","query":"A câmara da bicicleta furou e tenho um kit de remendo. Como faço o conserto?","relevance":{"d03_bike_flat":3},"relevant_ids":["d03_bike_flat"]},
+    {"id":"pt-c03","locale":"pt-BR","split":"calibration","type":"no_answer","query_length":"short","query":"Como ajusto a água de um aquário de peixes tropicais?","relevance":{},"relevant_ids":[]},
+    {"id":"pt-c04","locale":"pt-BR","split":"calibration","type":"lexical_distractor","query_length":"short","query":"Faça backup do arquivo da pauta antes da reunião de amanhã.","relevance":{"d05_meeting_agenda":3,"d11_file_backup":1},"relevant_ids":["d05_meeting_agenda","d11_file_backup"]}
+  ]
+}
