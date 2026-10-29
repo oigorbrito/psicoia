@@ -21,6 +21,6 @@ Atualize este documento quando alterações materiais mudarem componentes, inter
 
 ## Backend web: saída por idioma e recuperação de skills
 
-No fluxo web, `output_language` é tratado por requisição. Catálogos localizados usam instâncias de `SkillManager` separadas por idioma, e consultas em idiomas com catálogo localizado são incorporadas sem o rewriter chinês. Falhas ao carregar ou recuperar o contexto de skills interrompem a geração em vez de prosseguir sem esse contexto; a rota pode responder com erro e não persistir a mensagem.
+No fluxo web, `output_language` é tratado por requisição. Catálogos localizados usam instâncias de `SkillManager` separadas por idioma, e consultas em idiomas com catálogo localizado são incorporadas sem o rewriter chinês. Se houver exatamente uma categoria coarse, sua seleção é determinística e não chama o modelo; com mais de uma categoria, o fluxo existente é preservado. Falhas ao carregar ou recuperar o contexto de skills interrompem a geração em vez de prosseguir sem esse contexto; a rota pode responder com erro e não persistir a mensagem.
 
 A extração do texto público ignora campos separados de raciocínio do provedor e trata marcadores estruturais de forma conservadora. Mensagens de status de abertura/encerramento e o fallback estático da abertura têm versões genéricas em inglês e PT-BR. Essas mudanças foram exercitadas com modelos locais e fixtures sintéticas no Bloco 12; não constituem avaliação de segurança, validação clínica nem evidência de desempenho com catálogos completos.

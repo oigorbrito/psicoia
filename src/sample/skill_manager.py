@@ -209,8 +209,13 @@ class SkillManager:
         select_user_prompt = self._select_user_prompt
         response = ""
 
+        # With a single category the selector cannot change the fallback candidate set.
+        # Avoid a redundant model call and retries in that unambiguous case.
+        if n >= 1 and len(leaf_skills) == 1:
+            ids = [(sect, str(skill_id)) for skill_id in leaf_skills]
+
         try:
-            if self._select_system_prompt and self._select_user_prompt:
+            if not ids and self._select_system_prompt and self._select_user_prompt:
                 skill_to_filter = {
                     k: {ik: iv for ik, iv in v.items() if ik not in {"parent_ids", "embedding_to_merge", "embedding_to_retrive"}}
                     for k, v in leaf_skills.items()
