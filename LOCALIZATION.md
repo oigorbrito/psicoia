@@ -2,7 +2,7 @@
 
 ## Language goals
 
-Brazilian Portuguese (`pt-BR`) is the primary target language; English (`en`) is secondary. In this integration candidate, the upstream web UI remains unchanged; the PT-BR locale implementation in the local source tree is pending separate review and is not included here. Migration requires a literal copy of upstream code: no improvements, fixes, or functional changes. The visible brand may change from PsychAgent to PsicoIA only in presentation prose referring to the destination product. Identifiers, serialized contracts, academic attribution, and upstream references remain unchanged. See the [migration and translation policy](docs/MIGRATION-POLICY.md).
+Brazilian Portuguese (`pt-BR`) is the primary language; English (`en`) is secondary. The web interface now has localized copy for major flows and a browser-persisted language selector, but coverage is incomplete. The selected locale is also sent through the existing `output_language` API field when creating courses/sessions, sending messages, and closing sessions. This work preserves identifiers, contracts, data, academic attribution, and upstream references; clinical content, operational prompts, and catalogs were not translated. Exception to literal copying explicitly authorized by this task: the local language selector and forwarding the selected language through the preexisting `output_language` field; no API routes, enums, or fields were added. See the [migration and translation policy](docs/MIGRATION-POLICY.md).
 
 ## Safe boundaries
 
@@ -27,10 +27,10 @@ For a frontend production build, run `cd src/web && npm run build` after install
 
 ## Current audit snapshot
 
-- Integration candidate web UI: source behavior remains upstream and the locale selector/output-language implementation is pending. No locale UI tests have been run on this candidate.
-- Documentation: English and PT-BR project and web guides are available. The former Chinese README path is retained as a compatibility pointer to the maintained guides.
+- Web UI: main navigation, authentication, course creation/completion, session flows, statuses, and interface messages have localized copy. PT-BR/EN status and school labels and mapping to the existing `output_language` enum have unit tests. Stage labels and session-focus values returned by the backend remain in the source language; unmapped error/status strings may also remain untranslated. No interactive browser flow was run.
+- Documentation: project and web guides are available in English and PT-BR; the main READMEs identify PsicoIA as the destination while preserving PsychAgent for provenance, paper, model, and research references.
 - Evaluation prompts: all 60 files under `prompts/eval/` contain Chinese text. They are used by scoring methods, so translating them is a behavior-sensitive project requiring score comparisons on a fixed evaluation set and schema checks.
 - Skill catalogs: local translation work reports PT-BR coverage of 16/30 catalogs and 1,233/5,158 records, and English coverage of 8/30 catalogs and 141/5,158 records. These translated catalogs are not included in this integration candidate; the counts describe structural coverage only and do not establish translation quality or retrieval equivalence.
 - Chinese text in Markdown image paths is retained because those strings are file paths; changing them without renaming the assets and updating references would break links.
 
-This snapshot is not a claim of complete project localization. Update these counts after each validated catalog or prompt release.
+Localization remains partial. The backend still returns Chinese stage, approach, and context text; data, clinical content, generation/evaluation prompts, and catalogs remain outside this authorized scope. Frontend build and unit tests do not replace linguistic/professional review or integrated model-backed validation. Update this snapshot only when supported by corresponding evidence.

@@ -15,6 +15,7 @@ import { SchoolModal } from "./components/modals/SchoolModal";
 import { getCourseStatusText, getVisitStatusText } from "./components/common/statusText";
 import { getSchoolDisplayName } from "./components/common/schoolText";
 import { useMindCareApp } from "./hooks/useMindCareApp";
+import { useLocale } from "./i18n";
 
 function getCourseTone(status) {
   if (status === "active") return "active";
@@ -31,9 +32,11 @@ function getVisitTone(status) {
 
 export default function App() {
   const app = useMindCareApp();
+  const { locale, setLocale, t } = useLocale();
 
   return (
     <div className="flex h-screen w-full bg-white font-sans text-slate-900 selection:bg-teal-100">
+      <label className="fixed right-4 top-3 z-[60] rounded-md bg-white px-2 py-1 text-xs shadow" htmlFor="locale-select">{locale === "pt-BR" ? "Idioma" : "Language"}<select id="locale-select" className="ml-2 bg-transparent" value={locale} onChange={(event) => setLocale(event.target.value)}><option value="pt-BR">Português (Brasil)</option><option value="en">English</option></select></label>
       <button
         type="button"
         className="fixed left-4 top-4 z-40 rounded-lg border border-slate-200 bg-white p-2 shadow-md md:hidden"
@@ -90,13 +93,13 @@ export default function App() {
               {app.currentCourse ? (
                 <div className="flex flex-wrap items-center gap-2 text-xs text-slate-700">
                   <span className="rounded-md bg-slate-100 px-2 py-1">
-                    流派：{getSchoolDisplayName(app.currentSchool)}
+                    {t("当前咨询流派")}：{getSchoolDisplayName(app.currentSchool, locale)}
                   </span>
                   <span className="rounded-md bg-slate-100 px-2 py-1">
-                    疗程：{app.currentCourse.title || "未命名疗程"}
+                    {t("疗程列表")}：{app.currentCourse.title || t("未命名疗程")}
                   </span>
                   <span className="rounded-md bg-slate-100 px-2 py-1">
-                    会谈：{app.currentVisit ? `第 ${app.currentVisit.visit_no} 次` : "尚未开始"}
+                    {locale === "en" ? "Session" : "Sessão"}: {app.currentVisit ? `${locale === "en" ? "Session " : "Sessão "}${app.currentVisit.visit_no}` : t("未开始")}
                   </span>
                   <StatusPill
                     text={getCourseStatusText(app.currentCourse.status)}
@@ -111,7 +114,7 @@ export default function App() {
                 </div>
                 ) : (
                   <p className="text-sm text-slate-600">
-                    从“流派 -&gt; 疗程 -&gt; 会谈 -&gt; 消息”开始：先选择流派并创建疗程。
+                    {t("从“流派 -&gt; 疗程 -&gt; 会谈 -&gt; 消息”开始：先选择流派并创建疗程。")}
                   </p>
                 )}
             </div>

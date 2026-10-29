@@ -1,13 +1,13 @@
-# PsychAgent Web
+# PsicoIA Web
 
-O PsychAgent Web é um espaço de trabalho no navegador para experimentar o fluxo de aconselhamento em múltiplas sessões do PsychAgent. Inclui um frontend e um backend local para demonstrações, testes e desenvolvimento leve.
+O PsicoIA Web é uma interface local de demonstração para o fluxo de pesquisa de múltiplas sessões do PsychAgent. A interface está disponível em português brasileiro e inglês; o seletor de idioma fica no canto superior direito e a seleção é salva neste navegador. O idioma selecionado também orienta respostas geradas quando o backend aceita o campo de idioma.
 
 [English](README.md)
 
 ## Recursos
 
 - Criar uma conta e entrar.
-- Criar cursos por abordagem de aconselhamento.
+- Criar percursos por abordagem.
 - Iniciar automaticamente a primeira sessão.
 - Continuar uma conversa durante a sessão.
 - Encerrar uma sessão e iniciar a próxima.
@@ -125,11 +125,11 @@ npm run dev
 ## Uso
 
 1. Abra o aplicativo web e entre ou cadastre-se.
-2. Escolha uma abordagem de aconselhamento.
-3. Crie um curso.
+2. Escolha uma abordagem.
+3. Crie um percurso.
 4. Inicie uma conversa na tela da sessão.
 5. Encerre a sessão atual e avance para a próxima.
-6. Marque o curso como concluído quando o processo terminar.
+6. Marque o percurso como concluído quando o processo terminar.
 
 ## Configuração
 

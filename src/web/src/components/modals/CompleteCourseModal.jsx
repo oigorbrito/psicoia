@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
+import { useLocale } from "../../i18n";
 
 export function CompleteCourseModal({ open, currentCourse, onClose, onConfirm }) {
+  const { locale } = useLocale();
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
@@ -32,9 +34,9 @@ export function CompleteCourseModal({ open, currentCourse, onClose, onConfirm })
         </button>
 
         <div>
-          <h3 className="text-lg font-bold text-slate-800">完成疗程</h3>
+          <h3 className="text-lg font-bold text-slate-800">{locale === "en" ? "Complete course" : "Concluir percurso"}</h3>
           <p className="text-sm text-slate-500 mt-1">
-            将把当前疗程标记为已完成。疗程：{currentCourse?.title || "未命名疗程"}
+            {locale === "en" ? "This course will be marked as complete. Course: " : "Este percurso será marcado como concluído. Percurso: "}{currentCourse?.title || (locale === "en" ? "Untitled course" : "Percurso sem título")}
           </p>
         </div>
 
@@ -44,14 +46,14 @@ export function CompleteCourseModal({ open, currentCourse, onClose, onConfirm })
             className="flex-1 bg-slate-100 text-slate-700 rounded-lg py-2 text-sm hover:bg-slate-200 transition"
             disabled={submitting}
           >
-            取消
+            {locale === "en" ? "Cancel" : "Cancelar"}
           </button>
           <button
             onClick={handleConfirm}
             className="flex-1 bg-emerald-600 text-white rounded-lg py-2 text-sm font-semibold hover:bg-emerald-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={submitting}
           >
-            {submitting ? "处理中..." : "确认完成"}
+            {submitting ? (locale === "en" ? "Processing..." : "Processando...") : (locale === "en" ? "Confirm completion" : "Confirmar conclusão")}
           </button>
         </div>
       </div>

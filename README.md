@@ -1,6 +1,6 @@
 # PsicoIA
 
-**PsychAgent: An Experience-Driven Lifelong Learning Agent for Self-Evolving Psychological Counselor**
+**PsicoIA — local migration of the PsychAgent research codebase**
 
 <p align="center">
   <a href="https://github.com/ECNU-ICALK/PsychAgent"><img src="https://img.shields.io/badge/Maintained%20By-ICALK-0A66C2" alt="Maintained By ICALK" /></a>
@@ -31,9 +31,9 @@ This repository contains the local PsicoIA migration work for the public PsychAg
 
 The current release is enough to run the public generation, evaluation, and RFT workflows. Full paper-scale training assets and the complete post-session skill evolution pipeline are not included in this snapshot.
 
-## How PsychAgent Works
+## How the PsychAgent research works
 
-PsychAgent is organized around three practical components:
+The architecture described by the PsychAgent research is organized around three practical components:
 
 - **Memory and planning** keep cross-session continuity so later sessions build on earlier ones instead of restarting from scratch.
 - **Skill retrieval** surfaces explicit counseling skills during interaction.
@@ -68,7 +68,7 @@ If you are new to the repository, start with:
 
 ## Setup
 
-PsychAgent does not ship with a pinned environment file yet. The following setup is a good starting point for the current public release:
+The PsicoIA repository does not yet include a pinned environment file. The following setup is a good starting point for the current public release:
 
 ```bash
 python -m venv .venv
@@ -266,7 +266,7 @@ This release does not include:
 
 ## Results Snapshot
 
-The paper evaluates PsychAgent on the multi-session, multi-therapy `PsychEval` benchmark.
+The source paper evaluates PsychAgent on the multi-session, multi-therapy `PsychEval` benchmark.
 
 - `PsychAgent` (Qwen3-32B) reports `7.32 / 7.91 / 5.92 / 8.24` on counselor-shared, counselor-specific, client-shared, and client-specific metrics.
 - Against `Qwen3-Max`, the reported gains are `+1.44 / +0.17 / +0.51 / +0.43`.
@@ -277,7 +277,7 @@ Related paper assets include [`paper/radar_v1.pdf`](paper/radar_v1.pdf), [`paper
 
 ## Project Status
 
-PsychAgent should currently be read as a research code release rather than a polished production package. The repository already provides runnable public workflows for generation, evaluation, and best-of-n reward selection. A few items are still best treated as follow-up work for a broader public release:
+The research code migrated into PsicoIA should be understood as a research release, not a production-ready package. The repository already provides runnable public workflows for generation, evaluation, and best-of-n reward selection. A few items are still best treated as follow-up work for a broader public release:
 
 - a repository license
 - a pinned environment file

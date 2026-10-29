@@ -1,10 +1,10 @@
 # PsicoIA
 
-**PsychAgent: um agente de aprendizagem contínua orientado por experiência para aconselhamento psicológico autodesenvolvível**
+**PsicoIA — migração local da base de pesquisa PsychAgent**
 
 [README em inglês](README.md)
 
-O PsicoIA é o destino da migração em andamento da base de pesquisa PsychAgent, voltada ao aconselhamento psicológico por IA em múltiplas sessões. O objetivo é preservar o código upstream e localizar o conteúdo de apresentação aprovado; a migração e a localização ainda estão em andamento.
+O PsicoIA é uma migração local da base de pesquisa PsychAgent, voltada ao aconselhamento psicológico por IA em múltiplas sessões. Esta migração preserva a proveniência upstream; a localização do software está em andamento e ainda não cobre todo o conteúdo.
 
 Artigo: [PDF](paper/PsychAgent.pdf) | [arXiv 2604.00931](https://arxiv.org/abs/2604.00931)
 Modelo: [ecnu-icalk/PsychAgent-Qwen3-32B](https://huggingface.co/ecnu-icalk/PsychAgent-Qwen3-32B)
@@ -20,9 +20,9 @@ Este repositório contém o trabalho local de migração do PsychAgent para Psic
 
 A versão atual permite executar os fluxos públicos de geração, avaliação e RFT. Os recursos completos de treinamento em escala do artigo e o fluxo completo de evolução de habilidades pós-sessão não estão incluídos.
 
-## Como o PsychAgent funciona
+## Como o projeto de pesquisa PsychAgent funciona
 
-O PsychAgent se organiza em três componentes práticos:
+A arquitetura descrita pela pesquisa PsychAgent se organiza em três componentes práticos:
 
 - **Memória e planejamento** mantêm a continuidade entre sessões, para que sessões posteriores se apoiem nas anteriores em vez de recomeçar do zero.
 - **Recuperação de habilidades** disponibiliza habilidades explícitas de aconselhamento durante a interação.
@@ -52,7 +52,7 @@ Para começar, consulte [`src/README.pt-BR.md`](src/README.pt-BR.md), com os pri
 
 ## Instalação
 
-O PsychAgent ainda não inclui um arquivo de ambiente com versões fixadas. A instalação abaixo é um ponto de partida para a versão pública atual:
+O repositório PsicoIA ainda não inclui um arquivo de ambiente com versões fixadas. A instalação abaixo é um ponto de partida para a versão pública atual:
 
 ```bash
 python -m venv .venv
@@ -226,7 +226,7 @@ Esta versão **não** inclui todos os recursos de treinamento e avaliação do `
 
 ## Recorte dos resultados
 
-O artigo avalia o PsychAgent no benchmark `PsychEval`, com múltiplas sessões e abordagens terapêuticas.
+O artigo de origem avalia o PsychAgent no benchmark `PsychEval`, com múltiplas sessões e abordagens terapêuticas.
 
 - O `PsychAgent` (Qwen3-32B) reporta `7.32 / 7.91 / 5.92 / 8.24` nas métricas compartilhada e específica do terapeuta e compartilhada e específica do cliente.
 - Em relação ao `Qwen3-Max`, os ganhos reportados são `+1.44 / +0.17 / +0.51 / +0.43`.
@@ -237,7 +237,7 @@ Recursos relacionados do artigo: [`paper/radar_v1.pdf`](paper/radar_v1.pdf), [`p
 
 ## Estado do projeto
 
-O PsychAgent deve ser entendido como um lançamento de código de pesquisa, não como um pacote de produção pronto. O repositório oferece fluxos executáveis para geração, avaliação e seleção best-of-n por recompensa. Para uma disponibilização pública mais ampla, ainda são necessários, entre outros itens, uma licença do repositório, um arquivo de ambiente com versões fixadas, configurações de serviço apropriadas para uso público, notas mais completas de reprodução dos experimentos em escala do artigo e orientações mais explícitas para implantação do checkpoint.
+O código migrado para PsicoIA deve ser entendido como um lançamento de pesquisa, não como um pacote de produção pronto. O repositório oferece fluxos executáveis para geração, avaliação e seleção best-of-n por recompensa. Para uma disponibilização pública mais ampla, ainda são necessários, entre outros itens, uma licença do repositório, um arquivo de ambiente com versões fixadas, configurações de serviço apropriadas para uso público, notas mais completas de reprodução dos experimentos em escala do artigo e orientações mais explícitas para implantação do checkpoint.
 
 ## Citação
 

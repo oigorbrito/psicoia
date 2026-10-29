@@ -1,4 +1,5 @@
 import { Activity, ShieldAlert, Target } from "lucide-react";
+import { useLocale } from "../../i18n";
 
 const SESSION_FOCUS_DEFAULT = [
   "建立初始关系与咨询框架",
@@ -38,6 +39,7 @@ function buildPromptSessionFocus(currentVisit) {
 }
 
 export function RightPanel({ currentCourse, currentVisit, embedded = false }) {
+  const { locale } = useLocale();
   const stage = currentVisit?.stage || currentCourse?.current_stage;
   const sessionFocus = buildPromptSessionFocus(currentVisit);
 
@@ -47,18 +49,18 @@ export function RightPanel({ currentCourse, currentVisit, embedded = false }) {
 
   return (
     <aside className={wrapperClassName}>
-      <Section title="当前阶段" icon={Activity}>
+      <Section title={locale === "en" ? "Current stage" : "Etapa atual"} icon={Activity}>
         {currentCourse ? (
           <div className="space-y-1">
-            <p className="font-semibold text-slate-800">{stage?.label || "未开始"}</p>
-            <p>当前处于第 {currentVisit?.visit_no || currentCourse?.latest_visit_no || 0} 次会谈。</p>
+            <p className="font-semibold text-slate-800">{stage?.label || (locale === "en" ? "Not started" : "Não iniciada")}</p>
+            <p>{locale === "en" ? `Session ${currentVisit?.visit_no || currentCourse?.latest_visit_no || 0}.` : `Sessão ${currentVisit?.visit_no || currentCourse?.latest_visit_no || 0}.`}</p>
           </div>
         ) : (
-          <p>选择疗程后可查看当前阶段与进度。</p>
+          <p>{locale === "en" ? "Select a course to see its stage and progress." : "Selecione um percurso para ver a etapa e o progresso."}</p>
         )}
       </Section>
 
-      <Section title="咨询目标" icon={Target}>
+      <Section title={locale === "en" ? "Session focus" : "Foco da sessão"} icon={Target}>
         {currentCourse ? (
           sessionFocus.length > 0 ? (
             <ul className="space-y-1">
@@ -70,18 +72,18 @@ export function RightPanel({ currentCourse, currentVisit, embedded = false }) {
               ))}
             </ul>
           ) : (
-            <p>当前会谈暂无目标信息。</p>
+            <p>{locale === "en" ? "No focus is recorded for this session." : "Não há foco registrado para esta sessão."}</p>
           )
         ) : (
-          <p>创建疗程后可在此查看和维护咨询目标。</p>
+          <p>{locale === "en" ? "Create a course to view and maintain its focus here." : "Crie um percurso para consultar e atualizar o foco aqui."}</p>
         )}
       </Section>
 
-      <Section title="支持与提醒" icon={ShieldAlert}>
+      <Section title={locale === "en" ? "Information and reminders" : "Informações e lembretes"} icon={ShieldAlert}>
         <ul className="space-y-1">
-          <li>AI 内容仅供参考，不替代专业医疗建议。</li>
-          <li>如遇紧急心理危机，请尽快联系当地急救资源或专业机构。</li>
-          <li>后续可扩展为会后任务与家庭练习模块，当前先提供提醒占位。</li>
+          <li>{locale === "en" ? "AI-generated content is informational and does not replace professional healthcare advice." : "O conteúdo gerado por IA é apenas informativo e não substitui orientação profissional de saúde."}</li>
+          <li>{locale === "en" ? "In an emergency, contact local emergency services or a qualified organization." : "Em uma emergência, procure os serviços de emergência locais ou uma instituição especializada."}</li>
+          <li>{locale === "en" ? "Post-session tasks and exercises are not available in this interface." : "Tarefas e exercícios pós-sessão não estão disponíveis nesta interface."}</li>
         </ul>
       </Section>
     </aside>

@@ -1,5 +1,6 @@
 import { Brain, FolderOpen, LogIn, MessageSquare, User } from "lucide-react";
 import { EmptyState } from "../common/EmptyState";
+import { useLocale } from "../../i18n";
 
 function extractResponseText(rawText) {
   const text = String(rawText ?? "");
@@ -10,13 +11,13 @@ function extractResponseText(rawText) {
   return text;
 }
 
-function ChatEmptyState({ hasToken, currentCourse }) {
+function ChatEmptyState({ hasToken, currentCourse, locale }) {
   if (!hasToken) {
     return (
       <EmptyState
         icon={LogIn}
-        title="登录后即可开始咨询"
-        description="请先登录账号，再选择咨询流派并创建疗程。"
+        title={locale === "en" ? "Sign in to get started" : "Entre para começar"}
+        description={locale === "en" ? "Sign in, choose an approach, and create a course." : "Entre, escolha uma abordagem e crie um percurso."}
       />
     );
   }
@@ -25,8 +26,8 @@ function ChatEmptyState({ hasToken, currentCourse }) {
     return (
       <EmptyState
         icon={FolderOpen}
-        title="先选择或创建疗程"
-        description="建议先在左侧选择流派并新建疗程，系统会自动创建第一次会谈。"
+        title={locale === "en" ? "Select or create a course" : "Selecione ou crie um percurso"}
+        description={locale === "en" ? "Choose an approach and create a course. The first session starts automatically." : "Escolha uma abordagem e crie um percurso. A primeira sessão será iniciada automaticamente."}
       />
     );
   }
@@ -34,20 +35,21 @@ function ChatEmptyState({ hasToken, currentCourse }) {
   return (
     <EmptyState
       icon={MessageSquare}
-      title="当前疗程还没有会谈内容"
-      description="点击“开始第 N 次会谈”后，即可在此查看完整对话记录。"
+      title={locale === "en" ? "No sessions in this course yet" : "Ainda não há sessões neste percurso"}
+      description={locale === "en" ? "Start a session to view the conversation here." : "Inicie uma sessão para consultar a conversa aqui."}
     />
   );
 }
 
 export function ChatMessages({ currentCourse, currentVisit, currentSchool, isTyping, chatEndRef, hasToken }) {
+  const { locale } = useLocale();
   const shouldShowEmpty = !currentVisit;
 
   return (
     <div className="flex-1 space-y-6 overflow-y-auto bg-slate-50/40 p-4 pb-28 sm:p-6 sm:pb-8">
       {shouldShowEmpty ? (
         <div className="mx-auto mt-6 max-w-2xl">
-          <ChatEmptyState hasToken={hasToken} currentCourse={currentCourse} />
+          <ChatEmptyState hasToken={hasToken} currentCourse={currentCourse} locale={locale} />
         </div>
       ) : null}
 

@@ -1,4 +1,5 @@
 import { AlertCircle, CheckCircle2, Info } from "lucide-react";
+import { useLocale } from "../../i18n";
 
 const toneMap = {
   success: {
@@ -16,6 +17,7 @@ const toneMap = {
 };
 
 export function FeedbackBanner({ feedback, onClose }) {
+  const { locale } = useLocale();
   if (!feedback?.message) return null;
 
   const tone = toneMap[feedback.type] || toneMap.info;
@@ -32,7 +34,7 @@ export function FeedbackBanner({ feedback, onClose }) {
         onClick={onClose}
         className="ml-3 rounded px-2 py-0.5 text-xs font-medium text-current/80 hover:bg-white/70"
       >
-        关闭
+        {locale === "en" ? "Close" : "Fechar"}
       </button>
     </div>
   );

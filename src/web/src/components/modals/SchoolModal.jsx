@@ -1,5 +1,6 @@
 import { X } from "lucide-react";
 import { getSchoolDisplayName } from "../common/schoolText";
+import { useLocale } from "../../i18n";
 
 export function SchoolModal({
   open,
@@ -10,6 +11,7 @@ export function SchoolModal({
   onClose,
   onSelectSchool,
 }) {
+  const { locale } = useLocale();
   if (!open) return null;
 
   return (
@@ -20,9 +22,9 @@ export function SchoolModal({
         </button>
 
         <div>
-          <h3 className="text-lg font-bold text-slate-800">选择咨询流派</h3>
+          <h3 className="text-lg font-bold text-slate-800">{locale === "en" ? "Choose an approach" : "Escolha uma abordagem"}</h3>
           <p className="mt-1 text-sm text-slate-600">
-            选择后会自动切换疗程列表。当前：{getSchoolDisplayName(currentSchool)}
+            {locale === "en" ? "The course list updates when you switch. Current: " : "A lista de percursos será atualizada. Atual: "}{getSchoolDisplayName(currentSchool, locale)}
           </p>
         </div>
 
@@ -33,23 +35,23 @@ export function SchoolModal({
           disabled={!token}
         >
           <option value="" disabled>
-            请选择流派
+            {locale === "en" ? "Select an approach" : "Selecione uma abordagem"}
           </option>
           {schools.map((school) => (
             <option key={school.id} value={school.id}>
-              {getSchoolDisplayName(school)}
+              {getSchoolDisplayName(school, locale)}
             </option>
           ))}
         </select>
 
-        {!token ? <p className="text-xs text-amber-600">请先登录后再切换流派。</p> : null}
+        {!token ? <p className="text-xs text-amber-600">{locale === "en" ? "Sign in before switching approaches." : "Entre para trocar de abordagem."}</p> : null}
 
         <button
           type="button"
           className="w-full rounded-lg bg-slate-100 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-200"
           onClick={onClose}
         >
-          关闭
+          {locale === "en" ? "Close" : "Fechar"}
         </button>
       </div>
     </div>

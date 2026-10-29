@@ -1,13 +1,13 @@
-# PsychAgent Web
+# PsicoIA Web
 
-PsychAgent Web is a browser-based workspace for experiencing PsychAgent's multi-session counseling flow. It includes a frontend and a local backend for demos, trial use, and lightweight development.
+PsicoIA Web is a local demonstration interface for the PsychAgent multi-session research workflow. The interface is available in Brazilian Portuguese and English; use the selector in the upper-right corner to save a language preference in this browser. The selected language is also sent to supported response-generation API requests.
 
 [Português (Brasil)](README.pt-BR.md)
 
 ## Features
 
 - Sign up and sign in.
-- Create courses by counseling school.
+- Create courses by approach.
 - Automatically start the first session.
 - Continue a conversation during a session.
 - End a session and start the next one.
@@ -125,7 +125,7 @@ npm run dev
 ## Usage
 
 1. Open the web app and sign in or register.
-2. Choose a counseling school.
+2. Choose an approach.
 3. Create a course.
 4. Start a conversation in the session view.
 5. End the current session and move to the next one.

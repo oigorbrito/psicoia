@@ -1,13 +1,15 @@
 import { Send } from "lucide-react";
+import { useLocale } from "../../i18n";
 
 export function ChatInput({ currentCourse, currentVisit, input, isTyping, onInputChange, onSend }) {
+  const { locale } = useLocale();
   const nextVisitNo = (currentCourse?.latest_visit_no || 0) + 1;
 
   if (!currentVisit) {
     if (!currentCourse) return null;
     return (
       <div className="mb-20 border-t border-slate-200 bg-white p-4 text-center text-sm text-slate-600 lg:mb-0">
-        当前疗程尚未开始会谈，请点击“开始第 {nextVisitNo} 次会谈”。
+        {locale === "en" ? `No session has started for this course. Select “Start session ${nextVisitNo}”.` : `Ainda não há sessão neste percurso. Selecione “Iniciar sessão ${nextVisitNo}”.`}
       </div>
     );
   }
@@ -15,7 +17,7 @@ export function ChatInput({ currentCourse, currentVisit, input, isTyping, onInpu
   if (currentVisit.status !== "open") {
     return (
       <div className="mb-20 border-t border-slate-200 bg-white p-4 text-center text-sm text-slate-600 lg:mb-0">
-        当前会谈已结束，可开始下一次会谈。
+        {locale === "en" ? "This session has ended. You can start the next one." : "Esta sessão foi encerrada. Você pode iniciar a próxima."}
       </div>
     );
   }
@@ -32,7 +34,7 @@ export function ChatInput({ currentCourse, currentVisit, input, isTyping, onInpu
               onSend();
             }
           }}
-          placeholder="输入你的想法，按 Enter 发送，Shift + Enter 换行。"
+          placeholder={locale === "en" ? "Write a message. Enter to send; Shift + Enter for a new line." : "Escreva sua mensagem. Enter envia; Shift + Enter quebra a linha."}
           className="min-h-[56px] w-full max-h-32 resize-none rounded-xl border border-slate-200 bg-slate-50 py-3 pl-4 pr-12 text-sm focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 md:text-base"
           rows={1}
         />
@@ -48,7 +50,7 @@ export function ChatInput({ currentCourse, currentVisit, input, isTyping, onInpu
       </div>
 
       <p className="mt-2 text-center text-xs leading-5 text-slate-600">
-        AI 回答仅供参考，不替代专业医疗建议。如有紧急情况，请立即联系当地急救资源。
+        {locale === "en" ? "AI responses are informational and do not replace professional advice. In an emergency, contact local services." : "As respostas de IA são informativas e não substituem orientação profissional. Em emergências, procure os serviços locais."}
       </p>
     </div>
   );

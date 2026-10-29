@@ -2,7 +2,7 @@
 
 ## Objetivos de idioma
 
-O português brasileiro (`pt-BR`) é o idioma-alvo principal; o inglês (`en`) é secundário. Neste candidato de integração, a interface web upstream permanece inalterada; a implementação local de locale em PT-BR está pendente de revisão separada e não foi incluída aqui. Na migração, o código upstream deve ser copiado literalmente: sem melhorias, correções ou mudanças funcionais. A marca visível pode mudar de PsychAgent para PsicoIA apenas em prosa de apresentação referente ao produto de destino. Identificadores, contratos serializados, atribuição acadêmica e referências ao upstream permanecem inalterados. Consulte a [política de migração e tradução](docs/MIGRATION-POLICY.pt-BR.md).
+O português brasileiro (`pt-BR`) é o idioma principal; o inglês (`en`) é secundário. A interface web dispõe agora de textos localizados para fluxos principais e de um seletor de idioma salvo no navegador; a cobertura não é completa. A opção de idioma também é enviada no campo API já existente `output_language` ao criar percursos/sessões, enviar mensagens e encerrar sessões. A migração preserva identificadores, contratos, dados, atribuição acadêmica e referências ao upstream; conteúdo clínico, prompts operacionais e catálogos não foram traduzidos neste trabalho. Exceção autorizada por esta tarefa à cópia literal: interface local de idioma e envio do idioma selecionado pelo campo já existente `output_language`; não foram adicionadas rotas, enums ou campos de API. Consulte a [política de migração e tradução](docs/MIGRATION-POLICY.pt-BR.md).
 
 ## Limites seguros
 
@@ -27,10 +27,10 @@ Para gerar um build de produção do frontend, execute `cd src/web && npm run bu
 
 ## Retrato atual da auditoria
 
-- Interface web do candidato de integração: o comportamento upstream foi preservado e a implementação do seletor/idioma de resposta está pendente. Os testes de localização da interface não foram executados neste candidato.
-- Documentação: há guias do projeto e da aplicação web em inglês e PT-BR. O antigo caminho do README chinês foi mantido como ponte de compatibilidade para os guias mantidos.
+- Interface web: foram localizados os fluxos principais de navegação, autenticação, criação/conclusão de percursos, sessões, status e mensagens de interface. Os rótulos de idioma PT-BR/EN e a conversão para os valores preexistentes do enum `output_language` têm testes unitários. Rótulos de etapa e foco de sessão oriundos do backend permanecem no idioma de origem; mensagens/status fora do mapa também podem aparecer sem tradução. Não foi executado fluxo visual interativo com navegador.
+- Documentação: guias do projeto e da aplicação web existem em inglês e PT-BR; os READMEs principais agora apresentam PsicoIA como destino e preservam PsychAgent para proveniência, artigo, modelo e pesquisa.
 - Prompts de avaliação: os 60 arquivos em `prompts/eval/` contêm texto chinês. Eles são usados por métodos de pontuação; traduzi-los é uma alteração sensível ao comportamento e exige comparação de notas em um conjunto fixo de avaliação e verificação dos esquemas.
 - Catálogos de habilidades: o trabalho local de tradução informa cobertura de 16/30 catálogos e 1.233/5.158 registros em PT-BR, e 8/30 catálogos e 141/5.158 registros em inglês. Esses catálogos traduzidos não foram incluídos neste candidato; os números indicam apenas cobertura estrutural e não comprovam qualidade da tradução nem equivalência da recuperação.
 - O texto chinês nos caminhos de imagens em Markdown foi mantido porque são caminhos de arquivos; alterá-los sem renomear os recursos e atualizar as referências quebraria os links.
 
-Este retrato não significa que a localização do projeto esteja completa. Atualize os números após cada lançamento validado de catálogos ou prompts.
+A localização permanece parcial. O backend ainda entrega strings chinesas de etapas, abordagens e contextos; dados, conteúdo clínico, prompts de avaliação/geração e catálogos permanecem fora do escopo autorizado aqui. A build e os testes unitários da web não substituem revisão linguística/profissional nem validação funcional integrada com modelos. Atualize este retrato somente após evidência correspondente.

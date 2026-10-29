@@ -1,6 +1,7 @@
 import { CalendarPlus2, CheckCircle2, PlayCircle, PlusCircle, XCircle } from "lucide-react";
 import { getCourseStatusText, getVisitStatusText } from "../common/statusText";
 import { getSchoolDisplayName } from "../common/schoolText";
+import { useLocale } from "../../i18n";
 
 export function HeaderBar({
   currentSchool,
@@ -17,25 +18,26 @@ export function HeaderBar({
   onCloseVisit,
   onOpenCompleteCourseModal,
 }) {
+  const { t, locale } = useLocale();
   const hasOpenVisit = currentVisit?.status === "open" || Boolean(currentCourse?.active_visit_id);
   const nextVisitNo = (currentCourse?.latest_visit_no || 0) + 1;
 
   const primaryAction = !currentCourse || currentCourse.status !== "active"
     ? {
-        label: "新建疗程",
+        label: t("新建疗程"),
         icon: PlusCircle,
         onClick: onOpenCreateCourseModal,
         disabled: !canCreateCourse || !selectedSchoolId || !token,
       }
     : hasOpenVisit
     ? {
-        label: "继续当前会谈",
+        label: locale === "en" ? "Continue session" : "Continuar sessão",
         icon: PlayCircle,
         onClick: onContinueVisit,
         disabled: false,
       }
     : {
-        label: `开始第 ${nextVisitNo} 次会谈`,
+        label: `${locale === "en" ? "Start session " : "Iniciar sessão "}${nextVisitNo}`,
         icon: CalendarPlus2,
         onClick: onStartNextVisit,
         disabled: !canStartNextVisit,
@@ -48,13 +50,13 @@ export function HeaderBar({
       <div className="flex items-center justify-between gap-4">
         <div className="ml-10 md:ml-0">
           <h1 className="text-base font-semibold text-slate-900">
-            {currentSchool ? `${getSchoolDisplayName(currentSchool)} 咨询工作台` : "心理咨询工作台"}
+            {currentSchool ? `${getSchoolDisplayName(currentSchool, locale)} ${locale === "en" ? "workspace" : "Espaço de conversa"}` : "PsicoIA"}
           </h1>
           <p className="mt-1 text-xs text-slate-600">
             {!currentCourse
-              ? "先创建疗程，再进入会谈流程。"
-              : `疗程状态：${getCourseStatusText(currentCourse.status)}${
-                  currentVisit ? ` · 会谈状态：${getVisitStatusText(currentVisit.status)}` : ""
+              ? (locale === "en" ? "Create a course to begin sessions." : "Crie um percurso para iniciar as sessões.")
+              : `${locale === "en" ? "Course: " : "Percurso: "}${getCourseStatusText(currentCourse.status, locale)}${
+                  currentVisit ? ` · ${locale === "en" ? "Session: " : "Sessão: "}${getVisitStatusText(currentVisit.status, locale)}` : ""
                 }`}
           </p>
         </div>
@@ -77,7 +79,7 @@ export function HeaderBar({
               className="inline-flex items-center gap-1 rounded-lg bg-rose-50 px-3 py-2 text-xs font-semibold text-rose-700 hover:bg-rose-100"
             >
               <XCircle className="h-3.5 w-3.5" />
-              结束本次会谈
+              {locale === "en" ? "End session" : "Encerrar sessão"}
             </button>
           ) : null}
 
@@ -88,7 +90,7 @@ export function HeaderBar({
               className="inline-flex items-center gap-1 rounded-lg bg-emerald-50 px-3 py-2 text-xs font-semibold text-emerald-700 hover:bg-emerald-100"
             >
               <CheckCircle2 className="h-3.5 w-3.5" />
-              完成疗程
+              {locale === "en" ? "Complete course" : "Concluir percurso"}
             </button>
           ) : null}
         </div>

@@ -13,8 +13,8 @@ if [ -f "${ENV_FILE}" ]; then
 fi
 
 if [ ! -f "${WEB_DIR}/main.py" ]; then
-  echo "[ERROR] 未找到后端入口: ${WEB_DIR}/main.py"
-  echo "[HINT] 可通过 WEB_DIR 指定 web 目录，例如:"
+  echo "[ERRO] Não foi encontrado o ponto de entrada do backend: ${WEB_DIR}/main.py"
+  echo "[DICA] Defina WEB_DIR para indicar o diretório web, por exemplo:"
   echo "       WEB_DIR=/path/to/PsychAgent_v0402/src/web ./run_backend.sh"
   exit 1
 fi
@@ -38,8 +38,8 @@ export no_proxy="${no_proxy:+$no_proxy,}${NO_PROXY_EXTRA}"
 # Required keys for the default baseline/runtime config.
 export SGLANG_API_KEY="${SGLANG_API_KEY:-EMPTY}"
 if [ -z "${PSYCHAGENT_EMBEDDING_API_KEY:-}" ]; then
-  echo "[ERROR] 缺少 PSYCHAGENT_EMBEDDING_API_KEY。"
-  echo "[HINT] 可在 ~/.zshrc 或 ${ENV_FILE} 中设置，例如："
+  echo "[ERRO] A variável PSYCHAGENT_EMBEDDING_API_KEY não está definida."
+  echo "[DICA] Defina a variável em ~/.zshrc ou em ${ENV_FILE}, por exemplo:"
   echo "       export PSYCHAGENT_EMBEDDING_API_KEY='your-key'"
   exit 1
 fi

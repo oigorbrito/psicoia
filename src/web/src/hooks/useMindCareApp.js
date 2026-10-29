@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { STORAGE_KEYS } from "../config/api";
 import { authApi, catalogApi, coursesApi, visitsApi } from "../services/mindcareApi";
+import { useLocale } from "../i18n";
+import { outputLanguageForLocale } from "../locale";
 
 const FEEDBACK_DURATION_MS = 3600;
 
@@ -30,6 +32,8 @@ function normalizeCourseList(courses) {
 }
 
 export function useMindCareApp() {
+  const { locale, t } = useLocale();
+  const outputLanguage = outputLanguageForLocale(locale);
   const [token, setToken] = useState(() => localStorage.getItem(STORAGE_KEYS.token) || "");
   const [user, setUser] = useState(loadCachedUser);
 
@@ -71,6 +75,7 @@ export function useMindCareApp() {
   function pushFeedback(type, message, options = {}) {
     const { sticky = false } = options;
     if (!message) return;
+    message = t(message);
 
     if (feedbackTimerRef.current) {
       clearTimeout(feedbackTimerRef.current);
@@ -295,6 +300,7 @@ export function useMindCareApp() {
         {
           school_id: selectedSchoolId,
           auto_start_first_visit: true,
+          output_language: outputLanguage,
           title: "",
           ...normalizedPayload,
         },
@@ -333,7 +339,7 @@ export function useMindCareApp() {
     }
 
     try {
-      const visit = await visitsApi.create(currentCourse.course_id, { opening_note: "" }, { token, onUnauthorized });
+      const visit = await visitsApi.create(currentCourse.course_id, { opening_note: "", output_language: outputLanguage }, { token, onUnauthorized });
       syncCourseInList({
         ...currentCourse,
         active_visit_id: visit.visit_id,
@@ -344,7 +350,7 @@ export function useMindCareApp() {
         setCurrentVisit(visit);
         setSelectedVisitId(visit.visit_id);
       }
-      pushFeedback("success", `已开始第 ${visit.visit_no || (currentCourse.latest_visit_no || 0) + 1} 次会谈。`);
+      pushFeedback("success", locale === "en" ? `Session ${visit.visit_no || (currentCourse.latest_visit_no || 0) + 1} started.` : `Sessão ${visit.visit_no || (currentCourse.latest_visit_no || 0) + 1} iniciada.`);
       return visit;
     } catch (error) {
       pushFeedback("error", error.message || "创建会谈失败。", { sticky: true });
@@ -391,7 +397,7 @@ export function useMindCareApp() {
     try {
       const data = await visitsApi.sendMessage(
         currentVisit.visit_id,
-        { text },
+        { text, output_language: outputLanguage },
         { token, onUnauthorized }
       );
       setCurrentVisit(data.visit);
@@ -426,7 +432,7 @@ export function useMindCareApp() {
     }
 
     try {
-      await visitsApi.close(currentVisit.visit_id, normalizedPayload, { token, onUnauthorized });
+      await visitsApi.close(currentVisit.visit_id, { output_language: outputLanguage, ...normalizedPayload }, { token, onUnauthorized });
       if (currentCourse?.course_id) {
         await loadCourse(currentCourse.course_id, token);
       }

@@ -14,6 +14,7 @@ import {
 import { getSchoolDisplayName } from "../common/schoolText";
 import { StatusPill } from "../common/StatusPill";
 import { getCourseStatusText } from "../common/statusText";
+import { useLocale } from "../../i18n";
 
 function getCourseTone(status) {
   if (status === "active") return "active";
@@ -35,6 +36,7 @@ export function Sidebar({
   onOpenAuthModal,
   user,
 }) {
+  const { t, locale } = useLocale();
   const [coursePanelOpen, setCoursePanelOpen] = useState(true);
   const desktopCollapsed = Boolean(sidebarCollapsed);
 
@@ -50,8 +52,8 @@ export function Sidebar({
             <Brain className="h-5 w-5" />
           </div>
           <div className={desktopCollapsed ? "block md:hidden" : "block"}>
-            <p className="text-sm font-semibold text-slate-800">心理咨询工作台</p>
-            <p className="text-xs text-slate-500">MindSpace</p>
+            <p className="text-sm font-semibold text-slate-800">PsicoIA</p>
+            <p className="text-xs text-slate-500">{locale === "en" ? "Conversation workspace" : "Espaço de conversa"}</p>
           </div>
         </div>
 
@@ -60,8 +62,8 @@ export function Sidebar({
             type="button"
             className="hidden rounded-md p-1 text-slate-500 hover:bg-slate-100 md:inline-flex"
             onClick={onToggleCollapse}
-            aria-label={desktopCollapsed ? "展开左栏" : "收起左栏"}
-            title={desktopCollapsed ? "展开左栏" : "收起左栏"}
+            aria-label={desktopCollapsed ? (locale === "en" ? "Expand sidebar" : "Expandir barra lateral") : (locale === "en" ? "Collapse sidebar" : "Recolher barra lateral")}
+            title={desktopCollapsed ? (locale === "en" ? "Expand sidebar" : "Expandir barra lateral") : (locale === "en" ? "Collapse sidebar" : "Recolher barra lateral")}
           >
             {desktopCollapsed ? <ChevronsRight className="h-4 w-4" /> : <ChevronsLeft className="h-4 w-4" />}
           </button>
@@ -79,7 +81,7 @@ export function Sidebar({
               type="button"
               onClick={onOpenSchoolModal}
               className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100"
-              title="切换流派"
+              title={t("切换")}
             >
               <Activity className="h-4 w-4" />
             </button>
@@ -90,13 +92,13 @@ export function Sidebar({
           {currentSchool ? (
             <section className="rounded-xl border border-slate-200 bg-slate-50 p-4">
               <div className="mb-2 flex items-center justify-between">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">当前咨询流派</p>
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{t("当前咨询流派")}</p>
                 <button
                   type="button"
                   onClick={onOpenSchoolModal}
                   className="text-xs font-medium text-teal-600 hover:text-teal-700"
                 >
-                  切换
+                  {t("切换")}
                 </button>
               </div>
 
@@ -107,43 +109,43 @@ export function Sidebar({
                 <div>
                   <p className="text-sm font-semibold text-slate-800">{getSchoolDisplayName(currentSchool)}</p>
                   <p className="mt-1 text-xs leading-5 text-slate-600">
-                    当前阶段：{currentCourse?.current_stage?.label || "未开始"}
+                    {locale === "en" ? "Current stage: " : "Etapa atual: "}{currentCourse?.current_stage?.label || t("未开始")}
                   </p>
                 </div>
               </div>
             </section>
           ) : (
             <section className="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-600">
-              <p>请先选择咨询流派，再创建疗程。</p>
+              <p>{locale === "en" ? "Choose an approach before creating a course." : "Selecione uma abordagem antes de criar um percurso."}</p>
               <button
                 type="button"
                 onClick={onOpenSchoolModal}
                 className="mt-3 text-xs font-medium text-teal-600 hover:text-teal-700"
               >
-                打开流派选择
+                {locale === "en" ? "Choose approach" : "Escolher abordagem"}
               </button>
             </section>
           )}
 
           <section>
             <div className="mb-2 flex items-center justify-between">
-              <h2 className="text-sm font-semibold text-slate-800">疗程列表</h2>
+              <h2 className="text-sm font-semibold text-slate-800">{t("疗程列表")}</h2>
               <div className="flex items-center gap-1">
                 <FolderTree className="h-4 w-4 text-slate-400" />
                 <button
                   type="button"
                   onClick={() => setCoursePanelOpen((prev) => !prev)}
                   className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-slate-600 hover:bg-slate-100"
-                  aria-label={coursePanelOpen ? "收起疗程列表" : "展开疗程列表"}
+                  aria-label={coursePanelOpen ? (locale === "en" ? "Collapse course list" : "Recolher percursos") : (locale === "en" ? "Expand course list" : "Expandir percursos")}
                 >
                   {coursePanelOpen ? (
                     <>
-                      收起
+                      {locale === "en" ? "Collapse" : "Recolher"}
                       <ChevronUp className="h-3.5 w-3.5" />
                     </>
                   ) : (
                     <>
-                      展开
+                      {locale === "en" ? "Expand" : "Expandir"}
                       <ChevronDown className="h-3.5 w-3.5" />
                     </>
                   )}
@@ -165,16 +167,16 @@ export function Sidebar({
                     }`}
                   >
                     <div className="flex items-start justify-between gap-2">
-                      <p className="text-sm font-semibold text-slate-800">{course.title || "未命名疗程"}</p>
+                      <p className="text-sm font-semibold text-slate-800">{course.title || t("未命名疗程")}</p>
                       <StatusPill text={getCourseStatusText(course.status)} tone={getCourseTone(course.status)} />
                     </div>
 
                     <div className="mt-2 space-y-1 text-xs text-slate-600">
-                      <p>当前阶段：{course.current_stage?.label || "未开始"}</p>
-                      <p>已进行会谈：{course.latest_visit_no || 0} 次</p>
+                      <p>{locale === "en" ? "Current stage: " : "Etapa atual: "}{course.current_stage?.label || t("未开始")}</p>
+                      <p>{locale === "en" ? "Sessions completed: " : "Sessões realizadas: "}{course.latest_visit_no || 0}</p>
                       <p className="inline-flex items-center gap-1 text-slate-500">
                         <Sparkles className="h-3.5 w-3.5" />
-                        {course.active_visit_id ? "有进行中的会谈" : "暂无进行中的会谈"}
+                        {course.active_visit_id ? (locale === "en" ? "Session in progress" : "Há uma sessão em andamento") : (locale === "en" ? "No session in progress" : "Nenhuma sessão em andamento")}
                       </p>
                     </div>
                   </button>
@@ -182,15 +184,15 @@ export function Sidebar({
 
                 {courses.length === 0 ? (
                   <div className="rounded-lg border border-dashed border-slate-300 bg-slate-50 p-3 text-xs leading-5 text-slate-600">
-                    当前流派下还没有疗程，请点击“新建疗程”开始。
+                    {locale === "en" ? "No courses for this approach yet. Select ‘New course’ to begin." : "Ainda não há percursos nesta abordagem. Selecione ‘Novo percurso’ para começar."}
                   </div>
                 ) : null}
               </div>
             ) : (
               <div className="rounded-lg border border-dashed border-slate-300 bg-slate-50 p-3 text-xs leading-5 text-slate-600">
                 {currentCourse
-                  ? `当前已选：${currentCourse.title || "未命名疗程"}`
-                  : "疗程列表已收起，点击“展开”查看全部疗程。"}
+                  ? `${locale === "en" ? "Selected: " : "Selecionado: "}${currentCourse.title || t("未命名疗程")}`
+                  : (locale === "en" ? "Course list collapsed. Select ‘Expand’ to view all courses." : "A lista está recolhida. Selecione ‘Expandir’ para ver todos os percursos.")}
               </div>
             )}
           </section>
@@ -206,7 +208,7 @@ export function Sidebar({
           }`}
         >
           <User className="h-4 w-4" />
-          <span>{user ? `已登录：${user.username}` : "登录 / 注册"}</span>
+          <span>{user ? `${locale === "en" ? "Signed in: " : "Conectado: "}${user.username}` : (locale === "en" ? "Sign in / Register" : "Entrar / Criar conta")}</span>
         </button>
       </div>
     </aside>
