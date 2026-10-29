@@ -6,11 +6,11 @@ This package contains synthetic fixtures for calibrating the rubric in `../../do
 
 - `pilot-cases.jsonl`: 88 synthetic PT-BR contexts; these are the only data a future prompt run should receive.
 - `pilot-labels.jsonl`: expected action, grounding facts, prohibited claims, and provisional dimensions for human review; never provide them to the model during evaluation.
-- `validate_pilot.py`: validates JSONL, required fields, IDs, and case/label matching using only the Python standard library.
+- `validate_pilot.py`: validates JSONL, required fields, IDs, history/action consistency, and duplicate dialogue fixtures using only the Python standard library.
 - `build_review_forms.py`: creates two separately ordered, label-blind review forms from `pilot-cases.jsonl` only.
 - `review/reviewer-a.csv` and `review/reviewer-b.csv`: blank independent review forms; provisional labels are not included.
 - `review/REVIEW-GUIDE.md` (`.pt-BR.md`): bilingual codebook and process instructions for independent case-label review.
-- `validate_review_forms.py`: checks the blank templates contain the same 88 cases in different orders.
+- `validate_review_forms.py`: checks the blank templates match the current case text, contain the same 88 cases, and use different orders.
 - `compare_review_forms.py`: after both reviewers finish, reports raw agreement and descriptive Cohen's kappa for categorical labels; it never reads the provisional label file.
 - `test_review_workflow.py`: tests agreement calculations, input consistency, and protection against overwriting completed forms.
 

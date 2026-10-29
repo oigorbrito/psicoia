@@ -56,6 +56,26 @@ def require(condition: bool, message: str) -> None:
         raise ValueError(message)
 
 
+def validate_label_case_consistency(case: dict, label: dict) -> None:
+    case_id = case["id"]
+    has_prior_context = bool(case["prior_summary"].strip() or case["prior_agreement"].strip())
+    if has_prior_context:
+        expected_history = "available"
+    elif case["session_index"] == 1:
+        expected_history = "first_session"
+    else:
+        expected_history = "unavailable"
+    require(
+        label["history_state"] == expected_history,
+        f"{case_id}: history_state conflicts with supplied case context",
+    )
+    if label["ending_signal"] in {"natural", "explicit"}:
+        require(
+            label["expected_action"] == "close",
+            f"{case_id}: a natural/explicit ending signal must map to close",
+        )
+
+
 def main() -> None:
     cases = load_jsonl(ROOT / "pilot-cases.jsonl")
     labels = load_jsonl(ROOT / "pilot-labels.jsonl")
@@ -80,6 +100,7 @@ def main() -> None:
             require(isinstance(turn, dict) and turn.get("role") in {"client", "counselor"}, f"{case_id}: invalid dialogue role")
             require(isinstance(turn.get("text"), str) and turn["text"].strip(), f"{case_id}: dialogue text must be non-empty")
 
+    cases_by_id = {row["id"]: row for row in cases}
     for row in labels:
         case_id = row["id"]
         require(LABEL_FIELDS <= row.keys(), f"{case_id}: missing label fields {sorted(LABEL_FIELDS - row.keys())}")
@@ -90,6 +111,13 @@ def main() -> None:
         require(isinstance(row["must_not_claim"], list), f"{case_id}: must_not_claim must be a list")
         require(isinstance(row["carry_forward"], str) and row["carry_forward"].strip(), f"{case_id}: carry_forward must be non-empty")
         require(isinstance(row["rationale"], str) and row["rationale"].strip(), f"{case_id}: rationale must be non-empty")
+        validate_label_case_consistency(cases_by_id[case_id], row)
+
+    dialogue_signatures = [
+        tuple((turn["role"], turn["text"].strip().casefold()) for turn in case["dialogue"])
+        for case in cases
+    ]
+    require(len(set(dialogue_signatures)) == EXPECTED_COUNT, "duplicate dialogue signatures found")
 
     print(f"Pilot fixtures valid: {EXPECTED_COUNT} synthetic cases and labels; no model calls performed.")
     for field in LABEL_DIMENSIONS:

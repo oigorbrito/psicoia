@@ -7,6 +7,7 @@ import pytest
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_review_forms  # noqa: E402
 import compare_review_forms  # noqa: E402
+import validate_pilot  # noqa: E402
 
 
 def test_cohen_kappa_known_example():
@@ -69,6 +70,32 @@ def test_compare_forms_rejects_changed_case_input(tmp_path):
     _write_form(path_b, ["close"], alter_input=True)
     with pytest.raises(ValueError, match="case input differs"):
         compare_review_forms.compare_forms(path_a, path_b)
+
+
+def test_pilot_validator_checks_history_against_case_context():
+    case = {
+        "id": "SC-01",
+        "session_index": 2,
+        "prior_summary": "",
+        "prior_agreement": "",
+    }
+    label = {"history_state": "unavailable", "ending_signal": "none", "expected_action": "continue"}
+    validate_pilot.validate_label_case_consistency(case, label)
+    label["history_state"] = "available"
+    with pytest.raises(ValueError, match="history_state conflicts"):
+        validate_pilot.validate_label_case_consistency(case, label)
+
+
+def test_pilot_validator_requires_closing_action_for_end_signal():
+    case = {
+        "id": "SC-02",
+        "session_index": 1,
+        "prior_summary": "",
+        "prior_agreement": "",
+    }
+    label = {"history_state": "first_session", "ending_signal": "explicit", "expected_action": "continue"}
+    with pytest.raises(ValueError, match="must map to close"):
+        validate_pilot.validate_label_case_consistency(case, label)
 
 
 def test_form_builder_detects_existing_annotations(tmp_path, monkeypatch):
