@@ -102,6 +102,42 @@ def test_compare_forms_can_reject_stale_case_text(tmp_path):
         compare_review_forms.compare_forms(path_a, path_b, [case])
 
 
+def test_full_88_case_review_pipeline_in_temp_files(tmp_path):
+    cases = build_review_forms.load_cases()
+    fields = build_review_forms.FIELDNAMES
+    form_paths = [tmp_path / "reviewer-a.csv", tmp_path / "reviewer-b.csv"]
+    for reviewer_index, path in enumerate(form_paths):
+        rows = []
+        for index, case in enumerate(cases):
+            row = build_review_forms.form_row(case)
+            row["decisao_esperada"] = "close" if index % 2 == 0 else "continue"
+            if reviewer_index == 1 and index == 0:
+                row["decisao_esperada"] = "continue"
+            row["estado_do_foco"] = ["explored", "open", "ambivalent"][index % 3]
+            row["sinal_de_encerramento"] = ["none", "natural", "explicit"][index % 3]
+            has_prior = bool(case["prior_summary"].strip() or case["prior_agreement"].strip())
+            row["estado_do_historico"] = (
+                "available" if has_prior else "first_session" if case["session_index"] == 1 else "unavailable"
+            )
+            row["fatos_de_ancoragem"] = "synthetic test evidence"
+            row["continuidade_a_preservar"] = "synthetic test continuity"
+            row["afirmacoes_nao_sustentadas"] = "synthetic test caution"
+            row["justificativa"] = "synthetic test rationale"
+            rows.append(row)
+        with path.open("w", encoding="utf-8-sig", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=fields)
+            writer.writeheader()
+            writer.writerows(rows)
+
+    form_a = compare_review_forms.read_completed_form(form_paths[0])
+    form_b = compare_review_forms.read_completed_form(form_paths[1])
+    report = compare_review_forms.compare_forms(*form_paths, expected_cases=cases)
+    adjudication = build_adjudication_sheet.build_adjudication_rows(form_a, form_b, cases)
+    assert report["decisao_esperada"]["n"] == 88
+    assert report["decisao_esperada"]["disagreements"] == ["SC-01"]
+    assert [row["id_caso"] for row in adjudication] == ["SC-01"]
+
+
 def test_compare_forms_rejects_changed_case_input(tmp_path):
     path_a, path_b = tmp_path / "a.csv", tmp_path / "b.csv"
     _write_form(path_a, ["close"], alter_input=False)
