@@ -6,7 +6,7 @@ Este pacote contém fixtures sintéticos para calibrar a rubrica de `../../docs/
 
 - `pilot-cases.jsonl`: 88 contextos sintéticos em PT-BR; estes são os únicos dados que uma futura execução de prompt deverá receber.
 - `pilot-labels.jsonl`: ação esperada, fatos de ancoragem, itens que não podem ser afirmados e dimensões provisórias para revisão humana; nunca os forneça ao modelo durante a avaliação.
-- `validate_pilot.py`: valida JSONL, campos obrigatórios, IDs, consistência entre histórico/ação e casos com diálogos duplicados, usando apenas a biblioteca padrão do Python.
+- `validate_pilot.py`: valida JSONL, campos obrigatórios, IDs, consistência entre histórico/ação e diálogos duplicados; também informa cobertura marginal e cruzada, usando apenas a biblioteca padrão do Python.
 - `build_review_forms.py`: cria dois formulários cegos de revisão, com ordem separada, usando apenas `pilot-cases.jsonl`.
 - `review/reviewer-a.csv` e `review/reviewer-b.csv`: formulários independentes em branco; não incluem os rótulos provisórios.
 - `review/REVIEW-GUIDE.pt-BR.md` (`.md`): codebook bilíngue e instruções para revisão independente dos rótulos dos casos.

@@ -56,6 +56,15 @@ def require(condition: bool, message: str) -> None:
         raise ValueError(message)
 
 
+def print_cross_tab(rows: list[dict], row_field: str, column_field: str) -> None:
+    counts = Counter((row[row_field], row[column_field]) for row in rows)
+    column_values = sorted({row[column_field] for row in rows})
+    print(f"{row_field} by {column_field}:")
+    for row_value in sorted({row[row_field] for row in rows}):
+        cells = {column: counts[(row_value, column)] for column in column_values}
+        print(f"  {row_value}: {cells}")
+
+
 def validate_label_case_consistency(case: dict, label: dict) -> None:
     case_id = case["id"]
     has_prior_context = bool(case["prior_summary"].strip() or case["prior_agreement"].strip())
@@ -125,6 +134,8 @@ def main() -> None:
         print(f"{field}: {dict(sorted(counts.items()))}")
     action_by_signal = Counter((row["ending_signal"], row["expected_action"]) for row in labels)
     print(f"ending_signal by expected_action: {dict(sorted(action_by_signal.items()))}")
+    print_cross_tab(labels, "focus_state", "ending_signal")
+    print_cross_tab(labels, "history_state", "ending_signal")
 
 
 if __name__ == "__main__":

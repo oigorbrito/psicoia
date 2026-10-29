@@ -72,6 +72,20 @@ def test_compare_forms_rejects_changed_case_input(tmp_path):
         compare_review_forms.compare_forms(path_a, path_b)
 
 
+def test_coverage_cross_tab_reports_zero_cells(capsys):
+    validate_pilot.print_cross_tab(
+        [
+            {"focus_state": "open", "ending_signal": "none"},
+            {"focus_state": "explored", "ending_signal": "natural"},
+        ],
+        "focus_state",
+        "ending_signal",
+    )
+    output = capsys.readouterr().out
+    assert "explored: {'natural': 1, 'none': 0}" in output
+    assert "open: {'natural': 0, 'none': 1}" in output
+
+
 def test_pilot_validator_checks_history_against_case_context():
     case = {
         "id": "SC-01",
