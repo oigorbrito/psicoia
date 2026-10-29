@@ -136,6 +136,35 @@ const STRINGS = {
     "会谈开场生成失败，请稍后重试": ["Não foi possível preparar a abertura da sessão. Tente novamente mais tarde.", "Unable to prepare the session opening. Try again later."],
     "大模型调用失败，请稍后重试": ["Não foi possível acessar o modelo. Tente novamente mais tarde.", "Unable to reach the model. Try again later."],
     "大模型返回为空，请稍后重试": ["O modelo retornou uma resposta vazia. Tente novamente mais tarde.", "The model returned an empty response. Try again later."],
+    "Não foi possível conectar à API local. Verifique se o backend está em execução.": ["Não foi possível conectar à API local. Verifique se o backend está em execução.", "Could not connect to the local API. Check that the backend is running."],
+    "Token de acesso não informado.": ["Token de acesso não informado.", "Access token was not provided."],
+    "Token de acesso inválido.": ["Token de acesso inválido.", "Invalid access token."],
+    "Usuário não encontrado.": ["Usuário não encontrado.", "User not found."],
+    "Este nome de usuário já está em uso.": ["Este nome de usuário já está em uso.", "This username is already in use."],
+    "Nome de usuário ou senha incorretos.": ["Nome de usuário ou senha incorretos.", "Incorrect username or password."],
+    "Percurso não encontrado.": ["Percurso não encontrado.", "Course not found."],
+    "Sessão não encontrada.": ["Sessão não encontrada.", "Session not found."],
+    "Acesso não autorizado.": ["Acesso não autorizado.", "Access is not authorized."],
+    "Abordagem não encontrada.": ["Abordagem não encontrada.", "Approach not found."],
+    "A abordagem selecionada não está disponível.": ["A abordagem selecionada não está disponível.", "The selected approach is unavailable."],
+    "Não foi possível criar o percurso. Tente novamente.": ["Não foi possível criar o percurso. Tente novamente.", "Unable to create the course. Try again."],
+    "Encerre a sessão atual antes de concluir o percurso.": ["Encerre a sessão atual antes de concluir o percurso.", "End the current session before completing the course."],
+    "Somente percursos concluídos podem ser arquivados.": ["Somente percursos concluídos podem ser arquivados.", "Only completed courses can be archived."],
+    "Só é possível iniciar uma sessão em um percurso em andamento.": ["Só é possível iniciar uma sessão em um percurso em andamento.", "A session can only be started in an active course."],
+    "Este percurso já tem uma sessão em andamento.": ["Este percurso já tem uma sessão em andamento.", "This course already has a session in progress."],
+    "Esta sessão já foi encerrada.": ["Esta sessão já foi encerrada.", "This session has already ended."],
+    "Esta sessão foi encerrada e não aceita novas mensagens.": ["Esta sessão foi encerrada e não aceita novas mensagens.", "This session has ended and cannot accept new messages."],
+    "Não foi possível preparar a abertura da sessão. Tente novamente.": ["Não foi possível preparar a abertura da sessão. Tente novamente.", "Unable to prepare the session opening. Try again."],
+    "Não foi possível gerar uma resposta. Tente novamente.": ["Não foi possível gerar uma resposta. Tente novamente.", "Unable to generate a response. Try again."],
+    "O serviço de geração retornou uma resposta vazia. Tente novamente.": ["O serviço de geração retornou uma resposta vazia. Tente novamente.", "The generation service returned an empty response. Try again."],
+    "Este campo é obrigatório.": ["Este campo é obrigatório.", "This field is required."],
+    "Os dados informados são inválidos.": ["Os dados informados são inválidos.", "The provided data is invalid."],
+    "O tipo de dado informado não é válido.": ["O tipo de dado informado não é válido.", "The provided data type is invalid."],
+    "O valor informado é menor que o mínimo permitido.": ["O valor informado é menor que o mínimo permitido.", "The value is below the minimum allowed."],
+    "O valor informado excede o limite permitido.": ["O valor informado excede o limite permitido.", "The value exceeds the allowed limit."],
+    "O valor informado está fora do intervalo permitido.": ["O valor informado está fora do intervalo permitido.", "The value is outside the allowed range."],
+    "O valor informado não corresponde a uma opção válida.": ["O valor informado não corresponde a uma opção válida.", "The value does not match a valid option."],
+    "O corpo da solicitação contém JSON inválido.": ["O corpo da solicitação contém JSON inválido.", "The request body contains invalid JSON."],
   },
 };
 
@@ -154,7 +183,16 @@ export function LocaleProvider({ children }) {
   const value = useMemo(() => ({
     locale,
     setLocale,
-    t: (source) => STRINGS["zh-CN"][source]?.[locale === "en" ? 1 : 0] ?? source,
+    t: (source) => {
+      const text = String(source ?? "");
+      const known = STRINGS["zh-CN"][text];
+      if (known) return known[locale === "en" ? 1 : 0];
+      if (locale === "en") {
+        const requestFailure = text.match(/^Falha na solicitação \(status (\d+)\)\.$/);
+        if (requestFailure) return `Request failed (status ${requestFailure[1]}).`;
+      }
+      return text;
+    },
   }), [locale]);
   return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>;
 }

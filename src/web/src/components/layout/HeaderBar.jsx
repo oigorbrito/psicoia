@@ -18,7 +18,7 @@ export function HeaderBar({
   onCloseVisit,
   onOpenCompleteCourseModal,
 }) {
-  const { t, locale } = useLocale();
+  const { t, locale, setLocale } = useLocale();
   const hasOpenVisit = currentVisit?.status === "open" || Boolean(currentCourse?.active_visit_id);
   const nextVisitNo = (currentCourse?.latest_visit_no || 0) + 1;
 
@@ -61,38 +61,52 @@ export function HeaderBar({
           </p>
         </div>
 
-        <div className="hidden items-center gap-2 lg:flex">
-          <button
-            type="button"
-            onClick={primaryAction.onClick}
-            disabled={primaryAction.disabled}
-            className="inline-flex items-center gap-1 rounded-lg bg-teal-600 px-3 py-2 text-xs font-semibold text-white hover:bg-teal-700 disabled:cursor-not-allowed disabled:opacity-50"
-          >
-            <PrimaryIcon className="h-3.5 w-3.5" />
-            {primaryAction.label}
-          </button>
-
-          {hasOpenVisit ? (
+        <div className="flex items-center gap-2">
+          <label className="rounded-md border border-slate-200 bg-white px-2 py-1 text-xs" htmlFor="locale-select">
+            {locale === "pt-BR" ? "Idioma" : "Language"}
+            <select
+              id="locale-select"
+              className="ml-2 bg-transparent"
+              value={locale}
+              onChange={(event) => setLocale(event.target.value)}
+            >
+              <option value="pt-BR">Português (Brasil)</option>
+              <option value="en">English</option>
+            </select>
+          </label>
+          <div className="hidden items-center gap-2 lg:flex">
             <button
               type="button"
-              onClick={onCloseVisit}
-              className="inline-flex items-center gap-1 rounded-lg bg-rose-50 px-3 py-2 text-xs font-semibold text-rose-700 hover:bg-rose-100"
+              onClick={primaryAction.onClick}
+              disabled={primaryAction.disabled}
+              className="inline-flex items-center gap-1 rounded-lg bg-teal-600 px-3 py-2 text-xs font-semibold text-white hover:bg-teal-700 disabled:cursor-not-allowed disabled:opacity-50"
             >
-              <XCircle className="h-3.5 w-3.5" />
-              {locale === "en" ? "End session" : "Encerrar sessão"}
+              <PrimaryIcon className="h-3.5 w-3.5" />
+              {primaryAction.label}
             </button>
-          ) : null}
 
-          {canCompleteCourse ? (
-            <button
-              type="button"
-              onClick={onOpenCompleteCourseModal}
-              className="inline-flex items-center gap-1 rounded-lg bg-emerald-50 px-3 py-2 text-xs font-semibold text-emerald-700 hover:bg-emerald-100"
-            >
-              <CheckCircle2 className="h-3.5 w-3.5" />
-              {locale === "en" ? "Complete course" : "Concluir percurso"}
-            </button>
-          ) : null}
+            {hasOpenVisit ? (
+              <button
+                type="button"
+                onClick={onCloseVisit}
+                className="inline-flex items-center gap-1 rounded-lg bg-rose-50 px-3 py-2 text-xs font-semibold text-rose-700 hover:bg-rose-100"
+              >
+                <XCircle className="h-3.5 w-3.5" />
+                {locale === "en" ? "End session" : "Encerrar sessão"}
+              </button>
+            ) : null}
+
+            {canCompleteCourse ? (
+              <button
+                type="button"
+                onClick={onOpenCompleteCourseModal}
+                className="inline-flex items-center gap-1 rounded-lg bg-emerald-50 px-3 py-2 text-xs font-semibold text-emerald-700 hover:bg-emerald-100"
+              >
+                <CheckCircle2 className="h-3.5 w-3.5" />
+                {locale === "en" ? "Complete course" : "Concluir percurso"}
+              </button>
+            ) : null}
+          </div>
         </div>
       </div>
     </header>

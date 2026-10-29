@@ -84,15 +84,15 @@ class VisitState(VisitPreview):
 
 
 class CreateCourseRequest(BaseModel):
-    school_id: str = Field(..., description="咨询流派 ID")
-    title: str = Field("", description="疗程标题，可选")
-    planned_visit_count: Optional[int] = Field(None, ge=1, description="预估总次数")
-    goal_summary: str = Field("", description="疗程目标摘要")
-    intake_note: str = Field("", description="初始背景记录")
-    goals: List[str] = Field(default_factory=list, description="初始目标列表")
-    auto_start_first_visit: bool = Field(True, description="是否自动创建第一次会谈")
-    opening_note: str = Field("", description="第一次会谈的开场提示")
-    output_language: Optional[OutputLanguage] = Field(None, description="Language for generated counselor responses")
+    school_id: str = Field(..., description="ID estável da abordagem selecionada.")
+    title: str = Field("", description="Título do percurso (opcional).")
+    planned_visit_count: Optional[int] = Field(None, ge=1, description="Número estimado de sessões.")
+    goal_summary: str = Field("", description="Resumo dos objetivos informados para o percurso.")
+    intake_note: str = Field("", description="Informações iniciais fornecidas pela pessoa usuária.")
+    goals: List[str] = Field(default_factory=list, description="Lista inicial de objetivos informados.")
+    auto_start_first_visit: bool = Field(True, description="Indica se a primeira sessão deve ser iniciada automaticamente.")
+    opening_note: str = Field("", description="Nota opcional para a abertura da primeira sessão.")
+    output_language: Optional[OutputLanguage] = Field(None, description="Idioma solicitado para as respostas geradas.")
 
 
 class CreateCourseResponse(BaseModel):
@@ -110,17 +110,17 @@ class UpdateCourseRequest(BaseModel):
 
 
 class CompleteCourseRequest(BaseModel):
-    summary: str = Field("", description="疗程总结")
+    summary: str = Field("", description="Resumo do percurso informado pela aplicação.")
 
 
 class CreateVisitRequest(BaseModel):
-    opening_note: str = Field("", description="新会谈开场提示")
-    output_language: Optional[OutputLanguage] = Field(None, description="Language for generated counselor responses")
+    opening_note: str = Field("", description="Nota opcional para a abertura da sessão.")
+    output_language: Optional[OutputLanguage] = Field(None, description="Idioma solicitado para as respostas geradas.")
 
 
 class SendVisitMessageRequest(BaseModel):
-    text: str = Field(..., min_length=1, description="用户输入")
-    output_language: Optional[OutputLanguage] = Field(None, description="Language for generated counselor responses")
+    text: str = Field(..., min_length=1, description="Mensagem enviada pela pessoa usuária.")
+    output_language: Optional[OutputLanguage] = Field(None, description="Idioma solicitado para as respostas geradas.")
 
 
 class CourseMetaOut(BaseModel):
@@ -135,8 +135,8 @@ class SendVisitMessageResponse(BaseModel):
 
 
 class CloseVisitRequest(BaseModel):
-    summary: str = Field("", description="本次会谈摘要")
-    output_language: Optional[OutputLanguage] = Field(None, description="Language for generated session artifacts")
+    summary: str = Field("", description="Resumo da sessão informado pela aplicação.")
+    output_language: Optional[OutputLanguage] = Field(None, description="Idioma solicitado para os artefatos de sessão gerados.")
 
 
 class CloseVisitResponse(BaseModel):

@@ -1,3 +1,5 @@
+import { getStageDisplayLabel } from "./stageText";
+
 export function StageBadge({ stage }) {
   return (
     <span
@@ -5,7 +7,7 @@ export function StageBadge({ stage }) {
         stage?.color || "bg-slate-100 text-slate-600"
       }`}
     >
-      {stage?.label || "未知阶段"}
+      {getStageDisplayLabel(stage)}
     </span>
   );
 }

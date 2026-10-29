@@ -15,12 +15,16 @@ PROJECT_ROOT = APP_DIR.parents[1]
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from fastapi import Depends, FastAPI, Header, HTTPException
+from fastapi import Depends, FastAPI, Header, HTTPException, Request
+from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from fastapi.responses import JSONResponse
+from fastapi.encoders import jsonable_encoder
+from pydantic import BaseModel, Field
 from sqlmodel import Session, SQLModel, create_engine, select
 
 from backend.domain import SCHOOLS, STAGES, SchoolInfo, StageInfo, stage_from_key
+from backend.localization import message, validation_message
 from backend.models import AuthTokenRecord, UserRecord
 from backend.psychagent_engine import PsychAgentWebBackend
 from backend.routes.courses import create_courses_router
@@ -57,11 +61,15 @@ class AuthResponse(BaseModel):
 
 
 class AuthPayload(BaseModel):
-    username: str
-    password: str
+    username: str = Field(..., description="Nome de usuário da conta.")
+    password: str = Field(..., description="Senha da conta.")
 
 
-app = FastAPI(title="PsicoIA Web API", version="0.4.2")
+app = FastAPI(
+    title="API Web do PsicoIA",
+    description="API local da aplicação PsicoIA para demonstração e pesquisa.",
+    version="0.4.2",
+)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -153,14 +161,14 @@ def create_token() -> str:
 
 def get_current_user(authorization: str = Header(None), db: Session = Depends(get_db)) -> UserRecord:
     if not authorization or not authorization.lower().startswith("bearer "):
-        raise HTTPException(status_code=401, detail="Missing token")
+        raise HTTPException(status_code=401, detail=message("auth_missing_token"))
     token = authorization.split(" ", 1)[1]
     token_row = db.get(AuthTokenRecord, token)
     if not token_row:
-        raise HTTPException(status_code=401, detail="Invalid token")
+        raise HTTPException(status_code=401, detail=message("auth_invalid_token"))
     user = db.get(UserRecord, token_row.user_id)
     if not user:
-        raise HTTPException(status_code=401, detail="User not found")
+        raise HTTPException(status_code=401, detail=message("auth_user_not_found"))
     return user
 
 
@@ -196,13 +204,23 @@ app.include_router(
 )
 
 
+@app.exception_handler(RequestValidationError)
+async def request_validation_handler(_request: Request, exc: RequestValidationError):
+    errors = []
+    for error in exc.errors():
+        localized = dict(error)
+        localized["msg"] = validation_message(str(error.get("type", "")))
+        errors.append(localized)
+    return JSONResponse(status_code=422, content=jsonable_encoder({"detail": errors}))
+
+
 @app.on_event("startup")
 async def on_startup() -> None:
     configure_logging()
     SQLModel.metadata.create_all(engine)
     run_sqlite_migrations()
     await get_psychagent_backend().startup()
-    LOGGER.info("PsychAgent web startup complete db=%s", DB_URL)
+    LOGGER.info("Inicialização da API web do PsicoIA concluída; banco=%s", DB_URL)
 
 
 @app.get("/health")
@@ -220,7 +238,7 @@ def health():
 def register(payload: AuthPayload, db: Session = Depends(get_db)):
     exists = db.exec(select(UserRecord).where(UserRecord.username == payload.username)).first()
     if exists:
-        raise HTTPException(status_code=400, detail="用户已存在")
+        raise HTTPException(status_code=400, detail=message("auth_user_exists"))
     user = UserRecord(username=payload.username, password_hash=hash_password(payload.password))
     db.add(user)
     db.commit()
@@ -239,7 +257,7 @@ def register(payload: AuthPayload, db: Session = Depends(get_db)):
 def login(payload: AuthPayload, db: Session = Depends(get_db)):
     user = db.exec(select(UserRecord).where(UserRecord.username == payload.username)).first()
     if not user or user.password_hash != hash_password(payload.password):
-        raise HTTPException(status_code=401, detail="用户名或密码错误")
+        raise HTTPException(status_code=401, detail=message("auth_invalid_credentials"))
 
     token_value = create_token()
     db.add(AuthTokenRecord(token=token_value, user_id=user.id))

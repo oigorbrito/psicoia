@@ -14,6 +14,7 @@ import {
 import { getSchoolDisplayName } from "../common/schoolText";
 import { StatusPill } from "../common/StatusPill";
 import { getCourseStatusText } from "../common/statusText";
+import { getStageDisplayLabel } from "../common/stageText";
 import { useLocale } from "../../i18n";
 
 function getCourseTone(status) {
@@ -109,7 +110,7 @@ export function Sidebar({
                 <div>
                   <p className="text-sm font-semibold text-slate-800">{getSchoolDisplayName(currentSchool)}</p>
                   <p className="mt-1 text-xs leading-5 text-slate-600">
-                    {locale === "en" ? "Current stage: " : "Etapa atual: "}{currentCourse?.current_stage?.label || t("未开始")}
+                    {locale === "en" ? "Current stage: " : "Etapa atual: "}{getStageDisplayLabel(currentCourse?.current_stage, locale)}
                   </p>
                 </div>
               </div>
@@ -172,7 +173,7 @@ export function Sidebar({
                     </div>
 
                     <div className="mt-2 space-y-1 text-xs text-slate-600">
-                      <p>{locale === "en" ? "Current stage: " : "Etapa atual: "}{course.current_stage?.label || t("未开始")}</p>
+                      <p>{locale === "en" ? "Current stage: " : "Etapa atual: "}{getStageDisplayLabel(course.current_stage, locale)}</p>
                       <p>{locale === "en" ? "Sessions completed: " : "Sessões realizadas: "}{course.latest_visit_no || 0}</p>
                       <p className="inline-flex items-center gap-1 text-slate-500">
                         <Sparkles className="h-3.5 w-3.5" />

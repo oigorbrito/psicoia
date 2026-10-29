@@ -199,14 +199,18 @@ def main() -> None:
             # Auth, real SQLite persistence, and access control.
             one = require(client.post("/auth/register", json={"username": "synthetic-one", "password": "local-password"}), 200, "register").json()
             token = one["token"]
-            require(client.post("/auth/register", json={"username": "synthetic-one", "password": "local-password"}), 400, "duplicate registration")
-            require(client.post("/auth/login", json={"username": "synthetic-one", "password": "wrong"}), 401, "invalid credentials")
+            duplicate = require(client.post("/auth/register", json={"username": "synthetic-one", "password": "local-password"}), 400, "duplicate registration")
+            assert duplicate.json()["detail"] == "Este nome de usuário já está em uso."
+            invalid_credentials = require(client.post("/auth/login", json={"username": "synthetic-one", "password": "wrong"}), 401, "invalid credentials")
+            assert invalid_credentials.json()["detail"] == "Nome de usuário ou senha incorretos."
             two = require(client.post("/auth/register", json={"username": "synthetic-two", "password": "local-password"}), 200, "second user").json()
-            require(client.get("/courses"), 401, "unauthenticated course list")
+            missing_token = require(client.get("/courses"), 401, "unauthenticated course list")
+            assert missing_token.json()["detail"] == "Token de acesso não informado."
             auth = {"Authorization": f"Bearer {token}"}
             auth_two = {"Authorization": f"Bearer {two['token']}"}
 
-            require(client.post("/courses", headers=auth, json={"school_id": "invalid-school"}), 404, "unknown school")
+            unknown_school = require(client.post("/courses", headers=auth, json={"school_id": "invalid-school"}), 404, "unknown school")
+            assert unknown_school.json()["detail"] == "Abordagem não encontrada."
             created = require(client.post("/courses", headers=auth, json={
                 "school_id": "cbt", "title": "synthetic course", "goal_summary": "synthetic goal",
                 "auto_start_first_visit": True, "opening_note": "synthetic note",
@@ -226,7 +230,8 @@ def main() -> None:
             require(client.get(f"/visits/{visit_id}", headers=auth), 200, "get visit")
             require(client.get(f"/visits/{visit_id}", headers=auth_two), 403, "visit ownership")
             require(client.post(f"/courses/{course_id}/visits", headers=auth, json={}), 409, "duplicate open visit")
-            require(client.post(f"/visits/{visit_id}/messages", headers=auth, json={"text": ""}), 422, "empty message validation")
+            invalid_message = require(client.post(f"/visits/{visit_id}/messages", headers=auth, json={"text": ""}), 422, "empty message validation")
+            assert invalid_message.json()["detail"][0]["msg"] == "O valor informado é menor que o mínimo permitido."
 
             posted = require(client.post(f"/visits/{visit_id}/messages", headers=auth, json={"text": "synthetic user message"}), 200, "send message").json()
             assert posted["visit"]["message_count"] >= 4
@@ -238,6 +243,11 @@ def main() -> None:
 
             closed = require(client.post(f"/visits/{visit_id}/close", headers=auth, json={"summary": "synthetic session summary"}), 200, "close visit").json()
             assert closed["status"] == "closed" and closed["summary"] == "synthetic session summary"
+            closed_state = require(client.get(f"/visits/{visit_id}", headers=auth), 200, "localized closed visit state").json()
+            assert any(
+                item["text"] == "--- Esta sessão foi encerrada e o progresso foi salvo. ---"
+                for item in closed_state["messages"]
+            )
             require(client.post(f"/visits/{visit_id}/close", headers=auth, json={}), 409, "close twice")
             completed = require(client.post(f"/courses/{course_id}/complete", headers=auth, json={"summary": "course summary"}), 200, "complete course").json()
             assert completed["status"] == "completed"

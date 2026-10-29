@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
 from ..backends.base import ModelBackend
+from ..core.language import output_language_instruction
 from ..core.prompt_manager import PromptManager
 from ..core.retry import FatalBackendError
 from ..core.schemas import ClientCase, PublicMemory
@@ -17,7 +18,7 @@ class ClientSimulator:
     """Generate client utterances independent from baseline counselor backend."""
 
     prompt_manager: PromptManager
-    output_language: str = "中文"
+    output_language: str = "Português (Brasil)"
     backend: Optional[ModelBackend] = None
     temperature: float = 0.7
     max_tokens: int = 256
@@ -42,14 +43,18 @@ class ClientSimulator:
         )
 
         if self.backend is not None:
+            if self.output_language == "English":
+                role_instruction = "You are simulating the person speaking with a counselor."
+            elif "中" in self.output_language or self.output_language.lower().startswith("zh"):
+                role_instruction = "你是心理咨询来访者模拟器。"
+            else:
+                role_instruction = "Você simula a pessoa atendida em uma conversa."
             messages = [
                 {
                     "role": "system",
                     "content": (
-                        "你是心理咨询来访者模拟器。"
-                        f"请使用{self.output_language}。"
-                        "只输出一段真实自然的来访者口语化回应，"
-                        "不要添加角色前缀、解释或额外格式。"
+                        f"{role_instruction}\n"
+                        f"{output_language_instruction(self.output_language, 'client')}"
                     ),
                 },
                 {"role": "user", "content": prompt},
@@ -84,9 +89,17 @@ class ClientSimulator:
     ) -> str:
         concern = self._infer_concern(case, public_memory)
         is_chinese = ("中" in self.output_language) or self.output_language.lower().startswith("zh")
+        is_portuguese = self.output_language == "Português (Brasil)" or self.output_language.lower().startswith("pt")
+        if concern == "stress and emotional pressure" and is_portuguese:
+            concern = "estresse e sobrecarga emocional"
         if not prior_transcript:
             if is_chinese:
                 return f"这是第{session_index}次聊了，我最近还是一直被{concern}困住。我想看看这周我能先做点什么。"
+            if is_portuguese:
+                return (
+                    f"Esta é a sessão {session_index}. Ainda tenho enfrentado {concern}. "
+                    "Quero pensar no que posso fazer nesta semana."
+                )
             return (
                 f"This is session {session_index}. I've still been struggling with {concern}. "
                 "I want help figuring out what to do this week."
@@ -109,6 +122,19 @@ class ClientSimulator:
             return (
                 f"{mood_phrase}，尤其是想到{concern}的时候。"
                 f"你刚才说的那部分（{last_counselor[:60]}），我好像懂了，但还不太确定怎么用到现实里。"
+            )
+
+        if is_portuguese:
+            if mood == "improving":
+                mood_phrase = "Estou um pouco melhor do que antes"
+            elif mood == "distressed":
+                mood_phrase = "Ainda me sinto sob muita pressão"
+            else:
+                mood_phrase = "Estou com sentimentos mistos"
+            return (
+                f"{mood_phrase}, especialmente quando penso em {concern}. "
+                f"Sobre o que você disse há pouco ({last_counselor[:80]}), acho que entendi, "
+                "mas ainda não sei como aplicar isso no dia a dia."
             )
 
         if mood == "improving":
@@ -142,8 +168,8 @@ class ClientSimulator:
         if public_memory is None or not public_memory.session_recaps:
             return "mixed"
         last_summary = str(public_memory.session_recaps[-1].get("summary", "")).lower()
-        positive_markers = ("好一些", "稳定", "有进展", "缓解", "better", "improved", "calmer", "progress")
-        negative_markers = ("焦虑", "难受", "压抑", "崩溃", "失眠", "anxious", "overwhelmed", "stuck")
+        positive_markers = ("好一些", "稳定", "有进展", "缓解", "better", "improved", "calmer", "progress", "melhor", "estável", "progresso", "alívio")
+        negative_markers = ("焦虑", "难受", "压抑", "崩溃", "失眠", "anxious", "overwhelmed", "stuck", "ansioso", "ansiosa", "sobrecarregado", "sobrecarregada", "insônia")
         if any(x in last_summary for x in positive_markers):
             return "improving"
         if any(x in last_summary for x in negative_markers):

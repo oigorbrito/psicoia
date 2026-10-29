@@ -1,5 +1,6 @@
 import { Activity, ShieldAlert, Target } from "lucide-react";
 import { useLocale } from "../../i18n";
+import { getStageDisplayLabel } from "../common/stageText";
 
 const SESSION_FOCUS_DEFAULT = [
   "建立初始关系与咨询框架",
@@ -52,7 +53,7 @@ export function RightPanel({ currentCourse, currentVisit, embedded = false }) {
       <Section title={locale === "en" ? "Current stage" : "Etapa atual"} icon={Activity}>
         {currentCourse ? (
           <div className="space-y-1">
-            <p className="font-semibold text-slate-800">{stage?.label || (locale === "en" ? "Not started" : "Não iniciada")}</p>
+            <p className="font-semibold text-slate-800">{getStageDisplayLabel(stage, locale)}</p>
             <p>{locale === "en" ? `Session ${currentVisit?.visit_no || currentCourse?.latest_visit_no || 0}.` : `Sessão ${currentVisit?.visit_no || currentCourse?.latest_visit_no || 0}.`}</p>
           </div>
         ) : (

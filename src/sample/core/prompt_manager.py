@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Optional
 
+from .language import output_language_instruction
 from .schemas import ClientCase, PublicMemory
 
 try:
@@ -71,7 +72,7 @@ class PromptManager:
             else "(无)"
         )
 
-        return self.render_template(
+        prompt = self.render_template(
             "public/counselor_system.jinja2",
             therapy_name=therapy_name or _normalize_therapy_name(modality),
             modality=modality,
@@ -82,6 +83,7 @@ class PromptManager:
             session_recaps_text=session_recaps_text,
             last_homework_text=last_homework_text,
         )
+        return f"{prompt}\n\n{output_language_instruction(output_language, 'counselor')}"
 
     def render_session_opening(self, *, modality: str, session_index: int, end_token: str = "</end>") -> str:
         return self.render_template(
@@ -144,7 +146,7 @@ class PromptManager:
         modality_profile_text = json.dumps(case.theory_info, ensure_ascii=False, indent=2) if case.theory_info else "未知"
 
         if self._env is None:
-            return self._render_client_dialogue_fallback(
+            prompt = self._render_client_dialogue_fallback(
                 intake_profile=intake_profile,
                 session_index=session_index,
                 session_recaps=session_recaps,
@@ -152,8 +154,9 @@ class PromptManager:
                 modality_profile_text=modality_profile_text,
                 last_counselor_message=last_counselor_message,
             )
+            return f"{prompt}\n\n{output_language_instruction(output_language, 'client')}"
 
-        return self.render_template(
+        prompt = self.render_template(
             "client/dialogue.jinja2",
             modality=case.modality,
             session_index=session_index,
@@ -166,6 +169,7 @@ class PromptManager:
             prior_transcript=prior_transcript,
             output_language=output_language,
         )
+        return f"{prompt}\n\n{output_language_instruction(output_language, 'client')}"
 
     def _render_client_dialogue_fallback(
         self,
@@ -243,7 +247,7 @@ class PromptManager:
             "3. 如果某些信息没有提供，可以说“不太确定”“我也没想清楚”，不要乱编和主线无关的新设定。\n"
             "4. 不要突然变成一个高度专业、像在背心理学教材的人。\n\n"
             "【说话方式】\n"
-            "1. 用自然、生活化、口语化的中文表达。\n"
+            "1. 用自然、生活化、口语化的表达。\n"
             "2. 每轮尽量 2–4 句话，短句优先。\n"
             "3. 不要使用临床术语，不要系统化总结自己，不要像写报告。\n"
             "4. 你的信息应逐步披露，不要一开始就把所有深层问题一次性全说完。\n"

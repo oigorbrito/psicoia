@@ -8,6 +8,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlmodel import Session, delete, select
 
 from ..domain import pick_school, stage_from_key
+from ..localization import message, school_display_name
 from ..models import CourseGoalRecord, TherapyCourseRecord, TherapyVisitRecord
 from ..schemas import CourseDetail, CourseGoalOut, CoursePreview, CourseStats
 
@@ -17,15 +18,15 @@ def utcnow() -> datetime:
 
 
 def build_default_course_title(school_name: str, created_at: datetime) -> str:
-    return f"{school_name} 疗程 {created_at.strftime('%Y-%m-%d')}"
+    return f"{school_display_name(school_name)} — percurso {created_at.strftime('%Y-%m-%d')}"
 
 
 def get_owned_course_record(db: Session, course_id: str, user_id: str) -> TherapyCourseRecord:
     course = db.get(TherapyCourseRecord, course_id)
     if not course:
-        raise HTTPException(status_code=404, detail="Course not found")
+        raise HTTPException(status_code=404, detail=message("course_not_found"))
     if course.user_id != user_id:
-        raise HTTPException(status_code=403, detail="Forbidden")
+        raise HTTPException(status_code=403, detail=message("access_forbidden"))
     return course
 
 
@@ -49,8 +50,8 @@ def format_course_identity(course: TherapyCourseRecord) -> str:
     try:
         school_name = pick_school(course.school_id).name
     except Exception:
-        school_name = course.school_id or "未知流派"
-    title = str(course.title or "").strip() or "未命名疗程"
+        school_name = school_display_name(course.school_id)
+    title = str(course.title or "").strip() or "Percurso sem título"
     return f"{school_name} / {title}"
 
 
@@ -133,7 +134,7 @@ def create_course(db: Session, user_id: str, payload) -> TherapyCourseRecord:
     course = TherapyCourseRecord(
         user_id=user_id,
         school_id=payload.school_id,
-        title=(payload.title or "").strip() or build_default_course_title(school.name, now),
+        title=(payload.title or "").strip() or build_default_course_title(school.id, now),
         status="active",
         current_stage_key="assessment",
         planned_visit_count=payload.planned_visit_count,
@@ -170,7 +171,7 @@ def create_course(db: Session, user_id: str, payload) -> TherapyCourseRecord:
         db.rollback()
         raise HTTPException(
             status_code=409,
-            detail="创建疗程失败，请稍后重试。",
+            detail=message("course_create_failed"),
         ) from None
     db.refresh(course)
     return course
@@ -187,7 +188,7 @@ def update_course(db: Session, user_id: str, course_id: str, payload) -> CourseD
 
     if payload.title is not None:
         school = pick_school(course.school_id)
-        course.title = payload.title.strip() or build_default_course_title(school.name, course.created_at)
+        course.title = payload.title.strip() or build_default_course_title(school.id, course.created_at)
     if payload.planned_visit_count is not None:
         course.planned_visit_count = payload.planned_visit_count
     if payload.goal_summary is not None:
@@ -230,7 +231,7 @@ def complete_course(db: Session, user_id: str, course_id: str, summary: str = ""
         )
     ).first()
     if open_visit:
-        raise HTTPException(status_code=409, detail="请先结束当前会谈，再完成疗程")
+        raise HTTPException(status_code=409, detail=message("course_close_visit_first"))
 
     course.status = "completed"
     course.active_visit_id = None
@@ -246,7 +247,7 @@ def complete_course(db: Session, user_id: str, course_id: str, summary: str = ""
 def archive_course(db: Session, user_id: str, course_id: str) -> CourseDetail:
     course = get_owned_course_record(db, course_id, user_id)
     if course.status != "completed":
-        raise HTTPException(status_code=409, detail="只有已完成的疗程才能归档")
+        raise HTTPException(status_code=409, detail=message("course_archive_incomplete"))
 
     course.status = "archived"
     course.updated_at = utcnow()

@@ -32,11 +32,10 @@ function getVisitTone(status) {
 
 export default function App() {
   const app = useMindCareApp();
-  const { locale, setLocale, t } = useLocale();
+  const { locale, t } = useLocale();
 
   return (
     <div className="flex h-screen w-full bg-white font-sans text-slate-900 selection:bg-teal-100">
-      <label className="fixed right-4 top-3 z-[60] rounded-md bg-white px-2 py-1 text-xs shadow" htmlFor="locale-select">{locale === "pt-BR" ? "Idioma" : "Language"}<select id="locale-select" className="ml-2 bg-transparent" value={locale} onChange={(event) => setLocale(event.target.value)}><option value="pt-BR">Português (Brasil)</option><option value="en">English</option></select></label>
       <button
         type="button"
         className="fixed left-4 top-4 z-40 rounded-lg border border-slate-200 bg-white p-2 shadow-md md:hidden"

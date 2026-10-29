@@ -16,6 +16,7 @@ from sample.prompt_manager import PsychAgentPromptManager
 from sample.skill_manager import SkillManager
 from sample.utils import extract_public_response, format_transcript, safe_json_loads
 
+from .localization import structured_output_contract
 from .domain import (
     school_to_psychagent_sect,
     stage_from_key,
@@ -237,7 +238,7 @@ class PsychAgentWebBackend:
             summary_data = await self._chat_structured_json(
                 system_prompt=(
                     str(prompt_manager.prompts.get("summary_system", "")).rstrip()
-                    + f"\n\nWrite all free-text string values in {response_language}. Preserve JSON keys and explicitly enumerated values exactly."
+                    + f"\n\n{structured_output_contract(response_language)}"
                 ),
                 user_prompt=summary_prompt,
                 schema_model=modality_models["summary"],
@@ -253,7 +254,7 @@ class PsychAgentWebBackend:
             profile_data = await self._chat_structured_json(
                 system_prompt=(
                     str(prompt_manager.prompts.get("profile_system", "")).rstrip()
-                    + f"\n\nWrite all free-text string values in {response_language}. Preserve JSON keys and explicitly enumerated values exactly."
+                    + f"\n\n{structured_output_contract(response_language)}"
                 ),
                 user_prompt=profile_prompt,
                 schema_model=modality_models["profile"],

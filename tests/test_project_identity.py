@@ -17,7 +17,7 @@ def test_visible_project_identity_and_upstream_attribution():
     assert readme_pt.startswith("# PsicoIA\n")
     assert "https://github.com/ECNU-ICALK/PsychAgent" in readme_en
     assert "<title>PsicoIA</title>" in html
-    assert 'FastAPI(title="PsicoIA Web API"' in web_main
+    assert 'title="API Web do PsicoIA"' in web_main
 
 
 def test_cli_uses_psicoia_display_name_without_changing_compatibility_mode():
@@ -25,7 +25,7 @@ def test_cli_uses_psicoia_display_name_without_changing_compatibility_mode():
     assert parser.parse_args([]).mode == "psychagent"
     mode_action = next(action for action in parser._actions if action.dest == "mode")
     assert mode_action.choices == ["psychagent"]
-    assert "PsicoIA standalone sample workflows" in parser.description
+    assert "fluxos de demonstração independentes do PsicoIA" in parser.description
 
 
 def test_private_frontend_package_and_lockfile_names_match():

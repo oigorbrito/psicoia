@@ -20,51 +20,51 @@ from .io.dataset_loader import DatasetLoader
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Run PsicoIA standalone sample workflows.")
+    parser = argparse.ArgumentParser(description="Execute os fluxos de demonstração independentes do PsicoIA.")
     parser.add_argument(
         "--mode",
         choices=["psychagent"],
         default="psychagent",
-        help="Execution mode. Only the psychagent compatibility mode is supported.",
+        help="Modo de execução. Somente o modo de compatibilidade psychagent é suportado.",
     )
     parser.add_argument(
         "--baseline",
         default="configs/baselines/psychagent_sglang_local.yaml",
-        help="Path to baseline YAML config.",
+        help="Caminho do arquivo YAML de configuração de baseline.",
     )
     parser.add_argument(
         "--runtime",
         default="configs/runtime/psychagent_sglang_local.yaml",
-        help="Path to runtime YAML config.",
+        help="Caminho do arquivo YAML de configuração de runtime.",
     )
     parser.add_argument(
         "--dataset",
         default="configs/datasets/profiles_sample.yaml",
-        help="Path to dataset YAML config.",
+        help="Caminho do arquivo YAML de configuração do conjunto de dados.",
     )
     parser.add_argument(
         "--resume",
         dest="resume",
         action="store_true",
-        help="Force resume=True override.",
+        help="Força a opção resume=True.",
     )
     parser.add_argument(
         "--no-resume",
         "--no_resume",
         dest="resume",
         action="store_false",
-        help="Force resume=False override.",
+        help="Força a opção resume=False.",
     )
     parser.set_defaults(resume=None)
-    parser.add_argument("--overwrite", action="store_true", help="Overwrite outputs if exists.")
-    parser.add_argument("--concurrency", type=int, default=None, help="Override runtime concurrency.")
-    parser.add_argument("--save_dir", default=None, help="Override runtime save_dir.")
+    parser.add_argument("--overwrite", action="store_true", help="Substitui os resultados existentes.")
+    parser.add_argument("--concurrency", type=int, default=None, help="Substitui a concorrência do runtime.")
+    parser.add_argument("--save_dir", default=None, help="Substitui o diretório de resultados do runtime.")
     parser.add_argument(
         "--strict-config",
         action="store_true",
-        help="Fail on runtime unknown/unused(deprecated/removed) config keys.",
+        help="Falha diante de chaves desconhecidas ou não utilizadas (obsoletas/removidas) no runtime.",
     )
-    parser.add_argument("--log_level", default="INFO", help="Logging level.")
+    parser.add_argument("--log_level", default="INFO", help="Nível de registro de eventos (logging).")
     return parser
 
 
@@ -99,19 +99,19 @@ async def run_from_args(args: argparse.Namespace) -> int:
     variant_cfg = runtime_cfg
 
     logger = logging.getLogger("psychagent_sample")
-    logger.info("Runtime config audit: %s", runtime_audit.to_dict())
-    logger.info("Effective runtime config: %s", variant_cfg.to_dict())
-    logger.info("Effective baseline config: %s", baseline_cfg.to_dict())
+    logger.info("Auditoria da configuração de runtime: %s", runtime_audit.to_dict())
+    logger.info("Configuração efetiva de runtime: %s", variant_cfg.to_dict())
+    logger.info("Configuração efetiva de baseline: %s", baseline_cfg.to_dict())
     dataset_loader = DatasetLoader(dataset_cfg, logger=logger)
     cases = dataset_loader.load_cases(seed=variant_cfg.random_seed)
 
-    logger.info("Loaded %s case(s) from %s", len(cases), str(root / args.dataset))
+    logger.info("%s caso(s) carregado(s) de %s", len(cases), str(root / args.dataset))
     runner = _build_runner(args.mode, baseline_cfg, variant_cfg, root)
 
     result = await runner.run_cases(cases)
 
-    logger.info("Run summary: %s", result.to_dict())
-    print("Run summary")
+    logger.info("Resumo da execução: %s", result.to_dict())
+    print("Resumo da execução")
     print(f"  total_cases: {result.total_cases}")
     print(f"  succeeded: {result.succeeded}")
     print(f"  partially_completed: {result.partially_completed}")
@@ -128,7 +128,7 @@ def _build_runner(
     project_root: Path,
 ) -> object:
     if mode != "psychagent":
-        raise ValueError(f"unsupported mode: {mode}")
+        raise ValueError(f"Modo não suportado: {mode}")
 
     prompt_root = project_root / "prompts"
 

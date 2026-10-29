@@ -5,6 +5,8 @@ from typing import Dict, List, Optional
 from fastapi import HTTPException
 from pydantic import BaseModel
 
+from .localization import message
+
 
 class StageInfo(BaseModel):
     key: str
@@ -134,13 +136,13 @@ def pick_school(school_id: str) -> SchoolInfo:
     for school in SCHOOLS:
         if school.id == school_id:
             return school
-    raise HTTPException(status_code=404, detail="School not found")
+    raise HTTPException(status_code=404, detail=message("school_not_found"))
 
 
 def school_to_psychagent_sect(school_id: str) -> str:
     sect = SCHOOL_TO_PSYCHAGENT_SECT.get(school_id)
     if not sect:
-        raise HTTPException(status_code=404, detail="Unsupported school for PsychAgent prompts")
+        raise HTTPException(status_code=404, detail=message("unsupported_school"))
     return sect
 
 

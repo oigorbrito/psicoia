@@ -23,16 +23,21 @@ export async function requestJson(
     requestHeaders.Authorization = `Bearer ${token}`;
   }
 
-  const response = await fetch(`${API_BASE}${path}`, {
-    method,
-    headers: requestHeaders,
-    body:
-      body === undefined
-        ? undefined
-        : body instanceof FormData
-        ? body
-        : JSON.stringify(body),
-  });
+  let response;
+  try {
+    response = await fetch(`${API_BASE}${path}`, {
+      method,
+      headers: requestHeaders,
+      body:
+        body === undefined
+          ? undefined
+          : body instanceof FormData
+          ? body
+          : JSON.stringify(body),
+    });
+  } catch {
+    throw new ApiError("Não foi possível conectar à API local. Verifique se o backend está em execução.", 0, null);
+  }
 
   let data = null;
   try {
@@ -46,7 +51,12 @@ export async function requestJson(
   }
 
   if (!response.ok) {
-    const message = data?.detail || `Request failed with status ${response.status}`;
+    const detail = data?.detail;
+    const message = Array.isArray(detail)
+      ? detail.find((item) => typeof item?.msg === "string")?.msg || "Os dados informados são inválidos."
+      : typeof detail === "string"
+      ? detail
+      : `Falha na solicitação (status ${response.status}).`;
     throw new ApiError(message, response.status, data);
   }
 

@@ -19,40 +19,40 @@ except ModuleNotFoundError:  # pragma: no cover - supports PYTHONPATH=src execut
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Run PsychAgent eval workflows.")
+    parser = argparse.ArgumentParser(description="Execute os fluxos de avaliação do PsicoIA (base de pesquisa PsychAgent).")
     parser.add_argument(
         "--config",
         default="configs/runtime/eval_default.yaml",
-        help="Path to eval runtime YAML config.",
+        help="Caminho do arquivo YAML de configuração do runtime de avaliação.",
     )
     parser.add_argument(
         "--input-format",
         default=None,
         choices=["auto", "eval_case", "sample"],
-        help="Eval input format: auto detect, native eval_case, or sample artifacts.",
+        help="Formato de entrada: detecção automática, eval_case nativo ou artefatos de demonstração.",
     )
-    parser.add_argument("--data-root", default=None, help="Override eval input data root.")
-    parser.add_argument("--output-root", default=None, help="Override eval output root.")
-    parser.add_argument("--modalities", default=None, help="Comma-separated modalities to run.")
-    parser.add_argument("--methods", default=None, help="Comma-separated method names to run.")
-    parser.add_argument("--selected-files", default=None, help="Comma-separated file stems/names to run.")
-    parser.add_argument("--case-limit", type=int, default=None, help="Limit the number of case files.")
+    parser.add_argument("--data-root", default=None, help="Substitui a raiz dos dados de entrada da avaliação.")
+    parser.add_argument("--output-root", default=None, help="Substitui a raiz dos resultados da avaliação.")
+    parser.add_argument("--modalities", default=None, help="Abordagens a executar, separadas por vírgulas.")
+    parser.add_argument("--methods", default=None, help="Nomes dos métodos a executar, separados por vírgulas.")
+    parser.add_argument("--selected-files", default=None, help="Nomes dos arquivos a executar, separados por vírgulas.")
+    parser.add_argument("--case-limit", type=int, default=None, help="Limita a quantidade de arquivos de casos.")
 
-    parser.add_argument("--resume", dest="resume", action="store_true", help="Force resume=True override.")
-    parser.add_argument("--no-resume", "--no_resume", dest="resume", action="store_false", help="Force resume=False.")
+    parser.add_argument("--resume", dest="resume", action="store_true", help="Força a opção resume=True.")
+    parser.add_argument("--no-resume", "--no_resume", dest="resume", action="store_false", help="Força a opção resume=False.")
     parser.set_defaults(resume=None)
-    parser.add_argument("--overwrite", action="store_true", help="Force overwrite mode.")
+    parser.add_argument("--overwrite", action="store_true", help="Força a substituição dos resultados existentes.")
 
-    parser.add_argument("--file-concurrency", type=int, default=None, help="Override file-level concurrency.")
-    parser.add_argument("--method-concurrency", type=int, default=None, help="Override method-level concurrency.")
-    parser.add_argument("--api-concurrency", type=int, default=None, help="Override API max concurrency.")
-    parser.add_argument("--api-rps", type=int, default=None, help="Override API requests-per-second.")
-    parser.add_argument("--api-rps-period", type=float, default=None, help="Override API rate-limit period.")
-    parser.add_argument("--api-key", default=None, help="Override API key.")
-    parser.add_argument("--api-base-url", default=None, help="Override API base URL.")
-    parser.add_argument("--api-model", default=None, help="Override API model name.")
+    parser.add_argument("--file-concurrency", type=int, default=None, help="Substitui a concorrência por arquivo.")
+    parser.add_argument("--method-concurrency", type=int, default=None, help="Substitui a concorrência por método.")
+    parser.add_argument("--api-concurrency", type=int, default=None, help="Substitui a concorrência máxima da API.")
+    parser.add_argument("--api-rps", type=int, default=None, help="Substitui o limite de solicitações da API por segundo.")
+    parser.add_argument("--api-rps-period", type=float, default=None, help="Substitui o período do limite de taxa da API.")
+    parser.add_argument("--api-key", default=None, help="Substitui a chave da API.")
+    parser.add_argument("--api-base-url", default=None, help="Substitui a URL base da API.")
+    parser.add_argument("--api-model", default=None, help="Substitui o nome do modelo da API.")
 
-    parser.add_argument("--log-level", default="INFO", help="Logging level.")
+    parser.add_argument("--log-level", default="INFO", help="Nível de registro de eventos (logging).")
     return parser
 
 
@@ -72,7 +72,7 @@ async def run_from_args(args: argparse.Namespace) -> int:
     runtime_cfg = _apply_overrides(runtime_cfg, args, root)
 
     logger = logging.getLogger("psychagent_eval")
-    logger.info("Eval run config: %s", runtime_cfg.to_dict())
+    logger.info("Configuração da execução de avaliação: %s", runtime_cfg.to_dict())
 
     orchestrator = EvaluationOrchestrator(runtime_cfg)
     try:
@@ -80,8 +80,8 @@ async def run_from_args(args: argparse.Namespace) -> int:
     finally:
         await orchestrator.close()
 
-    logger.info("Eval summary: %s", summary.__dict__)
-    print("Eval summary")
+    logger.info("Resumo da avaliação: %s", summary.__dict__)
+    print("Resumo da avaliação")
     print(f"  total_files: {summary.total_files}")
     print(f"  completed: {summary.completed}")
     print(f"  failed: {summary.failed}")

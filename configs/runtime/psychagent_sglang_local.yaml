@@ -5,7 +5,7 @@ concurrency: 4
 resume: true
 overwrite: false
 random_seed: 7
-output_language: 中文
+output_language: Português (Brasil)
 
 # Client simulator backend
 client_backend: openai_api

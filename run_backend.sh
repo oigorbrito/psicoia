@@ -15,7 +15,7 @@ fi
 if [ ! -f "${WEB_DIR}/main.py" ]; then
   echo "[ERRO] Não foi encontrado o ponto de entrada do backend: ${WEB_DIR}/main.py"
   echo "[DICA] Defina WEB_DIR para indicar o diretório web, por exemplo:"
-  echo "       WEB_DIR=/path/to/PsychAgent_v0402/src/web ./run_backend.sh"
+  echo "       WEB_DIR=/path/to/psicoia/src/web ./run_backend.sh"
   exit 1
 fi
 

@@ -107,7 +107,7 @@ class RuntimeConfig:
     overwrite: bool = False
     random_seed: int = 7
     transcript_truncation_strategy: str = "none"
-    output_language: str = "中文"
+    output_language: str = "Português (Brasil)"
     shared_public_recap_mode: str = "deterministic"
 
     client_backend: Literal["openai_api", "dummy", "none"] = "none"
@@ -159,7 +159,7 @@ class RuntimeConfig:
             overwrite=bool(raw.get("overwrite", False)),
             random_seed=int(raw.get("random_seed", 7)),
             transcript_truncation_strategy=str(raw.get("transcript_truncation_strategy", "none")),
-            output_language=str(raw.get("output_language", "中文")),
+            output_language=str(raw.get("output_language", "Português (Brasil)")),
             shared_public_recap_mode=str(raw.get("shared_public_recap_mode", "deterministic")),
             client_backend=str(raw.get("client_backend", "none")),
             client_model=str(raw.get("client_model", "shared-client-simulator")),

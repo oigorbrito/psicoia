@@ -1,8 +1,8 @@
-# PsychAgent — documentation
+# PsicoIA — documentação
 
-This legacy file path is retained for compatibility. The maintained project documentation is available in:
+Este caminho de arquivo legado é mantido por compatibilidade. A documentação mantida do projeto está disponível em:
 
 - [English](README.md)
 - [Português (Brasil)](README.pt-BR.md)
 
-Technical identifiers, commands, configuration keys, and data remain unchanged in both guides.
+Identificadores técnicos, comandos, chaves de configuração e dados permanecem inalterados nos dois guias.

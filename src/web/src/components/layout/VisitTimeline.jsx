@@ -3,6 +3,7 @@ import { EmptyState } from "../common/EmptyState";
 import { StatusPill } from "../common/StatusPill";
 import { formatVisitLabel, getVisitStatusText } from "../common/statusText";
 import { useLocale } from "../../i18n";
+import { getStageDisplayLabel } from "../common/stageText";
 
 function getVisitTone(status) {
   if (status === "open") return "active";
@@ -71,7 +72,7 @@ export function VisitTimeline({
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <p className="text-sm font-semibold text-slate-800">{formatVisitLabel(visit.visit_no, locale)}</p>
-                  <p className="mt-1 text-xs text-slate-600">{locale === "en" ? "Stage: " : "Etapa: "}{visit.stage?.label || (locale === "en" ? "Not started" : "Não iniciada")}</p>
+                  <p className="mt-1 text-xs text-slate-600">{locale === "en" ? "Stage: " : "Etapa: "}{getStageDisplayLabel(visit.stage, locale)}</p>
                 </div>
                 <StatusPill text={getVisitStatusText(visit.status)} tone={getVisitTone(visit.status)} />
               </div>

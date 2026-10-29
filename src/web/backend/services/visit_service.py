@@ -9,6 +9,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlmodel import Session, select
 
 from ..domain import pick_school, stage_from_key, summary_stage_to_stage_key
+from ..localization import message as api_message, output_language_or_default
 from ..models import (
     TherapyCourseRecord,
     TherapyVisitRecord,
@@ -184,13 +185,13 @@ def _build_opening_visit_state(visit_state: VisitState, seed_user_text: str) -> 
 def get_owned_visit_and_course(db: Session, visit_id: str, user_id: str) -> Tuple[TherapyVisitRecord, TherapyCourseRecord]:
     visit = db.get(TherapyVisitRecord, visit_id)
     if not visit:
-        raise HTTPException(status_code=404, detail="Visit not found")
+        raise HTTPException(status_code=404, detail=api_message("visit_not_found"))
 
     course = db.get(TherapyCourseRecord, visit.course_id)
     if not course:
-        raise HTTPException(status_code=404, detail="Course not found")
+        raise HTTPException(status_code=404, detail=api_message("course_not_found"))
     if course.user_id != user_id:
-        raise HTTPException(status_code=403, detail="Forbidden")
+        raise HTTPException(status_code=403, detail=api_message("access_forbidden"))
     return visit, course
 
 
@@ -621,9 +622,10 @@ async def create_visit(
     call_llm: Optional[CounselorReplyFn] = None,
     output_language: Optional[str] = None,
 ) -> VisitState:
+    output_language = output_language_or_default(output_language)
     course = get_owned_course_record(db, course_id, user_id)
     if course.status != "active":
-        raise HTTPException(status_code=409, detail="只有进行中的疗程才能开始新会谈")
+        raise HTTPException(status_code=409, detail=api_message("visit_course_inactive"))
 
     open_visit = db.exec(
         select(TherapyVisitRecord).where(
@@ -632,7 +634,7 @@ async def create_visit(
         )
     ).first()
     if open_visit:
-        raise HTTPException(status_code=409, detail="当前疗程已有未结束的会谈")
+        raise HTTPException(status_code=409, detail=api_message("visit_already_open"))
 
     next_visit_no = course.latest_visit_no + 1
     stage = resolve_stage_for_new_visit(db, course, next_visit_no)
@@ -707,7 +709,7 @@ async def create_visit(
     assistant_text = str(assistant_text or "").strip()
     if not assistant_text:
         db.rollback()
-        raise HTTPException(status_code=502, detail="会谈开场生成失败，请稍后重试")
+        raise HTTPException(status_code=502, detail=api_message("visit_opening_failed"))
 
     now = utcnow()
     opening_assistant_message = VisitMessageRecord(
@@ -728,7 +730,7 @@ async def create_visit(
         db.commit()
     except IntegrityError:
         db.rollback()
-        raise HTTPException(status_code=409, detail="当前疗程已有未结束的会谈") from None
+        raise HTTPException(status_code=409, detail=api_message("visit_already_open")) from None
     db.refresh(visit)
     return build_visit_state(db, visit)
 
@@ -747,9 +749,10 @@ async def send_visit_message(
     output_language: Optional[str] = None,
     run_session_close_postprocess: Optional[SessionClosePostprocessFn] = None,
 ) -> SendVisitMessageResponse:
+    output_language = output_language_or_default(output_language)
     visit, course = get_owned_visit_and_course(db, visit_id, user_id)
     if visit.status != "open":
-        raise HTTPException(status_code=409, detail="当前会谈已结束，无法继续发送消息")
+        raise HTTPException(status_code=409, detail=api_message("visit_closed_cannot_send"))
 
     now = utcnow()
     user_message = VisitMessageRecord(
@@ -788,12 +791,12 @@ async def send_visit_message(
         )
     except Exception as exc:
         db.rollback()
-        raise HTTPException(status_code=502, detail="大模型调用失败，请稍后重试") from exc
+        raise HTTPException(status_code=502, detail=api_message("model_call_failed")) from exc
 
     assistant_text, should_auto_close = _parse_assistant_payload(assistant_payload)
     if not assistant_text:
         db.rollback()
-        raise HTTPException(status_code=502, detail="大模型返回为空，请稍后重试")
+        raise HTTPException(status_code=502, detail=api_message("model_empty_response"))
 
     now = utcnow()
     assistant_message = VisitMessageRecord(
@@ -845,9 +848,10 @@ async def close_visit(
     output_language: Optional[str] = None,
     run_session_close_postprocess: Optional[SessionClosePostprocessFn] = None,
 ) -> CloseVisitResponse:
+    output_language = output_language_or_default(output_language)
     visit, course = get_owned_visit_and_course(db, visit_id, user_id)
     if visit.status != "open":
-        raise HTTPException(status_code=409, detail="当前会谈已结束")
+        raise HTTPException(status_code=409, detail=api_message("visit_already_closed"))
 
     visit_state_before_close = build_visit_state(db, visit)
     close_artifacts: Dict[str, Any] = {}
@@ -871,7 +875,7 @@ async def close_visit(
     closing_status = {
         "English": "--- This session has ended and progress has been saved. ---",
         "Português (Brasil)": "--- Esta sessão foi encerrada e o progresso foi salvo. ---",
-    }.get(output_language, "--- 本次会谈已结束，进度已保存 ---")
+    }.get(output_language, "--- Esta sessão foi encerrada e o progresso foi salvo. ---")
     closing_message = VisitMessageRecord(
         visit_id=visit.visit_id,
         role="system",

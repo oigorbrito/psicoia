@@ -15,7 +15,7 @@ fi
 if [ ! -f "${WEB_DIR}/package.json" ]; then
   echo "[ERRO] Não foi encontrado o projeto frontend: ${WEB_DIR}/package.json"
   echo "[DICA] Defina WEB_DIR para indicar o diretório web, por exemplo:"
-  echo "       WEB_DIR=/path/to/PsychAgent_v0402/src/web ./run_frontend.sh"
+  echo "       WEB_DIR=/path/to/psicoia/src/web ./run_frontend.sh"
   exit 1
 fi
 

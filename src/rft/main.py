@@ -25,61 +25,61 @@ from .runner import RFTPsychAgentRunner
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Run PsychAgent RFT workflows.")
+    parser = argparse.ArgumentParser(description="Execute os fluxos RFT do PsicoIA (base de pesquisa PsychAgent).")
     parser.add_argument(
         "--baseline",
         default="configs/baselines/psychagent_sglang_local.yaml",
-        help="Path to baseline YAML config.",
+        help="Caminho do arquivo YAML de configuração de baseline.",
     )
     parser.add_argument(
         "--runtime",
         default="configs/runtime/psychagent_sglang_local.yaml",
-        help="Path to sample runtime YAML config.",
+        help="Caminho do arquivo YAML de runtime da demonstração.",
     )
     parser.add_argument(
         "--dataset",
         default="configs/datasets/profiles_rft.yaml",
-        help="Path to dataset YAML config.",
+        help="Caminho do arquivo YAML de configuração do conjunto de dados.",
     )
     parser.add_argument(
         "--rft-config",
         default="configs/runtime/rft_default.yaml",
-        help="Path to RFT runtime YAML config.",
+        help="Caminho do arquivo YAML de runtime do RFT.",
     )
     parser.add_argument(
         "--resume",
         dest="resume",
         action="store_true",
-        help="Force resume=True override.",
+        help="Força a opção resume=True.",
     )
     parser.add_argument(
         "--no-resume",
         "--no_resume",
         dest="resume",
         action="store_false",
-        help="Force resume=False override.",
+        help="Força a opção resume=False.",
     )
     parser.set_defaults(resume=None)
-    parser.add_argument("--overwrite", action="store_true", help="Force overwrite mode.")
-    parser.add_argument("--concurrency", type=int, default=None, help="Override runtime case concurrency.")
-    parser.add_argument("--save_dir", default=None, help="Override runtime save_dir.")
-    parser.add_argument("--rollout-n", type=int, default=None, help="Override RFT rollout_n.")
-    parser.add_argument("--rollout-concurrency", type=int, default=None, help="Override rollout concurrency.")
+    parser.add_argument("--overwrite", action="store_true", help="Força a substituição dos resultados existentes.")
+    parser.add_argument("--concurrency", type=int, default=None, help="Substitui a concorrência de casos no runtime.")
+    parser.add_argument("--save_dir", default=None, help="Substitui o diretório de resultados do runtime.")
+    parser.add_argument("--rollout-n", type=int, default=None, help="Substitui o valor rollout_n do RFT.")
+    parser.add_argument("--rollout-concurrency", type=int, default=None, help="Substitui a concorrência de rollout.")
     parser.add_argument(
         "--reward-method-concurrency",
         type=int,
         default=None,
-        help="Override reward method-level concurrency.",
+        help="Substitui a concorrência de métodos de recompensa.",
     )
     parser.add_argument(
         "--strict-config",
         action="store_true",
-        help="Fail on runtime unknown/unused(deprecated/removed) config keys.",
+        help="Falha diante de chaves desconhecidas ou não utilizadas (obsoletas/removidas) no runtime.",
     )
-    parser.add_argument("--reward-api-key", default=None, help="Override reward API key.")
-    parser.add_argument("--reward-api-base-url", default=None, help="Override reward API base URL.")
-    parser.add_argument("--reward-api-model", default=None, help="Override reward API model.")
-    parser.add_argument("--log_level", default="INFO", help="Logging level.")
+    parser.add_argument("--reward-api-key", default=None, help="Substitui a chave da API de recompensa.")
+    parser.add_argument("--reward-api-base-url", default=None, help="Substitui a URL base da API de recompensa.")
+    parser.add_argument("--reward-api-model", default=None, help="Substitui o modelo da API de recompensa.")
+    parser.add_argument("--log_level", default="INFO", help="Nível de registro de eventos (logging).")
     return parser
 
 
@@ -113,14 +113,14 @@ async def run_from_args(args: argparse.Namespace) -> int:
     rft_cfg = _apply_rft_overrides(rft_cfg, args)
 
     logger = logging.getLogger("psychagent_rft")
-    logger.info("Runtime config audit: %s", runtime_audit.to_dict())
-    logger.info("Effective runtime config: %s", runtime_cfg.to_dict())
-    logger.info("Effective baseline config: %s", baseline_cfg.to_dict())
+    logger.info("Auditoria da configuração de runtime: %s", runtime_audit.to_dict())
+    logger.info("Configuração efetiva de runtime: %s", runtime_cfg.to_dict())
+    logger.info("Configuração efetiva de baseline: %s", baseline_cfg.to_dict())
     dataset_loader = DatasetLoader(dataset_cfg, logger=logger)
     cases = dataset_loader.load_cases(seed=runtime_cfg.random_seed)
 
-    logger.info("Loaded %s case(s) from %s", len(cases), str(root / args.dataset))
-    logger.info("RFT config: %s", rft_cfg.to_dict())
+    logger.info("%s caso(s) carregado(s) de %s", len(cases), str(root / args.dataset))
+    logger.info("Configuração do RFT: %s", rft_cfg.to_dict())
 
     runner = RFTPsychAgentRunner(
         baseline_config=baseline_cfg,
@@ -134,8 +134,8 @@ async def run_from_args(args: argparse.Namespace) -> int:
     finally:
         await runner.close()
 
-    logger.info("Run summary: %s", result.to_dict())
-    print("Run summary")
+    logger.info("Resumo da execução: %s", result.to_dict())
+    print("Resumo da execução")
     print(f"  total_cases: {result.total_cases}")
     print(f"  succeeded: {result.succeeded}")
     print(f"  partially_completed: {result.partially_completed}")
