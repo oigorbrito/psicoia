@@ -25,6 +25,10 @@ sys.modules[spec.name] = module
 spec.loader.exec_module(module)
 module.DOC_FIXTURE = ROOT / "tests/fixtures/block13/retrieval_eval_v1.json"
 module.BENCHMARK_FIXTURE = ROOT / "tests/fixtures/block13/retrieval_eval_v1.json"
+if os.environ.get("PSICOIA_BLOCK13_SKIP_RETRIEVAL_METRICS") == "1":
+    async def skip_precomputed_benchmark_metrics(**kwargs: Any) -> dict[str, Any]:
+        return {"locale": kwargs["locale"], "skipped": "independent Block 13 benchmark was measured separately"}
+    module.retrieval_metrics = skip_precomputed_benchmark_metrics
 
 proxies: list[Any] = []
 original_init = module.ProxyServer.__init__

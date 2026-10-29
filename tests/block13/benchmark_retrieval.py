@@ -194,7 +194,7 @@ def bootstrap_difference(phi: list[dict[str, Any]], qwen: list[dict[str, Any]], 
     if not ids:
         return {"n_paired": 0, "mean_difference_qwen_minus_phi": None, "bootstrap95": None}
     diffs = [float(qwen_map[x][metric]) - float(phi_map[x][metric]) for x in ids]
-    rng = random.Random(13013 + (1 if locale == "en" else 2))
+    rng = random.Random(13013)
     means = []
     for _ in range(10000):
         means.append(sum(diffs[rng.randrange(len(diffs))] for _ in diffs) / len(diffs))

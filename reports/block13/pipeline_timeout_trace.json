@@ -1,0 +1,63 @@
+{
+  "experiment_id": "psicoia-block13-retrieval-v1",
+  "dataset": "tests/fixtures/block13/retrieval_eval_v1.json",
+  "code_commit": "74a75eb perf(retrieval): skip redundant single-category selector; fixture criteria preregistered at cfbac98",
+  "client_timeout_seconds": 180,
+  "budget_seconds_per_turn": 180,
+  "runs": [
+    {
+      "embedding_model": "qwen3.5:4b",
+      "chat_model": "qwen3.5:4b",
+      "coarse_selector": "singleton short-circuit enabled",
+      "api_route": "POST /courses/{course_id}/visits (synthetic first visit)",
+      "route_wall_ms": 180003.9,
+      "embedding_index_calls_ms": [54686.1, 15017.7],
+      "query_embedding_ms": 317.7,
+      "first_completed_chat_call": {
+        "elapsed_ms": 54072.7,
+        "http_status": 200,
+        "prompt_tokens": 1495,
+        "completion_tokens": 345,
+        "finish_reason": "stop",
+        "public_content_characters": 0,
+        "reasoning_field_characters": 649
+      },
+      "at_timeout": "A second /v1/chat/completions request remained in flight; visit route did not complete.",
+      "result": "NOT_PASS"
+    },
+    {
+      "embedding_model": "phi4-mini:3.8b",
+      "chat_model": "qwen3.5:4b",
+      "coarse_selector": "singleton short-circuit enabled",
+      "api_route": "POST /courses/{course_id}/visits (synthetic first visit)",
+      "route_wall_ms": 180004.9,
+      "embedding_index_calls_ms": [37026.7, 10482.8],
+      "query_embedding_ms": 390.3,
+      "chat_completion": "No completed chat response was recorded before the 180-second client budget; one /v1/chat/completions call remained in flight.",
+      "result": "NOT_PASS"
+    },
+    {
+      "embedding_model": "phi4-mini:3.8b",
+      "chat_model": "qwen3.5:4b",
+      "qwen_chat_prewarmed_via_native_api": true,
+      "separate_retrieval_metrics_skipped": true,
+      "api_route": "POST /courses/{course_id}/visits (synthetic first visit)",
+      "route_wall_ms": 180014.0,
+      "embedding_index_calls_ms": [66819.5, 19537.6],
+      "query_embedding_ms": 534.9,
+      "chat_completion": {
+        "elapsed_ms": 93686.5,
+        "http_status": 200,
+        "prompt_tokens": 1568,
+        "completion_tokens": 374,
+        "finish_reason": "stop",
+        "public_content_characters": 0,
+        "reasoning_field_characters": 1738
+      },
+      "at_timeout": "First-visit route exceeded the 180-second budget; no public opening response or subsequent turns/restart checks were verified.",
+      "result": "NOT_PASS"
+    }
+  ],
+  "interpretation": "The Qwen embedding endpoint was not the final blocking stage: per-query embedding completed in 0.32-0.54 s. Cold localized index batches took about 70 s Qwen and 86 s Phi on the first-visit route. Chat generation then took about 54-94 s and responses contained zero public content with reasoning in a separate field; one Qwen/Qwen run also had a retry still in flight at the limit. The Phi/Qwen run with Qwen prewarmed still consumed the full 180-second budget because cold index + generation left no margin, and the generation returned no public answer. OpenAIAPIBackend correctly refuses to turn reasoning into public answer text. The exact model cold-start and process-memory observations are in qwen_timeout_diagnostic.json. No timeout was raised to obtain these results.",
+  "limits": "This is a local synthetic run on one workstation, not a production diagnosis or claim about all Qwen/Ollama configurations."
+}
