@@ -20,12 +20,12 @@ from .io.dataset_loader import DatasetLoader
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Run PsychAgent standalone sample workflows.")
+    parser = argparse.ArgumentParser(description="Run PsicoIA standalone sample workflows.")
     parser.add_argument(
         "--mode",
         choices=["psychagent"],
         default="psychagent",
-        help="Execution mode. Only psychagent is supported.",
+        help="Execution mode. Only the psychagent compatibility mode is supported.",
     )
     parser.add_argument(
         "--baseline",

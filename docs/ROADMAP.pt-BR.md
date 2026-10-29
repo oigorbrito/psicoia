@@ -15,7 +15,7 @@ Este roadmap prioriza ações com base nas evidências locais registradas. **Nã
 
 ## Prioridade 1 — classificar diferenças em relação ao upstream
 
-**Estado: todos os 101 diffs estão listados e classificados por grupo; validação semântica e aceite individual permanecem pendentes.** No snapshot `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`, 1.292 dos 1.393 caminhos upstream estavam idênticos; 101 diferiam e nenhum estava ausente. Os diffs completos de código/configuração e avaliação foram examinados; os 33 prompts tiveram comparação estrutural Jinja, mas falta avaliação semântica/com benchmark. A árvore também contém 73 arquivos locais adicionais (excluindo caches e lixo de editor); dois catálogos têm sufixo `.partial`. Consulte o inventário para evidências e decisões pendentes.
+**Estado: o Block 08 auditou por classe as 104 diferenças da árvore fonte; a validação semântica continua pendente onde indicado.** Contra o snapshot upstream `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`, 1.289 dos 1.393 caminhos são idênticos, 104 diferem e nenhum está ausente. A normalização AST encontrou 12 diferenças estruturais entre 41 arquivos Python alterados. A árvore fonte contém 74 adições locais (excluídos caches e lixo de editor); dois catálogos têm sufixo `.partial`. Consulte `PSICOIA_BLOCK08_RESULT.md` e o inventário.
 
 - Revisar semanticamente a prosa dos oito READMEs localizados e os 33 prompts (incluindo diferenças de placeholders/defaults e a perda de três ocorrências de `{{number}}` no seletor de habilidades).
 - Tratar mudanças de API, runtime, defaults, parsing e recuperação como desvios bloqueadores; não incorporá-las sem autorização separada e validação adequada.
@@ -36,10 +36,10 @@ Este roadmap prioriza ações com base nas evidências locais registradas. **Nã
 
 ## Prioridade 2 — validação técnica
 
-**Estado: verificado parcialmente no snapshot candidato `d2f6556`.** `python -m pytest -q --import-mode=importlib`: 9 passaram. `python -m pytest -q`: falha na coleta por colisão de módulo entre os dois arquivos `test_harness.py` do repositório e do template. Harness: lacuna de licença e testes web ausentes; estado externo desconhecido. A suíte web e os validadores de catálogos não foram incluídos porque dependem de localização pendente.
+**Estado: verificado localmente em `reconciliation/psicoia-block08` (2026-10-29).** `python -m pytest -q`: 17 passaram; os testes do template foram executados separadamente: 4 passaram. Testes Node em `src/web`: 2 passaram; build Vite e import smoke do backend passaram (20 rotas). O harness registra a lacuna de licença e controles externos desconhecidos. `npm audit` encontrou 9 advisories; `pip-audit` encontrou 14 registros para Starlette. Nenhuma atualização de dependência nem alegação de prontidão para produção foi feita.
 
-- Registrar e investigar a discrepância entre a expectativa de 23 e a contagem observada de 24; não alterar testes ou código para eliminar a falha sem autorização explícita e confirmação do critério esperado.
-- Reexecutar pytest, testes web, validadores e harness na branch de integração após a revisão final; documentar a limitação de coleta do pytest padrão e a ausência atual de testes web.
+- `pytest.ini` limita a coleta padrão aos testes do projeto e evita a colisão de `test_harness` sem excluir conteúdo do template.
+- Os testes web cobrem somente funções puras de domínio/helpers; fluxos completos de API, UI React, autenticação/CORS e qualidade da localização continuam sem teste. Validadores de catálogo permanecem fora do candidato enquanto a revisão de locale/recuperação estiver pendente.
 - Executar build e validações de inicialização/documentação quando as dependências e o ambiente estiverem disponíveis; registrar falhas e limitações.
 
 **Critério de conclusão:** comandos e resultados registrados no estado integrado, com falhas não resolvidas identificadas — não ocultadas.

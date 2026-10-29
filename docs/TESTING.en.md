@@ -8,13 +8,14 @@ From the candidate worktree root:
 
 ```bash
 python scripts/harness.py
-python -m pytest -q --import-mode=importlib
-python -m pytest -q tests/test_harness.py tests/test_localized_documentation.py
+python -m pytest -q
+python -m pytest -q evidence-repo-template/tests/test_harness.py
+(cd src/web && npm test && npm run build)
 ```
 
-The `--import-mode=importlib` option avoids an import collision between `evidence-repo-template/tests/test_harness.py` and `tests/test_harness.py`. Without it, `python -m pytest -q` fails during collection with `import file mismatch` for the `test_harness` module; this collection failure is documented, not fixed.
+`pytest.ini` limits default discovery to project tests in `tests/` and `src/web/tests/`; the template under `evidence-repo-template/` is run separately to avoid the duplicate `test_harness` module name.
 
-The web test suite and localized-catalog validator are not included because they belong to pending localization changes. Do not run their commands as though those features were active in this candidate.
+Web tests cover Python domain functions and pure JavaScript helpers. They do not cover complete API flows, React components, authentication/CORS security, or localization quality. The localized-catalog validator remains outside this candidate while provenance, retrieval, and language quality are pending.
 
 Report a command as passing only if it was run on the current worktree. Structural tests do not establish translation quality, clinical safety, or retrieval equivalence.
 

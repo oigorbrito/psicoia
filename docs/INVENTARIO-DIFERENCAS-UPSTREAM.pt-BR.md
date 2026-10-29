@@ -1,25 +1,27 @@
-# Inventário inicial das diferenças locais
+# Inventário das diferenças locais — Block 08
 
-Este inventário compara a árvore de trabalho local com os **1.393 caminhos** do commit upstream `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`. A comparação usa os caminhos UTF-8 sem quoting do Git e igualdade byte a byte.
+Este inventário compara o snapshot local `master` (`e13c895850dc074fd5618322c5e7c1cfda34a29c`) com o upstream `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`, em seus **1.393 caminhos**. A reconciliação de 2026-10-29 compara blobs Git e normaliza os arquivos de trabalho com os filtros Git (`core.autocrlf=true`); diferenças CRLF do checkout Windows não contam como mudanças de conteúdo.
 
-## Resultado corrigido
+## Resultado atual (reconciliação 2026-10-29)
 
-- Idênticos: **1.292**.
-- Diferentes: **101**.
+- Idênticos: **1.289**.
+- Diferentes: **104**.
 - Ausentes: **0**.
 
-**Correção de auditoria:** a primeira contagem deste trabalho usou a saída com quoting padrão do Git e interpretou cinco caminhos não ASCII como ausentes. A comparação foi repetida com quoting desativado; esses arquivos existem localmente. Os números acima substituem os números anteriores.
+Três diferenças de identidade/apresentação foram adicionadas após o registro histórico 1.292/101/0: texto de ajuda da CLI em `src/sample/main.py` e nome do pacote privado em `src/web/package.json` e `src/web/package-lock.json`. Nenhum contrato técnico foi renomeado. `prompts/eval/SCL_90/SCL_90.txt` mantém o mesmo blob Git upstream.
 
-**Progresso da revisão:** os diffs completos de 26 caminhos `src/web`, sete caminhos `src/sample`, um YAML de runtime, 25 módulos de avaliação e 33 templates de prompt foram examinados/classificados abaixo; nenhum desses desvios técnicos/comportamentais foi levado ao candidato. Para avaliação, AST mascarando strings não mostrou mudança estrutural; para prompts, sintaxe Jinja foi analisada e referências/variáveis comparadas. Benchmarks e revisão semântica de prompts continuam pendentes. Os exemplos/fences dos oito READMEs foram comparados com upstream; prosa continua pendente de revisão semântica. O `.gitignore` foi conferido; nenhuma classe ainda sem validação ganha autorização implícita.
+**Histórico:** a primeira contagem usou quoting padrão do Git e interpretou cinco caminhos não ASCII como ausentes; a correção de quoting produziu 1.292/101/0. Os números históricos foram substituídos pelo resultado atual acima.
+
+**Progresso da revisão:** os diffs completos de 26 caminhos `src/web`, sete caminhos `src/sample`, um YAML de runtime, 25 módulos de avaliação e 33 templates de prompt foram examinados/classificados abaixo; alterações de comportamento e contrato foram mantidas fora do candidato. Foram aplicadas somente mudanças isoladas de apresentação/identidade, registradas no relatório Block 08. Para avaliação, AST mascarando strings não mostrou mudança estrutural; para prompts, sintaxe Jinja foi analisada e referências/variáveis comparadas. Benchmarks e revisão semântica de prompts continuam pendentes. Os exemplos/fences dos oito READMEs foram comparados com upstream; prosa continua pendente de revisão semântica. O `.gitignore` foi conferido; nenhuma classe ainda sem validação ganha autorização implícita.
 
 ## Arquivos locais adicionais
 
-Além dos 1.393 caminhos upstream, a árvore contém **73 arquivos locais adicionais** após excluir caches, `.vs/`, `.DS_Store`, `nul`, `node_modules`, `dist` e bytecode Python. Triagem por tipo:
+Além dos 1.393 caminhos upstream, a árvore `master` contém **74 arquivos locais adicionais** após excluir caches, `.vs/`, `.DS_Store`, `nul`, `node_modules`, `dist` e bytecode Python. Triagem por tipo:
 
 | Tipo de arquivo local adicional | Qtde. | Avaliação inicial |
 |---|---:|---|
 | Catálogos localizados | 26 (17 PT-BR, 9 inglês) | Dados de recuperação; validação estrutural existe, qualidade/recuperação e caches por idioma precisam de avaliação |
-| Testes | 12 | Cobertura local nova; manter separados da cópia upstream; um teste de contagem atualmente falha (23 esperado, 24 observado) |
+| Testes | 13 | Cobertura local nova; testes de localização permanecem separados; expectativa estrutural corrigida para 24 catálogos completos, sem alteração de conteúdo |
 | Documentação/readmes locais | 14 | Guias, apresentação e governança raiz; código de exemplos comparado, revisão semântica da prosa ainda pendente |
 | Documentação de governança | 12 | Adaptação local do template; não é código upstream nem prova de conformidade |
 | Scripts de localização/harness | 3 | Ferramentas locais novas; revisar como tooling separado |
@@ -28,9 +30,9 @@ Além dos 1.393 caminhos upstream, a árvore contém **73 arquivos locais adicio
 | Recurso de locale web | 1 | Texto de interface; sua ligação à aplicação faz parte da implementação de locale pendente |
 | `.gitattributes` | 1 | Configuração local do repositório |
 
-## Manifesto e decisão dos 73 caminhos locais adicionais
+## Manifesto das adições locais (74 paths)
 
-A contagem é mutuamente exclusiva por categoria. O candidato `integration/psicoia` inclui **33/73** adições locais selecionadas (14 arquivos de documentação/localização, 12 de governança, 2 skills de agente, 2 arquivos de política, 2 testes documentais/harness e `scripts/harness.py`). Exclui os outros **40** (26 catálogos, 10 testes ligados à localização, dois scripts de catálogo, um recurso i18n web e `.gitattributes`). O candidato também contém 21 arquivos do template `origin/main`; assim, tem 54 caminhos além da árvore upstream `original`.
+A contagem da árvore `master` é mutuamente exclusiva por categoria. O snapshot inicial do candidato continha 33/73 adições. A reconciliação Block 08 acrescenta `.gitattributes` e `tests/test_project_identity.py`, totalizando **35/74** adições de `master`; permanecem fora 26 catálogos, 10 testes de localização e dois scripts de catálogos. Foram acrescentados ainda `pytest.ini`, `src/web/tests/test_domain.py` e `src/web/tests/statusText.test.js`. Consulte `PSICOIA_BLOCK08_RESULT.md` para os totais finais do candidato.
 
 ### Catálogos localizados (26; dados de recuperação — excluídos do candidato)
 
@@ -42,11 +44,11 @@ A contagem é mutuamente exclusiva por categoria. O candidato `integration/psico
 - `assets/skills/sect/pdt/stage3/`: `meta_skills.en.json`, `meta_skills.pt-BR.json`, `micro_skills.en.json.partial`.
 - `assets/skills/sect/pmt/stage1/`: `meta_skills.pt-BR.json`, `micro_skills.pt-BR.json`; `stage2/`: os mesmos dois tipos PT-BR; `stage3/`: `meta_skills.en.json`, `meta_skills.pt-BR.json`, `micro_skills.en.json`, `micro_skills.pt-BR.json`.
 
-Os 24 arquivos completos `.json` passam na validação estrutural local; o comando de inglês reporta 8/30 catálogos e 141/5.158 registros, e PT-BR 16/30 e 1.233/5.158. Os dois `.partial` não são parseados nem contados por esses validadores. `pytest tests/test_skill_catalog_localization_validation.py` resulta em 2 passed/1 failed: o teste espera 23, mas encontra 24 arquivos completos. A expectativa correta não foi determinada; não alterar teste nem catálogo sem confirmar o critério. Validação estrutural não prova qualidade linguística, proveniência, equivalência de retrieval ou validade dos caches por idioma.
+Os 24 arquivos completos `.json` passam na validação estrutural local; o comando de inglês reporta 8/30 catálogos e 141/5.158 registros, e PT-BR 16/30 e 1.233/5.158. Os dois `.partial` não são parseados nem contados por esses validadores. A expectativa do teste local de contagem foi corrigida para 24 arquivos completos; a suíte em `master` passou. Validação estrutural não prova qualidade linguística, proveniência, equivalência de retrieval ou validade dos caches por idioma.
 
-### Testes locais adicionais (12)
+### Testes locais adicionais em `master` (13)
 
-- Incluídos no candidato: `tests/test_harness.py`, `tests/test_localized_documentation.py`.
+- Incluídos no candidato: `tests/test_harness.py`, `tests/test_localized_documentation.py`, `tests/test_project_identity.py`. Os testes web Block 08 estão listados separadamente.
 - Excluídos por dependerem de runtime, API, prompts ou dados de locale pendentes: `src/web/tests/i18n.test.js`; `tests/test_behavioral_therapy_prompt_localization.py`; `tests/test_client_simulator_localization.py`; `tests/test_dummy_backend_localization.py`; `tests/test_eval_retry_localization.py`; `tests/test_generate_skill_catalog_locales.py`; `tests/test_runner_localization.py`; `tests/test_skill_catalog_locale_loading.py`; `tests/test_skill_catalog_localization_validation.py`; `tests/test_web_output_language.py`.
 
 ### Documentação/localização e governança
@@ -59,7 +61,7 @@ Os 12 documentos de governança incluídos são `docs/ARCHITECTURE.md`, `docs/HA
 
 - `scripts/harness.py` foi incluído; `scripts/generate_skill_catalog_locales.py` e `scripts/validate_skill_catalog_locales.py` ficaram fora junto dos catálogos pendentes. O gerador chama Ollama e escreve/retoma arquivos `.partial`; não foi executado nesta revisão.
 - `src/web/src/i18n.js` ficou fora por ser runtime locale; seus testes também ficaram fora.
-- `.gitattributes` ficou fora: contém `* text=auto` e padrões Git comentados. Sua política de normalização de EOL requer decisão do repositório antes de adoção.
+- `.gitattributes` foi incluído no candidato para normalizar EOL com `* text=auto`; as demais regras comentadas do template Git não alteram o comportamento do produto.
 
 Dois catálogos têm sufixo `.partial` e não devem ser tratados como entregas completas: `assets/skills/sect/bt/stage2/micro_skills.pt-BR.json.partial` e `assets/skills/sect/pdt/stage3/micro_skills.en.json.partial`. Não adicione esses arquivos em bloco sem revisão individual de conteúdo, proveniência e necessidade.
 
@@ -67,21 +69,25 @@ Dois catálogos têm sufixo `.partial` e não devem ser tratados como entregas c
 
 A tabela abaixo é a classificação inicial por grupo; as revisões detalhadas subsequentes registram os diffs técnicos e a estrutura Jinja. “Pendente/bloqueador” significa que o diff não deve ser aceito como cópia literal até ser explicado, aprovado separadamente ou revertido. Classificação do tipo de mudança não equivale a aprovação semântica.
 
-| Grupo | Qtde. | Classificação inicial | Próxima decisão |
+| Grupo | Qtde. | Classe primária | Decisão/limite |
 |---|---:|---|---|
-| Documentação Markdown em inglês (lista abaixo) | 8 | Texto/documentação alterados; potencialmente compatível com localização, mas falta revisão de equivalência e escopo | Revisar prosa, links, atribuição e diferenças além de tradução; manter fonte acadêmica fiel |
-| `.gitignore` | 1 | Regra local de inclusão/ignoração; não é tradução nem código upstream | Manter somente como configuração do repositório de destino, com revisão de arquivos que passa a expor |
-| `configs/runtime/psychagent_sglang_local.yaml` | 1 | `output_language` mudou de chinês para inglês; altera o default de execução | **Bloqueador de cópia literal**; reverter ou autorizar como mudança isolada de localização |
-| Prompts/templates de runtime (lista abaixo) | 33 | Texto de instrução para modelos foi alterado/traduzido; conteúdo comportamental | **Pendente e sensível ao comportamento**; não substituir prompts de origem sem autorização e avaliação comparativa |
-| Implementações de avaliação (`src/eval/`, lista abaixo) | 25 | Comentários/docstrings foram traduzidos; mensagens de reparo JSON enviadas ao modelo também mudaram | **Pendente**; preservar a lógica, revisar diferenças de instrução e validar efeito em avaliação antes de aceitar |
-| Geração/recuperação (`src/sample/`, lista abaixo) | 7 | Há mudanças de output language, defaults/fallbacks e seleção/carregamento de catálogos por idioma | **Bloqueador de cópia literal/funcional**; exige decisão separada, testes e validação de recuperação; não classificar como mera tradução |
-| Web (26 arquivos de código, lista abaixo) | 26 | Inclui texto de UI traduzido, wiring de locale e campos/propagação de idioma de resposta no backend/API | Separar recursos textuais de mudanças de contrato e comportamento; campos/API/output language são **bloqueadores** até autorização explícita |
+| Documentação Markdown em inglês | 8 | A — apresentação/documentação | Exemplos técnicos e links comparados; revisão semântica completa da prosa permanece pendente. |
+| `.gitignore` | 1 | C — configuração do repositório destino | Manter regras locais de segredos, caches e artefatos; não é código upstream. |
+| `configs/runtime/psychagent_sglang_local.yaml` | 1 | D — alteração de default | `output_language` muda de chinês para inglês; mantido fora do candidato. |
+| Prompts/templates de runtime | 33 | D — conteúdo comportamental | Alterações de instrução e placeholders; sem avaliação comparativa, mantidos fora. |
+| Implementações de avaliação (`src/eval/`) | 25 | D — instruções enviadas ao modelo | AST igual após mascarar strings, mas prompts de reparo mudaram; mantidas fora. |
+| Geração/recuperação (`src/sample/`) | 7 | D — alteração funcional | Defaults, fallback e seleção/cache de habilidades; mantidos fora. |
+| Web | 26 | 1 A, 17 B, 8 D | UI/locale intencional (B) separado de contrato/API e idioma de geração (D); nenhum runtime locale foi integrado. `index.html` recebe somente o título de marca, sem o `lang=pt-BR` incompatível com a UI ainda chinesa. |
+| Metadados privados do frontend (`package.json`, lock) | 2 | A — identidade | Nome `psicoia-web`; `private: true` preservado. |
+| Ajuda da CLI (`src/sample/main.py`) | 1 | A — identidade | Texto PsicoIA; `--mode psychagent` e comportamento preservados. |
 
-A soma é 101 arquivos upstream diferentes. A classe de cada alteração ainda não foi verificada linha por linha; não se declara que qualquer grupo está aprovado ou semanticamente equivalente.
+Total: **104 arquivos** — 12 A, 17 B, 1 C e 74 D. A classificação identifica a natureza do diff; B e D não foram incorporadas sem revisão/validação específica.
 
 ## Checagem estrutural de código
 
-Foi feita uma comparação AST dos 40 arquivos Python diferentes, substituindo todos os literais string por um marcador antes da comparação. Resultado: os 25 arquivos `src/eval/` mantêm a mesma estrutura AST sob esse teste; isso **não** prova equivalência comportamental, pois as instruções de reparo enviadas ao modelo mudaram. Em `src/sample/`, somente `core/schemas.py` mantém a estrutura AST sob a normalização; nos outros seis arquivos há mudanças estruturais. Em `src/web/`, `backend/domain.py` e `backend/services/course_service.py` mantêm a estrutura AST após normalização; os outros seis arquivos Python web diferem estruturalmente. O teste AST não foi aplicado a JavaScript/JSX nem a templates e não é prova de ausência de alterações funcionais.
+Os 12 arquivos com diferença estrutural, após mascarar strings/bytes na AST, são `src/sample/backends/dummy_backend.py`, `src/sample/client/simulator.py`, `src/sample/core/prompt_manager.py`, `src/sample/prompt_manager.py`, `src/sample/runner.py`, `src/sample/skill_manager.py`, `src/web/backend/psychagent_engine.py`, `src/web/backend/routes/courses.py`, `src/web/backend/routes/visits.py`, `src/web/backend/schemas.py`, `src/web/backend/services/visit_service.py` e `src/web/main.py`. As funções/campos alterados envolvem defaults e fallbacks localizados, propagação de `output_language`, contrato Pydantic, prompts de geração e seleção/cache de catálogos; nenhum foi integrado como alteração funcional neste candidato.
+
+Foi feita uma comparação AST dos **41 arquivos Python diferentes**, substituindo literais string/bytes por marcadores. Resultado: 29 mantêm a mesma estrutura AST e **12 diferem estruturalmente**. Os 25 arquivos `src/eval/` permanecem AST-equivalentes após mascarar literais, mas alteram instruções de reparo enviadas ao modelo. Em `src/sample/`, `core/schemas.py` e `main.py` são AST-equivalentes; seis arquivos diferem estruturalmente. Em `src/web/`, `backend/domain.py` e `backend/services/course_service.py` são AST-equivalentes; seis diferem estruturalmente. AST não prova equivalência comportamental e não foi aplicado a JavaScript/JSX ou templates.
 
 Conclusão operacional: há alterações de código além da troca de strings. Diferenças concretas identificadas:
 
@@ -116,7 +122,7 @@ Comparação de conteúdo dos blocos cercados entre upstream e documentação in
 
 ## Revisão detalhada do grupo web (26 arquivos upstream diferentes)
 
-Comparação do conteúdo local original com `original:469f45e`; o candidato de integração mantém os blobs upstream desses arquivos. A classificação abaixo descreve o diff local, não uma autorização para incorporá-lo.
+Comparação do conteúdo local original com `original:469f45e`; o candidato mantém os blobs upstream dos desvios funcionais e aplicou apenas mudanças isoladas de título em `src/web/index.html` e `src/web/main.py`. A classificação abaixo descreve o diff local, não uma autorização para incorporar o locale/runtime.
 
 | Arquivo | Diferença observada | Classificação/decisão |
 |---|---|---|
@@ -147,7 +153,7 @@ Comparação do conteúdo local original com `original:469f45e`; o candidato de 
 | `src/web/src/components/modals/SchoolModal.jsx` | Traduz seleção/aviso e acrescenta locale prop. | UI localizada; assinatura de componente alterada. |
 | `src/web/src/hooks/useMindCareApp.js` | Traduz feedbacks e acrescenta `output_language` aos requests de criar/abrir/enviar/fechar; usa helper de tradução para alguns erros. | Mudança de API e comportamento; bloqueador. |
 
-O arquivo local adicional `src/web/src/i18n.js` (fora dos 101 caminhos upstream) fornece o mapa inglês→PT-BR, mapeamento de duas mensagens de autenticação chinesas, armazenamento em `localStorage`, fallback de locale PT-BR e atualização de `document.lang`. Ele é parte da implementação funcional pendente, não uma tradução que possa ser copiada sem o restante do wiring. Não há testes web no candidato; mensagens de backend/API e persistência também não foram validadas por testes de locale.
+O arquivo local adicional `src/web/src/i18n.js` (fora dos 104 caminhos upstream) fornece o mapa inglês→PT-BR, mapeamento de duas mensagens de autenticação chinesas, armazenamento em `localStorage`, fallback de locale PT-BR e atualização de `document.lang`. Ele é parte da implementação funcional pendente, não uma tradução que possa ser copiada sem o restante do wiring. O candidato Block 08 contém testes web de domínio Python e helpers JavaScript puros; eles não validam mensagens de backend/API, persistência, seleção de locale ou qualidade de tradução.
 
 ## Revisão detalhada de geração/recuperação e configuração (8 arquivos upstream diferentes)
 
@@ -162,7 +168,7 @@ O arquivo local adicional `src/web/src/i18n.js` (fora dos 101 caminhos upstream)
 | `src/sample/runner.py` | Traduz foco de sessão, acrescenta catálogo PT-BR e helper de seleção; passa idioma a prompts; adiciona instruções de idioma aos prompts de resumo/perfil. | Muda planejamento, prompts e conteúdo produzido; comportamento sensível. Valores de estágio chineses permanecem. |
 | `src/sample/skill_manager.py` | Seleciona catálogos/caches por idioma, cria digest SHA-256 de cache e usa fallback textual inglês; comments traduzidos. | Muda recuperação, seleção e invalidação de embeddings; requer auditoria de cache e avaliação de retrieval por idioma. |
 
-Os 34 arquivos técnicos acima (26 web + 7 sample + 1 YAML) foram comparados por diff completo nesta etapa; nenhum foi incorporado ao candidato. Essa revisão classifica o tipo de alteração, mas não valida a qualidade clínica/linguística, compatibilidade do contrato ou equivalência comportamental. `.gitignore` foi conferido separadamente: a única mudança remove as regras `/docs/` e `/tests/` para permitir rastrear governança e testes locais. A revisão semântica completa dos oito READMEs, dos 25 módulos de avaliação e dos 33 prompts ainda está pendente.
+Os 34 arquivos técnicos acima (26 web + 7 sample + 1 YAML) foram comparados por diff; nenhuma alteração de comportamento, contrato ou recuperação foi incorporada. Foram aplicadas apenas strings de identidade isoladas em CLI/títulos. Essa revisão classifica o tipo de alteração, mas não valida qualidade clínica/linguística ou equivalência comportamental. `.gitignore` foi conferido: mantém arquivos de governança/testes rastreáveis e acrescenta exclusões para `.vs/`, `.env*` (com exceções de exemplo), logs e `nul`. A revisão semântica completa dos oito READMEs, dos 25 módulos de avaliação e dos 33 prompts ainda está pendente.
 
 ## Revisão estrutural dos templates de prompt (33 arquivos)
 
@@ -298,7 +304,7 @@ Arquivos com instruções de reparo de JSON modificadas: `src/eval/core/base.py`
 1. Revisar semanticamente a prosa dos READMEs localizados; links e blocos técnicos foram verificados, mas isso não comprova fidelidade da tradução.
 2. Manter os 33 prompts e as instruções de reparo de avaliação fora do candidato até autorização de comparação comportamental em conjunto fixo e revisão humana. Preservar placeholders/valores de compatibilidade e investigar as diferenças registradas (`output_language`, defaults traduzidos e contagem `{{number}}`).
 3. Manter fora do candidato os 26 catálogos localizados e a implementação de runtime de locale/retrieval; resolver a discrepância 23/24 sem editar o teste por conveniência, validar provenance, idioma e recuperação/cache antes de habilitar.
-4. Classificar individualmente os 10 testes de locale restantes, os dois scripts de catálogo e `.gitattributes`; não copiá-los em bloco.
+4. Revisar individualmente os 10 testes e os dois scripts de catálogo ligados a locale; `.gitattributes` já foi adotado no candidato para normalização de EOL.
 5. Obter evidência de licença/proveniência antes de qualquer distribuição. Não escolher licença por conveniência.
 
 Não descarte nem sobrescreva o trabalho pendente na árvore fonte. Toda inclusão adicional deve ser revisada contra `original` e registrada no manifesto.

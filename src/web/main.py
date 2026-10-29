@@ -61,7 +61,7 @@ class AuthPayload(BaseModel):
     password: str
 
 
-app = FastAPI(title="PsychAgent Web API", version="0.4.2")
+app = FastAPI(title="PsicoIA Web API", version="0.4.2")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

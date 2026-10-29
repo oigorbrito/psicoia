@@ -1,12 +1,13 @@
 {
-  "name": "mindcare-frontend",
+  "name": "psicoia-web",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test tests/statusText.test.js"
   },
   "dependencies": {
     "lucide-react": "^0.469.0",

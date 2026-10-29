@@ -15,7 +15,7 @@ This roadmap prioritizes work based on recorded local evidence. It is **not a de
 
 ## Priority 1 — classify upstream differences
 
-**Status: all 101 diffs are listed and classified by group; semantic validation and individual acceptance remain pending.** At snapshot `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`, 1,292 of 1,393 upstream-tracked paths were identical; 101 differed and none were missing. Complete code/config and evaluation diffs were examined; the 33 prompts received a structural Jinja comparison, but still need semantic review and benchmark evaluation. The local tree also contains 73 additional files (excluding caches/editor clutter); two catalogs have a `.partial` suffix. See the inventory for evidence and pending decisions.
+**Status: Block 08 audited the 104 source-tree differences by class; semantic validation remains pending where noted.** Against upstream snapshot `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`, 1,289 of 1,393 paths are identical, 104 differ and none are missing. AST normalization found 12 structural Python differences among 41 changed Python files. The source tree contains 74 local additions (excluding caches/editor clutter); two catalogs have a `.partial` suffix. See `PSICOIA_BLOCK08_RESULT.md` and the inventory for evidence and scope.
 
 - Semantically review the prose in the eight localized READMEs and the 33 prompts, including placeholder/default changes and three removed `{{number}}` occurrences in the skill selector.
 - Treat API, runtime, default, parsing, and retrieval changes as blocking deviations; do not include them without separate authorization and appropriate validation.
@@ -36,10 +36,10 @@ This roadmap prioritizes work based on recorded local evidence. It is **not a de
 
 ## Priority 2 — technical validation
 
-**Status: partially verified on candidate snapshot `d2f6556`.** `python -m pytest -q --import-mode=importlib`: 9 passed. `python -m pytest -q`: collection fails due to a module-name collision between the repository and template `test_harness.py` files. Harness: license and web-test gaps; external status unknown. Web tests and catalog validators were not included because they depend on pending localization work.
+**Status: locally verified on `reconciliation/psicoia-block08` (2026-10-29).** Default `python -m pytest -q`: 17 passed; the evidence template tests run separately: 4 passed. `src/web` Node tests: 2 passed; Vite build and backend import smoke passed (20 routes). The harness reports the unresolved license gap and unknown external controls. `npm audit` reports 9 advisories; `pip-audit` reports 14 Starlette advisory records. No dependency upgrade or production-security claim was made.
 
-- Keep the default pytest collection failure documented; do not hide it by changing the tests or deleting template content.
-- Rerun pytest, web tests, catalog validators, and the harness on the integration branch after final review; document the current absence of web tests.
+- `pytest.ini` scopes default collection to project tests and prevents the template `test_harness` name collision without deleting template content.
+- Web unit tests cover pure domain/helper functions only; API flows, React UI, authentication/CORS, and localization quality remain untested. Catalog validators remain outside the candidate pending locale/retrieval review.
 - Run builds and startup/documentation checks when dependencies and environment are available; record failures and limitations.
 
 **Completion evidence:** commands and results recorded on the integrated tree, with unresolved failures identified rather than hidden.
