@@ -145,6 +145,19 @@ def test_embedding_model_change_invalidates_localized_cache(tmp_path, monkeypatc
     assert loaded["1"]["skill_name"] == "Current catalog"
 
 
+def test_missing_localized_catalog_is_reported_without_changing_source_fallback(tmp_path, caplog):
+    stage_dir = tmp_path / "bt" / "stage1"
+    stage_dir.mkdir(parents=True)
+    (stage_dir / "meta_skills.json").write_text("{}", encoding="utf-8")
+    (stage_dir / "micro_skills.json").write_text("{}", encoding="utf-8")
+
+    manager = _manager("English")
+    manager._log_locale_catalog_gaps(tmp_path, ["bt"])
+
+    assert "Localized en skill catalog unavailable for bt/stage1" in caplog.text
+    assert "source-language catalogs are selected where present" in caplog.text
+
+
 def test_localized_meta_json_is_selected_when_available(tmp_path):
     stage_dir = tmp_path / "bt" / "stage1"
     stage_dir.mkdir(parents=True)

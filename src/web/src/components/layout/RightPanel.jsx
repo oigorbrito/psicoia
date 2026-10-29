@@ -1,6 +1,7 @@
 import { Activity, ShieldAlert, Target } from "lucide-react";
 import { useLocale } from "../../i18n";
 import { getStageDisplayLabel } from "../common/stageText";
+import { containsSourceLanguageText, sourceLanguageDisclosure } from "../../locale.js";
 
 const SESSION_FOCUS_DEFAULT = [
   "建立初始关系与咨询框架",
@@ -43,6 +44,7 @@ export function RightPanel({ currentCourse, currentVisit, embedded = false }) {
   const { locale } = useLocale();
   const stage = currentVisit?.stage || currentCourse?.current_stage;
   const sessionFocus = buildPromptSessionFocus(currentVisit);
+  const hasSourceLanguageFocus = sessionFocus.some(containsSourceLanguageText);
 
   const wrapperClassName = embedded
     ? "space-y-4"
@@ -64,14 +66,21 @@ export function RightPanel({ currentCourse, currentVisit, embedded = false }) {
       <Section title={locale === "en" ? "Session focus" : "Foco da sessão"} icon={Target}>
         {currentCourse ? (
           sessionFocus.length > 0 ? (
-            <ul className="space-y-1">
-              {sessionFocus.map((focusItem, index) => (
-                <li key={`${index}-${focusItem}`} className="flex items-start gap-2">
-                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-teal-500" />
-                  <span>{focusItem}</span>
-                </li>
-              ))}
-            </ul>
+            <>
+              {hasSourceLanguageFocus ? (
+                <p role="note" className="mb-2 rounded-md bg-amber-50 px-2 py-1 text-amber-800">
+                  {sourceLanguageDisclosure(locale)}
+                </p>
+              ) : null}
+              <ul className="space-y-1">
+                {sessionFocus.map((focusItem, index) => (
+                  <li key={`${index}-${focusItem}`} className="flex items-start gap-2">
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-teal-500" />
+                    <span>{focusItem}</span>
+                  </li>
+                ))}
+              </ul>
+            </>
           ) : (
             <p>{locale === "en" ? "No focus is recorded for this session." : "Não há foco registrado para esta sessão."}</p>
           )

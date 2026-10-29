@@ -1,6 +1,7 @@
 import { Brain, FolderOpen, LogIn, MessageSquare, User } from "lucide-react";
 import { EmptyState } from "../common/EmptyState";
 import { useLocale } from "../../i18n";
+import { containsSourceLanguageText, sourceLanguageDisclosure } from "../../locale.js";
 
 function extractResponseText(rawText) {
   const text = String(rawText ?? "");
@@ -61,6 +62,7 @@ export function ChatMessages({ currentCourse, currentVisit, currentSchool, isTyp
           {message.role === "system" ? (
             <div className="my-4 flex w-full justify-center">
               <span className="rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                {containsSourceLanguageText(message.text) ? `${sourceLanguageDisclosure(locale)} ` : null}
                 {message.text}
               </span>
             </div>
@@ -87,7 +89,12 @@ export function ChatMessages({ currentCourse, currentVisit, currentSchool, isTyp
                     : "rounded-tl-none border border-slate-100 bg-white text-slate-700"
                 }`}
               >
-	                {message.role === "assistant" ? extractResponseText(message.text) : message.text}
+                {message.role === "assistant" && containsSourceLanguageText(message.text) ? (
+                  <p role="note" className="mb-2 rounded-md bg-amber-50 px-2 py-1 text-xs text-amber-800">
+                    {sourceLanguageDisclosure(locale)}
+                  </p>
+                ) : null}
+                {message.role === "assistant" ? extractResponseText(message.text) : message.text}
               </div>
             </div>
           )}

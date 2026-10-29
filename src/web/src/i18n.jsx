@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { containsSourceLanguageText } from "./locale.js";
 
 const STRINGS = {
   "zh-CN": {
@@ -190,6 +191,11 @@ export function LocaleProvider({ children }) {
       if (locale === "en") {
         const requestFailure = text.match(/^Falha na solicitação \(status (\d+)\)\.$/);
         if (requestFailure) return `Request failed (status ${requestFailure[1]}).`;
+      }
+      if (containsSourceLanguageText(text)) {
+        return locale === "en"
+          ? `Untranslated source-language text: ${text}`
+          : `Texto não traduzido no idioma de origem: ${text}`;
       }
       return text;
     },

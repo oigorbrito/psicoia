@@ -133,6 +133,8 @@ class SkillManager:
         sects = self._normalize_sects(self._runtime.psychagent_skill_sects)
         base_dir = resolve_path(self._runtime.psychagent_skill_base_dir)
 
+        self._log_locale_catalog_gaps(base_dir, sects)
+
         for sect in sects:
             sect_stages: Dict[str, LoadedSkillStage] = {}
             for stage_idx in (1, 2, 3):
@@ -547,6 +549,32 @@ class SkillManager:
         self._select_user_prompt = (select_dir / "user.txt").read_text(encoding="utf-8")
         self._rewrite_system_prompt = (rewrite_dir / "system.txt").read_text(encoding="utf-8")
         self._rewrite_user_prompt = (rewrite_dir / "user.txt").read_text(encoding="utf-8")
+
+    def _log_locale_catalog_gaps(self, base_dir: Path, sects: Sequence[str]) -> None:
+        suffix = self._skill_locale_suffix()
+        if suffix is None:
+            return
+
+        for sect in sects:
+            for stage_idx in (1, 2, 3):
+                stage_dir = base_dir / sect / f"stage{stage_idx}"
+                missing = []
+                if not (stage_dir / f"meta_skills.{suffix}.json").is_file():
+                    missing.append("meta_skills")
+                if not any(
+                    (stage_dir / f"micro_skills.{suffix}{extension}").is_file()
+                    for extension in (".json", ".pt")
+                ):
+                    missing.append("micro_skills")
+                if missing:
+                    self._logger.warning(
+                        "Localized %s skill catalog unavailable for %s/stage%d (%s); "
+                        "source-language catalogs are selected where present.",
+                        suffix,
+                        sect,
+                        stage_idx,
+                        ", ".join(missing),
+                    )
 
     def _normalize_sects(self, raw_sects: str | List[str]) -> List[str]:
         if isinstance(raw_sects, str):

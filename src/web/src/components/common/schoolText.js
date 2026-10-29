@@ -1,3 +1,5 @@
+import { containsSourceLanguageText } from "../../locale.js";
+
 const SCHOOL_DISPLAY_NAME_MAP = {
   behavioral: "行为疗法 (BT)",
   cbt: "认知行为疗法 (CBT)",
@@ -21,5 +23,10 @@ export function getSchoolDisplayName(school, locale) {
   if (localized) return localized[selectedLocale === "en" ? 1 : 0];
   const mapped = SCHOOL_DISPLAY_NAME_MAP[school.id];
   if (mapped) return mapped;
+  if (school.name && containsSourceLanguageText(school.name)) {
+    return selectedLocale === "en"
+      ? `Source-language label (not translated): ${school.name}`
+      : `Rótulo no idioma de origem (não traduzido): ${school.name}`;
+  }
   return school.name || (selectedLocale === "en" ? "Not selected" : "Não selecionada");
 }

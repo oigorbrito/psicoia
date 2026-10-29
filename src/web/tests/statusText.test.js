@@ -8,7 +8,7 @@ import {
 } from "../src/components/common/statusText.js";
 import { getSchoolDisplayName } from "../src/components/common/schoolText.js";
 import { getStageDisplayLabel } from "../src/components/common/stageText.js";
-import { outputLanguageForLocale } from "../src/locale.js";
+import { containsSourceLanguageText, outputLanguageForLocale } from "../src/locale.js";
 
 test("course and visit statuses have PT-BR and English labels with unknown fallbacks", () => {
   assert.equal(getCourseStatusText("active", "pt-BR"), "Em andamento");
@@ -35,6 +35,19 @@ test("stable stage keys map to localized labels while unknown labels remain unch
   assert.equal(getStageDisplayLabel(assessment, "pt-BR"), "Avaliação e definição de foco");
   assert.equal(getStageDisplayLabel(assessment, "en"), "Assessment and focus setting");
   assert.equal(getStageDisplayLabel({ key: "legacy", label: "Legacy stage" }, "en"), "Legacy stage");
+});
+
+test("untranslated source-language labels stay visible with an explicit marker", () => {
+  assert.equal(containsSourceLanguageText("阶段标签"), true);
+  assert.equal(containsSourceLanguageText("Assessment"), false);
+  assert.equal(
+    getStageDisplayLabel({ key: "legacy", label: "旧阶段" }, "pt-BR"),
+    "Rótulo no idioma de origem (não traduzido): 旧阶段",
+  );
+  assert.equal(
+    getSchoolDisplayName({ id: "unknown", name: "未知疗法" }, "en"),
+    "Source-language label (not translated): 未知疗法",
+  );
 });
 
 test("visit labels normalize numeric input in both locales", () => {

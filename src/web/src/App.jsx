@@ -76,6 +76,11 @@ export default function App() {
         />
 
         <FeedbackBanner feedback={app.feedback} onClose={app.clearFeedback} />
+        <div role="note" className="mx-4 mt-2 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs leading-5 text-amber-900 sm:mx-6">
+          {locale === "en"
+            ? "Software localization is partial: interface labels are available in PT-BR/English, but skill catalogs include clinical content. Existing catalog translations are incomplete and have not undergone clinical validation; some content may remain in Chinese. Selecting an output language does not validate model language quality."
+            : "A localização do software é parcial: os rótulos da interface estão disponíveis em PT-BR/inglês, mas os catálogos de habilidades incluem conteúdo clínico. As traduções existentes são incompletas e não passaram por validação clínica; parte do conteúdo pode permanecer em chinês. Selecionar o idioma de resposta não valida a qualidade linguística do modelo."}
+        </div>
 
         <div className="flex min-h-0 flex-1">
           <VisitTimeline
