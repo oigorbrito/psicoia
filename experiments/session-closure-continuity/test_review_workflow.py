@@ -5,7 +5,9 @@ from pathlib import Path
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import build_adjudication_sheet  # noqa: E402
 import build_review_forms  # noqa: E402
+import prepare_review_assignments  # noqa: E402
 import compare_review_forms  # noqa: E402
 import validate_pilot  # noqa: E402
 
@@ -35,7 +37,7 @@ def _write_form(path: Path, decision_values: list[str], *, alter_input: bool = F
             "indice_da_sessao": "1",
             "resumo_previo_disponivel": "" if not alter_input else "changed",
             "acordo_previo_disponivel": "",
-            "foco_da_sessao": "test focus",
+            "foco_da_sessao": "- test focus",
             "dialogo": "Pessoa: exemplo",
             "decisao_esperada": decision,
             "estado_do_foco": "explored",
@@ -61,7 +63,43 @@ def test_compare_forms_aligns_ids_and_reports_agreement(tmp_path):
     report = compare_review_forms.compare_forms(path_a, path_b)
     assert report["decisao_esperada"]["agreement"] == pytest.approx(0.75)
     assert report["decisao_esperada"]["kappa"] == pytest.approx(0.5)
+    assert report["decisao_esperada"]["counts_a"] == {"close": 2, "continue": 2}
+    assert report["decisao_esperada"]["counts_b"] == {"close": 1, "continue": 3}
     assert report["decisao_esperada"]["disagreements"] == ["SC-02"]
+
+
+def test_adjudication_sheet_contains_only_category_disagreements(tmp_path):
+    path_a, path_b = tmp_path / "a.csv", tmp_path / "b.csv"
+    _write_form(path_a, ["close", "close", "continue", "continue"])
+    _write_form(path_b, ["close", "continue", "continue", "continue"])
+    rows = build_adjudication_sheet.build_adjudication_rows(
+        compare_review_forms.read_completed_form(path_a),
+        compare_review_forms.read_completed_form(path_b),
+    )
+    assert [row["id_caso"] for row in rows] == ["SC-02"]
+    assert rows[0]["campos_categoricos_divergentes"] == "decisao_esperada"
+    assert rows[0]["a_decisao_esperada"] == "close"
+    assert rows[0]["b_decisao_esperada"] == "continue"
+    assert set(rows[0]) == set(build_adjudication_sheet.OUTPUT_FIELDS)
+    assert rows[0]["decisao_adjudicada"] == ""
+
+
+def test_compare_forms_can_reject_stale_case_text(tmp_path):
+    path_a, path_b = tmp_path / "a.csv", tmp_path / "b.csv"
+    _write_form(path_a, ["close"])
+    _write_form(path_b, ["close"])
+    case = {
+        "id": "SC-01",
+        "session_index": 1,
+        "prior_summary": "",
+        "prior_agreement": "",
+        "session_focus": ["test focus"],
+        "dialogue": [{"role": "client", "text": "exemplo"}],
+    }
+    compare_review_forms.compare_forms(path_a, path_b, [case])
+    case["prior_summary"] = "edited after review forms were generated"
+    with pytest.raises(ValueError, match="stale or modified pilot case input"):
+        compare_review_forms.compare_forms(path_a, path_b, [case])
 
 
 def test_compare_forms_rejects_changed_case_input(tmp_path):
@@ -110,6 +148,18 @@ def test_pilot_validator_requires_closing_action_for_end_signal():
     label = {"history_state": "first_session", "ending_signal": "explicit", "expected_action": "continue"}
     with pytest.raises(ValueError, match="must map to close"):
         validate_pilot.validate_label_case_consistency(case, label)
+
+
+def test_prepare_review_assignments_copies_and_refuses_overwrite(tmp_path):
+    templates = tmp_path / "templates"
+    responses = tmp_path / "responses"
+    templates.mkdir()
+    for name in prepare_review_assignments.REVIEWER_FILES:
+        (templates / name).write_text("blank template", encoding="utf-8")
+    copied = prepare_review_assignments.prepare_assignments(templates, responses)
+    assert [path.read_text(encoding="utf-8") for path in copied] == ["blank template", "blank template"]
+    with pytest.raises(FileExistsError, match="refusing to overwrite"):
+        prepare_review_assignments.prepare_assignments(templates, responses)
 
 
 def test_form_builder_detects_existing_annotations(tmp_path, monkeypatch):

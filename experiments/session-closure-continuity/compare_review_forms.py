@@ -6,8 +6,10 @@ import csv
 from collections import Counter
 from pathlib import Path
 
+from build_review_forms import form_row, load_cases
+
 ROOT = Path(__file__).resolve().parent
-DEFAULT_REVIEW_DIR = ROOT / "review"
+DEFAULT_REVIEW_DIR = ROOT / "review" / "responses"
 EXPECTED_CASE_COUNT = 88
 INPUT_COLUMNS = {
     "id_caso",
@@ -73,16 +75,27 @@ def read_completed_form(path: Path) -> dict[str, dict[str, str]]:
     return result
 
 
-def compare_forms(path_a: Path, path_b: Path) -> dict[str, dict[str, object]]:
+def compare_forms(
+    path_a: Path,
+    path_b: Path,
+    expected_cases: list[dict] | None = None,
+) -> dict[str, dict[str, object]]:
     form_a = read_completed_form(path_a)
     form_b = read_completed_form(path_b)
     if form_a.keys() != form_b.keys():
         raise ValueError("reviewers must rate the same case IDs")
     ids = sorted(form_a, key=lambda value: int(value.rsplit("-", 1)[-1]))
+    expected_by_id = None
+    if expected_cases is not None:
+        expected_by_id = {case["id"]: form_row(case) for case in expected_cases}
+        if set(ids) != set(expected_by_id):
+            raise ValueError("review forms do not match the current pilot case IDs")
     for case_id in ids:
         for field in INPUT_COLUMNS - {"id_caso"}:
             if form_a[case_id][field] != form_b[case_id][field]:
                 raise ValueError(f"case input differs between reviewers: {case_id}/{field}")
+            if expected_by_id is not None and form_a[case_id][field] != str(expected_by_id[case_id][field]):
+                raise ValueError(f"stale or modified pilot case input: {case_id}/{field}")
 
     report = {}
     for field in CATEGORICAL_VALUES:
@@ -93,6 +106,8 @@ def compare_forms(path_a: Path, path_b: Path) -> dict[str, dict[str, object]]:
             "n": len(ids),
             "agreement": 1 - len(disagreements) / len(ids),
             "kappa": cohen_kappa(ratings_a, ratings_b),
+            "counts_a": dict(sorted(Counter(ratings_a).items())),
+            "counts_b": dict(sorted(Counter(ratings_b).items())),
             "disagreements": disagreements,
         }
     return report
@@ -104,13 +119,15 @@ def main() -> None:
     parser.add_argument("--reviewer-b", type=Path, default=DEFAULT_REVIEW_DIR / "reviewer-b.csv")
     args = parser.parse_args()
 
-    report = compare_forms(args.reviewer_a, args.reviewer_b)
+    report = compare_forms(args.reviewer_a, args.reviewer_b, load_cases())
     if any(values["n"] != EXPECTED_CASE_COUNT for values in report.values()):
         raise SystemExit(f"Both reviewers must complete all {EXPECTED_CASE_COUNT} cases before comparison.")
     print("Inter-rater agreement (descriptive; not an adjudication or benchmark result):")
     for field, values in report.items():
         kappa = "undefined" if values["kappa"] is None else f"{values['kappa']:.3f}"
         print(f"{field}: n={values['n']}, raw_agreement={values['agreement']:.3f}, Cohen_kappa={kappa}")
+        print(f"  reviewer A counts: {values['counts_a']}")
+        print(f"  reviewer B counts: {values['counts_b']}")
         if values["disagreements"]:
             print("  disagreements:", ", ".join(values["disagreements"]))
     print("Review free-text rationales and adjudicate disagreements separately; do not infer correctness from agreement alone.")

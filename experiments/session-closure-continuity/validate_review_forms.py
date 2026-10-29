@@ -6,7 +6,7 @@ from pathlib import Path
 
 from build_review_forms import form_row, load_cases
 
-ROOT = Path(__file__).resolve().parent / "review"
+ROOT = Path(__file__).resolve().parent / "review" / "templates"
 EXPECTED_COUNT = 88
 REVIEW_COLUMNS = {
     "decisao_esperada",

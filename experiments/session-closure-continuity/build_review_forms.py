@@ -8,7 +8,7 @@ import random
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-REVIEW_DIR = ROOT / "review"
+REVIEW_DIR = ROOT / "review" / "templates"
 CASE_COUNT = 88
 REVIEW_COLUMNS = [
     "decisao_esperada",  # close | continue

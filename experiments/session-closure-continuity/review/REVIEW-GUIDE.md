@@ -62,4 +62,4 @@ These examples illustrate distinct dimensions; they are not clinical rules and d
 
 ## After review
 
-Run `compare_review_forms.py` only after both forms are complete. Report raw agreement, Cohen's kappa (when defined), category counts, and disagreements; interpret kappa as descriptive, not as automatic approval. Read the rationales and adjudicate disagreements in a documented way. Do not edit the provisional-label file to hide disagreement; preserve the individual reviews and record adjudicated decisions separately.
+Run `compare_review_forms.py` only after both forms are complete. Report raw agreement, Cohen's kappa (when defined), category counts, and disagreements; interpret kappa as descriptive, not as automatic approval. Use `build_adjudication_sheet.py` to prepare a blank sheet for categorical disagreements. Also read free-text rationales, which are not compared automatically, and adjudicate disagreements in a documented way. Do not edit the provisional-label file to hide disagreement; preserve the individual reviews and record adjudicated decisions separately.
