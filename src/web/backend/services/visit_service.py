@@ -84,6 +84,7 @@ def build_opening_messages(
     stage,
     visit_no: int,
     opening_note: str = "",
+    output_language: Optional[str] = None,
 ) -> List[VisitMessageRecord]:
     school = pick_school(course.school_id)
     now = utcnow()
@@ -102,11 +103,18 @@ def build_opening_messages(
     if opening_note.strip():
         assistant_text = f"{assistant_text}\n\n本次关注：{opening_note.strip()}"
 
+    if output_language == "English":
+        system_text = f"Session {visit_no} has started."
+    elif output_language == "Português (Brasil)":
+        system_text = f"A sessão {visit_no} foi iniciada."
+    else:
+        system_text = f"第 {visit_no} 次会谈已开始。当前阶段：{stage.label}"
+
     return [
         VisitMessageRecord(
             visit_id="",
             role="system",
-            text=f"第 {visit_no} 次会谈已开始。当前阶段：{stage.label}",
+            text=system_text,
             created_at=now,
         ),
         VisitMessageRecord(
@@ -118,12 +126,29 @@ def build_opening_messages(
     ]
 
 
-def build_opening_seed_user_text(visit_no: int, opening_note: str = "") -> str:
-    base = f"这是第{visit_no}次会话"
+def build_opening_fallback_text(visit_no: int, output_language: Optional[str]) -> Optional[str]:
+    if output_language == "English":
+        return f"Hello. This is session {visit_no}. What would you like to talk about today?"
+    if output_language == "Português (Brasil)":
+        return f"Olá. Esta é a sessão {visit_no}. Sobre o que você gostaria de conversar hoje?"
+    return None
+
+
+def build_opening_seed_user_text(
+    visit_no: int,
+    opening_note: str = "",
+    output_language: Optional[str] = None,
+) -> str:
+    if output_language == "English":
+        base, focus_label = f"This is session {visit_no}", "Session focus"
+    elif output_language == "Português (Brasil)":
+        base, focus_label = f"Esta é a sessão {visit_no}", "Foco da sessão"
+    else:
+        base, focus_label = f"这是第{visit_no}次会话", "本次关注"
     note = opening_note.strip()
     if not note:
         return base
-    return f"{base}\n本次关注：{note}"
+    return f"{base}\n{focus_label}: {note}"
 
 
 def _parse_assistant_payload(assistant_payload: Any) -> Tuple[str, bool]:
@@ -628,11 +653,14 @@ async def create_visit(
     db.add(visit)
     db.flush()
 
-    opening_messages = build_opening_messages(course, stage, next_visit_no, opening_note)
+    opening_messages = build_opening_messages(course, stage, next_visit_no, opening_note, output_language)
     system_opening_message = opening_messages[0]
     system_opening_message.visit_id = visit.visit_id
     db.add(system_opening_message)
     fallback_assistant_text = opening_messages[1].text if len(opening_messages) > 1 else ""
+    localized_fallback = build_opening_fallback_text(next_visit_no, output_language)
+    if localized_fallback:
+        fallback_assistant_text = localized_fallback
 
     visit.message_count = 1
     course.latest_visit_no = next_visit_no
@@ -647,7 +675,7 @@ async def create_visit(
 
     assistant_text = fallback_assistant_text
     if call_llm is not None:
-        seed_user_text = build_opening_seed_user_text(next_visit_no, opening_note)
+        seed_user_text = build_opening_seed_user_text(next_visit_no, opening_note, output_language)
         opening_history: List[Dict[str, str]] = [
             {
                 "role": "system",
@@ -840,10 +868,14 @@ async def close_visit(
         resolved_summary = str(close_artifacts.get("summary_text") or "").strip()
 
     now = utcnow()
+    closing_status = {
+        "English": "--- This session has ended and progress has been saved. ---",
+        "Português (Brasil)": "--- Esta sessão foi encerrada e o progresso foi salvo. ---",
+    }.get(output_language, "--- 本次会谈已结束，进度已保存 ---")
     closing_message = VisitMessageRecord(
         visit_id=visit.visit_id,
         role="system",
-        text="--- 本次会谈已结束，进度已保存 ---",
+        text=closing_status,
         created_at=now,
     )
     visit.status = "closed"

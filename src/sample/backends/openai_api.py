@@ -151,18 +151,24 @@ class OpenAIStyleBackend:
         if isinstance(choices, list) and choices:
             msg = choices[0].get("message", {})
             content = msg.get("content", "")
-            if isinstance(content, str):
+            if isinstance(content, str) and content:
                 return content
             if isinstance(content, list):
                 chunks = []
                 for item in content:
                     if isinstance(item, dict):
+                        block_type = str(item.get("type") or "").casefold()
+                        if block_type in {"reasoning", "thinking", "analysis"}:
+                            continue
+                        if block_type and block_type not in {"text", "output_text"}:
+                            continue
                         text = item.get("text") or item.get("content") or ""
                         if text:
                             chunks.append(str(text))
                     elif isinstance(item, str):
                         chunks.append(item)
-                return "".join(chunks)
+                if chunks:
+                    return "".join(chunks)
 
         # Some OpenAI-compatible servers may return a direct output text field.
         output_text = response_json.get("output_text")

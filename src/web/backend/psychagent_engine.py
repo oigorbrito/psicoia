@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import asyncio
 import logging
 import os
+from dataclasses import replace
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -12,7 +14,7 @@ from sample.io.config_loader import load_baseline_config, load_runtime_config
 from sample.models import MODALITY_MODELS
 from sample.prompt_manager import PsychAgentPromptManager
 from sample.skill_manager import SkillManager
-from sample.utils import extract_tag_content, format_transcript, safe_json_loads, strip_end_token
+from sample.utils import extract_public_response, format_transcript, safe_json_loads
 
 from .domain import (
     school_to_psychagent_sect,
@@ -22,6 +24,10 @@ from .domain import (
 )
 from .models import TherapyCourseRecord, TherapyVisitRecord
 from .schemas import VisitMessageOut, VisitPsychContextOut, VisitState
+
+class SkillContextUnavailable(RuntimeError):
+    """Raised when retrieval failed and generation must not proceed without skill context."""
+
 
 SESSION_FOCUS_DEFAULT: List[str] = [
     "建立初始关系与咨询框架",
@@ -60,6 +66,10 @@ class PsychAgentWebBackend:
             runtime_config=self._runtime_config,
             logger=self._logger.getChild("skill"),
         )
+        self._skill_managers: Dict[str, SkillManager] = {
+            self._runtime_config.output_language: self._skill_manager
+        }
+        self._skill_manager_lock = asyncio.Lock()
         self._started = False
 
     @property
@@ -95,9 +105,20 @@ class PsychAgentWebBackend:
             await self.startup()
         response_language = output_language or self._runtime_config.output_language
         try:
-            sect = school_to_psychagent_sect(course.school_id)
-            stage = stage_from_key(visit.stage_key_snapshot)
-            stage_idx = stage_key_to_skill_stage(visit.stage_key_snapshot)
+            try:
+                skill_manager = await self._skill_manager_for_language(response_language)
+                sect = school_to_psychagent_sect(course.school_id)
+                stage = stage_from_key(visit.stage_key_snapshot)
+                stage_idx = stage_key_to_skill_stage(visit.stage_key_snapshot)
+                candidate_skills = await self._build_candidate_skills(
+                    sect,
+                    {"stage_title": stage.label, "objective": self._build_session_focus(psych_context)},
+                    stage_idx,
+                    skill_manager=skill_manager,
+                    model_kwgs={"max_tokens": 256},
+                )
+            except Exception as retrieval_exc:
+                raise SkillContextUnavailable("localized skill context could not be loaded") from retrieval_exc
             prompt_manager = self._get_prompt_manager(sect)
 
             session_focus = self._build_session_focus(psych_context)
@@ -109,21 +130,23 @@ class PsychAgentWebBackend:
                 "objective": session_focus,
             }
 
-            candidate_skills = await self._build_candidate_skills(sect, session_goals, stage_idx)
             transcript = self._build_transcript(visit_state.messages)
             user_query = self._last_user_query(transcript)
             diag_hist = self._build_diag_history(transcript[:-1])
 
             suggested_skills: List[Dict[str, Any]] = []
             if user_query:
-                suggested_skills, _ = await self._skill_manager.retrive(
-                    sect=sect,
-                    query=user_query,
-                    session_stage=stage_idx,
-                    session_goals=session_goals,
-                    diag_hist=diag_hist,
-                    candidate_skills=candidate_skills,
-                )
+                try:
+                    suggested_skills, _ = await skill_manager.retrive(
+                        sect=sect,
+                        query=user_query,
+                        session_stage=stage_idx,
+                        session_goals=session_goals,
+                        diag_hist=diag_hist,
+                        candidate_skills=candidate_skills,
+                    )
+                except Exception as retrieval_exc:
+                    raise SkillContextUnavailable("localized skill retrieval failed") from retrieval_exc
 
             system_prompt = prompt_manager.render(
                 "counselor_system",
@@ -135,6 +158,7 @@ class PsychAgentWebBackend:
                 suggested_skills=suggested_skills,
                 output_language=response_language,
             )
+            system_prompt = self._append_output_language_contract(system_prompt, response_language)
             messages = [{"role": "system", "content": system_prompt}]
             messages.extend(self._build_chat_history(visit_state.messages))
 
@@ -143,13 +167,15 @@ class PsychAgentWebBackend:
             if text:
                 return {"text": text, "end": should_end}
             raise RuntimeError("empty response from PsychAgent prompt chain")
+        except SkillContextUnavailable:
+            self._logger.error("Localized skill context unavailable; refusing context-free generation")
+            raise
         except Exception as exc:
             self._logger.warning("PsychAgent prompt chain failed, falling back to baseline prompt: %s", exc)
             localized_fallback = [dict(message) for message in fallback_messages]
             if localized_fallback and localized_fallback[0].get("role") == "system":
-                localized_fallback[0]["content"] = (
-                    localized_fallback[0].get("content", "")
-                    + f" Respond in {response_language}."
+                localized_fallback[0]["content"] = self._append_output_language_contract(
+                    localized_fallback[0].get("content", ""), response_language
                 )
             raw = await self._chat_once(localized_fallback, output_language=response_language)
             text, should_end = self._normalize_output_with_end(raw)
@@ -331,16 +357,56 @@ class PsychAgentWebBackend:
             return
         raise TypeError(f"unsupported schema model validator: {schema_model}")
 
+    async def _skill_manager_for_language(self, output_language: str) -> SkillManager:
+        manager = self._skill_managers.get(output_language)
+        if manager is not None:
+            return manager
+
+        async with self._skill_manager_lock:
+            manager = self._skill_managers.get(output_language)
+            if manager is None:
+                localized_runtime = replace(self._runtime_config, output_language=output_language)
+                manager = SkillManager(
+                    backend=self._backend,
+                    runtime_config=localized_runtime,
+                    logger=self._logger.getChild(f"skill.{output_language}"),
+                )
+                await manager.load_library()
+                self._skill_managers[output_language] = manager
+        return manager
+
+    @staticmethod
+    def _append_output_language_contract(system_prompt: str, output_language: str) -> str:
+        if output_language == "English":
+            contract = (
+                "FINAL LANGUAGE AND OUTPUT CONTRACT: Write the client-facing answer only in English. "
+                "Do not use Chinese in the client-facing answer. Put the final answer inside <response> "
+                "when possible, and do not include internal analysis in that response."
+            )
+        elif output_language == "Português (Brasil)":
+            contract = (
+                "CONTRATO FINAL DE IDIOMA E SAÍDA: Escreva a resposta destinada à pessoa usuária somente "
+                "em português brasileiro. Não use chinês na resposta destinada à pessoa usuária. Coloque "
+                "a resposta final dentro de <response> quando possível e não inclua análise interna nessa resposta."
+            )
+        else:
+            contract = f"Write the client-facing answer only in {output_language}. Do not include internal analysis in it."
+        return f"{system_prompt.rstrip()}\n\n{contract}"
+
     async def _build_candidate_skills(
         self,
         sect: str,
         session_goals: Dict[str, Any],
         stage_idx: int,
+        skill_manager: Optional[SkillManager] = None,
+        model_kwgs: Optional[Dict[str, Any]] = None,
     ) -> List[Dict[str, Any]]:
-        meta_skills, _, _, _ = await self._skill_manager.corse_filter(
+        manager = skill_manager or self._skill_manager
+        meta_skills, _, _, _ = await manager.corse_filter(
             sect=sect,
             session_goals=session_goals,
             stage=stage_idx,
+            model_kwgs=model_kwgs,
         )
         candidate_skills: List[Dict[str, Any]] = []
         for item in meta_skills:
@@ -561,9 +627,7 @@ class PsychAgentWebBackend:
         return text
 
     def _normalize_output_with_end(self, raw_text: str) -> tuple[str, bool]:
-        text = extract_tag_content(raw_text, tag="response") or raw_text or ""
-        text, has_end = strip_end_token(text, self._baseline_config.end_token)
-        return text.strip(), has_end
+        return extract_public_response(raw_text, self._baseline_config.end_token)
 
     @staticmethod
     def _split_lines(raw_text: str) -> List[str]:

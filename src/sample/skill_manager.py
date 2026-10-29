@@ -273,16 +273,26 @@ class SkillManager:
         if not candidate_skills:
             return [], {}
 
-        rewritten_query, res_rewrite = await self.rewrite(
-            sect=sect,
-            query=query,
-            stage=stage_idx,
-            session_goals=session_goals,
-            diag_hist=diag_hist,
-            model_kwgs=model_kwgs,
-        )
-        query_text = extract_tag_content(rewritten_query, "response") or rewritten_query
+        locale = self._skill_locale_suffix()
+        if locale is None:
+            rewritten_query, res_rewrite = await self.rewrite(
+                sect=sect,
+                query=query,
+                stage=stage_idx,
+                session_goals=session_goals,
+                diag_hist=diag_hist,
+                model_kwgs=model_kwgs,
+            )
+            query_text = extract_tag_content(rewritten_query, "response") or rewritten_query
+        else:
+            # The bundled rewriter is Chinese-only; embedding its translation against a localized catalog
+            # made the query and index incompatible. Keep the user's query in the catalog's language.
+            query_text = query
+            res_rewrite = {"messages": [], "rewrite_skipped": "localized_query_language_preserved"}
+
         query_embedding = (await self._embed_by_api([query_text]))[0]
+        if not query_embedding or any(not math.isfinite(value) for value in query_embedding):
+            raise RuntimeError("query embedding is empty or contains non-finite values")
 
         await self._ensure_embeddings_for_candidates(candidate_skills)
 
@@ -291,6 +301,12 @@ class SkillManager:
             vec = self._vector_to_list(skill.get("embedding_to_retrive"))
             if not vec:
                 continue
+            if len(vec) != len(query_embedding):
+                raise RuntimeError(
+                    f"embedding dimension mismatch: query={len(query_embedding)} candidate={len(vec)}"
+                )
+            if any(not math.isfinite(value) for value in vec):
+                raise RuntimeError(f"candidate embedding contains non-finite values: skill_id={skill.get('skill_id')}")
             score = self._cosine_similarity(query_embedding, vec)
             if threshold is not None and score < threshold:
                 continue
@@ -349,12 +365,11 @@ class SkillManager:
         input_text: str,
         model_kwgs: Optional[Dict[str, Any]] = None,
     ) -> str:
-        del model_kwgs
         messages = [
             {"role": "system", "content": template},
             {"role": "user", "content": input_text},
         ]
-        return await self._backend.chat_text(messages=messages)
+        return await self._backend.chat_text(messages=messages, **(model_kwgs or {}))
 
     def find_skill_by_id(self, stage: int, skill_ids: Sequence[Tuple[str, str]]) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
         result: List[Dict[str, Any]] = []
@@ -468,7 +483,17 @@ class SkillManager:
                         input=batch,
                         model=self._runtime.psychagent_embedding_model,
                     )
-                    embeddings.extend([list(item.embedding) for item in resp.data])
+                    batch_embeddings = [list(item.embedding) for item in resp.data]
+                    if len(batch_embeddings) != len(batch):
+                        raise RuntimeError(
+                            f"embedding response count mismatch: requested={len(batch)} returned={len(batch_embeddings)}"
+                        )
+                    dimensions = {len(vector) for vector in batch_embeddings}
+                    if len(dimensions) != 1 or not dimensions or 0 in dimensions:
+                        raise RuntimeError(f"embedding response has inconsistent/empty dimensions: {sorted(dimensions)}")
+                    if any(not math.isfinite(float(value)) for vector in batch_embeddings for value in vector):
+                        raise RuntimeError("embedding response contains non-finite values")
+                    embeddings.extend(batch_embeddings)
                     break
                 except Exception as exc:
                     if attempt >= max_attempts:
