@@ -56,8 +56,34 @@
       },
       "at_timeout": "First-visit route exceeded the 180-second budget; no public opening response or subsequent turns/restart checks were verified.",
       "result": "NOT_PASS"
+    },
+    {
+      "run_id": "block13-e2e-warm-full-benchmark-20261029",
+      "git_head": "2c087406737aaf835a061c9fc522c36bbaa8262a",
+      "trace_command": "PSICOIA_LOCAL_CHAT_MODEL=qwen3.5:4b PSICOIA_LOCAL_EMBED_MODEL=phi4-mini:3.8b D:/temp/psicoia-block10-venv/Scripts/python.exe tests/block13/trace_qwen_e2e_timeout.py",
+      "embedding_model": "phi4-mini:3.8b",
+      "chat_model": "qwen3.5:4b",
+      "qwen_chat_prewarmed_via_native_api": true,
+      "prewarm_request": {"model": "qwen3.5:4b", "prompt": "Answer with one short word.", "num_predict": 1, "keep_alive": "30m", "response_chars": 0},
+      "prewarm_elapsed_ms": 25120,
+      "separate_retrieval_metrics_skipped": false,
+      "api_route": "POST /courses/{course_id}/visits (synthetic first visit)",
+      "route_wall_ms": 180003.5,
+      "embedding_index_calls_ms": [68424.9, 21409.2],
+      "query_embedding_ms": 756.9,
+      "first_completed_chat_call": {
+        "elapsed_ms": 66279.3,
+        "http_status": 200,
+        "prompt_tokens": 1568,
+        "completion_tokens": 374,
+        "finish_reason": "stop",
+        "public_content_characters": 0,
+        "reasoning_field_characters": 1738
+      },
+      "at_timeout": "A second chat request remained in flight when the outer E2E HTTP client reached 180 s; public opening response, later turns, persistence after restart, and failure recovery were not verified.",
+      "result": "NOT_PASS"
     }
   ],
-  "interpretation": "The Qwen embedding endpoint was not the final blocking stage: per-query embedding completed in 0.32-0.54 s. Cold localized index batches took about 70 s Qwen and 86 s Phi on the first-visit route. Chat generation then took about 54-94 s and responses contained zero public content with reasoning in a separate field; one Qwen/Qwen run also had a retry still in flight at the limit. The Phi/Qwen run with Qwen prewarmed still consumed the full 180-second budget because cold index + generation left no margin, and the generation returned no public answer. OpenAIAPIBackend correctly refuses to turn reasoning into public answer text. The exact model cold-start and process-memory observations are in qwen_timeout_diagnostic.json. No timeout was raised to obtain these results.",
-  "limits": "This is a local synthetic run on one workstation, not a production diagnosis or claim about all Qwen/Ollama configurations."
+  "interpretation": "The Qwen embedding endpoint was not the final blocking stage: individual embeddings completed in under 2 s in the isolated benchmark and took 0.32-0.76 s in observed first-visit traces. Cold localized index batches took roughly 70-90 s on the real route. Chat generation then returned zero public content with reasoning in a separate field; retries consumed the remaining 180-second route budget. The latest warm Phi/Qwen trace completed a 66.28-second reasoning-only chat response and still had a subsequent request in flight at the route timeout. OpenAIAPIBackend correctly refuses to publish reasoning as an answer. The model cold-start and memory observations are in qwen_timeout_diagnostic.json. No timeout was raised. These are local synthetic observations, not proof that embeddings are never a contributor or claims about every Qwen/Ollama configuration.",
+  "limits": "Local synthetic runs on one workstation; database state after HTTP timeout was not verified, and none of the failed traces reached restart/failure-recovery checks."
 }

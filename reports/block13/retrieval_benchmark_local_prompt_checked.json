@@ -1,0 +1,4130 @@
+{
+  "dataset_id": "psicoia-block13-retrieval-v1",
+  "criteria_file": "tests\\fixtures\\block13\\criteria_v1.json",
+  "server_config": {
+    "pooling": "mean",
+    "ngl": 0,
+    "context": 512,
+    "batching": "provider library batches of 12"
+  },
+  "hardware": {
+    "logical_cpu_count": 8
+  },
+  "candidates": {
+    "phi4-mini:3.8b": {
+      "server_cold_start_seconds": 10.84,
+      "server_args": [
+        "C:\\Users\\igorb\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe",
+        "-m",
+        "C:\\Users\\igorb\\.ollama\\models\\blobs\\sha256-3c168af1dea0a414299c7d9077e100ac763370e5a98b3c53801a958a47f0a5db",
+        "--embedding",
+        "--pooling",
+        "mean",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "56672",
+        "-c",
+        "512",
+        "-ngl",
+        "0",
+        "--no-webui"
+      ],
+      "model_process_pid": 42644,
+      "resource_after_load": {
+        "pid": 42644,
+        "ram_total_gib": 15.87,
+        "ram_available_gib": 4.22,
+        "ram_load_percent": 73,
+        "process_working_set_mib": 3262.6,
+        "process_peak_working_set_mib": 3262.6,
+        "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 94 MiB, 3842 MiB, 14 %",
+        "ollama_loaded_models": [],
+        "model_processes": [
+          [
+            "ollama.exe",
+            "11788",
+            "Console",
+            "1",
+            "23.664 K"
+          ],
+          [
+            "llama-server.exe",
+            "42644",
+            "Console",
+            "1",
+            "3.340.856 K"
+          ]
+        ]
+      },
+      "locales": {
+        "en": {
+          "document_count": 12,
+          "query_count": 16,
+          "test_count": 12,
+          "index_wall_seconds": 40.61,
+          "index_api_calls": [
+            {
+              "phase": "index",
+              "items": 12,
+              "characters": 5762,
+              "elapsed_ms": 31590.64,
+              "dimensions": 3072
+            },
+            {
+              "phase": "index",
+              "items": 12,
+              "characters": 1642,
+              "elapsed_ms": 9009.25,
+              "dimensions": 3072
+            }
+          ],
+          "index_items": 24,
+          "index_documents_throughput_per_second": 0.591,
+          "retrieval_document_tokens": 362,
+          "query_tokens": 319,
+          "individual_document_embedding_ms": {
+            "median": 768.23,
+            "p95": 1071.53,
+            "per_document": [
+              {
+                "id": "d01_water_pot",
+                "characters": 117,
+                "tokens": 30,
+                "tokenization_ms": 1.29,
+                "embedding_ms": 792.57
+              },
+              {
+                "id": "d02_prune_basil",
+                "characters": 111,
+                "tokens": 29,
+                "tokenization_ms": 1.4,
+                "embedding_ms": 736.74
+              },
+              {
+                "id": "d03_bike_flat",
+                "characters": 137,
+                "tokens": 34,
+                "tokenization_ms": 1.22,
+                "embedding_ms": 1071.53
+              },
+              {
+                "id": "d04_bike_chain",
+                "characters": 136,
+                "tokens": 31,
+                "tokenization_ms": 2.09,
+                "embedding_ms": 1070.79
+              },
+              {
+                "id": "d05_meeting_agenda",
+                "characters": 129,
+                "tokens": 29,
+                "tokenization_ms": 1.46,
+                "embedding_ms": 739.74
+              },
+              {
+                "id": "d06_meeting_minutes",
+                "characters": 137,
+                "tokens": 29,
+                "tokenization_ms": 1.37,
+                "embedding_ms": 789.19
+              },
+              {
+                "id": "d07_train_packing",
+                "characters": 136,
+                "tokens": 30,
+                "tokenization_ms": 1.24,
+                "embedding_ms": 768.23
+              },
+              {
+                "id": "d08_rain_gear",
+                "characters": 128,
+                "tokens": 27,
+                "tokenization_ms": 1.46,
+                "embedding_ms": 722.7
+              },
+              {
+                "id": "d09_ingredient_substitute",
+                "characters": 148,
+                "tokens": 28,
+                "tokenization_ms": 1.33,
+                "embedding_ms": 738.75
+              },
+              {
+                "id": "d10_oven_temperature",
+                "characters": 142,
+                "tokens": 29,
+                "tokenization_ms": 1.57,
+                "embedding_ms": 752.56
+              },
+              {
+                "id": "d11_file_backup",
+                "characters": 155,
+                "tokens": 31,
+                "tokenization_ms": 1.13,
+                "embedding_ms": 772.02
+              },
+              {
+                "id": "d12_file_search",
+                "characters": 166,
+                "tokens": 35,
+                "tokenization_ms": 1.21,
+                "embedding_ms": 894.5
+              }
+            ]
+          },
+          "query_embedding_ms": {
+            "median": 598.97,
+            "p95": 1395.02,
+            "throughput_queries_per_second": 1.4584,
+            "per_query": [
+              {
+                "id": "en-t01",
+                "characters": 45,
+                "tokens": 11,
+                "tokenization_ms": 1.18
+              },
+              {
+                "id": "en-t02",
+                "characters": 35,
+                "tokens": 8,
+                "tokenization_ms": 1.08
+              },
+              {
+                "id": "en-t03",
+                "characters": 61,
+                "tokens": 12,
+                "tokenization_ms": 1.37
+              },
+              {
+                "id": "en-t04",
+                "characters": 101,
+                "tokens": 20,
+                "tokenization_ms": 1.25
+              },
+              {
+                "id": "en-t05",
+                "characters": 198,
+                "tokens": 40,
+                "tokenization_ms": 1.99
+              },
+              {
+                "id": "en-t06",
+                "characters": 75,
+                "tokens": 19,
+                "tokenization_ms": 1.77
+              },
+              {
+                "id": "en-t07",
+                "characters": 87,
+                "tokens": 18,
+                "tokenization_ms": 1.65
+              },
+              {
+                "id": "en-t08",
+                "characters": 90,
+                "tokens": 22,
+                "tokenization_ms": 1.64
+              },
+              {
+                "id": "en-t09",
+                "characters": 70,
+                "tokens": 14,
+                "tokenization_ms": 1.57
+              },
+              {
+                "id": "en-t10",
+                "characters": 60,
+                "tokens": 12,
+                "tokenization_ms": 1.3
+              },
+              {
+                "id": "en-t11",
+                "characters": 135,
+                "tokens": 27,
+                "tokenization_ms": 1.71
+              },
+              {
+                "id": "en-t12",
+                "characters": 290,
+                "tokens": 54,
+                "tokenization_ms": 1.75
+              },
+              {
+                "id": "en-c01",
+                "characters": 65,
+                "tokens": 17,
+                "tokenization_ms": 1.78
+              },
+              {
+                "id": "en-c02",
+                "characters": 81,
+                "tokens": 20,
+                "tokenization_ms": 1.25
+              },
+              {
+                "id": "en-c03",
+                "characters": 58,
+                "tokens": 13,
+                "tokenization_ms": 1.34
+              },
+              {
+                "id": "en-c04",
+                "characters": 64,
+                "tokens": 12,
+                "tokenization_ms": 1.26
+              }
+            ]
+          },
+          "retrieval_compute_overhead_ms": {
+            "median": 25.99,
+            "p95": 45.86
+          },
+          "prompt_render_ms": {
+            "median": 0.22,
+            "p95": 0.27
+          },
+          "metrics_without_threshold": {
+            "test_queries": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 0.7,
+            "recall_at_1_wilson95": [
+              0.3968,
+              0.8922
+            ],
+            "recall_at_5": 0.8,
+            "recall_at_5_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "mrr": 0.75,
+            "ndcg_at_5": 0.7251,
+            "useful_context_rate": 0.8,
+            "useful_context_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "en-t01",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d04_bike_chain",
+                  "d12_file_search",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d04_bike_chain",
+                  "d12_file_search",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t02",
+                "answerable": true,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d07_train_packing",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d07_train_packing",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t03",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d03_bike_flat",
+                  "d04_bike_chain"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d03_bike_flat",
+                  "d04_bike_chain"
+                ]
+              },
+              {
+                "id": "en-t04",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t05",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 0.7098097413968655,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat"
+                ]
+              },
+              {
+                "id": "en-t06",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d02_prune_basil",
+                  "d12_file_search",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d02_prune_basil",
+                  "d12_file_search",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "en-t07",
+                "answerable": true,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d11_file_backup"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d11_file_backup"
+                ]
+              },
+              {
+                "id": "en-t08",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t09",
+                "answerable": true,
+                "hit1": false,
+                "hit5": true,
+                "mrr": 0.5,
+                "ndcg5": 0.5413402936435214,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d07_train_packing",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d07_train_packing",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat"
+                ]
+              },
+              {
+                "id": "en-t10",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t11",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t12",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat"
+                ]
+              }
+            ]
+          },
+          "calibration_threshold": {
+            "selected": {
+              "threshold": 0.7,
+              "balanced_accuracy": 0.5,
+              "sensitivity": 1.0,
+              "specificity": 0.0
+            },
+            "grid_results": [
+              {
+                "threshold": 0.1,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.15,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.2,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.25,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.3,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.35,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.4,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.45,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.5,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.55,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.6,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.65,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.7,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              }
+            ]
+          },
+          "metrics_with_calibration_threshold_on_test": {
+            "test_queries": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 0.7,
+            "recall_at_1_wilson95": [
+              0.3968,
+              0.8922
+            ],
+            "recall_at_5": 0.8,
+            "recall_at_5_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "mrr": 0.75,
+            "ndcg_at_5": 0.7251,
+            "useful_context_rate": 0.8,
+            "useful_context_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "en-t01",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d04_bike_chain",
+                  "d12_file_search",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d04_bike_chain",
+                  "d12_file_search",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t02",
+                "answerable": true,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d07_train_packing",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d07_train_packing",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t03",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d03_bike_flat",
+                  "d04_bike_chain"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d03_bike_flat",
+                  "d04_bike_chain"
+                ]
+              },
+              {
+                "id": "en-t04",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t05",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 0.7098097413968655,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat"
+                ]
+              },
+              {
+                "id": "en-t06",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d02_prune_basil",
+                  "d12_file_search",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d02_prune_basil",
+                  "d12_file_search",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "en-t07",
+                "answerable": true,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d11_file_backup"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d11_file_backup"
+                ]
+              },
+              {
+                "id": "en-t08",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t09",
+                "answerable": true,
+                "hit1": false,
+                "hit5": true,
+                "mrr": 0.5,
+                "ndcg5": 0.5413402936435214,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d07_train_packing",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d07_train_packing",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat"
+                ]
+              },
+              {
+                "id": "en-t10",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t11",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t12",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d03_bike_flat"
+                ]
+              }
+            ]
+          },
+          "resource_after_index_and_queries": {
+            "pid": 42644,
+            "ram_total_gib": 15.87,
+            "ram_available_gib": 4.2,
+            "ram_load_percent": 73,
+            "process_working_set_mib": 3330.1,
+            "process_peak_working_set_mib": 3330.1,
+            "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 94 MiB, 3842 MiB, 15 %",
+            "ollama_loaded_models": [],
+            "model_processes": [
+              [
+                "ollama.exe",
+                "11788",
+                "Console",
+                "1",
+                "22.916 K"
+              ],
+              [
+                "llama-server.exe",
+                "42644",
+                "Console",
+                "1",
+                "3.410.036 K"
+              ]
+            ]
+          }
+        },
+        "pt-BR": {
+          "document_count": 12,
+          "query_count": 16,
+          "test_count": 12,
+          "index_wall_seconds": 46.5,
+          "index_api_calls": [
+            {
+              "phase": "index",
+              "items": 12,
+              "characters": 6070,
+              "elapsed_ms": 36188.34,
+              "dimensions": 3072
+            },
+            {
+              "phase": "index",
+              "items": 12,
+              "characters": 1802,
+              "elapsed_ms": 10306.5,
+              "dimensions": 3072
+            }
+          ],
+          "index_items": 24,
+          "index_documents_throughput_per_second": 0.5161,
+          "retrieval_document_tokens": 436,
+          "query_tokens": 360,
+          "individual_document_embedding_ms": {
+            "median": 965.66,
+            "p95": 1237.68,
+            "per_document": [
+              {
+                "id": "d01_water_pot",
+                "characters": 105,
+                "tokens": 30,
+                "tokenization_ms": 1.46,
+                "embedding_ms": 770.57
+              },
+              {
+                "id": "d02_prune_basil",
+                "characters": 131,
+                "tokens": 38,
+                "tokenization_ms": 1.13,
+                "embedding_ms": 926.23
+              },
+              {
+                "id": "d03_bike_flat",
+                "characters": 142,
+                "tokens": 41,
+                "tokenization_ms": 1.42,
+                "embedding_ms": 1003.69
+              },
+              {
+                "id": "d04_bike_chain",
+                "characters": 154,
+                "tokens": 41,
+                "tokenization_ms": 1.24,
+                "embedding_ms": 1030.09
+              },
+              {
+                "id": "d05_meeting_agenda",
+                "characters": 133,
+                "tokens": 32,
+                "tokenization_ms": 1.58,
+                "embedding_ms": 932.35
+              },
+              {
+                "id": "d06_meeting_minutes",
+                "characters": 153,
+                "tokens": 34,
+                "tokenization_ms": 23.03,
+                "embedding_ms": 1237.68
+              },
+              {
+                "id": "d07_train_packing",
+                "characters": 136,
+                "tokens": 35,
+                "tokenization_ms": 1.17,
+                "embedding_ms": 995.47
+              },
+              {
+                "id": "d08_rain_gear",
+                "characters": 146,
+                "tokens": 37,
+                "tokenization_ms": 1.26,
+                "embedding_ms": 965.66
+              },
+              {
+                "id": "d09_ingredient_substitute",
+                "characters": 173,
+                "tokens": 37,
+                "tokenization_ms": 1.51,
+                "embedding_ms": 935.84
+              },
+              {
+                "id": "d10_oven_temperature",
+                "characters": 144,
+                "tokens": 33,
+                "tokenization_ms": 1.21,
+                "embedding_ms": 839.06
+              },
+              {
+                "id": "d11_file_backup",
+                "characters": 197,
+                "tokens": 39,
+                "tokenization_ms": 1.21,
+                "embedding_ms": 1188.83
+              },
+              {
+                "id": "d12_file_search",
+                "characters": 188,
+                "tokens": 39,
+                "tokenization_ms": 1.38,
+                "embedding_ms": 1106.23
+              }
+            ]
+          },
+          "query_embedding_ms": {
+            "median": 596.05,
+            "p95": 1413.49,
+            "throughput_queries_per_second": 1.3753,
+            "per_query": [
+              {
+                "id": "pt-t01",
+                "characters": 60,
+                "tokens": 16,
+                "tokenization_ms": 1.24
+              },
+              {
+                "id": "pt-t02",
+                "characters": 42,
+                "tokens": 10,
+                "tokenization_ms": 1.47
+              },
+              {
+                "id": "pt-t03",
+                "characters": 69,
+                "tokens": 15,
+                "tokenization_ms": 16.68
+              },
+              {
+                "id": "pt-t04",
+                "characters": 105,
+                "tokens": 22,
+                "tokenization_ms": 1.94
+              },
+              {
+                "id": "pt-t05",
+                "characters": 181,
+                "tokens": 38,
+                "tokenization_ms": 2.3
+              },
+              {
+                "id": "pt-t06",
+                "characters": 94,
+                "tokens": 24,
+                "tokenization_ms": 1.4
+              },
+              {
+                "id": "pt-t07",
+                "characters": 93,
+                "tokens": 17,
+                "tokenization_ms": 1.25
+              },
+              {
+                "id": "pt-t08",
+                "characters": 94,
+                "tokens": 27,
+                "tokenization_ms": 1.17
+              },
+              {
+                "id": "pt-t09",
+                "characters": 77,
+                "tokens": 18,
+                "tokenization_ms": 1.22
+              },
+              {
+                "id": "pt-t10",
+                "characters": 68,
+                "tokens": 16,
+                "tokenization_ms": 1.4
+              },
+              {
+                "id": "pt-t11",
+                "characters": 143,
+                "tokens": 32,
+                "tokenization_ms": 1.47
+              },
+              {
+                "id": "pt-t12",
+                "characters": 285,
+                "tokens": 57,
+                "tokenization_ms": 1.83
+              },
+              {
+                "id": "pt-c01",
+                "characters": 79,
+                "tokens": 19,
+                "tokenization_ms": 1.24
+              },
+              {
+                "id": "pt-c02",
+                "characters": 76,
+                "tokens": 22,
+                "tokenization_ms": 1.42
+              },
+              {
+                "id": "pt-c03",
+                "characters": 53,
+                "tokens": 15,
+                "tokenization_ms": 1.1
+              },
+              {
+                "id": "pt-c04",
+                "characters": 59,
+                "tokens": 12,
+                "tokenization_ms": 1.15
+              }
+            ]
+          },
+          "retrieval_compute_overhead_ms": {
+            "median": 27.58,
+            "p95": 43.77
+          },
+          "prompt_render_ms": {
+            "median": 0.19,
+            "p95": 0.35
+          },
+          "metrics_without_threshold": {
+            "test_queries": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 1.0,
+            "recall_at_1_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "recall_at_5": 1.0,
+            "recall_at_5_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "mrr": 1.0,
+            "ndcg_at_5": 0.9196,
+            "useful_context_rate": 1.0,
+            "useful_context_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "pt-t01",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d04_bike_chain",
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear"
+                ],
+                "rendered_skill_ids": [
+                  "d04_bike_chain",
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear"
+                ]
+              },
+              {
+                "id": "pt-t02",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d05_meeting_agenda",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d11_file_backup"
+                ],
+                "rendered_skill_ids": [
+                  "d05_meeting_agenda",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d11_file_backup"
+                ]
+              },
+              {
+                "id": "pt-t03",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d06_meeting_minutes"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d06_meeting_minutes"
+                ]
+              },
+              {
+                "id": "pt-t04",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda"
+                ]
+              },
+              {
+                "id": "pt-t05",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 0.7098097413968655,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t06",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d01_water_pot",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d01_water_pot",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t07",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t08",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d02_prune_basil",
+                  "d09_ingredient_substitute",
+                  "d01_water_pot"
+                ],
+                "rendered_skill_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d02_prune_basil",
+                  "d09_ingredient_substitute",
+                  "d01_water_pot"
+                ]
+              },
+              {
+                "id": "pt-t09",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 0.48591322032631384,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d05_meeting_agenda",
+                  "d06_meeting_minutes",
+                  "d07_train_packing"
+                ],
+                "rendered_skill_ids": [
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d05_meeting_agenda",
+                  "d06_meeting_minutes",
+                  "d07_train_packing"
+                ]
+              },
+              {
+                "id": "pt-t10",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d02_prune_basil",
+                  "d11_file_backup",
+                  "d08_rain_gear"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d02_prune_basil",
+                  "d11_file_backup",
+                  "d08_rain_gear"
+                ]
+              },
+              {
+                "id": "pt-t11",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d01_water_pot",
+                  "d04_bike_chain"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d01_water_pot",
+                  "d04_bike_chain"
+                ]
+              },
+              {
+                "id": "pt-t12",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ]
+              }
+            ]
+          },
+          "calibration_threshold": {
+            "selected": {
+              "threshold": 0.7,
+              "balanced_accuracy": 0.5,
+              "sensitivity": 1.0,
+              "specificity": 0.0
+            },
+            "grid_results": [
+              {
+                "threshold": 0.1,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.15,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.2,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.25,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.3,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.35,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.4,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.45,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.5,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.55,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.6,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.65,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.7,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              }
+            ]
+          },
+          "metrics_with_calibration_threshold_on_test": {
+            "test_queries": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 1.0,
+            "recall_at_1_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "recall_at_5": 1.0,
+            "recall_at_5_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "mrr": 1.0,
+            "ndcg_at_5": 0.9196,
+            "useful_context_rate": 1.0,
+            "useful_context_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "pt-t01",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d04_bike_chain",
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear"
+                ],
+                "rendered_skill_ids": [
+                  "d04_bike_chain",
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear"
+                ]
+              },
+              {
+                "id": "pt-t02",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d05_meeting_agenda",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d11_file_backup"
+                ],
+                "rendered_skill_ids": [
+                  "d05_meeting_agenda",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d11_file_backup"
+                ]
+              },
+              {
+                "id": "pt-t03",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d06_meeting_minutes"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d06_meeting_minutes"
+                ]
+              },
+              {
+                "id": "pt-t04",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda"
+                ]
+              },
+              {
+                "id": "pt-t05",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 0.7098097413968655,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t06",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d01_water_pot",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d01_water_pot",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t07",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t08",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d02_prune_basil",
+                  "d09_ingredient_substitute",
+                  "d01_water_pot"
+                ],
+                "rendered_skill_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d02_prune_basil",
+                  "d09_ingredient_substitute",
+                  "d01_water_pot"
+                ]
+              },
+              {
+                "id": "pt-t09",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 0.48591322032631384,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d05_meeting_agenda",
+                  "d06_meeting_minutes",
+                  "d07_train_packing"
+                ],
+                "rendered_skill_ids": [
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d05_meeting_agenda",
+                  "d06_meeting_minutes",
+                  "d07_train_packing"
+                ]
+              },
+              {
+                "id": "pt-t10",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d02_prune_basil",
+                  "d11_file_backup",
+                  "d08_rain_gear"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d02_prune_basil",
+                  "d11_file_backup",
+                  "d08_rain_gear"
+                ]
+              },
+              {
+                "id": "pt-t11",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d01_water_pot",
+                  "d04_bike_chain"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil",
+                  "d03_bike_flat",
+                  "d01_water_pot",
+                  "d04_bike_chain"
+                ]
+              },
+              {
+                "id": "pt-t12",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ]
+              }
+            ]
+          },
+          "resource_after_index_and_queries": {
+            "pid": 42644,
+            "ram_total_gib": 15.87,
+            "ram_available_gib": 3.97,
+            "ram_load_percent": 75,
+            "process_working_set_mib": 3345.2,
+            "process_peak_working_set_mib": 3345.2,
+            "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 94 MiB, 3842 MiB, 14 %",
+            "ollama_loaded_models": [],
+            "model_processes": [
+              [
+                "ollama.exe",
+                "11788",
+                "Console",
+                "1",
+                "21.228 K"
+              ],
+              [
+                "llama-server.exe",
+                "42644",
+                "Console",
+                "1",
+                "3.425.468 K"
+              ]
+            ]
+          }
+        }
+      },
+      "resource_after_benchmark": {
+        "pid": 42644,
+        "ram_total_gib": 15.87,
+        "ram_available_gib": 3.97,
+        "ram_load_percent": 75,
+        "process_working_set_mib": 3345.2,
+        "process_peak_working_set_mib": 3345.2,
+        "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 94 MiB, 3842 MiB, 14 %",
+        "ollama_loaded_models": [],
+        "model_processes": [
+          [
+            "ollama.exe",
+            "11788",
+            "Console",
+            "1",
+            "21.232 K"
+          ],
+          [
+            "llama-server.exe",
+            "42644",
+            "Console",
+            "1",
+            "3.425.468 K"
+          ]
+        ]
+      },
+      "server_log": "D:\\projetos\\temp\\psicoia-block13-logs\\phi4-mini_3.8b.log"
+    },
+    "qwen3.5:4b": {
+      "server_cold_start_seconds": 16.07,
+      "server_args": [
+        "C:\\Users\\igorb\\AppData\\Local\\Programs\\Ollama\\lib\\ollama\\llama-server.exe",
+        "-m",
+        "C:\\Users\\igorb\\.ollama\\models\\blobs\\sha256-a9d0a3e1d8c91732a3812becd31f8d4a8ff57414903f226306069f0437e2ac50",
+        "--embedding",
+        "--pooling",
+        "mean",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "50518",
+        "-c",
+        "512",
+        "-ngl",
+        "0",
+        "--no-webui"
+      ],
+      "model_process_pid": 50428,
+      "resource_after_load": {
+        "pid": 50428,
+        "ram_total_gib": 15.87,
+        "ram_available_gib": 3.19,
+        "ram_load_percent": 79,
+        "process_working_set_mib": 4037.6,
+        "process_peak_working_set_mib": 4037.6,
+        "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 94 MiB, 3842 MiB, 0 %",
+        "ollama_loaded_models": [],
+        "model_processes": [
+          [
+            "ollama.exe",
+            "11788",
+            "Console",
+            "1",
+            "21.232 K"
+          ],
+          [
+            "llama-server.exe",
+            "50428",
+            "Console",
+            "1",
+            "4.134.532 K"
+          ]
+        ]
+      },
+      "locales": {
+        "en": {
+          "document_count": 12,
+          "query_count": 16,
+          "test_count": 12,
+          "index_wall_seconds": 49.66,
+          "index_api_calls": [
+            {
+              "phase": "index",
+              "items": 12,
+              "characters": 5762,
+              "elapsed_ms": 37473.85,
+              "dimensions": 2560
+            },
+            {
+              "phase": "index",
+              "items": 12,
+              "characters": 1642,
+              "elapsed_ms": 12174.97,
+              "dimensions": 2560
+            }
+          ],
+          "index_items": 24,
+          "index_documents_throughput_per_second": 0.4833,
+          "retrieval_document_tokens": 365,
+          "query_tokens": 321,
+          "individual_document_embedding_ms": {
+            "median": 872.7,
+            "p95": 1434.33,
+            "per_document": [
+              {
+                "id": "d01_water_pot",
+                "characters": 117,
+                "tokens": 30,
+                "tokenization_ms": 1.21,
+                "embedding_ms": 872.7
+              },
+              {
+                "id": "d02_prune_basil",
+                "characters": 111,
+                "tokens": 30,
+                "tokenization_ms": 1.07,
+                "embedding_ms": 1019.86
+              },
+              {
+                "id": "d03_bike_flat",
+                "characters": 137,
+                "tokens": 34,
+                "tokenization_ms": 1.44,
+                "embedding_ms": 1434.33
+              },
+              {
+                "id": "d04_bike_chain",
+                "characters": 136,
+                "tokens": 32,
+                "tokenization_ms": 1.5,
+                "embedding_ms": 874.78
+              },
+              {
+                "id": "d05_meeting_agenda",
+                "characters": 129,
+                "tokens": 29,
+                "tokenization_ms": 1.07,
+                "embedding_ms": 779.15
+              },
+              {
+                "id": "d06_meeting_minutes",
+                "characters": 137,
+                "tokens": 29,
+                "tokenization_ms": 1.05,
+                "embedding_ms": 860.55
+              },
+              {
+                "id": "d07_train_packing",
+                "characters": 136,
+                "tokens": 30,
+                "tokenization_ms": 1.1,
+                "embedding_ms": 904.08
+              },
+              {
+                "id": "d08_rain_gear",
+                "characters": 128,
+                "tokens": 27,
+                "tokenization_ms": 1.03,
+                "embedding_ms": 770.53
+              },
+              {
+                "id": "d09_ingredient_substitute",
+                "characters": 148,
+                "tokens": 28,
+                "tokenization_ms": 1.13,
+                "embedding_ms": 776.18
+              },
+              {
+                "id": "d10_oven_temperature",
+                "characters": 142,
+                "tokens": 29,
+                "tokenization_ms": 1.13,
+                "embedding_ms": 929.2
+              },
+              {
+                "id": "d11_file_backup",
+                "characters": 155,
+                "tokens": 32,
+                "tokenization_ms": 1.18,
+                "embedding_ms": 854.39
+              },
+              {
+                "id": "d12_file_search",
+                "characters": 166,
+                "tokens": 35,
+                "tokenization_ms": 1.16,
+                "embedding_ms": 1024.86
+              }
+            ]
+          },
+          "query_embedding_ms": {
+            "median": 581.29,
+            "p95": 1509.24,
+            "throughput_queries_per_second": 1.453,
+            "per_query": [
+              {
+                "id": "en-t01",
+                "characters": 45,
+                "tokens": 11,
+                "tokenization_ms": 1.21
+              },
+              {
+                "id": "en-t02",
+                "characters": 35,
+                "tokens": 8,
+                "tokenization_ms": 1.19
+              },
+              {
+                "id": "en-t03",
+                "characters": 61,
+                "tokens": 12,
+                "tokenization_ms": 1.49
+              },
+              {
+                "id": "en-t04",
+                "characters": 101,
+                "tokens": 21,
+                "tokenization_ms": 1.16
+              },
+              {
+                "id": "en-t05",
+                "characters": 198,
+                "tokens": 40,
+                "tokenization_ms": 1.38
+              },
+              {
+                "id": "en-t06",
+                "characters": 75,
+                "tokens": 19,
+                "tokenization_ms": 1.25
+              },
+              {
+                "id": "en-t07",
+                "characters": 87,
+                "tokens": 18,
+                "tokenization_ms": 1.35
+              },
+              {
+                "id": "en-t08",
+                "characters": 90,
+                "tokens": 22,
+                "tokenization_ms": 1.17
+              },
+              {
+                "id": "en-t09",
+                "characters": 70,
+                "tokens": 14,
+                "tokenization_ms": 1.49
+              },
+              {
+                "id": "en-t10",
+                "characters": 60,
+                "tokens": 12,
+                "tokenization_ms": 1.02
+              },
+              {
+                "id": "en-t11",
+                "characters": 135,
+                "tokens": 28,
+                "tokenization_ms": 1.04
+              },
+              {
+                "id": "en-t12",
+                "characters": 290,
+                "tokens": 54,
+                "tokenization_ms": 1.66
+              },
+              {
+                "id": "en-c01",
+                "characters": 65,
+                "tokens": 17,
+                "tokenization_ms": 1.23
+              },
+              {
+                "id": "en-c02",
+                "characters": 81,
+                "tokens": 20,
+                "tokenization_ms": 1.07
+              },
+              {
+                "id": "en-c03",
+                "characters": 58,
+                "tokens": 13,
+                "tokenization_ms": 1.07
+              },
+              {
+                "id": "en-c04",
+                "characters": 64,
+                "tokens": 12,
+                "tokenization_ms": 1.08
+              }
+            ]
+          },
+          "retrieval_compute_overhead_ms": {
+            "median": 21.39,
+            "p95": 34.35
+          },
+          "prompt_render_ms": {
+            "median": 0.17,
+            "p95": 0.41
+          },
+          "metrics_without_threshold": {
+            "test_queries": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 1.0,
+            "recall_at_1_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "recall_at_5": 1.0,
+            "recall_at_5_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "mrr": 1.0,
+            "ndcg_at_5": 0.971,
+            "useful_context_rate": 1.0,
+            "useful_context_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "en-t01",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d08_rain_gear",
+                  "d01_water_pot",
+                  "d10_oven_temperature"
+                ],
+                "rendered_skill_ids": [
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d08_rain_gear",
+                  "d01_water_pot",
+                  "d10_oven_temperature"
+                ]
+              },
+              {
+                "id": "en-t02",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d05_meeting_agenda",
+                  "d06_meeting_minutes",
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d12_file_search"
+                ],
+                "rendered_skill_ids": [
+                  "d05_meeting_agenda",
+                  "d06_meeting_minutes",
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d12_file_search"
+                ]
+              },
+              {
+                "id": "en-t03",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "en-t04",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d10_oven_temperature",
+                  "d01_water_pot",
+                  "d07_train_packing",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d10_oven_temperature",
+                  "d01_water_pot",
+                  "d07_train_packing",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t05",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 0.7098097413968655,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "en-t06",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d02_prune_basil",
+                  "d01_water_pot",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d04_bike_chain"
+                ],
+                "rendered_skill_ids": [
+                  "d02_prune_basil",
+                  "d01_water_pot",
+                  "d09_ingredient_substitute",
+                  "d03_bike_flat",
+                  "d04_bike_chain"
+                ]
+              },
+              {
+                "id": "en-t07",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d12_file_search",
+                  "d07_train_packing",
+                  "d11_file_backup"
+                ],
+                "rendered_skill_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d12_file_search",
+                  "d07_train_packing",
+                  "d11_file_backup"
+                ]
+              },
+              {
+                "id": "en-t08",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d01_water_pot",
+                  "d08_rain_gear",
+                  "d07_train_packing"
+                ],
+                "rendered_skill_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d01_water_pot",
+                  "d08_rain_gear",
+                  "d07_train_packing"
+                ]
+              },
+              {
+                "id": "en-t09",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d11_file_backup",
+                  "d08_rain_gear",
+                  "d12_file_search",
+                  "d06_meeting_minutes"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d11_file_backup",
+                  "d08_rain_gear",
+                  "d12_file_search",
+                  "d06_meeting_minutes"
+                ]
+              },
+              {
+                "id": "en-t10",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d01_water_pot",
+                  "d08_rain_gear",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d01_water_pot",
+                  "d08_rain_gear",
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "en-t11",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d04_bike_chain",
+                  "d09_ingredient_substitute",
+                  "d01_water_pot",
+                  "d08_rain_gear",
+                  "d03_bike_flat"
+                ],
+                "rendered_skill_ids": [
+                  "d04_bike_chain",
+                  "d09_ingredient_substitute",
+                  "d01_water_pot",
+                  "d08_rain_gear",
+                  "d03_bike_flat"
+                ]
+              },
+              {
+                "id": "en-t12",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute"
+                ]
+              }
+            ]
+          },
+          "calibration_threshold": {
+            "selected": {
+              "threshold": 0.7,
+              "balanced_accuracy": 1.0,
+              "sensitivity": 1.0,
+              "specificity": 1.0
+            },
+            "grid_results": [
+              {
+                "threshold": 0.1,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.15,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.2,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.25,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.3,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.35,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.4,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.45,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.5,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.55,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.6,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.65,
+                "balanced_accuracy": 1.0,
+                "sensitivity": 1.0,
+                "specificity": 1.0
+              },
+              {
+                "threshold": 0.7,
+                "balanced_accuracy": 1.0,
+                "sensitivity": 1.0,
+                "specificity": 1.0
+              }
+            ]
+          },
+          "metrics_with_calibration_threshold_on_test": {
+            "test_queries": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 0.8,
+            "recall_at_1_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "recall_at_5": 0.8,
+            "recall_at_5_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "mrr": 0.8,
+            "ndcg_at_5": 0.771,
+            "useful_context_rate": 0.8,
+            "useful_context_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "no_answer_false_context_rate": 0.0,
+            "no_answer_false_context_wilson95": [
+              0.0,
+              0.6576
+            ],
+            "per_query": [
+              {
+                "id": "en-t01",
+                "answerable": true,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": false,
+                "retrieved_ids": [],
+                "rendered_skill_ids": []
+              },
+              {
+                "id": "en-t02",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d05_meeting_agenda"
+                ],
+                "rendered_skill_ids": [
+                  "d05_meeting_agenda"
+                ]
+              },
+              {
+                "id": "en-t03",
+                "answerable": true,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": false,
+                "retrieved_ids": [],
+                "rendered_skill_ids": []
+              },
+              {
+                "id": "en-t04",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d10_oven_temperature"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d10_oven_temperature"
+                ]
+              },
+              {
+                "id": "en-t05",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 0.7098097413968655,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup"
+                ]
+              },
+              {
+                "id": "en-t06",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d02_prune_basil",
+                  "d01_water_pot"
+                ],
+                "rendered_skill_ids": [
+                  "d02_prune_basil",
+                  "d01_water_pot"
+                ]
+              },
+              {
+                "id": "en-t07",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d12_file_search",
+                  "d07_train_packing"
+                ],
+                "rendered_skill_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d12_file_search",
+                  "d07_train_packing"
+                ]
+              },
+              {
+                "id": "en-t08",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain"
+                ],
+                "rendered_skill_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain"
+                ]
+              },
+              {
+                "id": "en-t09",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d11_file_backup",
+                  "d08_rain_gear",
+                  "d12_file_search"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d11_file_backup",
+                  "d08_rain_gear",
+                  "d12_file_search"
+                ]
+              },
+              {
+                "id": "en-t10",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": false,
+                "retrieved_ids": [],
+                "rendered_skill_ids": []
+              },
+              {
+                "id": "en-t11",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": false,
+                "retrieved_ids": [],
+                "rendered_skill_ids": []
+              },
+              {
+                "id": "en-t12",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup"
+                ]
+              }
+            ]
+          },
+          "resource_after_index_and_queries": {
+            "pid": 50428,
+            "ram_total_gib": 15.87,
+            "ram_available_gib": 2.86,
+            "ram_load_percent": 81,
+            "process_working_set_mib": 4079.6,
+            "process_peak_working_set_mib": 4079.6,
+            "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 0 MiB, 3935 MiB, 0 %",
+            "ollama_loaded_models": [],
+            "model_processes": [
+              [
+                "ollama.exe",
+                "11788",
+                "Console",
+                "1",
+                "21.232 K"
+              ],
+              [
+                "llama-server.exe",
+                "50428",
+                "Console",
+                "1",
+                "4.177.548 K"
+              ]
+            ]
+          }
+        },
+        "pt-BR": {
+          "document_count": 12,
+          "query_count": 16,
+          "test_count": 12,
+          "index_wall_seconds": 56.33,
+          "index_api_calls": [
+            {
+              "phase": "index",
+              "items": 12,
+              "characters": 6070,
+              "elapsed_ms": 43227.51,
+              "dimensions": 2560
+            },
+            {
+              "phase": "index",
+              "items": 12,
+              "characters": 1802,
+              "elapsed_ms": 13093.37,
+              "dimensions": 2560
+            }
+          ],
+          "index_items": 24,
+          "index_documents_throughput_per_second": 0.4261,
+          "retrieval_document_tokens": 444,
+          "query_tokens": 370,
+          "individual_document_embedding_ms": {
+            "median": 1035.48,
+            "p95": 1592.93,
+            "per_document": [
+              {
+                "id": "d01_water_pot",
+                "characters": 105,
+                "tokens": 30,
+                "tokenization_ms": 1.03,
+                "embedding_ms": 886.33
+              },
+              {
+                "id": "d02_prune_basil",
+                "characters": 131,
+                "tokens": 38,
+                "tokenization_ms": 1.24,
+                "embedding_ms": 1095.07
+              },
+              {
+                "id": "d03_bike_flat",
+                "characters": 142,
+                "tokens": 41,
+                "tokenization_ms": 18.42,
+                "embedding_ms": 1592.93
+              },
+              {
+                "id": "d04_bike_chain",
+                "characters": 154,
+                "tokens": 41,
+                "tokenization_ms": 1.48,
+                "embedding_ms": 1247.65
+              },
+              {
+                "id": "d05_meeting_agenda",
+                "characters": 133,
+                "tokens": 35,
+                "tokenization_ms": 1.12,
+                "embedding_ms": 980.8
+              },
+              {
+                "id": "d06_meeting_minutes",
+                "characters": 153,
+                "tokens": 35,
+                "tokenization_ms": 1.21,
+                "embedding_ms": 1037.43
+              },
+              {
+                "id": "d07_train_packing",
+                "characters": 136,
+                "tokens": 36,
+                "tokenization_ms": 1.18,
+                "embedding_ms": 1035.48
+              },
+              {
+                "id": "d08_rain_gear",
+                "characters": 146,
+                "tokens": 36,
+                "tokenization_ms": 1.46,
+                "embedding_ms": 964.39
+              },
+              {
+                "id": "d09_ingredient_substitute",
+                "characters": 173,
+                "tokens": 37,
+                "tokenization_ms": 1.19,
+                "embedding_ms": 953.64
+              },
+              {
+                "id": "d10_oven_temperature",
+                "characters": 144,
+                "tokens": 34,
+                "tokenization_ms": 1.17,
+                "embedding_ms": 966.15
+              },
+              {
+                "id": "d11_file_backup",
+                "characters": 197,
+                "tokens": 40,
+                "tokenization_ms": 1.12,
+                "embedding_ms": 1093.42
+              },
+              {
+                "id": "d12_file_search",
+                "characters": 188,
+                "tokens": 41,
+                "tokenization_ms": 1.1,
+                "embedding_ms": 1492.91
+              }
+            ]
+          },
+          "query_embedding_ms": {
+            "median": 653.51,
+            "p95": 1772.78,
+            "throughput_queries_per_second": 1.3796,
+            "per_query": [
+              {
+                "id": "pt-t01",
+                "characters": 60,
+                "tokens": 16,
+                "tokenization_ms": 1.33
+              },
+              {
+                "id": "pt-t02",
+                "characters": 42,
+                "tokens": 10,
+                "tokenization_ms": 1.12
+              },
+              {
+                "id": "pt-t03",
+                "characters": 69,
+                "tokens": 15,
+                "tokenization_ms": 1.01
+              },
+              {
+                "id": "pt-t04",
+                "characters": 105,
+                "tokens": 22,
+                "tokenization_ms": 1.06
+              },
+              {
+                "id": "pt-t05",
+                "characters": 181,
+                "tokens": 40,
+                "tokenization_ms": 1.21
+              },
+              {
+                "id": "pt-t06",
+                "characters": 94,
+                "tokens": 25,
+                "tokenization_ms": 1.16
+              },
+              {
+                "id": "pt-t07",
+                "characters": 93,
+                "tokens": 17,
+                "tokenization_ms": 1.17
+              },
+              {
+                "id": "pt-t08",
+                "characters": 94,
+                "tokens": 28,
+                "tokenization_ms": 1.21
+              },
+              {
+                "id": "pt-t09",
+                "characters": 77,
+                "tokens": 18,
+                "tokenization_ms": 1.04
+              },
+              {
+                "id": "pt-t10",
+                "characters": 68,
+                "tokens": 17,
+                "tokenization_ms": 0.99
+              },
+              {
+                "id": "pt-t11",
+                "characters": 143,
+                "tokens": 33,
+                "tokenization_ms": 1.26
+              },
+              {
+                "id": "pt-t12",
+                "characters": 285,
+                "tokens": 60,
+                "tokenization_ms": 1.46
+              },
+              {
+                "id": "pt-c01",
+                "characters": 79,
+                "tokens": 19,
+                "tokenization_ms": 1.04
+              },
+              {
+                "id": "pt-c02",
+                "characters": 76,
+                "tokens": 21,
+                "tokenization_ms": 1.57
+              },
+              {
+                "id": "pt-c03",
+                "characters": 53,
+                "tokens": 16,
+                "tokenization_ms": 0.98
+              },
+              {
+                "id": "pt-c04",
+                "characters": 59,
+                "tokens": 13,
+                "tokenization_ms": 1.18
+              }
+            ]
+          },
+          "retrieval_compute_overhead_ms": {
+            "median": 17.51,
+            "p95": 31.13
+          },
+          "prompt_render_ms": {
+            "median": 0.15,
+            "p95": 0.25
+          },
+          "metrics_without_threshold": {
+            "test_queries": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 0.9,
+            "recall_at_1_wilson95": [
+              0.5958,
+              0.9821
+            ],
+            "recall_at_5": 1.0,
+            "recall_at_5_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "mrr": 0.95,
+            "ndcg_at_5": 0.9605,
+            "useful_context_rate": 1.0,
+            "useful_context_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "pt-t01",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d08_rain_gear",
+                  "d07_train_packing",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d08_rain_gear",
+                  "d07_train_packing",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t02",
+                "answerable": true,
+                "hit1": false,
+                "hit5": true,
+                "mrr": 0.5,
+                "ndcg5": 0.6309297535714575,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear",
+                  "d07_train_packing"
+                ],
+                "rendered_skill_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear",
+                  "d07_train_packing"
+                ]
+              },
+              {
+                "id": "pt-t03",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda"
+                ]
+              },
+              {
+                "id": "pt-t04",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d12_file_search",
+                  "d07_train_packing"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d12_file_search",
+                  "d07_train_packing"
+                ]
+              },
+              {
+                "id": "pt-t05",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d05_meeting_agenda"
+                ],
+                "rendered_skill_ids": [
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d05_meeting_agenda"
+                ]
+              },
+              {
+                "id": "pt-t06",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d02_prune_basil",
+                  "d01_water_pot",
+                  "d08_rain_gear",
+                  "d04_bike_chain",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d02_prune_basil",
+                  "d01_water_pot",
+                  "d08_rain_gear",
+                  "d04_bike_chain",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t07",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d08_rain_gear"
+                ],
+                "rendered_skill_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d08_rain_gear"
+                ]
+              },
+              {
+                "id": "pt-t08",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "pt-t09",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 0.9737576937588317,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t10",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d01_water_pot",
+                  "d02_prune_basil",
+                  "d07_train_packing"
+                ],
+                "rendered_skill_ids": [
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d01_water_pot",
+                  "d02_prune_basil",
+                  "d07_train_packing"
+                ]
+              },
+              {
+                "id": "pt-t11",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d07_train_packing",
+                  "d01_water_pot"
+                ],
+                "rendered_skill_ids": [
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d07_train_packing",
+                  "d01_water_pot"
+                ]
+              },
+              {
+                "id": "pt-t12",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d05_meeting_agenda"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d05_meeting_agenda"
+                ]
+              }
+            ]
+          },
+          "calibration_threshold": {
+            "selected": {
+              "threshold": 0.7,
+              "balanced_accuracy": 0.5,
+              "sensitivity": 1.0,
+              "specificity": 0.0
+            },
+            "grid_results": [
+              {
+                "threshold": 0.1,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.15,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.2,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.25,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.3,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.35,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.4,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.45,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.5,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.55,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.6,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.65,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              },
+              {
+                "threshold": 0.7,
+                "balanced_accuracy": 0.5,
+                "sensitivity": 1.0,
+                "specificity": 0.0
+              }
+            ]
+          },
+          "metrics_with_calibration_threshold_on_test": {
+            "test_queries": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 0.9,
+            "recall_at_1_wilson95": [
+              0.5958,
+              0.9821
+            ],
+            "recall_at_5": 1.0,
+            "recall_at_5_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "mrr": 0.95,
+            "ndcg_at_5": 0.9605,
+            "useful_context_rate": 1.0,
+            "useful_context_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "pt-t01",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d08_rain_gear",
+                  "d07_train_packing",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d04_bike_chain",
+                  "d03_bike_flat",
+                  "d08_rain_gear",
+                  "d07_train_packing",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t02",
+                "answerable": true,
+                "hit1": false,
+                "hit5": true,
+                "mrr": 0.5,
+                "ndcg5": 0.6309297535714575,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear",
+                  "d07_train_packing"
+                ],
+                "rendered_skill_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear",
+                  "d07_train_packing"
+                ]
+              },
+              {
+                "id": "pt-t03",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda"
+                ]
+              },
+              {
+                "id": "pt-t04",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d12_file_search",
+                  "d07_train_packing"
+                ],
+                "rendered_skill_ids": [
+                  "d09_ingredient_substitute",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d12_file_search",
+                  "d07_train_packing"
+                ]
+              },
+              {
+                "id": "pt-t05",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d05_meeting_agenda"
+                ],
+                "rendered_skill_ids": [
+                  "d11_file_backup",
+                  "d12_file_search",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d05_meeting_agenda"
+                ]
+              },
+              {
+                "id": "pt-t06",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d02_prune_basil",
+                  "d01_water_pot",
+                  "d08_rain_gear",
+                  "d04_bike_chain",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d02_prune_basil",
+                  "d01_water_pot",
+                  "d08_rain_gear",
+                  "d04_bike_chain",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t07",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d08_rain_gear"
+                ],
+                "rendered_skill_ids": [
+                  "d06_meeting_minutes",
+                  "d05_meeting_agenda",
+                  "d09_ingredient_substitute",
+                  "d12_file_search",
+                  "d08_rain_gear"
+                ]
+              },
+              {
+                "id": "pt-t08",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ],
+                "rendered_skill_ids": [
+                  "d03_bike_flat",
+                  "d04_bike_chain",
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d02_prune_basil"
+                ]
+              },
+              {
+                "id": "pt-t09",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 0.9737576937588317,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute"
+                ],
+                "rendered_skill_ids": [
+                  "d07_train_packing",
+                  "d08_rain_gear",
+                  "d06_meeting_minutes",
+                  "d11_file_backup",
+                  "d09_ingredient_substitute"
+                ]
+              },
+              {
+                "id": "pt-t10",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d01_water_pot",
+                  "d02_prune_basil",
+                  "d07_train_packing"
+                ],
+                "rendered_skill_ids": [
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d01_water_pot",
+                  "d02_prune_basil",
+                  "d07_train_packing"
+                ]
+              },
+              {
+                "id": "pt-t11",
+                "answerable": false,
+                "hit1": false,
+                "hit5": false,
+                "mrr": 0.0,
+                "ndcg5": 0.0,
+                "useful_context": false,
+                "false_context": true,
+                "retrieved_ids": [
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d07_train_packing",
+                  "d01_water_pot"
+                ],
+                "rendered_skill_ids": [
+                  "d08_rain_gear",
+                  "d09_ingredient_substitute",
+                  "d04_bike_chain",
+                  "d07_train_packing",
+                  "d01_water_pot"
+                ]
+              },
+              {
+                "id": "pt-t12",
+                "answerable": true,
+                "hit1": true,
+                "hit5": true,
+                "mrr": 1.0,
+                "ndcg5": 1.0,
+                "useful_context": true,
+                "false_context": false,
+                "retrieved_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d05_meeting_agenda"
+                ],
+                "rendered_skill_ids": [
+                  "d12_file_search",
+                  "d11_file_backup",
+                  "d06_meeting_minutes",
+                  "d09_ingredient_substitute",
+                  "d05_meeting_agenda"
+                ]
+              }
+            ]
+          },
+          "resource_after_index_and_queries": {
+            "pid": 50428,
+            "ram_total_gib": 15.87,
+            "ram_available_gib": 2.89,
+            "ram_load_percent": 81,
+            "process_working_set_mib": 4087.9,
+            "process_peak_working_set_mib": 4087.9,
+            "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 0 MiB, 3935 MiB, 0 %",
+            "ollama_loaded_models": [],
+            "model_processes": [
+              [
+                "ollama.exe",
+                "11788",
+                "Console",
+                "1",
+                "21.232 K"
+              ],
+              [
+                "llama-server.exe",
+                "50428",
+                "Console",
+                "1",
+                "4.185.988 K"
+              ]
+            ]
+          }
+        }
+      },
+      "resource_after_benchmark": {
+        "pid": 50428,
+        "ram_total_gib": 15.87,
+        "ram_available_gib": 2.88,
+        "ram_load_percent": 81,
+        "process_working_set_mib": 4087.9,
+        "process_peak_working_set_mib": 4087.9,
+        "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 0 MiB, 3935 MiB, 0 %",
+        "ollama_loaded_models": [],
+        "model_processes": [
+          [
+            "ollama.exe",
+            "11788",
+            "Console",
+            "1",
+            "21.236 K"
+          ],
+          [
+            "llama-server.exe",
+            "50428",
+            "Console",
+            "1",
+            "4.185.988 K"
+          ]
+        ]
+      },
+      "server_log": "D:\\projetos\\temp\\psicoia-block13-logs\\qwen3.5_4b.log"
+    }
+  },
+  "paired_differences": {
+    "en": {
+      "hit1": {
+        "n_paired": 10,
+        "mean_difference_qwen_minus_phi": 0.3,
+        "bootstrap95": [
+          0.0,
+          0.6
+        ]
+      },
+      "hit5": {
+        "n_paired": 10,
+        "mean_difference_qwen_minus_phi": 0.2,
+        "bootstrap95": [
+          0.0,
+          0.5
+        ]
+      },
+      "mrr": {
+        "n_paired": 10,
+        "mean_difference_qwen_minus_phi": 0.25,
+        "bootstrap95": [
+          0.0,
+          0.5
+        ]
+      },
+      "ndcg5": {
+        "n_paired": 10,
+        "mean_difference_qwen_minus_phi": 0.2459,
+        "bootstrap95": [
+          0.0,
+          0.5
+        ]
+      }
+    },
+    "pt-BR": {
+      "hit1": {
+        "n_paired": 10,
+        "mean_difference_qwen_minus_phi": -0.1,
+        "bootstrap95": [
+          -0.3,
+          0.0
+        ]
+      },
+      "hit5": {
+        "n_paired": 10,
+        "mean_difference_qwen_minus_phi": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "mrr": {
+        "n_paired": 10,
+        "mean_difference_qwen_minus_phi": -0.05,
+        "bootstrap95": [
+          -0.15,
+          0.0
+        ]
+      },
+      "ndcg5": {
+        "n_paired": 10,
+        "mean_difference_qwen_minus_phi": 0.0409,
+        "bootstrap95": [
+          -0.0817,
+          0.1754
+        ]
+      }
+    }
+  },
+  "candidate_availability": {
+    "dedicated_local_embedding_model": "NOT_AVAILABLE",
+    "inventory_source": "ollama list; no dedicated embedding model among installed local models; no download attempted"
+  },
+  "limitations": [
+    "Small synthetic nonclinical fixture; 12 held-out test queries per locale.",
+    "Mean pooling of general generative models is not a dedicated embedding method.",
+    "The no-threshold metrics reproduce current retrieval; thresholded test metrics are diagnostic only until an app-level threshold is explicitly configured and integrated."
+  ],
+  "criteria": {
+    "experiment_id": "psicoia-block13-retrieval-v1",
+    "criteria_locked_before_model_runs": true,
+    "dataset": "retrieval_eval_v1.json",
+    "labels": "Relevance labels and calibration/test split are fixed in the versioned dataset before scoring either candidate.",
+    "models": [
+      "phi4-mini:3.8b",
+      "qwen3.5:4b"
+    ],
+    "specialized_embedding_candidate_policy": "Test only a dedicated local embedding model already installed and compatible with the existing embedding endpoint. Do not download models for this experiment.",
+    "ranking": {
+      "top_k": 5,
+      "answerable_test_quality_gate_per_locale": {
+        "recall_at_5_min": 0.9,
+        "ndcg_at_5_min": 0.8,
+        "useful_context_in_prompt_min": 0.9
+      },
+      "no_answer_gate_on_held_out_test": {
+        "false_context_rate_max": 0.1,
+        "definition": "Fraction of test queries with no relevant document for which the operational candidate inserts any retrieved skill context into the prompt."
+      },
+      "point_metrics": [
+        "Recall@1",
+        "Recall@5",
+        "MRR",
+        "nDCG@5",
+        "useful-context-in-prompt rate",
+        "no-answer false-context rate"
+      ],
+      "uncertainty": "Report 95% Wilson intervals for binary query-level rates and 10,000 paired bootstrap resamples for model differences, seeded with 13013. Small sample intervals are descriptive and do not establish population performance."
+    },
+    "open_set_threshold_experiment": {
+      "purpose": "Diagnostic only unless the selected threshold also passes held-out quality gates and is explicitly wired and verified in the live pipeline.",
+      "calibration_split_only": true,
+      "threshold_grid": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6,
+        0.65,
+        0.7
+      ],
+      "selection": "Maximize balanced accuracy for answerable versus no-answer classification on calibration queries; on ties choose the largest threshold. Never select the threshold from test outcomes."
+    },
+    "operational_experiment_budgets": {
+      "query_embedding_p95_ms_max": 2000,
+      "index_12_skills_per_locale_wall_seconds_max": 120,
+      "live_turn_wall_seconds_max": 180,
+      "cold_model_start_seconds_max": 120,
+      "qualification": "These are predeclared local experiment budgets for the available workstation, not an existing PsicoIA product SLO, clinical requirement, or production SLA. Report measured conditions and sample counts; for the three-turn integration, apply the 180-second limit per observed turn rather than claiming a statistical p95."
+    },
+    "selection_rule": "A candidate is operationally selectable only if the unmodified live generation flow completes with it, held-out ranking and no-answer gates pass in both locales, measured local budgets pass, and persistence/restart/failure-recovery checks pass. Prefer the less operationally complex candidate when evidence is tied. Preserve the Block 12 Phi embedding configuration if no alternative satisfies every gate."
+  },
+  "experiment": {
+    "run_id": "block13-isolated-20261029T184215",
+    "git_head": "2c087406737aaf835a061c9fc522c36bbaa8262a",
+    "dataset_sha256": "4adc0e7174c35ebf2d3d76605cb77cbd69c446f7f8676cf586d351a8165a7656",
+    "criteria_sha256": "4ad61092a03235ca7c7782302e8bc1e51a98e97a6fbbc59ed1b1bc36d2ea8ed4",
+    "runner_sha256": "98ea93cd06b4b3b37f5fccbbffe3e26d9100c5912eb151b5950d0ebb513511b8",
+    "model_blob_sha256": {
+      "phi4-mini:3.8b": "3c168af1dea0a414299c7d9077e100ac763370e5a98b3c53801a958a47f0a5db",
+      "qwen3.5:4b": "a9d0a3e1d8c91732a3812becd31f8d4a8ff57414903f226306069f0437e2ac50"
+    },
+    "synthetic_only": true,
+    "bootstrapping_seed": 13013,
+    "paired_bootstrap_resamples": 10000
+  }
+}
