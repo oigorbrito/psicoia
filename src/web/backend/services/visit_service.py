@@ -28,11 +28,11 @@ from ..schemas import (
 from .course_service import get_owned_course_record
 
 CounselorReplyFn = Callable[
-    [List[Dict[str, str]], TherapyCourseRecord, TherapyVisitRecord, VisitState, Optional[VisitPsychContextOut]],
+    [List[Dict[str, str]], TherapyCourseRecord, TherapyVisitRecord, VisitState, Optional[VisitPsychContextOut], Optional[str]],
     Awaitable[Any],
 ]
 SessionClosePostprocessFn = Callable[
-    [TherapyCourseRecord, TherapyVisitRecord, VisitState, Optional[VisitPsychContextOut]],
+    [TherapyCourseRecord, TherapyVisitRecord, VisitState, Optional[VisitPsychContextOut], Optional[str]],
     Awaitable[Dict[str, Any]],
 ]
 
@@ -594,6 +594,7 @@ async def create_visit(
     course_id: str,
     opening_note: str = "",
     call_llm: Optional[CounselorReplyFn] = None,
+    output_language: Optional[str] = None,
 ) -> VisitState:
     course = get_owned_course_record(db, course_id, user_id)
     if course.status != "active":
@@ -667,6 +668,7 @@ async def create_visit(
                 visit,
                 opening_visit_state,
                 opening_visit_state.psych_context,
+                output_language,
             )
             generated_text, _ = _parse_assistant_payload(assistant_payload)
             if generated_text:
@@ -714,6 +716,7 @@ async def send_visit_message(
     visit_id: str,
     text: str,
     call_llm: CounselorReplyFn,
+    output_language: Optional[str] = None,
     run_session_close_postprocess: Optional[SessionClosePostprocessFn] = None,
 ) -> SendVisitMessageResponse:
     visit, course = get_owned_visit_and_course(db, visit_id, user_id)
@@ -753,6 +756,7 @@ async def send_visit_message(
             visit,
             visit_state_after_user,
             visit_state_after_user.psych_context,
+            output_language,
         )
     except Exception as exc:
         db.rollback()
@@ -785,6 +789,7 @@ async def send_visit_message(
             user_id,
             visit.visit_id,
             summary="",
+            output_language=output_language,
             run_session_close_postprocess=run_session_close_postprocess,
         )
         db.refresh(visit)
@@ -809,6 +814,7 @@ async def close_visit(
     user_id: str,
     visit_id: str,
     summary: str = "",
+    output_language: Optional[str] = None,
     run_session_close_postprocess: Optional[SessionClosePostprocessFn] = None,
 ) -> CloseVisitResponse:
     visit, course = get_owned_visit_and_course(db, visit_id, user_id)
@@ -824,6 +830,7 @@ async def close_visit(
                 visit,
                 visit_state_before_close,
                 visit_state_before_close.psych_context,
+                output_language,
             )
         except Exception:
             close_artifacts = {}

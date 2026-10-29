@@ -1,0 +1,30 @@
+{
+  "519": {
+    "skill_id": "519",
+    "skill_name": "Sessão de consolidação",
+    "skill_description": "Na terapia narrativa, a etapa de consolidação se concentra em manter e ampliar a nova história. O terapeuta enfatiza a busca por pessoas que apoiem essa narrativa e, por meio de registros e cartas, torna as mudanças e capacidades concretas, ajudando a recontá-las e compartilhá-las. Isso ajuda a pessoa atendida a continuar praticando a nova narrativa fora da terapia e a distinguir a história centrada no problema da história alternativa.",
+    "parent_ids": ["519"],
+    "sect": "pmt"
+  },
+  "520": {
+    "skill_id": "520",
+    "skill_name": "Terapia narrativa",
+    "skill_description": "Fundamentada no construcionismo social, a terapia narrativa enfatiza a colaboração com a pessoa atendida. Por meio da externalização e da desconstrução, separa a pessoa do problema, identifica resultados únicos e exceções e reescreve uma história preferida. Evita patologizar, respeita a pessoa como especialista em sua própria vida e considera o papel da linguagem e das testemunhas na sustentação de novas narrativas.",
+    "parent_ids": ["519", "520"],
+    "sect": "pmt"
+  },
+  "521": {
+    "skill_id": "521",
+    "skill_name": "Registro de evidências",
+    "skill_description": "Uma nova história precisa do apoio de outras pessoas para se manter. O registro de evidências preserva os principais pontos das sessões, descrições externalizantes, os efeitos do problema e as capacidades e os resultados únicos demonstrados pela pessoa atendida. Isso torna a mudança concreta, passível de revisão e compartilhamento, oferecendo uma base para consolidar e divulgar a nova narrativa fora da terapia.",
+    "parent_ids": ["519", "520", "521"],
+    "sect": "pmt"
+  },
+  "522": {
+    "skill_id": "522",
+    "skill_name": "Escrita de cartas terapêuticas",
+    "skill_description": "A escrita de cartas é uma técnica central para consolidar uma nova história. A carta conecta as sessões, resume os efeitos do problema, propõe perguntas relacionadas à história alternativa e registra literalmente resultados únicos e falas importantes. Pode encorajar e testemunhar mudanças, destacando sua importância; às vezes, seus efeitos são descritos como comparáveis aos de várias sessões individuais de terapia.",
+    "parent_ids": ["519", "520", "521", "522"],
+    "sect": "pmt"
+  }
+}

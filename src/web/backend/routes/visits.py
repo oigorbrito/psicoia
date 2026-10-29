@@ -36,6 +36,7 @@ def create_visits_router(get_db_dep, get_current_user_dep, call_llm, run_session
             course_id,
             opening_note=payload.opening_note,
             call_llm=call_llm,
+            output_language=payload.output_language,
         )
 
     @router.get("/visits/{visit_id}", response_model=VisitState)
@@ -55,6 +56,7 @@ def create_visits_router(get_db_dep, get_current_user_dep, call_llm, run_session
             visit_id,
             payload.text,
             call_llm,
+            output_language=payload.output_language,
             run_session_close_postprocess=run_session_close_postprocess,
         )
 
@@ -70,6 +72,7 @@ def create_visits_router(get_db_dep, get_current_user_dep, call_llm, run_session
             user.id,
             visit_id,
             payload.summary,
+            output_language=payload.output_language,
             run_session_close_postprocess=run_session_close_postprocess,
         )
 

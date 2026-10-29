@@ -11,6 +11,7 @@ from .domain import SchoolInfo, StageInfo
 CourseStatus = Literal["active", "completed", "archived"]
 VisitStatus = Literal["open", "closed"]
 MessageRole = Literal["user", "assistant", "system"]
+OutputLanguage = Literal["English", "Português (Brasil)"]
 
 
 class VisitMessageOut(BaseModel):
@@ -91,6 +92,7 @@ class CreateCourseRequest(BaseModel):
     goals: List[str] = Field(default_factory=list, description="初始目标列表")
     auto_start_first_visit: bool = Field(True, description="是否自动创建第一次会谈")
     opening_note: str = Field("", description="第一次会谈的开场提示")
+    output_language: Optional[OutputLanguage] = Field(None, description="Language for generated counselor responses")
 
 
 class CreateCourseResponse(BaseModel):
@@ -113,10 +115,12 @@ class CompleteCourseRequest(BaseModel):
 
 class CreateVisitRequest(BaseModel):
     opening_note: str = Field("", description="新会谈开场提示")
+    output_language: Optional[OutputLanguage] = Field(None, description="Language for generated counselor responses")
 
 
 class SendVisitMessageRequest(BaseModel):
     text: str = Field(..., min_length=1, description="用户输入")
+    output_language: Optional[OutputLanguage] = Field(None, description="Language for generated counselor responses")
 
 
 class CourseMetaOut(BaseModel):
@@ -132,6 +136,7 @@ class SendVisitMessageResponse(BaseModel):
 
 class CloseVisitRequest(BaseModel):
     summary: str = Field("", description="本次会谈摘要")
+    output_language: Optional[OutputLanguage] = Field(None, description="Language for generated session artifacts")
 
 
 class CloseVisitResponse(BaseModel):

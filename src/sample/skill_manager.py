@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import copy
+import hashlib
 import json
 import logging
 import math
@@ -137,7 +138,8 @@ class SkillManager:
             for stage_idx in (1, 2, 3):
                 stage_key = f"stage{stage_idx}"
                 stage_dir = base_dir / sect / stage_key
-                meta = self._load_json_dict(stage_dir / "meta_skills.json")
+                meta_path = self._localized_skill_path(stage_dir, "meta_skills", ".json")
+                meta = self._load_json_dict(meta_path or stage_dir / "meta_skills.json")
                 micro = self._load_micro_skills(stage_dir)
                 leaf = self.get_leaf_nodes(meta)
                 sect_stages[stage_key] = LoadedSkillStage(meta=meta, micro=micro, leaf=leaf)
@@ -157,7 +159,7 @@ class SkillManager:
                     loaded_stage.micro = updated_micro
 
                     save_dir = resolve_path(self._runtime.psychagent_skill_base_dir) / sect / stage_key
-                    save_path = save_dir / "micro_skills.pt"
+                    save_path = self._micro_skills_cache_path(save_dir)
 
                     # 使用线程池保存，防止阻塞事件循环
                     if torch is not None:
@@ -165,6 +167,17 @@ class SkillManager:
                         await loop.run_in_executor(
                             None, lambda: torch.save(loaded_stage.micro, str(save_path))
                         )
+                        locale_suffix = self._skill_locale_suffix()
+                        locale_json = (
+                            save_dir / f"micro_skills.{locale_suffix}.json"
+                            if locale_suffix is not None
+                            else None
+                        )
+                        if locale_json is not None and locale_json.exists():
+                            digest = self._localized_micro_cache_digest(locale_json)
+                            save_path.with_suffix(save_path.suffix + ".sha256").write_text(
+                                digest, encoding="ascii"
+                            )
                         self._logger.info(f"Saved updated skills to {save_path}")
 
         self._logger.info("Skill library embedding check complete.")
@@ -542,19 +555,74 @@ class SkillManager:
             return {}
         return {str(k): v for k, v in raw.items() if isinstance(v, dict)}
 
+    def _skill_locale_suffix(self) -> Optional[str]:
+        language = str(getattr(self._runtime, "output_language", "English")).strip().casefold()
+        if language in {"english", "en", "en-us", "en-gb"}:
+            return "en"
+        if language in {"pt-br", "português (brasil)", "portugues (brasil)"}:
+            return "pt-BR"
+        return None
+
+    def _localized_skill_path(self, stage_dir: Path, stem: str, extension: str) -> Optional[Path]:
+        suffix = self._skill_locale_suffix()
+        if suffix is None:
+            return None
+        candidate = stage_dir / f"{stem}.{suffix}{extension}"
+        return candidate if candidate.exists() else None
+
+    def _micro_skills_cache_path(self, stage_dir: Path) -> Path:
+        suffix = self._skill_locale_suffix()
+        if suffix is not None and any(
+            (stage_dir / f"micro_skills.{suffix}{extension}").exists()
+            for extension in (".json", ".pt")
+        ):
+            return stage_dir / f"micro_skills.{suffix}.pt"
+        return stage_dir / "micro_skills.pt"
+
+    def _localized_micro_cache_digest(self, catalog_path: Path) -> str:
+        model = str(getattr(self._runtime, "psychagent_embedding_model", ""))
+        base_url = str(getattr(self._runtime, "psychagent_embedding_base_url", ""))
+        payload = b"\0".join(
+            (catalog_path.read_bytes(), model.encode("utf-8"), base_url.encode("utf-8"))
+        )
+        return hashlib.sha256(payload).hexdigest()
+
+    def _localized_micro_cache_is_current(self, cache_path: Path, catalog_path: Path) -> bool:
+        digest_path = cache_path.with_suffix(cache_path.suffix + ".sha256")
+        if not cache_path.exists() or not catalog_path.exists() or not digest_path.exists():
+            return False
+        expected = self._localized_micro_cache_digest(catalog_path)
+        return digest_path.read_text(encoding="ascii").strip() == expected
+
     def _load_micro_skills(self, stage_dir: Path) -> Dict[str, Dict[str, Any]]:
-        pt_path = stage_dir / "micro_skills.pt"
-        json_path = stage_dir / "micro_skills.json"
+        localized_pt = self._localized_skill_path(stage_dir, "micro_skills", ".pt")
+        localized_json = self._localized_skill_path(stage_dir, "micro_skills", ".json")
+        source_pt = stage_dir / "micro_skills.pt"
+        source_json = stage_dir / "micro_skills.json"
 
         raw: Dict[str, Any] = {}
-        if pt_path.exists() and torch is not None:
-            loaded = torch.load(str(pt_path), weights_only=False)
+        localized_cache_current = (
+            localized_pt is not None
+            and localized_json is not None
+            and self._localized_micro_cache_is_current(localized_pt, localized_json)
+        )
+        if (
+            localized_pt is not None
+            and localized_pt.exists()
+            and torch is not None
+            and (localized_json is None or not localized_json.exists() or localized_cache_current)
+        ):
+            loaded = torch.load(str(localized_pt), weights_only=False)
             if isinstance(loaded, dict):
                 raw = loaded
-        elif json_path.exists():
-            loaded = json.loads(json_path.read_text(encoding="utf-8"))
+        elif localized_json is not None and localized_json.exists():
+            raw = self._load_json_dict(localized_json)
+        elif source_pt.exists() and torch is not None:
+            loaded = torch.load(str(source_pt), weights_only=False)
             if isinstance(loaded, dict):
                 raw = loaded
+        elif source_json.exists():
+            raw = self._load_json_dict(source_json)
 
         cleaned: Dict[str, Dict[str, Any]] = {}
         for key, value in raw.items():

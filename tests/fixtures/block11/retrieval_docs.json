@@ -1,0 +1,59 @@
+{
+  "synthetic_set": "block11-retrieval-v1",
+  "skill_documents": [
+    {
+      "id": "10",
+      "en": {
+        "skill_name": "Identify automatic thoughts",
+        "skill_description": "Collaboratively identify an automatic thought connected to anxiety and examine evidence for the belief.",
+        "trigger": "Anxiety, worry, catastrophic prediction, automatic thought",
+        "when_to_use": "When a client describes anxious thoughts or a feared prediction, elicit the thought and examine evidence."
+      },
+      "pt-BR": {
+        "skill_name": "Identificar pensamentos automáticos",
+        "skill_description": "Identifique em colaboração um pensamento automático ligado à ansiedade e examine as evidências da crença.",
+        "trigger": "Ansiedade, preocupação, previsão catastrófica, pensamento automático",
+        "when_to_use": "Quando a pessoa descreve pensamentos ansiosos ou uma previsão temida, explore o pensamento e examine evidências."
+      }
+    },
+    {
+      "id": "11",
+      "en": {"skill_name":"Prepare breakfast","skill_description":"Prepare a simple breakfast with oats, fruit, milk, and nuts.","trigger":"Breakfast, recipe, food","when_to_use":"When choosing a breakfast menu."},
+      "pt-BR": {"skill_name":"Preparar o café da manhã","skill_description":"Prepare um café da manhã simples com aveia, frutas, leite e castanhas.","trigger":"Café da manhã, receita, comida","when_to_use":"Ao escolher um cardápio para o café da manhã."}
+    },
+    {
+      "id": "12",
+      "en": {"skill_name":"Improve sleep routine","skill_description":"Notice signs of poor sleep and keep regular times for going to bed.","trigger":"Sleep, bedtime, insomnia","when_to_use":"When discussing sleep routines."},
+      "pt-BR": {"skill_name":"Melhorar a rotina de sono","skill_description":"Perceba sinais de sono ruim e mantenha horários regulares para dormir.","trigger":"Sono, horário de dormir, insônia","when_to_use":"Ao conversar sobre rotina de sono."}
+    },
+    {
+      "id": "13",
+      "en": {"skill_name":"Practice slow breathing","skill_description":"Practice slow breathing to reduce physical tension during stress.","trigger":"Breathing, physical tension, stress","when_to_use":"When noticing physical tension during stress."},
+      "pt-BR": {"skill_name":"Praticar respiração lenta","skill_description":"Pratique respiração lenta para reduzir a tensão física durante o estresse.","trigger":"Respiração, tensão física, estresse","when_to_use":"Ao perceber tensão física durante o estresse."}
+    },
+    {
+      "id": "14",
+      "en": {"skill_name":"Plan weekly tasks","skill_description":"Create a weekly schedule and divide a large task into smaller steps.","trigger":"Schedule, planning, tasks","when_to_use":"When organizing activities and tasks."},
+      "pt-BR": {"skill_name":"Planejar tarefas semanais","skill_description":"Monte um cronograma semanal e divida uma tarefa grande em etapas menores.","trigger":"Cronograma, planejamento, tarefas","when_to_use":"Ao organizar atividades e tarefas."}
+    },
+    {
+      "id": "15",
+      "en": {"skill_name":"Explore interpersonal needs","skill_description":"Explore a disagreement and identify the needs of each person.","trigger":"Disagreement, friend, relationship","when_to_use":"When exploring an interpersonal disagreement."},
+      "pt-BR": {"skill_name":"Explorar necessidades interpessoais","skill_description":"Explore um desentendimento e identifique as necessidades de cada pessoa.","trigger":"Desentendimento, amizade, relacionamento","when_to_use":"Ao explorar um desentendimento interpessoal."}
+    },
+    {
+      "id": "16",
+      "en": {"skill_name":"Plan pleasant activities","skill_description":"Record pleasant activities and plan one enjoyable activity each day.","trigger":"Pleasant activities, enjoyment, routine","when_to_use":"When planning activities that may be rewarding."},
+      "pt-BR": {"skill_name":"Planejar atividades prazerosas","skill_description":"Registre atividades prazerosas e planeje uma atividade agradável por dia.","trigger":"Atividades prazerosas, satisfação, rotina","when_to_use":"Ao planejar atividades potencialmente gratificantes."}
+    },
+    {
+      "id": "17",
+      "en": {"skill_name":"Discuss medication questions with a doctor","skill_description":"List medication questions and discuss them with a qualified doctor.","trigger":"Medication, side effects, doctor","when_to_use":"When a person has questions about medication."},
+      "pt-BR": {"skill_name":"Conversar com um médico sobre medicamentos","skill_description":"Liste dúvidas sobre medicamentos e converse com um médico qualificado.","trigger":"Medicamento, efeitos colaterais, médico","when_to_use":"Quando houver dúvidas sobre medicamentos."}
+    }
+  ],
+  "queries": {
+    "en": "I feel anxious and keep thinking something bad will happen. Could we examine that automatic thought and look at the evidence?",
+    "pt-BR": "Estou ansioso e penso que algo ruim vai acontecer. Podemos examinar esse pensamento automático e avaliar as evidências?"
+  }
+}

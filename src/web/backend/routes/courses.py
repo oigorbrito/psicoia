@@ -42,6 +42,7 @@ def create_courses_router(get_db_dep, get_current_user_dep, call_llm):
                 course.course_id,
                 opening_note=payload.opening_note,
                 call_llm=call_llm,
+                output_language=payload.output_language,
             )
         return CreateCourseResponse(
             course=course_service.get_course_detail(db, user.id, course.course_id),

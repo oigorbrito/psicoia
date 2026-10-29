@@ -1,0 +1,1087 @@
+{
+  "42": {
+    "skill_id": "42",
+    "skill_name": "Convidar o cliente a nomear o problema",
+    "skill_description": "Peça ao cliente que use uma palavra ou frase para nomear a perturbação, fornecendo palavras alternativas se necessário para inspirá-lo, mas deixando que o próprio cliente confirme o nome final. Nomear torna o problema um objeto passível de discussão, aumenta a sensação de controle e abre caminho para a conversa externalizada.",
+    "when_to_use": "No início da terapia narrativa, após o cliente contar a história da 'infiltração do problema', entra-se na fase de nomeação e externalização para iniciar o processo de externalização.",
+    "trigger": "Quando o cliente descreve a perturbação de forma genérica, confunde o eu com o problema ou tem dificuldade em concretizá-lo; quando surgem sinais de autotagging, vergonha ou evitação.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "42"
+    ]
+  },
+  "43": {
+    "skill_id": "43",
+    "skill_name": "Usar linguagem personificada e terceira pessoa para descrever o problema",
+    "skill_description": "Descreva o problema usando metáforas de personificação, opressão e terceira pessoa, como 'como a ansiedade vem oprimir você', separando a pessoa do problema, tornando-o uma entidade externa que facilita a análise de sua função e estratégias.",
+    "when_to_use": "Na conversa de externalização, quando é necessário mudar a narrativa do cliente de 'eu sou o problema' para estabelecer uma perspectiva de separação entre pessoa e problema.",
+    "trigger": "Quando o cliente usa repetidamente expressões de autodepreciação ou essencialização (como 'sou um fracasso'), é dominado pelo problema, mostra vergonha evidente ou há aumento dos conflitos relacionais.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "43"
+    ]
+  },
+  "44": {
+    "skill_id": "44",
+    "skill_name": "Perguntar sobre o escopo e intensidade do impacto do problema",
+    "skill_description": "Faça perguntas estruturadas sobre como o problema afeta a vida, por exemplo, há quanto tempo, em quais contextos é mais forte, como interfere nas relações e escolhas, ajudando a mapear os impactos e concretizar o mecanismo de funcionamento do problema.",
+    "when_to_use": "Após completar a nomeação e estabelecer uma perspectiva de externalização, para aprofundar a compreensão da função específica e intensidade do impacto do problema na funcionalidade diária e nas relações interpessoais.",
+    "trigger": "Quando o cliente descreve de forma generalizada que 'o problema está em todo lugar', relata prejuízo funcional ou tensão relacional, sendo necessário concretizar os impactos para intervenções futuras.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "44"
+    ]
+  },
+  "45": {
+    "skill_id": "45",
+    "skill_name": "Explorar a história e linha do tempo da emergência do problema",
+    "skill_description": "Faça perguntas sobre quando o problema surgiu pela primeira vez, sua evolução e pontos-chave, e explore hipóteses futuras sobre o significado se continuar persistindo, formando uma narrativa genealógica de externalização que prepara para desconstrução e reescrita.",
+    "when_to_use": "Durante o processo de externalização, ao precisar trazer o problema do presente para o contexto histórico, ajudando o cliente a ver sua trajetória de desenvolvimento e condições contextuais.",
+    "trigger": "Quando o cliente apresenta um transtorno prolongado ou padrões de recaída, tem dificuldade em entender por que o problema reaparece repetidamente, ou sente preocupação e incerteza sobre o futuro.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "45"
+    ]
+  },
+  "46": {
+    "skill_id": "46",
+    "skill_name": "Explorar momentos de resistência e eventos únicos",
+    "skill_description": "Orientar o cliente a recordar momentos em que conseguiu escapar ou enfraquecer o controle do problema, detalhar os pensamentos, ações e apoios da época, identificar estratégias replicáveis para enfraquecer a dominância do problema.",
+    "when_to_use": "Após esclarecer as influências de externalização, na fase de enfraquecer a força do problema, mudar para narrativas alternativas e mobilizar recursos.",
+    "trigger": "Quando o cliente mostra pequenas melhoras, menciona exceções ou fragmentos de experiências bem-sucedidas, ou expressa desejo de buscar abordagens diferentes.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "46"
+    ]
+  },
+  "47": {
+    "skill_id": "47",
+    "skill_name": "Utilizar múltiplos meios para expressão de externalização",
+    "skill_description": "Combinar imagens, música, jogos e outros meios para transferir o problema da experiência interna para suportes externos, concretizando a imagem e influência do problema em canais não verbais, reduzindo defesas e promovendo o início da ação.",
+    "when_to_use": "Quando o cliente tem dificuldade em descrever com palavras ou está excessivamente internalizado; em casos de crianças e adolescentes; ou quando a sessão encontra obstáculos e é necessário mudar o canal de expressão.",
+    "trigger": "Cliente em silêncio, narrativas bloqueadas, abstração excessiva ou resistência à conversa direta; apresenta alta tensão e evitação.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "47"
+    ]
+  },
+  "48": {
+    "skill_id": "48",
+    "skill_name": "Explicar os benefícios da externalização e estabelecer uma postura colaborativa",
+    "skill_description": "Explicar ao cliente os benefícios da externalização (redução de conflitos, redução da sensação de fracasso, promoção de cooperação e novas possibilidades), acordar conjuntamente a condução do diálogo com a postura de 'a pessoa não é o problema', aumentando a segurança e a participação.",
+    "when_to_use": "Na fase de definição de quadro e construção de relacionamento antes do início da externalização, ou quando o cliente tem dúvidas sobre o método ou apresenta vergonha significativa.",
+    "trigger": "Cliente resiste à exploração devido à autocrítica ou rotulação; preocupa-se em ser julgado; conflitos interpessoais proeminentes que exigem cooperação para enfrentar o problema.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "48"
+    ]
+  },
+  "49": {
+    "skill_id": "49",
+    "skill_name": "Externalizar e ampliar qualidades positivas do cliente",
+    "skill_description": "Externalizar também traços positivos como resiliência, paciência e recursos como produtos culturais visíveis, espessando suas evidências e influências na narrativa para apoiar a formação e manutenção de histórias alternativas.",
+    "when_to_use": "Durante ou após a externalização do problema, usado para construir uma nova narrativa 'do fino ao grosso', reforçando capacidade e esperança.",
+    "trigger": "Quando o cliente revela qualidades ou menciona fragmentos de apoio e sucesso; quando há foco excessivo no problema que necessita de equilíbrio e amplificação de traços positivos.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "49"
+    ]
+  },
+  "50": {
+    "skill_id": "50",
+    "skill_name": "Nomear e personificar o problema",
+    "skill_description": "Convide o cliente a nomear sua dificuldade e descrever suas características usando uma linguagem personificada; forneça pistas de palavras quando necessário, mas mantenha o direito de nomeação. A nomeação precisa ajuda na externalização e no controle, facilitando a investigação subsequente sobre como o problema age.",
+    "when_to_use": "No início da terapia narrativa, antes e depois das conversas de externalização e expansão do primeiro relato, é necessário separar o 'problema' da pessoa e criar um objeto operacional.",
+    "trigger": "O cliente faz queixas genéricas ou tem dificuldade em descrever claramente sua dificuldade; usa termos como 'sempre' ou 'muito ruim' sem referência específica; sente-se sem controle sobre o problema.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "50"
+    ]
+  },
+  "51": {
+    "skill_id": "51",
+    "skill_name": "Investigar as intenções e exigências do problema",
+    "skill_description": "Use perguntas personificadas para investigar o 'propósito', 'estratégias' e as exigências do problema ao cliente, como ele controla, engana, oprime e o que acontece quando suas exigências são atendidas, revelando assim seus mecanismos de manipulação.",
+    "when_to_use": "Após a nomeação e a externalização inicial, ao entrar na fase de exploração dos efeitos e relacionamentos com o problema, é necessário aprofundar a perspectiva do cliente sobre sua relação com o problema.",
+    "trigger": "O cliente expressa linguagem e emoções de controle passivo, como 'minha ansiedade/raiva me controla', 'ele me oprime' ou 'sou arrastado por ele'.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "51"
+    ]
+  },
+  "52": {
+    "skill_id": "52",
+    "skill_name": "Rastrear a história de surgimento e desenvolvimento do problema",
+    "skill_description": "Guie o cliente a narrar uma linha do tempo sobre quando o problema surgiu pela primeira vez, como evoluiu e quanto tempo persistiu; discuta o significado e o alcance dos impactos se continuar por um período, fornecendo contexto para localizar pontos de quebra.",
+    "when_to_use": "Nas conversas de externalização, quando é necessário delimitar o contexto e a evolução do problema, ou quando o cliente tem uma percepção vaga sobre as origens e a persistência de sua dificuldade.",
+    "trigger": "O cliente apresenta uma linha do tempo confusa, descreve de forma absoluta com 'sempre foi assim', ou não consegue recordar quando o problema começou e como piorou.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "52"
+    ]
+  },
+  "53": {
+    "skill_id": "53",
+    "skill_name": "Desenhar os impactos e a dinâmica de poder do problema",
+    "skill_description": "Através de perguntas sobre 'influência', descreva sistematicamente a intensidade com que o problema atua nas emoções, cognições, relacionamentos e comportamentos, ao mesmo tempo em que descubra momentos em que o cliente exerce influência sobre o problema, apresentando a relação dinâmica entre as forças de ambos.",
+    "when_to_use": "Ao avaliar a amplitude e gravidade dos impactos do problema, para ajudar o cliente a experimentar a bidirecionalidade de ser afetado pelo problema e também poder afetar o problema.",
+    "trigger": "O cliente relata que o problema se espalhou amplamente, causou danos funcionais significativos ou apresenta uma narrativa de impotência e desesperança com foco apenas na pressão unilateral.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "53"
+    ]
+  },
+  "54": {
+    "skill_id": "54",
+    "skill_name": "Capturar exceções não dominadas pelo problema",
+    "skill_description": "Proativamente identificar e detalhar eventos únicos que não ocorreram ou foram mais fracos em relação ao problema, descrevendo as emoções, pensamentos e ações da época, integrando essas exceções em uma nova narrativa para enfraquecer a narrativa dominante.",
+    "when_to_use": "Quando o cliente está preso em descrições penetrantes do problema e precisa de evidências que apoiem a mutabilidade e a autoeficácia.",
+    "trigger": "O cliente relata que, em certos momentos, estava 'melhor', 'menos grave' ou 'lidou bem', ou expressa desejo de mudança mas sente desesperança.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "54"
+    ]
+  },
+  "55": {
+    "skill_id": "55",
+    "skill_name": "Reforçar a narrativa contra o problema",
+    "skill_description": "Com base na externalização e nas exceções, guiar a resumo de como o cliente resistiu, escapou ou enfraqueceu a influência do problema, incorporando capacidades e valores em uma história alternativa, redefinindo a relação com o problema e a identidade.",
+    "when_to_use": "Após a descoberta de eventos excepcionais, ao entrar na fase de reescrever e enriquecer a nova narrativa, é necessário consolidar a proatividade e a autonomia de escolha do cliente.",
+    "trigger": "O cliente identifica seus próprios recursos, expressa esperança de mudança ou reconhece pistas de que certas ações enfraqueceram a influência do problema.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "55"
+    ]
+  },
+  "60": {
+    "skill_id": "60",
+    "skill_name": "Atribuir tarefas após a primeira reunião observacional",
+    "skill_description": "Antes do término da primeira sessão, convide o cliente a observar e registrar eventos que 'gostaria de ver acontecer novamente' em casa, na vida, no casamento ou nas relações interpessoais entre as sessões, e relatar os resultados na próxima sessão.",
+    "when_to_use": "No final da primeira sessão, durante a fase de feedback, para continuar a mudança e fornecer material específico para a próxima sessão.",
+    "trigger": "O cliente já expressou seus problemas, pontos de vista e experiências; a sessão está entrando na fase de encerramento ou feedback.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "60"
+    ]
+  },
+  "61": {
+    "skill_id": "61",
+    "skill_name": "Confirmar compreensão e empatia antes de atribuir FFST",
+    "skill_description": "Antes de propor mudanças ou tarefas, garantir que o cliente receba plena compreensão e aceitação; primeiro ouvir e confirmar sua narrativa e sentimentos, depois introduzir a tarefa observacional para manter a cooperação e o envolvimento.",
+    "when_to_use": "Durante a primeira sessão, antes de passar para a atribuição de tarefas, para consolidar a relação e a sensação de compreensão.",
+    "trigger": "O cliente acabou de completar a descrição de seus problemas, pontos de vista e experiências e espera ser compreendido e respondido.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "61"
+    ]
+  },
+  "62": {
+    "skill_id": "62",
+    "skill_name": "Revisão da segunda sessão FFST e identificação de eventos sustentáveis",
+    "skill_description": "No início da segunda sessão, pergunte ao cliente sobre os eventos observados e as partes que ele deseja continuar a ocorrer no futuro, focando em detalhes específicos para estabelecer a base para planos futuros de continuidade e expansão.",
+    "when_to_use": "Na fase inicial da segunda sessão, para transformar resultados observacionais em objetivos e planos.",
+    "trigger": "O cliente traz um registro de observações ou menciona mudanças positivas recentes e o que deseja continuar.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "62"
+    ]
+  },
+  "63": {
+    "skill_id": "63",
+    "skill_name": "Explicar a inevitabilidade da mudança no FFST usando o quadro das esperanças",
+    "skill_description": "Ao explicar o objetivo da tarefa, deixe claro que 'a mudança ocorrerá inevitavelmente; a questão é quando', utilizando expectativas positivas para aumentar o otimismo e o envolvimento do cliente, fazendo-o focar em eventos positivos replicáveis.",
+    "when_to_use": "Ao atribuir o FFST na primeira sessão, para fortalecer expectativas e motivação.",
+    "trigger": "Durante a etapa de explicação da tarefa, quando o cliente faz perguntas sobre as perspectivas e significados da mudança ou precisa de encorajamento.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "63"
+    ]
+  },
+  "64": {
+    "skill_id": "64",
+    "skill_name": "Transformar exceções identificadas no FFST em planos de ação concretos",
+    "skill_description": "Converta as 'exceções' e eventos sustentáveis identificados no FFST em comportamentos executáveis no dia a dia, encorajando o cliente a aumentar intencionalmente a frequência e amplitude desses comportamentos para consolidar e expandir a mudança.",
+    "when_to_use": "Após revisar o FFST e antes da fase de feedback positivo e atribuição de tarefas, para promover mudanças contínuas.",
+    "trigger": "O cliente relata eventos positivos claros ou contextos excepcionais e expressa o desejo de que ocorram com mais frequência.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "64"
+    ]
+  },
+  "38": {
+    "skill_id": "38",
+    "skill_name": "Convidar o cliente a nomear o problema",
+    "skill_description": "Após narrar a história inicial, peça ao cliente que use uma palavra ou frase para nomear a perturbação, tornando o problema tangível e nomeável, estabelecendo a base para discussões futuras e externalização.",
+    "when_to_use": "No início da terapia narrativa, após a 'descrição penetrante do problema' e antes de entrar na fase de organização e expansão, quando é necessário focar no tópico e iniciar a externalização.",
+    "trigger": "O cliente faz uma pausa natural após narrar uma história dominante fragmentada ou triste, ou expressa a perturbação de forma genérica, dificultando sua referência específica.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "38"
+    ]
+  },
+  "39": {
+    "skill_id": "39",
+    "skill_name": "Fornecer pistas de nomeação e devolver a autoridade da decisão",
+    "skill_description": "Quando o cliente não consegue pensar em um nome, ofereça pistas ou algumas palavras/frases alternativas para estimular associações, mas deixe claro que a autoridade final para nomear pertence ao cliente.",
+    "when_to_use": "Quando já se entrou na fase de nomeação, mas o cliente hesita, trava ou indica repetidamente que não consegue encontrar um apelido adequado.",
+    "trigger": "Silêncio do cliente, dizer 'não sei como chamar' ou 'não sei como descrever', indicando dificuldade de nomeação.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "39"
+    ]
+  },
+  "40": {
+    "skill_id": "40",
+    "skill_name": "Refinar a nomeação com o cliente",
+    "skill_description": "Refine e polisse o nome do problema em conjunto com o cliente, tornando o apelido mais adequado e específico, aumentando sua sensação de controle sobre o problema e preparando-o para a externalização.",
+    "when_to_use": "Quando o cliente já propôs um apelido preliminar e está prestes a passar para a externalização e investigação de impactos, mas é necessário melhorar a adequação e direcionalidade do nome.",
+    "trigger": "O nome inicial é muito amplo ou ambíguo; o cliente tem incerteza sobre o apelido ou deseja expressar sua experiência com mais precisão.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "40"
+    ]
+  },
+  "41": {
+    "skill_id": "41",
+    "skill_name": "Usar consistentemente o problema já nomeado nas perguntas de externalização",
+    "skill_description": "Utilize as palavras/frases já nomeadas como sujeito para formular perguntas de externalização (por exemplo, 'Há quanto tempo X te influenciou?' ou 'Como X te oprime?'), consolidando a separação entre pessoa e problema.",
+    "when_to_use": "Após a conclusão da nomeação do problema, ao entrar na fase de conversa de externalização para investigar a história e os impactos do problema.",
+    "trigger": "O cliente aceita e aprova o nome, estando pronto para discutir os impactos específicos da vida e a trajetória do problema.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "41"
+    ]
+  },
+  "56": {
+    "skill_id": "56",
+    "skill_name": "Introduzir naturalmente perguntas sobre mudanças ocorridas antes da consulta",
+    "skill_description": "Durante a primeira sessão, aguarde o momento oportuno para fazer uma pergunta de forma natural e fluida: 'O que mudou entre o agendamento e hoje?' ou 'O que você fez?', iniciando a exploração das mudanças positivas já ocorridas e tentativas eficazes.",
+    "when_to_use": "Nas fases iniciais da avaliação inicial, após estabelecer confiança básica e começar a transição do problema para a solução, para evocar recursos e esperança e abrir novas direções de diálogo.",
+    "trigger": "Após o cliente completar uma declaração preliminar sobre sua origem e preocupações; ou quando menciona pistas sobre o intervalo de tempo desde o agendamento ou mudanças recentes na situação.",
+    "parent_ids": [
+      "1",
+      "10",
+      "11",
+      "56"
+    ]
+  },
+  "57": {
+    "skill_id": "57",
+    "skill_name": "Concretizar mudanças positivas ocorridas",
+    "skill_description": "Após o cliente mencionar que já houve mudanças antes da consulta, perguntar 'O que foi diferente quando isso aconteceu? Como ocorreu? Qual foi o efeito? Foi útil?' para reconstruir o contexto, os passos e o impacto, transformando descrições vagas em experiências replicáveis.",
+    "when_to_use": "Quando o cliente admite ou recorda sinais de melhora antes da consulta agendada, sendo necessário transformar descrições abstratas em práticas claras e operacionais.",
+    "trigger": "O cliente faz declarações genéricas como 'melhorei um pouco' ou 'há alguma diferença', ou tem dificuldade em explicar claramente o conteúdo e o processo da mudança.",
+    "parent_ids": [
+      "1",
+      "10",
+      "11",
+      "57"
+    ]
+  },
+  "58": {
+    "skill_id": "58",
+    "skill_name": "Identificar e reforçar práticas eficazes",
+    "skill_description": "Identificar comportamentos e estratégias que trouxeram melhora nas mudanças ocorridas antes da consulta, destacar seus pontos viáveis, oferecer reconhecimento e encorajamento oportunos e convidar o cliente a continuar praticando e expandindo essas tentativas eficazes.",
+    "when_to_use": "Após concretizar os detalhes das mudanças, para transformá-las em caminhos de solução sustentáveis, consolidar a motivação e a direção.",
+    "trigger": "O cliente descreve tentativas específicas (como um certo arranjo ou mecanismo de enfrentamento) e relata efeitos positivos ou sinais de melhora.",
+    "parent_ids": [
+      "1",
+      "10",
+      "11",
+      "58"
+    ]
+  },
+  "59": {
+    "skill_id": "59",
+    "skill_name": "Feedback das mudanças pré-consulta como recursos e esperança",
+    "skill_description": "Durante o fechamento, enfatizar no feedback que as mudanças originam-se dos próprios recursos e esforços do cliente, reduzindo a dependência do terapeuta, aumentando a autonomia e a sensação de esperança, e usando isso para preparar objetivos e direções de ação subsequentes.",
+    "when_to_use": "No final da primeira sessão, durante o segmento de feedback, para integrar as descobertas da sessão atual e transicionar para o plano ou tarefas seguintes.",
+    "trigger": "O cliente já listou várias mudanças ocorridas antes da consulta e práticas eficazes, chegando ao momento em que o terapeuta precisa integrar e encorajar no feedback.",
+    "parent_ids": [
+      "1",
+      "10",
+      "11",
+      "59"
+    ]
+  },
+  "13": {
+    "skill_id": "13",
+    "skill_name": "Oferecer ambiente seguro e privado e convidar à narrativa",
+    "skill_description": "No início da sessão, garantir que o espaço seja silencioso e livre de interrupções, explicar os princípios de confidencialidade e respeito, convidar o cliente a contar sobre o que lhe importa, criando um campo seguro onde possa ser ouvido, promovendo o início da narrativa.",
+    "when_to_use": "No início das sessões narrativas e na fase inicial da narração de histórias, para estabelecer a relação e iniciar a narrativa do cliente; quando o cliente está fazendo sua primeira visita, não está familiarizado com o ambiente da consulta e sente ansiedade.",
+    "trigger": "O cliente demonstra nervosismo, hesita ao falar ou olha ao redor; menciona verbalmente sinais de alerta e preocupação como 'Isso é seguro aqui?' ou 'Não sei por onde começar'.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "13"
+    ]
+  },
+  "14": {
+    "skill_id": "14",
+    "skill_name": "Escutar guiando a história com respeito e atenção positiva",
+    "skill_description": "Com uma postura de respeito, atenção positiva e empatia, ouvir pacientemente as narrativas 'permeadas por problemas' do cliente que são fragmentadas, perdidas ou tristes, sem julgar ou interromper, permitindo o fluxo emocional, estabilizando a relação e acolhendo a história.",
+    "when_to_use": "Na fase de 'contar histórias' da terapia narrativa, para acolher as descrições saturadas de problemas do cliente, promover que ele continue narrando e estabelecer confiança.",
+    "trigger": "O cliente engasga, faz pausas ou tem a velocidade da fala desorganizada ao narrar fragmentos dolorosos; usa repetidamente palavras emocionais como 'infeliz', 'perdido' ou 'triste' ou a história é fragmentada.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "14"
+    ]
+  },
+  "15": {
+    "skill_id": "15",
+    "skill_name": "Ouvir com curiosidade e uma postura de 'não saber'",
+    "skill_description": "Manter forte interesse e curiosidade, fazer perguntas sobre as experiências do cliente a partir da postura de 'não saber', evitando pressupostos e conclusões definitivas, encorajando-o a expandir e esclarecer, reduzindo assim a autoridade e criando uma atmosfera de cooperação.",
+    "when_to_use": "Ao longo de toda a sessão narrativa, especialmente nas fases iniciais de ouvir histórias e explorar exceções, para reduzir a desigualdade de autoridade, aumentar a sensação de segurança e a vontade de expressar-se.",
+    "trigger": "O cliente espera respostas instrucionais (como 'diga-me o que fazer') ou narra o problema de forma absoluta e rígida, buscando frequentemente o julgamento do especialista.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "15"
+    ]
+  },
+  "16": {
+    "skill_id": "16",
+    "skill_name": "Manter uma relação de negociação igualitária e abandonar a postura de especialista",
+    "skill_description": "Definir e praticar uma orientação relacional igualitária, cooperativa, interativa e compartilhada; adotar um estilo de negociação em vez de instruções; não impor valores dominantes ou aplicar rótulos; garantir a segurança da narrativa com uma postura sem julgamento.",
+    "when_to_use": "Sempre para estabelecer e manter a relação de aconselhamento, especialmente quando o cliente tem medo de ser julgado ou mantém distância da autoridade do terapeuta, reforçando segurança e confiança.",
+    "trigger": "O cliente menciona experiências anteriores de rotulagem ou julgamento; faz declarações como 'tenho medo de ser criticado' ou 'você é um especialista', mostrando sensibilidade e desconfiança em relação à autoridade.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "16"
+    ]
+  },
+  "17": {
+    "skill_id": "17",
+    "skill_name": "Usar metáforas para criar uma atmosfera de narrativa leve",
+    "skill_description": "Sob a garantia de respeito e empatia, usar moderadamente metáforas ou histórias agradáveis e emocionantes para aliviar a tensão e as defesas, ajudar o cliente a encontrar um ângulo para narrar e promover a entrada e continuidade da narrativa.",
+    "when_to_use": "Quando há dificuldade em iniciar a narrativa ou nas fases iniciais de alta tensão emocional; necessário reduzir defesas e criar uma atmosfera leve para entrar na narrativa da história.",
+    "trigger": "O cliente fica em silêncio, trava na fala ou repete dizer 'não consigo explicar' ou 'não sei como começar'; sinais não verbais de tensão como corpo tenso e evitar o contato visual.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "17"
+    ]
+  },
+  "18": {
+    "skill_id": "18",
+    "skill_name": "Calibração suave para retomar o fio da meada",
+    "skill_description": "Ajusta suavemente o processo de sessão quando a narrativa se desvia ou há generalizações autojulgativas, convidando o cliente a retornar à 'descrição penetrante do problema', descrevendo com mais precisão as dificuldades e seus impactos para manter o foco e a coerência narrativos.",
+    "when_to_use": "Durante a narrativa, quando o cliente transita da atenção ao problema para autoavaliações generalizadas ou se desvia do tema, para preservar a coerência e profundidade da história dominante.",
+    "trigger": "O cliente salta de eventos específicos para culpas genéricas longas e desviadas; interrompe a narrativa dizendo 'não sei o que dizer a seguir'.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "18"
+    ]
+  },
+  "19": {
+    "skill_id": "19",
+    "skill_name": "Criar um espaço seguro e convidar à narrativa",
+    "skill_description": "Fornecer um ambiente de sessão seguro e sem interrupções, convidando o cliente a contar sobre suas preocupações com uma atitude respeitosa e de atenção positiva; ouvir atentamente para capturar inicialmente o escopo e os impactos da descrição, fornecendo material concreto para reestruturação futura.",
+    "when_to_use": "Na fase inicial de 'contar histórias' em uma sessão narrativa, para estabelecer a relação e coletar materiais da história; quando o cliente está vulnerável e precisa ser ouvido e aceito.",
+    "trigger": "O cliente mostra tensão ou hesitação, narrando fragmentos 'quebrados, perdidos, tristes', com linguagem marcada por pausas e busca tentativa de segurança e validação.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "19"
+    ]
+  },
+  "20": {
+    "skill_id": "20",
+    "skill_name": "Capturar exceções com curiosidade e postura de 'não sei'",
+    "skill_description": "Ouvir com postura curiosa e de 'não sei', buscando ativamente exceções e eventos únicos na história, apreciando pequenas diferenças e ampliando-as junto ao cliente para que pistas positivas não convencionais entrem em uma nova narrativa.",
+    "when_to_use": "Quando a narrativa do cliente é dominada pela descrição penetrante do problema, ignorando experiências positivas; antes de entrar na exploração e reescrita.",
+    "trigger": "O cliente usa expressões absolutas como 'sempre'/'nunca'; ou menciona ocasionalmente momentos não afetados pelo problema mas os omite rapidamente.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "20"
+    ]
+  },
+  "21": {
+    "skill_id": "21",
+    "skill_name": "Externalizar o problema para reduzir rótulos negativos",
+    "skill_description": "Guiar a separação entre 'pessoa' e 'problema', nomeando e externalizando o problema, discutindo sua origem e impactos, enfraquecendo patologização e autoacusa, reduzindo conflitos e criando espaço para diálogo colaborativo, ajudando o cliente a ver seus próprios recursos.",
+    "when_to_use": "Quando o cliente se autorrotula, identifica-se com o problema ou cai em sentimentos de culpa e fracasso; antes da reescrita, quando é necessário mudar a localização do problema.",
+    "trigger": "O cliente diz que 'é' um tipo de problema, autoacusa frequentemente ou acusa outros, conflitos relacionais se intensificam, sentindo-se 'oprimido' pelo problema.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "21"
+    ]
+  },
+  "22": {
+    "skill_id": "22",
+    "skill_name": "Identificar e ampliar pistas e recursos positivos",
+    "skill_description": "Manter-se atento a qualquer detalhe que mostre capacidade, valor ou apoio do cliente; iluminá-los e ampliá-los oportunamente, usando-os como material para desenvolver histórias alternativas, transformando experiências positivas dispersas em recursos utilizáveis.",
+    "when_to_use": "Durante o processo de narrativa e exploração, assim que surgirem respostas a desafios, suporte social, vantagens pessoais ou momentos excepcionais; fase de enriquecimento da nova história.",
+    "trigger": "O cliente menciona melhorias modestas, fragmentos reconhecidos, práticas anteriores eficazes ou apoio de outras pessoas importantes, mas com tom minimizador ou rápido.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "22"
+    ]
+  },
+  "23": {
+    "skill_id": "23",
+    "skill_name": "Guiar uma narrativa positiva própria de 'fino' para 'espesso'",
+    "skill_description": "Para narrativas próprias 'finas' filtradas por viés, incentivar a adição de novos detalhes experienciais, restaurando uma identidade positiva própria comprimida, transformando a autoestima positiva de 'fino' para 'espessa', aumentando a autoeficácia e o sentido.",
+    "when_to_use": "Quando narrativas próprias negativas dominam há muito tempo, a identidade positiva é ignorada ou enfraquecida; durante a fase de reescrita e enriquecimento da nova história.",
+    "trigger": "O cliente desvaloriza seus pontos fortes, nega realizações, tem uma autoavaliação unidimensional negativa; responde a feedback positivo com 'não tem nada', 'não conta'.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "23"
+    ]
+  },
+  "24": {
+    "skill_id": "24",
+    "skill_name": "Acompanhar com postura de parceria igualitária e despatologização",
+    "skill_description": "Abandonar o papel de autoridade experta, não fazer diagnósticos classificados nem rótulos; construir significado com o cliente com respeito, negociação e abertura a múltiplas perspectivas, enfatizando que ele é o especialista da própria vida, mantendo uma relação positiva e colaborativa.",
+    "when_to_use": "Ao longo de todo o processo, especialmente ao estabelecer a relação, esclarecer objetivos e discutir significados; quando o cliente tem medo de ser diagnosticado ou espera instruções.",
+    "trigger": "O cliente pergunta 'qual é a minha doença', pede conclusões definitivas ou demonstra forte dependência; mostra tensão e evitação diante da possibilidade de ser rotulado.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "24"
+    ]
+  },
+  "25": {
+    "skill_id": "25",
+    "skill_name": "Usar perguntas de 'impacto' para aumentar o senso de agência",
+    "skill_description": "Através de perguntas que descrevem o impacto do problema, investigar a relação entre o cliente e a força do problema e os lugares onde ele pode exercer influência, permitindo-lhe experimentar sua capacidade de agir sobre o problema e suas escolhas, aumentando o senso de controle e confiança na mudança.",
+    "when_to_use": "Após a externalização ao discutir a relação pessoa-problema e ao entrar na fase de reescrita; quando o cliente relata ser controlado pelo problema ou sentir-se impotente.",
+    "trigger": "O cliente usa termos como 'não consigo controlar', 'ser esmagado por...', apresentando-se passivo e desamparado; expressa vacilação ou desesperança quanto à mudança.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "25"
+    ]
+  },
+  "26": {
+    "skill_id": "26",
+    "skill_name": "Convidar a narrativa com atenção positiva",
+    "skill_description": "Em um ambiente seguro e sem interrupções, convidar o cliente a narrar seu evento de interesse com respeito e atenção positiva; o terapeuta escuta focado, ajudando-o a iniciar e manter o processo narrativo, reduzindo as defesas e promovendo o desenvolvimento da história inicial.",
+    "when_to_use": "Fase inicial de terapia narrativa e fase de 'contar histórias', para estabelecer relacionamentos e iniciar narrativas; quando o cliente está entrando pela primeira vez e precisa de segurança e disposição para expressar-se.",
+    "trigger": "O cliente parece tenso, silencioso ou sua narrativa é fragmentada; uso de palavras cautelosas e observador; postura encolhida e olhar desviado, revelando ansiedade ou hesitação.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "26"
+    ]
+  },
+  "27": {
+    "skill_id": "27",
+    "skill_name": "Incentivar a descrição detalhada dos impactos",
+    "skill_description": "Quando a narrativa pausa naturalmente, incentivar o cliente a descrever com mais especificidade as dificuldades e seus impactos na vida, coletando detalhes memoráveis como material para trabalhos futuros, ajudando-o a transitar do vago para o claro.",
+    "when_to_use": "Durante a fase de contar histórias ou quando a narrativa tende à generalização; necessário para acumular detalhes contextuais e pistas de impacto para reescrita e externalização.",
+    "trigger": "O cliente pausa ou resume apenas com termos gerais como 'sempre' ou 'muito ruim'; dificuldade em apontar eventos, impactos ou situações específicas.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "27"
+    ]
+  },
+  "28": {
+    "skill_id": "28",
+    "skill_name": "Reduzir ansiedade e empoderar através de perguntas externalizadoras",
+    "skill_description": "Ao nomear o problema e usar perguntas externalizadoras (como 'Por quanto tempo X te afetou?' ou 'Como ele o oprime?'), separar a pessoa do problema, reduzindo a culpa e aumentando o senso de controle e espaço para ação em relação ao problema.",
+    "when_to_use": "Quando o cliente identifica-se com o problema e cai na narrativa permeada pelo problema; antes de transitar para fases de externalização e reescrita.",
+    "trigger": "O cliente se culpa ou diz 'Sou o problema' ou 'Não tenho cura'; emoção baixa e impotência, com linguagem cheia de rótulos internalizados.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "28"
+    ]
+  },
+  "29": {
+    "skill_id": "29",
+    "skill_name": "Explorar e ampliar casos excepcionais",
+    "skill_description": "Conscientemente buscar situações excepcionais onde o problema não ocorreu ou teve impacto mais fraco, convidando o cliente a reviver as práticas e recursos internos daquela época, ampliando seu significado para despertar confiança, servindo como ponto de partida para uma nova história.",
+    "when_to_use": "Ao entrar na fase de 'reescrita da história' ou 'enriquecimento de uma nova história', quando é necessário aumentar a esperança e fornecer material para novas narrativas.",
+    "trigger": "O cliente menciona fragmentos de melhoria ocasional, resposta adequada anterior ou trechos como 'aquela vez foi bem'; hesitação em relação à mudança mas com expectativa visível.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "29"
+    ]
+  },
+  "30": {
+    "skill_id": "30",
+    "skill_name": "Amplificação da autoidentificação positiva de fina a espessa",
+    "skill_description": "Identificar os filtros de viés em 'histórias frágeis', encorajar a descrição de experiências e capacidades positivas negligenciadas, restaurar e expandir a autoidentificação positiva comprimida, formando uma concepção de si mesmo mais poderosa.",
+    "when_to_use": "Na fase de reescrita quando o relato do cliente é singularmente negativo e precisa ser remodelado para reconstruir o cenário de si mesmo e a força da identidade.",
+    "trigger": "O cliente usa expressões absolutas como 'não sou nada' ou 'nunca fui bem-sucedido', ignorando ou minimizando fragmentos positivos.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "30"
+    ]
+  },
+  "31": {
+    "skill_id": "31",
+    "skill_name": "Descrição detalhada e integração de novos detalhes narrativos",
+    "skill_description": "Após identificar exceções, convidar o cliente a descrever em detalhes as emoções, pensamentos, ações e contextos da época, integrando-os sistematicamente na nova história, tornando-a mais completa, contínua e conectando passado e futuro.",
+    "when_to_use": "Na fase de 'enriquecer a nova história', para consolidar a narrativa alternativa e evitar que se torne apenas uma frase de efeito.",
+    "trigger": "O cliente já apresenta novas descrições ou desejos, mas o conteúdo é breve, saltuário e carece de detalhes específicos e coerência.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "31"
+    ]
+  },
+  "32": {
+    "skill_id": "32",
+    "skill_name": "Uso de rituais e celebrações para consolidar a mudança",
+    "skill_description": "Criar rituais breves em pontos-chave (como conferência de certificados, entrega de cartões ou mensagens de parabéns), tornando a mudança 'real', validando e encorajando no momento oportuno, aumentando a motivação e o efeito de manutenção, definindo resultados em fase.",
+    "when_to_use": "Em progressos em fase, quando a velha história termina ou antes/depois do fim da terapia, para consolidação e transição.",
+    "trigger": "O cliente alcança um marco, expressa conquistas ou deseja comemorar uma virada; sente alguma vacilação quanto à manutenção da mudança.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "32"
+    ]
+  },
+  "33": {
+    "skill_id": "33",
+    "skill_name": "Convidar testemunhas a testemunhar a mudança juntos",
+    "skill_description": "Com o consentimento do cliente, convidar importantes outros para participar da testemunha, compartilhando observações e apoio, fazendo com que a nova história enraíze-se em sua rede social, aumentando a confiança e a realidade da mudança, estendendo seu impacto.",
+    "when_to_use": "Quando a nova narrativa do cliente já foi formada, preparando o fim ou necessitando de apoio social para manter a mudança.",
+    "trigger": "O cliente menciona o apoio de familiares/amigos ou deseja ser visto; sente incerteza quanto a trazer a mudança de volta para a vida.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "33"
+    ]
+  },
+  "34": {
+    "skill_id": "34",
+    "skill_name": "Utilizar grupos de reflexão para fornecer feedback positivo",
+    "skill_description": "Expressar observações e sentimentos com respeito e sem julgamento através de um grupo de reflexão, oferecendo ao cliente múltiplas perspectivas e ecoes suaves que promovem novas compreensões e motivações, evitando o sermão.",
+    "when_to_use": "Quando a terapia entra em fase de profundidade ou quando é necessário um eco externo; quando o caso está preso em uma única perspectiva ou seu progresso estagnou.",
+    "trigger": "O cliente repete-se no mesmo narrativo, sente-se travado; tem curiosidade sobre as mudanças vistas pelos outros ou precisa ser visto.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "34"
+    ]
+  },
+  "35": {
+    "skill_id": "35",
+    "skill_name": "Detectar e ampliar os recursos do cliente com agudeza",
+    "skill_description": "Manter forte interesse e curiosidade, identificando com precisão pistas de capacidade e recursos mostradas na narrativa, iluminando e ampliando-as oportunamente para torná-las material básico para a construção de histórias alternativas.",
+    "when_to_use": "Aplicável em todas as fases, especialmente quando a história é fraca, a esperança é insuficiente ou são necessários materiais para uma nova história.",
+    "trigger": "O cliente revela inadvertidamente valor, habilidades, apoio ou pequenos sucessos; se autoabaja ao mesmo tempo que inclui aspectos positivos.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "35"
+    ]
+  },
+  "36": {
+    "skill_id": "36",
+    "skill_name": "Externalizar qualidades positivas para reforçar a identidade",
+    "skill_description": "Externalizar os pontos fortes e virtudes do cliente como tópicos discutíveis e desenvolvíveis, separando-os da dominância do problema, ajudando-o a aliar-se às qualidades positivas e reforçando práticas de identidade positiva.",
+    "when_to_use": "Durante conversas de externalização, para equilibrar o discurso sobre problemas e construir uma auto-posicionamento mais poderoso.",
+    "trigger": "O cliente menciona seus próprios pontos fortes ou traços validados pelos outros, mas não os desenvolve aprofundadamente ou volta rapidamente para os problemas.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "36"
+    ]
+  },
+  "37": {
+    "skill_id": "37",
+    "skill_name": "Conceder poder de escolha através de perguntas sobre o balanço de forças",
+    "skill_description": "Utilizar perguntas que descrevem o balanço de forças entre o problema e o cliente, permitindo-lhe experimentar que também pode influenciar o problema, aumentando a sensação de julgamento e escolha, promovendo linguagem e ação agênicas.",
+    "when_to_use": "Quando o cliente se sente pressionado pelo problema e sem poder de escolha; quando está pronto para transitar para etapas de ação viáveis.",
+    "trigger": "O cliente usa frequentemente expressões desativantes como 'não consigo controlar' ou 'não há nada a fazer', com humor baixo.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "37"
+    ]
+  },
+  "89": {
+    "skill_id": "89",
+    "skill_name": "Usar linguagem de externalização e separação para distinguir pessoas de problemas",
+    "skill_description": "Explicitar em diálogo frases separadoras como 'você é você, o problema é o problema', usar expressões de externalização para atribuir ações e impactos ao comportamento do problema (como 'o saco triste a deixa desconfortável', 'ataca-a', 'diz que você não consegue'), refletir o valor do cliente com tom colaborativo (como responsabilidade), distinguindo traços pessoais dos impactos do problema, mantendo a posição de externalização, reduzindo autoacusa e estigma, facilitando a identificação de espaços de resposta.",
+    "when_to_use": "No início da externalização do problema ou durante sua expansão e narrativas subsequentes; especialmente quando o cliente se culpa intensamente, internalizando falhas ou avaliações alheias como traços próprios.",
+    "trigger": "O cliente descreve ser controlado ou influenciado por algo, apresentando negação de si mesmo ou experiências passivas; ou internalizar falhas ou avaliações alheias como autoafirmação, apresentando frases como 'o silêncio da escola começou por mim' ou 'devo ser abandonado'.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "89"
+    ]
+  },
+  "77": {
+    "skill_id": "77",
+    "skill_name": "Explorar impactos específicos do problema e respostas do cliente",
+    "skill_description": "Interrogar sistematicamente sobre os impactos específicos do problema na aprendizagem, sono, emoções e relações interpessoais, e organizar conjuntamente com o cliente uma lista de impactos (como ansiedade, incapacidade de concentração, irritação ao falar de estudos), entendendo simultaneamente suas percepções e respostas, expandindo a narrativa para cooperação e escolha após externalização, reduzindo pressão.",
+    "when_to_use": "Após estabelecimento da relação, durante a fase de exploração do problema e diálogo de externalização, quando necessário iniciar externalização e concretizar impactos do problema, mapear impactos, perguntar sobre respostas do cliente.",
+    "trigger": "O cliente fala sobre dificuldades para adormecer, ansiedade depressão, frustração interpessoal ou autoacusa, evitação; ou fala sobre preocupações com suspensão e retorno aos estudos, apresentando dificuldades de aprendizagem e vida puxadas por perturbações emocionais.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "77"
+    ]
+  },
+  "88": {
+    "skill_id": "88",
+    "skill_name": "Convidar e focar na nomeação do problema central",
+    "skill_description": "Através de perguntas aceitantes e discussão sobre impactos específicos do problema, convidar o cliente a nomear o problema com suas próprias palavras (como 'ansiedade', 'pressão invisível'); escolher entre várias opções a mais típica e nomeá-la brevemente, ao mesmo tempo concretizar a perturbação atual e objetivos esperados, formando um termo comum, facilitando externalização, avaliação e intervenção subsequente.",
+    "when_to_use": "Sessões iniciais ou precoces, início de estabelecimento de relação e intervenção narrativa; antes e depois da externalização, quando necessário concretizar emoções vagas ou múltiplas perturbações e focar no tema central.",
+    "trigger": "O cliente generaliza queixas e preocupações, difícil descrever claramente o problema em si e seus impactos; ou listar várias perturbações indeciso; ou ainda não ter clarificado mudanças desejadas e objetivos.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "88"
+    ]
+  },
+  "73": {
+    "skill_id": "73",
+    "skill_name": "Concretizar nomeação de perturbação com apelidos ou metáforas",
+    "skill_description": "Guiar o cliente a escolher apelidos, objetos concretos ou metáforas próximas a si mesmo para emoções-chave e perturbações importantes e nomeá-las (como chamar 'o senhor da perda' à perda, comparar 'ansiedade' a um emaranhado de fios desordenado), ou aplicar rótulos cognitivos breves, fornecendo distância psicológica e verbal, permitindo que o problema seja visto, referenciado e discutido, facilitando externalização e gestão emocional, abrindo caminhos de reescrita.",
+    "when_to_use": "Início ao meio da terapia narrativa, antes da entrada na fase de externalização, quando o cliente descreve vagamente, tem dificuldade em controlar a perturbação ou precisa estabelecer objetos discutíveis para emoções e problemas.",
+    "trigger": "O cliente menciona repetidamente 'perda', 'confusão', 'ansiedade', 'autoacusa' como sentimentos abstratos, indicando 'não sabe dizer nada, é bagunçado', ou autoafirma vida e estudos em desordem, difícil explicar a perturbação.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "73"
+    ]
+  },
+  "80": {
+    "skill_id": "80",
+    "skill_name": "Escuta empática e atenção positiva para criar um ambiente seguro",
+    "skill_description": "Responder ao cliente com escuta focada, empatia genuína e atenção positiva incondicional, combinando aceitação e apoio, validando seus esforços e persistência, transmitindo respeito e não julgamento, aumentando a sensação de compreensão e segurança, estabilizando a relação terapêutica e incentivando-o a continuar contando sobre suas preocupações e experiências.",
+    "when_to_use": "No início da sessão ou durante a fase de narrativa, ou nas fases de avaliação e estabelecimento do relacionamento, quando o cliente precisa ser compreendido e apoiado.",
+    "trigger": "O cliente chora, fica em silêncio, fala lentamente ou evita o contato visual, apresentando reações físicas como sensação de impotência, culpa, auto-negativa, tensão ansiosa e tremores ou suor.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "80"
+    ]
+  },
+  "81": {
+    "skill_id": "81",
+    "skill_name": "Oferecer um ambiente acolhedor e tempo de amortecimento para estabilizar as emoções",
+    "skill_description": "Fornecer um ambiente psicológico e físico acolhedor e privado, dando tempo e espaço suficientes para permitir que o cliente se acalme da agitação até a calma antes de entrar em diálogo e narrativa, reduzindo defesas e resistência, estabelecendo uma base segura e confiança.",
+    "when_to_use": "No início da sessão ou após um estresse súbito, quando o cliente perde o controle emocional e não consegue falar, para estabilizar as emoções e permitir a narrativa.",
+    "trigger": "Manifestações significativas de agitação emocional como o cliente olhando para baixo por longos períodos sem falar, chorando, recusando-se a conversar, movimentos rígidos e expressão triste.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "81"
+    ]
+  },
+  "67": {
+    "skill_id": "67",
+    "skill_name": "Escuta e empatia para promover a expressão e o estabelecimento da confiança",
+    "skill_description": "Manter uma escuta paciente e focada com respostas empáticas desde o início do diálogo até durante o processo, acompanhando com atenção positiva e uma atitude humanista, convidando o cliente a expressar suas queixas e raízes suprimidas, reduzindo defesas e tensão, criando um relacionamento seguro sem julgamento e compreendido, promovendo a narrativa oral e a estabilidade da interação.",
+    "when_to_use": "Na primeira fase ou na segunda sessão de aconselhamento, durante fases de aprofundamento da narrativa, ou quando o cliente tem dificuldade para narrar ou apresenta flutuações emocionais.",
+    "trigger": "O cliente fica em silêncio e hesita, parece tenso com olhares evasivos, se descreve como tendo fobia social e fala baixo, está desconfortável e ansioso, ou apresenta discursos de desesperança, confissão urgente, conflitos interpessoais e ansiedade acadêmica.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "67"
+    ]
+  },
+  "74": {
+    "skill_id": "74",
+    "skill_name": "Explicar o fluxo da sessão e configurações para criar uma estrutura previsível",
+    "skill_description": "Na primeira consulta ou no início de qualquer sessão, apresentar o fluxo da sessão, a frequência, duração, local e outras regras de configuração e assuntos, acompanhando com registro e perguntas sobre informações básicas, definindo limites e ordem, reduzindo incertezas e vergonha, estabelecendo segurança e um espaço de diálogo previsível.",
+    "when_to_use": "Na primeira consulta ou no início de cada sessão, quando é necessário estabelecer segurança básica e estrutura.",
+    "trigger": "O cliente está visitando pela primeira vez, não tem clareza sobre o fluxo e as regras, ou parece tenso e ansioso, hesitante e perguntando detalhes da sessão.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "74"
+    ]
+  },
+  "79": {
+    "skill_id": "79",
+    "skill_name": "Estabelecer princípios de confidencialidade e assinar consentimento informado",
+    "skill_description": "Concluir o consentimento informado e o acordo de confidencialidade no início da sessão, explicando os princípios e exceções da confidencialidade, definindo claramente os direitos, obrigações e responsabilidades de ambas as partes, tornando transparente o uso de registros e a proteção da privacidade, reduzindo ansiedades e inseguranças, estabelecendo limites narrativos seguros, confiáveis e previsíveis.",
+    "when_to_use": "Antes do início da consulta ou na primeira sessão, ou durante transições de fase e mudanças de agendamento, para criar um ambiente de sessão seguro e confiável.",
+    "trigger": "Quando o consultor tem dúvidas sobre privacidade e procedimentos, demonstra timidez evitando contato visual ou apresenta alta defensividade, faz perguntas ativas sobre diagnóstico, medicação e detalhes do procedimento, ou parece tenso e preocupado.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "79"
+    ]
+  },
+  "90": {
+    "skill_id": "90",
+    "skill_name": "Escuta ativa, esclarecimento da narrativa e coleta de informações",
+    "skill_description": "Na primeira sessão, ouvir com foco e paciência, observando minuciosamente pistas verbais, emocionais e comportamentais; organizar os eventos e contextos por trás da ansiedade; esclarecer a narrativa e erros de fala para compreender o contexto relacional; responder sinceramente às perguntas, estabilizando a relação e as expectativas, fundamentando assim a identificação de questões-chave e a elaboração de planos subsequentes.",
+    "when_to_use": "Na primeira sessão ou durante a fase inicial de narrativa e estabelecimento da relação na sessão, quando o consultor está narrando detalhadamente ou fazendo perguntas ativas.",
+    "trigger": "Quando o consultor começa a narrar, apresenta flutuações emocionais como choro ou tensão, a narrativa é confusa ou há erros de fala que precisam de esclarecimento, ou faz perguntas sobre os procedimentos, diagnóstico e etapas subsequentes.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "90"
+    ]
+  },
+  "86": {
+    "skill_id": "86",
+    "skill_name": "Elaborar e organizar ações e registros entre sessões",
+    "skill_description": "No final da sessão, transformar objetivos de aprendizado em listas executíveis com o consultor, listando tarefas e ordenando-as por prioridade; antes do término da primeira reunião, solicitar registros diários sobre tempo real e efetivo de estudo, livros lidos e pontos de conhecimento adquiridos; fornecer dicas claras de ação primária (como 'concluir as tarefas conforme o plano, sem usar o celular') e acordar objetivos focados para a próxima consulta, melhorando a ação e eficiência, criando um processo claro e mantendo a motivação.",
+    "when_to_use": "No final da primeira reunião ou no final de qualquer sessão, quando objetivos e direções já estão claros e é necessário entrar na prática comportamental entre sessões; ou após mudanças emocionais/posicionais que exigem clarificação do próximo foco.",
+    "trigger": "Quando o consultor propõe estratégias viáveis como 'fazer uma lista de tarefas' ou 'não usar o celular' e está disposto a agir; ou relata dificuldade em se dedicar aos estudos, tempo instável, ansiedade e desordem com pontos de conhecimento não dominados; ou demonstra coragem durante a sessão para expressar-se, mostrar desejo de crescimento e preparar-se para retornar às tarefas diárias de aprendizado.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "86"
+    ]
+  },
+  "78": {
+    "skill_id": "78",
+    "skill_name": "Revisar e organizar ações efetivas entre sessões",
+    "skill_description": "Em acompanhamento ou orientação subsequente, seguindo o acordo, iniciar do ponto onde a última sessão terminou, guiando o consultor a revisar as práticas específicas e resultados alcançados entre duas sessões; usar perguntas focadas e concretas para esclarecer 'quais métodos funcionaram e como foram feitos', fixando ações efetivas que podem ser mantidas.",
+    "when_to_use": "No início de sessões subsequentes ou durante fases de avaliação, quando é necessário revisar o progresso recente e consolidar mudanças; para inventariar as ações reais e seus efeitos após a última sessão.",
+    "trigger": "Quando o consultor está disposto a revisar mudanças recentes de aprendizado e emoção, ou menciona tentativas anteriores e sua eficácia/confusão, necessitando de uma organização adicional.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "78"
+    ]
+  },
+  "66": {
+    "skill_id": "66",
+    "skill_name": "Dar feedback positivo e encorajamento para consolidar mudanças",
+    "skill_description": "Ao observar progresso ou práticas eficazes do cliente na terapia e na vida, fornecer feedback positivo imediato e validação emocional, enfatizando que seus esforços e mudanças são vistos, reforçando a autoeficácia e a esperança, apoiando a continuidade e expansão da mudança.",
+    "when_to_use": "Em resumos de fase, acompanhamento ou após quebras-chave; ou quando o cliente compartilha ações eficazes recentes ou pequenos progressos, para consolidar novas mudanças e estimular a motivação interna para manter-se.",
+    "trigger": "O cliente relata ou demonstra melhorias substanciais e comportamentos positivos, obtendo senso de conquista ou persistência em novas práticas de aprendizado; conclusão de expressões importantes ou tentativas na terapia, esperando reconhecimento.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "66"
+    ]
+  },
+  "75": {
+    "skill_id": "75",
+    "skill_name": "Destacar pontos eficazes, enfatizar recursos e promover",
+    "skill_description": "Na sessão subsequente, fornecer feedback sobre a tarefa anterior e prática, dar encorajamento positivo, destacar os pontos-chave da mudança eficaz; ao mesmo tempo, apontar as vantagens, recursos e capacidades demonstradas pelo cliente, atribuindo o sucesso à sua força interna replicável e guiando a generalização de novas compreensões e práticas para outras áreas da vida, para consolidar mudanças, aumentar autoeficácia e otimismo.",
+    "when_to_use": "No início de sessões subsequentes ou durante revisões de fase, combinando com o feedback e destilação baseados na conclusão das tarefas; ao mesmo tempo que se fornece feedback positivo, para ajudar o cliente a identificar e nomear seus próprios recursos e encorajar a generalização.",
+    "trigger": "O cliente traz experiências práticas, recebe feedback positivo de outros ou percebe mudanças em si mesmo; pistas de capacidade no relato (como 'ficar mais focado na aula após revisão'), ou compartilhar experiências de sucesso, relaxamento e prazer evidentes, reconhecendo seus próprios recursos.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "75"
+    ]
+  },
+  "91": {
+    "skill_id": "91",
+    "skill_name": "Buscar exceções e resultados únicos para virar para recursos",
+    "skill_description": "Quando preso à história do problema, fazer perguntas curiosas para voltar aos momentos em que o problema não ocorreu ou teve menor impacto, comparar diferenças entre várias tentativas, refinar comportamentos e sentimentos daquela época, ampliar experiências positivas e possibilidades; se não houver exceções temporariamente, usar cenários hipotéticos para guiar pensamento e ensaio.",
+    "when_to_use": "O cliente narra histórias cheias de rejeição, queda de desempenho ou auto-negativa; ou após desconstruir narrativas negativas, ao precisar virar para recursos e possibilidades; preso à impotência aprendida, difícil de ver mudanças.",
+    "trigger": "Repetir frases como 'Ninguém me gosta', 'Sou péssimo' gerando senso de impotência e auto-identificação negativa; enfatizar dificuldades de comunicação ou prever hostilidade alheia; dificuldade para lembrar momentos sem ansiedade ou medo; começar a ver pistas de resultados diferentes.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "91"
+    ]
+  },
+  "76": {
+    "skill_id": "76",
+    "skill_name": "Resumir vantagens e capacidades para aumentar auto-identificação",
+    "skill_description": "Ao redor de eventos excepcionais, ajudar o cliente a resumir fatores que atraem outros, virtudes pessoais e capacidades já possuídas, conectando à identidade positiva, aumentando confiança e desviando o foco de rótulos negativos para recursos.",
+    "when_to_use": "Quando uma exceção é descoberta, histórias preferenciais são ricas ou discussões sobre resultados de novas relações ocorrem, ao precisar consolidar auto-identificação de vantagens e confiança.",
+    "trigger": "O cliente identifica comportamentos eficazes ou recebe feedback positivo de outros, expressa descoberta pessoal, ou começa a ver aspectos positivos além dos rótulos.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "76"
+    ]
+  },
+  "71": {
+    "skill_id": "71",
+    "skill_name": "Usar perguntas de exceção para identificar e expandir recursos",
+    "skill_description": "Fazer perguntas sobre experiências que não ocorreram ou foram mais leves, localizar as exceções e perguntar sobre o tempo, contexto, comportamento e apoio, refinando os fatores facilitadores e práticas; avaliar se podem ser transferidas para o presente, continuando a identificar e ampliar mais exceções, formando um banco de experiências positivas e caminhos de resolução replicáveis.",
+    "when_to_use": "Após a externalização ou identificação do impacto do problema, durante a fase de exploração de recursos na segunda e em reuniões subsequentes; ou quando o cliente generaliza o problema como insolvível e precisa virar-se para recursos disponíveis e fragmentos de sucesso.",
+    "trigger": "O cliente apresenta generalizações ou afirmações absolutas, demonstrando impotência; ou já compartilhou um ou mais fragmentos de exceção, emergiram fragmentos de sucesso ou pistas de apoio, podendo recordar estados melhores recentes.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "71"
+    ]
+  },
+  "85": {
+    "skill_id": "85",
+    "skill_name": "Elogiar e nomear vantagens e progressos",
+    "skill_description": "Expressar apreciação imediatamente e nomear especificamente as vantagens e esforços, como ações, atitudes, desejos e traços; oferecer confirmação factual sobre os pontos fortes e progressos apresentados, reduzindo rótulos negativos, ampliando a atenção às vantagens e autoeficácia, aumentando a confiança na mudança.",
+    "when_to_use": "Nos momentos em que se detectam vantagens ou esforços do cliente durante a sessão; durante a fase de feedback de cada consulta ou após a exploração de exceções e revisão de tarefas, para consolidar narrativas positivas.",
+    "trigger": "O cliente demonstra esforço, completa tarefas, apresenta mudanças, melhora nas pontuações, ou mostra comportamentos positivos, insights únicos ou progressos relacionados aos objetivos.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "85"
+    ]
+  },
+  "87": {
+    "skill_id": "87",
+    "skill_name": "Refinar exceções para extrair estratégias replicáveis",
+    "skill_description": "Em torno de fragmentos de sucesso inconsistentes com a narrativa do problema, usar perguntas de exceção para identificar e detalhar o contexto, fatores facilitadores e práticas específicas naquele momento; continuar perguntando 'como foi feito' e 'há outras razões?', investigando simultaneamente e registrando exceções durante a semana, concretizando estratégias eficazes e condições, aumentando a autoeficácia e planejando caminhos replicáveis.",
+    "when_to_use": "Quando surgem fragmentos de sucesso inconsistentes com a narrativa do problema ou desempenho eficiente; ou após uma exceção ser proposta para entrar na fase de escavação, ou durante a revisão da fase de empoderamento sobre as razões e métodos para atingir ou não atingir objetivos.",
+    "trigger": "O cliente relata momentos de foco contínuo ou aprendizado eficiente, pode recordar experiências de estar relaxado e focado ou elogiado, ou certas tarefas foram mais suaves e encontrou estratégias eficazes e apoio.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "87"
+    ]
+  },
+  "84": {
+    "skill_id": "84",
+    "skill_name": "Usar perguntas de avaliação para refinar objetivos e passos pequenos",
+    "skill_description": "Avaliar de 0 a 10 pontos descrevendo o ideal e a realidade atual, determinar a pontuação atual e a lacuna, resumir os esforços realizados e os fatores que mantiveram sem piorar; explorar quais diferenças específicas haveria ao 'avançar mais um ponto', e elaborar conjuntamente passos pequenos de ação e indicadores autoimpostos para promover melhorias, usados para monitorar o progresso e aumentar a autoeficácia.",
+    "when_to_use": "Quando os objetivos são vagos ou precisam ser transformados em indicadores de progresso operacionais; durante a fase orientada a objetivos ou de avaliação de progresso na segunda consulta ou no suporte intermediário.",
+    "trigger": "O cliente tem dificuldade em descrever objetivos ou progresso, sente-se impotente ou estagnado; já pode dar uma pontuação atual e está disposto a melhorar, ou precisa verificar o grau de melhoria e monitorar mudanças.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "84"
+    ]
+  },
+  "92": {
+    "skill_id": "92",
+    "skill_name": "Reforçar a motivação com validação específica e imediata",
+    "skill_description": "Responder aos esforços e progressos do cliente com validações específicas e oportunas, bem como com feedback positivo; discutir os ganhos e o significado durante revisões de tarefas ou da vida; identificar explicitamente os recursos e capacidades demonstrados; oferecer validação entusiástica para pequenos progressos e fazer perguntas sobre as condições que o promoveram; expressar alegria através de feedback positivo sincero no momento, fortalecendo a motivação para continuar a narrar e mudar, consolidando a nova narrativa.",
+    "when_to_use": "Durante sessões ou em momentos de revisão de tarefas/prática quando há envolvimento positivo, ação ou progresso em fase; ou no momento imediato em que o cliente completa uma expressão de nova narrativa ou apresenta sinais de mudança.",
+    "trigger": "Inscrição para competir, participação em treinamento, prática e feedback de desempenho; melhoria do sono/emoções/interações sociais, planos mais específicos; narração mais positiva/confiante, explicação clara de termos ou técnicas; pequenos esforços como levantar a cabeça ao andar, iniciar conversas sozinho ou ter o coragem de levantar a mão.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "92"
+    ]
+  },
+  "72": {
+    "skill_id": "72",
+    "skill_name": "Validar a agência para ativar a esperança",
+    "skill_description": "Oferecer feedback específico e validar os mecanismos de enfrentamento, conhecimentos e habilidades do cliente durante a conversa, estabelecendo evidências claras da sua agência; enquadrar isso como o início da esperança; utilizar linguagem positiva, validadora e elogiante; quando necessário, reforçar o autovalor e a nova narrativa através da perspectiva de testemunhas, aumentando a confiança e a motivação para continuar a narrar e mudar.",
+    "when_to_use": "Quando o cliente avalia-se como impotente, acredita que o problema não pode ser resolvido ou tem insuficiência de motivação; quando há necessidade de encorajamento externo para fortalecer o autovalor e a persistência.",
+    "trigger": "Expressar desespero, auto-negativação ou focar apenas nas dificuldades ignorando os próprios esforços; falta de motivação, achar que 'não tem sentido', controle emocional instável; mencionar pessoas importantes ou esperar ser visto e reconhecido.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "72"
+    ]
+  },
+  "82": {
+    "skill_id": "82",
+    "skill_name": "Validar a coragem e agir em conjunto",
+    "skill_description": "Validar a coragem do cliente em buscar ajuda e mudar, expressando uma postura de cooperação e expectativas (como 'tentemos juntos'); oferecer encorajamento e inspiração revitalizantes em pontos-chave; transmitir confiança e expectativa, ajudando-o a manter a confiança e a ação contínua apesar da hesitação e da pressão, fortalecendo a motivação para continuar a narrar.",
+    "when_to_use": "No início das sessões ou quando há auto-negativação evidente e insuficiência de confiança; durante fases de construção positiva e elaboração de planos, ou em momentos de hesitação ou alta pressão.",
+    "trigger": "Expressar impotência, aumento da ansiedade, falta de confiança no futuro; manifestar hesitação, sentir-se sob pressão ou precisar de suporte para ver os próprios esforços.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "82"
+    ]
+  },
+  "83": {
+    "skill_id": "83",
+    "skill_name": "Marcar o progresso e encorajar a prática contínua",
+    "skill_description": "Encorajar continuamente o cliente a manter a prática da nova narrativa; identificar e apontar imediatamente progressos específicos e pontos fortes; reconhecer os seus esforços e recursos de enfrentamento; encorajá-lo a avançar na vida acadêmica e pessoal com essas forças, consolidando a relação de trabalho e a nova narrativa, mantendo a motivação para a ação.",
+    "when_to_use": "Durante fases de consolidação posterior ou quando o cliente apresenta pequenas mudanças positivas; em momentos de avaliação de motivação, revisão de tentativas e recursos, ou após conclusão de exercícios em fase.",
+    "trigger": "Apresentar sinais de mudança ou novamente duvidar da capacidade de manter a mudança; descrever os esforços já realizados, tarefas ou progressos, participar ativamente em tarefas de aconselhamento e treinamento; minimizar os próprios esforços ou negar conquistas.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "83"
+    ]
+  },
+  "70": {
+    "skill_id": "70",
+    "skill_name": "Invocar e promover microações específicas",
+    "skill_description": "Propor microações viáveis com um tom colaborativo, consultando a vontade de fazer; transformar o incentivo em prática; reforçar especificamente comportamentos eficazes que trazem energia positiva, auxiliando na organização de práticas replicáveis, incentivando a implementação contínua no dia a dia para promover melhorias no sono e nas emoções, consolidando assim uma nova narrativa.",
+    "when_to_use": "Após identificar estratégias implementáveis, para promover ações e melhorias de estado; ao encontrar exceções ou experiências de sucesso e iniciar sua execução.",
+    "trigger": "O cliente indica que um método 'pode ser viável', está disposto a tentar ou busca direção específica; compartilha fragmentos de sucesso, conclui tarefas sociais ou expressa vontade de continuar tentando.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "70"
+    ]
+  },
+  "68": {
+    "skill_id": "68",
+    "skill_name": "Enfatizar o valor dos pequenos passos e estabelecer acompanhamento de metas",
+    "skill_description": "Incentivar começar com as coisas mais fáceis de fazer, acreditando que pequenas mudanças têm grande valor; elaborar conjuntamente metas acadêmicas e de habilidades em etapas, definir métodos claros de realização e organizar o registro de progresso; combinar contato contínuo, manutenção e aprimoramento para reduzir a barreira da ação e manter a mudança, acumulando experiências visíveis de sucesso.",
+    "when_to_use": "Na fase de planejamento e prática comportamental quando é necessário aumentar a motivação e a persistência; na terceira fase focada em metas de longo prazo quando é difícil ver capacidade de mudança; ao elaborar etapas práticas ou consolidar exceções.",
+    "trigger": "Baixa confiança na mudança, metas vagas ou execução solta; auto-referir ainda não conseguir identificar problemas familiares de mudança, apresentar pensamento pessimista absoluto, estagnação; sentir dificuldade com a ação, hesitar ou temer não conseguir persistir.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "68"
+    ]
+  },
+  "69": {
+    "skill_id": "69",
+    "skill_name": "Encerrar revisando o crescimento e incentivando a manutenção",
+    "skill_description": "Na revisão e resumo das fases de encerramento e consolidação, extrair as mudanças-chave, validar especificamente os esforços e resultados, incentivar a prática contínua e a aplicação da metodologia na vida real, consolidar a confiança na narrativa alternativa e na ação contínua, apoiando uma separação saudável da terapia.",
+    "when_to_use": "Na última sessão ou durante resumos de revisão em etapas; no encerramento da fase de entrevista ou na revisão de pontos marcos; nas fases finais de revisão e consolidação da terapia e no resumo antes do término.",
+    "trigger": "O cliente pergunta ao terapeuta sobre a avaliação de sua capacidade de ação ou apresenta progresso e aumento de registros; já há alívio emocional, mudança cognitiva ou melhoria comportamental; feedback de retorno ou pré-encerramento sobre recuperação na vida escolar/acadêmica, melhorias nas relações etc.; completar exercícios ou relatórios identificando crenças irracionais e melhoria emocional; entrar em fase de resumo final, discutir arranjos futuros e aplicação na vida.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "69"
+    ]
+  },
+  "65": {
+    "skill_id": "65",
+    "skill_name": "Reenreçar respostas a situações inesperadas para consolidar mudanças",
+    "skill_description": "Na terapia avançada, revisar conjuntamente com o cliente o processo e os ganhos, discutir possíveis situações inesperadas e estratégias de resposta, consolidar as mudanças positivas, aumentar a confiança na prática contínua da nova narrativa e utilizá-las para prevenir recaídas e manter a mudança.",
+    "when_to_use": "Sessões de consolidação e fase de encerramento, para resumo, incentivo e prevenção de recaídas.",
+    "trigger": "O cliente já apresentou mudanças positivas e a terapia está próxima do fim; ainda há preocupação com o futuro.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "65"
+    ]
+  }
+}

@@ -49,5 +49,7 @@ class PsychAgentPromptManager:
             return ""
         if Template is not None and isinstance(tmpl, Template):
             return tmpl.render(**kwargs)
-        # Jinja2 fallback: keep simple placeholder substitution unavailable.
-        return str(tmpl)
+        rendered = str(tmpl)
+        if "output_language" in kwargs:
+            rendered = rendered.replace("{{ output_language }}", str(kwargs["output_language"]))
+        return rendered

@@ -89,9 +89,11 @@ class PsychAgentWebBackend:
         visit: TherapyVisitRecord,
         visit_state: VisitState,
         psych_context: Optional[VisitPsychContextOut],
+        output_language: Optional[str] = None,
     ) -> Dict[str, Any]:
         if not self._started:
             await self.startup()
+        response_language = output_language or self._runtime_config.output_language
         try:
             sect = school_to_psychagent_sect(course.school_id)
             stage = stage_from_key(visit.stage_key_snapshot)
@@ -131,24 +133,35 @@ class PsychAgentWebBackend:
                 session_focus=session_focus,
                 homework_assigned_from_last_session=homework,
                 suggested_skills=suggested_skills,
+                output_language=response_language,
             )
             messages = [{"role": "system", "content": system_prompt}]
             messages.extend(self._build_chat_history(visit_state.messages))
 
-            raw = await self._chat_once(messages)
+            raw = await self._chat_once(messages, output_language=response_language)
             text, should_end = self._normalize_output_with_end(raw)
             if text:
                 return {"text": text, "end": should_end}
             raise RuntimeError("empty response from PsychAgent prompt chain")
         except Exception as exc:
             self._logger.warning("PsychAgent prompt chain failed, falling back to baseline prompt: %s", exc)
-            raw = await self._chat_once(fallback_messages)
+            localized_fallback = [dict(message) for message in fallback_messages]
+            if localized_fallback and localized_fallback[0].get("role") == "system":
+                localized_fallback[0]["content"] = (
+                    localized_fallback[0].get("content", "")
+                    + f" Respond in {response_language}."
+                )
+            raw = await self._chat_once(localized_fallback, output_language=response_language)
             text, should_end = self._normalize_output_with_end(raw)
             if not text:
                 raise RuntimeError("empty response from fallback prompt")
             return {"text": text, "end": should_end}
 
-    async def _chat_once(self, messages: List[Dict[str, str]]) -> str:
+    async def _chat_once(
+        self,
+        messages: List[Dict[str, str]],
+        output_language: Optional[str] = None,
+    ) -> str:
         return await self._backend.chat_text(
             messages=messages,
             model=self._baseline_config.model,
@@ -158,7 +171,7 @@ class PsychAgentWebBackend:
             max_retries=self._baseline_config.max_retries,
             retry_sleep_sec=self._baseline_config.retry_sleep_sec,
             end_token=self._baseline_config.end_token,
-            output_language=self._runtime_config.output_language,
+            output_language=output_language or self._runtime_config.output_language,
         )
 
     async def build_session_close_artifacts(
@@ -168,11 +181,13 @@ class PsychAgentWebBackend:
         visit: TherapyVisitRecord,
         visit_state: VisitState,
         psych_context: Optional[VisitPsychContextOut],
+        output_language: Optional[str] = None,
     ) -> Dict[str, Any]:
         if not self._started:
             await self.startup()
 
         try:
+            response_language = output_language or self._runtime_config.output_language
             sect = school_to_psychagent_sect(course.school_id)
             modality_models = MODALITY_MODELS.get(sect)
             if not modality_models:
@@ -194,10 +209,14 @@ class PsychAgentWebBackend:
                 current_session_dialogue=format_transcript(transcript, for_profile=False),
             )
             summary_data = await self._chat_structured_json(
-                system_prompt=str(prompt_manager.prompts.get("summary_system", "")),
+                system_prompt=(
+                    str(prompt_manager.prompts.get("summary_system", "")).rstrip()
+                    + f"\n\nWrite all free-text string values in {response_language}. Preserve JSON keys and explicitly enumerated values exactly."
+                ),
                 user_prompt=summary_prompt,
                 schema_model=modality_models["summary"],
                 task_label="summary",
+                output_language=response_language,
             )
 
             profile_prompt = prompt_manager.render(
@@ -206,10 +225,14 @@ class PsychAgentWebBackend:
                 client_info=client_info,
             )
             profile_data = await self._chat_structured_json(
-                system_prompt=str(prompt_manager.prompts.get("profile_system", "")),
+                system_prompt=(
+                    str(prompt_manager.prompts.get("profile_system", "")).rstrip()
+                    + f"\n\nWrite all free-text string values in {response_language}. Preserve JSON keys and explicitly enumerated values exactly."
+                ),
                 user_prompt=profile_prompt,
                 schema_model=modality_models["profile"],
                 task_label="profile",
+                output_language=response_language,
             )
 
             next_plan = summary_data.get("next_session_plan")
@@ -261,6 +284,7 @@ class PsychAgentWebBackend:
         user_prompt: str,
         schema_model: Any,
         task_label: str,
+        output_language: Optional[str] = None,
     ) -> Dict[str, Any]:
         if not system_prompt.strip():
             raise ValueError(f"empty system prompt for {task_label}")
@@ -275,7 +299,8 @@ class PsychAgentWebBackend:
                     [
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": user_prompt},
-                    ]
+                    ],
+                    output_language=output_language,
                 )
                 payload = safe_json_loads(raw)
                 if "static_traits" in payload and isinstance(payload["static_traits"], dict):

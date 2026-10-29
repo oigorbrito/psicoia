@@ -164,22 +164,24 @@ def get_current_user(authorization: str = Header(None), db: Session = Depends(ge
     return user
 
 
-async def call_llm(history, course, visit, visit_state, psych_context):
+async def call_llm(history, course, visit, visit_state, psych_context, output_language=None):
     return await get_psychagent_backend().reply_from_visit(
         fallback_messages=history,
         course=course,
         visit=visit,
         visit_state=visit_state,
         psych_context=psych_context,
+        output_language=output_language,
     )
 
 
-async def run_session_close_postprocess(course, visit, visit_state, psych_context):
+async def run_session_close_postprocess(course, visit, visit_state, psych_context, output_language=None):
     return await get_psychagent_backend().build_session_close_artifacts(
         course=course,
         visit=visit,
         visit_state=visit_state,
         psych_context=psych_context,
+        output_language=output_language,
     )
 
 

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "pt-BR-canary",
+    "output_language": "Português (Brasil)",
+    "input": "Esta é uma verificação técnica sintética, sem pedido de atendimento. Responda exatamente: Inferência local em PT-BR validada.",
+    "expected_markers": ["entendo", "você", "sinta-se"]
+  },
+  {
+    "id": "en-canary",
+    "output_language": "English",
+    "input": "This is a synthetic technical check, not a counseling request. Reply exactly: Local English inference verified.",
+    "expected_markers": ["you", "understand", "help"]
+  }
+]

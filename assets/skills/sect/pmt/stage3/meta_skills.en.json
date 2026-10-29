@@ -1,0 +1,30 @@
+{
+  "519": {
+    "skill_id": "519",
+    "skill_name": "Consolidation session",
+    "skill_description": "In narrative therapy, the consolidation stage focuses on maintaining and expanding the new story. The therapist emphasizes finding supportive audiences and, through documentation and letter writing, making changes and abilities tangible, retelling and sharing them. This helps the client continue practicing the new narrative outside therapy and distinguish the problem-saturated story from the alternative story.",
+    "parent_ids": ["519"],
+    "sect": "pmt"
+  },
+  "520": {
+    "skill_id": "520",
+    "skill_name": "Narrative therapy",
+    "skill_description": "Grounded in social constructionism, narrative therapy emphasizes collaboration with the client. Through externalizing and deconstructing, it separates the person from the problem, identifies unique outcomes and exceptions, and reauthors a preferred story. It avoids pathologizing, respects clients as the experts on their own lives, and attends to the role of language and audiences in sustaining new narratives.",
+    "parent_ids": ["519", "520"],
+    "sect": "pmt"
+  },
+  "521": {
+    "skill_id": "521",
+    "skill_name": "Documenting evidence",
+    "skill_description": "A new story needs support from an audience to endure. Documenting evidence preserves session takeaways, externalizing descriptions, the problem's effects, and the client's demonstrated abilities and unique outcomes. This makes change concrete, reviewable, and shareable, providing a basis for consolidating and sharing the new narrative outside therapy.",
+    "parent_ids": ["519", "520", "521"],
+    "sect": "pmt"
+  },
+  "522": {
+    "skill_id": "522",
+    "skill_name": "Therapeutic letter writing",
+    "skill_description": "Letter writing is a core technique for consolidating a new story. A letter connects sessions, summarizes the problem's effects, asks questions related to the alternative story, and records unique outcomes and key statements verbatim. It can encourage and witness change and highlight its significance; it is sometimes described as having an effect comparable to several individual therapy sessions.",
+    "parent_ids": ["519", "520", "521", "522"],
+    "sect": "pmt"
+  }
+}
