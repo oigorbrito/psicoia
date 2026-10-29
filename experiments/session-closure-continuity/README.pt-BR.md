@@ -10,6 +10,7 @@ Este pacote contém fixtures sintéticos para calibrar a rubrica de `../../docs/
 - `build_review_forms.py`: cria dois formulários cegos de revisão, com ordem separada, usando apenas `pilot-cases.jsonl`.
 - `review/templates/reviewer-a.csv` e `review/templates/reviewer-b.csv`: modelos em branco rastreados pelo Git; não incluem os rótulos provisórios.
 - `prepare_review_assignments.py`: copia os modelos em branco para `review/responses/` sem sobrescrever respostas existentes; os arquivos de resposta são ignorados pelo Git.
+- `package_review_assignments.py`: cria dois ZIPs separados, ignorados pelo Git, cada um contendo somente o CSV atribuído ao avaliador e o guia em PT-BR.
 - `review/REVIEW-GUIDE.pt-BR.md` (`.md`): codebook bilíngue e instruções para revisão independente dos rótulos dos casos.
 - `validate_review_forms.py`: verifica se os modelos em branco correspondem ao texto atual dos casos, contêm os mesmos 88 casos e usam ordens diferentes.
 - `compare_review_forms.py`: após a conclusão pelos dois avaliadores, calcula concordância bruta e kappa de Cohen descritivo para os rótulos categóricos; não lê o arquivo de rótulos provisórios.
@@ -22,7 +23,7 @@ As dimensões de cobertura são `focus_state` (`explored`, `open`, `ambivalent`)
 
 Os casos e rótulos são sintéticos e provisórios, escritos para iniciar a revisão da rubrica. Exigem revisão humana independente, inclusive para confirmar que o encerramento esperado e o foco a levar adiante são apropriados. Não use este piloto para ajustar e reportar desempenho final: o conjunto é conhecido e não tem separação cega.
 
-Forneça aos avaliadores externos somente o CSV que lhes foi atribuído em `review/responses/` e `review/REVIEW-GUIDE.pt-BR.md` (ou o guia em inglês). Mantenha `pilot-labels.jsonl` e o restante do repositório fora do alcance deles até a entrega das duas revisões. A regra de exclusão do Git apenas reduz o risco de commit acidental; não é controle de acesso nem armazenamento seguro.
+Forneça a cada avaliador externo somente o ZIP correspondente em `review/packages/`; cada arquivo contém um CSV e o guia em PT-BR, sem `pilot-labels.jsonl` nem o repositório. A regra de exclusão do Git apenas reduz o risco de commit acidental; não é controle de acesso nem armazenamento seguro.
 
 Para criar e validar formulários em branco a partir da raiz do repositório:
 
@@ -30,9 +31,10 @@ Para criar e validar formulários em branco a partir da raiz do repositório:
 python experiments/session-closure-continuity/build_review_forms.py
 python experiments/session-closure-continuity/validate_review_forms.py
 python experiments/session-closure-continuity/prepare_review_assignments.py
+python experiments/session-closure-continuity/package_review_assignments.py
 ```
 
-O gerador se recusa a sobrescrever modelos preenchidos, a menos que receba `--force`; o preparador de atribuições também se recusa a sobrescrever respostas existentes. Preencha as cópias em `review/responses/`. Depois que ambos concluírem os formulários independentes, execute:
+O gerador se recusa a sobrescrever modelos preenchidos, a menos que receba `--force`; o preparador de atribuições e o empacotador se recusam a sobrescrever respostas ou ZIPs existentes. Entregue a cada avaliador somente seu ZIP correspondente. As respostas devolvidas devem ser colocadas em `review/responses/`. Depois que ambos concluírem os formulários independentes, execute:
 
 ```bash
 python experiments/session-closure-continuity/compare_review_forms.py

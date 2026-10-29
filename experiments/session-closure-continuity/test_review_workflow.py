@@ -1,5 +1,6 @@
 import csv
 import sys
+import zipfile
 from pathlib import Path
 
 import pytest
@@ -8,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_adjudication_sheet  # noqa: E402
 import build_review_forms  # noqa: E402
 import prepare_review_assignments  # noqa: E402
+import package_review_assignments  # noqa: E402
 import compare_review_forms  # noqa: E402
 import validate_pilot  # noqa: E402
 
@@ -184,6 +186,28 @@ def test_pilot_validator_requires_closing_action_for_end_signal():
     label = {"history_state": "first_session", "ending_signal": "explicit", "expected_action": "continue"}
     with pytest.raises(ValueError, match="must map to close"):
         validate_pilot.validate_label_case_consistency(case, label)
+
+
+def test_handoff_package_contains_only_assigned_blank_form_and_guide(tmp_path):
+    form = tmp_path / "reviewer-a.csv"
+    guide = tmp_path / "guide.md"
+    output = tmp_path / "package.zip"
+    with form.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=build_review_forms.FIELDNAMES)
+        writer.writeheader()
+        for index in range(1, 89):
+            writer.writerow({"id_caso": f"SC-{index:02d}"})
+    guide.write_text("Blind review guide", encoding="utf-8")
+    package_review_assignments.create_package(form, guide, output)
+    with zipfile.ZipFile(output) as archive:
+        assert set(archive.namelist()) == {
+            "review-form.csv",
+            "REVIEW-GUIDE.pt-BR.md",
+        }
+        assert "pilot-labels" not in " ".join(archive.namelist())
+        assert archive.read("REVIEW-GUIDE.pt-BR.md") == b"Blind review guide"
+    with pytest.raises(FileExistsError, match="refusing to overwrite"):
+        package_review_assignments.create_package(form, guide, output)
 
 
 def test_prepare_review_assignments_copies_and_refuses_overwrite(tmp_path):
