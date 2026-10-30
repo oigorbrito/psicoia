@@ -1,6 +1,6 @@
 # PsicoIA Web
 
-PsicoIA Web is a local demonstration interface for the PsychAgent multi-session research workflow. The interface is available in Brazilian Portuguese and English; use the selector in the upper-right corner to save a language preference in this browser. The selected language is also sent to supported response-generation API requests.
+PsicoIA Web is a local demonstration interface for the multi-session workflow derived from the PsychAgent research project. The interface is available in Brazilian Portuguese and English; use the selector in the upper-right corner to save a language preference in this browser. The selected language is also sent to supported response-generation API requests. This software localization does not validate generated language quality or clinical content.
 
 [Português (Brasil)](README.pt-BR.md)
 
@@ -13,23 +13,9 @@ PsicoIA Web is a local demonstration interface for the PsychAgent multi-session 
 - End a session and start the next one.
 - Complete a course.
 
-## Screenshots
+## Upstream research screenshots
 
-### Create course
-
-![Create course](../../paper/web/新建疗程.png)
-
-### Switch school
-
-![Switch school](../../paper/web/切换流派.png)
-
-### Consultation view
-
-![Consultation view](../../paper/web/咨询.png)
-
-### Follow-up session
-
-![Follow-up session](../../paper/web/第二次咨询.png)
+The images under `../../paper/web/` are original upstream research/demo artifacts, not screenshots of PsicoIA Web. They retain source-interface labels and remain unchanged for provenance.
 
 ## Deploy the counselor model
 

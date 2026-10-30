@@ -87,7 +87,7 @@ class PsychAgentWebBackend:
         await self._skill_manager.load_library()
         self._started = True
         self._logger.info(
-            "PsychAgent web backend ready with baseline=%s runtime=%s",
+            "PsicoIA web backend ready with baseline=%s runtime=%s",
             self._baseline_config_path,
             self._runtime_config_path,
         )
@@ -167,12 +167,12 @@ class PsychAgentWebBackend:
             text, should_end = self._normalize_output_with_end(raw)
             if text:
                 return {"text": text, "end": should_end}
-            raise RuntimeError("empty response from PsychAgent prompt chain")
+            raise RuntimeError("empty response from PsicoIA prompt chain")
         except SkillContextUnavailable:
             self._logger.error("Localized skill context unavailable; refusing context-free generation")
             raise
         except Exception as exc:
-            self._logger.warning("PsychAgent prompt chain failed, falling back to baseline prompt: %s", exc)
+            self._logger.warning("PsicoIA prompt chain failed, falling back to baseline prompt: %s", exc)
             localized_fallback = [dict(message) for message in fallback_messages]
             if localized_fallback and localized_fallback[0].get("role") == "system":
                 localized_fallback[0]["content"] = self._append_output_language_contract(
@@ -218,7 +218,7 @@ class PsychAgentWebBackend:
             sect = school_to_psychagent_sect(course.school_id)
             modality_models = MODALITY_MODELS.get(sect)
             if not modality_models:
-                raise ValueError(f"unsupported modality for psychagent session close: {sect}")
+                raise ValueError(f"unsupported modality for PsicoIA session close: {sect}")
 
             stage = stage_from_key(visit.stage_key_snapshot)
             prompt_manager = self._get_prompt_manager(sect)
@@ -301,7 +301,7 @@ class PsychAgentWebBackend:
                 "source": "psychagent_summary_profile_v2",
             }
         except Exception as exc:
-            self._logger.warning("PsychAgent session-close postprocess failed: %s", exc)
+            self._logger.warning("PsicoIA session-close postprocess failed: %s", exc)
             return {}
 
     async def _chat_structured_json(
@@ -338,7 +338,7 @@ class PsychAgentWebBackend:
             except Exception as exc:
                 last_error = exc
                 self._logger.warning(
-                    "PsychAgent %s parse/validate failed (attempt %s/%s): %s",
+                    "PsicoIA %s parse/validate failed (attempt %s/%s): %s",
                     task_label,
                     attempt,
                     attempts,

@@ -1,4 +1,4 @@
-"""Core typed schemas used by the PsychAgent standalone sample framework."""
+"""Core typed schemas used by PsicoIA sample workflows."""
 
 from __future__ import annotations
 
@@ -31,7 +31,7 @@ def _ensure_non_negative_int(name: str, value: int) -> int:
 
 @dataclass
 class BaselineConfig:
-    """Configuration for the counselor model in PsychAgent sample flows."""
+    """Configuration for the counselor model in PsicoIA sample flows."""
 
     name: str
     family: Literal["sota_api", "specific_llm"] = "specific_llm"
@@ -99,7 +99,7 @@ class BaselineConfig:
 
 @dataclass
 class RuntimeConfig:
-    """Runtime settings for one PsychAgent run."""
+    """Runtime settings for one PsicoIA run."""
 
     concurrency: int = 1
     save_dir: str = "sample_outputs"

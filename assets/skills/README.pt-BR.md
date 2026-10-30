@@ -1,26 +1,24 @@
-# Localização do catálogo de habilidades do PsychAgent — planejada, não habilitada
+# Estado dos idiomas do catálogo de habilidades — parcial e sensível ao comportamento
 
-Os catálogos de habilidades ficam em `sect/<approach>/stageN/`. Os arquivos `meta_skills.json` e `micro_skills.json` sem sufixo de idioma continuam sendo os catálogos upstream. Neste candidato de integração, o carregador por idioma e os catálogos traduzidos não foram incluídos; as convenções abaixo descrevem trabalho pendente e não significam que a seleção por idioma esteja ativa.
+Os catálogos de habilidades são entradas de recuperação derivadas da pesquisa, não simples textos de interface. Os arquivos sem sufixo `meta_skills.json` e `micro_skills.json` continuam sendo os catálogos de origem. O carregador por idioma usa um arquivo lateral disponível para o idioma selecionado e mantém o catálogo de origem quando não existe arquivo localizado; catálogos localizados ausentes são registrados em log. A falta de tradução não é considerada tradução concluída.
 
-## Nomes dos arquivos por idioma
+## Cobertura estrutural atual
 
-Para um catálogo localizado, mantenha a mesma estrutura JSON e adicione o sufixo do idioma antes de `.json`:
+- Português brasileiro: 16 de 30 arquivos de catálogo; 1.233 de 5.158 registros.
+- Inglês: 8 de 30 arquivos de catálogo; 141 de 5.158 registros.
 
-- `meta_skills.en.json` / `micro_skills.en.json`
-- `meta_skills.pt-BR.json` / `micro_skills.pt-BR.json`
+Esses números descrevem somente a cobertura de arquivos/registros. Não comprovam qualidade da tradução, equivalência clínica, qualidade da recuperação ou paridade entre idiomas. O validador estrito continua apontando catálogos ausentes.
 
-A implementação local de carregamento por idioma está pendente. Não presuma que o carregador upstream seleciona esses arquivos por `output_language`. Se a seleção por idioma for aprovada no futuro, a cobertura deverá ser acompanhada por etapa e catálogo, com fallback explicitamente testado.
+## Nomes de arquivos e invariantes
 
-## Dados e invariantes dos embeddings
+Arquivos localizados mantêm a estrutura JSON e acrescentam o sufixo do idioma antes de `.json`, por exemplo `meta_skills.en.json` e `meta_skills.pt-BR.json`.
 
-- Mantenha as chaves do catálogo e os valores de `skill_id`, `parent_ids` e `sect` exatamente iguais aos dados de origem.
-- Traduza os campos legíveis por pessoas (`skill_name`, `skill_description`, `when_to_use` e `trigger`, quando presentes) sem alterar o sentido ou o escopo clínico da habilidade.
-- Não altere o cache de origem `micro_skills.pt` para armazenar texto traduzido ou embeddings traduzidos.
-- Os embeddings dependem do texto da habilidade e do modelo/provedor. Qualquer catálogo localizado futuro deverá usar seu próprio cache `micro_skills.<locale>.pt` e não poderá reutilizar embeddings do idioma de origem. A geração e invalidação desses caches ainda estão pendentes de integração e validação.
-- Não afirme que a recuperação de habilidades é equivalente entre idiomas sem avaliar sua qualidade.
-
-Catálogos sem arquivos localizados não são considerados traduzidos: usam o conteúdo de origem até que as traduções sejam revisadas e adicionadas.
+- Preserve exatamente as chaves do catálogo e os valores `skill_id`, `parent_ids` e `sect`.
+- Não modifique catálogos de origem nem traduza conteúdo clínico/de benchmark como limpeza incidental.
+- Campos legíveis por pessoas exigem proveniência/autorização verificadas e revisão adequada de tradução e conteúdo clínico antes de qualquer tradução ou uso adicional.
+- Embeddings dependem do texto do catálogo e do modelo/provedor. Um catálogo localizado não pode reutilizar embeddings do idioma de origem; qualquer cache por idioma exige geração e invalidação próprias, validadas.
+- Não afirme equivalência de recuperação entre idiomas sem avaliação específica.
 
 ## Validação
 
-O validador de locale é uma ferramenta local e não foi incluído neste candidato de integração. Se o trabalho de catálogo for aprovado e adicionado, execute o validador e uma avaliação de recuperação antes de habilitar a seleção por idioma.
+Execute `python scripts/validate_skill_catalog_locales.py --locale pt-BR --allow-missing` e o comando correspondente com `--locale en` para inspecionar a cobertura estrutural. O validador estrito falha enquanto houver catálogos ausentes. O validador não avalia qualidade da tradução nem validade clínica. Consulte [`../../LOCALIZATION.pt-BR.md`](../../LOCALIZATION.pt-BR.md) para o estado e as limitações atuais.

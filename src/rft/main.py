@@ -1,4 +1,4 @@
-"""CLI entrypoint for PsychAgent RFT workflows."""
+"""CLI entrypoint for PsicoIA RFT workflows."""
 
 from __future__ import annotations
 

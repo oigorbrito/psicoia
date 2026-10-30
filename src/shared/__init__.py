@@ -1,4 +1,4 @@
-"""Shared primitives used by multiple top-level modules in PsychAgent_v0402."""
+"""Shared primitives used by multiple PsicoIA modules."""
 
 from .config_utils import load_yaml_mapping
 from .file_utils import load_json_if_exists, project_root, resolve_path, safe_filename, write_json, write_json_atomic

@@ -1,17 +1,17 @@
 # PsicoIA
 
-**PsicoIA — migração local da base de pesquisa PsychAgent**
+**PsicoIA — projeto local de software baseado na pesquisa PsychAgent**
 
 [README em inglês](README.md)
 
-O PsicoIA é uma migração local da base de pesquisa PsychAgent, voltada ao aconselhamento psicológico por IA em múltiplas sessões. Esta migração preserva a proveniência upstream; a localização do software está em andamento e ainda não cobre todo o conteúdo.
+PsicoIA é a identidade canônica deste repositório de software local. Seu código de pesquisa para aconselhamento em múltiplas sessões deriva do projeto PsychAgent; atribuição upstream, referências acadêmicas, identificadores de compatibilidade e caminhos técnicos são preservados. A apresentação de software não clínico auditada está localizada em PT-BR e inglês; catálogos e conteúdo clínicos protegidos permanecem parciais e não são apresentados como validados.
 
 Artigo: [PDF](paper/PsychAgent.pdf) | [arXiv 2604.00931](https://arxiv.org/abs/2604.00931)
 Modelo: [ecnu-icalk/PsychAgent-Qwen3-32B](https://huggingface.co/ecnu-icalk/PsychAgent-Qwen3-32B)
 
 ## Visão geral
 
-Este repositório contém o trabalho local de migração do PsychAgent para PsicoIA. Ele inclui fluxos para:
+Este repositório é o projeto PsicoIA e contém um snapshot local de código baseado na base de pesquisa PsychAgent. Ele inclui fluxos para:
 
 - geração de diálogos em múltiplas sessões;
 - avaliação de métricas do lado do terapeuta e do cliente;
@@ -194,19 +194,7 @@ Fluxo de uso típico:
 4. inicie a sessão;
 5. encerre a sessão atual para continuar na próxima.
 
-Capturas de tela:
-
-#### Criar curso
-
-![Criar curso](paper/web/新建疗程.png)
-
-#### Trocar abordagem
-
-![Trocar abordagem](paper/web/切换流派.png)
-
-#### Visão da consulta
-
-![Visão da consulta](paper/web/咨询.png)
+As capturas mantidas em `paper/web/` são artefatos originais de pesquisa/demonstração upstream (incluindo os rótulos da interface de origem), não capturas da interface PsicoIA. Elas permanecem inalteradas por proveniência; nenhum logotipo ou ícone da aplicação foi substituído.
 
 ## Guia de configuração
 
@@ -231,7 +219,7 @@ O artigo de origem avalia o PsychAgent no benchmark `PsychEval`, com múltiplas 
 - O `PsychAgent` (Qwen3-32B) reporta `7.32 / 7.91 / 5.92 / 8.24` nas métricas compartilhada e específica do terapeuta e compartilhada e específica do cliente.
 - Em relação ao `Qwen3-Max`, os ganhos reportados são `+1.44 / +0.17 / +0.51 / +0.43`.
 - Em relação ao `TheraMind`, os ganhos reportados são `+1.07 / +0.97 / +0.44 / +0.41`.
-- Em 522 diálogos pareados, o PsychAgent ficou em primeiro lugar tanto nas avaliações humanas quanto na avaliação por LLM Gemini-3; o QWK entre avaliadores humanos foi `0.675`.
+- Na avaliação do artigo de origem com 522 diálogos pareados, o PsychAgent ficou em primeiro lugar tanto nas avaliações humanas quanto na avaliação por LLM Gemini-3; o QWK entre avaliadores humanos foi `0.675`.
 
 Recursos relacionados do artigo: [`paper/radar_v1.pdf`](paper/radar_v1.pdf), [`paper/trend.pdf`](paper/trend.pdf) e [`paper/fig_11_qwk_heatmap_abc.png`](paper/fig_11_qwk_heatmap_abc.png).
 

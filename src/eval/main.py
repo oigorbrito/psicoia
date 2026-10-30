@@ -1,4 +1,4 @@
-"""CLI entrypoint for PsychAgent eval workflows."""
+"""CLI entrypoint for PsicoIA evaluation workflows."""
 
 from __future__ import annotations
 

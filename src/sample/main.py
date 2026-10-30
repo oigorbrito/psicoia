@@ -1,4 +1,4 @@
-"""CLI entrypoint for the standalone PsychAgent sample framework."""
+"""CLI entrypoint for PsicoIA sample workflows based on PsychAgent research code."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Core evaluation orchestration for PsychAgent ``eval`` workflows."""
+"""Core evaluation orchestration for PsicoIA ``eval`` workflows."""
 
 from __future__ import annotations
 

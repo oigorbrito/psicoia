@@ -1,6 +1,6 @@
 # PsicoIA Web
 
-O PsicoIA Web é uma interface local de demonstração para o fluxo de pesquisa de múltiplas sessões do PsychAgent. A interface está disponível em português brasileiro e inglês; o seletor de idioma fica no canto superior direito e a seleção é salva neste navegador. O idioma selecionado também orienta respostas geradas quando o backend aceita o campo de idioma.
+O PsicoIA Web é uma interface local de demonstração para o fluxo de múltiplas sessões derivado do projeto de pesquisa PsychAgent. A interface está disponível em português brasileiro e inglês; o seletor de idioma fica no canto superior direito e a seleção é salva neste navegador. O idioma selecionado também orienta respostas geradas quando o backend aceita o campo de idioma. Esta localização de software não valida a qualidade linguística gerada nem o conteúdo clínico.
 
 [English](README.md)
 
@@ -13,23 +13,9 @@ O PsicoIA Web é uma interface local de demonstração para o fluxo de pesquisa 
 - Encerrar uma sessão e iniciar a próxima.
 - Concluir um curso.
 
-## Capturas de tela
+## Capturas de pesquisa upstream
 
-### Criar curso
-
-![Criar curso](../../paper/web/新建疗程.png)
-
-### Trocar abordagem
-
-![Trocar abordagem](../../paper/web/切换流派.png)
-
-### Visão da consulta
-
-![Visão da consulta](../../paper/web/咨询.png)
-
-### Sessão de acompanhamento
-
-![Sessão de acompanhamento](../../paper/web/第二次咨询.png)
+As imagens em `../../paper/web/` são artefatos originais de pesquisa/demonstração upstream, não capturas do PsicoIA Web. Elas preservam os rótulos da interface de origem e permanecem inalteradas por proveniência.
 
 ## Implantar o modelo terapeuta
 

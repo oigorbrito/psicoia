@@ -1,4 +1,4 @@
-"""Core building blocks for the PsychAgent standalone sample framework."""
+"""Core building blocks for PsicoIA sample workflows."""
 
 from .prompt_manager import PromptManager
 from .retry import RetryPolicy, RetryableError, FatalBackendError, retry_async

@@ -1,4 +1,4 @@
-"""Dataset loader following PsychAgent case-file contract."""
+"""Dataset loader following the original PsychAgent case-file compatibility contract."""
 
 from __future__ import annotations
 

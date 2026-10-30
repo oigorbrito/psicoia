@@ -25,14 +25,26 @@ python scripts/validate_skill_catalog_locales.py --locale pt-BR --allow-missing
 
 For a frontend production build, run `cd src/web && npm run build` after installing the frontend dependencies. Link checks should cover all localized Markdown guides. Keep command snippets, placeholders, JSON keys, and code fences equivalent across language versions.
 
-## Current audit snapshot
+## Prior audit snapshot (Blocks 14–15)
+
+For the updated Block 16 gate assessment, see the final section below.
 
 - Web UI: navigation, authentication, course/session flows, statuses, and mapped errors are localized; stage labels are displayed from stable IDs. Session-focus values and unknown strings retain their source content. Real Chromium exercised locale selection/persistence, registration, course creation, and message sending through a local synthetic API, including `output_language` mapping for PT-BR and English. Provider text was synthetic; model language quality was not evaluated.
 - API/CLI: authentication, operational errors, and validation retain status/response shape with PT-BR messages; OpenAPI field descriptions are also PT-BR. The sample/eval/RFT entrypoint help and OpenAPI title present PsicoIA without renaming modules, flags, or compatibility identifiers.
 - Prompts: final language instructions for generated responses/text were adjusted in authorized paths without translating source clinical prompts, recommendations, scales, or evaluation prompts.
 - Documentation: project and web guides are available in English and PT-BR; legacy `README_CN.md` keeps its path and points to the maintained guides. Academic attribution and PsychAgent references remain preserved.
 - Evaluation prompts: all 60 files under `prompts/eval/` contain Chinese text. They are used by scoring methods, so translating them is a behavior-sensitive project requiring score comparisons on a fixed evaluation set and schema checks.
-- Skill catalogs: local translation work reports PT-BR coverage of 16/30 catalogs and 1,233/5,158 records, and English coverage of 8/30 catalogs and 141/5,158 records. These translated catalogs are not included in this integration candidate; the counts describe structural coverage only and do not establish translation quality or retrieval equivalence.
+- Skill catalogs: localized sidecars are present and the locale-aware loader uses available files, but coverage remains PT-BR 16/30 catalogs and 1,233/5,158 records, and English 8/30 catalogs and 141/5,158 records. Missing catalogs use the source fallback and are logged. These counts describe structural coverage only and do not establish translation quality or retrieval equivalence.
 - Chinese text in Markdown image paths is retained because those strings are file paths; changing them without renaming the assets and updating references would break links.
 
-Localization remains partial: legacy domain/context values, unmapped strings, clinical content, all 60 evaluation prompts, and most catalog records remain outside scope. The integrated flow used only local synthetic responses; it does not validate model language quality, clinical equivalence, production readiness, or safety. See the Block 14 report for commands, limitations, and evidence states.
+Localization remains partial overall: protected clinical content, all 60 evaluation prompts, and most catalog records remain outside scope. The integrated flows used local synthetic responses; they do not validate model language quality, clinical equivalence, production readiness, or safety. See the Block 14/15 reports and [Block 16 result](PSICOIA_BLOCK16_RESULT.md) for evidence and limitations.
+
+## Block 16 independent gates
+
+- `IDENTITY_CANONICAL: PASS` — PsicoIA is the project/product identity on audited controlled presentation surfaces. PsychAgent remains only as source attribution, a research/model name, or compatibility-critical identifier. Original paper figures/screenshots remain unchanged and are labeled as upstream artifacts, not PsicoIA UI assets.
+- `SOFTWARE_LOCALIZATION: PASS` — audited non-clinical web, CLI, API error/metadata, launcher, and bilingual documentation surfaces are localized without changing routes, fields, enums, technical filenames, or environment-variable names. Protected/source content that remains visible is disclosed rather than presented as translated.
+- `CATALOG_TRANSLATION: GAP` — PT-BR 16/30 files (1,233/5,158 records); English 8/30 files (141/5,158 records). The strict validator still reports missing catalogs; no additional clinical/research catalog text was translated.
+- `CLINICAL_VALIDATION: NOT_RUN` — no professional clinical equivalence, safety, or model-language review was performed.
+- `REDISTRIBUTION_RIGHTS: UNKNOWN_EXTERNAL` — repository redistribution rights remain unverified; no legal determination or external rights confirmation was obtained.
+
+These gates are independent. No overall localization closure, clinical approval, production readiness, or redistribution permission is implied.

@@ -38,8 +38,8 @@ export no_proxy="${no_proxy:+$no_proxy,}${NO_PROXY_EXTRA}"
 # Required keys for the default baseline/runtime config.
 export SGLANG_API_KEY="${SGLANG_API_KEY:-EMPTY}"
 if [ -z "${PSYCHAGENT_EMBEDDING_API_KEY:-}" ]; then
-  echo "[ERRO] A variável PSYCHAGENT_EMBEDDING_API_KEY não está definida."
-  echo "[DICA] Defina a variável em ~/.zshrc ou em ${ENV_FILE}, por exemplo:"
+  echo "[ERRO] A inicialização do PsicoIA requer a variável PSYCHAGENT_EMBEDDING_API_KEY."
+  echo "[DICA] Configure a variável em ~/.zshrc ou em ${ENV_FILE}, por exemplo:"
   echo "       export PSYCHAGENT_EMBEDDING_API_KEY='your-key'"
   exit 1
 fi

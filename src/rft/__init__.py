@@ -1,4 +1,4 @@
-"""PsychAgent RFT module."""
+"""PsicoIA RFT module."""
 
 __all__ = ["RFTPsychAgentRunner", "RFTRuntimeConfig"]
 

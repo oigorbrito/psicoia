@@ -13,7 +13,7 @@ _SAFE_FILENAME_RE = re.compile(r"[^A-Za-z0-9._-]+")
 
 
 def project_root() -> Path:
-    """Return repository root for PsychAgent_v0402 (same level as src/)."""
+    """Return the PsicoIA repository root (same level as src/)."""
     return Path(__file__).resolve().parents[2]
 
 

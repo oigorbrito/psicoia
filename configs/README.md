@@ -24,11 +24,11 @@ A typical run reads:
 
 `runtime` controls execution, including `concurrency`, `resume`, `overwrite`, `save_dir`, `output_language`, client simulator settings (`client_*`), session and skill retrieval settings (`psychagent_*`), and embedding settings (`psychagent_embedding_*`).
 
-In this integration candidate, the upstream sample prompts/defaults remain Chinese. The local PT-BR/English response-language implementation is pending separate review and is not included. Do not treat the presence of `output_language` in config as proof that PT-BR localization is enabled.
+The runtime `output_language` defaults to `Português (Brasil)` and supports the existing `English` value. It supplies an approved language instruction for generated response text; it does not translate the protected source prompts, research/case assets, or skill catalogs, and it does not establish model language quality. See [`../LOCALIZATION.md`](../LOCALIZATION.md) for the current software/catalog gates.
 
 `dataset` selects cases using settings such as `root_data_path`, `supported_modalities`, `split`, `max_cases`, `max_cases_per_modality`, `case_selection_strategy`, and `filename_sort_policy`.
 
-Common changes: edit `baselines/*.yaml` to switch model services, the runtime YAML to adjust upstream execution settings, and `datasets/*.yaml` to switch or limit data. Changes to output-language behavior remain outside this literal-copy candidate.
+Common changes: edit `baselines/*.yaml` to switch model services, the runtime YAML to adjust execution settings, and `datasets/*.yaml` to switch or limit data. The approved output-language path is a documented exception to literal copying; do not use it as authorization to translate protected prompts or catalog content.
 
 ## `eval`
 

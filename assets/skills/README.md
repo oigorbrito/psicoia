@@ -1,26 +1,24 @@
-# PsychAgent skill catalog localization — planned, not enabled
+# Skill catalog locale status — partial and behavior-sensitive
 
-Skill catalogs live under `sect/<approach>/stageN/`. The unsuffixed `meta_skills.json` and `micro_skills.json` files remain the upstream source catalogs. In this integration candidate, the locale-aware loader and translated catalogs are not included; the conventions below describe pending work and do not imply active locale selection.
+The skill catalogs are research-derived retrieval inputs, not ordinary interface copy. The unsuffixed `meta_skills.json` and `micro_skills.json` files remain the source catalogs. The locale-aware loader uses an available sidecar for the selected language and retains the source catalog when a localized file is unavailable; missing localized catalogs are logged. A missing translation is not treated as a completed translation.
 
-## Locale file names
+## Current structural coverage
 
-For a localized catalog, use the same JSON structure and add the locale suffix before `.json`:
+- Brazilian Portuguese: 16 of 30 catalog files; 1,233 of 5,158 records.
+- English: 8 of 30 catalog files; 141 of 5,158 records.
 
-- `meta_skills.en.json` / `micro_skills.en.json`
-- `meta_skills.pt-BR.json` / `micro_skills.pt-BR.json`
+These counts describe file/record coverage only. They do not establish translation quality, clinical equivalence, retrieval quality, or locale parity. The strict locale validator continues to report missing catalogs.
 
-The local candidate implementation is pending. Do not assume the upstream loader selects these locale files based on `output_language`. If locale selection is approved later, coverage must be tracked per stage and catalog, with an explicitly tested fallback.
+## Locale file names and invariants
 
-## Data and embedding invariants
+Localized files use the same JSON structure with a locale suffix before `.json`, for example `meta_skills.en.json` and `meta_skills.pt-BR.json`.
 
-- Keep catalog keys, `skill_id`, `parent_ids`, and `sect` exactly equal to the source data.
-- Translate human-readable fields (`skill_name`, `skill_description`, `when_to_use`, and `trigger` where present) without changing the skill's meaning or clinical scope.
-- Do not edit the source-language `micro_skills.pt` cache to store translated text or translated embeddings.
-- Embeddings depend on the skill text and embedding model/provider. Any future localized catalog must use its own `micro_skills.<locale>.pt` cache and must not reuse source-language embeddings. Cache generation and invalidation behavior are pending integration and validation.
-- Do not claim retrieval equivalence across locales without evaluating retrieval quality.
-
-Catalogs without localized files are intentionally not considered localized; they fall back to the source content until their translations are reviewed and added.
+- Preserve catalog keys, `skill_id`, `parent_ids`, and `sect` exactly.
+- Do not modify source catalogs or translate benchmark/clinical content as incidental cleanup.
+- Localized human-readable fields require verified provenance/authorization and suitable translation and clinical review before additional translation or use.
+- Embeddings depend on the catalog text and model/provider. A localized catalog must not reuse source-language embeddings; any locale-specific cache requires its own validated generation and invalidation path.
+- Do not claim retrieval equivalence across locales without a separate retrieval evaluation.
 
 ## Validation
 
-The locale validator is local tooling and is not included in this integration candidate. If/when the catalog work is approved and added, run its validator and retrieval evaluation before enabling locale selection.
+Run `python scripts/validate_skill_catalog_locales.py --locale en --allow-missing` and the corresponding `--locale pt-BR` command to inspect structural coverage. The strict validator fails while catalogs are missing. This validator does not assess translation quality or clinical validity. See [`../../LOCALIZATION.md`](../../LOCALIZATION.md) for the current status and limitations.

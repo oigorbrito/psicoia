@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate localized PsychAgent skill catalogs against their source JSON."""
+"""Validate PsicoIA localized catalogs against the PsychAgent research-source JSON."""
 
 from __future__ import annotations
 

@@ -1,9 +1,9 @@
 # PsicoIA
 
-**PsicoIA — local migration of the PsychAgent research codebase**
+**PsicoIA — local software project based on the PsychAgent research codebase**
 
 <p align="center">
-  <a href="https://github.com/ECNU-ICALK/PsychAgent"><img src="https://img.shields.io/badge/Maintained%20By-ICALK-0A66C2" alt="Maintained By ICALK" /></a>
+  <a href="https://github.com/ECNU-ICALK/PsychAgent"><img src="https://img.shields.io/badge/Upstream%20Research-ICALK-0A66C2" alt="Upstream research: ICALK" /></a>
   <a href="https://arxiv.org/abs/2604.00931"><img src="https://img.shields.io/badge/arXiv-2604.00931-b31b1b.svg" alt="arXiv 2604.00931" /></a>
   <a href="https://github.com/ECNU-ICALK/PsychAgent"><img src="https://img.shields.io/badge/GitHub-ECNU--ICALK%2FPsychAgent-181717?logo=github" alt="GitHub ECNU-ICALK/PsychAgent" /></a>
   <a href="https://huggingface.co/ecnu-icalk/PsychAgent-Qwen3-32B"><img src="https://img.shields.io/badge/Hugging%20Face-PsychAgent--Qwen3--32B-FFD21E?logo=huggingface&logoColor=000" alt="Hugging Face PsychAgent-Qwen3-32B" /></a>
@@ -11,18 +11,20 @@
 
 Português (Brasil): [README.pt-BR.md](README.pt-BR.md)
 
-PsicoIA is the destination for the ongoing migration of the PsychAgent research codebase for multi-session AI psychological counseling. The goal is to preserve upstream code while localizing approved user-facing content; migration and localization are still in progress.
+PsicoIA is the canonical project identity for this local software repository. Its multi-session counseling research code is derived from the PsychAgent research project; upstream attribution, academic references, compatibility identifiers, and technical paths are retained. Audited non-clinical software presentation is localized in PT-BR and English; protected clinical catalogs and content remain partial and are not represented as validated.
 
 Paper: [PDF](paper/PsychAgent.pdf) | [arXiv 2604.00931](https://arxiv.org/abs/2604.00931)  
 Model: [ecnu-icalk/PsychAgent-Qwen3-32B](https://huggingface.co/ecnu-icalk/PsychAgent-Qwen3-32B)
 
+The figure below is an original artifact from the cited PsychAgent research paper. Its embedded source label is retained for academic attribution; it is not PsicoIA application artwork.
+
 <p align="center">
-  <img src="paper/Framework.png" alt="PsychAgent framework" width="88%">
+  <img src="paper/Framework.png" alt="Original PsychAgent research-paper framework figure; source label retained" width="88%">
 </p>
 
 ## Overview
 
-This repository contains the local PsicoIA migration work for the public PsychAgent research codebase. It includes pipelines for:
+This repository is the PsicoIA project and contains a local code snapshot based on the PsychAgent research codebase. It includes pipelines for:
 
 - multi-session dialogue generation
 - evaluation on counselor-side and client-side metrics
@@ -216,19 +218,7 @@ Typical usage flow:
 4. start the session
 5. close the current session and continue to the next
 
-Example UI screenshots:
-
-#### Create Course
-
-![Create course](paper/web/新建疗程.png)
-
-#### Switch School
-
-![Switch school](paper/web/切换流派.png)
-
-#### Consultation View
-
-![Consultation view](paper/web/咨询.png)
+The screenshots retained under `paper/web/` are original upstream research/demo artifacts (including their source UI labels), not screenshots of the PsicoIA interface. They remain unchanged for provenance; no application logo or icon was substituted.
 
 ## Configuration Guide
 
@@ -271,7 +261,7 @@ The source paper evaluates PsychAgent on the multi-session, multi-therapy `Psych
 - `PsychAgent` (Qwen3-32B) reports `7.32 / 7.91 / 5.92 / 8.24` on counselor-shared, counselor-specific, client-shared, and client-specific metrics.
 - Against `Qwen3-Max`, the reported gains are `+1.44 / +0.17 / +0.51 / +0.43`.
 - Against `TheraMind`, the reported gains are `+1.07 / +0.97 / +0.44 / +0.41`.
-- Across 522 matched dialogues, PsychAgent is ranked first by both human raters and the Gemini-3 LLM rater; human-human QWK is `0.675`.
+- In the source paper's evaluation of 522 matched dialogues, PsychAgent is ranked first by both human raters and the Gemini-3 LLM rater; human-human QWK is `0.675`.
 
 Related paper assets include [`paper/radar_v1.pdf`](paper/radar_v1.pdf), [`paper/trend.pdf`](paper/trend.pdf), and [`paper/fig_11_qwk_heatmap_abc.png`](paper/fig_11_qwk_heatmap_abc.png).
 

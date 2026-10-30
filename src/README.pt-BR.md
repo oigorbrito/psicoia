@@ -51,7 +51,7 @@ Os métodos de avaliação normalmente carregam prompts de pontuação em `promp
 Pontos de entrada: `rft/__main__.py` e `rft/main.py`.
 
 - `rft/main.py`: carrega as configurações baseline, runtime de sample, dataset e runtime de RFT.
-- `rft/runner.py`: estende `sample.runner.PsychAgentRunner` para adicionar rollouts e seleção por recompensa no nível da sessão.
+- `rft/runner.py`: estende a classe técnica de compatibilidade `sample.runner.PsychAgentRunner` para adicionar rollouts e seleção por recompensa no nível da sessão.
 - `rft/reward.py`: agrega recompensas e calcula pontuações.
 
 Compare `sample/runner.py` e `rft/runner.py` para entender os limites entre os dois módulos.

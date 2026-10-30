@@ -1,4 +1,4 @@
-"""PsychAgent evaluation module."""
+"""PsicoIA evaluation module."""
 
 __all__ = ["EvalRuntimeConfig", "EvaluationOrchestrator", "RewardEvaluator", "RewardEvaluationResult"]
 

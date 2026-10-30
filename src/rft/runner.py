@@ -136,7 +136,7 @@ class RFTPsychAgentRunner(PsychAgentRunner):
         modality_lower = case.modality.lower()
         models = MODALITY_MODELS.get(modality_lower)
         if not models:
-            raise RuntimeError(f"unsupported modality for psychagent_rft: {case.modality}")
+            raise RuntimeError(f"unsupported modality for PsicoIA RFT: {case.modality}")
 
         summary_model = models["summary"]
         profile_model = models["profile"]

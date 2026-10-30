@@ -51,7 +51,7 @@ Evaluation methods commonly load scoring prompts from `prompts/eval/` and reuse 
 Entry points: `rft/__main__.py` and `rft/main.py`.
 
 - `rft/main.py`: loads baseline, sample runtime, dataset, and RFT runtime.
-- `rft/runner.py`: extends `sample.runner.PsychAgentRunner` to add rollout and reward selection at the session level.
+- `rft/runner.py`: extends the technical compatibility class `sample.runner.PsychAgentRunner` to add rollout and reward selection at the session level.
 - `rft/reward.py`: aggregates rewards and computes scores.
 
 Compare `sample/runner.py` and `rft/runner.py` to understand their boundary.

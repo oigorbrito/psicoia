@@ -91,7 +91,7 @@ class PsychAgentRunner:
         async def _run_one(case: ClientCase) -> None:
             async with sem:
                 case_prefix = f"[case={case.case_id} modality={case.modality}]"
-                self._logger.info("%s psychagent start", case_prefix)
+                self._logger.info("%s PsicoIA run started", case_prefix)
                 try:
                     self._store.prepare_case_dir(
                         case.modality,
@@ -109,7 +109,7 @@ class PsychAgentRunner:
                     if course.finished:
                         async with lock:
                             result.succeeded += 1
-                        self._logger.info("%s psychagent succeeded", case_prefix)
+                        self._logger.info("%s PsicoIA run succeeded", case_prefix)
                     else:
                         async with lock:
                             if course.finished_reason == "failed_retries":
@@ -117,7 +117,7 @@ class PsychAgentRunner:
                             else:
                                 result.partially_completed += 1
                         self._logger.warning(
-                            "%s psychagent partial finished_reason=%s sessions=%s",
+                            "%s PsicoIA run partially completed finished_reason=%s sessions=%s",
                             case_prefix,
                             course.finished_reason,
                             course.num_sessions,
@@ -129,7 +129,7 @@ class PsychAgentRunner:
                 except Exception as exc:  # pragma: no cover - defensive
                     async with lock:
                         result.crashed += 1
-                    self._logger.exception("%s psychagent crashed: %r", case_prefix, exc)
+                    self._logger.exception("%s PsicoIA run crashed: %r", case_prefix, exc)
 
         await asyncio.gather(*[_run_one(case) for case in cases])
         return result
@@ -212,7 +212,7 @@ class PsychAgentRunner:
         modality_lower = case.modality.lower()
         models = MODALITY_MODELS.get(modality_lower)
         if not models:
-            raise RuntimeError(f"unsupported modality for psychagent: {case.modality}")
+            raise RuntimeError(f"unsupported modality for PsicoIA: {case.modality}")
 
         summary_model = models["summary"]
         profile_model = models["profile"]

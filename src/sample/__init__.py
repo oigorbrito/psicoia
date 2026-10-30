@@ -1,4 +1,4 @@
-"""PsychAgent sample package."""
+"""PsicoIA sample workflows derived from PsychAgent research code."""
 
 __all__ = ["PsychAgentRunner"]
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "PsychAgent evidence state",
+  "title": "PsicoIA project evidence state",
   "type": "object",
   "required": ["schema_version", "product_stage", "osps_baseline_version", "osps_target_level", "project_kind", "maintainers_count", "consistent_users", "release", "production_deployed", "notes", "enforce_local_gaps"],
   "properties": {

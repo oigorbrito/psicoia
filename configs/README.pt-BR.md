@@ -24,11 +24,11 @@ Uma execução típica lê:
 
 `runtime` controla a execução, incluindo `concurrency`, `resume`, `overwrite`, `save_dir`, `output_language`, configurações do simulador de clientes (`client_*`), configurações de sessão e recuperação de habilidades (`psychagent_*`) e configurações de embeddings (`psychagent_embedding_*`).
 
-Neste candidato de integração, os prompts e padrões upstream de `sample` permanecem em chinês. A implementação local de resposta nos idiomas PT-BR/inglês está pendente de revisão separada e não foi incluída. A presença de `output_language` na configuração não significa que a localização PT-BR esteja habilitada.
+O campo `output_language` do runtime usa `Português (Brasil)` por padrão e aceita o valor existente `English`. Ele fornece uma instrução de idioma autorizada para o texto de resposta gerado; não traduz prompts protegidos de origem, recursos de pesquisa/casos nem catálogos de habilidades, e não comprova a qualidade linguística do modelo. Consulte [`../LOCALIZATION.pt-BR.md`](../LOCALIZATION.pt-BR.md) para os estados atuais de software e catálogos.
 
 `dataset` seleciona os casos por meio de opções como `root_data_path`, `supported_modalities`, `split`, `max_cases`, `max_cases_per_modality`, `case_selection_strategy` e `filename_sort_policy`.
 
-Alterações comuns: edite `baselines/*.yaml` para trocar serviços de modelo, o YAML de runtime para ajustar a execução upstream e `datasets/*.yaml` para trocar ou limitar os dados. Mudanças no comportamento do idioma de saída permanecem fora deste candidato de cópia literal.
+Alterações comuns: edite `baselines/*.yaml` para trocar serviços de modelo, o YAML de runtime para ajustar a execução e `datasets/*.yaml` para trocar ou limitar os dados. O fluxo autorizado de idioma de saída é uma exceção documentada à cópia literal; não o use como autorização para traduzir prompts protegidos ou conteúdo de catálogos.
 
 ## `eval`
 

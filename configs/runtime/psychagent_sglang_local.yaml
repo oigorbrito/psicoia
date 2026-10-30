@@ -18,7 +18,7 @@ client_retry_sleep_sec: 1.0
 client_max_tokens: 512
 client_temperature: 0.7
 
-# PsychAgent session controls
+# PsicoIA session controls; preserve legacy-compatible key names
 psychagent_max_turns: 45
 psychagent_max_retries: 16
 psychagent_retry_sleep_sec: 1.0
