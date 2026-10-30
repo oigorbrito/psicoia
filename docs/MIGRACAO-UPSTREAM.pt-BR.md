@@ -63,6 +63,10 @@ Esta contagem é uma fotografia histórica da árvore fonte. Os 101 diffs já fo
 - O nome do projeto de destino é `psicoia`. A atribuição acadêmica, referências, identificadores técnicos e proveniência do PsychAgent upstream devem ser preservados; diferenças de nome não provam autoria ou licença.
 - A localização aprovada para conteúdo novo é PT-BR principal e inglês secundário. Não se declara que a localização do repositório esteja completa.
 
+## Atualização de proveniência — Block 17
+
+A consulta somente leitura de `upstream/main` em 2026-10-30 confirmou o mesmo SHA `469f45ef468b968b3fccd1936d7e6a0a574e4c5c`. A árvore contém 1.393 caminhos sem licença de código identificada; a branch `origin/main` remota observada é o template de evidências, não o snapshot PsychAgent. A classificação de arquivos, dependências, direitos pendentes e ausência de PR publicável está no [relatório Block 17](../PSICOIA_BLOCK17_PROVENANCE_RESULT.md). Os números/estados anteriores deste registro permanecem fotografias históricas, não autorizações.
+
 ## Próxima etapa segura
 
 1. Confirmar evidência de autoridade para licenciar sob MIT todo o conteúdo pretendido e informar titular/ano do aviso de copyright. Até isso, não criar `LICENSE`; o harness ainda reporta `GAP`.
