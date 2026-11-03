@@ -14,7 +14,7 @@ Use esta skill como orientação canônica para localização técnica. O idioma
 - Preserve exatamente identificadores, IDs, nomes de arquivos, APIs, schemas, campos, enums, dados, caminhos, comandos e attribution.
 - Preserve placeholders, inclusive `{{ ... }}` e `{% ... %}`, formatos JSON/XML, marcação, pontuação de controle e defaults.
 - Não traduza nomes técnicos, chaves serializadas, benchmarks, perfis, dados de pesquisa ou itens de instrumentos como limpeza incidental.
-- Separe localização própria, adaptação de material upstream, alteração de prompt comportamental, validação clínica e redistribuição conforme `docs/MIGRATION-POLICY.pt-BR.md`. Lacuna de redistribuição não é proibição técnica geral; trabalho local tampouco comprova direito de adaptação.
+- Use as definições de autorização operacional, direitos de adaptação, validação funcional, validação clínica e direitos de publicação em `docs/MIGRATION-POLICY.pt-BR.md`. Autorização operacional permite executar a tarefa, mas não concede direitos de terceiros; a falta de direitos de publicação não bloqueia automaticamente tradução local, e direitos de adaptação precisam cobrir o uso local concreto.
 
 ## Fluxo
 

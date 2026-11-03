@@ -13,7 +13,7 @@ Use esta skill para cópia, comparação ou alterações que toquem a migração
 - Preserve código, comportamento, caminhos, IDs e contratos da origem; não faça refatorações, correções ou atualizações incidentais.
 - Preserve avisos autorais e atribuição acadêmica. Use PsicoIA apenas como marca visível do produto de destino; não atribua o trabalho upstream ao PsicoIA.
 - Registre SHA/ref de origem e compare arquivos somente quando a tarefa copiar ou alterar material upstream ou tratar de proveniência. Não repita essa comparação/auditoria em localização de software próprio sem mudança de escopo.
-- Diferencie adaptação local de material upstream de publicação/redistribuição. A falta de autorização de distribuição não é uma proibição geral de trabalho local nem uma autorização para adaptar. Avalie a operação e o material concretos; preserve a origem quando a base aplicável não estiver estabelecida.
+- A solicitação operacional do responsável permite executar a tarefa, mas não concede direitos de adaptação ou de publicação. A falta de direitos de publicação não proíbe automaticamente o trabalho local; avalie os direitos de adaptação para o material, uso e escopo concretos e preserve a origem quando essa base não estiver estabelecida.
 - Prompts e catálogos podem alterar geração/recuperação; use regressões e avaliação apropriadas antes de integrar variantes. Revisão funcional não substitui validação clínica.
 - Não renomeie identificadores técnicos ou recursos para traduzir texto. Não apague arquivos ou histórico sem instrução explícita.
 
