@@ -26,7 +26,7 @@ def test_counselor_templates_receive_requested_language(language):
             suggested_skills=[],
             output_language=language,
         )
-        assert f"Respond in {language}" in rendered
+        assert f"Responda em {language} e fale com a pessoa atendida em primeira pessoa;" in rendered
         assert "{{ output_language }}" not in rendered
 
 
@@ -34,8 +34,8 @@ def test_language_directive_survives_missing_jinja(monkeypatch):
     monkeypatch.setattr(prompt_manager_module, "Template", None)
     manager = PsychAgentPromptManager(ROOT / "prompts" / "psychagent", "bt")
     rendered = manager.render("counselor_system", output_language="English")
-    assert "Respond in English" in rendered
-    assert "Respond in {{ output_language }}" not in rendered
+    assert "Responda em English e fale com a pessoa atendida em primeira pessoa;" in rendered
+    assert "Responda em {{ output_language }}" not in rendered
 
 
 def test_web_requests_accept_optional_supported_output_languages():

@@ -4,6 +4,7 @@ from sample.backends.dummy_backend import DummyBackend
 from sample.client.simulator import ClientSimulator
 from sample.core.language import output_language_instruction
 from sample.core.prompt_manager import PromptManager
+from sample.prompt_manager import PsychAgentPromptManager
 from sample.core.schemas import ClientCase, PublicMemory, RuntimeConfig
 from web.backend.localization import (
     DEFAULT_OUTPUT_LANGUAGE,
@@ -48,6 +49,32 @@ def test_sample_prompts_end_with_explicit_requested_output_language():
         output_language="English",
     )
     assert client_prompt.endswith(output_language_instruction("English", "client"))
+
+
+def test_counselor_prompt_language_directives_localize_without_changing_placeholders():
+    languages = ("Português (Brasil)", "English")
+    public_manager = PromptManager(Path("prompts"))
+
+    for language in languages:
+        public_prompt = public_manager.render_counselor_system(
+            modality="cbt",
+            session_index=1,
+            output_language=language,
+            end_token="</end>",
+            public_memory=PublicMemory(),
+        )
+        assert f"3. Responda em {language}." in public_prompt
+        assert "{{ output_language }}" not in public_prompt
+        assert "</end>" in public_prompt
+
+        for modality in ("bt", "cbt", "het", "pdt", "pmt"):
+            template_path = Path("prompts/psychagent") / modality / "counsel/system.jinja2"
+            source = template_path.read_text(encoding="utf-8")
+            assert source.count("{{ output_language }}") == 1
+            prompt_manager = PsychAgentPromptManager(Path("prompts/psychagent"), modality)
+            prompt = prompt_manager.render("counselor_system", output_language=language)
+            assert f"- Responda em {language} e fale com a pessoa atendida em primeira pessoa;" in prompt
+            assert "{{ output_language }}" not in prompt
 
 
 def test_simulated_outputs_follow_pt_br_default():
