@@ -7,6 +7,7 @@ Consulte também o [escopo e os limites do harness](HARNESS.md).
 Na raiz do worktree candidato:
 
 ```bash
+python scripts/check_localization.py
 python scripts/harness.py
 python -m pytest -q
 python -m pytest -q evidence-repo-template/tests/test_harness.py
@@ -15,7 +16,9 @@ python -m pytest -q evidence-repo-template/tests/test_harness.py
 
 `pytest.ini` limita a descoberta padrão aos testes do projeto em `tests/` e `src/web/tests/`; o template em `evidence-repo-template/` é executado separadamente para evitar colisão entre módulos chamados `test_harness`.
 
-Os testes web cobrem funções de domínio Python e helpers JavaScript puros. Eles não cobrem fluxos completos da API, componentes React, segurança de autenticação/CORS nem qualidade de localização. O validador de catálogos localizados continua fora do candidato enquanto proveniência, recuperação e qualidade linguística estiverem pendentes.
+Os testes web cobrem funções de domínio Python e helpers JavaScript puros. Eles não cobrem fluxos completos da API, componentes React, segurança de autenticação/CORS nem qualidade de localização. A exclusão do validador de catálogos de um candidato de distribuição enquanto proveniência, recuperação ou qualidade linguística estiverem pendentes não impede sua execução para validação técnica local.
+
+`python scripts/check_localization.py` executa os testes de localização, identidade, seleção de idioma e contratos funcionais; não executa o harness nem gates de release/distribuição. Execute `python scripts/harness.py` separadamente para os controles gerais do repositório.
 
 Um comando só pode ser relatado como aprovado se tiver sido executado na árvore de trabalho atual. Testes de estrutura não atestam qualidade de tradução, segurança clínica ou equivalência de recuperação.
 

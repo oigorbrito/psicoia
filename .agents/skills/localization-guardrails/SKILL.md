@@ -23,7 +23,7 @@ Preserve exactly unless the user explicitly requests otherwise:
 - Prompt variables/placeholders and their syntax, including Jinja expressions such as `{{ ... }}` and `{% ... %}`.
 - File paths, links, code samples, command-line examples, model names, citations, metrics, dataset values, and content used as machine-readable input.
 - Data in `assets/`, `data/`, and evaluation/scoring material unless the user explicitly includes a specific data-backed feature in scope. Never translate psychological instrument items, benchmark examples, or research data as incidental cleanup. For an explicitly approved skill-catalog localization with an applicable basis for use/adaptation, preserve machine identifiers and relationships (such as `skill_id`, `parent_ids`, and `sect`) exactly; localize only human-readable fields.
-- Distinguish local work from distribution: authorization to localize PsicoIA-authored interface/documentation does not establish rights to adapt upstream or third-party material. Lack of publication or a missing `LICENSE` is not permission; neither is it, by itself, a technical bar to independent local work. Do not publish/redistribute material with unresolved rights without sufficient authorization.
+- Keep local localization separate from distribution: task authorization covers only its approved software scope, not third-party rights. Follow `docs/MIGRATION-POLICY.pt-BR.md` for upstream adaptation and publication; do not repeat release-rights review for unchanged local software scope.
 - Existing defaults and control flow. Do not change response schemas, persistence, authentication, validation, or API error codes to accommodate translated wording.
 
 When uncertain whether a string is a contract or user-facing copy, leave it unchanged and flag it for clarification.
@@ -50,4 +50,4 @@ When uncertain whether a string is a contract or user-facing copy, leave it unch
 
 ## Completion report
 
-Summarize the scope and files changed, state that identifiers/contracts/data were preserved (only if verified), list validation performed and its outcome, and call out untranslated or ambiguous text left out of scope. Do not claim complete project localization unless the entire agreed scope was audited.
+Summarize effective changes and coverage, tests/results, regressions, and functional gaps. State that contracts/data were preserved only if verified, and identify untranslated or ambiguous in-scope text. Keep distribution/provenance notes separate and refer to the existing project record rather than repeating it. Do not claim complete localization unless the agreed scope was audited.
