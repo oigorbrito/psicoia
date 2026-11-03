@@ -30,10 +30,10 @@ test("school display labels are localized without changing stable ids", () => {
   assert.equal(getSchoolDisplayName(school, "en"), "Cognitive behavioral therapy (CBT)");
 });
 
-test("stable stage keys map to localized labels while unknown labels remain unchanged", () => {
-  const assessment = { key: "assessment", label: "评估阶段" };
-  assert.equal(getStageDisplayLabel(assessment, "pt-BR"), "Avaliação e definição de foco");
-  assert.equal(getStageDisplayLabel(assessment, "en"), "Assessment and focus setting");
+test("CJK stage data from the API renders through the stable PT-BR and EN stage keys", () => {
+  const assessmentFromApi = { key: "assessment", label: "\u4e2d\u6587", desc: "\u4e2d\u6587" };
+  assert.equal(getStageDisplayLabel(assessmentFromApi, "pt-BR"), "Avaliação e definição de foco");
+  assert.equal(getStageDisplayLabel(assessmentFromApi, "en"), "Assessment and focus setting");
   assert.equal(getStageDisplayLabel({ key: "legacy", label: "Legacy stage" }, "en"), "Legacy stage");
 });
 

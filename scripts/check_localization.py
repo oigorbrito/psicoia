@@ -23,6 +23,7 @@ PYTHON_TESTS = (
     "tests/test_skill_catalog_localization_validation.py",
     "tests/test_skill_manager_locale_retrieval.py",
     "src/web/tests/test_domain.py",
+    "tests/test_block20_session_opening_characterization.py",
 )
 
 

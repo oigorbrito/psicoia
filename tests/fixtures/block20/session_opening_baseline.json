@@ -1,0 +1,17 @@
+{
+  "scenario": "synthetic-create-visit-opening",
+  "visit_no": 1,
+  "planned_visit_count": 3,
+  "stage_key": "assessment",
+  "output_language": "Português (Brasil)",
+  "prompt_input_fields": ["school_id", "stage_key", "visit_no", "planned_visit_count"],
+  "prompt_sha256_utf8": "9d8348a80a1ceb04db4ee85e5060f0ae866f2a716111d253f399bcd686a9326d",
+  "retrieved_document_ids": [],
+  "context_session_focus_count": 7,
+  "seed_user_text": "Esta é a sessão 1\nFoco da sessão: foco sintético",
+  "synthetic_assistant_response": "Esta é uma resposta sintética em português brasileiro.",
+  "persisted_status": "open",
+  "persisted_message_count": 2,
+  "model_end_flag": false,
+  "failure_fallback_text": "Olá. Esta é a sessão 1. Sobre o que você gostaria de conversar hoje?"
+}
