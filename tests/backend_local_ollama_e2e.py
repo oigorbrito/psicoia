@@ -389,24 +389,31 @@ def main() -> None:
                     assert "{{ output_language }}" not in final_system
                     persisted.append({"visit_id": visit["visit_id"], "answer": answer, "locale": locale})
 
-                    # Retrieval dependency failure falls back to real local generation without context.
+                    # Retrieval failure must fail closed: do not generate without skill context or persist the user turn.
                     before_failure_count = result["visit"]["message_count"]
+                    chat_records_before_retrieval_failure = len(chat_proxy.records)
                     embedding_proxy.fail_next = 3
                     embedding_proxy.fail_match = None
-                    fallback_text = query + " synthetic-embedding-failure"
-                    fallback = expect(client.post(f"/visits/{visit['visit_id']}/messages", headers=auth, json={
-                        "text": fallback_text, "output_language": case["output_language"],
-                    }), 200, f"retrieval error fallback {locale}").json()
-                    assert fallback["visit"]["message_count"] == before_failure_count + 2
-                    fallback_request = next(
-                        record for record in reversed(chat_proxy.records)
+                    retrieval_failure_text = query + " synthetic-embedding-failure"
+                    retrieval_failure = client.post(f"/visits/{visit['visit_id']}/messages", headers=auth, json={
+                        "text": retrieval_failure_text, "output_language": case["output_language"],
+                    })
+                    expect(retrieval_failure, 502, f"retrieval failure fails closed {locale}")
+                    after_retrieval_failure = expect(
+                        client.get(f"/visits/{visit['visit_id']}", headers=auth), 200,
+                        f"state after retrieval failure {locale}",
+                    ).json()
+                    assert after_retrieval_failure["message_count"] == before_failure_count
+                    assert all(message["text"] != retrieval_failure_text for message in after_retrieval_failure["messages"])
+                    retrieval_failure_generations = [
+                        record for record in chat_proxy.records[chat_records_before_retrieval_failure:]
                         if record["path"].endswith("/chat/completions")
-                        and any(fallback_text in str(message.get("content", "")) for message in record.get("messages", []))
-                    )
-                    assert target_title not in fallback_request["messages"][0]["content"], "failed retrieval should not claim the target context was included"
+                        and any(retrieval_failure_text in str(message.get("content", "")) for message in record.get("messages", []))
+                    ]
+                    assert not retrieval_failure_generations, "retrieval failure must not generate without skill context"
 
                     # Provider outage through the loopback proxy: API must return 502 and roll back the user turn.
-                    count_before_generation_failure = fallback["visit"]["message_count"]
+                    count_before_generation_failure = after_retrieval_failure["message_count"]
                     failure_text = "provider-failure-canary synthetic request"
                     chat_proxy.fail_next = 4
                     chat_proxy.fail_match = failure_text
@@ -480,7 +487,7 @@ def main() -> None:
             print("LIMIT: embedding vectors use mean pooling on a general Phi model; results are synthetic-fixture evidence only, not embedding-model quality or clinical validation.")
             print("SUBTEST FAILURES:", json.dumps(failures, ensure_ascii=False))
             if failures:
-                print("PARTIAL: local generation, vector retrieval, fallback, rollback, and persistence ran; language/context criteria failed.")
+                print("PARTIAL: local generation, vector retrieval, fail-closed rollback, and persistence ran; language/context criteria failed.")
                 raise SystemExit(1)
             print("PASS: all local synthetic-fixture subtests completed.")
         finally:
