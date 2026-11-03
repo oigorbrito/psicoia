@@ -9,9 +9,9 @@ O nome canônico de apresentação do projeto de destino é **PsicoIA**; o slug 
 ## Alterações permitidas
 
 1. Copiar os arquivos de código upstream sem modificações funcionais.
-2. Traduzir prosa chinesa destinada a pessoas usuárias ou documentação aprovada para PT-BR (principal) e inglês (secundário), mantendo equivalência de sentido e segurança.
+2. Localizar, em PT-BR (principal) e inglês (secundário), a interface, a documentação e a prosa operacional própria da PsicoIA no escopo explicitamente autorizado para este trabalho, preservando sentido, comportamento e contratos.
 3. Atualizar o nome visível do produto para PsicoIA apenas em texto de apresentação, interface e documentação.
-4. Adicionar recursos de tradução isolados quando necessários, sem alterar lógica; qualquer mecanismo novo requer aprovação explícita e testes.
+4. Adicionar recursos de tradução isolados quando necessários, sem alterar lógica; qualquer mecanismo novo requer aprovação explícita e testes. A ausência de `LICENSE` reportada pelo harness não impede, isoladamente, tarefas locais independentes e não concede direitos de adaptação ou redistribuição.
 5. Alterar links de marca/documentação somente para apontar para recursos válidos do destino, preservando as referências upstream e citações acadêmicas.
 
 ## Alterações proibidas no escopo da migração
@@ -19,8 +19,15 @@ O nome canônico de apresentação do projeto de destino é **PsicoIA**; o slug 
 - Alterar lógica, fluxo de controle, comportamento, APIs, esquemas, assinaturas, dependências, algoritmos ou dados.
 - Renomear módulos, arquivos, diretórios, classes, funções, variáveis, imports, rotas, flags, variáveis de ambiente, chaves serializadas ou identificadores de modelo por substituição global de nome.
 - Corrigir bugs, modernizar, reorganizar, formatar ou otimizar código incidentalmente.
-- Traduzir benchmarks, perfis, itens de instrumentos clínicos, resultados ou outros dados de pesquisa como parte da migração.
-- Substituir prompts comportamentais ou textos usados em recuperação sem aprovação e avaliação específicas.
+- Traduzir benchmarks, perfis, itens de instrumentos clínicos, resultados ou outros dados de pesquisa como parte da migração, salvo escopo separado com base aplicável de uso/adaptação, revisão de direitos e validação especializada adequada.
+- Integrar traduções de prompts comportamentais ou textos usados em recuperação sem testes de regressão e avaliação dos efeitos funcionais. Preservar o original e não alegar equivalência comportamental sem evidência.
+
+## Separação entre localização, validação e direitos
+
+- A localização local autorizada de interface, documentação e prosa operacional própria da PsicoIA é distinta da tradução de material upstream. Uma autorização de tarefa para localizar conteúdo próprio não concede direitos sobre material upstream, de terceiros ou protegido.
+- Traduções locais experimentais de material upstream exigem uma base aplicável para uso ou adaptação; não se presume permissão pela ausência de publicação, pela ausência de `LICENSE` ou pelo fato de a cópia permanecer local. Quando essa base não estiver estabelecida, mantenha o material sem tradução e registre a pendência.
+- Conteúdo de proveniência/direitos incertos não pode ser publicado ou redistribuído sem autorização suficiente. Esse gate de publicação não bloqueia, por si só, trabalho local independente com conteúdo próprio autorizado.
+- Validação funcional de prompts/recuperação não substitui revisão clínica. Instrumentos clínicos, escalas padronizadas e demais materiais protegidos exigem revisão de direitos e validação especializada antes da integração.
 
 Identificadores ou nomes técnicos que contenham `PsychAgent` permanecem inalterados se a substituição puder quebrar compatibilidade ou proveniência. Qualquer exceção que modifique código precisa de autorização explícita, justificativa separada, diff isolado e testes; não deve ser apresentada como cópia literal.
 

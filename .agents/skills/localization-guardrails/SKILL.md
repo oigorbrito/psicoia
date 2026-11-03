@@ -6,7 +6,7 @@ compatibility: Requires repository access; frontend validation may require Node.
 
 # Localization guardrails for PsychAgent
 
-Perform conservative localization only. The repository's source code, identifiers, interfaces, and runtime behavior are not translation targets. Do not use localization as an opportunity to refactor, improve, rename, or redesign the application.
+Perform conservative localization only. User-facing strings in the interface, documentation, and operational prose created for PsicoIA may be localized when explicitly in scope; source code, identifiers, API contracts, persistence, and runtime behavior are not translation targets. Do not use localization as an opportunity to refactor, improve, rename, or redesign the application.
 
 ## Before editing
 
@@ -22,7 +22,8 @@ Preserve exactly unless the user explicitly requests otherwise:
 - Python/JavaScript identifiers, filenames, module names, imports, CLI flags, environment-variable names, URLs, API routes, JSON/YAML keys, database fields, enum values, and serialized values.
 - Prompt variables/placeholders and their syntax, including Jinja expressions such as `{{ ... }}` and `{% ... %}`.
 - File paths, links, code samples, command-line examples, model names, citations, metrics, dataset values, and content used as machine-readable input.
-- Data in `assets/`, `data/`, and evaluation/scoring material unless the user explicitly includes a specific data-backed feature in scope. Never translate psychological instrument items, benchmark examples, or research data as incidental cleanup. For an explicitly approved skill-catalog localization, preserve machine identifiers and relationships (such as `skill_id`, `parent_ids`, and `sect`) exactly; localize only human-readable fields.
+- Data in `assets/`, `data/`, and evaluation/scoring material unless the user explicitly includes a specific data-backed feature in scope. Never translate psychological instrument items, benchmark examples, or research data as incidental cleanup. For an explicitly approved skill-catalog localization with an applicable basis for use/adaptation, preserve machine identifiers and relationships (such as `skill_id`, `parent_ids`, and `sect`) exactly; localize only human-readable fields.
+- Distinguish local work from distribution: authorization to localize PsicoIA-authored interface/documentation does not establish rights to adapt upstream or third-party material. Lack of publication or a missing `LICENSE` is not permission; neither is it, by itself, a technical bar to independent local work. Do not publish/redistribute material with unresolved rights without sufficient authorization.
 - Existing defaults and control flow. Do not change response schemas, persistence, authentication, validation, or API error codes to accommodate translated wording.
 
 When uncertain whether a string is a contract or user-facing copy, leave it unchanged and flag it for clarification.
@@ -35,8 +36,9 @@ When uncertain whether a string is a contract or user-facing copy, leave it unch
 - Keep the meaning, safety qualifiers, level of certainty, and clinical boundaries of the original. Never turn informational or research content into diagnosis, treatment advice, promises, or crisis guidance beyond the source.
 - Use consistent terminology within the requested scope. Prefer clear, respectful, neutral language; avoid stigmatizing descriptions. Preserve placeholders and punctuation needed for interpolation.
 - If adding locale resources, keep stable keys separate from translated values, ensure both locales provide the same required keys, and retain existing fallback/default behavior. Do not add a dependency or localization framework unless the user authorizes that implementation choice.
-- Do not claim translated prompts preserve model behavior without testing. Prompt translation can affect outputs; treat it as a separately scoped, behavior-sensitive change.
-- Skill-catalog localization is also behavior-sensitive: retrieval text contributes to embeddings. Never reuse embeddings generated from source-language text for translated text. Use language-specific embedding caches or regenerate and validate embeddings for each locale; do not overwrite the source-language cache.
+- Prompt localization is behavior-sensitive: before integration, preserve the source, validate placeholders/output contracts, run regression tests on a fixed set, and assess functional effects. Do not claim behavioral equivalence without evidence.
+- Skill-catalog localization is behavior-sensitive: retrieval text contributes to embeddings. Establish a basis for adapting the source material, never reuse embeddings generated from source-language text for translated text, and use locale-specific caches or regenerate and validate embeddings and retrieval for each locale; do not overwrite the source-language cache.
+- Standardized clinical instruments, scales, and protected clinical materials require rights review and specialist validation. Functional regression does not constitute clinical validation.
 
 ## Safe workflow
 
