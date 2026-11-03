@@ -82,7 +82,13 @@ def test_synthetic_opening_flow_matches_frozen_original_baseline():
             BASELINE["planned_visit_count"],
         )
         prompt_digest = hashlib.sha256(baseline_prompt.encode("utf-8")).hexdigest()
+        stage_digest = hashlib.sha256(
+            f"{state.stage.label}\0{state.stage.desc}".encode("utf-8")
+        ).hexdigest()
+        marker_count = baseline_prompt.count("{{") + baseline_prompt.count("{%")
         assert prompt_digest == BASELINE["prompt_sha256_utf8"]
+        assert stage_digest == BASELINE["stage_metadata_sha256_utf8"]
+        assert marker_count == BASELINE["unrendered_template_marker_count"]
         assert captured["history"][0]["content"] == baseline_prompt
         assert captured["history"][1]["content"] == BASELINE["seed_user_text"]
         assert captured["stage_key"] == state.stage.key == BASELINE["stage_key"]

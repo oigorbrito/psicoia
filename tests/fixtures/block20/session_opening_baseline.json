@@ -6,6 +6,8 @@
   "output_language": "Português (Brasil)",
   "prompt_input_fields": ["school_id", "stage_key", "visit_no", "planned_visit_count"],
   "prompt_sha256_utf8": "9d8348a80a1ceb04db4ee85e5060f0ae866f2a716111d253f399bcd686a9326d",
+  "unrendered_template_marker_count": 0,
+  "stage_metadata_sha256_utf8": "a98e22dfc0d74da0c4f513609000969a8c4a68b74e59dfc0130eed0d20efaf2e",
   "retrieved_document_ids": [],
   "context_session_focus_count": 7,
   "seed_user_text": "Esta é a sessão 1\nFoco da sessão: foco sintético",
