@@ -33,12 +33,13 @@ O pytest era executado na raiz e encontrava `pytest.ini`, mas a configuração s
 - `python -m pytest -q tests/test_localized_documentation.py tests/test_output_language_localization.py tests/test_skill_catalog_locale_loading.py tests/test_skill_catalog_localization_validation.py tests/test_skill_manager_locale_retrieval.py tests/test_web_output_language.py` — **30 passed**, sem `PYTHONPATH` manual.
 - `python -m pytest -q` — **56 passed**.
 - `cd src/web && npm test` — **6 passed**.
-- `cd src/web && npm run build` — **falhou**: `vite` não foi reconhecido. A dependência local do build não está disponível neste worktree; não houve instalação de dependências.
+- `cd src/web && npm ci --offline --no-audit --no-fund` — instalou 64 pacotes do lockfile usando cache local; sem acesso à rede e sem alteração de arquivos versionados. `node_modules`/`dist` são ignorados pelo Git.
+- `cd src/web && npm run build` — **passou**, Vite 5.4.21 transformou 1.603 módulos. A advertência do npm sobre script opcional do esbuild não impediu o build.
 - `python scripts/harness.py` — checks locais de arquivos passaram; licença reconhecida `GAP`; controles externos `UNKNOWN_EXTERNAL`. Não é auditoria e não executa os testes.
 - Validadores com `--allow-missing`: PT-BR 16/30, 1.233/5.158; EN 8/30, 141/5.158.
 - `git diff --check` — passou.
-- Navegador e fluxo HTTP/API ao vivo: não executados neste bloco. Os resultados históricos do Bloco 16 registram validações direcionadas; não são apresentados como execução atual.
+- Validação local HTTP/OpenAPI + Chromium headless, com SQLite temporário e provedor/embeddings sintéticos, executada a partir de uma cópia temporária do harness do Bloco 15, apontada para este worktree. Passou: título de API PsicoIA, enum `output_language` preservado, PT-BR/EN, persistência de idioma após reload, autenticação e erro localizado, criação de percurso, rótulos de etapa, envio no idioma escolhido, disclosure CJK e limite do seletor em viewport 390×844. O harness antigo tinha seletores textuais ambíguos/inadequados para os headings atuais; a cópia temporária usou seletores de heading. Primeira tentativa falhou nesses seletores, sem evidência de defeito na aplicação; a execução corrigida passou. Script temporário: `D:/temp/psicoia-block18-browser-validation.py`; não foi adicionado ao repositório. Limite: provedor sintético; nenhuma validação clínica/linguística de modelo.
 
 ## Pendências e fechamento
 
-`CLOSED` não é apropriado: embora a coleta de testes funcione e a suíte passe, este bloco não demonstrou que todos os textos do escopo próprio estejam cobertos, não acrescentou novas traduções e não executou build/navegador/API ao vivo nesta árvore. Permanecem pendentes a confirmação de titularidade/proveniência por componente, conteúdo upstream e de terceiros, catálogos/prompts protegidos e disponibilidade de Vite para build. Nenhum push, PR, merge ou publicação foi feito.
+`CLOSED` não é apropriado: a coleta de testes, build, fluxo HTTP/OpenAPI e cenário Chromium passaram, mas este bloco não acrescentou traduções e não demonstrou que todos os textos do escopo próprio estejam cobertos. Permanecem pendentes a confirmação de titularidade/proveniência por componente, conteúdo upstream e de terceiros e catálogos/prompts protegidos. Nenhum push, PR, merge ou publicação foi feito.
