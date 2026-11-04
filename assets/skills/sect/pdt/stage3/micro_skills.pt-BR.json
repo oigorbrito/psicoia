@@ -1,0 +1,1222 @@
+{
+  "1162": {
+    "skill_id": "1162",
+    "skill_name": "Verificar a melhoria dos sintomas centrais como estado mental e ansiedade",
+    "skill_description": "Antes de tomar uma decisão, perguntar e resumir o estado atual e a trajetória de mudanças do estado de espírito, ansiedade e humor persistentemente negativo do paciente, e confirmar se esses sintomas centrais melhoraram substancialmente com o tratamento.",
+    "when_to_use": "Usado na avaliação e discussão de consolidação de objetivos na fase final para determinar se as condições de término estão preenchidas.",
+    "trigger": "O paciente relatou \"me sinto melhor\", relatou diminuição da ansiedade ou estabilidade emocional, ou propôs reduzir a frequência/encerrar.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1149",
+      "1162"
+    ]
+  },
+  "1163": {
+    "skill_id": "1163",
+    "skill_name": "Comparar a melhoria dos sintomas com mudanças mais amplas",
+    "skill_description": "Quando os sintomas melhorarem, verificar se também ocorrem mudanças mais profundas como consciência de si, interpessoais e adaptativas; evitar interromper precipitadamente apenas com base na melhora dos sintomas.",
+    "when_to_use": "Na discussão de decisões de término feitas pelo paciente devido à melhora dos sintomas, ou quando o tratamento está próximo do término.",
+    "trigger": "O paciente enfatiza que \"está quase bom quando os sintomas melhoram\", atribui o progresso apenas à redução do desconforto, ou evita tópicos mais profundos.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1149",
+      "1163"
+    ]
+  },
+  "1164": {
+    "skill_id": "1164",
+    "skill_name": "Identificar e normalizar sintomas de declínio terminal",
+    "skill_description": "Anticipar e reconhecer o breve retorno de sintomas ou padrões de relacionamento antigos na fase final, considerá-los como regressão faseada em vez de negação de todo o progresso, para evitar anular a preparação para a terminação por má interpretação.",
+    "when_to_use": "Na escuta e avaliação no período de término, quando surgem sintomas antigos ou reações antigas, usar para interpretar corretamente o estado do paciente e a prontidão para o término.",
+    "trigger": "Recorrência breve dos sintomas prévios do paciente, atraso novamente, reavaliação de faturas/política de cancelamento, ou sentimento súbito de raiva e dúvida em relação ao terapeuta.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1149",
+      "1164"
+    ]
+  },
+  "1165": {
+    "skill_id": "1165",
+    "skill_name": "Discuss the possibility of reverting to old methods and repeat testing options",
+    "skill_description": "Comunicar aos visitantes a realidade de que os \"métodos antigos\" podem brevemente retornar sob pressão no futuro, e explicar que visitas de curto prazo podem ser feitas quando necessário para consolidar e corrigir, apoiando a manutenção e a prevenção de recaída.",
+    "when_to_use": "Na fase de resumo e despedida das últimas reuniões, para consolidar ganhos e planejar o futuro.",
+    "trigger": "O paciente expressa preocupação com a manutenção futura, pergunta sobre formas de apoio após a consulta, ou sente-se inquieto por não haver escuta após a despedida.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1149",
+      "1165"
+    ]
+  },
+  "1172": {
+    "skill_id": "1172",
+    "skill_name": "Investigating return attribution and internalization degree",
+    "skill_description": "Guiding the client to review changes and explain their reasons, observing whether they view the benefit as the result of their own ability and choice, rather than 'happening randomly during therapy' or originating from the therapist, to determine if autonomy is increasing and if the time for termination is approaching.",
+    "when_to_use": "Durante a consolidação e avaliação dos objetivos na fase final, ao discutir se interromper ou elaborar um plano de conclusão; quando o paciente estiver estável e disposto a revisar os ganhos do tratamento.",
+    "trigger": "O paciente atribui a mudança ao tratamento ou ao terapeuta; pouca ênfase no esforço pessoal ao falar sobre progresso, ou incerteza sobre 'sem tratamento não haverá manutenção'.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1172"
+    ]
+  },
+  "1173": {
+    "skill_id": "1173",
+    "skill_name": "Identificar e explorar a ilusão de 'perda de benefício sem tratamento'",
+    "skill_description": "Directly ask the client their view on whether the benefits after stopping treatment will disappear, clarify their underlying concerns about dependence and separation, and assess their level of psychological dependence on the therapist's presence and readiness for termination.",
+    "when_to_use": "Na avaliação da independência e na discussão dos arranjos de término na fase final, especialmente ao lidar com pacientes frágeis ou com forte dependência, é necessário identificar a influência das fantasias de dependência nas decisões.",
+    "trigger": "A concern that the client will regress or 'needs a therapist present' to maintain change after expressing cessation; strong hesitation and anxiety about termination.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1173"
+    ]
+  },
+  "1174": {
+    "skill_id": "1174",
+    "skill_name": "Negociação decrescente ou intermitente para testar a capacidade de manutenção",
+    "skill_description": "De acordo com a necessidade de conclusão, gradualmente aumentar o intervalo das sessões ou organizar intervalos programados, observar se os sintomas, emoções e funcionamento do visitante se estabilizam com menor suporte, para avaliar empiricamente se ele pode manter a melhoria sem suporte de tratamento contínuo.",
+    "when_to_use": "Quando o visitante já apresentou melhora, mas ainda há preocupação com a interrupção, ou quando o terapeuta precisa verificar a capacidade de manutenção independente; ao elaborar o plano de transição e término na fase final.",
+    "trigger": "O paciente hesita entre 'terminar/continuar', ou expressa apreensão em relação à parada total; o terapeuta teme que ainda precise de suporte estável para manter a função.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1174"
+    ]
+  },
+  "1209": {
+    "skill_id": "1209",
+    "skill_name": "Definir canais claros para retorno e reavaliação",
+    "skill_description": "Comunicar claramente aos visitantes que \"a porta está aberta\", explicando que podem retornar para \"reavaliações\" de curto prazo quando sentirem pressão ou excitação no futuro, e agendar várias reuniões de acompanhamento se necessário, garantindo que haja caminhos de suporte acessíveis após a interrupção.",
+    "when_to_use": "Próximas ou últimas sessões de entrevista; quando o término bilateral ou unilateral está próximo, é necessário consolidar os ganhos e entregar as formas de suporte após o término.",
+    "trigger": "O paciente perguntou se ainda poderia se encontrar após a interrupção, temia não ter ninguém para pedir ajuda, ou solicitou a interrupção unilateralmente, mas ainda manifestou ansiedade e conflito de apego.",
+    "parent_ids": [
+      "1147",
+      "1161",
+      "1209"
+    ]
+  },
+  "1210": {
+    "skill_id": "1210",
+    "skill_name": "Previsão de pressão futura e possível retorno ao modo antigo",
+    "skill_description": "Em finalizar a conversa, apontar realisticamente que situações de estresse ainda podem ocorrer e que os \"métodos antigos\" podem ressurgir, normalizar a previsibilidade disso, conectá-lo com a compreensão e as mudanças já obtidas, e sugerir que pode ser necessário retornar para calibrar.",
+    "when_to_use": "Resumo da fase final e antes da despedida; quando o paciente revisa as mudanças e discute os planos futuros, é necessário consolidar os ganhos e fazer a transição para o autocuidado.",
+    "trigger": "O paciente expressa contradições e solidão sobre a despedida (como sonhos relacionados), ansiedade e dúvidas sobre como lidar com o futuro ou a preocupação de que \"o problema antigo voltará\".",
+    "parent_ids": [
+      "1147",
+      "1161",
+      "1210"
+    ]
+  },
+  "1211": {
+    "skill_id": "1211",
+    "skill_name": "Organizar acompanhamento médico ou fixo após a interrupção (quando aplicável)",
+    "skill_description": "Para gestores de medicamentos, esclarecer que exames médicos podem ser realizados mensalmente mesmo após a rescisão formal; ao mesmo tempo, explicar a escolha dos canais e frequência de reavaliação, garantindo o monitoramento e suporte de segurança necessários fora da rescisão.",
+    "when_to_use": "O paciente está em uso de medicação e necessita de manejo médico contínuo; ou a avaliação clínica considera que ainda são necessários monitoramento e suporte fixos mínimos após a interrupção.",
+    "trigger": "O paciente está em tratamento medicamentoso, preocupado com problemas fisiológicos ou de medicação, ou propôs ativamente um arranjo para exames e acompanhamento regulares.",
+    "parent_ids": [
+      "1147",
+      "1161",
+      "1211"
+    ]
+  },
+  "1166": {
+    "skill_id": "1166",
+    "skill_name": "Guiar a revisão e marcar as mudanças específicas",
+    "skill_description": "Durante a fase de término, relaxar moderadamente e manter a neutralidade, guiar o cliente a revisar o tratamento, apontar maneiras diferentes de ver ou lidar com as coisas em comparação com o passado, e juntos organizar a formação dessas mudanças, para consolidar e avaliar o aumento da autoconsciência e adaptabilidade.",
+    "when_to_use": "Durante a fase de consolidação e avaliação do estágio final, quando a aliança está estável e próxima do término, é necessário resumir as mudanças e revisar a função própria.",
+    "trigger": "O relato do paciente sobre o manejo em situações sociais ou de conflito recentemente é diferente do habitual, ou expressa \"Eu sinto que houve uma mudança aqui\".",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1166"
+    ]
+  },
+  "1167": {
+    "skill_id": "1167",
+    "skill_name": "Terminar a conexão entre emoção e sonho e solicitar associação",
+    "skill_description": "Para emoções, sonhos ou metáforas que aparecem no período de término, primeiro solicitar a associação para confirmar seu significado, depois explicitá-lo em relação ao término, para examinar a capacidade de reflexão e verificação da realidade, e priorizar a compreensão do material a partir da \"lente do término\".",
+    "when_to_use": "Quando novas emoções, sonhos ou metáforas surgem na fase de término, a capacidade de autoconsciência e reflexão do cliente deve ser avaliada.",
+    "trigger": "O paciente relata a sensação de \"como se estivesse caindo de um penhasco\", ou sonhos e associações sobre temas como despedida e estar sozinho.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1167"
+    ]
+  },
+  "1168": {
+    "skill_id": "1168",
+    "skill_name": "Investigate the experience of moving forward alone to assess independence",
+    "skill_description": "Nomear e explorar a excitação e a ansiedade sobre 'seguir em frente sozinho após o tratamento', associando-as ao término, avaliar o processamento da dependência e da autonomia, para determinar a prontidão para mudanças na independência e auto-responsabilidade.",
+    "when_to_use": "Decidir interromper imediatamente, quando o visitante discute a vida, planos ou preocupações e expectativas sobre a solidão após o término.",
+    "trigger": "O paciente sonhou em realizar uma jornada sozinho (como ir sozinho a Marte) e apresentou excitação e ansiedade coexistentes, ou expressou o desejo de 'tentar por conta própria'.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1168"
+    ]
+  },
+  "1169": {
+    "skill_id": "1169",
+    "skill_name": "Avaliar a função de trabalho e lazer e a realidade das expectativas",
+    "skill_description": "Resumir as mudanças funcionais em negociações finais sobre trabalho, relacionamentos e lazer, apontar os progressos representativos e apresentar a expectativa realista de futuras pressões e o retorno do modelo antigo, para consolidar a melhoria funcional e a autoeficácia.",
+    "when_to_use": "Na fase de resumo e despedida das últimas duas reuniões, é necessário avaliar sinceramente as mudanças e o plano para o futuro.",
+    "trigger": "O paciente relata melhorias em situações de trabalho, interpessoais ou sociais, ou pergunta a opinião do terapeuta sobre os resultados gerais e desafios futuros.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1169"
+    ]
+  },
+  "1170": {
+    "skill_id": "1170",
+    "skill_name": "Avaliação realista da autopercepção e das limitações de talento",
+    "skill_description": "Combinando o histórico de tratamento, esclarecer a melhoria na autopercepção do paciente e a avaliação mais estável e realista de seus talentos/limitações, reforçando a confiança e a consistência do self, como um sinal de término maduro e melhoria da função do self.",
+    "when_to_use": "Para consolidar os indicadores de função do self durante a fase de \"mudança na avaliação sincera\" e \"opinião sobre a terapia de comunicação\".",
+    "trigger": "O paciente expressa uma nova compreensão de si mesmo, diminuição da idealização ou depreciação, ou busca ativa pelo feedback do terapeuta sobre suas mudanças totais.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1170"
+    ]
+  },
+  "1171": {
+    "skill_id": "1171",
+    "skill_name": "Adaptação e flexibilidade da defesa da avaliação de regressão por empréstimo",
+    "skill_description": "Regression of expected termination and old symptoms/repetition of transference, first consider them as phase characteristics and explore the underlying fantasies and emotions, assess whether they can be regulated by more adaptive and flexible defenses and reflections.",
+    "when_to_use": "Quando os antigos padrões retornam, como atrasos, regras controversas, raiva ou ciúmes, usar para avaliação funcional em vez de negação precipitada do término.",
+    "trigger": "O paciente questiona novamente a preocupação do terapeuta, a ciúme ou raiva direcionada a outros, ou a reincidência de discussões de regras e comportamentos de evitação precoces.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1171"
+    ]
+  },
+  "1197": {
+    "skill_id": "1197",
+    "skill_name": "Expressing invitations and exploring final meeting fantasies",
+    "skill_description": "Perguntar proativamente ao paciente sobre as ideias e fantasias para a última sessão (como abraçar, evitar contato, etc.), encorajar a expressão de desejos e preocupações para clarificar seu significado através do diálogo, valorizando a expressão em si acima da satisfação da ação em si.",
+    "when_to_use": "Nas últimas vezes de conversação, quando se inicia o projeto conjunto da última reunião, necessitando de clareza sobre as expectativas e arranjos de despedida de ambas as partes.",
+    "trigger": "O paciente mencionou \"última vez\" \"terminar\", perguntou se deveria abraçar ou expressar medo de abraçar, mostrou hesitação ou nervosismo em relação aos arranjos de despedida.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1197"
+    ]
+  },
+  "1198": {
+    "skill_id": "1198",
+    "skill_name": "Terminar com um aperto de mão e manter os limites",
+    "skill_description": "Definir e manter limites profissionais, realizar a despedida apenas com um aperto de mão na porta; não iniciar nenhum outro contato físico, ao mesmo tempo que reconhece o significado simbólico e o peso emocional do aperto de mão para o visitante.",
+    "when_to_use": "Quando é necessário definir a etiqueta e os limites específicos para a cerimônia de despedida, no momento de término da última conversa.",
+    "trigger": "O paciente tenta um abraço ou aproximação para contato físico, ou o terapeuta sente um impulso de abraçar; o paciente olha ou estende a mão sugerindo uma forma de despedida.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1198"
+    ]
+  },
+  "1199": {
+    "skill_id": "1199",
+    "skill_name": "Aceitar e responder adequadamente a presentes de despedida",
+    "skill_description": "Se o visitante fizer um presente no início da última entrevista, abrir na hora e convidá-lo a dizer algumas palavras; neste momento, não fazer explicações ou análises, apenas agradecer sinceramente, aceitando a expressão genuína de seus sentimentos.",
+    "when_to_use": "Momentos em que ocorre a troca de presentes durante o término de uma conversa, ou momentos que exigem o tratamento de etiqueta de despedida e expressão emocional.",
+    "trigger": "O paciente entrega um presente ou diz \"um pequeno presente para você\" ou \"uma lembrança para você\", parecendo ansioso pela reação do terapeuta.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1199"
+    ]
+  },
+  "1200": {
+    "skill_id": "1200",
+    "skill_name": "Responder moderadamente a perguntas privadas e manter o anonimato",
+    "skill_description": "No final, pode haver uma resposta um pouco mais precoce a questões factuais e de baixa autoexposição (como destino, cargo), respondendo de forma concisa para demonstrar reciprocidade e autenticidade, ao mesmo tempo que protege a privacidade e o anonimato, evitando ultrapassar os limites.",
+    "when_to_use": "Quando a aliança na fase de término está estável, o paciente pergunta sobre o destino do terapeuta ou informações da realidade, e é necessário suporte recíproco moderado durante a transição.",
+    "trigger": "O paciente pergunta perguntas específicas como \"Onde você vai trabalhar a seguir\", \"O que fará após o treinamento\", \"Como posso contatá-lo\".",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1200"
+    ]
+  },
+  "1201": {
+    "skill_id": "1201",
+    "skill_name": "Transmit final feedback and genuine affirmation",
+    "skill_description": "Em entrevistas finais, resumir as mudanças e melhorias do visitante, apresentar desafios futuros possíveis, expressar confiança e sentimentos positivos, e despedir com votos, dentro de limites estabelecidos.",
+    "when_to_use": "Na fase de conclusão, quando o paciente revisa suas mudanças ou espera a opinião geral do terapeuta sobre o tratamento.",
+    "trigger": "O paciente solicita avaliação da eficácia do tratamento, discute mudanças pessoais e incertezas, ou apresenta sentimentos de despedida e busca resposta do terapeuta.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1201"
+    ]
+  },
+  "1202": {
+    "skill_id": "1202",
+    "skill_name": "Normalizar a flutuação e explicar as opções de retorno",
+    "skill_description": "Clarify that the old pattern may return under pressure, normalizing short-term fluctuations; explain that short-term retesting or further measurements can lead to 'returning to the track,' conveying that the 'door is always open,' supporting autonomy without reinforcing dependence.",
+    "when_to_use": "Para elaborar um plano pós-evento, quando o paciente teme a recorrência ou está ansioso com a separação, ou necessita de segurança transitória.",
+    "trigger": "O paciente expressou preocupações e perguntas como \"I'm afraid I'll go back to how I was before,\" \"Can I come back if something happens?\" \"Can I do it alone?\".",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1202"
+    ]
+  },
+  "1203": {
+    "skill_id": "1203",
+    "skill_name": "Supportive avoidance of compulsive expression and frequency tapering",
+    "skill_description": "Para visitantes que não suportam despedidas difíceis, não forçar o enfrentamento da perda; focar na empatia sobre os ganhos e no cuidado contínuo, e quando necessário, adotar diminuição gradual da frequência ou encontros intermitentes, para ajudar na transição suave para o término.",
+    "when_to_use": "Em situações em que o visitante na fase de término tem baixa tolerância à separação, apego frágil ou ainda necessita de suporte estável.",
+    "trigger": "O paciente nega ou evita fortemente o tópico de separação, apresenta sinais claros de colapso, ou não consegue suportar a interrupção devido ao estresse crônico.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1203"
+    ]
+  },
+  "1204": {
+    "skill_id": "1204",
+    "skill_name": "Verificar a dimensão alterando o objetivo geral",
+    "skill_description": "Examinar item por item os sintomas, relacionamentos interpessoais, flexibilidade de adaptação/defesa, reflexão, trabalho e lazer, independência, avaliando a magnitude e a estabilidade da mudança; enfatizar que a melhora dos sintomas por si só não é suficiente para interromper.",
+    "when_to_use": "Para discutir a interrupção ou o início da fase de término, usado para determinar se o término maduro ocorreu e para definir os pontos de consolidação subsequentes.",
+    "trigger": "O paciente disse \"melhorei/quero terminar/quanto tempo ainda vai durar\", ou entrou em discussão de término devido ao período acadêmico/projeto.",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1204"
+    ]
+  },
+  "1205": {
+    "skill_id": "1205",
+    "skill_name": "Guiar a comparação das mudanças específicas entre 'agora' e 'antes'",
+    "skill_description": "Apontar as diferenças específicas com o início, convidar a revisar novas perspectivas e comportamentos nas semanas seguintes, incentivar o entrevistado a relatar e nomear as conquistas, para integrar e consolidar a mudança.",
+    "when_to_use": "A fase de revisão e consolidação no final, usada para organizar os progressos dispersos em uma narrativa de mudança coerente.",
+    "trigger": "O paciente descreve melhorias em novas reações, novas habilidades ou relacionamentos, função sexual, relaxamento, ou compara espontaneamente o passado com o presente.",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1205"
+    ]
+  },
+  "1206": {
+    "skill_id": "1206",
+    "skill_name": "Reconhecer a não mudança e a decepção e esclarecer a ilusão de cura completa",
+    "skill_description": "Apontar 'algumas mudaram, outras não mudaram', explorar as fantasias de cura total e possibilidades infinitas e suas decepções, usar a estrutura 'suficientemente bom' para ajudar a aceitar a capacidade e as limitações, calibrar as expectativas.",
+    "when_to_use": "Usado quando ocorre luto ou arrependimento por imperfeições quando na fase de término, para tornar as expectativas realistas e aliviar as exigências por uma cura incompleta.",
+    "trigger": "O paciente expressa decepção, depressão, breve recorrência de sintomas antigos, ou fantasias verbais de 'ser completamente curado/totalmente diferente'.",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1206"
+    ]
+  },
+  "1207": {
+    "skill_id": "1207",
+    "skill_name": "Fornecer feedback resumido e estabelecer expectativas realistas com opções de reavaliação",
+    "skill_description": "Resumir a melhoria das emoções e funções em tom sincero, indicar que o estresse futuro e o retorno aos métodos antigos podem ocorrer, expressar confiança e explicar que reavaliações de curto prazo podem ser feitas quando necessário, estabelecendo expectativas realistas.",
+    "when_to_use": "Nos últimos encontros e na parte de despedida, para compartilhar as perspectivas do terapeuta sobre mudanças e desafios futuros e finalizar.",
+    "trigger": "Próximo às últimas duas consultas, o paciente perguntou \"o que você pensa sobre este tratamento\", ou mencionou preocupações futuras e se ainda poderia retornar.",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1207"
+    ]
+  },
+  "1208": {
+    "skill_id": "1208",
+    "skill_name": "Avaliar a atribuição de ganhos e independência",
+    "skill_description": "Verificar se o paciente atribui os resultados a si mesmo em vez do terapeuta, e usar a autoeficácia e a independência internalizadas como indicadores de término; se ainda houver dependência significativa, continuar a exploração e o processamento.",
+    "when_to_use": "Decidir se encerrar a fase de consolidação, para avaliar o grau de internalização da mudança e a prontidão para a saída.",
+    "trigger": "O paciente diz \"Sem você eu não consigo/Você me curou\" ou o oposto \"Quero tentar sozinho\", revelando forte dependência ou desejo de autonomia.",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1208"
+    ]
+  },
+  "1186": {
+    "skill_id": "1186",
+    "skill_name": "Reflect on focus prioritization at the end of the shot",
+    "skill_description": "Na fase final, aplicar os princípios de seleção e preparação para examinar o material com um \"take final\". Emoções, sonhos, novos relacionamentos e sintomas podem estar relacionados ao término, considerar sua conexão com a perda e a regressão, e focar prioritariamente no tema de encerramento para organizar a compreensão.",
+    "when_to_use": "Fase de término (planejada ou unilateral), com o objetivo de finalizar e consolidar a compreensão; o paciente colabora, mas a flutuação emocional é notável, necessitando integrar a experiência.",
+    "trigger": "O paciente menciona frequentemente novos tópicos, sonhos, emoções intensas ou o retorno de padrões antigos durante o período de término, tornando o material disperso ou contraditório.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1186"
+    ]
+  },
+  "1187": {
+    "skill_id": "1187",
+    "skill_name": "Associar sonhos com a resolução de conflitos psicológicos",
+    "skill_description": "Associar as imagens do sonho com a psicologia contraditória do término do tratamento, nomear e organizar os extremos emocionais como \"excitação pelo novo possível\" e \"ansiedade pela solidão\", ajudar o cliente a compreender o mapeamento do sonho para a experiência de término.",
+    "when_to_use": "Na fase de término, quando o paciente relata sonhos sobre separação, jornada, partida, etc., para refinar o significado do término do sonho.",
+    "trigger": "Imagens de partida/partida/espaço/solidão, etc., aparecem em sonhos, e o visitante expressa excitação e ansiedade ou sensação de vazio ao mesmo tempo.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1187"
+    ]
+  },
+  "1188": {
+    "skill_id": "1188",
+    "skill_name": "significance of compensation in new relationships",
+    "skill_description": "Interpretar novas relações que surgem ou se intensificam perto do fim como uma tendência de compensação pela perda do terapeuta, identificar sua conexão com o luto e necessidades de apego, ao mesmo tempo que não negar o valor e os benefícios potenciais da nova relação.",
+    "when_to_use": "Período de término, quando o paciente menciona novos amigos, parceiros ou expansão social, usado para entender a reação de separação e o vínculo substitutivo.",
+    "trigger": "O paciente se envolve rapidamente ou reforça um relacionamento ao se despedir, enfatizando expressões como \"não estou mais sozinho/com companhia\".",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1188"
+    ]
+  },
+  "1189": {
+    "skill_id": "1189",
+    "skill_name": "Considerar o retorno ao modo antigo como regressão e terminar a conexão paralela",
+    "skill_description": "Considerar a reprodução de sintomas antigos, transferência antiga ou conflitos de regras precoces como regressão previsível do período de término, refletir sobre sua associação com separação e perda, e evitar o diagnóstico incorreto de que ainda não está pronto para terminar.",
+    "when_to_use": "Quando a observação da fase de término revela atraso, disputa sobre política de faturamento/cancelamento ou recorrência de sintomas antigos, é necessário esclarecer seu significado e origem emocional.",
+    "trigger": "The patient is late again, is picky about fees, old anxiety or doubt resurfaces, or questions the therapist's care and reliability again.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1189"
+    ]
+  },
+  "1190": {
+    "skill_id": "1190",
+    "skill_name": "Interpretar a raiva e a decepção como reações de separação ou defesa",
+    "skill_description": "Reframing intense anger or disappointment towards the therapist as a reaction to unfulfilled matters, or as a defense mechanism masking grief and loss; organizing understanding within this framework to maintain alliance and conclude focus.",
+    "when_to_use": "Para entender os temas subjacentes e as funções de defesa por trás do aumento da tensão na relação de término e da flutuação na avaliação, usar.",
+    "trigger": "O paciente acusa 'você está completamente errado/nunca tão zangado', ou enfatiza a comparação com a fase inicial, com emoção intensa e aguda.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1190"
+    ]
+  },
+  "1191": {
+    "skill_id": "1191",
+    "skill_name": "Conectar a lembrança da separação para refinar o sentimento de contradição",
+    "skill_description": "Quando o visitante recorda um ritual ou cena com um tom de despedida, associá-lo à experiência de despedida do término do tratamento, iluminar o sentimento contraditório de \"esperança e tristeza\" como tema central de reflexão.",
+    "when_to_use": "Durante o período de término, quando o paciente espontaneamente menciona memórias como formatura, acampamento, despedida, etc., para refinar a estrutura emocional da separação.",
+    "trigger": "Narrating with words such as \"last time/never seeing again,\" emotions present joy and sorrow mixed or lingering attachment and moving forward intertwined.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1191"
+    ]
+  },
+  "1181": {
+    "skill_id": "1181",
+    "skill_name": "Sinal de regressão da fase de término esperada e reconhecimento",
+    "skill_description": "Sintomas antigos comuns na fase final e regressão de transferência. Prever e identificar sinais de regressão, como atrasos novamente, reiteração de faturas/cancelamento de políticas, ciúmes do atendimento a outros, e considerá-los como características da fase em vez de não estar pronto.",
+    "when_to_use": "Desde a declaração de término planejada ou unilateral até o término completo, usado para ouvir e delimitar o desempenho do visitante, evitando a avaliação incorreta da prontidão do tratamento devido à regressão.",
+    "trigger": "O paciente atrasou novamente, renegociou a política de custos/cancelamento, ou demonstrou raiva e ciúmes após uma breve distração do terapeuta, com o retorno súbito de sintomas antigos.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1154",
+      "1155",
+      "1181"
+    ]
+  },
+  "1182": {
+    "skill_id": "1182",
+    "skill_name": "Suportar e normalizar o luto do fim",
+    "skill_description": "Reconhecer a tristeza e o choro trazidos pela separação, apontar que eles derivam da perda real do terapeuta; criar espaço para as emoções, ajudar o cliente a ver o luto como uma experiência previsível, suportável e digna de ser vista.",
+    "when_to_use": "Ao encerrar a discussão e nas últimas semanas de negociação, quando revisar, despedir se tornam trabalho central e emoções de luto surgem ou flutuam.",
+    "trigger": "O paciente chora frequentemente, expressa repetidamente \"estou triste/arrependido\", e após a conversa, não há ninguém para ouvir e se preocupar como o terapeuta.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1154",
+      "1155",
+      "1182"
+    ]
+  },
+  "1183": {
+    "skill_id": "1183",
+    "skill_name": "Avaliação da depressão no período de término e necessidade de medicação",
+    "skill_description": "Alguns visitantes na fase de término podem ficar deprimidos. Avaliar o grau de depressão e a necessidade, discutir ou coordenar tratamento medicamentoso, mantendo uma postura de apoio e explicando que esses sentimentos às vezes se resolvem por conta própria.",
+    "when_to_use": "Para decisões de segurança e cuidado durante o período de descontinuação, quando a tristeza se agrava a ponto de ser difícil de gerenciar por conta própria, ou quando o paciente pergunta ativamente sobre o arranjo de medicamentos e encaminhamento.",
+    "trigger": "O paciente relata no período final \"muito deprimido\", a emoção não é aliviada, ou solicita diretamente tratamento medicamentoso/avaliação psiquiátrica.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1154",
+      "1155",
+      "1183"
+    ]
+  },
+  "1184": {
+    "skill_id": "1184",
+    "skill_name": "Identificar a tristeza não verbal como possível resistência e convidar à expressão",
+    "skill_description": "If the expression of loss and grief is never seen during the termination phase, consider it a defense against painful emotions. Gently point out the possibility, inviting the visitor to describe their feelings, thoughts, and associations regarding the ending.",
+    "when_to_use": "Em conversas finais antes da interrupção, quando a emoção de despedida deveria surgir pela lógica, mas está ausente por um longo período, para promover a expressão e o processamento emocional.",
+    "trigger": "O paciente insiste em dizer \"não sinto nada/não há nada a dizer\", evita qualquer tópico sobre o término, falando apenas sobre trivialidades diárias ou conteúdo neutro.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1154",
+      "1155",
+      "1184"
+    ]
+  },
+  "1185": {
+    "skill_id": "1185",
+    "skill_name": "Fantasia e decepção relacionadas à exploração e perda",
+    "skill_description": "Explorar fantasias negligenciadas, como o fato de outras pessoas \"ocuparem seu tempo\", e a decepção com o fim das \"possibilidades infinitas\"; reconhecer emoções e limitações, ajudar o cliente a compreender de forma mais realista o significado do tratamento e do relacionamento.",
+    "when_to_use": "Usado quando surgem ciúmes, raiva ou reclamações de que o tratamento \"não foi completo\" durante o período de término, para ligar as emoções à perda e à expectativa.",
+    "trigger": "Após o terapeuta atender brevemente o telefone, o cliente ficou furioso, dizendo que você se preocupa mais com os outros e é invejoso de 'ocupar o tempo dela'; ou expressou desapontamento porque a timidez/pressão não desapareceu completamente.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1154",
+      "1155",
+      "1185"
+    ]
+  },
+  "1192": {
+    "skill_id": "1192",
+    "skill_name": "Marcar as diferenças entre o presente e o passado e guiar a retrospectiva",
+    "skill_description": "Quando o visitante apresenta um modo de reação diferente do inicial, apontar claramente a diferença entre \"agora\" e \"passado\", convidando a revisar conjuntamente o processo de formação e o significado nas próximas sessões para consolidar os ganhos.",
+    "when_to_use": "Fase de consolidação da fase final; ambas as partes concordaram com o tempo de término se aproximando, a aliança é sólida, o objetivo é fazer um balanço das mudanças e pontos de virada chave.",
+    "trigger": "O paciente relata eventos recentes específicos, manifestando pensamentos ou comportamentos diferentes dos de um ano/início, como escolhas mais estáveis, e reconhece 'eu não penso mais assim'.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1158",
+      "1192"
+    ]
+  },
+  "1193": {
+    "skill_id": "1193",
+    "skill_name": "Connect new feelings with termination and limit new exploration",
+    "skill_description": "Briefly elicit associations for new feelings/images that emerge near the end to confirm their source; once related to termination, connect them back to the ending work, avoiding the unfolding of new themes, focusing on concluding and integration.",
+    "when_to_use": "Several weeks before termination; when ending work has been explored, prioritize emotions and fantasies related to termination, avoid scattering focus.",
+    "trigger": "Client suddenly presents unfamiliar feelings/dreams or metaphors (e.g., \"falling off a cliff\") and mentions termination cues such as \"not meeting next week.\"",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1158",
+      "1193"
+    ]
+  },
+  "1194": {
+    "skill_id": "1194",
+    "skill_name": "Provide summary feedback in the final session",
+    "skill_description": "In the last or final few sessions, the therapist reviews the client's changes and functional improvements in a concise and clear manner, points out future challenges and potential recurrence of old patterns, and explains options for follow-up, expressing a genuine farewell.",
+    "when_to_use": "Last few sessions; when the client has shared their gains, and both parties are preparing to conclude and integrate understanding in a structured way.",
+    "trigger": "Client repeatedly discusses changes and their meaning in the last few weeks, or proactively asks for your view on therapy and the future.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1158",
+      "1194"
+    ]
+  },
+  "1195": {
+    "skill_id": "1195",
+    "skill_name": "Moderately reduce neutrality to review and consolidate",
+    "skill_description": "During the termination phase when the alliance is solid, moderately relax neutrality, use guiding questions, brief labels, or moderate humor to point out familiar patterns, bringing material back to existing themes to promote review and consolidation of gains.",
+    "when_to_use": "Termination phase; when both parties have a shared understanding of core patterns (\"telepathy\"), requiring more direct consolidation and summary.",
+    "trigger": "Client reproduces discussed themes or patterns; both parties have a clear understanding of their meaning and a short prompt is sufficient to reach consensus.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1158",
+      "1195"
+    ]
+  },
+  "1196": {
+    "skill_id": "1196",
+    "skill_name": "Frame change stability and relapse and provide follow-up options",
+    "skill_description": "Realistically emphasize that old ways may briefly return under future pressure, connect them to learned coping mechanisms, and propose short follow-ups when needed to \"get back on track,\" helping to transfer gains to life outside therapy.",
+    "when_to_use": "Termination review and transition planning phase; the goal is to stabilize change and set coping paths for relapse.",
+    "trigger": "Client expresses concern about future pressure, anticipates old problems reappearing, or hopes for the possibility of a follow-up session when needed.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1158",
+      "1196"
+    ]
+  },
+  "1175": {
+    "skill_id": "1175",
+    "skill_name": "Inquire about termination motivation and conflicting psychology",
+    "skill_description": "Directly ask the client why they want to end, listen closely to their thoughts, feelings, and fantasies about ending, discern whether their desire is resistance or a reasonable time, and observe their ability to self-explain and express conflicting psychology, to assess reflective capacity and readiness.",
+    "when_to_use": "When entering the termination phase or when the client/therapist brings up ending topics, used to preliminarily assess proximity to termination and clarify motivation and readiness.",
+    "trigger": "Client proactively requests to end; requests termination due to time/money; wants to end immediately after exploring painful themes or new relationships; expresses anger or contempt towards the therapist while denying conflicting feelings.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1152",
+      "1175"
+    ]
+  },
+  "1176": {
+    "skill_id": "1176",
+    "skill_name": "Invite associations and connect material with termination",
+    "skill_description": "Invite the client to freely associate recent emotions, dreams, and new relationships, and explicitly inquire about their connection to termination, observing whether they can spontaneously connect and self-explain (e.g., separation, loneliness, compensation), to assess reflective and pattern recognition abilities.",
+    "when_to_use": "When entering the termination phase, when material from the client needs to be prioritized through the \"termination lens\" to discern core emotions and themes.",
+    "trigger": "Client reports dreams related to parting/escape; describes feelings like \"falling off a cliff\"; new relationships begin in the termination period; recalling imagery of bonfires, farewells, etc.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1152",
+      "1176"
+    ]
+  },
+  "1177": {
+    "skill_id": "1177",
+    "skill_name": "Point out and explore regression and grief",
+    "skill_description": "Identify common regression and grief in the termination phase, normalize them, and encourage the expression of loss, observe whether the client can recognize recurring old patterns (e.g., jealousy, possessiveness) and process grief rather than avoidance through defense, to assess self-awareness and emotional reflection capacity.",
+    "when_to_use": "When symptoms/behaviors recur or significant grief appears in the termination phase, used to distinguish readiness from resistance and assess reflective capacity.",
+    "trigger": "Client is late again, questions fees/cancellation policy; crying or depressed during sessions; intense anger/jealousy due to an accidental error by the therapist.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1152",
+      "1177"
+    ]
+  },
+  "1178": {
+    "skill_id": "1178",
+    "skill_name": "Guide review and name change",
+    "skill_description": "Moderately relax neutrality, point out specific functional/view changes and invite a review of their formation process, assessing the client's ability to clearly name differences, explain changes, and consolidate gains, as an indicator of their self-explanation and pattern recognition ability.",
+    "when_to_use": "Consolidation and concluding phase of termination, especially when systematically reviewing therapeutic outcomes in the last few weeks.",
+    "trigger": "Client describes a situation differently from before (e.g., different reactions to temptation/relationships); spontaneously states \"I don't think that anymore.\"",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1152",
+      "1178"
+    ]
+  },
+  "1179": {
+    "skill_id": "1179",
+    "skill_name": "Propose hypotheses linking transference and interpersonal patterns",
+    "skill_description": "Confrontação suave e esclarecimento da conexão entre o desejo de término e as expectativas interpessoais prévias/transferência emocional; explicação da transferência quando necessário; observação se o cliente pode usar a nova compreensão para ajustar a escolha atual (como continuar o trabalho), para verificar a capacidade de aplicar a insight sob pressão.",
+    "when_to_use": "Quando o término do desejo pode ser impulsionado por impedância ou modo antigo, ou quando surgem temas familiares como \"controlado/travado\".",
+    "trigger": "O paciente disse \"Estou preso aqui\" \"Você não me deixa ir\"; não quer que o novo parceiro saiba do tratamento; afirma \"Já é suficiente\" enquanto o terapeuta percebe que ainda há questões cruciais não resolvidas.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1152",
+      "1179"
+    ]
+  },
+  "1180": {
+    "skill_id": "1180",
+    "skill_name": "Observar e avaliar a capacidade de integração da terapia de comunicação",
+    "skill_description": "Compartilhar as perspectivas sobre mudanças, desafios residuais e respostas futuras nas últimas sessões de entrevista, observar a capacidade do visitante de aceitação, assimilação e planejamento do feedback realista, para avaliar sua prontidão para reflexão, integração e autorregulação.",
+    "when_to_use": "Últimas sessões com término planejado, usadas para finalizar, despedir e verificar a capacidade de internalização e manutenção própria.",
+    "trigger": "Próximo da última reunião; discussão sobre despedida e futuro; o visitante pergunta sobre os arranjos após o término ou a opinião sobre o significado do tratamento.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1152",
+      "1180"
+    ]
+  },
+  "1236": {
+    "skill_id": "1236",
+    "skill_name": "Follow-up call and re-assessment with scale after arrangement and implementation",
+    "skill_description": "Agendar acompanhamento no final e realizar contato telefônico de acompanhamento nos pontos acordados (como um mês ou seis meses depois), para entender as mudanças na remissão dos sintomas e na adaptação à vida/estudo, realizar reavaliação com escalas se necessário para monitorar a manutenção e a flutuação da eficácia do tratamento, oferecer elogios e apoio; se problemas forem descobertos, reavaliar ou sugerir nova consulta prontamente, para consolidar e verificar os efeitos do tratamento.",
+    "when_to_use": "Desenvolver um plano de suporte subsequente ao final do tratamento/consulta, ou durante o período até a fase de acompanhamento, quando for necessário consolidar e monitorar a situação em pontos de retorno agendados (como um mês ou seis meses depois).",
+    "trigger": "O tratamento/consulta terminou, é necessário saber sobre as próximas situações; ou o paciente está prestes a sair do tratamento, retornar à escola/começar estágio, entrar no período de preparação e relatar o estado atual ou preocupação com a manutenção do efeito.",
+    "parent_ids": [
+      "1147",
+      "1161",
+      "1236"
+    ]
+  },
+  "1231": {
+    "skill_id": "1231",
+    "skill_name": "Avaliar a autoexplicação, aceitação e avaliação do método de tratamento",
+    "skill_description": "Convidar a revisitar a influência da experiência de crescimento e a aceitação, encorajar a expressão das opiniões e reações sobre os métodos de tratamento e explicar a técnica e o mecanismo, observar a capacidade de absorção emocional e de autoexplicação; ao mesmo tempo, guiar a pessoa a narrar com suas próprias palavras o novo conhecimento e aceitação de si mesma e registrar exemplos específicos, para julgar se a capacidade de reflexão se forma de maneira estável e sua aplicação nos relacionamentos e na vida.",
+    "when_to_use": "Para a revisão e resumo da fase de término, ou quando houver resistência e suspeita, usado para avaliar e consolidar a estabilidade da autoexplicação e aceitação.",
+    "trigger": "O paciente pode descrever a conexão entre experiências passadas e o presente, expressar \"mais compreensão, mais aceitação\"; ou expressar dúvidas sobre o tratamento, achar o método inadequado, apresentar reações defensivas e flutuações emocionais.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1152",
+      "1231"
+    ]
+  },
+  "1234": {
+    "skill_id": "1234",
+    "skill_name": "Conectar o padrão passado com a avaliação do comportamento atual e a reflexão",
+    "skill_description": "Ajudar a conectar experiências precoces com os mecanismos de defesa com a ansiedade, somatização e padrões de relacionamento atuais; convidar a descrever as experiências emocionais e corporais atuais e compará-las com as concepções de \"dever/não dever\"; revisar experiências emocionais específicas e marcadores temporais chave para identificar conexões internas, avaliar a capacidade de ligar emoções e comportamentos, explicar a origem das emoções e corrigir cognições rígidas, como indicador da maturidade da capacidade reflexiva.",
+    "when_to_use": "Fase de consolidação e término, quando os sintomas diminuem e começa a explorar padrões internos, necessitando avaliar a capacidade de autoexplicação e reconhecimento de padrões.",
+    "trigger": "O paciente pode recordar experiências precoces e discutir dificuldades atuais; apresentar julgamentos moralizantes intensos ou descrições de confusão emocional; ou narrar experiências fragmentadas, com fontes de emoção não claras ou desconexas.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1152",
+      "1234"
+    ]
+  },
+  "1215": {
+    "skill_id": "1215",
+    "skill_name": "Convidar o visitante a autoavaliar e resumir as mudanças",
+    "skill_description": "Antes de terminar, convidar o visitante a revisar o processo de aconselhamento e as mudanças chave em sua própria linguagem, marcando as diferenças entre os fragmentos de vida específicos, e podendo resumir simultaneamente as melhorias, as tensões remanescentes e as direções futuras do esforço, promovendo a atribuição, integração e consolidação da mudança.",
+    "when_to_use": "Fase de término e consolidação, nas últimas duas reuniões, para revisar e consolidar os resultados do tratamento, preparando para o término.",
+    "trigger": "Entrar na conclusão; o paciente pode refletir por si mesmo e listar as mudanças, ou mencionar ativamente novos conhecimentos, gratidão e sentimentos de crescimento.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1158",
+      "1215"
+    ]
+  },
+  "1242": {
+    "skill_id": "1242",
+    "skill_name": "Avaliar feedback do consultor e nomear fatores promotores",
+    "skill_description": "O consultor resume e fornece feedback sobre melhorias específicas com base na observação e nos dados (incluindo reflexões escritas), validando a compreensão e as mudanças do cliente com exemplos, revisando e nomeando os fatores que promoveram a mudança, ao mesmo tempo que aponta os pontos focais para a autoajuda e o esforço contínuo, ajudando a integrar e consolidar as conquistas.",
+    "when_to_use": "Fase de avaliação e resumo dos resultados, em conjunto com a autoavaliação do paciente, para revisão profissional e encerramento.",
+    "trigger": "Concluído o tratamento em fases e houve melhora significativa; o paciente perguntou sobre a causa da mudança ou sobre como transformar a conquista em princípios de autocuidado.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1158",
+      "1242"
+    ]
+  },
+  "1237": {
+    "skill_id": "1237",
+    "skill_name": "Resumir as experiências de consultoria e os ganhos específicos",
+    "skill_description": "Reflecting on key insights and changes during the stage of joint review with the client, linking past issues with current improvements, distilling transferable strategies, and marking new and old differences with specific life changes as evidence to consolidate gains for subsequent independent application.",
+    "when_to_use": "Após a fase de revisão e consolidação, usado para verificar os resultados, alcançar um consenso final ou quando o paciente solicita o término.",
+    "trigger": "Melhora dos sintomas, estabilidade emocional; ou pode descrever a mudança em sua própria língua, observada melhoria na função e no relacionamento.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1158",
+      "1237"
+    ]
+  },
+  "1224": {
+    "skill_id": "1224",
+    "skill_name": "Revisar e integrar recursos de apoio positivo",
+    "skill_description": "Lead the visitor to review warm memories and supportive resources (family, interpersonal, interests, etc.) evoked in the session, summarize how these reduce helplessness and fear, and distill sustainable resource utilization methods to enhance subsequent coping and reuse.",
+    "when_to_use": "Usado na fase de término para consolidar os efeitos, reduzir o risco de recorrência e preparar para o retorno à realidade.",
+    "trigger": "O paciente ainda tem uma narrativa negativa predominante, ignorando os momentos de ser amado ou o apoio ao seu redor.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1158",
+      "1224"
+    ]
+  },
+  "1223": {
+    "skill_id": "1223",
+    "skill_name": "Reteste antes do término e feedback da mudança quantificada",
+    "skill_description": "Repetir os questionários chave (como AIS/SAS/SDS, etc.) antes do término, comparar com a primeira medição e interpretar as mudanças nas pontuações em conjunto, indicar objetivamente melhorias no sono, humor, etc., e o grau de alcance do objetivo, e especificar as áreas que ainda precisam de esforço, servindo como evidência para a revisão do tratamento.",
+    "when_to_use": "Antes ou depois da última sessão ou perto do término, para avaliação da eficácia, confirmação de alcance dos objetivos e suporte a decisões de encerramento.",
+    "trigger": "Already has initial assessment data or re-assessment result; efficacy needs to be evaluated as the end approaches, or the visitor is focused on objective progress.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1158",
+      "1223"
+    ]
+  },
+  "1232": {
+    "skill_id": "1232",
+    "skill_name": "Avaliação de melhoria dos sintomas com base em indicadores subjetivos, objetivos e funcionais",
+    "skill_description": "Em conversas contínuas e acompanhamentos, revisar com o paciente as mudanças de humor e sintomas centrais, especificando a \"melhora\" em exemplos reprodutíveis; registrar simultaneamente a proporção de autoavaliação, o estado mental e indicadores funcionais como aprendizado/socialização, e corroborar com a observação no local ou resultados de escalas, para julgar a magnitude e a estabilidade da melhoria.",
+    "when_to_use": "Durante a fase intermediária a de consolidação e avaliação final, ou no acompanhamento após a conclusão do tratamento, para resumir a eficácia e determinar se está próximo do término.",
+    "trigger": "O paciente relata melhora ou não fala apenas sobre sintomas; apresenta mudanças não verbais de aumento de vitalidade; exame/atividade ou feedback de familiares mostram melhora funcional; atingimento do ponto de retorno agendado.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1149",
+      "1232"
+    ]
+  },
+  "1214": {
+    "skill_id": "1214",
+    "skill_name": "Revisão de sintomas e melhoria do humor integrando evidências de múltiplas fontes",
+    "skill_description": "Com base no relato do paciente, verificar se a experiência de emoções positivas aumentou e se a tristeza pode ser autoajustada; guiar a revisão de fatos específicos sobre insônia, ruminação, ansiedade, sensibilidade interpessoal, etc., e conectar com as percepções na consulta; integrar o feedback do paciente, do terapeuta e do professor/familiar para validar a melhoria e a estabilidade, fornecendo base para o término e consolidação.",
+    "when_to_use": "revisão de consolidação de objetivos e fase de avaliação ou reunião de retrospectiva antes do encerramento; avaliação abrangente na terceira consulta ou antes do término.",
+    "trigger": "O paciente relata \"melhora do humor\", \"melhora do sono/relacionamento\" ou considera encerrar; observação direta mostra melhora na aparência e na comunicação; sinais de melhora de múltiplas fontes ou inconsistência entre relato e avaliação do outro devem ser verificados conforme necessário.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1149",
+      "1214"
+    ]
+  },
+  "1238": {
+    "skill_id": "1238",
+    "skill_name": "Acompanhar o humor da conversa e os indicadores não verbais para confirmar a melhora dos sintomas",
+    "skill_description": "Comparar os indicadores emocionais e comportamentais antes e depois das sessões de terapia, como frequência de choro, velocidade e tom de voz, capacidade de olhar para o terapeuta, tremores nas pernas/mãos, expressão facial mais relaxada, sorriso, proatividade na discussão de planos, e a mudança de negação para verbalização da dor, registrando \"redução notável/mais controlável\", para corroborar a melhoria substancial e a estabilidade dos sintomas de depressão, ansiedade, etc.",
+    "when_to_use": "Ao revisar evidências de melhoria durante visitas de acompanhamento, resumos de fase ou conversas finais, ou ao encerrar a avaliação.",
+    "trigger": "Observou-se uma redução mais precoce das reações emocionais como choro durante a conversa, com fala e não-verbal mais relaxados e francos; o paciente relatou ativamente o alívio da dor e discutiu planos realistas; começou a expressar vocabulário de sentimentos específicos espontaneamente.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1149",
+      "1238"
+    ]
+  },
+  "1217": {
+    "skill_id": "1217",
+    "skill_name": "Verificação de sintomas estáveis e manutenção/recorrência de acompanhamento telefônico",
+    "skill_description": "Ligar de volta conforme acordado no estágio de término e acompanhamento, verificar se o medo e a ansiedade desapareceram ou se estabilizaram, coletar percepções subjetivas sobre mudanças nas emoções, pensamentos e comportamentos; perguntar sobre o nível de tensão ao voltar às aulas, ao encontrar colegas e professores, e se a adaptação à comunicação foi mantida, avaliar se houve recorrência e determinar se é necessário uma nova sessão para o plano de suporte e ajuste.",
+    "when_to_use": "Estabelecer um plano de acompanhamento antes do término, pontos de acompanhamento de curto a longo prazo (como um mês, vários meses) após o término; é necessário saber o status entre as conversas se o intervalo for longo.",
+    "trigger": "O paciente suspendeu ou encerrou a entrevista, os sintomas principais diminuíram, necessita de confirmação remota; agendar para o tempo de acompanhamento ou se houver flutuações leves.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1149",
+      "1217"
+    ]
+  },
+  "1212": {
+    "skill_id": "1212",
+    "skill_name": "Avaliação objetiva da mudança de sintomas por reteste da escala",
+    "skill_description": "Repetir a medição das escalas SAS, SDS, SCL-90, SIOSS, etc., durante revisões periódicas ou acompanhamentos, comparando com a medição inicial ou norma, para quantificar a magnitude da mudança nos indicadores centrais como ansiedade, depressão e ideação suicida e se eles retornaram à faixa normal, usando dados objetivos para apoiar a melhoria subjetiva e avaliar a tendência.",
+    "when_to_use": "Para a avaliação de efeitos de consolidação e antes do término, ou quando a verificação objetiva for necessária no período de acompanhamento, como cerca de um mês após o término.",
+    "trigger": "Ao entrar na fase de revisão/resumo ou reteste, as pontuações antes e depois foram obtidas; a melhora relatada pelo paciente requer verificação objetiva ou participação no rastreio de saúde mental para obter resultados de avaliação.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1149",
+      "1212"
+    ]
+  },
+  "1254": {
+    "skill_id": "1254",
+    "skill_name": "Explicar e confirmar os canais de retorno e reagendamento",
+    "skill_description": "Ao final, informar claramente que, se houver dificuldades futuras, o consultor pode ser contatado prontamente, explicar os canais e condições de \"se necessário, pode agendar novamente no centro psicológico\", e confirmar e aceitar a disposição do entrevistado de \"se precisar, pode voltar\", oferecendo suporte realista para aliviar a preocupação e a desconexão, apoiando a transição sem reforçar a dependência.",
+    "when_to_use": "Para fornecer canais de contato e suporte subsequentes e aceitar o desejo de retorno durante a tomada de decisão de término na última ou penúltima negociação.",
+    "trigger": "A visit is about to end and the visitor is concerned that difficulties will still be encountered or they will propose ideas for future help needed, or explicitly state willingness to seek help again or return.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1254"
+    ]
+  },
+  "1245": {
+    "skill_id": "1245",
+    "skill_name": "Afirmar o crescimento e dar conselhos e votos de vida",
+    "skill_description": "Em negociações finais, apontar honestamente as mudanças positivas observadas, expressar satisfação e apoio, oferecer votos específicos (como sucesso no exame de admissão), e resumir e dar recomendações para a vida antes de terminar, como seguir o fluxo natural, reduzir as expectativas, cultivar o interesse, participar de atividades em grupo, comunicar-se mais, aprimorar habilidades sociais, para consolidar a melhoria, apoiar a despedida e o retorno à rotina.",
+    "when_to_use": "Em conversas de despedida na fase final ou na última conversa, usado para consolidar a estratégia e apoiar a transição para o futuro, retorno à rotina.",
+    "trigger": "O paciente expressa gratidão, apresenta melhora estável e está prestes a encerrar a consulta, ou está prestes a retornar à vida cotidiana, necessitando de estratégias específicas e executáveis para manutenção e adaptação.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1245"
+    ]
+  },
+  "1220": {
+    "skill_id": "1220",
+    "skill_name": "Propose and articulate termination, confirm readiness and negotiation arrangements",
+    "skill_description": "Quando os sintomas estão diminuindo gradualmente e a consulta está chegando ao fim, discutir proativamente a realização dos objetivos da consulta e o tempo de término, propor sugestões de término e confirmar com o cliente sua prontidão e vontade para lidar de forma independente; o terapeuta explica com base na flexibilização das defesas e crenças centrais, e nas mudanças interpessoais externas, negociando arranjos e detalhes específicos para a preparação do término, e alcançando um consenso de término mesmo quando o cliente não deseja terminar.",
+    "when_to_use": "Quando os sintomas melhorarem de forma estável, na fase de consulta de término ou na última sessão, para planejar o processo de término, confirmar a prontidão e negociar arranjos específicos.",
+    "trigger": "O paciente relata redução da narrativa de ansiedade, estado estável e afirma \"Não estou tão ansioso ultimamente\", com melhorias estáveis na conduta, nas relações interpessoais e na expressão de si mesmo, ambos afirmam que podem lidar com a vida sozinhos; ou entrar na última sessão para começar a discutir o término e os arranjos.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1220"
+    ]
+  },
+  "1240": {
+    "skill_id": "1240",
+    "skill_name": "Discutir as sensações no local e esclarecer as diferenças",
+    "skill_description": "Neste momento e lugar, convidar o visitante a expressar emoções complexas em relação ao término e ao terapeuta (insatisfação, apego, excitação, etc.), aceitar e clarificar as diferenças, ouvir sua atitude e preocupações, promover uma compreensão sintonizada sobre o término, reduzir o fardo não dito, apoiar um encerramento suave.",
+    "when_to_use": "Quando a emoção relacionada ao fim ou ao término surge perto da última conversa ou no momento do término, é usado para explorar e organizar os sentimentos do fim.",
+    "trigger": "O cliente menciona sentimentos de término, silêncio ou flutuações de humor, ou expressa opiniões e insatisfações com o terapeuta.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1157",
+      "1159",
+      "1240"
+    ]
+  },
+  "1248": {
+    "skill_id": "1248",
+    "skill_name": "Questioning and assessing the recovery of daily, learning, and work social functions",
+    "skill_description": "Avaliar a melhoria e a estabilidade das funções de adaptação e de papel através de questionamentos abertos e registro de atividades diárias recentes, planos de estudo, participação social e desempenho no trabalho, com referência a funções específicas como caminhadas, compras, planos de estudo, viagens independentes e recebimento de elogios.",
+    "when_to_use": "Fase de avaliação inicial e consolidação, bem como na revisão abrangente ou fase de acompanhamento antes do término, para determinar a melhoria funcional.",
+    "trigger": "Relatar novas ou retomadas de atividades diárias, de aprendizado ou de trabalho com o plano; ou quando for necessário determinar a fonte da melhoria ou perturbação nas atividades de aprendizado, interpessoais e diárias.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1248"
+    ]
+  },
+  "1250": {
+    "skill_id": "1250",
+    "skill_name": "Review and affirm successful self-management consolidation of function improvement",
+    "skill_description": "Guiar o paciente a relembrar a melhora do sono e do humor obtida através do autocuidado, discutir os impactos positivos no aprendizado, na capacidade física e nas interações sociais, e oferecer reconhecimento oportuno para consolidar a melhoria funcional.",
+    "when_to_use": "Para resumir o progresso, aumentar a confiança e avaliar a melhoria da função na fase de consolidação.",
+    "trigger": "O paciente relata experiências de sucesso ou avaliação de um colega sobre sua melhoria; é necessário consolidar as mudanças funcionais.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1250"
+    ]
+  },
+  "1221": {
+    "skill_id": "1221",
+    "skill_name": "Avaliar a consciência de si e a verificação da realidade com problemas reais e narrativas ideais",
+    "skill_description": "Selecionar tarefas e eventos específicos em aprendizado, relacionamentos e família para revisão, analisar sentimentos, comportamentos e reações dos outros, distinguir fatos de interpretações, e combinar com a expressão de aspirações futuras e capacidade pessoal, relacionamentos e segurança, para avaliar de forma abrangente o posicionamento do self, a consciência do self e o nível de verificação com a realidade.",
+    "when_to_use": "Na sétima e o oitava fase de consolidação e término, ou quando for necessário entender a consciência de si, a orientação de valores e o nível de verificação da realidade.",
+    "trigger": "avaliar a capacidade de resposta do paciente diante de tarefas específicas ou dificuldades reais; discutir a interação familiar e a autoavaliação; confusão sobre o futuro ou capacidade de descrever ideais pessoais e orientação de relacionamento.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1221"
+    ]
+  },
+  "1247": {
+    "skill_id": "1247",
+    "skill_name": "Investigating self-trust and proactive falsification",
+    "skill_description": "Investigate self-trust around specific behavioral details (such as repeatedly confirming habitual behaviors), and assess its ability to actively verify and correct beliefs through investigation; simultaneously examine whether its realistic cognition of its own mental health has shifted from doubt to a more consistent explanation, to demonstrate improved reality testing ability.",
+    "when_to_use": "Quando a crença errônea foi identificada, precisa ser validada e reforçada na fase de cognição madura e revisão; consolidar a avaliação da estabilidade da consciência de si e da realidade.",
+    "trigger": "O paciente deseja tentar ou já realizou a investigação; insiste que outros podem ver através de seus pensamentos precisa ser refutado; ainda altamente suspeita e confirma repetidamente comportamentos regulares realizados; expressa uma reavaliação ou correção de crenças errôneas anteriores sobre sua saúde mental.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1247"
+    ]
+  },
+  "1225": {
+    "skill_id": "1225",
+    "skill_name": "Identificar e fornecer feedback sobre as mudanças nos padrões de defesa e as transformações adaptativas",
+    "skill_description": "Identificar padrões de defesa (como isolamento emocional, racionalização, formação reativa) e a mudança de defesas não adaptativas, como a depreciação, para formas mais adaptativas e compreensão por meio da mudança de perspectiva em fragmentos interpessoais recentes, e fornecer feedback, avaliar a melhoria do contato emocional e da autorregulação, como indicador da melhoria da função do self.",
+    "when_to_use": "Na fase intermediária a de consolidação da avaliação, ao revisar trechos da interação ou quando o paciente começa a falar sobre sentimentos, mas ainda evita de forma racional.",
+    "trigger": "Narrating as if telling someone else's story, talking incessantly to avoid emotions, or gradually being able to freely explore feelings; showing clues of understanding others, reducing belittling, or less getting into interpersonal conflict.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1225"
+    ]
+  },
+  "1230": {
+    "skill_id": "1230",
+    "skill_name": "Avaliação da flexibilidade da revisão e marcação de mudanças na defesa e expressão emocional",
+    "skill_description": "Organize the process from impedance, covert attacks to expressing and accepting aggressive emotions, discuss past and current defense methods and their correctness, and identify and annotate common defenses (such as neutralization, omnipotent control, emotional isolation, regression) in the discussion materials, recording their contexts and changes, to assess whether the defense is more flexible and adaptability has improved.",
+    "when_to_use": "Discussão e avaliação no final do ciclo de tratamento; avaliação de consolidação subsequente nas sessões 13–14 ou organização sistemática antes do encerramento.",
+    "trigger": "O paciente pode relembrar experiências de resistência e ataque precoces, expressar emoções de forma relativamente estável durante a sessão ou mencionar reparação do trauma; pode relembrar e descrever as reações de defesa passadas e atuais; reações como questionamento repetido, distanciamento emocional ou dependência regressiva aparecem repetidamente durante a sessão.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1150",
+      "1230"
+    ]
+  },
+  "1239": {
+    "skill_id": "1239",
+    "skill_name": "Revisiting the journey, integrating gains, and evaluation",
+    "skill_description": "Na fase final, revisar todo o percurso da consulta, as mudanças nos sintomas e funções, as percepções chave e as experiências relacionais, convidar o paciente a relatar e autoavaliar a satisfação e as dificuldades remanescentes com indicadores específicos de vida e relacionamentos íntimos, avaliar objetivamente os resultados e os limites, definir a principal causa psicológica e os pontos chave da intervenção, indicar as direções que ainda precisam de esforço, integrar as experiências para consolidar o efeito terapêutico e preparar para a despedida e os arranjos subsequentes.",
+    "when_to_use": "Na fase final de negociações contínuas ou finais, na seção de revisão e resumo antes do término, ou ao finalizar a última reunião.",
+    "trigger": "Tratamento próximo ao término ou entrando na fase de término programada; o paciente está disposto a discutir o processo e as mudanças do tratamento, relatar melhorias ou ainda ter preocupações residuais; o caso ou o terapeuta expressa interesse nos resultados desta rodada e na continuidade.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1239"
+    ]
+  },
+  "1219": {
+    "skill_id": "1219",
+    "skill_name": "Iniciar ativamente o término da discussão e a negociação de tempo",
+    "skill_description": "Após a observação da redução gradual dos sintomas e do desconforto, propor o alcance dos objetivos de revisão e acordar com o paciente o tempo e o ritmo de término esperados, reservando espaço de preparação suficiente e previsível para a fase de encerramento.",
+    "when_to_use": "Consulted when entering the later stage, the visitor's state is stabilizing and change signs appear, used to initiate planned closure and psychological preparation.",
+    "trigger": "O paciente relata redução recente da ansiedade, está aberto ao término, ou a descrição da ansiedade na consulta diminuiu visivelmente.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1219"
+    ]
+  },
+  "1243": {
+    "skill_id": "1243",
+    "skill_name": "Transmitir confiança e encorajar a continuidade autônoma",
+    "skill_description": "Na fase final, transmitir confiança na capacidade do paciente de autorregulação e recuperação, encorajar que ele resolva os problemas com suas próprias forças, continuar a autoconsciência e os exercícios de exploração, reduzir a dependência do tratamento e aumentar a autoestima, apoiar a continuação independente da mudança.",
+    "when_to_use": "Para resumir e planejar o futuro antes do término, ou para a fase de encerramento e despedida de uma conversa, para aumentar a autonomia e a confiança.",
+    "trigger": "discutir se continuar por conta própria; o paciente teme deixar o suporte ou dependência evidente; ou expressa desejo de continuar o tratamento, incerteza sobre o futuro e sintomas em remissão.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1243"
+    ]
+  },
+  "1252": {
+    "skill_id": "1252",
+    "skill_name": "Compartilhar e testemunhar e dar resposta de afirmação",
+    "skill_description": "Na fase de término e consolidação, o terapeuta e o cliente revisam e compartilham as percepções sobre o processo de aconselhamento, permitem e apoiam uma sessão focada em testemunhar a mudança, apresentando pessoas importantes e resultados de crescimento, expressando gratidão e compromisso; ao receber uma carta após o término, responde por escrito com afirmação sincera e conexão com os temas centrais do tratamento, validando moderadamente a mudança e o poder do self, promovendo uma despedida tranquila.",
+    "when_to_use": "Fase de término ou estabilidade do relacionamento; fase de término e consolidação após a conclusão do número de sessões estabelecido; ou quando receber correspondência e informações do paciente após o término.",
+    "trigger": "O paciente precisa expressar sentimentos subjetivos sobre o processo de aconselhamento; solicitar que o terapeuta encontre o parceiro/filho, expressar gratidão ou 'mostre-me minhas mudanças'; ou finalizar o relatório da carta posterior, buscar confirmação e testemunho da mudança.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1252"
+    ]
+  },
+  "1241": {
+    "skill_id": "1241",
+    "skill_name": "Resumo estruturado da fase de consolidação",
+    "skill_description": "Durante a fase de consolidação, revisar e resumir as consultas anteriores, reservar um período de tempo e espaço seguro, convidar o visitante a revisar sistematicamente as mudanças, compreensões e ganhos específicos trazidos por esta fase com suas próprias palavras, destilar as mudanças e aprendizados chave e fazer a transição para o próximo agendamento, resumir os resultados da consolidação de forma estruturada e receber o encerramento.",
+    "when_to_use": "Nas duas últimas consultas antes do término do tratamento ou na consulta próxima ao término para finalização e integração.",
+    "trigger": "Ao final da conversa, um objetivo de fase é alcançado; o visitante pergunta sobre os próximos arranjos ou expressa confusão sobre a mudança, necessitando de organização; ou começa a revisar e está disposto a resumir os achados desta fase no final da conversa.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1241"
+    ]
+  },
+  "1244": {
+    "skill_id": "1244",
+    "skill_name": "Fornecer feedback resumido e agendar reavaliação de teste",
+    "skill_description": "Fornecer feedback profissional conciso e claro no término, resumir a situação da mudança e o alcance dos objetivos, e agendar ou implementar um acompanhamento/follow-up subsequente; comparar as avaliações inicial e final com o comportamento na vida (como a pontuação na escala de ideação suicida, participação em atividades e interação com os filhos), combinando com a percepção subjetiva, apresentar detalhadamente a trajetória da mudança, ajudando o paciente a internalizar os resultados e manter a eficácia da avaliação.",
+    "when_to_use": "No final stage and in the short term after it, or when reviewing the outcomes and consolidating changes during the last/final discussion.",
+    "trigger": "Após a avaliação em estágio, é necessário consolidar as mudanças e monitorar a manutenção dos efeitos; os dados da primeira e da última avaliação podem ser comparados; houve mudança no engajamento na vida, interação com os filhos ou estado subjetivo do paciente.",
+    "parent_ids": [
+      "1147",
+      "1153",
+      "1156",
+      "1244"
+    ]
+  },
+  "1226": {
+    "skill_id": "1226",
+    "skill_name": "Guiar a autoavaliação quantitativa e integrar evidências para resumir a mudança",
+    "skill_description": "Em revisões de término ou de fase, convidar o paciente a autoavaliar em domínios de vida e situações específicas, combinando pontuação e narração subjetiva; simultaneamente, verificar com linhas de sintomas e função, emoção-linguagem-comportamento e feedback de múltiplos fontes como o orientador/colega, registrar e especificar os resultados, reconhecer o progresso, formar uma avaliação de mudança real e internalizada.",
+    "when_to_use": "Quando se aproxima o fim ou a etapa de revisão, é necessário resumir os resultados, integrar evidências subjetivas e objetivas e consolidar a autoeficácia.",
+    "trigger": "O paciente relata ativamente sua situação atual, começa a resumir ganhos ou relata melhora nos sintomas/função; ou necessita de observação por outra pessoa para confirmar a melhora subjetiva.",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1226"
+    ]
+  },
+  "1216": {
+    "skill_id": "1216",
+    "skill_name": "Revisar o ciclo de tratamento e fornecer feedback e direção realistas",
+    "skill_description": "Revisitar a jornada de aconselhamento e as mudanças ocorridas com o cliente, fornecer feedback realista e comedido baseado nos dados e nos objetivos, evitando exageros ou promessas de cura total; apontar especificamente as áreas que ainda precisam de esforço, e se necessário, usar eventos recentes específicos para comparar com as mudanças funcionais, ajudando a definir a direção subsequente para a auto-melhoria.",
+    "when_to_use": "Na fase intermediária ou de resumo da 5ª consulta, ou na avaliação do término da conversa/resultado, para preparar o encerramento e definir as próximas direções.",
+    "trigger": "O paciente apresenta melhora e está prestes a terminar, buscando ativamente um resumo ou perguntando sobre os próximos passos; o processo de aconselhamento já formou evidências de observação contínua e alcance de objetivos.",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1216"
+    ]
+  },
+  "1227": {
+    "skill_id": "1227",
+    "skill_name": "Convidar a autoavaliação do efeito terapêutico e decidir conjuntamente o término",
+    "skill_description": "Convidar o visitante a autoavaliar a eficácia do tratamento com sua própria língua e feedback sobre a vida, registrando mudanças positivas e problemas residuais; discutir o ponto final em conjunto com relatórios específicos de melhoria dos sintomas e da função; se questionar a eficácia, pode-se comparar o contexto específico recente com a reação inicial para examinar a mudança real.",
+    "when_to_use": "Na fase de término e avaliação de resultados, quando o paciente relata melhorias significativas ou a frequência de visitas é inviável devido a limitações da realidade, é necessário avaliar conjuntamente se o acompanhamento deve ser encerrado.",
+    "trigger": "O paciente relatou satisfação com o tratamento e melhora na família/sintomas, ou descreveu ativamente experiências como \"me senti mais confiante\"; também pode ter relatado \"não senti efeito\".",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1227"
+    ]
+  },
+  "1235": {
+    "skill_id": "1235",
+    "skill_name": "Revisitar a jornada e consolidar o conhecimento e as mudanças",
+    "skill_description": "Ao revisar todo o percurso da consulta, resumir ganhos e dificuldades, comparar as manifestações específicas nas cognição, emoção e comportamento antes e depois, oferecer afirmações e encorajamentos específicos, ao mesmo tempo que apontar com sinceridade as deficiências remanescentes, consolidar as mudanças cognitivas e a autopercepção formadas no tratamento, ajudar a integrar a experiência e estabilizar a melhoria.",
+    "when_to_use": "Fase de término e consolidação da última sessão do semestre ou tratamento, usada para revisão geral e formação de conclusões sobre mudanças reais.",
+    "trigger": "O tratamento está perto de terminar, os sintomas do paciente melhoraram visivelmente e ele está disposto a revisar; ou quando é necessário calibrar as expectativas para os desafios futuros e a \"cura completa\".",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1235"
+    ]
+  },
+  "1218": {
+    "skill_id": "1218",
+    "skill_name": "Apresentar honestamente a melhoria e a não melhoria e calibrar as expectativas",
+    "skill_description": "Em uma revisão da eficácia, listar especificamente as áreas melhoradas e as não melhoradas, investigar as razões (como insatisfação com o terapeuta, resistência e evitação), primeiro afirmar o progresso e depois declarar a incompletude da mudança e as preocupações remanescentes, resumir as mudanças com um tom realista, evitar a ilusão de 'cura completa' e estabelecer expectativas realistas e pontos de atenção futuros.",
+    "when_to_use": "Usado durante o tratamento ou na mudança da conclusão/resumo, para avaliação real de \"mudado e não mudado\" e calibração das expectativas.",
+    "trigger": "The scale prompt still has mild symptoms; the visitor reports partial improvement while still having distress, or expresses concern like \"still one or two points short.\"",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1218"
+    ]
+  },
+  "1213": {
+    "skill_id": "1213",
+    "skill_name": "Repetition and comparison of scales objectively presenting changes",
+    "skill_description": "Repetir escalas como SAS, SDS, SIOSS, SES, AIS na fase final, registrar as pontuações padrão e compará-las longitudinalmente com a avaliação inicial, observar se retornam à faixa normal, quantificar a magnitude das mudanças no sono e humor; apresentar a eficácia de forma objetiva com dados concretos, validar o progresso, calibrar a impressão subjetiva e consolidar a confiança na mudança.",
+    "when_to_use": "Fase de avaliação de efeitos no final ou antes do término da fase, usada para quantificar e verificar a eficácia da consulta e resumir o efeito do tratamento.",
+    "trigger": "Já completou múltiplas consultas e possui questionário de avaliação inicial, obtendo dados de avaliação final; ou o paciente necessita de evidências objetivas para confirmar a melhora.",
+    "parent_ids": [
+      "1147",
+      "1160",
+      "1213"
+    ]
+  },
+  "1253": {
+    "skill_id": "1253",
+    "skill_name": "Praticar e avaliar a gestão emocional e o comportamento independente",
+    "skill_description": "Praticar o processo de autorregulação \"percepção-nomeação-conexão-diálogo-de-auto\" com o cliente, perguntar se as situações anteriores que necessitavam de acompanhamento podem ser realizadas de forma independente, e avaliar a capacidade de aplicação independente na ausência de suporte do terapeuta; ao mesmo tempo, acordar as vias de ajuda em caso de obstáculo.",
+    "when_to_use": "Na fase de consolidação e finalização ou acompanhamento pré-encerramento, usado para avaliar a capacidade de manutenção independente da melhoria.",
+    "trigger": "O paciente teme recidiva ou tem histórico de perda de controle emocional; evitação de situações de solidão ou soledade no passado, relatada como alterada após o tratamento.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1253"
+    ]
+  },
+  "1251": {
+    "skill_id": "1251",
+    "skill_name": "Investigating change in attribution and assessing self-efficacy and subjectivity",
+    "skill_description": "Questioning the main attribution of progress (self-effort or external support), recording spontaneous actions and self-attribution outside of sessions, assessing confidence and specific plans for continued improvement, to determine if dependence is decreasing and the possibility of maintenance without continuous support.",
+    "when_to_use": "Antes do fim ou na fase de consolidação, para avaliar a independência e a capacidade de manter as melhorias.",
+    "trigger": "O paciente relata que consegue se ajustar, tem muita confiança, ou relata comportamento autônomo e descreve seu papel e responsabilidade na melhora.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1251"
+    ]
+  },
+  "1249": {
+    "skill_id": "1249",
+    "skill_name": "Avaliação da capacidade de manutenção e expansão após a retirada do suporte",
+    "skill_description": "Através da última conversa e do acompanhamento subsequente, verificar se é possível manter e expandir a mudança sem suporte contínuo, como a tentativa autônoma de progresso entre as sessões ou a tomada de decisões relacionadas fora do tratamento, como indicador de independência.",
+    "when_to_use": "Para avaliação de acompanhamento curto após o término ou entre visitas, usado para confirmar a capacidade de manutenção e expansão independente.",
+    "trigger": "Planejar sair para estudar/trabalhar; prática autônoma entre duas consultas e sucesso; ou relatar que tomou decisões relacionadas ao tratamento por conta própria.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1249"
+    ]
+  },
+  "1233": {
+    "skill_id": "1233",
+    "skill_name": "Investigating termination preparation and self-management plan and assessing attachment changes",
+    "skill_description": "In farewell and separation processes, directly inquire how the client can maintain change with their own strength after termination, combined with early safety needs and changes discussed and agreed upon for termination, record expressions of autonomy to assess the feasibility of reduced dependence and independent functioning.",
+    "when_to_use": "During discussions about termination and follow-up arrangements.",
+    "trigger": "The client can discuss and accept the termination arrangement, express a desire to continue treatment while using their own strength to solve problems, and report reduced need for placement and protection.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1233"
+    ]
+  },
+  "1229": {
+    "skill_id": "1229",
+    "skill_name": "Developing self-maintenance strategies and termination criteria before ending",
+    "skill_description": "Before termination, clarify 'improvement is a process', discuss self-maintenance strategies after termination (such as continued practice, sleep habits), and set conditional open-ended termination criteria, assessing confidence in execution and feasible arrangements to judge independence.",
+    "when_to_use": "In the last session or near-termination sessions, used for planning maintenance after termination.",
+    "trigger": "Symptoms have significantly improved, the client states 'I am very confident', proposes whether to terminate or wishes to regulate themselves.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1229"
+    ]
+  },
+  "1228": {
+    "skill_id": "1228",
+    "skill_name": "Recording autonomy indicators to assess reduced dependence",
+    "skill_description": "In future visits, the client proactively proposes termination and discusses ending and follow-up participation in group activities, and compares passive termination with this active choice as evidence of autonomous decision-making and reduced dependence in the independence assessment.",
+    "when_to_use": "During the termination phase and follow-up, reviewing relationship changes and assessing the ability to maintain independently.",
+    "trigger": "The client proactively proposes termination or spontaneously compares past relationships with this consultation; follow-up needs to assess if dependence on supervision remains.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1228"
+    ]
+  },
+  "1222": {
+    "skill_id": "1222",
+    "skill_name": "Verifying self-maintenance and emotional regulation without continuous support",
+    "skill_description": "Inquire and verify the ability to independently use mastered emotional processing methods in daily life and follow-up, or to use alternative self-regulation strategies in non-therapeutic contexts, and observe whether the improvement in emotion and behavior is stable and sustained after an interval, to judge reduced dependence.",
+    "when_to_use": "Consolidation and termination phases, as well as periodic or post-termination follow-ups, used to test independent maintenance ability.",
+    "trigger": "Recent stress or emotional fluctuations and feedback on self-regulation practices; stable scores or independent coping reported after a consultation interval; no increase in seeking help after a stress event and proactive use of constructive strategies.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1222"
+    ]
+  },
+  "1246": {
+    "skill_id": "1246",
+    "skill_name": "Investigating the attribution of change and the internalization level of self-help strategies",
+    "skill_description": "Inquire whether the change is mainly due to one's own practice and realization, such as self-analysis, self-comfort, or self-choice; and clarify the attribution to treatment and self-effort and the degree of dependence, to assess the internalization and autonomy of improvement.",
+    "when_to_use": "Near termination or when formulating termination plans, consolidation assessment conversations, or reviewing growth and summarizing treatment effectiveness.",
+    "trigger": "The client proactively talks about self-analysis or self-comfort experiences; states 'I am better' and explains past behavior and defenses; believes treatment is ineffective or emphasizes controlling things only through willpower; or appears in a context of gratitude with expressions like 'who changed me'.",
+    "parent_ids": [
+      "1147",
+      "1148",
+      "1151",
+      "1246"
+    ]
+  }
+}

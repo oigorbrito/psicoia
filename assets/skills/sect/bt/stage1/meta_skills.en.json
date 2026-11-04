@@ -1,0 +1,644 @@
+{
+  "285": {
+    "skill_id": "285",
+    "skill_name": "Assessment Interview",
+    "skill_description": "Aims to clearly define the \"target behavior\" and its control variables (antecedents and consequences) through behavioral observation and functional analysis; based on this, quantify the baseline behavior, establish measurable treatment goals, and develop a systematic behavior modification plan.",
+    "parent_ids": [
+      "285"
+    ],
+    "sect": "bt"
+  },
+  "1": {
+    "skill_id": "1",
+    "skill_name": "Functional Behavior Assessment",
+    "skill_description": "A systematic analysis implemented before and in the initial phase to identify the factors influencing and controlling problem behaviors in the client's internal and external conditions, focusing on seven aspects, to provide a basis for defining the target behavior, developing interventions, and evaluating treatment effectiveness.",
+    "parent_ids": [
+      "285",
+      "1"
+    ],
+    "sect": "bt"
+  },
+  "2": {
+    "skill_id": "2",
+    "skill_name": "Key Components of Functional Behavior Assessment",
+    "skill_description": "Includes preliminary analysis, situational analysis, motivation, development, self-control, attitudes of others, and physical environment, forming an assessment framework to comprehensively grasp the determining conditions, frequency, intensity, and maintaining factors of the problem behavior.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2"
+    ],
+    "sect": "bt"
+  },
+  "3": {
+    "skill_id": "3",
+    "skill_name": "Determine Specific Conditions of the Problem Behavior",
+    "skill_description": "Focuses on identifying the specific antecedent conditions and cues for the occurrence of the problem behavior, clarifying when, where, under whose influence, and what circumstances it occurs, providing actionable entry points for stimulus control and confrontation training.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "3"
+    ],
+    "sect": "bt"
+  },
+  "4": {
+    "skill_id": "4",
+    "skill_name": "Assess the Frequency and Intensity of the Problem Behavior",
+    "skill_description": "Systematically record the frequency, intensity, duration, and breadth of the behavior, analyze the probability of occurrence and influencing factors in different contexts, providing a basis for evaluating treatment outcomes and selecting exposure or reinforcement strategies.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "4"
+    ],
+    "sect": "bt"
+  },
+  "5": {
+    "skill_id": "5",
+    "skill_name": "Analyze the Motivation and Reinforcement of the Problem Behavior",
+    "skill_description": "Assesses the motivation and reinforcement maintaining the problem behavior, identifies the functional consequences of escape and attention-seeking, clarifies key reinforcers and avoidance chains, providing a basis for employing reinforcement, extinction, or confrontation response designs.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "5"
+    ],
+    "sect": "bt"
+  },
+  "6": {
+    "skill_id": "6",
+    "skill_name": "Outline the Developmental History of the Problem Behavior",
+    "skill_description": "Reviews the formation and evolution of the problem behavior, examines the conditioning, generalization, and maintenance processes, identifies key developmental milestones and environmental changes, providing information for setting stage-specific goals and preventing relapse.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "6"
+    ],
+    "sect": "bt"
+  },
+  "7": {
+    "skill_id": "7",
+    "skill_name": "Assess Patient Self-Control Ability",
+    "skill_description": "Assesses the client's self-monitoring and self-reinforcement abilities, reviews past attempts at self-control and their effectiveness, determines feasible self-management strategies and support needs, and enhances treatment adherence.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "7"
+    ],
+    "sect": "bt"
+  },
+  "8": {
+    "skill_id": "8",
+    "skill_name": "Assessing the attitude of significant others towards behavior",
+    "skill_description": "Investigate the attitude and reaction of significant others towards the client's behavior, identify the reinforcing/punishing effects of praise, criticism, or neglect, and adjust maintaining factors in the family and social environment.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "8"
+    ],
+    "sect": "bt"
+  },
+  "9": {
+    "skill_id": "9",
+    "skill_name": "Assessing the impact of the physical environment on behavior",
+    "skill_description": "Identify key details in the physical environment that influence behavior, such as the layout of the place, accessibility of stimuli, and cue lines, optimize the environment to reduce triggers and enhance natural cues for desired behaviors.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "9"
+    ],
+    "sect": "bt"
+  },
+  "10": {
+    "skill_id": "10",
+    "skill_name": "Systematic Desensitization",
+    "skill_description": "Based on the principle of reciprocal inhibition, use relaxation training and graded exposure to reassociate fear stimuli with relaxation responses, progressively eliminate anxiety arousal, it is a standardized technique for treating fear and anxiety.",
+    "parent_ids": [
+      "285",
+      "10"
+    ],
+    "sect": "bt"
+  },
+  "11": {
+    "skill_id": "11",
+    "skill_name": "Rating subjective anxiety level",
+    "skill_description": "Assist the client in using the 0-100 subjective anxiety rating scale to score typical fear events, achieve a shared understanding of anxiety intensity, and provide quantitative basis for subsequent graded desensitization.",
+    "parent_ids": [
+      "285",
+      "10",
+      "11"
+    ],
+    "sect": "bt"
+  },
+  "12": {
+    "skill_id": "12",
+    "skill_name": "Designing an anxiety level hierarchy",
+    "skill_description": "Arrange fear situations from low to high based on subjective scores, creating evenly spaced, operable level sequences; the range of the levels varies by individual, it is the prerequisite and roadmap for implementing systematic desensitization.",
+    "parent_ids": [
+      "285",
+      "10",
+      "12"
+    ],
+    "sect": "bt"
+  },
+  "13": {
+    "skill_id": "13",
+    "skill_name": "Flooding Therapy",
+    "skill_description": "Expose the client to the most intense, unavoidable fear stimuli or imagined scenarios, which naturally diminishes after reaching the emotional peak, using habituation and extinction to break the vicious cycle of avoidance-negative reinforcement.",
+    "parent_ids": [
+      "285",
+      "13"
+    ],
+    "sect": "bt"
+  },
+  "14": {
+    "skill_id": "14",
+    "skill_name": "Clinical check before treatment implementation",
+    "skill_description": "Perform necessary physical examinations and risk assessments before treatment, such as electrocardiogram, EEG, etc., to rule out contraindications such as severe cardiovascular, central, and respiratory system diseases, to ensure the safety of flooding therapy.",
+    "parent_ids": [
+      "285",
+      "13",
+      "14"
+    ],
+    "sect": "bt"
+  },
+  "15": {
+    "skill_id": "15",
+    "skill_name": "Signing the flooding therapy treatment agreement",
+    "skill_description": "Fully explain the principles, process, and potential intense discomfort, obtain informed consent from the patient and family, and sign an agreement; the agreement enhances self-control and ensures smooth treatment progression.",
+    "parent_ids": [
+      "285",
+      "13",
+      "15"
+    ],
+    "sect": "bt"
+  },
+  "16": {
+    "skill_id": "16",
+    "skill_name": "Establishing a Genuine Therapeutic Relationship",
+    "skill_description": "Establishing a genuine and trustworthy therapeutic relationship before implementing intense exposure; trust can increase persistence, helping patients not retreat during the peak of distress and successfully complete the treatment task.",
+    "parent_ids": [
+      "285",
+      "13",
+      "16"
+    ],
+    "sect": "bt"
+  },
+  "17": {
+    "skill_id": "17",
+    "skill_name": "Providing Treatment Explanation and Encouragement",
+    "skill_description": "Continuously explaining reaction patterns, setting reasonable expectations, and providing encouragement and comfort during exposure; avoiding premature termination after the reaction peak to consolidate habituation and prevent avoidance.",
+    "parent_ids": [
+      "285",
+      "13",
+      "17"
+    ],
+    "sect": "bt"
+  },
+  "18": {
+    "skill_id": "18",
+    "skill_name": "Aversion Therapy",
+    "skill_description": "Repeatedly pairing undesirable behaviors with stimuli such as electric shock, emetics, or aversive imagery to establish an aversive conditioning effect to weaken the probability of the behavior occurring; emphasizing controllable and safe stimulus intensity.",
+    "parent_ids": [
+      "285",
+      "18"
+    ],
+    "sect": "bt"
+  },
+  "19": {
+    "skill_id": "19",
+    "skill_name": "Defining the Target Behavior for Aversion Therapy",
+    "skill_description": "Clearly and singularly defining the undesirable behavior to be eliminated, requiring it to be observable, specific, and complete, facilitating the establishment of conditioned reflexes and efficacy assessment, avoiding the inclusion of other behavioral components.",
+    "parent_ids": [
+      "285",
+      "18",
+      "19"
+    ],
+    "sect": "bt"
+  },
+  "20": {
+    "skill_id": "20",
+    "skill_name": "Behavior Modification Techniques",
+    "skill_description": "Based on the principles of operant conditioning and reinforcement, shaping desired behaviors and reducing undesirable reactions through techniques such as positive reinforcement, extinction, token economies, and behavior contracts, emphasizing immediate and consistent reinforcement.",
+    "parent_ids": [
+      "285",
+      "20"
+    ],
+    "sect": "bt"
+  },
+  "21": {
+    "skill_id": "21",
+    "skill_name": "Defining the Target Behavior for Behavior Modification",
+    "skill_description": "Selecting target behaviors that are observable, measurable, and repeatable for reinforcement, distinguishing between beneficial and behaviors needing change, as the direct object for correction and differential reinforcement.",
+    "parent_ids": [
+      "285",
+      "20",
+      "21"
+    ],
+    "sect": "bt"
+  },
+  "22": {
+    "skill_id": "22",
+    "skill_name": "Selecting Correction Targets and Steps",
+    "skill_description": "Developing a step-by-step correction plan that gradually approaches the goal, setting intermediate behaviors and differential reinforcement; adjusting steps and reinforcement standards as treatment progresses to ensure the stable formation of the behavior chain.",
+    "parent_ids": [
+      "285",
+      "20",
+      "22"
+    ],
+    "sect": "bt"
+  },
+  "23": {
+    "skill_id": "23",
+    "skill_name": "Modeling Technique",
+    "skill_description": "Based on social learning theory, promoting observational learning through demonstration, video recording, and live demonstration, combined with role-playing and timely reinforcement, to rapidly acquire and consolidate new behaviors.",
+    "parent_ids": [
+      "285",
+      "23"
+    ],
+    "sect": "bt"
+  },
+  "24": {
+    "skill_id": "24",
+    "skill_name": "Assessment of Patient's Imitation Learning Ability",
+    "skill_description": "Assess the feasibility and difficulty of observational learning by evaluating the four components of attention, retention, motor reproduction, and motivation, to provide a basis for demonstration gradients and practice methods.",
+    "parent_ids": [
+      "285",
+      "23",
+      "24"
+    ],
+    "sect": "bt"
+  },
+  "25": {
+    "skill_id": "25",
+    "skill_name": "Assessment of Imitation Ability through Psychological Testing",
+    "skill_description": "Use psychological tests and scales to assess attention, comprehension, and imitation tendencies as objective basis for developing demonstration programs and reinforcement strategies, to improve training match.",
+    "parent_ids": [
+      "285",
+      "23",
+      "24",
+      "25"
+    ],
+    "sect": "bt"
+  },
+  "26": {
+    "skill_id": "26",
+    "skill_name": "Assessment of Imitation Ability Based on Patient Experience",
+    "skill_description": "Organize the individual's past learning and social experiences, history of exposure to models, and successful imitation cases to predict skill transfer and induction effects, to customize demonstration content.",
+    "parent_ids": [
+      "285",
+      "23",
+      "24",
+      "26"
+    ],
+    "sect": "bt"
+  },
+  "27": {
+    "skill_id": "27",
+    "skill_name": "Social Skills Training",
+    "skill_description": "Based on reinforcement and imitation, systematically teach and practice social skills, combining demonstration, role-playing, feedback, and homework to promote skill retention and transfer application.",
+    "parent_ids": [
+      "285",
+      "27"
+    ],
+    "sect": "bt"
+  },
+  "28": {
+    "skill_id": "28",
+    "skill_name": "Establish a Good Therapeutic Relationship",
+    "skill_description": "Establish a stable therapeutic relationship at the beginning of training, provide a safe and supportive interactive atmosphere, enhance participation and practice motivation, and lay the foundation for skill acquisition.",
+    "parent_ids": [
+      "285",
+      "27",
+      "28"
+    ],
+    "sect": "bt"
+  },
+  "29": {
+    "skill_id": "29",
+    "skill_name": "Self-Management Techniques",
+    "skill_description": "Use strategies such as self-monitoring, premise control, behavioral contracts, and self-reinforcement to improve self-regulation ability, gradually transition the patient from external control to self-control, and consolidate behavioral change.",
+    "parent_ids": [
+      "285",
+      "29"
+    ],
+    "sect": "bt"
+  },
+  "30": {
+    "skill_id": "30",
+    "skill_name": "Establish Clear Self-Management Goals",
+    "skill_description": "Formulate specific, measurable, achievable goals and subgoals, and record baseline levels, in order to evaluate progress, arrange reinforcement, and guide subsequent adjustments.",
+    "parent_ids": [
+      "285",
+      "29",
+      "30"
+    ],
+    "sect": "bt"
+  },
+  "31": {
+    "skill_id": "31",
+    "skill_name": "Define Expected and Unexpected Behaviors",
+    "skill_description": "Before establishing goals, clearly define expected and unexpected behaviors, record the occurring situations and indicators, to lay the foundation for self-monitoring, functional assessment, and intervention selection.",
+    "parent_ids": [
+      "285",
+      "29",
+      "31"
+    ],
+    "sect": "bt"
+  },
+  "32": {
+    "skill_id": "32",
+    "skill_name": "Strengthening Motivation and Decision Making",
+    "skill_description": "Enhance motivation for change and make decisions to adopt self-management; increase persistence and success rate through public commitment and environmental reminders, to initiate subsequent plans.",
+    "parent_ids": [
+      "285",
+      "29",
+      "32"
+    ],
+    "sect": "bt"
+  },
+  "261": {
+    "skill_id": "261",
+    "skill_name": "Biofeedback",
+    "skill_description": "Amplify and provide audiovisual feedback using physiological instruments for subtle physiological signals (electromyography, electrodermal activity, skin temperature, heart rate, blood pressure, EEG, etc.), enabling the client to learn to regulate involuntary functions, establish new operant conditioned reflexes, alleviate psychosomatic illness and stress, and improve self-monitoring and self-regulation abilities.",
+    "parent_ids": [
+      "285",
+      "261"
+    ],
+    "sect": "bt"
+  },
+  "262": {
+    "skill_id": "262",
+    "skill_name": "Client Information Questionnaire",
+    "skill_description": "Fill out the questionnaire before treatment to systematically collect medical history and psychosocial information: health, surgery and medication, work, relationships, lifestyle, sleep and diet, exercise and recreation, marriage and family, etc. Physical examination is necessary when required; used to analyze causes, rule out drug or nutritional influences, and guide feedback training.",
+    "parent_ids": [
+      "285",
+      "261",
+      "262"
+    ],
+    "sect": "bt"
+  },
+  "266": {
+    "skill_id": "266",
+    "skill_name": "Establishing the Therapeutic Relationship",
+    "skill_description": "At the start of counseling, the counselor, centered on respect, listening, empathy, and positive attention, creates a safe atmosphere, encourages the client to express themselves freely, builds trust and a cooperative relationship, laying the foundation for subsequent assessments and treatment.",
+    "parent_ids": [
+      "285",
+      "266"
+    ],
+    "sect": "bt"
+  },
+  "267": {
+    "skill_id": "267",
+    "skill_name": "Data Collection",
+    "skill_description": "Comprehensively collect general and detailed information about the client through open-ended, semi-open-ended, and closed-ended questions, covering symptoms, triggers, duration, and impact on learning and life, to provide a basis for diagnosis and plan formulation.",
+    "parent_ids": [
+      "285",
+      "267"
+    ],
+    "sect": "bt"
+  },
+  "268": {
+    "skill_id": "268",
+    "skill_name": "Psychological Diagnostic Assessment",
+    "skill_description": "Use standardized psychological tests to assess symptoms and functioning, such as the SCL-90, SDS, SAS scales, and combine with clinical interviews to determine the level of anxiety, depression, and related factors, quantify the baseline, and provide a reference for treatment efficacy assessment.",
+    "parent_ids": [
+      "285",
+      "268"
+    ],
+    "sect": "bt"
+  },
+  "269": {
+    "skill_id": "269",
+    "skill_name": "Determining Counseling Goals",
+    "skill_description": "Negotiate specific and feasible counseling goals and implementation plans with the client, focusing on reducing test anxiety, enhancing self-confidence, and improving learning and interpersonal functioning, clarifying phased tasks to guide subsequent systematic desensitization and training.",
+    "parent_ids": [
+      "285",
+      "269"
+    ],
+    "sect": "bt"
+  },
+  "133": {
+    "skill_id": "133",
+    "skill_name": "Functional Analysis",
+    "skill_description": "Before behavioral therapy, systematically analyze the influence and control of environmental stimuli and behavioral consequences on problem behavior, clarify the function of the behavior to guide the formulation of treatment goals and plans; lack of functional analysis may exacerbate problem behavior, thus it is a necessary step before intervention.",
+    "parent_ids": [
+      "285",
+      "133"
+    ],
+    "sect": "bt"
+  },
+  "134": {
+    "skill_id": "134",
+    "skill_name": "Functional Behavior",
+    "skill_description": "Identify the maintaining function of problem behavior, including social positive reinforcement, social negative reinforcement, sensory positive reinforcement, and sensory negative reinforcement; identify the consequences gained or avoided, locate the relationship between environmental events and behavior, and provide a basis for intervention selection.",
+    "parent_ids": [
+      "285",
+      "133",
+      "134"
+    ],
+    "sect": "bt"
+  },
+  "135": {
+    "skill_id": "135",
+    "skill_name": "Social Positive Reinforcement",
+    "skill_description": "Problem behavior is maintained by positive reinforcement provided by others, such as crying gaining parental attention, or rule violation gaining teacher attention. Identifying this function helps adjust others' attention and rewards, reducing opportunities for the problem behavior to obtain desired outcomes.",
+    "parent_ids": [
+      "285",
+      "133",
+      "134",
+      "135"
+    ],
+    "sect": "bt"
+  },
+  "136": {
+    "skill_id": "136",
+    "skill_name": "Social Negative Reinforcement",
+    "skill_description": "Problem behavior is maintained by escaping or avoiding aversive events, such as complaining to avoid labor, or destroying a seat to avoid homework. Assess the value of escape and situational demands, avoiding unintentional reinforcement of escape behavior during intervention.",
+    "parent_ids": [
+      "285",
+      "133",
+      "134",
+      "136"
+    ],
+    "sect": "bt"
+  },
+  "137": {
+    "skill_id": "137",
+    "skill_name": "Sensory Positive Reinforcement",
+    "skill_description": "Problem behavior is maintained by internal sensations or the consequences of the behavior itself, such as scratching providing a comforting stinging sensation, or throwing to hear loud noises. Identify the source of self-stimulation and modify sensory consequences or provide functionally equivalent stimuli.",
+    "parent_ids": [
+      "285",
+      "133",
+      "134",
+      "137"
+    ],
+    "sect": "bt"
+  },
+  "138": {
+    "skill_id": "138",
+    "skill_name": "Sensory Negative Reinforcement",
+    "skill_description": "Occurs when the target behavior automatically reduces or eliminates aversive stimuli, such as proactively closing a window in cold weather to block the cold wind. Intervention must consider situational stimuli, ensuring that the reinforcement of appropriate behavior outweighs the functional consequences of the problem behavior.",
+    "parent_ids": [
+      "285",
+      "133",
+      "134",
+      "138"
+    ],
+    "sect": "bt"
+  },
+  "139": {
+    "skill_id": "139",
+    "skill_name": "Content of Problem Behavior Function Analysis",
+    "skill_description": "Covers seven aspects: preliminary discrimination of behavior deficit/excess, situational and frequency intensity/duration, motivation and reinforcer, developmental change factors, self-control, attitudes of relevant persons, and physical environment, synthesizing information to form a conclusive statement.",
+    "parent_ids": [
+      "285",
+      "133",
+      "139"
+    ],
+    "sect": "bt"
+  },
+  "140": {
+    "skill_id": "140",
+    "skill_name": "Methods for Problem Behavior Function Analysis",
+    "skill_description": "Common methods include investigation, observation, and experimentation: first, collect data via interviews, questionnaires, and rating scales; then, verify with systematic direct observation; finally, use experiments to manipulate variables to confirm causality; the three methods complement each other to improve the accuracy and feasibility of the conclusion.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140"
+    ],
+    "sect": "bt"
+  },
+  "141": {
+    "skill_id": "141",
+    "skill_name": "Investigation Method",
+    "skill_description": "Collect information about problem behavior through interviews, telephone calls, questionnaires, and rating scales to clarify antecedents and consequences and make preliminary hypotheses about the function; simple to operate but affected by recall bias, should be combined with the observation method to improve accuracy.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "141"
+    ],
+    "sect": "bt"
+  },
+  "142": {
+    "skill_id": "142",
+    "skill_name": "Observational Method",
+    "skill_description": "Objectively record behaviors and their sequence in natural contexts according to the research objective and observation form; the data is authentic and can be used to verify indirect conclusions; but only indicates correlation, not causation, and should be combined with experimental methods to test functional hypotheses.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "142"
+    ],
+    "sect": "bt"
+  },
+  "143": {
+    "skill_id": "143",
+    "skill_name": "Direct Observation",
+    "skill_description": "Record antecedents and consequences in the order of events without interfering with the subject's activity, continuing until the relationship between behavior and environment is clear; requires selecting an observer, timing, and location and ensuring duration to obtain key data for functional analysis.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "142",
+      "143"
+    ],
+    "sect": "bt"
+  },
+  "144": {
+    "skill_id": "144",
+    "skill_name": "Functional Assessment Observation Form",
+    "skill_description": "Record the time, behavior, antecedent events, perceived function (escape/access), actual consequences, and notes around problem behaviors; track frequency and context to clarify maintaining functions and provide a basis for treatment plans.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "142",
+      "144"
+    ],
+    "sect": "bt"
+  },
+  "145": {
+    "skill_id": "145",
+    "skill_name": "Behavior Recording in Functional Analysis Observation",
+    "skill_description": "Record behaviors and related events sequentially during observation, avoiding subjective interpretation, focusing on the consistency and patterns of antecedents and consequences; the data forms the basis for subsequent functional analysis and plan design, but does not determine causation.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "142",
+      "145"
+    ],
+    "sect": "bt"
+  },
+  "146": {
+    "skill_id": "146",
+    "skill_name": "Experimental Method",
+    "skill_description": "Systematically manipulate independent variables and behavioral consequences to test the causal relationship between environmental events and problem behaviors; requires controlling extraneous variables and professional training; precise but difficult to implement, used to confirm functional assessment hypotheses.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "146"
+    ],
+    "sect": "bt"
+  },
+  "147": {
+    "skill_id": "147",
+    "skill_name": "Developing a Behavior Treatment Plan",
+    "skill_description": "The plan is based on functional assessment conclusions, emphasizing changes in family/teacher behavior and physical context, conforming to behavioral principles and matching the implementer's ability, resources, and value; simultaneously constructing functionally equivalent alternative behaviors to promote change.",
+    "parent_ids": [
+      "285",
+      "147"
+    ],
+    "sect": "bt"
+  },
+  "148": {
+    "skill_id": "148",
+    "skill_name": "Observation and Recording of Behavior",
+    "skill_description": "By defining target behaviors, selecting observation methods and recording methods, obtain baseline and process data, used to judge the necessity of treatment, method selection, and effectiveness evaluation; it is a fundamental step in behavioral treatment.",
+    "parent_ids": [
+      "285",
+      "148"
+    ],
+    "sect": "bt"
+  },
+  "149": {
+    "skill_id": "149",
+    "skill_name": "Defining Target Behavior",
+    "skill_description": "Clearly and objectively describe observable behaviors using actionable active verbs, avoiding category labels and subjective inferences; jointly developed by the therapist and requester, specific and responsible, ensuring consistent recording by different observers.",
+    "parent_ids": [
+      "285",
+      "148",
+      "149"
+    ],
+    "sect": "bt"
+  },
+  "150": {
+    "skill_id": "150",
+    "skill_name": "Behavioral Observation",
+    "skill_description": "Directly observe to verify indirect conclusions, select observer, timing, and location, and set duration to cover sufficient occurrences; use functional assessment observation form to systematically record key elements to guide subsequent correction plans.",
+    "parent_ids": [
+      "285",
+      "148",
+      "150"
+    ],
+    "sect": "bt"
+  },
+  "151": {
+    "skill_id": "151",
+    "skill_name": "Behavior Recording",
+    "skill_description": "Recording methods include continuous recording, outcome recording, interval recording, and time sample recording, to quantify frequency, duration, intensity, and latency or interval occurrence proportion; establish and evaluate behavioral baseline and changes based on this.",
+    "parent_ids": [
+      "285",
+      "148",
+      "151"
+    ],
+    "sect": "bt"
+  }
+}

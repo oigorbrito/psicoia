@@ -1,0 +1,1205 @@
+{
+  "898": {
+    "skill_id": "898",
+    "skill_name": "Exposure Therapy",
+    "skill_description": "In a controlled setting, systematically exposing the client to stimuli that provoke fear or anxiety, gradually reducing avoidance and anxiety responses through real-life or imaginal exposure. Applicable to phobias, anxiety, OCD, etc.; requires informed consent, thorough safety assessment, and often combined with other interventions to consolidate therapeutic effects.",
+    "parent_ids": [
+      "916",
+      "898"
+    ],
+    "sect": "bt"
+  },
+  "899": {
+    "skill_id": "899",
+    "skill_name": "Eye Movement Desensitization and Reprocessing Therapy",
+    "skill_description": "EMDR combines imaginal exposure, cognitive restructuring, and rhythmic eye movements/bilateral stimulation to facilitate the reprocessing of traumatic memories to alleviate symptoms such as PTSD, and is also used for anxiety, panic, etc. Implementation requires attention to the client's safety, and the therapist must undergo systematic training and supervision to appropriately manage potential intense reactions.",
+    "parent_ids": [
+      "916",
+      "898",
+      "899"
+    ],
+    "sect": "bt"
+  },
+  "900": {
+    "skill_id": "900",
+    "skill_name": "Social Skills Training",
+    "skill_description": "To improve an individual's effective interaction abilities in different social situations through psychoeducation, modeling, reinforcement, behavioral rehearsal, role-playing, and feedback. Customized plans can be tailored for interpersonal skill deficits, the scope is broad, and is often combined with anger management training to promote interpersonal adaptation.",
+    "parent_ids": [
+      "916",
+      "900"
+    ],
+    "sect": "bt"
+  },
+  "901": {
+    "skill_id": "901",
+    "skill_name": "Assertiveness Training",
+    "skill_description": "To teach clients to effectively express needs and stances while respecting others' rights and feelings, replacing indecisive or aggressive patterns. Combines modeling, rehearsal, feedback, and cognitive restructuring to challenge negative self-statements and beliefs, often implemented in groups and requires consideration of cultural sensitivity.",
+    "parent_ids": [
+      "916",
+      "900",
+      "901"
+    ],
+    "sect": "bt"
+  },
+  "799": {
+    "skill_id": "799",
+    "skill_name": "Shaping, Fading, and Chaining",
+    "skill_description": "Shaping, fading, and chaining are core techniques for developing new behaviors. Shaping and chaining train skills step-by-step, and fading gradually removes prompts to ensure the individual generalizes and uses the behavior independently in natural contexts.",
+    "parent_ids": [
+      "916",
+      "799"
+    ],
+    "sect": "bt"
+  },
+  "800": {
+    "skill_id": "800",
+    "skill_name": "Shaping",
+    "skill_description": "Shaping involves using differential reinforcement for responses that progressively approach a target behavior, gradually increasing the standard until the new behavior is achieved. Often used for language, imitation, and motor skill training, requiring control over the reinforcement rhythm to avoid stagnation.",
+    "parent_ids": [
+      "916",
+      "799",
+      "800"
+    ],
+    "sect": "bt"
+  },
+  "801": {
+    "skill_id": "801",
+    "skill_name": "Fading",
+    "skill_description": "Fading involves gradually changing the control stimulus while maintaining the response, weakening the aid until the natural stimulus alone elicits the correct response. Key aspects are the selection of the target stimulus, the initial stimulus, and the control and speed of the stimulus.",
+    "parent_ids": [
+      "916",
+      "799",
+      "801"
+    ],
+    "sect": "bt"
+  },
+  "802": {
+    "skill_id": "802",
+    "skill_name": "Chaining",
+    "skill_description": "Chaining breaks down complex target behaviors into a stimulus-response chain, training them sequentially; each response serves as the discriminative stimulus for the next step and reinforcement for the preceding step. Applicable to a series of behaviors such as life skills.",
+    "parent_ids": [
+      "916",
+      "799",
+      "802"
+    ],
+    "sect": "bt"
+  },
+  "803": {
+    "skill_id": "803",
+    "skill_name": "Whole Task Presentation Method",
+    "skill_description": "Practice the entire behavior chain from beginning to end in each training session, providing necessary assistance to the individual for difficult steps, practicing repeatedly until mastery. Suitable for shorter behavior chains, promotes independence and efficiency.",
+    "parent_ids": [
+      "916",
+      "799",
+      "802",
+      "803"
+    ],
+    "sect": "bt"
+  },
+  "804": {
+    "skill_id": "804",
+    "skill_name": "Backward Chaining",
+    "skill_description": "Train in reverse order, teaching the last step first, then gradually integrating with mastered steps moving forward. Reinforces the sense of success near the end point, suitable for long, difficult chains, but transfer may be limited when contrary to the natural order.",
+    "parent_ids": [
+      "916",
+      "799",
+      "802",
+      "804"
+    ],
+    "sect": "bt"
+  },
+  "805": {
+    "skill_id": "805",
+    "skill_name": "Forward Chaining",
+    "skill_description": "Train in the natural order, starting with the first step and gradually adding and integrating subsequent steps until the entire chain is completed. Closer to daily situations, often used to train children's daily behaviors and longer series of skills.",
+    "parent_ids": [
+      "916",
+      "799",
+      "802",
+      "805"
+    ],
+    "sect": "bt"
+  },
+  "836": {
+    "skill_id": "836",
+    "skill_name": "Aversion Therapy",
+    "skill_description": "Establish an aversive conditioned reflex by repeatedly pairing the target behavior to be eliminated with unpleasant or aversive stimuli, causing the individual to develop aversion and avoidance toward that behavior, thereby reducing or abandoning it. The principle originates from classical conditioning and avoidance learning; application must adhere to ethics.",
+    "parent_ids": [
+      "916",
+      "836"
+    ],
+    "sect": "bt"
+  },
+  "837": {
+    "skill_id": "837",
+    "skill_name": "Aversion Therapy Variations",
+    "skill_description": "Safer, more controllable forms developed based on traditional aversive stimuli, including symbolic representation aversion therapy, implicit sensitization, and time-out techniques, using symbols or imagination instead of real stimuli to reduce risk and increase operability.",
+    "parent_ids": [
+      "916",
+      "836",
+      "837"
+    ],
+    "sect": "bt"
+  },
+  "838": {
+    "skill_id": "838",
+    "skill_name": "Implicit Sensitization",
+    "skill_description": "Using verbal guidance to lead the client to imagine the aversive reinforcer and the strong aversive situation simultaneously, pairing them in appearance to establish an aversive reaction to the undesirable behavior. Safe, no space restrictions, requires good imagination; efficacy is slightly weaker than with real stimuli.",
+    "parent_ids": [
+      "916",
+      "836",
+      "837",
+      "838"
+    ],
+    "sect": "bt"
+  },
+  "839": {
+    "skill_id": "839",
+    "skill_name": "Symbolic Representation Aversion Therapy",
+    "skill_description": "Precisely pair symbols of undesirable reinforcers, such as pictures or videos, with aversive stimuli to induce an aversive reaction identical to that of real stimuli. Presentation and duration are easily controlled and convenient to use, avoiding direct contact with physical stimuli.",
+    "parent_ids": [
+      "916",
+      "836",
+      "837",
+      "839"
+    ],
+    "sect": "bt"
+  },
+  "840": {
+    "skill_id": "840",
+    "skill_name": "Time-Out Technique",
+    "skill_description": "Withdrawing reinforcement at a specific time, linking the undesirable behavior with new situations such as isolation without reinforcement, causing the client to become averse to that situation and reduce the target behavior. Relapse may occur initially; self-esteem must be protected, and misuse must be avoided.",
+    "parent_ids": [
+      "916",
+      "836",
+      "837",
+      "840"
+    ],
+    "sect": "bt"
+  },
+  "888": {
+    "skill_id": "888",
+    "skill_name": "Biofeedback",
+    "skill_description": "Utilizing physiological instruments to convert subtle physiological signals into perceptible feedback, training individuals to voluntarily regulate visceral and somatic functions based on operant conditioning, correcting pathological conditioned links, and enhancing self-regulation to alleviate mind-body and neuropsychiatric problems.",
+    "parent_ids": [
+      "916",
+      "888"
+    ],
+    "sect": "bt"
+  },
+  "889": {
+    "skill_id": "889",
+    "skill_name": "Biofeedback Treatment End Phase",
+    "skill_description": "Record target values and physiological indicator changes at each treatment end phase, compare with baseline to evaluate efficacy; if there is no significant change in indicators or symptoms have not improved, consider changing feedback physiological indicators or adjusting the plan, and arrange follow-up and home training to consolidate effects.",
+    "parent_ids": [
+      "916",
+      "888",
+      "889"
+    ],
+    "sect": "bt"
+  },
+  "890": {
+    "skill_id": "890",
+    "skill_name": "Observation Record Sheet",
+    "skill_description": "Filled by the therapist before, during, and after treatment, used to record physiological and symptom data, target values, and practice status for phase comparison, to judge efficacy and problems, and when necessary, guide the change of feedback indicators or adjustment of treatment strategies to ensure the training is scientifically effective.",
+    "parent_ids": [
+      "916",
+      "888",
+      "889",
+      "890"
+    ],
+    "sect": "bt"
+  },
+  "916": {
+    "skill_id": "916",
+    "skill_name": "Consultation Interview",
+    "skill_description": "Flexibly apply intervention strategies such as reinforcement, inhibition, exposure, and imitation based on learning theories; the core objective is to eliminate maladaptive behaviors, shape and consolidate adaptive new behaviors, and achieve behavior correction and reshaping through targeted training.",
+    "parent_ids": [
+      "916"
+    ],
+    "sect": "bt"
+  },
+  "449": {
+    "skill_id": "449",
+    "skill_name": "Intervention Strategy",
+    "skill_description": "Core interventions of behavioral therapy include three strategies: learning, reinforcement, and inhibition, based on classical and operant conditioning, improving symptoms and enhancing social functioning by shaping adaptive behaviors, extinguishing maladaptive responses, and habituating behaviors.",
+    "parent_ids": [
+      "916",
+      "449"
+    ],
+    "sect": "bt"
+  },
+  "450": {
+    "skill_id": "450",
+    "skill_name": "Learning",
+    "skill_description": "Learning strategies involve imparting new behaviors and skills, demonstration and imitation, social skills training, and biofeedback, to form immediately operable adaptive responses under appropriate environments and reinforcement, achieving behavior change and consolidation.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450"
+    ],
+    "sect": "bt"
+  },
+  "451": {
+    "skill_id": "451",
+    "skill_name": "Imitation Technique/Observational Learning",
+    "skill_description": "Based on Bandura's social learning theory, the client acquires new responses by observing the behavior and its outcomes of the model, generating modeling, inhibition/de-inhibition, and evocational effects, used to obtain desired and substitute maladaptive behaviors.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "451"
+    ],
+    "sect": "bt"
+  },
+  "452": {
+    "skill_id": "452",
+    "skill_name": "Design Imitation Demonstration Program",
+    "skill_description": "Design demonstrations according to the principle of progression from easy to difficult, select role models similar to the client, present correct and incorrect behaviors through methods such as in-person demonstration, audio recording, or video recording, to lay the foundation for subsequent imitation and reinforcement.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "451",
+      "452"
+    ],
+    "sect": "bt"
+  },
+  "453": {
+    "skill_id": "453",
+    "skill_name": "Active Imitation Learning",
+    "skill_description": "The client participates in role-playing and practice after demonstration, consolidating new responses through reinforcement and feedback, improving skill mastery and transfer, shortening the error trial process, and enhancing confidence and coping efficacy.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "451",
+      "453"
+    ],
+    "sect": "bt"
+  },
+  "454": {
+    "skill_id": "454",
+    "skill_name": "Passive Imitation Learning",
+    "skill_description": "The client forms implicit learning through observing the demonstrator's behavior and consequences without direct participation or explicit reinforcement, such as behavioral change after watching a television demonstration, demonstrating the acquisition effect of observational learning.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "451",
+      "454"
+    ],
+    "sect": "bt"
+  },
+  "455": {
+    "skill_id": "455",
+    "skill_name": "Social Skills Training",
+    "skill_description": "Based on reinforcement and social learning, involving theoretical explanation, demonstration, role-playing, feedback, and transfer practice to help the client acquire and maintain social skills, improving interpersonal adaptation and functioning.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455"
+    ],
+    "sect": "bt"
+  },
+  "456": {
+    "skill_id": "456",
+    "skill_name": "Theoretical Basis for Social Skills Training",
+    "skill_description": "Explaining the principles and applicable situations of the target skills to the client, customizing explanations based on cultural and educational background, providing cognitive foundation and motivational support for subsequent demonstration, practice, and transfer.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "456"
+    ],
+    "sect": "bt"
+  },
+  "457": {
+    "skill_id": "457",
+    "skill_name": "Demonstration and Behavioral Practice",
+    "skill_description": "Through video, audio, or in-person demonstration of correct and incorrect responses, and arranging for the client to practice key actions and verbal responses, promoting skill formation, reducing anxiety, and improving situational coping.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "457"
+    ],
+    "sect": "bt"
+  },
+  "458": {
+    "skill_id": "458",
+    "skill_name": "Role-Playing",
+    "skill_description": "Simulating real social scenarios in the therapy room, where the therapist or peer plays supporting roles, the client practices target skills, gradually facing more difficult situations, reducing anxiety, and enhancing a sense of control.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "458"
+    ],
+    "sect": "bt"
+  },
+  "459": {
+    "skill_id": "459",
+    "skill_name": "Behavioral Feedback",
+    "skill_description": "Providing timely reinforcement for appropriate responses during practice, offering specific corrective feedback for deficiencies, encouraging self-reinforcement, enabling the client to establish stable behavioral patterns and improve self-assessment.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "459"
+    ],
+    "sect": "bt"
+  },
+  "460": {
+    "skill_id": "460",
+    "skill_name": "Transfer Training",
+    "skill_description": "Assigning homework and situational practice, guiding the application of skills learned in training to natural environments, monitoring and providing feedback on transfer effects, promoting skill maintenance and widespread application.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "460"
+    ],
+    "sect": "bt"
+  },
+  "461": {
+    "skill_id": "461",
+    "skill_name": "Confidence Training",
+    "skill_description": "Teach direct and effective verbal and nonverbal responses through role-playing, demonstration, and guidance to replace anxious and withdrawn behaviors with confident behaviors, improving expression, rights maintenance, and emotional control.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "461"
+    ],
+    "sect": "bt"
+  },
+  "462": {
+    "skill_id": "462",
+    "skill_name": "Anger Management Training in Confidence Training",
+    "skill_description": "Teach appropriate anger expression and control strategies in social situations, combining confident verbal skills, eye contact, and relaxation techniques to reduce outbursts and avoidance, improving self-regulation during conflict.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "461",
+      "462"
+    ],
+    "sect": "bt"
+  },
+  "463": {
+    "skill_id": "463",
+    "skill_name": "Biofeedback",
+    "skill_description": "Use instruments to monitor skin temperature, electrodermal activity, heart rate, blood pressure, electromyography, and electroencephalography, providing feedback on physiological signals to prompt clients to learn self-regulation, reduce autonomous arousal, and treat anxiety and psychosomatic problems.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463"
+    ],
+    "sect": "bt"
+  },
+  "464": {
+    "skill_id": "464",
+    "skill_name": "Biofeedback Learning Stages",
+    "skill_description": "Sequentially perform baseline measurements, rest, intervention, and self-regulation training, repeating reinforcement feedback learning in small modules to enable clients to master self-control methods for effectively reducing physiological indicators.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464"
+    ],
+    "sect": "bt"
+  },
+  "465": {
+    "skill_id": "465",
+    "skill_name": "Skin Temperature Feedback Technique",
+    "skill_description": "Use skin temperature signal feedback training to help clients regulate autonomic nervous balance, reduce sympathetic arousal, alleviate tension and certain psychosomatic symptoms, and promote the establishment of a state of full-body relaxation.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "465"
+    ],
+    "sect": "bt"
+  },
+  "466": {
+    "skill_id": "466",
+    "skill_name": "Electrodermal Activity Biofeedback Technique",
+    "skill_description": "Use electrodermal activity to reflect emotional arousal levels, leverage feedback to enhance awareness and regulation ability of stress response, used for anxiety and tension management and physiological-psychological connection training.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "466"
+    ],
+    "sect": "bt"
+  },
+  "467": {
+    "skill_id": "467",
+    "skill_name": "Heart Rate Feedback Technique",
+    "skill_description": "Train clients to reduce resting heart rate, increase heart rate variability, improve exercise tolerance, and reduce anxiety and depression, helping to regulate cardiovascular-related symptoms.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "467"
+    ],
+    "sect": "bt"
+  },
+  "468": {
+    "skill_id": "468",
+    "skill_name": "Blood Pressure Feedback Technique",
+    "skill_description": "Use blood pressure feedback to promote voluntary regulation of blood pressure, assist in the treatment of primary hypertension and other psychosomatic problems, combined with relaxation and cognitive strategies to enhance homeostasis and efficacy.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "468"
+    ],
+    "sect": "bt"
+  },
+  "469": {
+    "skill_id": "469",
+    "skill_name": "Electromyography Feedback Technique",
+    "skill_description": "Electrodes are placed on areas such as the forehead to provide feedback on skeletal muscle electrical activity to strengthen muscle relaxation or contraction training, widely used for anxiety relief, local spasms, twitches, and muscle strength rehabilitation.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "469"
+    ],
+    "sect": "bt"
+  },
+  "470": {
+    "skill_id": "470",
+    "skill_name": "EEG Feedback Technique",
+    "skill_description": "Through EEG feedback training of rhythm activities such as alpha waves, to improve conscious self-control, assist with attention problems and epilepsy management, and combined with techniques such as relaxation and system desensitization.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "470"
+    ],
+    "sect": "bt"
+  },
+  "471": {
+    "skill_id": "471",
+    "skill_name": "Biofeedback Home Exercise Setup",
+    "skill_description": "Arrange daily practice without the instrument after treatment to consolidate the self-regulation patterns learned in feedback, emphasizing that the instrument is only a temporary aid, with the goal of achieving stable self-control ability.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "471"
+    ],
+    "sect": "bt"
+  },
+  "472": {
+    "skill_id": "472",
+    "skill_name": "Reinforcement",
+    "skill_description": "Change the probability and intensity of behavior occurrence through positive and negative reinforcement, emphasize that behavioral consequences shape behavior maintenance or extinction, teach self-reinforcement to promote positive behavior and treatment progress.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472"
+    ],
+    "sect": "bt"
+  },
+  "473": {
+    "skill_id": "473",
+    "skill_name": "Behavior Modification Technique",
+    "skill_description": "Based on operant conditioning and differential reinforcement, set up reinforcers and situations, implement procedures such as shaping, extinction, overcorrection, and fading to systematically improve desired behaviors.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473"
+    ],
+    "sect": "bt"
+  },
+  "474": {
+    "skill_id": "474",
+    "skill_name": "Positive Reinforcement",
+    "skill_description": "Immediately provide appropriate rewards after a desired behavior to increase its frequency and intensity; reinforcement choices should match the need, establishing a stable behavior-outcome association.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "474"
+    ],
+    "sect": "bt"
+  },
+  "475": {
+    "skill_id": "475",
+    "skill_name": "Token Economy",
+    "skill_description": "Use exchangeable items as secondary reinforcers, reinforce timely and standardized responses, applicable to behavior management and correction in hospital, school, and group settings.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "474",
+      "475"
+    ],
+    "sect": "bt"
+  },
+  "476": {
+    "skill_id": "476",
+    "skill_name": "Behavior Contract",
+    "skill_description": "The therapist and the client agree on target behaviors and reinforcement/punishment arrangements, clarifying time and standards, promoting self-restraint and programmed execution, improving compliance.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "474",
+      "476"
+    ],
+    "sect": "bt"
+  },
+  "477": {
+    "skill_id": "477",
+    "skill_name": "Implicit Reinforcement",
+    "skill_description": "Forming implicit behavior-reinforcement associations by imagining the target response and the reward context in the mind, to assist in enhancing desired behavior in reality.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "474",
+      "477"
+    ],
+    "sect": "bt"
+  },
+  "478": {
+    "skill_id": "478",
+    "skill_name": "Extinction Therapy",
+    "skill_description": "Removing the reinforcer when an undesirable behavior occurs, causing the response to gradually decrease; often combined with positive reinforcement of alternative behaviors, initial brief outbursts of behavior may occur.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "478"
+    ],
+    "sect": "bt"
+  },
+  "479": {
+    "skill_id": "479",
+    "skill_name": "Overcorrection",
+    "skill_description": "Includes two parts: restoration and positive practice. Requires repairing the environment and practicing the correct behavior additionally, combined with reinforcement to establish positive maintenance and normative behavior.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "479"
+    ],
+    "sect": "bt"
+  },
+  "480": {
+    "skill_id": "480",
+    "skill_name": "Restoration",
+    "skill_description": "For inappropriate behaviors in a damaged environment, requires the behavior to restore the original state, increases the awareness of responsibility for the behavior consequences, laying the foundation for positive practice and reinforcement.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "479",
+      "480"
+    ],
+    "sect": "bt"
+  },
+  "481": {
+    "skill_id": "481",
+    "skill_name": "Positive Practice",
+    "skill_description": "Repeatedly practicing the correct maintenance behavior based on restoration, making the environment better than before, and reinforcing positive practice to solidify the adaptive response.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "479",
+      "481"
+    ],
+    "sect": "bt"
+  },
+  "482": {
+    "skill_id": "482",
+    "skill_name": "Fading",
+    "skill_description": "First using clear cues to help form the correct response, then gradually fading the cues, allowing the behavior to be maintained and generalized under natural cues, reducing dependence on external cues.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "482"
+    ],
+    "sect": "bt"
+  },
+  "483": {
+    "skill_id": "483",
+    "skill_name": "Suppression",
+    "skill_description": "Suppressing the occurrence of undesirable responses through stimulus control, cultivating antagonistic behaviors, and habituation; techniques such as relaxation, exposure, and aversive conditioning are commonly used to extinguish anxiety and problem behaviors.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483"
+    ],
+    "sect": "bt"
+  },
+  "484": {
+    "skill_id": "484",
+    "skill_name": "Stimulus Control",
+    "skill_description": "Adjusting the environment and cues for the occurrence of undesirable behavior so that it disappears automatically without external elicitation; as a core suppression strategy, often used in conjunction with self-management.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484"
+    ],
+    "sect": "bt"
+  },
+  "485": {
+    "skill_id": "485",
+    "skill_name": "Self-Management Technique",
+    "skill_description": "Teach the client self-monitoring, goal setting, stimulus control and arrangement of reinforcement/punishment, using social support and self-instruction, to promote desired behaviors and reduce excessive reactions.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485"
+    ],
+    "sect": "bt"
+  },
+  "486": {
+    "skill_id": "486",
+    "skill_name": "Premack Principle",
+    "skill_description": "Promote the occurrence of target behavior by presenting desired cues, arranging already formed events, lowering the difficulty of the response, or removing aversive cues and increasing the difficulty of competing behavior.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "486"
+    ],
+    "sect": "bt"
+  },
+  "487": {
+    "skill_id": "487",
+    "skill_name": "Goal Setting and Self-Monitoring",
+    "skill_description": "Set specific, measurable goals and continuously record behavior and context to enhance awareness and conditioning reinforcement effects, providing a basis for evaluating and adjusting the self-management plan.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "487"
+    ],
+    "sect": "bt"
+  },
+  "488": {
+    "skill_id": "488",
+    "skill_name": "Reinforcement and Punishment",
+    "skill_description": "Arrange self or others to implement reinforcement and punishment, reinforce information to be clear and timely, use punishment cautiously, and combine it with reinforcement to avoid negative emotional side effects.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "488"
+    ],
+    "sect": "bt"
+  },
+  "489": {
+    "skill_id": "489",
+    "skill_name": "Self-Management Behavior Contract",
+    "skill_description": "Clearly define self-management goals, reinforcement and punishment methods, and supervision arrangements in a written contract to enhance self-control and relapse prevention, and improve execution consistency.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "489"
+    ],
+    "sect": "bt"
+  },
+  "490": {
+    "skill_id": "490",
+    "skill_name": "Social Support",
+    "skill_description": "Mobilize important others to participate in supervision and encouragement, prevent self-reinforcement 'short-circuiting', increase plan persistence and effectiveness, which is an important strategy for successful self-management.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "490"
+    ],
+    "sect": "bt"
+  },
+  "491": {
+    "skill_id": "491",
+    "skill_name": "Self-Instruction and Self-Support",
+    "skill_description": "Change internal language through positive self-talk and prompts to guide and reinforce target behaviors, reduce the interference of negative self-statements on behavior, and enhance self-control.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "491"
+    ],
+    "sect": "bt"
+  },
+  "492": {
+    "skill_id": "492",
+    "skill_name": "Cultivating Counteracting Behavior",
+    "skill_description": "Substitute undesirable reactions with incompatible reactions such as relaxation, inhibit anxiety according to the principle of interactional inhibition, as an important technical pathway for inhibition strategies.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492"
+    ],
+    "sect": "bt"
+  },
+  "493": {
+    "skill_id": "493",
+    "skill_name": "Relaxation Training",
+    "skill_description": "Derived from Jacobson and Wolff theories, reduces autonomous arousal through muscle and mental relaxation, alleviating anxiety and tension, and can be combined with biofeedback and desensitization techniques.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493"
+    ],
+    "sect": "bt"
+  },
+  "494": {
+    "skill_id": "494",
+    "skill_name": "Progressive Muscle Relaxation",
+    "skill_description": "Alternately tense and relax different body parts to experience the difference and remember the feeling of comfort, approximately 20 minutes per session with daily practice, systematically covering the head, neck, shoulders, arms, torso, and lower limbs.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "494"
+    ],
+    "sect": "bt"
+  },
+  "495": {
+    "skill_id": "495",
+    "skill_name": "Imagery Relaxation (Passive Relaxation)",
+    "skill_description": "Combines deep breathing, passive muscle relaxation, and deepening strategies, using guided imagery to enter a tranquil setting, enhancing multi-channel sensory engagement to deepen the level of relaxation.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "495"
+    ],
+    "sect": "bt"
+  },
+  "496": {
+    "skill_id": "496",
+    "skill_name": "Guided Imagery",
+    "skill_description": "Guides the client to imagine calm, natural scenes at a slow pace, emphasizing visual dominance and combining auditory, tactile, and other senses to maintain interest and focus, deepening the relaxation effect.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "495",
+      "496"
+    ],
+    "sect": "bt"
+  },
+  "497": {
+    "skill_id": "497",
+    "skill_name": "Breathing Relaxation Technique",
+    "skill_description": "Teaches slow, even deep breathing rhythms, available at any time to quickly reduce tension and anxiety, suitable for situations where full muscle or imagery relaxation cannot be implemented.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "497"
+    ],
+    "sect": "bt"
+  },
+  "498": {
+    "skill_id": "498",
+    "skill_name": "Mental Relaxation Training",
+    "skill_description": "Guides attention to focus on different sensory objects such as vision, hearing, touch, etc., meticulously observing and experiencing sensations to achieve a state of psychological calm and relaxation.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "498"
+    ],
+    "sect": "bt"
+  },
+  "499": {
+    "skill_id": "499",
+    "skill_name": "Deep Breathing Relaxation",
+    "skill_description": "Uses a standing or comfortable posture, closing the eyes, diaphragmatic breathing combined with the instruction 'deep inhale slow exhale', forming a self-administered immediate relaxation skill to cope with stressful events.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "499"
+    ],
+    "sect": "bt"
+  },
+  "500": {
+    "skill_id": "500",
+    "skill_name": "Aversion Therapy",
+    "skill_description": "Pairs undesirable behavior with aversive stimuli, utilizing classical and operant principles to establish aversive conditioning, applied to addiction and sexual deviation, but requires ethical and safety control.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "500"
+    ],
+    "sect": "bt"
+  },
+  "501": {
+    "skill_id": "501",
+    "skill_name": "Physical Aversion",
+    "skill_description": "Linking physical stimuli such as electric shock with target behaviors or their imagination, with adjustable intensity and avoiding harm, ensuring pain is elicited within a tolerable range, emphasizing safety guidelines.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "500",
+      "501"
+    ],
+    "sect": "bt"
+  },
+  "502": {
+    "skill_id": "502",
+    "skill_name": "Chemical Aversion",
+    "skill_description": "Using agents such as emetics or thioridazine to induce nausea or other discomfort in target behaviors, often used for alcohol and smoking cessation, attention to timing, environment, and side effect management.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "500",
+      "502"
+    ],
+    "sect": "bt"
+  },
+  "503": {
+    "skill_id": "503",
+    "skill_name": "Imaginal Aversion",
+    "skill_description": "Using implicit desensitization to allow clients to imagine strong aversion situations linked to undesirable behaviors, reducing the side effects of real stimuli, combined with light punishment such as rubber bands to enhance effect.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "500",
+      "503"
+    ],
+    "sect": "bt"
+  },
+  "504": {
+    "skill_id": "504",
+    "skill_name": "Habituation",
+    "skill_description": "Through repeated exposure to fear stimuli, physiological and psychological responses gradually decrease, fear loses its motivating power; provides a theoretical basis for exposure therapy and shock therapy.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504"
+    ],
+    "sect": "bt"
+  },
+  "505": {
+    "skill_id": "505",
+    "skill_name": "Exposure Techniques",
+    "skill_description": "Presenting stimuli that provoke fear or aversion to prompt response extinction, including forms such as systematic desensitization and shock therapy, aiming to break the avoidance and negative reinforcement cycle.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505"
+    ],
+    "sect": "bt"
+  },
+  "506": {
+    "skill_id": "506",
+    "skill_name": "Systematic Desensitization",
+    "skill_description": "Based on interoceptive inhibition and counterconditioning, first training relaxation, then gradually exposing according to anxiety levels, reinforcing the 'stimulus-relaxation' new association to eliminate fear responses.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506"
+    ],
+    "sect": "bt"
+  },
+  "507": {
+    "skill_id": "507",
+    "skill_name": "Rapid Desensitization",
+    "skill_description": "Gradually exposing fear stimuli in real situations with the therapist accompanying and supporting, applicable to agoraphobia and social phobia, shortening treatment time through real contact.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "507"
+    ],
+    "sect": "bt"
+  },
+  "508": {
+    "skill_id": "508",
+    "skill_name": "Contact Desensitization",
+    "skill_description": "Allowing the client to personally contact the feared object; the therapist demonstrates first and then guides gradual contact, especially suitable for specific object fears such as animal phobia.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "508"
+    ],
+    "sect": "bt"
+  },
+  "509": {
+    "skill_id": "509",
+    "skill_name": "Automated Desensitization Method",
+    "skill_description": "Present graded stimuli through recordings or images, allowing the client to self-administer desensitization at their own pace at home, saving session time and allowing for other forms of supplementation.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "509"
+    ],
+    "sect": "bt"
+  },
+  "510": {
+    "skill_id": "510",
+    "skill_name": "Emotional Imagery Method",
+    "skill_description": "The therapist describes exciting and pleasant situations to induce positive emotions, to counteract anxiety responses, gradually suppress, and replace fear emotions through conditioning reactions.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "510"
+    ],
+    "sect": "bt"
+  },
+  "511": {
+    "skill_id": "511",
+    "skill_name": "Imaginal Desensitization Method",
+    "skill_description": "Requires the client to imagine scenarios from low to high anxiety levels and engage in full-body relaxation against them, achieving a non-anxious response to high-level stimuli.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "511"
+    ],
+    "sect": "bt"
+  },
+  "512": {
+    "skill_id": "512",
+    "skill_name": "Hypnotic Desensitization Method",
+    "skill_description": "Implement graded desensitization after hypnotic induction to reduce the risk of fear emotion outbursts, providing more stable exposure support for those with weak imagination or high tension.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "512"
+    ],
+    "sect": "bt"
+  },
+  "513": {
+    "skill_id": "513",
+    "skill_name": "Shock/Flooding Therapy",
+    "skill_description": "Long-term exposure to the strongest stimuli, prohibiting avoidance, prompting fear responses to naturally subside after reaching a peak; can be used in a live or imaginal format, requiring a signed agreement and assessment.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "513"
+    ],
+    "sect": "bt"
+  },
+  "514": {
+    "skill_id": "514",
+    "skill_name": "In Vivo Flooding Exposure",
+    "skill_description": "Allowing the client to be directly placed in the most feared real situation, continuous exposure until physiological and emotional responses reverse, closely monitoring safety and providing support and encouragement.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "513",
+      "514"
+    ],
+    "sect": "bt"
+  },
+  "515": {
+    "skill_id": "515",
+    "skill_name": "Imaginal Flooding Exposure",
+    "skill_description": "Employ intense imagination to recreate traumatic situations that are unrepeatable or unsuitable for in vivo exposure; long-term exposure promotes the weakening of fear memories, suitable for post-traumatic stress disorder, etc.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "513",
+      "515"
+    ],
+    "sect": "bt"
+  },
+  "862": {
+    "skill_id": "862",
+    "skill_name": "Modeling Demonstration Technique",
+    "skill_description": "Based on Bandura's social learning theory, prompting the client to learn or enhance adaptive behaviors and reduce maladaptive behaviors through observing models. Selection of models and scientific demonstration are emphasized during implementation, often combined with reinforcement techniques, applicable to phobias and social skills training, etc.",
+    "parent_ids": [
+      "916",
+      "862"
+    ],
+    "sect": "bt"
+  },
+  "863": {
+    "skill_id": "863",
+    "skill_name": "Real-life Modeling",
+    "skill_description": "The client directly observes and imitates target behaviors demonstrated by real role models. The process is vivid and repeatable, capable of teaching attitudes and social skills; but the cost is high and susceptible to errors in modeling, requiring ensuring accurate presentation of behavior to avoid negative learning.",
+    "parent_ids": [
+      "916",
+      "862",
+      "863"
+    ],
+    "sect": "bt"
+  },
+  "864": {
+    "skill_id": "864",
+    "skill_name": "Symbolic Modeling",
+    "skill_description": "Appropriate behaviors (including self-modeling) are presented through symbolic media such as movies, television, recordings, audio, text, etc. Materials are easily obtainable, the cost is low, and the pace is controllable; requires rigorous design of key features and sequence. Effective for phobias, can be watched repeatedly to promote learning.",
+    "parent_ids": [
+      "916",
+      "862",
+      "864"
+    ],
+    "sect": "bt"
+  },
+  "865": {
+    "skill_id": "865",
+    "skill_name": "Participatory Modeling",
+    "skill_description": "Under the therapist's guidance, the client gradually participates in and imitates while observing the role model, with the therapist providing timely correction and reinforcement. Often used for overcoming fear and skill training, progresses in stages and ensures safety; efficacy is superior to the other two methods, can reach 80%–90%.",
+    "parent_ids": [
+      "916",
+      "862",
+      "865"
+    ],
+    "sect": "bt"
+  },
+  "866": {
+    "skill_id": "866",
+    "skill_name": "Implicit Modeling",
+    "skill_description": "The therapist describes situations and appropriate responses, requiring the client to imagine or self-implement the role model or self and link positive emotions; scenarios progress from easy to difficult, trained repeatedly. Requires good imagination, can promote the externalization of self-affirmation behaviors and social skills.",
+    "parent_ids": [
+      "916",
+      "862",
+      "866"
+    ],
+    "sect": "bt"
+  },
+  "775": {
+    "skill_id": "775",
+    "skill_name": "Reinforcement",
+    "skill_description": "Reinforcement is the process of increasing the probability of a behavior occurring by presenting a reward or removing an unpleasant consequence, including positive reinforcement and negative reinforcement. In operant conditioning, the consequences of behavior determine its maintenance or extinction; reinforcement is used to shape, maintain, and improve target behaviors.",
+    "parent_ids": [
+      "916",
+      "775"
+    ],
+    "sect": "bt"
+  },
+  "776": {
+    "skill_id": "776",
+    "skill_name": "Negative Reinforcement",
+    "skill_description": "Negative reinforcement involves removing an aversive stimulus after a behavior to increase the probability of that behavior, including escape and avoidance conditioning. Application requires coordination with punishment, establishing consistent and timely standards, respecting facts, and combining with positive reinforcement to reduce side effects and promote the maintenance of good behavior.",
+    "parent_ids": [
+      "916",
+      "775",
+      "776"
+    ],
+    "sect": "bt"
+  },
+  "777": {
+    "skill_id": "777",
+    "skill_name": "Positive Reinforcement",
+    "skill_description": "Positive reinforcement involves presenting a stimulus of the individual's preference after the target behavior occurs, increasing the frequency of the behavior; primary and secondary reinforcers can be used. Implementation should be timely and clearly specify the reinforced behavior and quantity, coordinated with social reinforcement, widely used in education and management, attention must be paid to avoiding misuse.",
+    "parent_ids": [
+      "916",
+      "775",
+      "777"
+    ],
+    "sect": "bt"
+  }
+}

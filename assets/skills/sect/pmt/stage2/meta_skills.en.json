@@ -1,0 +1,681 @@
+{
+  "93": {
+    "skill_id": "93",
+    "skill_name": "Consultative Interview",
+    "skill_description": "In postmodern psychotherapy, the interview is viewed as the art of language, emphasizing equal collaboration and dialogue construction. Through narrative and questioning, new meanings are formed and altered within the sociocultural context, promoting resolution and growth.",
+    "parent_ids": [
+      "93"
+    ],
+    "sect": "pmt"
+  },
+  "94": {
+    "skill_id": "94",
+    "skill_name": "Narrative Therapy",
+    "skill_description": "Narrative psychotherapy encourages clients to tell life stories, externalize problems, rewrite and enrich new narratives, using language to construct new meanings, reshape self and lifestyle, emphasizing collaboration and cultural context.",
+    "parent_ids": [
+      "93",
+      "94"
+    ],
+    "sect": "pmt"
+  },
+  "95": {
+    "skill_id": "95",
+    "skill_name": "Rewriting Stories",
+    "skill_description": "The rewriting stories phase challenges old narratives and negative language, using questioning and exceptional events to form life texts with new meanings, prompting changes in behavior and self-definition, achieving narrative transformation.",
+    "parent_ids": [
+      "93",
+      "94",
+      "95"
+    ],
+    "sect": "pmt"
+  },
+  "96": {
+    "skill_id": "96",
+    "skill_name": "Finding Exceptions",
+    "skill_description": "Searching for \"exceptions\" and unique events in the narrative, moments when the problem did not occur or had less impact; using curiosity and questioning to excavate their meaning, serving as the beginning and resource for the new story.",
+    "parent_ids": [
+      "93",
+      "94",
+      "96"
+    ],
+    "sect": "pmt"
+  },
+  "97": {
+    "skill_id": "97",
+    "skill_name": "Enriching the New Story",
+    "skill_description": "Integrating unique events into the new story, detailing related emotions, thoughts, and actions, enhancing the continuity and richness of the narrative, allowing the new narrative to connect the past and extend into the future.",
+    "parent_ids": [
+      "93",
+      "94",
+      "97"
+    ],
+    "sect": "pmt"
+  },
+  "98": {
+    "skill_id": "98",
+    "skill_name": "From Thin to Thick",
+    "skill_description": "Through the strategy of moving from \"thin to rich,\" expanding overlooked positive self-identity, weakening biases and negative filtering, amplifying positive experiences, forming a positive and powerful self-concept.",
+    "parent_ids": [
+      "93",
+      "94",
+      "98"
+    ],
+    "sect": "pmt"
+  },
+  "99": {
+    "skill_id": "99",
+    "skill_name": "Rituals and Celebrations",
+    "skill_description": "Using rituals and celebrations (certificates, witnesses, etc.) at turning points to make the new story real and consolidate the effect, enhance confidence and social support, embedding the change into daily life.",
+    "parent_ids": [
+      "93",
+      "94",
+      "99"
+    ],
+    "sect": "pmt"
+  },
+  "100": {
+    "skill_id": "100",
+    "skill_name": "Solution-Focused Brief Therapy",
+    "skill_description": "Goal-oriented, emphasizing small changes and exceptions, respecting the client as the expert on their own problem, rapidly achieving goals through structured questioning and positive feedback.",
+    "parent_ids": [
+      "93",
+      "100"
+    ],
+    "sect": "pmt"
+  },
+  "101": {
+    "skill_id": "101",
+    "skill_name": "Overall Technique",
+    "skill_description": "Includes normalization, miracle questions, scaling, exception and relationship inquiries, affirmations, homework, etc., using language to construct solutions, identify resources, and reinforce small changes.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101"
+    ],
+    "sect": "pmt"
+  },
+  "102": {
+    "skill_id": "102",
+    "skill_name": "Coping Questions",
+    "skill_description": "Focuses on how the client can prevent the situation from getting worse in distress, identifying effective coping and persistence, enhancing self-efficacy, especially suitable for those with long-term, chronic distress.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "102"
+    ],
+    "sect": "pmt"
+  },
+  "103": {
+    "skill_id": "103",
+    "skill_name": "Pre-session Inquiry",
+    "skill_description": "Explores positive changes and effective behaviors that have emerged before the first session, identifies existing resources, and encourages continuation, enhancing hope and the reality of change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "103"
+    ],
+    "sect": "pmt"
+  },
+  "104": {
+    "skill_id": "104",
+    "skill_name": "Presupposing Questions",
+    "skill_description": "Uses suggestive language to guide the client to take responsibility and face solutions, such as 'How would you like me to help you?', prompting the conversation from the problem to the goal and action.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "104"
+    ],
+    "sect": "pmt"
+  },
+  "105": {
+    "skill_id": "105",
+    "skill_name": "Scaling Questions",
+    "skill_description": "Uses a 0-10 scale to specify states and goals, compare current, desired, and the magnitude of change, helping to plan small, feasible steps for improvement and track progress.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "105"
+    ],
+    "sect": "pmt"
+  },
+  "106": {
+    "skill_id": "106",
+    "skill_name": "Encouragement",
+    "skill_description": "Uses cheerleader-style affirmation and encouragement to timely reinforce the client's beliefs, motivation, and positive behaviors, enhancing positive self-concept, paying attention to authenticity and moderation.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "106"
+    ],
+    "sect": "pmt"
+  },
+  "107": {
+    "skill_id": "107",
+    "skill_name": "Affirmation",
+    "skill_description": "Actively notices techniques and specific affirmations for the client's strengths and effective actions, reinforcing change and promoting the relationship, including pleasing, behavioral reinforcement, and empathic styles.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "107"
+    ],
+    "sect": "pmt"
+  },
+  "108": {
+    "skill_id": "108",
+    "skill_name": "Pleasing Style",
+    "skill_description": "Praise for the sake of pleasing, easily slips into insincerity. Should be used cautiously, avoiding distortion and excess, focusing on the client's acceptance and meaning.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "107",
+      "108"
+    ],
+    "sect": "pmt"
+  },
+  "109": {
+    "skill_id": "109",
+    "skill_name": "Behavioral Reinforcement",
+    "skill_description": "Affirm specific positive behaviors and strategies, enhance their repetition and maintenance, and combine with tasks and tracking to consolidate change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "107",
+      "109"
+    ],
+    "sect": "pmt"
+  },
+  "110": {
+    "skill_id": "110",
+    "skill_name": "Empathic",
+    "skill_description": "Affirm based on full empathy and respect, acknowledge the client's experience and efforts, promote a safe and collaborative therapeutic relationship.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "107",
+      "110"
+    ],
+    "sect": "pmt"
+  },
+  "111": {
+    "skill_id": "111",
+    "skill_name": "EARS Inquiry",
+    "skill_description": "Sequentially elicit, expand, enhance, and re-explore exceptions, detail differences and the client's role, repeatedly reinforce success and strength, consolidate change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "111"
+    ],
+    "sect": "pmt"
+  },
+  "112": {
+    "skill_id": "112",
+    "skill_name": "Tasks/Homework",
+    "skill_description": "Extend effective practices from the conversation to life situations, such as finding exceptions, self-reinforcement, and new attempts, maintaining and expanding change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "112"
+    ],
+    "sect": "pmt"
+  },
+  "113": {
+    "skill_id": "113",
+    "skill_name": "Generalization",
+    "skill_description": "Normalize distress, place it within a developmental and contextual framework, restate with lighter language to reduce pathologization and emotional intensity, restore possibility for action.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "113"
+    ],
+    "sect": "pmt"
+  },
+  "114": {
+    "skill_id": "114",
+    "skill_name": "First Signs of Change",
+    "skill_description": "Focus on subtle signs, specify observable different behaviors or clues, as a starting point for action, gradually snowballing change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "114"
+    ],
+    "sect": "pmt"
+  },
+  "115": {
+    "skill_id": "115",
+    "skill_name": "Miracle Question",
+    "skill_description": "Invite the client to imagine a future scenario where the problem is resolved, clearly present the specific manifestations of 'difference', shift attention to the goal and the path to resolution.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "115"
+    ],
+    "sect": "pmt"
+  },
+  "116": {
+    "skill_id": "116",
+    "skill_name": "Crystal Ball Question",
+    "skill_description": "Use metaphors for future prediction to allow the client to depict desired life scenes, enhance the concreteness of the goal and the reality of action.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "115",
+      "116"
+    ],
+    "sect": "pmt"
+  },
+  "117": {
+    "skill_id": "117",
+    "skill_name": "Outcome Questioning",
+    "skill_description": "Assume this is the last session, the issue is resolved, and ask for specifics on what will be done differently after leaving, to clarify the endpoint and the path.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "115",
+      "117"
+    ],
+    "sect": "pmt"
+  },
+  "118": {
+    "skill_id": "118",
+    "skill_name": "Relational Inquiry",
+    "skill_description": "Examine change and differences from the perspective of important others, expand the cognitive framework, mobilize support networks, and increase the visibility and stability of change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "118"
+    ],
+    "sect": "pmt"
+  },
+  "119": {
+    "skill_id": "119",
+    "skill_name": "Exception Questioning",
+    "skill_description": "Explore situations where the problem does not occur or is milder, and the client's actions, expand the frequency and scope of exceptions, and connect them to the goal to form a path.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "119"
+    ],
+    "sect": "pmt"
+  },
+  "120": {
+    "skill_id": "120",
+    "skill_name": "Simple Summary",
+    "skill_description": "Distill the core issue and expectations into a single word or sentence, quickly focus on main feelings and concerns, and drive specific work.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "120"
+    ],
+    "sect": "pmt"
+  },
+  "121": {
+    "skill_id": "121",
+    "skill_name": "Field Analysis",
+    "skill_description": "Identify the forces promoting and hindering the goal, maximize positive forces, minimize negative forces, often combined with exception questioning to formulate strategies.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "121"
+    ],
+    "sect": "pmt"
+  },
+  "122": {
+    "skill_id": "122",
+    "skill_name": "Generating Solutions",
+    "skill_description": "Use brainstorming or other methods to generate multiple options, record without judgment first, then organize and evaluate, encourage quantity to stimulate creative action.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "122"
+    ],
+    "sect": "pmt"
+  },
+  "123": {
+    "skill_id": "123",
+    "skill_name": "Constructing the Solution Dialogue Phase",
+    "skill_description": "Approximately 40 minutes, build collaboration, develop specific positive goals, explore exceptions and resources, connect to future visions, form a solution-oriented conversation structure.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123"
+    ],
+    "sect": "pmt"
+  },
+  "124": {
+    "skill_id": "124",
+    "skill_name": "Beginning Phase of Constructing the Solution Dialogue Phase",
+    "skill_description": "Establish trust and use the client's language to clarify expectations and goals, determine the changeable focus, and lay the foundation for subsequent solution-focused exploration.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124"
+    ],
+    "sect": "pmt"
+  },
+  "125": {
+    "skill_id": "125",
+    "skill_name": "Beginning Phase Architecture",
+    "skill_description": "Establish a conversation framework by using structured questioning to encompass three types of architecture: goals, exceptions, and assumptions, guiding towards positive change and concrete actions.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "125"
+    ],
+    "sect": "pmt"
+  },
+  "126": {
+    "skill_id": "126",
+    "skill_name": "Exception Architecture",
+    "skill_description": "Systematically inquire about situations and practices where problems do not occur, expanding exceptions into the norm, making positive forces visible, replicable, and connected to goals.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "125",
+      "126"
+    ],
+    "sect": "pmt"
+  },
+  "127": {
+    "skill_id": "127",
+    "skill_name": "Assumption Resolution Architecture",
+    "skill_description": "Assume that problems can be solved through presuppositions and miraculous questions, prompting the client to specify desired states and pathways, enhancing hope and a sense of action.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "125",
+      "127"
+    ],
+    "sect": "pmt"
+  },
+  "128": {
+    "skill_id": "128",
+    "skill_name": "Goal Architecture",
+    "skill_description": "Guide the setting of goals using positive, specific, and actionable language, based on specific contexts and the client's controllable scope, facilitating implementation and evaluation.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "125",
+      "128"
+    ],
+    "sect": "pmt"
+  },
+  "129": {
+    "skill_id": "129",
+    "skill_name": "Creating an Environment for Change",
+    "skill_description": "Create a supportive and hopeful conversational atmosphere, using positive language and questioning to make small changes easier to occur and maintain, reducing resistance.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "129"
+    ],
+    "sect": "pmt"
+  },
+  "130": {
+    "skill_id": "130",
+    "skill_name": "Emphasizing Client Resources",
+    "skill_description": "Identify existing successful experiences, interests, talents, and social support as materials and foundations for solutions and actions, enhancing self-efficacy.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "130"
+    ],
+    "sect": "pmt"
+  },
+  "131": {
+    "skill_id": "131",
+    "skill_name": "Categorizing Future Client Goals",
+    "skill_description": "Organize and summarize goals, distinguishing between short-term minor goals and long-term visions, making plans clearer and more executable, facilitating tracking and adjustment.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "131"
+    ],
+    "sect": "pmt"
+  },
+  "132": {
+    "skill_id": "132",
+    "skill_name": "Forming a Partnership with the Client",
+    "skill_description": "Establish an alliance through an equal, shared, and negotiated stance, reducing authority and diagnostic labels, increasing engagement and motivation for change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "132"
+    ],
+    "sect": "pmt"
+  },
+  "133": {
+    "skill_id": "133",
+    "skill_name": "Negotiating Tasks",
+    "skill_description": "Jointly determine specific tasks and exercises to be implemented outside of the session, support the visitor to take immediate action and provide feedback on the effects, maintain change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "133"
+    ],
+    "sect": "pmt"
+  },
+  "134": {
+    "skill_id": "134",
+    "skill_name": "Deepening the Constructive Solution Dialogue Phase",
+    "skill_description": "Further reconstruct the problem narrative within the established framework, focus on solving and action, refine and adjust strategies, enhance operability.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "134"
+    ],
+    "sect": "pmt"
+  },
+  "135": {
+    "skill_id": "135",
+    "skill_name": "Reframing the Problem",
+    "skill_description": "Replace complaint and pathological narratives with positive and solution-oriented language, change the meaning framework, reveal new perspectives, open new possibilities.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "134",
+      "135"
+    ],
+    "sect": "pmt"
+  },
+  "136": {
+    "skill_id": "136",
+    "skill_name": "Focusing on Solutions",
+    "skill_description": "Shift attention from causes to feasible strategies, discuss what to do when the problem does not occur and future desired states, form concrete pathways.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "134",
+      "136"
+    ],
+    "sect": "pmt"
+  },
+  "137": {
+    "skill_id": "137",
+    "skill_name": "Encouraging Action",
+    "skill_description": "Transform goals into specific steps, emphasize small feasible attempts and the snowball effect, promote behavioral change through practice and feedback.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "134",
+      "137"
+    ],
+    "sect": "pmt"
+  },
+  "138": {
+    "skill_id": "138",
+    "skill_name": "Focus Solution Short-Term Therapy Rest Phase",
+    "skill_description": "Consciously pause for about 10 minutes to create a 'gap effect' to promote self-reflection; the counselor organizes information and strategies, prepares positive feedback.",
+    "parent_ids": [
+      "93",
+      "100",
+      "138"
+    ],
+    "sect": "pmt"
+  },
+  "139": {
+    "skill_id": "139",
+    "skill_name": "Focus Solution Short-Term Therapy Positive Feedback Phase",
+    "skill_description": "Consolidate change with praise and specific suggestions, review effective pathways, assign homework, and evaluate progress, plan maintenance and termination strategies.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139"
+    ],
+    "sect": "pmt"
+  },
+  "140": {
+    "skill_id": "140",
+    "skill_name": "Consolidating Constructive Change",
+    "skill_description": "Reinforce the emerging positive narratives and behavioral differences, ensure the new meaning and strategies are maintained and expanded, prevent relapse.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "140"
+    ],
+    "sect": "pmt"
+  },
+  "141": {
+    "skill_id": "141",
+    "skill_name": "Review Task Behavior",
+    "skill_description": "Check the execution and effectiveness of tasks outside the session, affirm successful experiences, adjust shortcomings to improve sustainability and autonomy.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "141"
+    ],
+    "sect": "pmt"
+  },
+  "142": {
+    "skill_id": "142",
+    "skill_name": "Construct Solutions",
+    "skill_description": "Synthesize prior information and resources to form an actionable list of solutions, clarify steps and contexts, guide subsequent actions.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "142"
+    ],
+    "sect": "pmt"
+  },
+  "143": {
+    "skill_id": "143",
+    "skill_name": "Develop New Strategies for Solving",
+    "skill_description": "Based on existing effectiveness, generate and test more suitable approaches, maintain flexibility and creativity, expand the scope of change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "143"
+    ],
+    "sect": "pmt"
+  },
+  "144": {
+    "skill_id": "144",
+    "skill_name": "Continue Deconstructing the Problem",
+    "skill_description": "Continuously deconstruct the authority of the problem narrative in feedback, expose its assumptions and tensions, solidify the problem-solving perspective, avoid pathological language.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "144"
+    ],
+    "sect": "pmt"
+  },
+  "145": {
+    "skill_id": "145",
+    "skill_name": "Evaluate and Plan Termination",
+    "skill_description": "Use scales, paper-and-pencil tests, and assessment designs to evaluate progress, plan for subsequent maintenance and termination arrangements, promote sustained change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "145"
+    ],
+    "sect": "pmt"
+  },
+  "146": {
+    "skill_id": "146",
+    "skill_name": "Scale",
+    "skill_description": "Measure states, goals, and changes on a 0-10 scale, quantify progress, enhance the client's grasp and confidence in the change.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "145",
+      "146"
+    ],
+    "sect": "pmt"
+  },
+  "147": {
+    "skill_id": "147",
+    "skill_name": "Paper-and-Pencil Test",
+    "skill_description": "Use short questionnaires or record tools to assess symptoms, resources, and goal attainment, assist in feedback and the formulation and adjustment of plans.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "145",
+      "147"
+    ],
+    "sect": "pmt"
+  },
+  "148": {
+    "skill_id": "148",
+    "skill_name": "Assessment Design",
+    "skill_description": "Customize assessment indicators and time points according to case goals, systematically track the change process, support maintenance strategies and termination arrangements.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "145",
+      "148"
+    ],
+    "sect": "pmt"
+  }
+}

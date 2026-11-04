@@ -1,0 +1,372 @@
+{
+  "1": {
+    "skill_id": "1",
+    "skill_name": "Assessment Interview",
+    "skill_description": "The assessment interview is the initial stage of psychological counseling, aimed at understanding the issues the client is facing, systematically collecting relevant information, making preliminary judgments (or diagnosis), and based on this, clarifying the counseling goals and devising the subsequent counseling plan. Only after the assessment interview is completed does the counseling enter the formal counseling stage.",
+    "parent_ids": [
+      "1"
+    ],
+    "sect": "cbt"
+  },
+  "2": {
+    "skill_id": "2",
+    "skill_name": "Beginning Stage of Assessment Interview",
+    "skill_description": "The initial part of the assessment interview includes welcoming the client, establishing a safe counseling atmosphere, and expressing empathy; explaining the nature, tasks, and structure of the session to the client (i.e., structuring the session), and previewing recording and possible interruptions to gain the client's understanding and consent, reducing awkwardness and resistance.",
+    "parent_ids": [
+      "1",
+      "2"
+    ],
+    "sect": "cbt"
+  },
+  "3": {
+    "skill_id": "3",
+    "skill_name": "Establishing the Therapeutic Relationship",
+    "skill_description": "By expressing understanding and empathy, patiently listening, respecting the client's feelings, and addressing client dissatisfaction or concerns, providing warm humanistic care, thereby gaining trust and solidifying the therapeutic relationship—this is one of the key factors affecting counseling effectiveness, especially needing to be focused on in the early stages.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3"
+    ],
+    "sect": "cbt"
+  },
+  "4": {
+    "skill_id": "4",
+    "skill_name": "Session Structuring",
+    "skill_description": "At the beginning of the session, clearly explain the topic and tasks of the session to the client (e.g., this is an assessment interview, the task is to collect information and make a diagnosis), and introduce the arrangement, expectations, and subsequent steps of the entire counseling phase, to help the client understand the time schedule, the purpose of the session, and the counseling process, reducing time waste caused by casual narration.",
+    "parent_ids": [
+      "1",
+      "2",
+      "4"
+    ],
+    "sect": "cbt"
+  },
+  "5": {
+    "skill_id": "5",
+    "skill_name": "Middle Stage of Assessment Interview",
+    "skill_description": "The main tasks in the middle stage are systematically collecting information related to the client's problems and making judgments based on this, while applying the Cognitive Behavioral Therapy (CBT) model to conceptualize the case during the collection process to understand the mechanisms and causes of the problem.",
+    "parent_ids": [
+      "1",
+      "5"
+    ],
+    "sect": "cbt"
+  },
+  "6": {
+    "skill_id": "6",
+    "skill_name": "Collecting Relevant Information for the Problem",
+    "skill_description": "Primarily through the counseling session, supplemented by psychological testing and monitoring logs, comprehensively and systematically collect current and past information related to the problem (including symptoms, triggers, course of illness, functional impact, social and family context, health and past medical history, growth history, etc.) to support accurate judgment and diagnosis.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6"
+    ],
+    "sect": "cbt"
+  },
+  "7": {
+    "skill_id": "7",
+    "skill_name": "Collecting Information Through Counseling Session",
+    "skill_description": "In face-to-face or telephone sessions, collect the client's chief complaints, symptom manifestations, course of illness, relevant contexts, and functional impairment through structured questioning and in-depth follow-up questions, and by following up on questions to make vague answers specific, ensuring the comprehensiveness and systematic nature of the information.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7"
+    ],
+    "sect": "cbt"
+  },
+  "8": {
+    "skill_id": "8",
+    "skill_name": "Collecting Client Demographics and Basic Information",
+    "skill_description": "Systematically obtain the client's personal information (such as age, gender, marital status, occupation, educational level, religious beliefs, living situation, etc.), this information is used for background description, assessment of social support and functioning, and to assist in judging the possible sociocultural background and resources of the problem.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "sect": "cbt"
+  },
+  "9": {
+    "skill_id": "9",
+    "skill_name": "Assessment of Clinical Manifestations and Functional Impact of Chief Complaint",
+    "skill_description": "Detailed inquiry into the specific manifestations of the chief complaint (emotional, physiological, behavioral, etc.), severity, frequency, and duration, as well as the impact on learning, work, family, and social functioning, to assess the clinical significance of the problem and intervention priority.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "sect": "cbt"
+  },
+  "10": {
+    "skill_id": "10",
+    "skill_name": "Exploring Triggers, Course, and Changes of Psychological Problems",
+    "skill_description": "Reviewing the triggering events, onset time, course evolution, and changes during the problem's progression to help identify triggering factors and the timeline of symptom development, providing causal clues for diagnosis and conceptualization.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "10"
+    ],
+    "sect": "cbt"
+  },
+  "11": {
+    "skill_id": "11",
+    "skill_name": "Systematic Assessment of Client's Social Life and Various Functions",
+    "skill_description": "Comprehensively inquiring about the client's functioning and interactions in family, marital/parent-child relationships, workplace, interpersonal relationships, education, and other roles, to confirm the presence of other issues besides the chief complaint, to avoid missed diagnoses and continuously emerging unidentified issues in future consultations.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "11"
+    ],
+    "sect": "cbt"
+  },
+  "12": {
+    "skill_id": "12",
+    "skill_name": "Inquiring About Physiological Health and Physical Condition",
+    "skill_description": "Understanding the client's physiological health information (including chronic illnesses, physical disabilities, weight/nutritional status, etc.) to determine if there are medical factors affecting the psychological problem or physical issues requiring referral, and to provide necessary medical background for diagnosis and treatment plans.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "12"
+    ],
+    "sect": "cbt"
+  },
+  "13": {
+    "skill_id": "13",
+    "skill_name": "Collecting Past Medical History and Treatment Experiences",
+    "skill_description": "Inquiring about the client's history of mental illness, psychiatric consultations or hospitalizations, past psychological problems, and counseling experiences, to judge the history of the illness, recurrence risk, response to past treatments, and possible comorbidities, to assist in formulating the current diagnosis and treatment plan.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "13"
+    ],
+    "sect": "cbt"
+  },
+  "14": {
+    "skill_id": "14",
+    "skill_name": "Exploring Early Upbringing and Caregiver Relationships",
+    "skill_description": "Collecting information about the client's early upbringing environment, impressions of caregivers, and memorable events with them, in order to examine the background of core beliefs formation and the influence of early emotional experiences on the current problem in longitudinal conceptualization.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "14"
+    ],
+    "sect": "cbt"
+  },
+  "15": {
+    "skill_id": "15",
+    "skill_name": "Reviewing Key Events in Growth History",
+    "skill_description": "Reviewing the client's growth history according to age stages, recording significant life events and adaptive changes, this information is used for longitudinal conceptualization to trace the historical roots of core beliefs, compensation strategies, and personality formation.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "15"
+    ],
+    "sect": "cbt"
+  },
+  "16": {
+    "skill_id": "16",
+    "skill_name": "Use of Psychological Testing",
+    "skill_description": "Using standardized scales and questionnaires (such as anxiety, depression, personality, life events, social support, and coping scales) to quantitatively assess the client, as a supplement to interview information to reduce subjective bias and help determine the severity of the problem and monitor intervention effectiveness.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "16"
+    ],
+    "sect": "cbt"
+  },
+  "17": {
+    "skill_id": "17",
+    "skill_name": "Application of Monitoring Logs",
+    "skill_description": "Guide clients to record emotions, behaviors, thoughts, and triggering situations in daily life (such as activity diaries, anxiety logs, etc.) to obtain more objective and continuous data, compensating for the fragmented and subjective nature of verbal information in sessions.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "17"
+    ],
+    "sect": "cbt"
+  },
+  "18": {
+    "skill_id": "18",
+    "skill_name": "Case Conceptualization using CBT Model",
+    "skill_description": "While collecting data or after collection, apply the theoretical models of Cognitive Behavioral Therapy to conceptualize the client's issues horizontally (present causes) and longitudinally (history and core beliefs), clarifying the relationship between situation—cognition—emotion/behavior and the link between deep beliefs and life history, thereby providing a basis for selecting specific intervention techniques.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18"
+    ],
+    "sect": "cbt"
+  },
+  "19": {
+    "skill_id": "19",
+    "skill_name": "Application of Process Cognitive Behavioral Model",
+    "skill_description": "Use a process-oriented cognitive behavioral model (e.g., ABC model) to depict the chain between situation, cognition, emotion/behavior, facilitating the identification of triggering situations, automatic thoughts, and corresponding emotional and behavioral responses.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "19"
+    ],
+    "sect": "cbt"
+  },
+  "20": {
+    "skill_id": "20",
+    "skill_name": "Use of ABC Model",
+    "skill_description": "Apply the ABC model (Antecedent- Belief- Consequence) to analyze specific situations (A), the individual's cognition or belief (B), and the resulting emotional/behavioral consequences (C), to guide intervention strategies such as cognitive restructuring and behavioral experiments.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "19",
+      "20"
+    ],
+    "sect": "cbt"
+  },
+  "21": {
+    "skill_id": "21",
+    "skill_name": "Stephen Hoffman's Cognitive Behavioral Model",
+    "skill_description": "Adopt the theoretical and operational points of the cognitive behavioral model proposed by Stephen Hoffman (such as specific conceptualization perspectives and intervention nodes) to analyze the mechanism of the problem and guide the selection and sequence of therapeutic techniques.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "19",
+      "21"
+    ],
+    "sect": "cbt"
+  },
+  "22": {
+    "skill_id": "22",
+    "skill_name": "Wüstbrück et al.'s Cognitive Behavioral Model",
+    "skill_description": "Utilize the models or extended perspectives on cognitive behavioral conceptualization by scholars such as Wüstbrück to understand the maintenance mechanisms of the client's issues and assist in formulating targeted techniques.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "19",
+      "22"
+    ],
+    "sect": "cbt"
+  },
+  "23": {
+    "skill_id": "23",
+    "skill_name": "Cyclical Cognitive Behavioral Model",
+    "skill_description": "Use the cyclical cognitive behavioral model to represent the circular causal relationship between cognition, emotion, and behavior, emphasizing the maintenance loop of the problem, facilitating the identification of key intervention points to interrupt the adverse cycle.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "23"
+    ],
+    "sect": "cbt"
+  },
+  "24": {
+    "skill_id": "24",
+    "skill_name": "Basic Cyclical Cognitive Behavioral Model",
+    "skill_description": "Grasp the basic framework of the cyclical model, identify the chain of cycles leading to negative emotions and maladaptive behaviors (e.g., triggering situation→thought→emotion→behavior→outcome→re-triggering), used to design cyclical interventions to change maintenance factors.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "23",
+      "24"
+    ],
+    "sect": "cbt"
+  },
+  "25": {
+    "skill_id": "25",
+    "skill_name": "Witte's Cognitive Behavioral Model",
+    "skill_description": "Apply specific theoretical or practical points of Witte's conceptualization of cyclical/systemic cognitive behavior concepts to case analysis, using its model for structured understanding of client issues to guide treatment strategies.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "23",
+      "25"
+    ],
+    "sect": "cbt"
+  },
+  "26": {
+    "skill_id": "26",
+    "skill_name": "Guo Zhaoliang's Cyclical Cognitive Behavioral Model",
+    "skill_description": "Adopt the adapted expression and technical points of Guo Zhaoliang's cyclical cognitive behavioral model, integrate cultural or contextual characteristics to more locally understand the client's maintenance mechanisms and design interventions.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "23",
+      "26"
+    ],
+    "sect": "cbt"
+  },
+  "27": {
+    "skill_id": "27",
+    "skill_name": "T-Shape Cognitive Behavioral Model",
+    "skill_description": "Apply the T-shape model (a structured method combining horizontal and longitudinal concepts) to simultaneously address current situational-cognitive factors and deeper longitudinal beliefs, facilitating coordinated intervention between short-term symptom management and long-term belief modification.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "27"
+    ],
+    "sect": "cbt"
+  },
+  "28": {
+    "skill_id": "28",
+    "skill_name": "Psychological Diagnosis",
+    "skill_description": "Based on comprehensive interviewing, assessment, and conceptualization, classify and diagnose client issues according to clinical standards (such as DSM-5, ICD-10, or local diagnostic systems) and the CBT situational-symptom framework, identify comorbidity, and determine the priority of intervention and necessary referral conditions.",
+    "parent_ids": [
+      "1",
+      "5",
+      "28"
+    ],
+    "sect": "cbt"
+  },
+  "29": {
+    "skill_id": "29",
+    "skill_name": "End of Assessment Interview Phase",
+    "skill_description": "After sufficient data has been collected and conceptualization and diagnosis are complete, enter the concluding phase, provide feedback to the client on the interview conclusions, explain whether counseling is within the scope of psychological counseling, and introduce possible treatment or referral plans and next steps.",
+    "parent_ids": [
+      "1",
+      "29"
+    ],
+    "sect": "cbt"
+  },
+  "30": {
+    "skill_id": "30",
+    "skill_name": "Determine Counseling Goals",
+    "skill_description": "Based on diagnostic and conceptualization results, jointly clarify the counseling goals with the client (i.e., the specific changes or outcomes desired), usually stated in the opposite form of the problem, and use them to guide subsequent treatment direction and priority setting.",
+    "parent_ids": [
+      "1",
+      "29",
+      "30"
+    ],
+    "sect": "cbt"
+  },
+  "31": {
+    "skill_id": "31",
+    "skill_name": "Develop Counseling Plan",
+    "skill_description": "After goals are clear, inform the client about the expected number of sessions, frequency, possible duration, and fee range, and develop a preliminary counseling plan and schedule (e.g., once a week, expected 8–14 sessions) to help the client decide whether to continue counseling and facilitate subsequent management and adjustments.",
+    "parent_ids": [
+      "1",
+      "29",
+      "31"
+    ],
+    "sect": "cbt"
+  }
+}

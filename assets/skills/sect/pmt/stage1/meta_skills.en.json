@@ -1,0 +1,133 @@
+{
+  "1": {
+    "skill_id": "1",
+    "skill_name": "Evaluative Interview",
+    "skill_description": "Down to postmodernism, the evaluative interview is centered on dialogue and language, emphasizing collaborative and equal relationships, respecting the client as the expert of themselves, exploring and clarifying issues and goals through narrative and solution-oriented approaches.",
+    "parent_ids": [
+      "1"
+    ],
+    "sect": "pmt"
+  },
+  "2": {
+    "skill_id": "2",
+    "skill_name": "Narrative Therapy",
+    "skill_description": "Narrative therapy encourages clients to tell life stories in their own language, deconstruct the problem-centered narrative, externalize the problem, and rewrite more meaningful stories, emphasizing the role of language construction and cultural context.",
+    "parent_ids": [
+      "1",
+      "2"
+    ],
+    "sect": "pmt"
+  },
+  "3": {
+    "skill_id": "3",
+    "skill_name": "Storytelling",
+    "skill_description": "Storytelling is the starting point of narrative therapy; the counselor provides a safe, undisturbed environment, invites the client to detail events and impacts, and uses memory materials as a basis for subsequent deconstruction and rewriting.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3"
+    ],
+    "sect": "pmt"
+  },
+  "4": {
+    "skill_id": "4",
+    "skill_name": "Creating a Good Atmosphere for Narrative Interview",
+    "skill_description": "Create a safe, respectful, and non-judgmental atmosphere, encouraging the client to tell the dominant story of fragmentation and loss; the counselor maintains a stable relationship through positive attention and listening, increasing motivation for exploration and change.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "sect": "pmt"
+  },
+  "5": {
+    "skill_id": "5",
+    "skill_name": "Active Listening in Narrative Interview",
+    "skill_description": "In the narrative interview, the counselor actively attends to the client with appreciation and respect, keenly capturing their resources and exceptions, highlighting strengths, reducing negative labels, and enhancing self-efficacy and confidence in change.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "sect": "pmt"
+  },
+  "6": {
+    "skill_id": "6",
+    "skill_name": "Encouraging the Client in Narrative Interview",
+    "skill_description": "Through timely encouragement and affirmation, enhance the client's motivation to continue narrating and rewriting the story; combine with rituals and witnessing to consolidate positive changes, allowing the new narrative to become more firmly embedded in daily life.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "sect": "pmt"
+  },
+  "7": {
+    "skill_id": "7",
+    "skill_name": "Naming the Problem",
+    "skill_description": "Invite the client to name the distress (word or phrase), making the problem concrete, discussable, and facilitating externalization; precise naming enhances a sense of control, helps focus on the path of impact and change, and initiates the rewriting process.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7"
+    ],
+    "sect": "pmt"
+  },
+  "8": {
+    "skill_id": "8",
+    "skill_name": "Externalizing the Problem",
+    "skill_description": "Implement the principle that 'people are not the problem, the problem is the problem,' separating the problem from the person; explore its origins and impacts, reduce shame and conflict, seek collaboration and new possibilities, and promote the formation of alternative narratives.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8"
+    ],
+    "sect": "pmt"
+  },
+  "9": {
+    "skill_id": "9",
+    "skill_name": "Personification of Problems",
+    "skill_description": "Personify the problem to explore its \"intentions\" and \"strategies\" and how it manipulates life; strengthen the client-problem relationship perspective, cooperate with externalization and exception exploration, enhance the ability to counter and choose.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9"
+    ],
+    "sect": "pmt"
+  },
+  "10": {
+    "skill_id": "10",
+    "skill_name": "Solution-Focused Brief Therapy",
+    "skill_description": "Solution-Focused Brief Therapy is goal-oriented, emphasizing collaboration and the snowball effect of small changes; through goal construction, exceptions and miracle questions, rating scales, and positive feedback, quickly facilitate feasible changes.",
+    "parent_ids": [
+      "1",
+      "10"
+    ],
+    "sect": "pmt"
+  },
+  "11": {
+    "skill_id": "11",
+    "skill_name": "Pre-treatment Change (Pre-interview Inquiry)",
+    "skill_description": "Pre-treatment change emphasizes positive changes that have already occurred before the first session; by asking \"what is different,\" evoke and amplify existing resources, enhance hope and autonomy, guide the continuation of effective practices.",
+    "parent_ids": [
+      "1",
+      "10",
+      "11"
+    ],
+    "sect": "pmt"
+  },
+  "12": {
+    "skill_id": "12",
+    "skill_name": "Homework After First Session (FFST)",
+    "skill_description": "Homework after the first session requires the client to observe and record events \"worth happening again\" between sessions; use positive feedback to consolidate change, enhance optimism and action, promote the continuous achievement of goals.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12"
+    ],
+    "sect": "pmt"
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "184": {
+    "skill_id": "184",
+    "skill_name": "Assessment Interview",
+    "skill_description": "The assessment interview aims to establish a safe therapeutic alliance and comprehensively evaluate the client's self-functioning and life history. Through psychodynamic case conceptualization and preliminary interpretation, identify core conflicts, establish the therapeutic framework and goals, and lay the foundation for deeper exploration of the unconscious.",
+    "parent_ids": [
+      "184"
+    ],
+    "sect": "pdt"
+  },
+  "1": {
+    "skill_id": "1",
+    "skill_name": "Creating a Safe Environment for Conversation",
+    "skill_description": "Create a supportive and safe space in the initial assessment phase, making the client feel heard and understood. Using open-ended questions, empathy, and a non-blaming attitude, balance comfort and confidentiality, and clearly explain the interview framework to promote the establishment of a working alliance.",
+    "parent_ids": [
+      "184",
+      "1"
+    ],
+    "sect": "pdt"
+  },
+  "2": {
+    "skill_id": "2",
+    "skill_name": "Standing in a Empathetic, Non-Blaming Stance",
+    "skill_description": "Open the conversation with open-ended questions, listen for 5–10 minutes before evaluating; use a neutral tone and empathetic responses, convey warmth without losing professionalism, allow for discussion of privacy and accept tension, help alleviate discomfort when necessary, and avoid blame.",
+    "parent_ids": [
+      "184",
+      "1",
+      "2"
+    ],
+    "sect": "pdt"
+  },
+  "3": {
+    "skill_id": "3",
+    "skill_name": "Noting the Individual's Physical Comfort",
+    "skill_description": "Provide a tidy, quiet space with comfortable seating, maintain an appropriate distance to avoid physical contact; details such as turning off phones, adjusting the temperature as needed, reduce external interference, and help the client achieve safety and relaxation to facilitate expression.",
+    "parent_ids": [
+      "184",
+      "1",
+      "3"
+    ],
+    "sect": "pdt"
+  },
+  "4": {
+    "skill_id": "4",
+    "skill_name": "Emphasizing Confidentiality",
+    "skill_description": "Clearly state the confidentiality of the interview to enhance a sense of safety and reduce interruptions; if in a training environment, explain necessary discussions, recording arrangements, and privacy protection, allowing the client to feel at ease disclosing sensitive content.",
+    "parent_ids": [
+      "184",
+      "1",
+      "4"
+    ],
+    "sect": "pdt"
+  },
+  "5": {
+    "skill_id": "5",
+    "skill_name": "Setting Frameworks and Boundaries",
+    "skill_description": "Proactively set clear frameworks at the beginning, defining roles, time, environment, fees, contact information, emergency plans, and confidentiality and internship matters; uniformity and transparency reduce anxiety, and boundaries prevent overstepping, protecting the therapy and the client.",
+    "parent_ids": [
+      "184",
+      "1",
+      "5"
+    ],
+    "sect": "pdt"
+  },
+  "12": {
+    "skill_id": "12",
+    "skill_name": "Assessment and Preliminary Interpretation",
+    "skill_description": "Based on functional assessment, preliminarily judge the most helpful therapeutic modality and the feasibility of revealing techniques; based on the client's tolerance and reality testing of functional strengths and weaknesses, form tentative interpretations and guide subsequent technique selection.",
+    "parent_ids": [
+      "184",
+      "12"
+    ],
+    "sect": "pdt"
+  },
+  "13": {
+    "skill_id": "13",
+    "skill_name": "Assessing Client Functional Domains (Self, Interpersonal, Adaptation, Cognition, Work, and Leisure)",
+    "skill_description": "Around the five major functions: self, interpersonal, adaptation (defense mechanisms), cognition, and work and leisure, collect strengths and weaknesses, identify stress thresholds and coping mechanisms, and provide a basis for deciding on supportive or revealing orientations.",
+    "parent_ids": [
+      "184",
+      "12",
+      "13"
+    ],
+    "sect": "pdt"
+  },
+  "14": {
+    "skill_id": "14",
+    "skill_name": "Assessment of Moral Judgment, Reflection, and Psychological Insight",
+    "skill_description": "Assess reflective capacity (psychological insight and reality testing) and moral judgment, observe the ability to self-reflect, distinguish reality, and assess the degree of guilt/conscience, to determine suitability for disclosing technology and risk control needs.",
+    "parent_ids": [
+      "184",
+      "12",
+      "14"
+    ],
+    "sect": "pdt"
+  },
+  "15": {
+    "skill_id": "15",
+    "skill_name": "Setting Problem Priorities and Assessing Treatment Motivation and Resources",
+    "skill_description": "Combine internal and external pressures, functional strengths and weaknesses, and available social support and resources to set the priority of problems and goals, assess motivation and capacity for persistence/delayed gratification, to determine the focus of the technology and achievable pathways.",
+    "parent_ids": [
+      "184",
+      "12",
+      "15"
+    ],
+    "sect": "pdt"
+  },
+  "16": {
+    "skill_id": "16",
+    "skill_name": "Preliminary Case Conceptualization",
+    "skill_description": "After assessment, propose preliminary hypotheses regarding why and how the client is troubled to formulate treatment suggestions and goals; continuously revise during therapy to guide intervention selection and decisions on when to terminate therapy.",
+    "parent_ids": [
+      "184",
+      "16"
+    ],
+    "sect": "pdt"
+  },
+  "17": {
+    "skill_id": "17",
+    "skill_name": "Psychodynamic Case Conceptualization",
+    "skill_description": "Emphasize the role of unconscious thoughts and emotions and individual developmental experiences in the current distress; based on this, judge suitability for psychodynamic therapy, and make trade-offs between disclosure and support techniques, continuously guiding the direction and focus of therapy.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17"
+    ],
+    "sect": "pdt"
+  },
+  "18": {
+    "skill_id": "18",
+    "skill_name": "Descriptive Phase of Psychodynamic Case Conceptualization",
+    "skill_description": "Before proposing treatment hypotheses, clearly describe the client's 'problem' and 'personal situation'; identify the most pressing distress to address and grasp stable functional patterns, to lay the foundation for selecting appropriate treatment and techniques.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17",
+      "18"
+    ],
+    "sect": "pdt"
+  },
+  "19": {
+    "skill_id": "19",
+    "skill_name": "Describing Client Problems and Personal Situation (Self-Functioning)",
+    "skill_description": "Define and rank the most urgent problems (which may differ from the chief complaint), while assessing the strengths and weaknesses across five functional domains: self, interpersonal, adaptation, cognition, work, and leisure, to match the treatment approach and required support.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "sect": "pdt"
+  },
+  "20": {
+    "skill_id": "20",
+    "skill_name": "Review Phase of Psychodynamic Case Conceptualization",
+    "skill_description": "After mastering the problem and personal situation, systematically review life experiences from childhood to the present, focusing on key events, traumas, and emotional issues in each developmental stage; strive to obtain necessary clues from each stage even when information is limited.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17",
+      "20"
+    ],
+    "sect": "pdt"
+  },
+  "21": {
+    "skill_id": "21",
+    "skill_name": "Reviewing Growth History from Childhood to Present According to Erikson Stages",
+    "skill_description": "Map important tasks and events from prenatal to old age according to the Erikson stages, collect experiences related to attachment, peers, school, career, and intimate relationships, paying special attention to traumas and emotional impacts in each stage, to lay the foundation for connection.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17",
+      "20",
+      "21"
+    ],
+    "sect": "pdt"
+  },
+  "22": {
+    "skill_id": "22",
+    "skill_name": "Psychodynamic Case Conceptualization Linkage Phase",
+    "skill_description": "Link the developmental history with current problems and functioning patterns to form hypotheses about 'why the distress is occurring now' and 'what kind of help can be provided'; set treatment goals based on this, and continuously revise them as treatment progresses.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17",
+      "22"
+    ],
+    "sect": "pdt"
+  },
+  "23": {
+    "skill_id": "23",
+    "skill_name": "Therapist Self-Reflection",
+    "skill_description": "Self-reflection is the process by which the therapist identifies and manages their emotional reactions to the client, in order to deepen the understanding of the client's experience. Through regular self-questioning, attention to verbal and nonverbal cues, and discussion with a supervisor, accept diverse emotions and avoid impulsive reactions.",
+    "parent_ids": [
+      "184",
+      "23"
+    ],
+    "sect": "pdt"
+  },
+  "24": {
+    "skill_id": "24",
+    "skill_name": "Initial Assessment of Therapeutic Alliance and Emotion (Transference and Countertransference)",
+    "skill_description": "Assess the degree of trust and cooperation and its impact on treatment outcomes in the early sessions, and identify the client's transference and the therapist's countertransference. Observe engagement and anxiety levels, verbal and nonverbal responses, and proactively strengthen the alliance through interest, empathy, understanding, and positive expectation when necessary.",
+    "parent_ids": [
+      "184",
+      "23",
+      "24"
+    ],
+    "sect": "pdt"
+  },
+  "25": {
+    "skill_id": "25",
+    "skill_name": "Empathic Listening",
+    "skill_description": "Actively listen to understand how the client perceives their world, avoiding preconceived intentions and focusing on details. Use clarifying questions and reflective statements to confirm understanding, focus on one's own emotional reactions, and maintain the client's perspective; switch perspectives and seek supervision when empathy is difficult or emotions are intense.",
+    "parent_ids": [
+      "184",
+      "23",
+      "25"
+    ],
+    "sect": "pdt"
+  },
+  "26": {
+    "skill_id": "26",
+    "skill_name": "Pursuing Unconscious Meaning",
+    "skill_description": "The client's words and actions often contain multiple, unconscious meanings. Extract potential meanings by examining the characteristics of the behavior itself, the therapist's feelings, and inconsistencies in words and actions; decide whether to reveal based on timing and client benefit, for supportive intervention or to promote insight and understanding.",
+    "parent_ids": [
+      "184",
+      "23",
+      "26"
+    ],
+    "sect": "pdt"
+  },
+  "27": {
+    "skill_id": "27",
+    "skill_name": "Informed Consent and Setting Collaborative Goals",
+    "skill_description": "Before starting therapy, complete informed consent and set realistic goals in an open collaborative manner. Informed consent includes information about the issue, recommended plans and alternative choices, duration, risks/side effects, cost, confidentiality, and supervision; goal setting prioritizes safety, combines situational constraints with client concerns, and adjusts as treatment progresses.",
+    "parent_ids": [
+      "184",
+      "27"
+    ],
+    "sect": "pdt"
+  },
+  "6": {
+    "skill_id": "6",
+    "skill_name": "Information Gathering",
+    "skill_description": "Systematically collect key information during the assessment phase, including the client's chief complaints and current symptoms, personal history (current situation, past medical history, developmental history), to form a preliminary diagnosis and treatment recommendations, and to promote the establishment of the therapeutic alliance.",
+    "parent_ids": [
+      "184",
+      "6"
+    ],
+    "sect": "pdt"
+  },
+  "7": {
+    "skill_id": "7",
+    "skill_name": "Chief Complaint and Current Symptoms",
+    "skill_description": "Directly assess the client's chief complaint and current symptoms, check for any possible DSM diagnoses, and inquire about substance use and physical problems; use this to clarify emergency management and preliminary goals, while opening and strengthening the alliance by focusing on their most pressing concerns.",
+    "parent_ids": [
+      "184",
+      "6",
+      "7"
+    ],
+    "sect": "pdt"
+  },
+  "8": {
+    "skill_id": "8",
+    "skill_name": "Personal History",
+    "skill_description": "Systematically inquire and record current psychological and emotional status, past medical history, and developmental history; collect clearly at the start of treatment and continuously update throughout the process to deepen the understanding of the essence of the problem and optimize subsequent treatment recommendations and decisions.",
+    "parent_ids": [
+      "184",
+      "6",
+      "8"
+    ],
+    "sect": "pdt"
+  },
+  "9": {
+    "skill_id": "9",
+    "skill_name": "Assess Recent Psychological and Emotional Status",
+    "skill_description": "Focus on emotional, mental state, and functional changes over the recent period, assess subjective experiences such as anxiety and depression and their impact on life, to provide a basis for judging the urgency of the problem and selecting intervention strategies.",
+    "parent_ids": [
+      "184",
+      "6",
+      "8",
+      "9"
+    ],
+    "sect": "pdt"
+  },
+  "10": {
+    "skill_id": "10",
+    "skill_name": "Collect Past Medical History",
+    "skill_description": "Thoroughly review past episodes of psychiatric symptoms and treatment experiences, focusing on onset, treatment, and outcome, to assist in current diagnosis, assessment of relapse, and support needs, and to decide whether medication or other treatments need to be combined.",
+    "parent_ids": [
+      "184",
+      "6",
+      "8",
+      "10"
+    ],
+    "sect": "pdt"
+  },
+  "11": {
+    "skill_id": "11",
+    "skill_name": "Assess Developmental History",
+    "skill_description": "Evaluate early temperament and childhood symptoms, early interpersonal and attachment characteristics, and understand current educational, occupational, and interpersonal situations to grasp the trajectory of the problem and available resources, guiding the therapeutic orientation and technique selection.",
+    "parent_ids": [
+      "184",
+      "6",
+      "8",
+      "11"
+    ],
+    "sect": "pdt"
+  }
+}

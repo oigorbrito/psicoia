@@ -1,0 +1,312 @@
+{
+  "184": {
+    "skill_id": "184",
+    "skill_name": "Entrevista Avaliativa",
+    "skill_description": "A entrevista avaliativa visa estabelecer uma aliança terapêutica segura, avaliando de forma abrangente a história de funcionamento e crescimento do cliente. Através da conceitualização do caso psicodinâmico e da interpretação preliminar, identifica conflitos centrais, estabelece o quadro e os objetivos terapêuticos, e estabelece a base para a exploração do inconsciente.",
+    "parent_ids": [
+      "184"
+    ],
+    "sect": "pdt"
+  },
+  "1": {
+    "skill_id": "1",
+    "skill_name": "Criar um ambiente seguro para a conversa",
+    "skill_description": "Criar um espaço seguro e de apoio no início da avaliação, fazendo com que o cliente se sinta ouvido e compreendido. Utilizando perguntas abertas, empatia e uma atitude de não-julgamento, equilibrando conforto e confidencialidade, e explicando claramente o quadro da sessão, promovendo o estabelecimento da aliança de trabalho.",
+    "parent_ids": [
+      "184",
+      "1"
+    ],
+    "sect": "pdt"
+  },
+  "2": {
+    "skill_id": "2",
+    "skill_name": "Assumir uma postura empática e não-julgadora",
+    "skill_description": "Iniciar a conversa com perguntas abertas, ouvir por 5 a 10 minutos antes de avaliar; usar um tom de voz neutro e respostas empáticas, transmitir calor sem perder profissionalismo, permitir a discussão de privacidade e aceitar a tensão, ajudar a aliviar o desconforto quando necessário, evitando acusações.",
+    "parent_ids": [
+      "184",
+      "1",
+      "2"
+    ],
+    "sect": "pdt"
+  },
+  "3": {
+    "skill_id": "3",
+    "skill_name": "Prestar atenção ao conforto físico do indivíduo",
+    "skill_description": "Fornecer um espaço limpo e silencioso com assentos confortáveis, mantendo uma distância adequada para evitar contato físico; detalhes como desligar o celular, ajustar a temperatura conforme a necessidade, reduzem as interferências externas, ajudando o cliente a obter segurança e relaxamento para facilitar a expressão.",
+    "parent_ids": [
+      "184",
+      "1",
+      "3"
+    ],
+    "sect": "pdt"
+  },
+  "4": {
+    "skill_id": "4",
+    "skill_name": "Enfatizar a confidencialidade",
+    "skill_description": "Declarar claramente a confidencialidade da sessão, aumentando a sensação de segurança e reduzindo interrupções; se estiver em um ambiente de treinamento, explicar os arranjos necessários para discussão e gravação, bem como a proteção da privacidade, para que o cliente se sinta seguro ao revelar conteúdos sensíveis.",
+    "parent_ids": [
+      "184",
+      "1",
+      "4"
+    ],
+    "sect": "pdt"
+  },
+  "5": {
+    "skill_id": "5",
+    "skill_name": "Estabelecer o quadro e os limites",
+    "skill_description": "Estabelecer proativamente um quadro claro no início, definindo papéis, tempo, ambiente, custos, contato e plano de emergência, bem como as questões de confidencialidade e estágio de treinamento; uniformizar e tornar transparente para reduzir a ansiedade, e usar os limites para prevenir ultrapassagens, protegendo a terapia e o cliente.",
+    "parent_ids": [
+      "184",
+      "1",
+      "5"
+    ],
+    "sect": "pdt"
+  },
+  "12": {
+    "skill_id": "12",
+    "skill_name": "Avaliação e Interpretação Preliminar",
+    "skill_description": "Com base na avaliação funcional, julgar preliminarmente a eficácia dos métodos terapêuticos mais úteis e a viabilidade das técnicas de revelação; com base na capacidade de tolerância do cliente e na verificação da realidade das forças e fraquezas funcionais, formar interpretações experimentais e guiar a escolha da técnica subsequente.",
+    "parent_ids": [
+      "184",
+      "12"
+    ],
+    "sect": "pdt"
+  },
+  "13": {
+    "skill_id": "13",
+    "skill_name": "Avaliar as áreas funcionais do cliente (self, interpessoal, adaptação, cognição, trabalho e lazer)",
+    "skill_description": "Em torno das cinco áreas funcionais: self, interpessoal, adaptação (mecanismos de defesa), cognição e trabalho/lazer, coletar forças e deficiências, identificar o limiar de pressão e as formas de enfrentamento, para fornecer base para a decisão sobre a abordagem de suporte ou revelação.",
+    "parent_ids": [
+      "184",
+      "12",
+      "13"
+    ],
+    "sect": "pdt"
+  },
+  "14": {
+    "skill_id": "14",
+    "skill_name": "Avaliação do julgamento moral, reflexão e consciência psicológica",
+    "skill_description": "Avaliar a capacidade de reflexão (consciência psicológica e verificação da realidade) e o julgamento moral, observar a capacidade de autoavaliação, distinção entre realidade e culpa/consciência, e determinar se é apropriado revelar necessidades de tecnologia e controle de risco.",
+    "parent_ids": [
+      "184",
+      "12",
+      "14"
+    ],
+    "sect": "pdt"
+  },
+  "15": {
+    "skill_id": "15",
+    "skill_name": "Definição de prioridade de problemas e avaliação de motivação e recursos de tratamento",
+    "skill_description": "Combinando pressões internas e externas, força/fraqueza funcional com o suporte social e recursos utilizáveis, definir a prioridade dos problemas e objetivos, avaliar a motivação e a capacidade de satisfação/adiamento, para determinar o foco da tecnologia e o caminho alcançável.",
+    "parent_ids": [
+      "184",
+      "12",
+      "15"
+    ],
+    "sect": "pdt"
+  },
+  "16": {
+    "skill_id": "16",
+    "skill_name": "Conceitualização preliminar do caso",
+    "skill_description": "Após a avaliação, formular hipóteses preliminares sobre por que e como o cliente está em sofrimento para elaborar sugestões de tratamento e objetivos; e revisá-las continuamente durante o tratamento, orientando a escolha da intervenção e a decisão sobre quando encerrar o tratamento.",
+    "parent_ids": [
+      "184",
+      "16"
+    ],
+    "sect": "pdt"
+  },
+  "17": {
+    "skill_id": "17",
+    "skill_name": "Conceitualização do caso psicodinâmico",
+    "skill_description": "Enfatizar o papel dos pensamentos e emoções inconscientes e da experiência de desenvolvimento do indivíduo no sofrimento atual; com base nisso, determinar se é apropriado o tratamento psicodinâmico, e fazer escolhas entre revelar e apoiar a tecnologia, guiando continuamente a direção e o foco do tratamento.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17"
+    ],
+    "sect": "pdt"
+  },
+  "18": {
+    "skill_id": "18",
+    "skill_name": "Fase da descrição da conceitualização do caso psicodinâmico",
+    "skill_description": "Antes de apresentar as hipóteses de tratamento, descrever claramente os \"problemas\" e a \"situação pessoal\" do cliente, tanto para identificar o sofrimento mais urgente a ser tratado quanto para apreender seus padrões funcionais estáveis, para fundamentar a escolha do tratamento e da técnica apropriados.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17",
+      "18"
+    ],
+    "sect": "pdt"
+  },
+  "19": {
+    "skill_id": "19",
+    "skill_name": "Descrição dos problemas e situação pessoal do cliente (funções de auto)",
+    "skill_description": "Definir e ordenar os problemas mais urgentes (que podem ser diferentes da queixa principal), ao mesmo tempo que avaliar a força e fraqueza das cinco áreas funcionais: self, interpessoal, adaptação, cognitiva, trabalho e lazer, para corresponder ao modo de tratamento e ao suporte necessário.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "sect": "pdt"
+  },
+  "20": {
+    "skill_id": "20",
+    "skill_name": "Fase de revisão da conceitualização do caso psicodinâmico",
+    "skill_description": "Após dominar os problemas e a situação pessoal, revisar sistematicamente a experiência de vida desde a infância até o presente, focando nos eventos-chave, traumas e problemas emocionais em cada estágio de desenvolvimento; buscar obter pistas necessárias em cada estágio, mesmo com informações limitadas.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17",
+      "20"
+    ],
+    "sect": "pdt"
+  },
+  "21": {
+    "skill_id": "21",
+    "skill_name": "Revisão da história de crescimento desde a infância até o presente de acordo com as fases de Erikson",
+    "skill_description": "Organizar as tarefas e eventos importantes do período pré-natal até a velhice de acordo com a tabela das fases de desenvolvimento de Erikson, coletar experiências de apego, pares, escola, carreira e relacionamentos íntimos, prestando especial atenção aos traumas e impactos emocionais em cada estágio, para estabelecer a base.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17",
+      "20",
+      "21"
+    ],
+    "sect": "pdt"
+  },
+  "22": {
+    "skill_id": "22",
+    "skill_name": "Fase de conexão da conceitualização do caso na psicologia do desenvolvimento",
+    "skill_description": "Relacionar o histórico de crescimento com os problemas e o padrão funcional atuais, formar hipóteses sobre \"por que a dificuldade ocorre neste momento\" e \"que tipo de ajuda pode ser tomada\"; estabelecer os objetivos de tratamento com base nisso e ajustá-los continuamente conforme o progresso do tratamento.",
+    "parent_ids": [
+      "184",
+      "16",
+      "17",
+      "22"
+    ],
+    "sect": "pdt"
+  },
+  "23": {
+    "skill_id": "23",
+    "skill_name": "Auto-reflection of the counselor",
+    "skill_description": "Auto-reflection is the process of the therapist identifying and managing their emotional reactions to the client, in order to deepen the understanding of the client's experience. Through regular self-questioning, attention to verbal and nonverbal cues, and discussion with a supervisor, accepting diverse emotions and avoiding impulsive reactions.",
+    "parent_ids": [
+      "184",
+      "23"
+    ],
+    "sect": "pdt"
+  },
+  "24": {
+    "skill_id": "24",
+    "skill_name": "Avaliação preliminar da aliança terapêutica e emocional (transferência e contra-transferência)",
+    "skill_description": "Avaliar o nível de confiança e colaboração no encontro inicial e seu impacto nos resultados do tratamento, e identificar a transferência do paciente e a contra-transferência do terapeuta. Observar o engajamento e o nível de ansiedade, as respostas verbais e não verbais, e, quando necessário, usar o interesse, a empatia, a compreensão e a expectativa positiva para solidificar a aliança.",
+    "parent_ids": [
+      "184",
+      "23",
+      "24"
+    ],
+    "sect": "pdt"
+  },
+  "25": {
+    "skill_id": "25",
+    "skill_name": "Escuta empática",
+    "skill_description": "Para compreender como o cliente percebe seu mundo, ouvir ativamente, evitar intenções predefinidas e prestar atenção aos detalhes. Utilizar perguntas clarificadoras e declarações de feedback para confirmar a compreensão, prestar atenção às próprias reações emocionais e manter a perspectiva do cliente; mudar de perspectiva e buscar supervisão quando a empatia é difícil ou a emoção é intensa.",
+    "parent_ids": [
+      "184",
+      "23",
+      "25"
+    ],
+    "sect": "pdt"
+  },
+  "26": {
+    "skill_id": "26",
+    "skill_name": "Perseguir o significado inconsciente",
+    "skill_description": "As the client's words and actions often contain multiple, unconscious meanings. Extract potential meanings by examining the characteristics of the behavior itself, the therapist's feelings, and inconsistencies in words and actions; decide whether to reveal based on timing and client benefit, to support interventions or to promote insight and understanding.",
+    "parent_ids": [
+      "184",
+      "23",
+      "26"
+    ],
+    "sect": "pdt"
+  },
+  "27": {
+    "skill_id": "27",
+    "skill_name": "Consentimento informado e definição de objetivos de colaboração",
+    "skill_description": "Antes de iniciar o tratamento, realizar o consentimento informado e estabelecer metas realistas de forma colaborativa. O consentimento informado inclui a explicação do problema, as opções recomendadas e alternativas, duração, riscos/efeitos colaterais, custos, confidencialidade e supervisão; o estabelecimento de metas prioriza a segurança, combinando limitações do contexto e as preocupações do paciente, ajustando conforme o progresso do tratamento.",
+    "parent_ids": [
+      "184",
+      "27"
+    ],
+    "sect": "pdt"
+  },
+  "6": {
+    "skill_id": "6",
+    "skill_name": "Coleta de informações",
+    "skill_description": "Coletar informações chave como queixas principais e sintomas atuais, histórico pessoal (situação atual, histórico médico prévio, histórico de crescimento) dos pacientes durante a fase de avaliação, para formar um diagnóstico preliminar e sugestões de tratamento, e promover o estabelecimento de uma aliança terapêutica.",
+    "parent_ids": [
+      "184",
+      "6"
+    ],
+    "sect": "pdt"
+  },
+  "7": {
+    "skill_id": "7",
+    "skill_name": "Queixa principal e sintomas atuais",
+    "skill_description": "Avaliar diretamente as queixas principais e os sintomas atuais do visitante, verificar quaisquer diagnósticos possíveis do DSM, e perguntar sobre uso de substâncias e problemas corporais; com base nisso, definir o manejo de emergência e os objetivos iniciais, ao mesmo tempo que abre e fortalece a aliança com a questão que mais preocupa o visitante.",
+    "parent_ids": [
+      "184",
+      "6",
+      "7"
+    ],
+    "sect": "pdt"
+  },
+  "8": {
+    "skill_id": "8",
+    "skill_name": "Histórico Pessoal",
+    "skill_description": "Questionar e registrar o estado psicológico e emocional atual, histórico de doenças e histórico de desenvolvimento; coletar claramente no início do tratamento e atualizar continuamente durante todo o processo para aprofundar a compreensão da essência do problema e otimizar as sugestões e decisões de tratamento subsequentes.",
+    "parent_ids": [
+      "184",
+      "6",
+      "8"
+    ],
+    "sect": "pdt"
+  },
+  "9": {
+    "skill_id": "9",
+    "skill_name": "Avaliar o Estado Psicológico e Emocional Recente",
+    "skill_description": "Focar nas mudanças emocionais, estado de espírito e funcionais de um período recente, avaliar as experiências subjetivas de ansiedade, depressão e seu impacto na vida, para fornecer base para julgar a urgência do problema e a escolha da estratégia de intervenção.",
+    "parent_ids": [
+      "184",
+      "6",
+      "8",
+      "9"
+    ],
+    "sect": "pdt"
+  },
+  "10": {
+    "skill_id": "10",
+    "skill_name": "Coletar Histórico de Doenças Anteriores",
+    "skill_description": "Verificar completamente os sintomas psiquiátricos passados e experiências de tratamento, focando no início, tratamento e desfecho, para auxiliar no diagnóstico atual, avaliação de recaída e necessidades de suporte, e decidir se é necessário combinar medicamentos ou outros tratamentos.",
+    "parent_ids": [
+      "184",
+      "6",
+      "8",
+      "10"
+    ],
+    "sect": "pdt"
+  },
+  "11": {
+    "skill_id": "11",
+    "skill_name": "Avaliar o Histórico de Desenvolvimento",
+    "skill_description": "Avaliar o temperamento precoce e sintomas da infância, características de relacionamento e apego precoce, e entender a situação educacional, profissional e interpessoal atual, para apreender o contexto da formação do problema e os recursos disponíveis, orientando a abordagem terapêutica e a escolha de técnicas.",
+    "parent_ids": [
+      "184",
+      "6",
+      "8",
+      "11"
+    ],
+    "sect": "pdt"
+  }
+}
