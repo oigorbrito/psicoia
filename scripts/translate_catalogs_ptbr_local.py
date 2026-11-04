@@ -19,6 +19,10 @@ PLACEHOLDER = re.compile(r'\{\{.*?\}\}|\$\{[^{}]+\}|\{[A-Za-z_][A-Za-z0-9_.-]*\}
 ALLOWED_FIELDS = ('skill_name', 'skill_description')
 
 
+class OllamaUnavailable(RuntimeError):
+    """The local Ollama endpoint could not serve a request after bounded retries."""
+
+
 def catalogs(root):
     for source in sorted((root / 'assets/skills/sect').glob('*/stage*/*_skills.json')):
         target = source.with_name(source.stem + '.pt-BR.json')
@@ -85,7 +89,10 @@ def call_ollama(url, model, batch, timeout, attempts):
             print(f'  tentativa {i+1}/{attempts} falhou: {type(e).__name__}: {e}', file=sys.stderr)
             if i + 1 < attempts:
                 time.sleep(1)
-    raise RuntimeError(f'Lote rejeitado após {attempts} tentativas: {err}')
+    message = f'Lote rejeitado após {attempts} tentativas: {err}'
+    if isinstance(err, (urllib.error.URLError, TimeoutError)):
+        raise OllamaUnavailable(message) from err
+    raise RuntimeError(message) from err
 
 
 def atomic_json(path, obj):
@@ -133,11 +140,15 @@ def main():
     out = (args.output or root / 'ptbr-drafts').resolve()
     if args.batch_size < 1 or args.batch_size > 25:
         p.error('--batch-size deve estar entre 1 e 25')
+    if args.attempts < 1:
+        p.error('--attempts deve ser pelo menos 1')
     if not (root / 'assets/skills/sect').exists():
         p.error('Raiz do projeto inválida: assets/skills/sect ausente')
     files = list(catalogs(root))
     print(f'Catálogos PT-BR ausentes: {len(files)}; registros: {sum(len(json.loads(a.read_text(encoding="utf-8"))) for a,_ in files)}')
     processed = 0
+    attempted = 0
+    failed_records = []
     incomplete_drafts = False
     for src, final_target in files:
         rel = src.relative_to(root)
@@ -161,32 +172,56 @@ def main():
         pending = [(k,v) for k,v in source.items() if k not in draft]
         print(f'\n{rel}: {len(draft)}/{len(source)} concluídos')
         for start in range(0,len(pending),args.batch_size):
-            batch = pending[start:start+args.batch_size]
-            if args.max_records and processed >= args.max_records:
+            if args.max_records and attempted >= args.max_records:
                 break
+            batch = pending[start:start+args.batch_size]
             if args.max_records:
-                batch = batch[:args.max_records-processed]
+                batch = batch[:args.max_records-attempted]
+            if not batch:
+                break
+            attempted += len(batch)
+
+            def translate_and_save(current_batch):
+                nonlocal processed
+                try:
+                    translated = call_ollama(args.url,args.model,current_batch,args.timeout,args.attempts)
+                except OllamaUnavailable:
+                    raise
+                except Exception as e:
+                    if len(current_batch) == 1:
+                        failed_id = str(current_batch[0][0])
+                        failed_records.append((rel, failed_id, str(e)))
+                        print(f'PENDING {rel} id={failed_id}: {e}', file=sys.stderr)
+                        return
+                    midpoint = len(current_batch) // 2
+                    print(f'  Lote rejeitado ({len(current_batch)} registros); isolando falhas e continuando.', file=sys.stderr)
+                    translate_and_save(current_batch[:midpoint])
+                    translate_and_save(current_batch[midpoint:])
+                    return
+                for k,v in current_batch:
+                    draft[k] = {**v, **translated[str(k)]}
+                atomic_json(draft_path,draft)
+                processed += len(current_batch)
+                print(f'  {len(draft)}/{len(source)} traduções verificadas; total desta execução: {processed}',flush=True)
+
             try:
-                translated = call_ollama(args.url,args.model,batch,args.timeout,args.attempts)
-            except Exception as e:
-                print(f'INTERROMPIDO em {rel}: {e}', file=sys.stderr)
-                print('Rascunhos anteriores preservados; reexecute o comando para continuar.',file=sys.stderr)
+                translate_and_save(batch)
+            except OllamaUnavailable as e:
+                print(f'FALHA GLOBAL do endpoint Ollama em {rel}: {e}', file=sys.stderr)
+                print('Checkpoint preservado; execução interrompida porque o serviço local não está disponível.', file=sys.stderr)
                 return 2
-            for k,v in batch:
-                draft[k] = {**v, **translated[str(k)]}
-            atomic_json(draft_path,draft)
-            processed += len(batch)
-            print(f'  {len(draft)}/{len(source)} traduções verificadas; total desta execução: {processed}',flush=True)
         if len(draft) == len(source):
             verify(source,draft)
             print(f'  COMPLETO: {draft_path} (rascunho, requer revisão humana)')
-        elif args.max_records and processed >= args.max_records:
+        elif args.max_records and attempted >= args.max_records:
             print(f'  INCOMPLETO: {draft_path} ({len(draft)}/{len(source)}; somente rascunho retomável, não é catálogo válido)')
-        if args.max_records and processed >= args.max_records:
+        elif len(draft) < len(source):
+            print(f'  PENDING: {draft_path} ({len(draft)}/{len(source)}; registros restantes preservados para retomada)')
+        if args.max_records and attempted >= args.max_records:
             break
-    print(f'\nTotal processado nesta execução: {processed}. Rascunhos em: {out}')
+    print(f'\nTotal tentado nesta execução: {attempted}; traduzido e salvo: {processed}; registros com falha isolada: {len(failed_records)}. Rascunhos em: {out}')
     print('ATENÇÃO: não copiar automaticamente para assets/skills sem revisão de tradução e validação de comportamento.')
-    return 1 if args.verify_only and incomplete_drafts else 0
+    return 2 if failed_records else (1 if args.verify_only and incomplete_drafts else 0)
 
 if __name__=='__main__':
     raise SystemExit(main())

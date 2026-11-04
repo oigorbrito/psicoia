@@ -102,27 +102,26 @@ def test_call_ollama_rejects_altered_or_reordered_placeholders(monkeypatch, sour
         translator.call_ollama("http://127.0.0.1:11434", "qwen3.5:4b", batch, 10, 1)
 
 
-def test_failure_is_resumable_and_partial_draft_is_not_valid(monkeypatch, tmp_path, capsys):
+def test_single_record_failure_is_isolated_then_resumable(monkeypatch, tmp_path, capsys):
     root = tmp_path / "synthetic-root"
     source_path = _synthetic_catalog(root)
     original_bytes = source_path.read_bytes()
     output = tmp_path / "drafts"
-    calls = 0
 
-    def fail_after_one_batch(url, model, batch, timeout, attempts):
-        nonlocal calls
-        calls += 1
-        if calls == 2:
-            raise RuntimeError("synthetic Ollama outage")
+    def fail_record_seven(url, model, batch, timeout, attempts):
+        if any(str(skill_id) == "7" for skill_id, _ in batch):
+            raise RuntimeError("synthetic invalid translation for record 7")
         return _translation_for_batch(batch)
 
-    monkeypatch.setattr(translator, "call_ollama", fail_after_one_batch)
+    monkeypatch.setattr(translator, "call_ollama", fail_record_seven)
     result = _run_main(monkeypatch, root, output, "--batch-size", "6", "--max-records", "12")
 
     assert result == 2
     draft_path = output / source_path.relative_to(root).with_name("meta_skills.pt-BR.json")
     partial = json.loads(draft_path.read_text(encoding="utf-8"))
-    assert len(partial) == 6
+    assert len(partial) == 11
+    assert "7" not in partial
+    assert "PENDING" in capsys.readouterr().err
     assert not draft_path.with_suffix(draft_path.suffix + ".tmp").exists()
     assert source_path.read_bytes() == original_bytes
     assert not (source_path.parent / "meta_skills.pt-BR.json").exists()
@@ -150,3 +149,22 @@ def test_failure_is_resumable_and_partial_draft_is_not_valid(monkeypatch, tmp_pa
     result = _run_main(monkeypatch, root, output, "--verify-only")
     assert result == 0
     assert "COMPLETO" in capsys.readouterr().out
+
+
+def test_unavailable_ollama_stops_after_bounded_batch_retry(monkeypatch, tmp_path):
+    root = tmp_path / "synthetic-root"
+    source_path = _synthetic_catalog(root, count=4)
+    output = tmp_path / "drafts"
+    calls = 0
+
+    def unavailable(url, model, batch, timeout, attempts):
+        nonlocal calls
+        calls += 1
+        raise translator.OllamaUnavailable("synthetic local endpoint unavailable")
+
+    monkeypatch.setattr(translator, "call_ollama", unavailable)
+    result = _run_main(monkeypatch, root, output, "--batch-size", "4", "--max-records", "4")
+
+    assert result == 2
+    assert calls == 1
+    assert not list(output.rglob("*.json"))
