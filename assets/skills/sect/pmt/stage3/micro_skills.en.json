@@ -1,0 +1,74 @@
+{
+  "523": {
+    "skill_id": "523",
+    "skill_name": "Write an opening passage connecting sessions and summarizing the problem's effects",
+    "skill_description": "Open with a guiding passage that connects the current session with previous sessions and briefly summarizes how the problem has affected the client in the past and present. Establish shared context and a narrative focus, preparing the ground for a new story.",
+    "when_to_use": "After a narrative therapy session, when writing a consolidation letter to reinforce a new story and review key points; especially when introducing letters for the first time or providing a progress summary.",
+    "trigger": "The client has described a timeline or scope of the problem's effects in detail, or the session included a large amount of information that needs to be organized into key points and a coherent thread.",
+    "parent_ids": ["519", "520", "521", "522", "523"]
+  },
+  "524": {
+    "skill_id": "524",
+    "skill_name": "Describe the problem and its effects using externalizing language",
+    "skill_description": "Continue externalizing the problem in the letter by personifying it and describing its intentions and tactics. Record how it troubles, controls, or obstructs the client, maintaining the distinction between person and problem and reducing self-blame and pathologizing.",
+    "when_to_use": "After externalizing conversations in session, to consolidate their effects and carry therapeutic language into life outside therapy; or when reaffirming the distinction between person and problem.",
+    "trigger": "The client speaks as though the problem defines them (for example, “I am just...”) or reports being constrained by the problem over a long period, with broad and intense effects.",
+    "parent_ids": ["519", "520", "521", "522", "524"]
+  },
+  "525": {
+    "skill_id": "525",
+    "skill_name": "Record unique outcomes and exceptions, quoting the client's words",
+    "skill_description": "Give unique outcomes or exceptions from the session a dedicated place in the letter. Quote the client's key words verbatim whenever possible, using them as evidence for the new story and as anchors for later conversations, thereby amplifying effective change.",
+    "when_to_use": "After identifying moments when the problem was absent or less intense, or episodes showing ability and resilience; use this to consolidate and witness change.",
+    "trigger": "The client describes a success such as “that time it did not control me...” or “I managed to do it...,” or makes a key statement that can be quoted verbatim.",
+    "parent_ids": ["519", "520", "521", "522", "525"]
+  },
+  "526": {
+    "skill_id": "526",
+    "skill_name": "Ask open-ended questions about the alternative story",
+    "skill_description": "Include questions in the letter about the future and unique possibilities, inviting the client to consider a preferred identity, next steps, and who might witness the change. This helps extend and make the new story more concrete.",
+    "when_to_use": "When the client has begun to form a new narrative or goal and momentum needs to be maintained between sessions while guiding an action plan.",
+    "trigger": "The client expresses an intention such as “I would rather become...” or “perhaps the next step...,” or shows curiosity and hope about future options or witnesses to the change.",
+    "parent_ids": ["519", "520", "521", "522", "526"]
+  },
+  "527": {
+    "skill_id": "527",
+    "skill_name": "Affirm abilities and achievements and highlight the meaning of change",
+    "skill_description": "Through the letter, sincerely acknowledge the client's abilities and accomplishments in therapy and emphasize what these changes mean to the client and significant others, strengthening hope, motivation, and self-efficacy.",
+    "when_to_use": "After each session to encourage and witness the client's efforts; especially when progress occurs, homework is completed, or confidence needs support.",
+    "trigger": "The client reports improved ratings, more exceptions, completion of an agreed behavior, or a more positive and hopeful tone.",
+    "parent_ids": ["519", "520", "521", "522", "527"]
+  },
+  "528": {
+    "skill_id": "528",
+    "skill_name": "Distinguish the problem story from the new story and quote moments of struggle",
+    "skill_description": "Clearly distinguish the problem-saturated story from the new story in the letter and quote representative moments of struggle and turning points. Help the client recognize the emerging narrative thread and transform struggle into a starting point and resource for the new story.",
+    "when_to_use": "During narrative reauthoring, when the client presents both difficulties and progress and the central thread of the new story needs clarification and consolidation.",
+    "trigger": "The conversation mixes old and new narratives; the client expresses ambivalence with phrases such as “on the one hand... on the other hand...” or is unclear about direction.",
+    "parent_ids": ["519", "520", "521", "522", "528"]
+  },
+  "529": {
+    "skill_id": "529",
+    "skill_name": "Adjust the length and scope of the letter to the session content",
+    "skill_description": "Choose a longer letter that covers the process and agreements or a brief note that records an understanding or a post-session question, depending on the amount of information and the goal. Match the format to what it can carry, improve readability, and avoid overloading the client.",
+    "when_to_use": "When sessions differ substantially in information density and purpose, and the format needs to be adjusted to improve communication and reduce reading burden.",
+    "trigger": "The session covers several topics and agreements that need a detailed record, or only one key insight or question that is better suited to brief feedback.",
+    "parent_ids": ["519", "520", "521", "522", "529"]
+  },
+  "530": {
+    "skill_id": "530",
+    "skill_name": "Encourage applying learning in daily life and invite action",
+    "skill_description": "At the end of the letter, emphasize transferring what was learned in therapy to daily life and suggest an observation or concrete action. Highlight the importance of practice to support consolidation and generalization in everyday settings.",
+    "when_to_use": "Between the current session and the next meeting, to maintain momentum and guide self-management and practice in real-life settings.",
+    "trigger": "A relatively long interval before the next session is expected, the client says “I will give it a try...,” or the client is unsure how to apply what was learned and needs guidance.",
+    "parent_ids": ["519", "520", "521", "522", "530"]
+  },
+  "531": {
+    "skill_id": "531",
+    "skill_name": "Use the letter as a starting point for the next session",
+    "skill_description": "At the next meeting, review the previous letter and select key evidence, questions, and passages as a starting point for conversation. Continue the new-story thread and monitor and amplify change.",
+    "when_to_use": "After a letter has been sent, at the start of a follow-up session when quickly aligning on the focus and carrying forward narrative progress.",
+    "trigger": "The client brings feedback on the letter, new observations, or questions prompted by it, or a documented passage is needed to begin exploring the new story.",
+    "parent_ids": ["519", "520", "521", "522", "531"]
+  }
+}

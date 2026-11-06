@@ -1,0 +1,1205 @@
+{
+  "898": {
+    "skill_id": "898",
+    "skill_name": "Técnicas de exposição",
+    "skill_description": "O sistema faz com que o cliente se exponha, sob condições controladas, a estímulos que provocam medo ou ansiedade, reduzindo gradualmente os comportamentos de evitação e as reações de ansiedade através da exposição real ou imaginária. Indicado para fobias, ansiedade e problemas compulsivos; requer consentimento informado, avaliação de segurança adequada e frequentemente é combinado com outras intervenções para consolidar os resultados.",
+    "parent_ids": [
+      "916",
+      "898"
+    ],
+    "sect": "bt"
+  },
+  "899": {
+    "skill_id": "899",
+    "skill_name": "Terapia de Processamento por Movimentação dos Olhos",
+    "skill_description": "O EMDR integra exposição imaginária, reconstrução cognitiva e estimulação bilateral/rítmica através do movimento dos olhos, promovendo o reprocessamento de memórias traumáticas para aliviar sintomas como TEPT, sendo também utilizado para ansiedade e pânico. A implementação exige que se priorize a segurança do cliente, que o terapeuta tenha sido treinado sistematicamente e supervisionado para lidar adequadamente com possíveis reações intensas.",
+    "parent_ids": [
+      "916",
+      "898",
+      "899"
+    ],
+    "sect": "bt"
+  },
+  "900": {
+    "skill_id": "900",
+    "skill_name": "Treino de Habilidades Sociais",
+    "skill_description": "Melhora a capacidade de interação eficaz em diferentes contextos sociais através de educação psicológica, modelagem, reforço, ensaio comportamental, role-playing e feedback. Para déficits nas habilidades interpessoais, os planos podem ser personalizados; o escopo é amplo e frequentemente combina-se com treinamentos de gestão da raiva para promover adaptação interpessoal.",
+    "parent_ids": [
+      "916",
+      "900"
+    ],
+    "sect": "bt"
+  },
+  "901": {
+    "skill_id": "901",
+    "skill_name": "Treino de Decisão",
+    "skill_description": "Ensina ao cliente a expressar eficazmente necessidades e posições, respeitando os direitos e sentimentos dos outros, substituindo padrões indecisos ou agressivos. Combina modelagem, ensaio, feedback e reconstrução cognitiva, desafiando autoafirmações negativas e crenças, sendo frequentemente implementado em grupos e exigindo sensibilidade cultural.",
+    "parent_ids": [
+      "916",
+      "900",
+      "901"
+    ],
+    "sect": "bt"
+  },
+  "799": {
+    "skill_id": "799",
+    "skill_name": "Modelagem, Fading e Chaining",
+    "skill_description": "A modelagem, o fading e o chaining são técnicas centrais para desenvolver novos comportamentos. A modelagem e o chaining treinam a habilidade passo a passo; o fading retira gradualmente os pistas, garantindo que o indivíduo generalize e aplique independentemente em contextos naturais.",
+    "parent_ids": [
+      "916",
+      "799"
+    ],
+    "sect": "bt"
+  },
+  "800": {
+    "skill_id": "800",
+    "skill_name": "Modelagem",
+    "skill_description": "A modelagem consiste no reforço diferencial das respostas de aproximação contínua ao comportamento-alvo, elevando progressivamente os critérios até obter o novo comportamento. Comumente utilizada em treino de linguagem, imitação e movimento, é necessário controlar o ritmo do reforço para evitar estagnação.",
+    "parent_ids": [
+      "916",
+      "799",
+      "800"
+    ],
+    "sect": "bt"
+  },
+  "801": {
+    "skill_id": "801",
+    "skill_name": "Fading",
+    "skill_description": "O fading altera gradualmente o estímulo controlante mantendo a resposta inalterada, enfraquecendo o estímulo auxiliar até que o estímulo natural ainda provoque a resposta correta. A chave reside na seleção do estímulo-alvo, no estímulo inicial e no controle da velocidade de promoção e execução.",
+    "parent_ids": [
+      "916",
+      "799",
+      "801"
+    ],
+    "sect": "bt"
+  },
+  "802": {
+    "skill_id": "802",
+    "skill_name": "Chaining",
+    "skill_description": "O chaining decompõe comportamentos-alvo complexos em cadeias de estímulo-resposta, treinando-os um por um na ordem; cada resposta funciona simultaneamente como o estímulo discriminativo para o próximo passo e como reforço para o anterior. Aplicável a habilidades de vida e séries de comportamentos.",
+    "parent_ids": [
+      "916",
+      "799",
+      "802"
+    ],
+    "sect": "bt"
+  },
+  "803": {
+    "skill_id": "803",
+    "skill_name": "Apresentação de todas as tarefas",
+    "skill_description": "Treinar toda a cadeia comportamental do início ao fim em cada sessão de treino, fornecendo assistência necessária para os passos difíceis, repetindo o exercício até que seja dominado. Adequado para cadeias comportamentais curtas; promove a independência e aumenta a eficiência.",
+    "parent_ids": [
+      "916",
+      "799",
+      "802",
+      "803"
+    ],
+    "sect": "bt"
+  },
+  "804": {
+    "skill_id": "804",
+    "skill_name": "Cadeia reversa",
+    "skill_description": "Treinar em ordem inversa, ensinando primeiro o último passo e integrando progressivamente os passos anteriores já dominados. Reforça a sensação de sucesso próxima ao final; adequado para cadeiras longas e difíceis, mas a transferência pode ser limitada quando oposta à ordem natural.",
+    "parent_ids": [
+      "916",
+      "799",
+      "802",
+      "804"
+    ],
+    "sect": "bt"
+  },
+  "805": {
+    "skill_id": "805",
+    "skill_name": "Cadeia direta",
+    "skill_description": "Treinar em ordem natural, adicionando progressivamente os passos subsequentes desde o primeiro até completar toda a cadeia. Próximo ao contexto do dia a dia; frequentemente usado no treino de comportamentos diários de crianças e em séries de habilidades mais longas.",
+    "parent_ids": [
+      "916",
+      "799",
+      "802",
+      "805"
+    ],
+    "sect": "bt"
+  },
+  "836": {
+    "skill_id": "836",
+    "skill_name": "Terapia da aversão",
+    "skill_description": "Estabelecer um condicionamento aversivo repetindo o pareamento do comportamento-alvo a ser eliminado com estímulos desagradáveis ou punitivos, fazendo com que o indivíduo desenvolva aversão e evitação em relação ao comportamento, reduzindo ou abandonando-o. O princípio deriva do condicionamento clássico e da aprendizagem de evitação; a aplicação deve observar a ética.",
+    "parent_ids": [
+      "916",
+      "836"
+    ],
+    "sect": "bt"
+  },
+  "837": {
+    "skill_id": "837",
+    "skill_name": "Variação da terapia da aversão",
+    "skill_description": "Formas mais seguras e controláveis desenvolvidas sobre a base de estímulos aversivos tradicionais, incluindo a terapia da aversão por representação simbólica, a sensibilização implícita e a técnica de pausa, substituindo estímulos reais por símbolos ou imaginação para reduzir riscos e aumentar a operabilidade.",
+    "parent_ids": [
+      "916",
+      "836",
+      "837"
+    ],
+    "sect": "bt"
+  },
+  "838": {
+    "skill_id": "838",
+    "skill_name": "Sensibilização implícita",
+    "skill_description": "Usar linguagem para guiar o cliente a imaginar simultaneamente um reforçador negativo e uma situação aversiva intensa, pareando-os na representação mental para estabelecer uma reação de aversão ao comportamento negativo. Seguro, sem limitações de local, requer boa imaginação; sua eficácia é ligeiramente inferior à dos estímulos reais.",
+    "parent_ids": [
+      "916",
+      "836",
+      "837",
+      "838"
+    ],
+    "sect": "bt"
+  },
+  "839": {
+    "skill_id": "839",
+    "skill_name": "Terapia da aversão por representação simbólica",
+    "skill_description": "Parear com precisão a representação simbólica de reforçadores negativos (como imagens ou filmes) com estímulos aversivos, induzindo uma reação aversiva idêntica à dos estímulos reais. Fácil de controlar em termos de apresentação e duração, prático e evita o contato direto com estímulos materiais.",
+    "parent_ids": [
+      "916",
+      "836",
+      "837",
+      "839"
+    ],
+    "sect": "bt"
+  },
+  "840": {
+    "skill_id": "840",
+    "skill_name": "Técnica da pausa",
+    "skill_description": "Retirar o reforço em um momento específico, associando o comportamento negativo a uma nova situação sem reforço (como isolamento), fazendo com que o cliente desenvolva aversão à situação e reduza o comportamento-alvo. Pode haver recaídas iniciais; é necessário proteger a autoestima e evitar o abuso.",
+    "parent_ids": [
+      "916",
+      "836",
+      "837",
+      "840"
+    ],
+    "sect": "bt"
+  },
+  "888": {
+    "skill_id": "888",
+    "skill_name": "Biofeedback",
+    "skill_description": "Utiliza instrumentos fisiológicos para converter sinais fisiológicos fracos do corpo em feedback perceptível, treinando o indivíduo a regular voluntariamente funções viscerais e somáticas através da resposta condicional operante, corrigindo associações patológicas e melhorando a auto-regulação para aliviar problemas psicossomáticos e neuropsiquiátricos.",
+    "parent_ids": [
+      "916",
+      "888"
+    ],
+    "sect": "bt"
+  },
+  "889": {
+    "skill_id": "889",
+    "skill_name": "Fase final do tratamento com biofeedback",
+    "skill_description": "Registra valores-alvo e alterações nos indicadores fisiológicos na fase final de cada sessão, comparando-os com a linha de base para avaliar a eficácia; se não houver mudanças significativas nos indicadores ou melhoria dos sintomas, considera-se substituir o indicador fisiológico de feedback ou ajustar o protocolo, além de agendar acompanhamento e treino domiciliar para consolidar os resultados.",
+    "parent_ids": [
+      "916",
+      "888",
+      "889"
+    ],
+    "sect": "bt"
+  },
+  "890": {
+    "skill_id": "890",
+    "skill_name": "Ficha de observação",
+    "skill_description": "Preenchida pelo terapeuta antes, durante e após o tratamento, utilizada para registrar dados fisiológicos e sintomáticos, valores-alvo e progresso do treino, bem como fazer comparações por fase para julgar a eficácia e identificar problemas; pode orientar a substituição de indicadores de feedback ou o ajuste da estratégia terapêutica quando necessário, garantindo que o treino seja científico e eficaz.",
+    "parent_ids": [
+      "916",
+      "888",
+      "889",
+      "890"
+    ],
+    "sect": "bt"
+  },
+  "916": {
+    "skill_id": "916",
+    "skill_name": "Sessão consultiva",
+    "skill_description": "Aplica-se flexivelmente estratégias de intervenção como reforço, inibição, exposição e modelagem, baseadas na teoria do aprendizado; o objetivo central é eliminar comportamentos desadaptativos, moldar e consolidar novos comportamentos adaptativos, alcançando a correção e remodelação do comportamento através de treino direcionado.",
+    "parent_ids": [
+      "916"
+    ],
+    "sect": "bt"
+  },
+  "449": {
+    "skill_id": "449",
+    "skill_name": "Estratégias de intervenção",
+    "skill_description": "As principais estratégias de intervenção da terapia comportamental são o aprendizado, o reforço e a inibição, baseadas na resposta condicional clássica e operante; melhoram os sintomas e aumentam a função social através do moldamento de comportamentos adaptativos, a extinção de respostas inadequadas e a exposição à hábito.",
+    "parent_ids": [
+      "916",
+      "449"
+    ],
+    "sect": "bt"
+  },
+  "450": {
+    "skill_id": "450",
+    "skill_name": "Aprendizado",
+    "skill_description": "As estratégias de ensino transmitem novos comportamentos e habilidades através de modelagem, imitação, treino de habilidades sociais e biofeedback; em ambientes apropriados e com reforço, formam respostas adaptativas imediatamente operáveis, alcançando a mudança e consolidação do comportamento.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450"
+    ],
+    "sect": "bt"
+  },
+  "451": {
+    "skill_id": "451",
+    "skill_name": "Técnica de modelagem/aprendizado observacional",
+    "skill_description": "Baseada na teoria da aprendizagem social de Bandura, o indivíduo adquire novas respostas observando o comportamento e as consequências de um modelo; produz efeitos de modelagem, inibição/desinibição e indução, sendo utilizada para adquirir ou substituir comportamentos inadequados.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "451"
+    ],
+    "sect": "bt"
+  },
+  "452": {
+    "skill_id": "452",
+    "skill_name": "Projeto de programa de modelagem",
+    "skill_description": "Projetam-se modelos seguindo o princípio da progressão do fácil ao difícil; escolhem-se modelos semelhantes ao indivíduo, apresentando comportamentos adequados e inadequados através de métodos como sessões presenciais ou gravações em vídeo, preparando o terreno para a subsequente imitação e reforço.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "451",
+      "452"
+    ],
+    "sect": "bt"
+  },
+  "453": {
+    "skill_id": "453",
+    "skill_name": "Aprendizado por imitação ativa",
+    "skill_description": "O cliente participa de role-playing e exercícios após a demonstração, consolidando novas respostas através do reforço e feedback, melhorando o domínio e transferência da habilidade, reduzindo o processo de tentativa e erro, aumentando a autoconfiança e a eficácia na resposta a situações.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "451",
+      "453"
+    ],
+    "sect": "bt"
+  },
+  "454": {
+    "skill_id": "454",
+    "skill_name": "Aprendizado por imitação passiva",
+    "skill_description": "O cliente forma um aprendizado implícito ao observar o comportamento e as consequências do demonstrador, sem participação direta ou reforço explícito, como ao assistir a uma demonstração de televisão e alterar seu comportamento, refletindo o efeito de aquisição no aprendizado observacional.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "451",
+      "454"
+    ],
+    "sect": "bt"
+  },
+  "455": {
+    "skill_id": "455",
+    "skill_name": "Treinamento de habilidades sociais",
+    "skill_description": "Baseado no reforço e na aprendizagem social, através da explicação dos princípios, demonstração, role-playing, feedback e exercícios de transferência, ajuda o cliente a adquirir e manter habilidades sociais, melhorando a adaptação interpessoal e funcional.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455"
+    ],
+    "sect": "bt"
+  },
+  "456": {
+    "skill_id": "456",
+    "skill_name": "Explicação dos princípios do treinamento de habilidades sociais",
+    "skill_description": "Explica ao cliente os princípios e contextos de aplicação da habilidade-alvo, adaptando a explicação ao contexto cultural e educacional, fornecendo uma base cognitiva e suporte motivacional para as demonstrações subsequentes, o ensaio e a transferência.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "456"
+    ],
+    "sect": "bt"
+  },
+  "457": {
+    "skill_id": "457",
+    "skill_name": "Demonstração e ensaio comportamental",
+    "skill_description": "Através de vídeos, áudio ou apresentações ao vivo das respostas adequadas e inadequadas, e organizando o cliente para ensaiar ações-chave e reações verbais, promove a formação da habilidade, reduz a ansiedade e melhora a resposta ao contexto.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "457"
+    ],
+    "sect": "bt"
+  },
+  "458": {
+    "skill_id": "458",
+    "skill_name": "Role-playing",
+    "skill_description": "Simula cenários sociais reais no consultório, com o terapeuta ou colegas assumindo papéis secundários; o cliente ensaia a habilidade-alvo, enfrentando gradualmente contextos mais difíceis, reduzindo a ansiedade e aumentando o senso de controle.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "458"
+    ],
+    "sect": "bt"
+  },
+  "459": {
+    "skill_id": "459",
+    "skill_name": "Feedback comportamental",
+    "skill_description": "Fornece reforço imediato para respostas adequadas durante o ensaio e oferece correções específicas para deficiências, incentivando o auto-reforço, permitindo que o cliente estabeleça padrões comportamentais estáveis e melhore sua autoavaliação.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "459"
+    ],
+    "sect": "bt"
+  },
+  "460": {
+    "skill_id": "460",
+    "skill_name": "Treinamento de transferência",
+    "skill_description": "Organiza tarefas domésticas e exercícios situacionais, orientando a aplicação das habilidades treinadas em ambientes naturais, monitorando e fornecendo feedback sobre os efeitos de transferência, promovendo a manutenção e a aplicação generalizada da habilidade.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "460"
+    ],
+    "sect": "bt"
+  },
+  "461": {
+    "skill_id": "461",
+    "skill_name": "Treino de autoconfiança",
+    "skill_description": "Ensina reações verbais e não verbais diretas e eficazes através de role-playing, modelagem e orientação, substituindo comportamentos ansiosos e recatados por ações confiantes, melhorando a expressão, a defesa de direitos e o controle emocional.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "461"
+    ],
+    "sect": "bt"
+  },
+  "462": {
+    "skill_id": "462",
+    "skill_name": "Treino de gerenciamento da raiva no contexto do treinamento de autoconfiança",
+    "skill_description": "Ensina estratégias adequadas de expressão e controle da raia em contextos sociais, combinando linguagem confiante, contato visual e técnicas de relaxamento, reduzindo explosões e evasão, melhorando a autorregulação durante conflitos.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "455",
+      "461",
+      "462"
+    ],
+    "sect": "bt"
+  },
+  "463": {
+    "skill_id": "463",
+    "skill_name": "Tecnologia de biofeedback",
+    "skill_description": "Utiliza instrumentos para monitorar temperatura da pele, condutância cutânea, frequência cardíaca, pressão arterial, eletromiografia e eletroencefalografia; o feedback dos sinais fisiológicos incentiva o paciente a aprender autorregulação, reduzindo a ativação autonômica e tratando problemas psicossomáticos como ansiedade.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463"
+    ],
+    "sect": "bt"
+  },
+  "464": {
+    "skill_id": "464",
+    "skill_name": "Fase de aprendizado de biofeedback",
+    "skill_description": "Realiza medições de linha de base, descanso, intervenção e treinamento de autorregulação em sequência; repete e reforça o aprendizado através de feedback em seções menores, permitindo que o paciente domine métodos eficazes para reduzir indicadores fisiológicos.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464"
+    ],
+    "sect": "bt"
+  },
+  "465": {
+    "skill_id": "465",
+    "skill_name": "Tecnologia de feedback de temperatura da pele",
+    "skill_description": "Treina o paciente a regular o equilíbrio do sistema nervoso autonômico através do feedback de sinais de temperatura cutânea, reduzindo a excitação simpática; utilizado para aliviar tensão e certos sintomas psicossomáticos, promovendo o estabelecimento de um estado de relaxamento geral.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "465"
+    ],
+    "sect": "bt"
+  },
+  "466": {
+    "skill_id": "466",
+    "skill_name": "Tecnologia de biofeedback de condutância cutânea",
+    "skill_description": "Reflete o nível de ativação emocional através da atividade da condutância cutânea; utiliza o feedback para melhorar a percepção e regulação das respostas ao estresse, servindo para gerenciamento de ansiedade e tensão e treinamento de conexão psicofisiológica.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "466"
+    ],
+    "sect": "bt"
+  },
+  "467": {
+    "skill_id": "467",
+    "skill_name": "Tecnologia de feedback de frequência cardíaca",
+    "skill_description": "Treina o paciente a reduzir a frequência cardíaca em repouso e aumentar a variabilidade da frequência cardíaca através do feedback, melhorando a tolerância ao exercício e reduzindo ansiedade e depressão, auxiliando na regulação de sintomas cardiovasculares.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "467"
+    ],
+    "sect": "bt"
+  },
+  "468": {
+    "skill_id": "468",
+    "skill_name": "Tecnologia de feedback de pressão arterial",
+    "skill_description": "Promove a regulação voluntária da pressão arterial através do feedback; auxilia no tratamento de problemas psicossomáticos como hipertensão primária, combinado com estratégias de relaxamento e cognitivo para aumentar a homeostase e a eficácia terapêutica.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "468"
+    ],
+    "sect": "bt"
+  },
+  "469": {
+    "skill_id": "469",
+    "skill_name": "Tecnologia de biofeedback eletromiográfico",
+    "skill_description": "Disposição de eletrodos em áreas como a testa para fornecer feedback sobre a atividade eletromiográfica dos músculos esqueléticos, visando reforçar o treinamento de relaxamento ou contração muscular. Amplamente utilizado no tratamento da ansiedade e no manejo de espasmos locais, tiques e reabilitação da força muscular.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "469"
+    ],
+    "sect": "bt"
+  },
+  "470": {
+    "skill_id": "470",
+    "skill_name": "Tecnologia de biofeedback de ondas cerebrais",
+    "skill_description": "Treinamento através do feedback de EEG sobre ritmos como as ondas alfa para melhorar o controle do estado de consciência, auxiliando no manejo de problemas de atenção e epilepsia, combinando-se com técnicas de relaxamento e dessensibilização sistemática.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "464",
+      "470"
+    ],
+    "sect": "bt"
+  },
+  "471": {
+    "skill_id": "471",
+    "skill_name": "Prescrição de exercícios domiciliares de biofeedback",
+    "skill_description": "Organização de práticas diárias fora do equipamento após o tratamento para consolidar os padrões de autorregulação adquiridos durante o feedback, enfatizando que o aparelho serve apenas como auxílio temporário, com o objetivo de obter uma capacidade de autocontrole estável.",
+    "parent_ids": [
+      "916",
+      "449",
+      "450",
+      "463",
+      "471"
+    ],
+    "sect": "bt"
+  },
+  "472": {
+    "skill_id": "472",
+    "skill_name": "Reforço",
+    "skill_description": "Alteração da probabilidade e intensidade do comportamento através de reforços positivos e negativos, enfatizando a formação do comportamento pela consequência comportamental para promover ou extinguir o comportamento, ensinando o auto-reforçamento para facilitar comportamentos positivos e o progresso terapêutico.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472"
+    ],
+    "sect": "bt"
+  },
+  "473": {
+    "skill_id": "473",
+    "skill_name": "Tecnologia de correção comportamental",
+    "skill_description": "Estabelecimento de reforçadores e situações baseadas na resposta condicionada e no reforço diferencial, implementando procedimentos de modelagem, extinção, correção excessiva e desvanecimento para sistematicamente aumentar o comportamento esperado.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473"
+    ],
+    "sect": "bt"
+  },
+  "474": {
+    "skill_id": "474",
+    "skill_name": "Método de reforço positivo",
+    "skill_description": "Administração imediata de recompensa adequada após o comportamento esperado para aumentar sua frequência e intensidade; a seleção do reforçador deve adequar-se às necessidades, estabelecendo uma ligação estável entre comportamento e consequência.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "474"
+    ],
+    "sect": "bt"
+  },
+  "475": {
+    "skill_id": "475",
+    "skill_name": "Método de tokens",
+    "skill_description": "Uso de tokens como reforçadores secundários que podem ser trocados por itens, com reforço imediato e critérios padronizados, aplicável ao manejo e correção comportamental em ambientes hospitalares, escolares e coletivos.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "474",
+      "475"
+    ],
+    "sect": "bt"
+  },
+  "476": {
+    "skill_id": "476",
+    "skill_name": "Contrato comportamental",
+    "skill_description": "Acordo entre terapeuta e cliente sobre o comportamento alvo e a organização de reforços/punições, definindo tempo e critérios claros para promover autocontrole e execução programada, aumentando a adesão.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "474",
+      "476"
+    ],
+    "sect": "bt"
+  },
+  "477": {
+    "skill_id": "477",
+    "skill_name": "Associação Implícita",
+    "skill_description": "Forma conexões implícitas de comportamento-reforço imaginando a resposta-alvo e o contexto de recompensa, auxiliando no fortalecimento do comportamento esperado na realidade.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "474",
+      "477"
+    ],
+    "sect": "bt"
+  },
+  "478": {
+    "skill_id": "478",
+    "skill_name": "Extinção",
+    "skill_description": "Retira os reforçadores quando ocorre um comportamento inadequado, fazendo com que a resposta diminua gradualmente; frequentemente combinada com o reforço positivo de um comportamento alternativo, podendo resultar em uma explosão temporária do comportamento no início.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "478"
+    ],
+    "sect": "bt"
+  },
+  "479": {
+    "skill_id": "479",
+    "skill_name": "Correção Exagerada",
+    "skill_description": "Compreende duas partes: restauração e prática positiva. Exige que o agente restaure o ambiente e pratique adicionalmente o comportamento correto, combinado com reforço para estabelecer manutenção e normas comportamentais positivas.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "479"
+    ],
+    "sect": "bt"
+  },
+  "480": {
+    "skill_id": "480",
+    "skill_name": "Restauração",
+    "skill_description": "Para comportamentos inadequados que danificaram o ambiente, exige que o agente restaure-o ao estado original, aumentando a consciência da responsabilidade pelas consequências do comportamento, e servindo de base para a prática positiva e o reforço.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "479",
+      "480"
+    ],
+    "sect": "bt"
+  },
+  "481": {
+    "skill_id": "481",
+    "skill_name": "Prática Positiva",
+    "skill_description": "Repete a prática do comportamento de manutenção correto sobre a base da restauração, fazendo com que o ambiente seja superior ao estado original, e reforça a prática positiva para consolidar uma resposta adaptativa alternativa.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "479",
+      "481"
+    ],
+    "sect": "bt"
+  },
+  "482": {
+    "skill_id": "482",
+    "skill_name": "Desvanecimento Gradual",
+    "skill_description": "Inicialmente usa pistas claras para ajudar a formar a resposta correta, depois extingue gradualmente as pistas, permitindo que o comportamento seja mantido e generalizado sob pistas naturais, reduzindo a dependência de pistas externas.",
+    "parent_ids": [
+      "916",
+      "449",
+      "472",
+      "473",
+      "482"
+    ],
+    "sect": "bt"
+  },
+  "483": {
+    "skill_id": "483",
+    "skill_name": "Inibição",
+    "skill_description": "Inibe a ocorrência de respostas inadequadas através do controle de estímulos, o cultivo de comportamentos opostos e a habituação; técnicas comuns incluem relaxamento e exposição para extinguir ansiedade e comportamentos problemáticos.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483"
+    ],
+    "sect": "bt"
+  },
+  "484": {
+    "skill_id": "484",
+    "skill_name": "Controle de Estímulo",
+    "skill_description": "Ajusta o ambiente e as pistas que desencadeiam comportamentos inadequados, fazendo com que percam a indução externa e desapareçam automaticamente; como estratégia central de inibição, frequentemente usada em conjunto com autocontrole.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484"
+    ],
+    "sect": "bt"
+  },
+  "485": {
+    "skill_id": "485",
+    "skill_name": "Técnicas de autocontrole",
+    "skill_description": "Ensina ao cliente a autovigilância, definição de metas, controle e arranjo de reforço/punição, apoiado pelo suporte social e por instruções autoimpostas, para promover comportamentos esperados e reduzir respostas excessivas.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485"
+    ],
+    "sect": "bt"
+  },
+  "486": {
+    "skill_id": "486",
+    "skill_name": "Controle de antecedentes",
+    "skill_description": "Promove a ocorrência do comportamento-alvo através da apresentação de pistas esperadas, arranjo de eventos já formados, redução da dificuldade da resposta ou remoção de pistas inadequadas e aumento da dificuldade de comportamentos competidores.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "486"
+    ],
+    "sect": "bt"
+  },
+  "487": {
+    "skill_id": "487",
+    "skill_name": "Definição de metas e autovigilância",
+    "skill_description": "Estabelece metas específicas e mensuráveis e registra continuamente o comportamento e a situação, melhorando a consciência e os efeitos de reforço condicional, fornecendo base para avaliação e ajuste do plano de autocontrole.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "487"
+    ],
+    "sect": "bt"
+  },
+  "488": {
+    "skill_id": "488",
+    "skill_name": "Reforço e punição",
+    "skill_description": "Arranja reforço e punição executados pelo próprio ou por terceiros, com informação clara e oportuna; usa a punição com cautela em combinação com o reforço para evitar efeitos secundários emocionais negativos.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "488"
+    ],
+    "sect": "bt"
+  },
+  "489": {
+    "skill_id": "489",
+    "skill_name": "Contrato de autocontrole comportamental",
+    "skill_description": "Define objetivos de autocontrole, métodos de reforço e punição e arranjos de supervisão através de um contrato escrito, aumentando a autodisciplina e prevenção de recaídas, melhorando a consistência na execução.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "489"
+    ],
+    "sect": "bt"
+  },
+  "490": {
+    "skill_id": "490",
+    "skill_name": "Suporte social",
+    "skill_description": "Mobiliza importantes outros para participar da supervisão e encorajamento, prevenindo o 'curto-circuito' do reforço auto, aumentando a adesão e eficácia do plano; é uma estratégia importante para o sucesso do autocontrole.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "490"
+    ],
+    "sect": "bt"
+  },
+  "491": {
+    "skill_id": "491",
+    "skill_name": "Instruções auto e suporte auto",
+    "skill_description": "Alterar a linguagem interna através de diálogo auto positivo e pistas, guiando e reforçando o comportamento-alvo, reduzindo a interferência de relatos auto-negativos no comportamento e melhorando o autocontrole.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "484",
+      "485",
+      "491"
+    ],
+    "sect": "bt"
+  },
+  "492": {
+    "skill_id": "492",
+    "skill_name": "Cultivo de comportamentos opostos",
+    "skill_description": "Substitui respostas inadequadas por reações incompatíveis com a ansiedade, como relaxamento, baseando-se no princípio da inibição mútua para inibir a ansiedade; é uma importante via técnica para estratégias de inibição.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492"
+    ],
+    "sect": "bt"
+  },
+  "493": {
+    "skill_id": "493",
+    "skill_name": "Treino de relaxamento",
+    "skill_description": "Baseado na teoria de Jacobson e Wolpe, reduz a ativação autonômica através do relaxamento muscular e mental, alivia ansiedade e tensão, e pode ser combinado com técnicas de biofeedback e dessensibilização.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493"
+    ],
+    "sect": "bt"
+  },
+  "494": {
+    "skill_id": "494",
+    "skill_name": "Relaxamento Muscular Progressivo",
+    "skill_description": "Tensão e relaxamento alternados por região para experimentar a diferença e memorizar a sensação confortável; cerca de 20 minutos por sessão, praticado diariamente, cobrindo sistematicamente cabeça, pescoço, ombros, braços, tronco e membros inferiores.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "494"
+    ],
+    "sect": "bt"
+  },
+  "495": {
+    "skill_id": "495",
+    "skill_name": "Relaxamento Imaginário (Relaxamento Passivo)",
+    "skill_description": "Combina respiração lenta, relaxamento muscular passivo e estratégias de aprofundamento; utiliza imagens guiadas para entrar em cenários tranquilos, aumentando o envolvimento sensorial multicanal para intensificar o relaxamento.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "495"
+    ],
+    "sect": "bt"
+  },
+  "496": {
+    "skill_id": "496",
+    "skill_name": "Imaginação Guiada",
+    "skill_description": "Orienta o cliente a imaginar cenas naturais calmas com uma fala lenta, enfatizando a liderança visual combinada com auditiva e tátil, mantendo o interesse e o foco para aprofundar os efeitos de relaxamento.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "495",
+      "496"
+    ],
+    "sect": "bt"
+  },
+  "497": {
+    "skill_id": "497",
+    "skill_name": "Relaxamento Respiratório",
+    "skill_description": "Ensina ritmos de respiração profunda e uniforme; pode ser usado a qualquer momento para reduzir rapidamente tensão e ansiedade, sendo adequado para situações onde o relaxamento muscular completo ou imaginário não é possível.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "497"
+    ],
+    "sect": "bt"
+  },
+  "498": {
+    "skill_id": "498",
+    "skill_name": "Treino de Relaxamento Mental",
+    "skill_description": "Orienta a atenção para objetos sensoriais diferentes como visão, audição e tato; observa e experimenta as sensações com cuidado para alcançar um estado mental de calma e relaxamento.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "498"
+    ],
+    "sect": "bt"
+  },
+  "499": {
+    "skill_id": "499",
+    "skill_name": "Relaxamento Respiratório Profundo",
+    "skill_description": "Adota postura em pé ou confortável, olhos fechados, respiração abdominal combinada com instruções como \"inspirar devagar, expirar lentamente\", formando uma habilidade de relaxamento imediato autogerenciável para lidar com eventos tensos.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "492",
+      "493",
+      "499"
+    ],
+    "sect": "bt"
+  },
+  "500": {
+    "skill_id": "500",
+    "skill_name": "Terapia da Aversão",
+    "skill_description": "Pareia comportamentos indesejados com estímulos aversivos, utilizando princípios clássicos e operantes para estabelecer condicionamento oposto; aplicado a dependências e transtornos sexuais, mas requer controle ético e de segurança.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "500"
+    ],
+    "sect": "bt"
+  },
+  "501": {
+    "skill_id": "501",
+    "skill_name": "Aversão física",
+    "skill_description": "Associa estímulos físicos, como choques elétricos, ao comportamento-alvo ou sua imaginação, com intensidade ajustável e sem risco de lesão, garantindo que a dor seja provocada mas dentro de um limite tolerável, enfatizando normas de segurança.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "500",
+      "501"
+    ],
+    "sect": "bt"
+  },
+  "502": {
+    "skill_id": "502",
+    "skill_name": "Aversão química",
+    "skill_description": "Utiliza medicamentos, como eméticos ou disulfiram, para fazer com que o comportamento-alvo cause náuseas ou desconforto; é frequentemente usado no tratamento do alcoolismo e tabagismo, exigindo atenção ao tempo de duração, ambiente e efeitos colaterais.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "500",
+      "502"
+    ],
+    "sect": "bt"
+  },
+  "503": {
+    "skill_id": "503",
+    "skill_name": "Aversão imaginativa",
+    "skill_description": "Permite que o paciente imagine situações intensamente aversivas associadas a comportamentos indesejados através de dessensibilização implícita, reduzindo os efeitos colaterais dos estímulos reais, ao mesmo tempo em que combina com punições leves, como elásticos, para reforçar o efeito.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "500",
+      "503"
+    ],
+    "sect": "bt"
+  },
+  "504": {
+    "skill_id": "504",
+    "skill_name": "Habituação",
+    "skill_description": "Utiliza a exposição repetida a um estímulo de medo para fazer com que as respostas fisiológicas e psicológicas diminuam gradualmente, fazendo com que o medo perca sua capacidade de excitação; fornece a base teórica para terapias de exposição e terapia de inundação.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504"
+    ],
+    "sect": "bt"
+  },
+  "505": {
+    "skill_id": "505",
+    "skill_name": "Técnicas de exposição",
+    "skill_description": "Promove a extinção da resposta através da apresentação de estímulos que provocam medo ou aversão, incluindo formas como dessensibilização sistemática e terapia de inundação; o objetivo é romper com os ciclos de evitação e reforço negativo.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505"
+    ],
+    "sect": "bt"
+  },
+  "506": {
+    "skill_id": "506",
+    "skill_name": "Dessensibilização sistemática",
+    "skill_description": "Baseia-se na inibição recíproca e no condicionamento oposto, treinando primeiro a relaxamento, seguida pela exposição gradual em níveis hierárquicos de ansiedade, reforçando a nova associação 'estímulo-relaxamento' e eliminando a resposta de medo.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506"
+    ],
+    "sect": "bt"
+  },
+  "507": {
+    "skill_id": "507",
+    "skill_name": "Método de dessensibilização rápida",
+    "skill_description": "Realiza a exposição gradual a estímulos de medo em situações reais, com acompanhamento e suporte do terapeuta, sendo adequado para fobias de espaços fechados e sociais, reduzindo o tempo de tratamento através do contato real.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "507"
+    ],
+    "sect": "bt"
+  },
+  "508": {
+    "skill_id": "508",
+    "skill_name": "Método de dessensibilização por contato",
+    "skill_description": "Permite que o paciente entre em contato direto com o objeto de medo; o terapeuta demonstra primeiro e depois guia um contato progressivo, sendo especialmente adequado para fobias específicas de objetos, como a fobia animal.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "508"
+    ],
+    "sect": "bt"
+  },
+  "509": {
+    "skill_id": "509",
+    "skill_name": "Desensibilização automatizada",
+    "skill_description": "Apresentação de estímulos graduados por meio de gravações ou imagens, com a realização da desensibilização em casa pelo próprio paciente no seu próprio ritmo, economizando tempo das sessões e servindo como forma complementar.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "509"
+    ],
+    "sect": "bt"
+  },
+  "510": {
+    "skill_id": "510",
+    "skill_name": "Imagens emocionais",
+    "skill_description": "O terapeuta descreve situações excitantes e agradáveis para induzir emoções positivas, combatendo as reações de ansiedade, suprimindo gradualmente e substituindo as respostas condicionadas ao medo.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "510"
+    ],
+    "sect": "bt"
+  },
+  "511": {
+    "skill_id": "511",
+    "skill_name": "Desensibilização imaginativa",
+    "skill_description": "O paciente é solicitado a imaginar cenários em ordem crescente de nível de ansiedade, confrontando-os com relaxamento corporal total para alcançar uma resposta sem ansiedade aos estímulos de alto nível.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "511"
+    ],
+    "sect": "bt"
+  },
+  "512": {
+    "skill_id": "512",
+    "skill_name": "Desensibilização hipnótica",
+    "skill_description": "Aplicação da desensibilização graduada após indução hipnótica, reduzindo o risco de explosão de emoções de medo, oferecendo suporte à exposição mais seguro para indivíduos com capacidade imaginativa fraca ou altamente tensos.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "506",
+      "512"
+    ],
+    "sect": "bt"
+  },
+  "513": {
+    "skill_id": "513",
+    "skill_name": "Terapia de inundação/choque",
+    "skill_description": "Exposição prolongada ao estímulo mais forte, proibindo a fuga, para que a resposta de medo atinja seu pico e desapareça naturalmente; pode ser realizada em ambiente real ou imaginativo, exigindo assinatura de acordo e avaliação.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "513"
+    ],
+    "sect": "bt"
+  },
+  "514": {
+    "skill_id": "514",
+    "skill_name": "Exposição real por inundação",
+    "skill_description": "Colocar o paciente diretamente na situação mais temível no mundo real, expondo-o continuamente até que as respostas fisiológicas e emocionais se invertam, monitorando de perto a segurança e fornecendo apoio e encorajamento.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "513",
+      "514"
+    ],
+    "sect": "bt"
+  },
+  "515": {
+    "skill_id": "515",
+    "skill_name": "Exposição imaginativa por inundação",
+    "skill_description": "Utilizar uma imaginação intensa para recriar situações traumáticas que não podem ser vivenciadas ou são inadequadas para o ambiente real, expondo por longo período para enfraquecer a memória do medo, sendo adequado para transtorno de estresse pós-traumático e similares.",
+    "parent_ids": [
+      "916",
+      "449",
+      "483",
+      "504",
+      "505",
+      "513",
+      "515"
+    ],
+    "sect": "bt"
+  },
+  "862": {
+    "skill_id": "862",
+    "skill_name": "Técnica de modelagem",
+    "skill_description": "Baseada na teoria da aprendizagem social de Bandura, promovendo a aquisição ou o fortalecimento de comportamentos adaptativos pelo paciente através da observação de modelos, reduzindo comportamentos inadequados. Durante a implementação, dá-se ênfase à seleção do modelo e à demonstração científica, frequentemente combinada com outras técnicas como reforço, sendo aplicável em fobias e treinamento de habilidades sociais.",
+    "parent_ids": [
+      "916",
+      "862"
+    ],
+    "sect": "bt"
+  },
+  "863": {
+    "skill_id": "863",
+    "skill_name": "Demonstração real",
+    "skill_description": "O comportamento-alvo é demonstrado em tempo real por um modelo real; o cliente observa e imita diretamente. O processo é vívido e repetível, ensinando atitudes e habilidades sociais; no entanto, tem alto custo e é suscetível a erros de demonstração, exigindo que a apresentação do comportamento seja precisa para evitar aprendizado negativo.",
+    "parent_ids": [
+      "916",
+      "862",
+      "863"
+    ],
+    "sect": "bt"
+  },
+  "864": {
+    "skill_id": "864",
+    "skill_name": "Demonstração simbólica",
+    "skill_description": "O comportamento apropriado é apresentado por meio de meios simbólicos como filmes, televisão, gravações, textos ou auto-demonstrações. Os materiais são fáceis de obter, de baixo custo e o ritmo é controlável; requer um desenho rigoroso das características-chave e da sequência. É eficaz para fobias, permitindo repetição para facilitar o aprendizado.",
+    "parent_ids": [
+      "916",
+      "862",
+      "864"
+    ],
+    "sect": "bt"
+  },
+  "865": {
+    "skill_id": "865",
+    "skill_name": "Demonstração participativa",
+    "skill_description": "Sob a orientação do terapeuta, o cliente observa o modelo e participa gradualmente da imitação, com correção e reforço oportunos por parte do terapeuta. É frequentemente usada para superar medos e treinar habilidades, avançando em fases para garantir segurança; é mais eficaz que as duas anteriores, alcançando taxas de 80% a 90%.",
+    "parent_ids": [
+      "916",
+      "862",
+      "865"
+    ],
+    "sect": "bt"
+  },
+  "866": {
+    "skill_id": "866",
+    "skill_name": "Demonstração implícita",
+    "skill_description": "O terapeuta descreve o cenário e a resposta apropriada, exigindo que o cliente imagine mentalmente o modelo ou a si mesmo executando-a, associando emoções positivas; os cenários vão do fácil ao difícil com treino repetido. Requer boa imaginação, podendo facilitar a externalização de comportamentos autoafirmativos e habilidades sociais.",
+    "parent_ids": [
+      "916",
+      "862",
+      "866"
+    ],
+    "sect": "bt"
+  },
+  "775": {
+    "skill_id": "775",
+    "skill_name": "Reforço",
+    "skill_description": "O reforço é o processo de aumentar a probabilidade de um comportamento através da apresentação de recompensas ou remoção de consequências desagradáveis, incluindo reforço positivo e negativo. No condicionamento operante, as consequências do comportamento determinam sua manutenção ou extinção; o reforço é usado para moldar, manter e melhorar comportamentos-alvo.",
+    "parent_ids": [
+      "916",
+      "775"
+    ],
+    "sect": "bt"
+  },
+  "776": {
+    "skill_id": "776",
+    "skill_name": "Reforço negativo",
+    "skill_description": "O reforço negativo envolve a remoção de um estímulo aversivo após um comportamento para aumentar sua probabilidade, incluindo condicionamento de fuga e evitação. A aplicação deve ser combinada com punição, estabelecendo padrões consistentes e oportunos, respeitando os fatos e sendo combinado com reforço positivo para reduzir efeitos colaterais e promover a manutenção de bons comportamentos.",
+    "parent_ids": [
+      "916",
+      "775",
+      "776"
+    ],
+    "sect": "bt"
+  },
+  "777": {
+    "skill_id": "777",
+    "skill_name": "Reforço positivo",
+    "skill_description": "O reforço positivo envolve a apresentação de um estímulo preferido pelo indivíduo após o aparecimento de um comportamento-alvo, aumentando sua frequência; pode usar reforçadores primários e secundários. A implementação deve ser oportuna, com referência clara ao comportamento reforçado e controle da quantidade, combinada com reforço social, sendo amplamente usada em educação e gestão, com atenção para evitar uso incorreto.",
+    "parent_ids": [
+      "916",
+      "775",
+      "777"
+    ],
+    "sect": "bt"
+  }
+}

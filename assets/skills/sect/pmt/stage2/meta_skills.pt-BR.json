@@ -1,0 +1,681 @@
+{
+  "93": {
+    "skill_id": "93",
+    "skill_name": "Consultação",
+    "skill_description": "Na terapia pós-moderna, a sessão é vista como uma arte da linguagem, enfatizando cooperação igualitária e construção dialógica. Através de narrativas e perguntas, forma-se novo significado e mudança no contexto sociocultural, promovendo resolução e crescimento.",
+    "parent_ids": [
+      "93"
+    ],
+    "sect": "pmt"
+  },
+  "94": {
+    "skill_id": "94",
+    "skill_name": "Terapia Narrativa",
+    "skill_description": "A terapia narrativa incentiva o cliente a contar sua história de vida, externalizar problemas, reescrever e enriquecer novas narrativas, construindo novos significados com a linguagem, remodelando o self e o estilo de vida, enfatizando cooperação e contexto cultural.",
+    "parent_ids": [
+      "93",
+      "94"
+    ],
+    "sect": "pmt"
+  },
+  "95": {
+    "skill_id": "95",
+    "skill_name": "Reescrita da História",
+    "skill_description": "A fase de reescrita desafia as narrativas antigas e a linguagem negativa, utilizando perguntas e eventos excepcionais para formar textos de vida com novo significado, promovendo mudança no comportamento e na definição do self, alcançando a transformação narrativa.",
+    "parent_ids": [
+      "93",
+      "94",
+      "95"
+    ],
+    "sect": "pmt"
+  },
+  "96": {
+    "skill_id": "96",
+    "skill_name": "Busca de Exceções",
+    "skill_description": "Na narrativa, busca-se \"exceções\" e eventos únicos, ou seja, momentos em que o problema não ocorreu ou teve menor impacto; usa-se curiosidade e questionamento para escavar seu significado, servindo como início e recurso para uma nova história.",
+    "parent_ids": [
+      "93",
+      "94",
+      "96"
+    ],
+    "sect": "pmt"
+  },
+  "97": {
+    "skill_id": "97",
+    "skill_name": "Enriquecer novas histórias",
+    "skill_description": "Integrar eventos únicos em novas narrativas, detalhando emoções, pensamentos e ações relevantes para aumentar a coerência e a riqueza da narrativa, conectando o novo relato ao passado e estendendo-o ao futuro.",
+    "parent_ids": [
+      "93",
+      "94",
+      "97"
+    ],
+    "sect": "pmt"
+  },
+  "98": {
+    "skill_id": "98",
+    "skill_name": "Do fino ao espesso",
+    "skill_description": "Expandir uma autoidentificação positiva negligenciada através de uma estratégia de 'do fino ao espesso', enfraquecendo preconceitos e filtros negativos, amplificando experiências positivas para formar um conceito de si mesmo positivo e poderoso.",
+    "parent_ids": [
+      "93",
+      "94",
+      "98"
+    ],
+    "sect": "pmt"
+  },
+  "99": {
+    "skill_id": "99",
+    "skill_name": "Rituais e celebrações",
+    "skill_description": "Utilizar rituais e celebrações (como certificados ou testemunhas) em pontos de mudança para tornar as novas histórias mais reais e consolidar seus efeitos, aumentando a confiança e o apoio social, integrando a transformação na vida cotidiana.",
+    "parent_ids": [
+      "93",
+      "94",
+      "99"
+    ],
+    "sect": "pmt"
+  },
+  "100": {
+    "skill_id": "100",
+    "skill_name": "Terapia Breve Centrada nas Soluções",
+    "skill_description": "Orientada para resolver problemas, enfatizando pequenas mudanças e exceções, respeitando o cliente como especialista em seus próprios problemas, alcançando rapidamente objetivos através de perguntas estruturadas e feedback positivo.",
+    "parent_ids": [
+      "93",
+      "100"
+    ],
+    "sect": "pmt"
+  },
+  "101": {
+    "skill_id": "101",
+    "skill_name": "Técnicas gerais",
+    "skill_description": "Aborda a normalização, perguntas mágicas, escalonamento, exceções e perguntas relacionais, validação e tarefas de casa, construindo soluções focadas na linguagem, identificando recursos e reforçando pequenas mudanças.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101"
+    ],
+    "sect": "pmt"
+  },
+  "102": {
+    "skill_id": "102",
+    "skill_name": "Perguntas adaptativas",
+    "skill_description": "Foca em como o cliente faz com que a situação não fique pior nos momentos difíceis, identifica respostas eficazes e pontos de persistência, aumentando a autoeficácia, especialmente adequado para pessoas com problemas crônicos ou de longa duração.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "102"
+    ],
+    "sect": "pmt"
+  },
+  "103": {
+    "skill_id": "103",
+    "skill_name": "Perguntas pré-conselho",
+    "skill_description": "Explora mudanças positivas e comportamentos eficazes que surgiram antes da primeira sessão, identifica recursos existentes e encoraja a continuidade, aumentando o senso de esperança e a realidade da mudança.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "103"
+    ],
+    "sect": "pmt"
+  },
+  "104": {
+    "skill_id": "104",
+    "skill_name": "Perguntas presupostais",
+    "skill_description": "Guia o cliente a assumir responsabilidades e focar na resolução usando linguagem sugestiva, como 'Como você gostaria que eu te ajudasse', promovendo uma transição do discurso sobre problemas para objetivos e ações.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "104"
+    ],
+    "sect": "pmt"
+  },
+  "105": {
+    "skill_id": "105",
+    "skill_name": "Avaliação por questionamento",
+    "skill_description": "Especificar o estado e os objetivos em uma escala de 0 a 10, comparar o atual com o esperado e a magnitude da mudança, auxiliando no planejamento de pequenos passos viáveis e no acompanhamento do progresso.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "105"
+    ],
+    "sect": "pmt"
+  },
+  "106": {
+    "skill_id": "106",
+    "skill_name": "Encorajamento animador",
+    "skill_description": "Reforçar, em tempo hábil, a crença, a motivação e os comportamentos positivos do cliente através de validações e aplausos semelhantes aos de uma torcida, elevando o autoconceito positivo, observando a autenticidade e a moderação.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "106"
+    ],
+    "sect": "pmt"
+  },
+  "107": {
+    "skill_id": "107",
+    "skill_name": "Elogio",
+    "skill_description": "Técnica de atenção positiva, consistindo em elogios específicos às vantagens e ações eficazes do cliente, reforçando a mudança e promovendo o relacionamento, incluindo formas agradáveis, de reforço comportamental e empáticas.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "107"
+    ],
+    "sect": "pmt"
+  },
+  "108": {
+    "skill_id": "108",
+    "skill_name": "Agradável",
+    "skill_description": "Elogiar para agradar, tendente à contradição verbal. Deve ser usado com cautela, evitando distorções e excesso, focando na aceitação do cliente e no seu significado.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "107",
+      "108"
+    ],
+    "sect": "pmt"
+  },
+  "109": {
+    "skill_id": "109",
+    "skill_name": "Reforço comportamental",
+    "skill_description": "Dar reforço positivo para comportamentos e estratégias específicas, aumentando sua repetição e manutenção, combinado com tarefas e rastreamento para consolidar as mudanças.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "107",
+      "109"
+    ],
+    "sect": "pmt"
+  },
+  "110": {
+    "skill_id": "110",
+    "skill_name": "Empático",
+    "skill_description": "Dar reforço sobre a base de empatia plena e respeito, reconhecendo a experiência e o esforço do cliente, promovendo uma relação terapêutica segura e colaborativa.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "107",
+      "110"
+    ],
+    "sect": "pmt"
+  },
+  "111": {
+    "skill_id": "111",
+    "skill_name": "Interrogação EARS",
+    "skill_description": "Introduzir, ampliar, intensificar e explorar novamente as exceções em ordem, detalhar as diferenças e o papel do cliente, reforçar repetidamente o sucesso e a força, consolidando as mudanças.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "111"
+    ],
+    "sect": "pmt"
+  },
+  "112": {
+    "skill_id": "112",
+    "skill_name": "Tarefa/Tarefa de casa",
+    "skill_description": "Estender as práticas eficazes da sessão para contextos da vida real, como buscar exceções, auto-reforço e novas tentativas, mantendo e expandindo as mudanças.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "112"
+    ],
+    "sect": "pmt"
+  },
+  "113": {
+    "skill_id": "113",
+    "skill_name": "Generalização",
+    "skill_description": "Normalizar as preocupações, colocá-las em um contexto de desenvolvimento e situacional, reescrevê-las em linguagem menos intensa para reduzir a patologização e a intensidade emocional, restaurando a possibilidade de ação.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "113"
+    ],
+    "sect": "pmt"
+  },
+  "114": {
+    "skill_id": "114",
+    "skill_name": "Primeiros sinais de mudança",
+    "skill_description": "Focar em pequenos sinais, concretizar comportamentos ou pistas observáveis diferentes como ponto de partida para a ação, acumulando mudanças gradualmente como uma bola de neve.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "114"
+    ],
+    "sect": "pmt"
+  },
+  "115": {
+    "skill_id": "115",
+    "skill_name": "Indagação do Milagre",
+    "skill_description": "Convidar o cliente a imaginar um cenário futuro onde o problema foi resolvido, apresentando claramente as manifestações concretas da 'diferença', desviando o foco para os objetivos e caminhos de resolução.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "115"
+    ],
+    "sect": "pmt"
+  },
+  "116": {
+    "skill_id": "116",
+    "skill_name": "Perguntas da Bola de Cristal",
+    "skill_description": "Usar uma metáfora que prevê o futuro para que o cliente descreva a imagem de vida desejada, aumentando a concretude do objetivo e a realidade da ação.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "115",
+      "116"
+    ],
+    "sect": "pmt"
+  },
+  "117": {
+    "skill_id": "117",
+    "skill_name": "Perguntas de fechamento",
+    "skill_description": "Supondo que esta seja a última sessão, com o problema resolvido, solicita-se especificar as diferenças que ocorrerão após a saída, para definir claramente o ponto final e o caminho percorrido.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "115",
+      "117"
+    ],
+    "sect": "pmt"
+  },
+  "118": {
+    "skill_id": "118",
+    "skill_name": "Perguntas sobre relacionamentos",
+    "skill_description": "Examinar a mudança e as diferenças sob a perspectiva de alguém importante, expandir o quadro cognitivo, mobilizar redes de apoio e aumentar a visibilidade e estabilidade da mudança.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "118"
+    ],
+    "sect": "pmt"
+  },
+  "119": {
+    "skill_id": "119",
+    "skill_name": "Perguntas sobre exceções",
+    "skill_description": "Explorar situações em que o problema não ocorre ou ocorre com menor intensidade e as ações do cliente, ampliar a frequência e o alcance das exceções e conectá-las aos objetivos para formar um caminho.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "119"
+    ],
+    "sect": "pmt"
+  },
+  "120": {
+    "skill_id": "120",
+    "skill_name": "Resumo simples",
+    "skill_description": "Destilar o problema central e as expectativas em uma palavra ou frase, focar rapidamente nas principais emoções e pontos de atenção, e impulsionar o trabalho concreto.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "120"
+    ],
+    "sect": "pmt"
+  },
+  "121": {
+    "skill_id": "121",
+    "skill_name": "Análise de Campos de Força",
+    "skill_description": "Identificar forças que promovem ou impedem os objetivos, maximizar forças positivas e minimizar forças negativas, frequentemente combinando com perguntas sobre exceções para formular estratégias.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "121"
+    ],
+    "sect": "pmt"
+  },
+  "122": {
+    "skill_id": "122",
+    "skill_name": "Geração de Soluções",
+    "skill_description": "Adotar técnicas como brainstorming para gerar múltiplas opções, primeiro registrando sem julgamento, depois organizando e avaliando, incentivando a quantidade para estimular ações criativas.",
+    "parent_ids": [
+      "93",
+      "100",
+      "101",
+      "122"
+    ],
+    "sect": "pmt"
+  },
+  "123": {
+    "skill_id": "123",
+    "skill_name": "Fase de Diálogo para Construção de Soluções",
+    "skill_description": "Aproximadamente 40 minutos, estabelecendo cooperação, desenvolvendo objetivos específicos positivos, explorando exceções e recursos, conectando com a visão do futuro, formando uma estrutura conversacional orientada para soluções.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123"
+    ],
+    "sect": "pmt"
+  },
+  "124": {
+    "skill_id": "124",
+    "skill_name": "Início da Fase de Diálogo para Construção de Soluções",
+    "skill_description": "Estabelecendo confiança e utilizando a linguagem do cliente, esclarecendo expectativas e objetivos, determinando o foco modificável, criando as bases para discussões subsequentes orientadas para soluções.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124"
+    ],
+    "sect": "pmt"
+  },
+  "125": {
+    "skill_id": "125",
+    "skill_name": "Estrutura de Fase Inicial",
+    "skill_description": "Construir um quadro para a sessão através de perguntas estruturadas, integrando três tipos de estrutura: objetivos, exceções e resolução de hipóteses, orientando mudanças positivas e ações concretas.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "125"
+    ],
+    "sect": "pmt"
+  },
+  "126": {
+    "skill_id": "126",
+    "skill_name": "Estrutura de Exceção",
+    "skill_description": "Investigar sistematicamente as situações e práticas em que o problema não ocorre, expandindo as exceções para se tornarem a norma, tornando visíveis e replicáveis as forças positivas e conectando-as aos objetivos.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "125",
+      "126"
+    ],
+    "sect": "pmt"
+  },
+  "127": {
+    "skill_id": "127",
+    "skill_name": "Estrutura de Resolução de Hipóteses",
+    "skill_description": "Através de perguntas hipotéticas e perguntas milagrosas assumir que o problema pode ser resolvido, levando o cliente a concretizar seu estado esperado e caminho, aumentando a esperança e o senso de ação.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "125",
+      "127"
+    ],
+    "sect": "pmt"
+  },
+  "128": {
+    "skill_id": "128",
+    "skill_name": "Estrutura de Objetivos",
+    "skill_description": "Guiar a definição de objetivos com linguagem positiva, específica e operacional, baseada em contextos específicos e no alcance controlável pelo cliente, facilitando a implementação e avaliação.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "125",
+      "128"
+    ],
+    "sect": "pmt"
+  },
+  "129": {
+    "skill_id": "129",
+    "skill_name": "Criar um ambiente de mudança",
+    "skill_description": "Criar uma atmosfera de sessão que apoie e transmita esperança, usando linguagem positiva e perguntas, para facilitar a ocorrência e manutenção de pequenas mudanças, reduzindo a resistência.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "129"
+    ],
+    "sect": "pmt"
+  },
+  "130": {
+    "skill_id": "130",
+    "skill_name": "Enfatizar os recursos do cliente",
+    "skill_description": "Identificar experiências passadas de sucesso, interesses, talentos e suporte social como base material e de ação para resolver problemas, aumentando a autoeficácia.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "130"
+    ],
+    "sect": "pmt"
+  },
+  "131": {
+    "skill_id": "131",
+    "skill_name": "Categorizar os objetivos do cliente",
+    "skill_description": "Organizar e resumir os objetivos, distinguindo entre metas curtas e pequenas e visões de longo prazo, tornando o plano mais claro e executável, facilitando o acompanhamento e o ajuste.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "131"
+    ],
+    "sect": "pmt"
+  },
+  "132": {
+    "skill_id": "132",
+    "skill_name": "Formar uma parceria com o cliente",
+    "skill_description": "Estabelecer uma aliança com uma postura igualitária, compartilhada e negociadora, reduzindo a autoridade e as etiquetas diagnósticas, aumentando o envolvimento e a motivação para mudança.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "132"
+    ],
+    "sect": "pmt"
+  },
+  "133": {
+    "skill_id": "133",
+    "skill_name": "Tarefa de negociação",
+    "skill_description": "Juntos, determinar tarefas e exercícios específicos que podem ser implementados fora da sessão, apoiando o cliente a agir imediatamente e fornecer feedback sobre os resultados, mantendo as mudanças.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "124",
+      "133"
+    ],
+    "sect": "pmt"
+  },
+  "134": {
+    "skill_id": "134",
+    "skill_name": "Fase avançada do diálogo para construção de soluções",
+    "skill_description": "Reconstruir narrativas de problemas dentro de um quadro estabelecido, focando em soluções e ações, refinando e ajustando estratégias para aumentar a aplicabilidade prática.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "134"
+    ],
+    "sect": "pmt"
+  },
+  "135": {
+    "skill_id": "135",
+    "skill_name": "Reestruturação do problema",
+    "skill_description": "Substituir queixas e narrativas patológicas por linguagem positiva e orientada para soluções, alterando o quadro de significado, revelando novas perspectivas e abrindo novas possibilidades.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "134",
+      "135"
+    ],
+    "sect": "pmt"
+  },
+  "136": {
+    "skill_id": "136",
+    "skill_name": "Foco em soluções",
+    "skill_description": "Desviar a atenção das causas para estratégias viáveis, discutindo como lidar com a ausência do problema e os estados futuros desejados, formando caminhos concretos.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "134",
+      "136"
+    ],
+    "sect": "pmt"
+  },
+  "137": {
+    "skill_id": "137",
+    "skill_name": "Incentivar a ação",
+    "skill_description": "Transformar objetivos em passos concretos, enfatizando tentativas pequenas e viáveis e o efeito de bola de neve, promovendo mudanças comportamentais através da prática e do feedback.",
+    "parent_ids": [
+      "93",
+      "100",
+      "123",
+      "134",
+      "137"
+    ],
+    "sect": "pmt"
+  },
+  "138": {
+    "skill_id": "138",
+    "skill_name": "Fase de pausa na Terapia Breve Focada na Solução",
+    "skill_description": "Pausar conscientemente por cerca de 10 minutos para criar um 'efeito de vazio' que promova a auto-reflexão; o terapeuta organiza informações e estratégias, preparando-se para fornecer feedback positivo.",
+    "parent_ids": [
+      "93",
+      "100",
+      "138"
+    ],
+    "sect": "pmt"
+  },
+  "139": {
+    "skill_id": "139",
+    "skill_name": "Fase de feedback positivo na Terapia Breve Focada na Solução",
+    "skill_description": "Consolidar mudanças através de elogios e sugestões específicas, revisando caminhos eficazes, atribuindo tarefas e avaliando o progresso, planejando estratégias de manutenção e encerramento.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139"
+    ],
+    "sect": "pmt"
+  },
+  "140": {
+    "skill_id": "140",
+    "skill_name": "Consolidação de transformações construtivas",
+    "skill_description": "Reforçar narrativas positivas e diferenças comportamentais já emergentes, garantindo que novos significados e estratégias sejam mantidos e expandidos, prevenindo retrocessos.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "140"
+    ],
+    "sect": "pmt"
+  },
+  "141": {
+    "skill_id": "141",
+    "skill_name": "Revisar o comportamento de tarefas",
+    "skill_description": "Verificar a execução e os resultados das tarefas fora da sessão, validar as experiências bem-sucedidas e ajustar aquelas insuficientes para melhorar a sustentabilidade e a autonomia.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "141"
+    ],
+    "sect": "pmt"
+  },
+  "142": {
+    "skill_id": "142",
+    "skill_name": "Construir soluções",
+    "skill_description": "Integrar informações e recursos anteriores para formar uma lista de soluções operáveis, definindo etapas e contextos para orientar as ações subsequentes.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "142"
+    ],
+    "sect": "pmt"
+  },
+  "143": {
+    "skill_id": "143",
+    "skill_name": "Desenvolver novas estratégias de resolução",
+    "skill_description": "Gerar e testar práticas mais adequadas sobre a base de resultados existentes, mantendo flexibilidade e criatividade para expandir o alcance das mudanças.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "143"
+    ],
+    "sect": "pmt"
+  },
+  "144": {
+    "skill_id": "144",
+    "skill_name": "Continuar a desconstrução do problema",
+    "skill_description": "No feedback, continuar a desmontar a autoridade da narrativa do problema, expondo suas premissas e tensões, consolidando a perspectiva de resolução e evitando linguagem patologizante.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "144"
+    ],
+    "sect": "pmt"
+  },
+  "145": {
+    "skill_id": "145",
+    "skill_name": "Avaliação e planejamento do término",
+    "skill_description": "Utilizar escalas, testes escritos e ferramentas de avaliação para medir o progresso, planejar arranjos subsequentes de manutenção e término, e promover mudanças contínuas.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "145"
+    ],
+    "sect": "pmt"
+  },
+  "146": {
+    "skill_id": "146",
+    "skill_name": "Escala",
+    "skill_description": "Medir estado, objetivos e mudanças em uma escala de 0 a 10, quantificar o progresso e aumentar a confiança do cliente na mudança.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "145",
+      "146"
+    ],
+    "sect": "pmt"
+  },
+  "147": {
+    "skill_id": "147",
+    "skill_name": "Teste escrito",
+    "skill_description": "Utilizar questionários curtos ou ferramentas de registro para avaliar sintomas, recursos e a realização de objetivos, auxiliando no feedback e no planejamento e ajuste do plano.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "145",
+      "147"
+    ],
+    "sect": "pmt"
+  },
+  "148": {
+    "skill_id": "148",
+    "skill_name": "Design de avaliação",
+    "skill_description": "Personalizar indicadores de avaliação e pontos temporais com base nos objetivos do caso, rastreiar sistematicamente o processo de mudança e apoiar estratégias de manutenção e arranjos de término.",
+    "parent_ids": [
+      "93",
+      "100",
+      "139",
+      "145",
+      "148"
+    ],
+    "sect": "pmt"
+  }
+}

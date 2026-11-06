@@ -1,0 +1,74 @@
+{
+  "523": {
+    "skill_id": "523",
+    "skill_name": "Escrever um parágrafo inicial que conecte as sessões e resuma os efeitos do problema",
+    "skill_description": "Comece com um parágrafo orientador que conecte a sessão atual às anteriores e resuma brevemente como o problema afetou a pessoa atendida no passado e no presente. Estabeleça um contexto compartilhado e um foco narrativo, preparando o terreno para uma nova história.",
+    "when_to_use": "Após uma sessão de terapia narrativa, ao escrever uma carta de consolidação para reforçar uma nova história e retomar os pontos principais; especialmente ao introduzir cartas ou fazer uma síntese do progresso.",
+    "trigger": "A pessoa atendida descreveu detalhadamente a linha do tempo ou o alcance dos efeitos do problema, ou a sessão reuniu muitas informações que precisam ser organizadas em pontos principais e em uma sequência coerente.",
+    "parent_ids": ["519", "520", "521", "522", "523"]
+  },
+  "524": {
+    "skill_id": "524",
+    "skill_name": "Descrever o problema e seus efeitos com linguagem externalizante",
+    "skill_description": "Na carta, continue externalizando o problema, personificando-o e descrevendo suas intenções e estratégias. Registre como ele aflige, controla ou impede a pessoa atendida, mantendo a distinção entre pessoa e problema e reduzindo a autoculpabilização e a patologização.",
+    "when_to_use": "Depois de conversas de externalização em sessão, para consolidar seus efeitos e levar a linguagem terapêutica para fora do atendimento; ou ao reafirmar a distinção entre pessoa e problema.",
+    "trigger": "A pessoa atendida fala como se o problema a definisse (por exemplo, “eu sou assim...”) ou relata ter sido limitada por ele durante muito tempo, com efeitos amplos e intensos.",
+    "parent_ids": ["519", "520", "521", "522", "524"]
+  },
+  "525": {
+    "skill_id": "525",
+    "skill_name": "Registrar resultados únicos e exceções, citando as falas da pessoa atendida",
+    "skill_description": "Reserve na carta um espaço específico para resultados únicos ou exceções identificados na sessão. Sempre que possível, cite literalmente as falas importantes da pessoa atendida, usando-as como evidência da nova história e como referência para conversas futuras, ampliando a mudança efetiva.",
+    "when_to_use": "Após identificar momentos em que o problema esteve ausente ou menos intenso, ou situações que demonstram capacidade e resiliência; use o registro para consolidar e testemunhar a mudança.",
+    "trigger": "A pessoa atendida relata um sucesso, como “naquela vez, não deixei que isso me controlasse...” ou “consegui fazer...”, ou apresenta uma fala importante que pode ser citada literalmente.",
+    "parent_ids": ["519", "520", "521", "522", "525"]
+  },
+  "526": {
+    "skill_id": "526",
+    "skill_name": "Fazer perguntas abertas sobre a história alternativa",
+    "skill_description": "Inclua na carta perguntas sobre o futuro e possibilidades singulares, convidando a pessoa atendida a refletir sobre a identidade que prefere construir, os próximos passos e quem poderá testemunhar a mudança. Isso ajuda a ampliar e concretizar a nova história.",
+    "when_to_use": "Quando a pessoa atendida começa a formar uma nova narrativa ou objetivo e é preciso manter o movimento entre sessões e orientar um plano de ação.",
+    "trigger": "A pessoa atendida expressa uma intenção, como “eu gostaria de me tornar...” ou “talvez o próximo passo...”, ou demonstra curiosidade e esperança em relação a possibilidades futuras ou a quem poderá testemunhar a mudança.",
+    "parent_ids": ["519", "520", "521", "522", "526"]
+  },
+  "527": {
+    "skill_id": "527",
+    "skill_name": "Reconhecer capacidades e conquistas e destacar o significado da mudança",
+    "skill_description": "Por meio da carta, reconheça com sinceridade as capacidades e conquistas demonstradas pela pessoa atendida na terapia e destaque o significado dessas mudanças para ela e para pessoas importantes, fortalecendo a esperança, a motivação e a autoeficácia.",
+    "when_to_use": "Após cada sessão, para encorajar e reconhecer os esforços da pessoa atendida; especialmente quando há progresso, a tarefa de casa é realizada ou a confiança precisa ser fortalecida.",
+    "trigger": "A pessoa atendida relata melhora nas avaliações, mais situações de exceção, realização de um comportamento combinado ou um tom mais positivo e esperançoso.",
+    "parent_ids": ["519", "520", "521", "522", "527"]
+  },
+  "528": {
+    "skill_id": "528",
+    "skill_name": "Distinguir a história do problema da nova história e citar momentos de luta",
+    "skill_description": "Na carta, diferencie claramente a história centrada no problema da nova história e cite momentos representativos de luta e de mudança. Ajude a pessoa atendida a reconhecer o fio condutor emergente e a transformar a luta em ponto de partida e recurso para a nova história.",
+    "when_to_use": "Durante a reautoria narrativa, quando a pessoa atendida apresenta dificuldades e progresso ao mesmo tempo e é necessário esclarecer e consolidar o fio condutor da nova história.",
+    "trigger": "A conversa mistura narrativas antigas e novas; a pessoa atendida expressa ambivalência com frases como “por um lado... por outro...” ou demonstra pouca clareza sobre o rumo.",
+    "parent_ids": ["519", "520", "521", "522", "528"]
+  },
+  "529": {
+    "skill_id": "529",
+    "skill_name": "Ajustar a extensão e o escopo da carta ao conteúdo da sessão",
+    "skill_description": "Escolha uma carta mais longa, que contemple o processo e os acordos, ou uma mensagem breve, que registre uma compreensão ou questão posterior à sessão, conforme o volume de informações e o objetivo. Adeque o formato ao conteúdo, melhore a legibilidade e evite sobrecarregar a pessoa atendida.",
+    "when_to_use": "Quando as sessões diferem bastante em densidade de informações e tarefas, e o formato precisa ser ajustado para melhorar a comunicação e reduzir o esforço de leitura.",
+    "trigger": "A sessão aborda vários temas e acordos que precisam de registro detalhado, ou apresenta apenas uma reflexão ou pergunta importante que pode ser comunicada de forma breve.",
+    "parent_ids": ["519", "520", "521", "522", "529"]
+  },
+  "530": {
+    "skill_id": "530",
+    "skill_name": "Incentivar a aplicação do aprendizado no cotidiano e propor uma ação",
+    "skill_description": "No encerramento da carta, enfatize a transferência do que foi aprendido na terapia para o cotidiano e sugira uma observação ou ação concreta. Destaque a importância da prática para consolidar e generalizar o aprendizado em situações do dia a dia.",
+    "when_to_use": "No intervalo entre a sessão atual e o próximo encontro, para manter o movimento e orientar a autogestão e a prática em situações reais.",
+    "trigger": "Há um intervalo relativamente longo previsto até a próxima sessão, a pessoa atendida diz “vou tentar...” ou demonstra não saber como aplicar o que aprendeu e precisa de orientação.",
+    "parent_ids": ["519", "520", "521", "522", "530"]
+  },
+  "531": {
+    "skill_id": "531",
+    "skill_name": "Usar a carta como ponto de partida para a próxima sessão",
+    "skill_description": "No encontro seguinte, retome a carta anterior e selecione evidências, perguntas e trechos importantes para iniciar a conversa. Dê continuidade aos elementos da nova história, acompanhando e ampliando as mudanças.",
+    "when_to_use": "Depois do envio de uma carta, no início de uma sessão de acompanhamento em que seja útil alinhar rapidamente o foco e dar continuidade ao progresso narrativo.",
+    "trigger": "A pessoa atendida traz comentários sobre a carta, novas observações ou perguntas que surgiram a partir dela, ou é preciso usar um trecho registrado para iniciar a exploração da nova história.",
+    "parent_ids": ["519", "520", "521", "522", "531"]
+  }
+}
