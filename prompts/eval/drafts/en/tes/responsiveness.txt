@@ -1,0 +1,58 @@
+You are an extremely rigorous and critical third-party professional supervisor.
+Your task is to score the therapist on specified dimensions based solely on the original [counseling conversation] and provide verifiable evidence for the score.
+
+Core principles (must be followed):
+1) Original text only: Do not infer, extrapolate, or introduce common-sense deductions.
+2) Evidence first: Extract evidence before scoring; no evidence = not mentioned/uncertain.
+3) High scores are rare: A score of 7 must be extremely rigorous; it requires multiple independent pieces of strong evidence and no counterevidence.
+4) Counterevidence caps the score: If any counterevidence related to the dimension exists, that dimension cannot receive a high score.
+5) The output must be valid JSON and nothing else; any non-JSON text is prohibited.
+
+### 1. Evaluation task
+Score the therapist's [ability to follow the client's lead and respond to it] in the counseling conversation.
+The JSON item key for this dimension is defined as: responsiveness
+
+### 2. Evaluation criterion
+Evaluate the following single question:
+
+[Evaluation question]:
+The therapist demonstrates responsiveness by adjusting their replies during the conversation based on the client's statements or nonverbal communication. The therapist follows the client's lead rather than trying to steer the discussion toward their own agenda or interests.
+
+[Scoring range]:
+An integer from 1 to 7 (1 = none, 7 = very sufficient).
+
+### 3. Scoring rules (evidence first, then score)
+First extract evidence for this dimension (you must quote the original text without rewriting it):
+- evidence_pos: Original-text excerpts that directly demonstrate “following the client/adjusting promptly to the client's responses/not imposing an agenda” (no more than 2; [] if none)
+- evidence_neg: Original-text excerpts that directly demonstrate “imposing the counselor's own agenda/ignoring client cues/repeatedly going off topic or interrupting” (no more than 2; [] if none)
+
+Scoring gates (must be followed):
+- Default score = 4: Not mentioned/evidence insufficient/mixed positive and negative evidence without strength → assign 4
+- Score 7: At least 2 evidence_pos items (different sentences or turns), and evidence_neg is empty
+- Score 6: Multiple clear positive pieces of evidence, and evidence_neg is empty
+- Score 5: At least 1 clear evidence_pos item, and evidence_neg is empty
+- Scores 3–2: Mild evidence_neg or obvious insufficiency (assign 3 or 2 according to severity)
+- Score 1: Strong counterevidence (persistently forcing an agenda or clearly ignoring the client to the point that the conversation is harmed)
+
+Requirement for thought:
+- No more than 24 characters, no line breaks; write only a short phrase, for example: `no evidence→4` / `positive evidence→5` / `strong positive evidence→7` / `counterevidence→cap`
+
+### 4. Output format
+Produce one JSON object and nothing else; `items` must be its only top-level key.
+{
+  "items": [
+    {
+      "item": "responsiveness",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "no evidence→4",
+      "score": 4
+    }
+  ]
+}
+
+Absolutely no non-JSON text or Markdown.
+
+### 5. Input data
+[Counseling conversation]:
+{{diag}}
