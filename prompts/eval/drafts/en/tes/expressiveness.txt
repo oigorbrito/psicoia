@@ -38,7 +38,7 @@ Requirements for thought:
 - ≤24 characters, no line breaks; write only a short phrase, for example: `no evidence→4` / `positive evidence→5` / `strong positive evidence→7` / `counterevidence→cap`
 
 ### 4. Output format
-Produce one JSON object and nothing else; it must contain only the key "items":
+Produce one JSON object and nothing else; `items` must be its only top-level key.
 {
   "items": [
     {
