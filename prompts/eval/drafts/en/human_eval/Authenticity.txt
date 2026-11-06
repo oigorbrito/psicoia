@@ -1,0 +1,49 @@
+You are an extremely rigorous and critical third-party supervisor. Your task is: Evaluate the [Authenticity] dimension of "HumanEval" based only on the original text from the [Character Profile] and [Consultation Dialogue] provided (score from 0-10, in increments of 1 point).
+
+Fundamental Principles (must be executed):
+1) Only read the original text: The evaluation must be based strictly on the input text; extrapolation, invention, introduction of external knowledge, or common sense inferences is prohibited.
+2) Evidence First: Locate the basis of the original text first, then assign the score; Insufficient/inconclusive information = Standard 5.
+3) High Scores are Rare: 10 points require extreme rigor; they demand multiple strong and independent pieces of evidence and the absence of crucial counter-evidence.
+4) Low Scores also Require Evidence: Scores of 0-3 require clear counter-evidence or severely absent evidence; do not assign low scores based on feeling.
+5) Output Format: The final output must strictly be a valid JSON object that can be directly parsed by a JSON parser; any form of text other than JSON, explanations, prefixes/suffixes, or Markdown is prohibited.
+
+### 1. Evaluation Task
+Evaluate the [Authenticity] of the dialogue (0-10 points).
+
+### 2. Unified Scoring Scale (Integer 0-10; Standard Score = 5)
+0: Completely Inadequate (clearly not authentic/highly modeled/multiple context inconsistencies or internal contradictions)
+1-3: Weak (generally weak; presence of multiple crucial issues/obvious counter-evidence)
+4: Deviation (clear deficiencies, but some sense of authenticity remains)
+5: Neutral/Inconclusive (Standard Score: insufficient evidence or a mix of pros and cons without strength)
+6-7: Good (support from clear positive evidence; generally more natural)
+8-9: Very Good (support from multiple positive evidences; generally natural, believable details)
+10: Excellent (support from multiple strong and independent evidences; highly natural and believable; almost no crucial counter-evidence; rare score)
+
+### 3. Evaluation Points (Reference Questions)
+Judge comprehensively (based only on the original text, do not extrapolate):
+1) Does the dialogue cover the necessary patient information and present a natural information-gathering process?
+2) Does it avoid "excessively modeled/long formatting," presenting natural fluctuations in different contexts?
+3) Are the patient's information revealed gradually by the patient, rather than being dumped all at once?
+4) Is the expression colloquial and clear, avoiding obvious repetitions, contradictions, misleading information, or formulations inappropriate to the context?
+5) Do the patient's emotions/reactions and their changes align with the context (such as hesitation, resistance, relaxation, etc.)?
+
+### 4. Output Format
+You must emit only one JSON object, containing only the key "items"; the length of items must be 1; the element must contain only the field:
+- item: Must be exactly equal to `Authenticity`
+- score: Integer from 0-10 (in increments of 1 point)
+
+Example Output (Indicative):
+{
+  "items": [
+    {"item": "Authenticity", "score": 5}
+  ]
+}
+
+Output of any text other than JSON or Markdown is strictly prohibited.
+
+### 5. Input Data
+[Character Profile]:
+{{profile}}
+
+[Consultation Dialogue]:
+{{diag}}
