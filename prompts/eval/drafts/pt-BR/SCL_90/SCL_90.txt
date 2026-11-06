@@ -1,0 +1,174 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é pontuar, com base exclusivamente no texto original, os 90 itens do SCL-90 para a pessoa atendida (inteiros de 0 a 4). Faça julgamentos baseados em evidências internamente, mas não inclua evidências nem raciocínio na saída.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: Não infira, extrapole nem introduza deduções baseadas no senso comum.
+2) Evidências primeiro: Localize a base no texto original antes de pontuar; não mencionado = nota padrão 0.
+3) Cautela com notas altas: Notas 3–4 exigem evidências claras e fortes de sintomas/sofrimento; não atribua notas altas com base em impressões.
+4) A saída deve ser estritamente um JSON válido; qualquer texto que não seja JSON é proibido.
+
+### 1. Tarefa de avaliação
+A conversa abaixo registra uma interação entre uma pessoa atendida (client) e um terapeuta (counselor).
+A lista seguinte contém problemas e queixas que as pessoas às vezes vivenciam. Leia cada item e indique, com um número, o grau em que esse problema causou sofrimento ou incômodo à pessoa atendida nos últimos 7 dias, incluindo hoje.
+
+Atribua a cada item uma nota inteira de 0 a 4 conforme os critérios definidos.
+
+### 2. Critérios de avaliação
+Use os critérios unificados para cada item da [Lista de itens de avaliação].
+
+[Critérios unificados]:
+**0**: Nenhum
+O sintoma ou experiência não ocorreu de modo algum, ou, embora tenha sido lembrado ocasionalmente, não causou sofrimento nem interferiu na vida.
+Exemplo: nenhuma dor de cabeça; nunca se sentiu nervoso.
+
+**1**: Muito leve
+O sintoma ou experiência ocorreu ocasionalmente, com baixa frequência e praticamente sem impacto perceptível na vida ou no trabalho.
+Pode ter surgido brevemente em algumas situações, mas durou pouco e logo melhorou.
+Exemplo: ansiedade ocasional que passa rapidamente; insônia leve, mas a pessoa consegue levar o dia seguinte normalmente.
+
+**2**: Moderado
+O sintoma ou experiência ocorreu com relativa frequência — várias vezes na semana ou diariamente.
+Já interferiu até certo ponto na vida, nos estudos ou no trabalho.
+É necessário esforço adicional para manter o funcionamento normal.
+Exemplo: preocupação recorrente que afeta a concentração; solidão frequente que afeta a vida social.
+
+**3**: Grave
+Os sintomas são frequentes e evidentes, ocorrendo quase todos os dias e durando bastante.
+Já afetam seriamente o funcionamento cotidiano (queda no desempenho escolar, dificuldades no trabalho, impacto nos relacionamentos).
+A pessoa avaliada sente dificuldade para controlá-los sozinha e precisa de apoio ou intervenção de outras pessoas.
+Exemplo: pensamentos obsessivos frequentes e difíceis de afastar; insônia frequente que afeta muito o estado durante o dia.
+
+**4**: Muito grave
+Os sintomas são persistentes e intensos, quase presentes o dia inteiro e difíceis de aliviar.
+Prejudicam gravemente estudos, trabalho, vida cotidiana e relacionamentos.
+A pessoa avaliada sente que não consegue suportá-los ou perdeu completamente a funcionalidade, podendo precisar de intervenção profissional.
+Exemplo: humor deprimido persistente e perda completa de interesse; ansiedade grave que impede a socialização ou o trabalho normais.
+
+As notas devem ser inteiros de 0 a 4; não use casas decimais.
+
+[Lista de itens de avaliação]:
+1. Dor de cabeça
+2. Nervosismo ou tremores internos
+3. Pensamentos desagradáveis recorrentes e persistentes
+4. Tontura ou vertigem
+5. Perda de interesse ou prazer na vida sexual
+6. Ser crítico em relação aos outros
+7. Sentir que alguém controla seus pensamentos
+8. Sentir que outras pessoas são responsáveis pela maioria dos seus problemas
+9. Dificuldade de memória
+10. Preocupação ou inquietação com as coisas
+11. Irritar-se ou aborrecer-se com facilidade
+12. Dor no coração ou no peito
+13. Sentir medo em espaços abertos ou na rua
+14. Sentir falta de energia ou lentidão nos movimentos
+15. Ter pensamentos de acabar com a própria vida
+16. Ouvir vozes que outras pessoas não ouvem
+17. Tremores
+18. Sentir que não se pode confiar na maioria das pessoas
+19. Falta de apetite
+20. Chorar com facilidade
+21. Sentir timidez ou desconforto na presença de pessoas do sexo oposto
+22. Sentir-se preso ou encurralado
+23. Sentir medo súbito sem motivo
+24. Ter explosões de raiva incontroláveis
+25. Ter medo de sair sozinho
+26. Culpar-se pelas coisas
+27. Dor na região lombar
+28. Sentir-se bloqueado ao fazer as coisas
+29. Sentir-se solitário
+30. Sentir-se triste ou deprimido
+31. Preocupar-se excessivamente
+32. Perder o interesse pelas coisas
+33. Sentir medo
+34. Sentir-se emocionalmente ferido com facilidade
+35. Sentir que outras pessoas conseguem conhecer seus pensamentos privados
+36. Sentir que outras pessoas não o entendem ou não têm compaixão
+37. Sentir que as pessoas são hostis ou não gostam de você
+38. Ter de fazer as coisas muito devagar para garantir que estejam corretas
+39. Batimentos cardíacos acelerados ou palpitações
+40. Náusea ou desconforto no estômago
+41. Sentir-se inferior
+42. Dores musculares
+43. Sentir-se observado ou comentado por outras pessoas
+44. Dificuldade para adormecer
+45. Ter de verificar repetidamente o que fez
+46. Dificuldade para tomar decisões
+47. Medo de andar de ônibus, metrô ou trem
+48. Dificuldade para respirar
+49. Sensações de calor ou frio
+50. Ter de evitar certos objetos, lugares ou atividades por medo
+51. Sentir a mente em branco
+52. Dormência ou formigamento em partes do corpo
+53. Sensação de algo preso na garganta
+54. Sentir que o futuro não tem esperança
+55. Dificuldade para se concentrar
+56. Fraqueza em partes do corpo
+57. Sentir-se tenso ou ansioso
+58. Sensação de peso nos braços ou nas pernas
+59. Pensamentos sobre morte ou morrer
+60. Comer em excesso
+61. Sentir-se desconfortável quando outras pessoas olham ou comentam sobre você
+62. Ter pensamentos que não parecem ser seus
+63. Sentir vontade de bater, ferir ou atacar alguém
+64. Acordar cedo demais
+65. Ter de repetir ações (por exemplo, lavar, contar ou verificar)
+66. Sono inquieto ou interrompido
+67. Sentir vontade de quebrar ou destruir coisas
+68. Ter ideias ou crenças que outras pessoas não aprovam
+69. Sentir-se muito desconfortável na presença de outras pessoas
+70. Sentir-se desconfortável em meio a multidões (por exemplo, fazendo compras ou assistindo a um filme)
+71. Sentir que as coisas não são reais
+72. Ter crises de medo ou pânico
+73. Discutir frequentemente
+74. Sentir-se nervoso quando está sozinho
+75. Sentir que outras pessoas não lhe dão o reconhecimento que merece
+76. Ficar tão inquieto que não consegue permanecer sentado
+77. Sentir-se sem valor
+78. Sentir que algo ruim vai acontecer com você
+79. Gritar ou jogar coisas
+80. Ter medo de desmaiar em público
+81. Sentir que outras pessoas vão se aproveitar de você se baixar a guarda
+82. Ter pensamentos sexuais que o incomodam
+83. Pensamentos e imagens aterrorizantes
+84. Ter vontade de dizer ou fazer algo vergonhoso
+85. Sentir culpa
+86. Sentir-se possuído por um espírito ou força
+87. Achar que deveria ser punido pelos próprios pecados
+88. Ouvir vozes que outras pessoas não ouvem
+89. Ter vontade de fugir
+90. Achar que há algo errado com o próprio corpo
+
+### 3. Regras de pontuação (evidências primeiro, depois a nota)
+Para cada item, localize primeiro, internamente, o trecho original que o sustenta (não o reescreva):
+- Evidência positiva: trecho original que demonstra o sintoma/sofrimento (recomendam-se até 2).
+- Evidência negativa: trecho original que demonstra explicitamente a ausência/negação do sintoma (recomendam-se até 2).
+
+Critérios obrigatórios de pontuação:
+- Nota padrão = 0: Não refletido/incerto na conversa → atribuir 0.
+- Se o texto original negar explicitamente o sintoma, ainda assim atribua 0.
+- Notas 3–4: exigem evidência positiva forte (descrição explícita, grave, persistente ou com prejuízo funcional).
+
+### 4. Formato de saída
+Produza um objeto JSON e nada mais; ele deve conter somente a chave `items`. O array deve ter comprimento 90.
+
+Cada item deve conter:
+- item: número como string ("1" a "90")
+- score: inteiro de 0 a 4 (quanto maior, mais grave o sofrimento)
+
+Barreiras (devem ser seguidas):
+- score = 0: não refletido/incerto na conversa (nota padrão)
+- score = 3–4: deve haver evidência positiva forte no texto original
+
+Exemplo ilustrativo:
+{
+  "items": [
+    {"item": "1", "score": 0},
+    {"item": "2", "score": 0}
+  ]
+}
+
+A saída deve ser um JSON diretamente analisável e nada mais; são proibidos texto não JSON ou Markdown.
+
+### 5. Dados de entrada
+[Conversa de aconselhamento]:
+{{diag}}

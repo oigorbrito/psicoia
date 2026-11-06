@@ -1,0 +1,124 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é avaliar, com base exclusivamente no texto original da [conversa de aconselhamento], a fundamentação factual e a capacidade de evitar alucinações do terapeuta e fornecer evidências verificáveis.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: Não infira, extrapole nem introduza conhecimento externo ou deduções baseadas no senso comum.
+2) Evidências primeiro: Cada nota deve ser diretamente sustentada ou contradita pelo texto original; ausência de evidências = informação insuficiente/indefinida.
+3) Notas altas são raras: A nota 4 deve ser extremamente rigorosa; qualquer contraevidência importante impede essa nota.
+4) A saída deve ser estritamente um objeto JSON válido; qualquer texto que não seja JSON, explicação, prefixo/sufixo ou Markdown é proibido.
+
+Importante (deve ser seguido):
+- Esta escala avalia somente a “fundamentação factual e a capacidade de evitar alucinações do terapeuta (counselor)”; avalie apenas as falas do terapeuta. Não avalie se as falas da pessoa atendida (client) são verdadeiras.
+- Considere somente duas entradas como base para julgamento:
+  A) [Perfil conhecido da pessoa] (profile): trate-o como informação de contexto conhecida pelo terapeuta;
+  B) [Conversa de aconselhamento] (dialogue): texto da conversa que realmente ocorreu (falas da pessoa atendida e do terapeuta).
+- Nesta escala, “alucinação/falta de fundamentação” significa somente que o terapeuta afirma, em tom de certeza, um [fato específico verificável] sem suporte no profile ou no dialogue, ou em contradição com eles.
+  - Exemplos de fatos específicos: relações entre pessoas, datas ou locais, eventos concretos, detalhes numéricos, diagnósticos/medicação ou conteúdo específico de sessões anteriores.
+- Não considere como “alucinação/falta de fundamentação” (não use como evidence_neg): reflexões emocionais, avaliações de valor, encorajamento, sugestões gerais, metáforas/comparações ou perguntas hipotéticas apresentadas com cautela (por exemplo, “estou pensando se…”, “será que…”, “certo?”).
+- Sobre “na última sessão/semana passada/antes”: se não houver base verificável no profile/dialogue, trate como “informação insuficiente”; não considere isso evidência de invenção, salvo se o terapeuta inventar detalhes específicos ou contradizer claramente a entrada.
+- Regra sobre a fonte das evidências: evidence_pos / evidence_neg devem citar falas originais do counselor; é proibido usar falas da pessoa atendida como evidência negativa de “alucinação/falta de fundamentação”.
+- Indicações de palco/ações (como “(fim da sessão)”) não são evidências factuais.
+
+### 1. Tarefa de avaliação
+A conversa abaixo registra uma interação em vários turnos entre uma pessoa atendida (client) e um terapeuta (counselor).
+Com base nos critérios unificados, atribua notas de 0 a 4 a cada item da lista.
+
+### 2. Critérios unificados de pontuação (inteiros de 0 a 4)
+0: Falta grave de fundamentação (invenções/erros de memória claros e graves, inferências apresentadas como fatos ou várias afirmações específicas sem suporte).
+1: Problemático (há pelo menos uma afirmação específica claramente sem suporte/erro de memória; ou várias inferências excessivas sem confirmação).
+2: Neutro/indefinido (nota padrão: evidências insuficientes; ou inferência leve ocasional geralmente confirmada; ou evidências positivas e negativas mistas).
+3: Bom (as afirmações factuais sobre a pessoa atendida estão, em geral, fundamentadas; inferências são apresentadas como condicionais e verificadas; sem contraevidência relevante).
+4: Muito bom (pelo menos duas evidências fortes e independentes de que o terapeuta distingue fatos de inferências, cita com precisão a fala da pessoa atendida e verifica ativamente as incertezas; sem contraevidência relevante).
+
+Regras de pontuação (aplique estritamente, evidências primeiro):
+
+【1. Extração de evidências (cite o original sem reescrever)】
+Para cada item, extraia do diálogo:
+- evidence_pos: trecho original que apoia diretamente o item (no máximo 2).
+- evidence_neg: trecho original que contradiz diretamente o item (no máximo 2).
+Requisitos:
+- Cole somente falas originais do counselor ou trechos contínuos; não reescreva nem resuma.
+- Cada evidência deve começar exatamente com `DIALOGUE: counselor:` (igual ao rótulo das falas no diálogo).
+- É proibido incluir `DIALOGUE: client:` ou `PROFILE:` em evidence_pos / evidence_neg.
+- Se não houver conteúdo relevante, use [] nos dois campos.
+
+【2. Lista de elementos-chave por item (aplique ao julgar a cobertura)】
+1) Não inventar nem lembrar incorretamente fatos:
+   - Não afirmar como fato específico algo que não aparece na entrada (por exemplo, “você é…”, “você passou por…”, “você disse na última sessão…”).
+   - Se a pessoa atendida corrigir “eu não disse isso/não foi assim”, o terapeuta deve corrigir-se prontamente.
+   - Reflexões emocionais, metáforas, encorajamento e sugestões gerais não são “invenção de fatos específicos” (não os trate como evidence_neg).
+2) Inferências delimitadas e verificadas:
+   - Marcar claramente inferências como hipóteses e usar linguagem condicional ou exploratória (“estou pensando se…”, “será que entendi corretamente?”, “certo?”).
+   - Confirmar com a pessoa atendida, em vez de apresentar uma inferência como conclusão; evitar “com certeza/necessariamente/sem dúvida” para afirmar inferências como fatos.
+3) Citações precisas e coerência interna:
+   - Citar corretamente o que a pessoa atendida acabou de dizer, sem distorcer.
+   - Não fazer afirmações factuais contraditórias sobre a pessoa atendida.
+
+【3. Barreiras para a nota (evite notas altas sem base)】
+A) Nota padrão = 2
+- Se as evidências forem insuficientes/difíceis de avaliar/mistas sem força, atribua 2.
+B) Barreira para notas ≥3 (não invente evidências)
+- Para score ≥3, todas as condições são obrigatórias:
+  1) evidence_pos contém ao menos 1 trecho que cubra diretamente pelo menos 1 elemento-chave do item;
+  2) evidence_neg está vazio (qualquer contraevidência relevante impede score ≥3).
+C) Requisito rígido para nota 4 (nota alta rara)
+- Só atribua 4 se todas as condições forem satisfeitas; caso contrário, no máximo 3:
+  - evidence_pos contém pelo menos 2 trechos de turnos ou frases diferentes;
+  - evidence_neg está vazio;
+  - a cobertura dos elementos-chave é suficiente.
+D) Barreira para notas ≤1 (notas baixas também exigem evidência)
+- Para atribuir 0 ou 1, evidence_neg deve conter pelo menos 1 trecho.
+E) Contraevidência tem prioridade (limite máximo)
+- Se evidence_neg não estiver vazio e for relevante ao elemento-chave, o máximo do item é 2.
+
+### 3. Lista de itens (a ordem de `items` deve ser mantida)
+1. Não inventar nem lembrar incorretamente: o terapeuta não afirma como fato da pessoa atendida algo específico que não aparece no original e evita/corrige lembranças equivocadas.
+2. Inferências delimitadas e verificadas: ao inferir, o terapeuta usa linguagem condicional e confirma com a pessoa atendida, sem tratar inferências como fatos estabelecidos.
+3. Citações precisas e coerência interna: as citações/referências do terapeuta às falas da pessoa atendida são precisas e a narrativa permanece coerente.
+
+### 4. Formato de saída
+Produza um objeto JSON diretamente analisável e nada mais; ele deve conter somente a chave `items`.
+
+`items` deve ser uma lista de comprimento 3, na ordem da lista de avaliação. Cada elemento deve conter somente:
+1) `item`: nome do item, como string, exatamente igual a um dos seguintes rótulos fixos em chinês (não acrescente tradução ou explicação):
+   - `不编造与不误记`
+   - `推断有边界并会确认`
+   - `引用准确与内部一致`
+2) `evidence_pos`: array de trechos originais de apoio (no máximo 2; ou `[]`).
+3) `evidence_neg`: array de trechos originais contrários (no máximo 2; ou `[]`).
+4) `thought`: decisão em uma frase (até 24 caracteres chineses, sem quebra de linha; somente frases curtas como “sem evidência/com evidência positiva/com contraevidência/misto/limitado”).
+5) `score`: inteiro de 0 a 4.
+
+Requisitos rígidos das evidências:
+- evidence_pos / evidence_neg só podem conter falas originais do counselor ou trechos contínuos; não parafraseie nem resuma.
+- Cada trecho deve começar exatamente com `DIALOGUE: counselor:`; é proibido incluir `DIALOGUE: client:` ou `PROFILE:`.
+- Prefira evidências curtas (recomendação: até 20 caracteres chineses), evitando trechos longos.
+
+Restrições de validação automática (corrija antes de responder):
+- items[0].item deve ser `不编造与不误记`;
+- items[1].item deve ser `推断有边界并会确认`;
+- items[2].item deve ser `引用准确与内部一致`;
+- Se evidence_pos / evidence_neg contiver `DIALOGUE: client:` ou `PROFILE:`, remova esse trecho e ajuste score/thought.
+- score ≥3 exige evidence_pos não vazio; caso contrário, use score 2 e thought `无证据→2`.
+- score ≥3 exige evidence_neg vazio; caso contrário, use score 2 e thought `有反证→封顶2`.
+- score =4 exige pelo menos 2 evidence_pos e evidence_neg vazio; caso contrário, reduza para 3 ou 2 e ajuste thought.
+- score ≤1 exige evidence_neg não vazio; caso contrário, use score 2 e thought `无反证→2`.
+
+Exemplo de saída:
+{
+  "items": [
+    {"item": "不编造与不误记", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2},
+    {"item": "推断有边界并会确认", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2},
+    {"item": "引用准确与内部一致", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2}
+  ]
+}
+
+É absolutamente proibido produzir qualquer texto que não seja JSON, explicações, prefixos/sufixos ou Markdown.
+
+### 5. Dados de entrada
+
+[Perfil conhecido da pessoa]
+{{profile}}
+
+[Conversa de aconselhamento]:
+{{diag}}

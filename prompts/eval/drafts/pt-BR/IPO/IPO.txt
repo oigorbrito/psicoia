@@ -1,0 +1,90 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é pontuar cada um dos 41 itens do IPO para a pessoa atendida com base exclusivamente na [conversa de aconselhamento] original. Faça julgamentos baseados em evidências internamente, mas não inclua evidências nem raciocínio na saída.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: Não infira, extrapole nem introduza deduções baseadas no senso comum.
+2) Evidências primeiro: Localize a base no texto original antes de pontuar; não mencionado = nota padrão 1.
+3) Cautela com notas altas: Notas 4–5 exigem evidências claras e fortes para o item; não atribua notas altas com base em impressões.
+4) A saída deve ser estritamente um JSON válido; qualquer texto que não seja JSON é proibido.
+
+### 1. Tarefa de avaliação
+Abaixo estão alguns itens sobre a psicologia da pessoa atendida.
+
+Atribua a cada item uma nota inteira de 1 a 5 conforme os critérios definidos.
+
+### 2. Critérios unificados de pontuação (inteiros de 1 a 5; quanto maior a nota, mais evidente/frequente é a característica do item):
+1: Nunca/não mencionado (nota padrão).
+2: Ocasionalmente/leve (há evidência fraca).
+3: Às vezes (há evidência clara).
+4: Frequentemente (evidência forte ou várias ocorrências).
+5: Sempre (pelo menos duas evidências fortes e independentes; nota alta rara).
+
+As notas devem ser inteiros de 1 a 5; não use casas decimais.
+
+### 3. Lista de itens de avaliação:
+1. A pessoa atendida sente-se uma fraude ou impostora; a forma como os outros a veem é muito diferente de quem ela realmente é.
+2. Em situações sociais, a pessoa atendida fica muito nervosa e parece que os outros estão tentando dificultar as coisas de propósito.
+3. A pessoa atendida se comporta como uma pessoa completamente diferente em situações distintas (por exemplo, no trabalho/na escola em comparação com quando está sozinha).
+4. A pessoa atendida acha que o terapeuta explica as coisas com clareza, de forma acessível, aprofundada e interessante.
+5. As ações da pessoa atendida deixam outras pessoas chateadas, mas ela não entende por quê.
+6. Os amigos da pessoa atendida ficariam surpresos se soubessem o quanto ela se comporta de maneira diferente em situações distintas.
+7. A pessoa atendida sente que seus gostos e opiniões não são realmente seus, mas foram “emprestados” de outras pessoas.
+8. A pessoa atendida sente que seus desejos ou pensamentos se tornam realidade como se fossem mágicos.
+9. Outras pessoas dizem que a pessoa atendida as provoca ou engana de propósito para chamar atenção.
+10. A pessoa atendida não tem certeza se os sons que ouve ou as coisas que vê são reais ou imaginados.
+11. A pessoa atendida pensa ter visto algo, mas, ao se aproximar, aquilo desaparece.
+12. A pessoa atendida não consegue explicar as mudanças em seu comportamento.
+13. A pessoa atendida consegue ver/ouvir coisas que outras pessoas não percebem.
+14. A pessoa atendida faz coisas que, em outras circunstâncias, consideraria “demais”, como beber excessivamente, ter relações sexuais promíscuas ou explodir de raiva.
+15. Outras pessoas dizem que o comportamento da pessoa atendida é contraditório até em coisas pequenas.
+16. A pessoa atendida não consegue determinar se certas sensações físicas são reais ou imaginadas.
+17. A pessoa atendida consegue ouvir/ver coisas que outras pessoas consideram inexistentes.
+18. Para outras pessoas, o comportamento da pessoa atendida é imprevisível e inconstante.
+19. Outras pessoas testam a pessoa atendida com coisas que ela não percebeu.
+20. A pessoa atendida e pessoas que a conhecem percebem algumas coisas que outras pessoas não percebem.
+21. Para a pessoa atendida, sua vida (se fosse um livro) parece mais uma coletânea de contos escritos por autores diferentes do que um romance.
+22. A pessoa atendida tem alguém de quem gosta muito e a quem admira, chegando quase a idealizá-lo.
+23. A pessoa atendida desenvolve hobbies e interesses e depois os abandona.
+24. A pessoa atendida já viu coisas que não existem na realidade.
+25. A pessoa atendida faz coisas que parecem aceitáveis no momento, mas das quais se arrepende depois.
+26. Mesmo quem conhece bem a pessoa atendida não consegue adivinhar como ela realmente é.
+27. Às vezes, sem motivo aparente, a pessoa atendida ouve/vê coisas.
+28. A pessoa atendida tem dificuldade para saber o que os outros pensam dela, mesmo que a conheçam há muito tempo.
+29. As pessoas tratam a pessoa atendida de um jeito que oscila entre excesso de carinho e amor e abandono.
+30. A pessoa atendida cai facilmente em emoções extremas, como alegria intensa ou desespero profundo.
+31. Em períodos diferentes, a pessoa atendida sente que é uma pessoa completamente diferente.
+32. Em relações íntimas, a pessoa atendida teme perder a sensação de ser ela mesma.
+33. Os objetivos de vida da pessoa atendida mudam frequentemente de um ano para outro.
+34. A pessoa atendida tende a “cultuar heróis”, mesmo depois de descobrir que estava enganada.
+35. Em momentos diferentes, a pessoa atendida oscila entre ser calorosa e generosa e ser fria e distante.
+36. A pessoa atendida faz impulsivamente coisas que considera socialmente inadequadas.
+37. Os objetivos da pessoa atendida estão sempre mudando.
+38. Quando as pessoas ao redor entram em pânico ou ficam confusas, a pessoa atendida também sente o mesmo por dentro.
+39. Outras pessoas consideram a pessoa atendida grosseira ou insensível, mas ela não percebe.
+40. Antes de realmente chegar a algum lugar ou fazer algo, a pessoa atendida sente que já esteve lá ou já fez aquilo.
+41. A pessoa atendida acredita que, se apenas pensar em algo, isso acontecerá.
+
+### 4. Formato de saída
+Produza um objeto JSON e nada mais; ele deve conter somente a chave `items`. O array deve ter comprimento 41.
+
+Cada item deve conter:
+- item: número como string ("1" a "41")
+- score: inteiro de 1 a 5 (quanto maior, mais evidente ou prejudicial é a característica)
+- score = 1: não refletido na conversa/incerto (nota padrão)
+- score = 4–5: é necessário encontrar evidência clara e forte para o item no texto original
+
+(Não exiba o raciocínio; raciocine implicitamente.)
+
+Exemplo ilustrativo:
+{
+  "items": [
+    {"item": "1", "score": 1},
+    {"item": "2", "score": 1}
+  ]
+}
+
+É absolutamente proibido produzir qualquer texto que não seja JSON ou Markdown.
+
+### 5. Dados de entrada
+[Conversa de aconselhamento]:
+{{diag}}

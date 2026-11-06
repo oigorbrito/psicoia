@@ -1,0 +1,54 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é avaliar, com base exclusivamente no texto original, a intensidade de cada emoção que a pessoa atendida provavelmente sentiu ao final da sessão (inteiros de 1 a 5). Faça julgamentos baseados em evidências internamente, mas não inclua evidências nem raciocínio na saída.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: Não infira, extrapole nem introduza deduções baseadas no senso comum.
+2) Evidências primeiro: Localize a base no texto original antes de pontuar; sem evidência = nota baixa padrão (1).
+3) Notas altas são raras: A nota 5 exige rigor extremo, evidência forte e ausência de contraevidência.
+4) A saída deve ser estritamente um JSON válido; qualquer texto que não seja JSON é proibido.
+
+### 1. Tarefa de avaliação
+Atribua notas de 1 a 5 a cada uma das 20 emoções abaixo (o array `items` deve ter comprimento 20).
+Use exatamente os nomes de emoção fornecidos para o campo `item` (mesma grafia e capitalização).
+
+### 2. Critérios de pontuação (inteiros de 1 a 5)
+1: Muito leve ou ausente (nota padrão; não refletida/incerta na conversa).
+2: Um pouco (há evidência fraca).
+3: Moderada (há evidência clara).
+4: Considerável (evidência forte ou várias ocorrências).
+5: Extrema (pelo menos 2 evidências fortes e independentes, ou expressão explicitamente extrema; nota alta rara).
+
+Regras de evidência (devem ser seguidas):
+- Localize internamente trechos originais que apoiem ou contradigam cada emoção.
+- Se uma emoção não aparecer na conversa, atribua obrigatoriamente 1.
+
+[Lista de itens de avaliação] (use exatamente estes nomes e esta ordem):
+Interested, Excited, Strong, Enthusiastic, Proud, Alert, Inspired, Determined, Attentive, Active, Distressed, Upset, Guilty, Scared, Hostile, Irritable, Ashamed, Nervous, Jittery, Afraid
+
+### 3. Regras de pontuação (evidências primeiro, depois a nota)
+Para cada emoção, localize primeiro, internamente, trechos originais que a apoiem (não reescreva):
+- Evidência positiva: trecho original que manifesta a emoção (recomendam-se até 2).
+- Contraevidência: trecho original que manifesta a emoção oposta ou a nega (recomendam-se até 2).
+
+Critérios obrigatórios de pontuação:
+- Nota padrão = 1: Não mencionada/evidência insuficiente/indefinida → atribuir 1.
+- Nota 5: Pelo menos 2 evidências positivas fortes e independentes e nenhuma contraevidência (nota alta rara).
+- Notas 2–4: Pelo menos 1 evidência positiva clara (atribua 2/3/4 conforme a intensidade); se houver contraevidência, a nota máxima é 3.
+
+(Não exiba o raciocínio; raciocine implicitamente.)
+
+### 4. Formato de saída
+Produza um objeto JSON e nada mais; ele deve conter somente a chave `items`. O array deve ter comprimento 20; cada elemento deve conter `item` (nome da emoção) e `score` (inteiro de 1 a 5).
+
+Exemplo ilustrativo:
+{
+  "items": [
+    {"item": "Interested", "score": 1}
+  ]
+}
+
+É absolutamente proibido produzir qualquer texto que não seja JSON ou Markdown.
+
+### 5. Dados de entrada
+[Conversa de aconselhamento]:
+{{diag}}

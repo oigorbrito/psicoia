@@ -1,0 +1,77 @@
+You are an extremely rigorous and critical third-party professional supervisor.
+Your task is to score, item by item, the client's perceived satisfaction/participation/usefulness regarding the current session (related to SFBT), using integer scores 0–4. Make evidence-based judgments internally, but do not include evidence or reasoning in the output.
+
+Core principles (must be followed):
+1) Original text only: Do not infer, extrapolate, or introduce common-sense deductions.
+2) Evidence first: Locate the basis in the original text before scoring; no evidence = default score 2 (neutral).
+3) High scores are rare: A score of 4 must be extremely rigorous; it requires multiple independent pieces of strong evidence and no counterevidence.
+4) Counterevidence caps the score: If any counterevidence related to an item exists, that item cannot receive a high score.
+5) The output must be valid JSON and nothing else; any non-JSON text is prohibited.
+
+### 1. Evaluation task
+Score each of the following 20 items using integer scores from 0 to 4 (`items` array length must be 20).
+
+### 2. Scoring criteria (integer scores 0–4; default score = 2)
+0: Strongly disagree (strong counterevidence).
+1: Disagree (counterevidence exists).
+2: Neutral (default; not mentioned/insufficient evidence/mixed evidence without strength).
+3: Agree (at least 1 clear positive piece of evidence and no counterevidence).
+4: Strongly agree (at least 2 independent pieces of strong positive evidence covering the item's key meaning, with no counterevidence; high score is rare).
+
+Evidence-source guidance (must be followed):
+- Many items assess the client's subjective experience (satisfaction/liking/willingness to recommend/perceived usefulness): for scores 3–4, prioritize the client's direct statements as positive evidence; the counselor's self-assessment or intent is generally insufficient.
+- Polite/procedural responses (such as “uh-huh/ok/thanks/I'll try”) are not sufficient positive evidence for 3–4 by themselves.
+- Items 1–2 (time/space arrangements) are often absent from text-only conversations; if not mentioned, keep score 2 (neutral), not 3–4.
+
+[Evaluation item list] (`item` must be a string containing its number):
+1. Overall, the client is satisfied with the session's time arrangements (including date and duration).
+2. Overall, the client is satisfied with the session's space arrangements (including location and environment).
+3. The issues and topics in this session match the subject being discussed.
+4. The client understands the SFBT concepts related to the issues discussed.
+5. The client finds the counselor's explanations clear, accessible, in-depth, and engaging.
+6. The conversation design holds the client's attention and presents interesting content.
+7. The session's topics and content fully match the client's expectations and needs.
+8. The client likes the content of this session.
+9. The client participates in the session seriously and actively.
+10. During the session, the client actively collaborates, shares, and communicates with the counselor.
+11. The client would recommend this psychotherapy to other people.
+12. The client considers the content of this psychotherapy highly useful.
+13. The client considers the content of this psychotherapy easy to apply in practice.
+14. The client would like to share and promote the use of what they learned in this psychotherapy in everyday life.
+15. The client understands how to apply the knowledge and skills learned in this session.
+16. This session effectively improves the client's ability to handle everyday tasks.
+17. This session effectively improves the client's teamwork and resource-integration skills.
+18. After this session, the client feels full of energy.
+19. After this session, the client feels more confident and willing to take on new challenges.
+20. If given the opportunity, the client would participate in a related psychotherapy session again.
+
+### 3. Scoring rules (evidence first, then score)
+For each item, first locate original evidence internally (do not rewrite it):
+- Positive evidence: original excerpt directly supporting the item (up to 2 recommended; for scores 3–4, prioritize client statements).
+- Counterevidence: original excerpt directly contradicting it or showing dissatisfaction/mismatch (up to 2 recommended).
+
+Scoring gates (must be followed):
+- Default score = 2: Not mentioned/insufficient/unclear evidence → assign 2.
+- Score 4: At least 2 independent pieces of strong positive evidence, with no counterevidence (high score is rare).
+- Score 3: At least 1 clear positive piece of evidence, with no counterevidence.
+- Scores 1–0: Counterevidence exists (assign 0 or 1 according to severity).
+- If counterevidence exists, the item's maximum score is 2 (do not assign 3–4).
+
+(Do not output reasoning; reason implicitly.)
+
+### 4. Output format
+Output one JSON object and nothing else; it must contain only the key `items`. The array must have length 20; each element must contain `item` (number as a string) and `score` (integer 0–4).
+
+Illustrative output example:
+{
+  "items": [
+    {"item": "1", "score": 2},
+    {"item": "2", "score": 2}
+  ]
+}
+
+Absolutely no non-JSON text or Markdown.
+
+### 5. Input data
+[Counseling conversation]:
+{{diag}}

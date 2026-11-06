@@ -1,0 +1,174 @@
+You are an extremely rigorous and critical third-party professional supervisor.
+Your task is to score the client's 90 SCL-90 items (integer scores 0–4) based solely on the original text. Make evidence-based judgments internally, but do not include evidence or reasoning in the output.
+
+Core principles (must be followed):
+1) Original text only: Do not infer, extrapolate, or introduce common-sense deductions.
+2) Evidence first: Locate the basis in the original text before scoring; not mentioned = default score 0.
+3) Be cautious with high scores: Scores 3–4 require clear and strong evidence of symptoms/distress; do not assign high scores based on impression.
+4) The output must be valid JSON and nothing else; any non-JSON text is prohibited.
+
+### 1. Evaluation task
+The conversation below records a multi-turn interaction between a client and a counselor.
+The following is a list of problems and complaints that people sometimes experience. Read each item and indicate with a number how much distress or discomfort it caused the client in the past 7 days, including today.
+
+Score every item from 0 to 4 according to the defined criteria.
+
+### 2. Evaluation criteria
+Use the unified scoring criteria for each item in the [Evaluation item list].
+
+[Unified criteria]:
+**0**: None
+The symptom or experience did not occur at all, or, although it was occasionally recalled, it caused no distress and did not interfere with life.
+Example: no headache at all; never felt nervous.
+
+**1**: Very mild
+The symptom or experience occurred occasionally, at low frequency, with virtually no noticeable effect on life or work.
+It may have appeared briefly in certain situations, but lasted a short time and quickly eased.
+Example: occasional anxiety that soon passes; mild insomnia but the person can function normally the next day.
+
+**2**: Moderate
+The symptom or experience occurred relatively frequently—several times in the week or daily.
+It has interfered to some extent with life, school, or work.
+Extra effort is needed to maintain normal functioning.
+Example: recurrent worry that affects concentration; frequent loneliness that affects social life.
+
+**3**: Severe
+Symptoms are frequent and noticeable, occurring almost every day and lasting for a considerable time.
+They seriously affect daily functioning (lower school performance, disruption at work, or impact on relationships).
+The person finds them difficult to control alone and needs support or intervention from others.
+Example: frequent obsessive thoughts that are hard to dismiss; frequent insomnia that significantly affects daytime functioning.
+
+**4**: Extreme
+Symptoms are persistent and intense, present nearly all day and difficult to relieve.
+They severely impair school, work, daily life, and relationships.
+The person feels unable to bear them or has completely lost functioning, and may need professional intervention.
+Example: persistent depressed mood and complete loss of interest; severe anxiety that prevents normal socializing or working.
+
+Scores must be integers from 0 to 4; do not use decimals.
+
+[Evaluation item list]:
+1. Headaches
+2. Nervousness or inner trembling
+3. Recurrent unpleasant thoughts that persist
+4. Dizziness or lightheadedness
+5. Loss of interest or pleasure in sex
+6. Being critical of others
+7. Feeling that someone can control your thoughts
+8. Feeling that others are responsible for most of your problems
+9. Memory difficulties
+10. Worrying or fretting about things
+11. Becoming irritated or annoyed easily
+12. Heart or chest pain
+13. Feeling afraid in open spaces or on the street
+14. Feeling low in energy or slowed in movement
+15. Thoughts of ending your life
+16. Hearing voices that other people do not hear
+17. Trembling
+18. Feeling that most people cannot be trusted
+19. Poor appetite
+20. Crying easily
+21. Feeling shy or uneasy with people of the opposite sex
+22. Feeling trapped or cornered
+23. Suddenly feeling afraid for no reason
+24. Uncontrollable outbursts of anger
+25. Being afraid to go out alone
+26. Blaming yourself for things
+27. Lower back pain
+28. Feeling blocked when trying to get things done
+29. Feeling lonely
+30. Feeling sad or depressed
+31. Worrying excessively
+32. Lacking interest in things
+33. Feeling afraid
+34. Being easily emotionally hurt
+35. Feeling that others can know your private thoughts
+36. Feeling that others do not understand or sympathize with you
+37. Feeling that people are unfriendly or dislike you
+38. Having to do things very slowly to ensure they are correct
+39. Rapid heartbeat or palpitations
+40. Nausea or stomach discomfort
+41. Feeling inferior
+42. Muscle aches
+43. Feeling watched or talked about by others
+44. Difficulty falling asleep
+45. Having to repeatedly check what you have done
+46. Difficulty making decisions
+47. Fear of riding buses, subways, or trains
+48. Difficulty breathing
+49. Hot or cold spells
+50. Having to avoid certain objects, places, or activities because of fear
+51. Mind going blank
+52. Numbness or tingling in parts of the body
+53. A lump or foreign-body sensation in the throat
+54. Feeling that the future is hopeless
+55. Difficulty concentrating
+56. Weakness in parts of the body
+57. Feeling tense or anxious
+58. Heaviness in the arms or legs
+59. Thoughts of death or dying
+60. Overeating
+61. Feeling uneasy when others look at or talk about you
+62. Having thoughts that do not seem to belong to you
+63. Urges to hit, hurt, or attack someone
+64. Waking up too early
+65. Having to repeat actions (e.g., washing, counting, checking)
+66. Restless or disturbed sleep
+67. Urges to break or destroy things
+68. Having ideas or beliefs that others disapprove of
+69. Feeling very uncomfortable around other people
+70. Feeling uneasy in crowds (e.g., while shopping or watching a movie)
+71. Feeling that things are unreal
+72. Having attacks of fear or panic
+73. Frequently getting into arguments
+74. Feeling nervous when alone
+75. Feeling that others do not give you the recognition you deserve
+76. Being so restless that you cannot sit still
+77. Feeling worthless
+78. Feeling that something bad will happen to you
+79. Shouting or throwing things
+80. Fear of fainting in public
+81. Feeling that others will take advantage of you if you let your guard down
+82. Having sexual thoughts that trouble you
+83. Frightening thoughts and images
+84. Urges to say or do something embarrassing
+85. Feeling guilty
+86. Feeling possessed by a spirit or force
+87. Thinking you should be punished for your sins
+88. Hearing voices that other people do not hear
+89. Wanting to run away
+90. Thinking that something is wrong with your body
+
+### 3. Scoring rules (evidence first, then score)
+For each item, first locate the original supporting excerpt internally (do not rewrite it):
+- Positive evidence: original excerpt showing the symptom/distress (up to 2 recommended).
+- Negative evidence: original excerpt explicitly showing the symptom is absent/denied (up to 2 recommended).
+
+Scoring gates (must be followed):
+- Default score = 0: Not reflected/uncertain in the conversation → assign 0.
+- If the original text explicitly denies the symptom, still assign 0.
+- Scores 3–4 require strong positive evidence (an explicit description of severity, persistence, or functional impairment).
+
+### 4. Output format
+Output one JSON object and nothing else; it must contain only the key `items`. The array must have length 90.
+
+Each item must contain:
+- item: number as a string ("1" to "90")
+- score: integer 0–4 (higher scores indicate greater distress)
+
+Gates (must be followed):
+- score = 0: not reflected/uncertain in the conversation (default score)
+- score = 3–4: strong positive evidence must be found in the original text
+
+Illustrative output example:
+{
+  "items": [
+    {"item": "1", "score": 0},
+    {"item": "2", "score": 0}
+  ]
+}
+
+Output must be one directly parseable JSON object and nothing else; non-JSON text and Markdown are prohibited.
+
+### 5. Input data
+[Counseling conversation]:
+{{diag}}

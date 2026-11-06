@@ -1,0 +1,59 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é avaliar o desempenho do terapeuta em [empathy (empatia)] com base exclusivamente na [conversa de aconselhamento] original.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: Não infira, extrapole nem introduza deduções baseadas no senso comum.
+2) Evidências primeiro: Extraia evidências antes de pontuar; ausência de evidências = não mencionado/incerto.
+3) Notas altas são raras: A nota 6 deve ser extremamente rigorosa; exige várias evidências fortes independentes e nenhuma contraevidência.
+4) Contraevidência limita a nota: Se houver contraevidência relacionada à dimensão, ela não pode receber nota alta.
+5) A saída deve ser estritamente um JSON válido; qualquer texto que não seja JSON é proibido.
+
+### 1. Tarefa de avaliação
+Avalie o desempenho do terapeuta em [empathy (empatia)].
+A chave do item JSON para esta dimensão é: empathy
+
+### 2. Critério de avaliação
+[Avaliação]:
+Capacidade de empatia do terapeuta.
+
+[Detalhes da escala] (inteiros de 0 a 6):
+0 pontos: Falta clara de empatia (hostilidade/indiferença/desinteresse etc.).
+1–2 pontos: Empatia inicial (percebe sentimentos superficiais, mas tem dificuldade para compreender a perspectiva da pessoa atendida).
+3 pontos: Empatia basicamente suficiente (reflete a experiência, mas sem profundidade; nota padrão).
+4–5 pontos: Boa empatia (além de refletir a experiência expressa, compreende experiências não verbalizadas).
+6 pontos: Empatia excepcional (compreensão sensível ao longo de toda a conversa, inclusive de aspectos que a pessoa atendida não percebe; nota alta rara).
+
+### 3. Regras de pontuação (evidências primeiro, depois a nota)
+Extraia primeiro as evidências para esta dimensão (cite o original sem reescrever):
+- evidence_pos: Trecho original que demonstra “nomeação precisa da emoção/reflexão de significado/compreensão pela perspectiva da pessoa atendida e avanço” (no máximo 2; ou [] se não houver).
+- evidence_neg: Trecho original que demonstra “incompreensão/ignorar/hostilidade/desvalorização/interromper a emoção” (no máximo 2; ou [] se não houver).
+
+Critérios obrigatórios de pontuação:
+- Nota padrão = 3: Não mencionado/evidência insuficiente/evidências positivas e negativas mistas sem força → atribuir 3.
+- Nota 6: Pelo menos 2 evidence_pos de frases/turnos diferentes e evidence_neg vazio.
+- Notas 5–4: Pelo menos 1 evidence_pos clara e evidence_neg vazio (atribua 4 ou 5 conforme a força).
+- Notas 2–1: evidence_neg presente (atribua 1 ou 2 conforme a gravidade).
+- Nota 0: Contraevidência forte (hostilidade evidente/omissão prejudicial).
+
+Requisito para thought:
+- No máximo 24 caracteres chineses, sem quebra de linha; use somente frases curtas, por exemplo: `无证据→3` / `正证据→4` / `强正证据→6` / `有反证→2`
+
+### 4. Formato de saída
+Produza um objeto JSON e nada mais; ele deve conter somente a chave `items`:
+{
+  "items": [
+    {
+      "item": "empathy",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "无证据→3",
+      "score": 3
+    }
+  ]
+}
+
+É absolutamente proibido produzir qualquer texto que não seja JSON ou Markdown.
+
+### 5. Dados de entrada
+[Conversa de aconselhamento]:
+{{diag}}

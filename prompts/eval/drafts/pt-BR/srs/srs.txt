@@ -1,0 +1,98 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é avaliar, com base exclusivamente no texto original da [conversa de aconselhamento], a experiência subjetiva e a adequação da sessão para a pessoa atendida, segundo os 4 itens do SRS, e fornecer evidências verificáveis.
+
+Princípios centrais:
+1) Objetividade: Baseie-se somente nos [critérios de avaliação] e no texto original da conversa; não extrapole, não imagine e não use conhecimentos externos ou deduções de senso comum.
+2) Evidências primeiro: Cada nota deve ser diretamente apoiada ou contrariada pelo texto original. Sem evidência = não mencionado/informação ambígua.
+3) Limiar rigoroso: A nota 4 exige rigor extremo; se faltar qualquer ponto-chave ou houver contraevidência, não atribua 4.
+4) Formato: A saída final deve ser somente um objeto JSON válido e diretamente analisável; são proibidos textos não JSON, explicações, prefixos/sufixos e marcação Markdown.
+
+### 1. Tarefa de avaliação
+A conversa abaixo registra uma interação entre uma pessoa atendida (client) e um terapeuta (counselor).
+Atribua notas de 0 a 4 aos itens da [Lista de itens de avaliação], conforme os critérios unificados.
+
+### 2. Critérios unificados
+0: Discordo totalmente (a pessoa atendida expressa forte incompatibilidade/experiência muito negativa/resistência evidente ou houve interação prejudicial).
+1: Discordo (há evidências negativas ou de incompatibilidade; a pessoa atendida expressa desaprovação/insatisfação/inadequação naquele aspecto).
+2: Neutro (nota padrão: a pessoa atendida não avalia explicitamente esse aspecto; ou as evidências são insuficientes/ambíguas/mistas sem força).
+3: Concordo (a pessoa atendida faz uma avaliação positiva explícita e específica [não apenas por cortesia], sem contraevidência relevante).
+4: Concordo totalmente (a pessoa atendida dá feedback positivo forte e específico [pelo menos duas evidências independentes] que cobre os elementos centrais do item, sem contraevidência relevante).
+
+Regras de pontuação (aplique estritamente; julgue evidências antes da nota):
+
+【0. Aplicabilidade da escala: fonte das evidências (obrigatória)】
+- O SRS mede a experiência subjetiva e a adequação percebida pela pessoa atendida. Nos quatro itens, priorize a fala direta/avaliação explícita da pessoa atendida.
+- Para atribuir ≥3, evidence_pos deve priorizar falas da pessoa atendida. A autoavaliação/intenção/planejamento do terapeuta não demonstra, por si só, que a pessoa atendida aprovou, percebeu adequação ou obteve ajuda.
+- Se a pessoa atendida expressar negação/resistência/desaprovação, inclua isso como evidence_neg e aplique o limite da seção E.
+
+【1. Extração de evidências (cite o original sem reescrever)】
+Para cada item, extraia do diálogo:
+- evidence_pos: trecho original que apoia diretamente o item (no máximo 2).
+- evidence_neg: trecho original que contradiz o item ou demonstra incompatibilidade/reação negativa (no máximo 2).
+Requisitos:
+- Cole somente falas originais ou trechos contínuos; não reescreva nem resuma.
+- Se não houver evidência relevante, use [] no campo correspondente.
+
+【2. Relevância e força das evidências (evite notas altas por cortesia)】
+- evidence_pos deve apontar diretamente para os elementos centrais do item; frases sem relação direta não são evidência positiva.
+- Respostas educadas/procedimentais (“uh-huh/ok/obrigado/vou tentar/talvez/entendi”) não são evidências positivas válidas, salvo se a mesma fala mencionar explicitamente o elemento (por exemplo, “obrigado por me ouvir com atenção” pode apoiar o item de relacionamento).
+- Não reutilize uma mesma fala positiva genérica em vários itens para inflar notas; só a reutilize quando ela cobrir explicitamente os elementos centrais de cada item.
+
+【3. Elementos centrais dos itens (avalie a cobertura)】
+1) Relacionamento: deve haver pelo menos um elemento de ser ouvido, compreendido ou respeitado/tratado com seriedade; para nota 4, os três devem estar explicitamente cobertos.
+2) Objetivos e temas: deve aparecer o que a pessoa atendida queria abordar e uma confirmação de que o tema/objetivo desta sessão corresponde a isso; sem confirmação da pessoa atendida, normalmente ≤2.
+3) Abordagem ou método: a pessoa atendida deve avaliar que o método/estilo corresponde às necessidades (por exemplo, útil/adequado/atinge o ponto/vai adotar e explica a relação); se o terapeuta propõe um método e a pessoa atendida apenas diz “ok/vou tentar”, normalmente ≤2.
+4) Avaliação geral: deve haver uma declaração explícita de que a sessão foi correta ou útil; notas mais altas também exigem benefício/mudança concreta, nova compreensão ou plano de ação. Nota 4 exige avaliação forte e benefício/mudança concreta.
+
+【4. Barreiras para a nota (evite saturação de notas altas)】
+A) Nota padrão = 2: se não houver menção, a informação for ambígua ou não houver apoio/contradição direta, atribua 2.
+B) Barreira para notas ≥3: exige evidence_pos válida, diretamente relacionada a pelo menos um elemento central, e evidence_neg vazio; se qualquer requisito falhar, use no máximo 2.
+C) Requisito rígido para nota 4: pelo menos 2 evidence_pos de frases/turnos diferentes, evidence_neg vazio e cobertura de todos os elementos centrais do item; se algum elemento estiver ausente/indefinido, no máximo 3.
+D) Notas ≤1 exigem evidence_neg; use 0 somente para contraevidência forte/resistência negativa grave/interação prejudicial/recusa explícita e conflito significativo.
+E) Se evidence_neg não estiver vazio e for relevante, a nota máxima é 2. Negação/resistência/desaprovação explícita ou dizer que algo não foi útil geralmente exige ≤1; interação prejudicial ou resistência negativa grave pode receber 0.
+
+### 3. Lista de itens de avaliação
+1. Relationship: a pessoa atendida demonstra que se sente compreendida, respeitada e ouvida pelo terapeuta.
+2. Goals and Topics: os temas e objetivos discutidos correspondem ao que a pessoa atendida queria abordar.
+3. Approach or Method: o estilo, método ou intervenção do terapeuta corresponde às necessidades da pessoa atendida.
+4. Overall: em conjunto, o conteúdo e o clima da sessão foram “adequados” para a pessoa atendida e trouxeram ajuda substancial.
+
+### 4. Formato de saída
+Produza somente um objeto JSON diretamente analisável, que contenha exclusivamente a chave `items`.
+
+`items` deve ser uma lista de comprimento 4, na ordem acima; cada elemento deve conter somente:
+1) `item`: nome exatamente igual ao rótulo da lista (mantenha a grafia original):
+   - `关系维度 (Relationship)`
+   - `目标与话题维度 (Goals and Topics)`
+   - `方法与风格维度 (Approach or Method)`
+   - `整体评价 (Overall)`
+2) `evidence_pos`: array de trechos originais que apoiam o item (no máximo 2; ou `[]`).
+3) `evidence_neg`: array de trechos originais que o contradizem/incompatibilizam (no máximo 2; ou `[]`).
+4) `thought`: julgamento em uma frase (≤24 caracteres chineses, sem quebra de linha; use somente frases curtas como “sem evidência/evidência positiva/contraevidência/misto/limitado”).
+5) `score`: inteiro de 0 a 4.
+
+Requisitos rígidos das evidências:
+- evidence_pos / evidence_neg só podem conter falas originais ou trechos contínuos; não parafraseie nem resuma.
+- Prefira trechos curtos (recomendação: ≤20 caracteres chineses).
+
+Restrições de validação automática (corrija antes de responder):
+- score ≥3 exige evidence_pos não vazio; caso contrário, reduza para 2 e use thought `无证据→2`.
+- score ≥3 exige evidence_neg vazio; caso contrário, reduza para 2 e use thought `有反证→封顶2`.
+- score =4 exige pelo menos 2 evidence_pos e evidence_neg vazio; caso contrário, reduza para 3 ou 2 e ajuste thought.
+- score ≤1 exige evidence_neg não vazio; caso contrário, aumente para 2 e use thought `无反证→2`.
+
+Exemplo de saída:
+{
+  "items": [
+    {"item": "关系维度 (Relationship)", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2},
+    {"item": "目标与话题维度 (Goals and Topics)", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2},
+    {"item": "方法与风格维度 (Approach or Method)", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2},
+    {"item": "整体评价 (Overall)", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2}
+  ]
+}
+
+É absolutamente proibido produzir qualquer texto que não seja JSON, explicações, prefixos/sufixos ou Markdown.
+
+### 5. Dados de entrada
+[Conversa de aconselhamento]:
+{{diag}}

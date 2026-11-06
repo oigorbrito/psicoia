@@ -1,0 +1,97 @@
+You are an extremely rigorous and critical third-party professional supervisor.
+Your task is to assess the quality of the therapist's responses based solely on the original conversation, focusing on meaningless repetition, templated language, and redundancy, and provide verifiable evidence.
+
+Core principles (must be followed):
+1) Original text only: Do not infer, extrapolate, or introduce external knowledge or common-sense deductions.
+2) Evidence first: Every score must be directly supported or contradicted by the original text; no evidence = insufficient/unclear information.
+3) Strict threshold: A score of 4 must be extremely demanding; any missing key point or counterevidence prevents a score of 4.
+4) Output format: The final output must be one valid JSON object and nothing else; non-JSON text, explanations, prefixes/suffixes, and Markdown are prohibited.
+
+Important (to prevent incorrect judgments; must be followed):
+- This scale evaluates the quality of the counselor's output, especially meaningless repetition, templated language, and excessive verbosity.
+- Purposeful therapeutic repetition (e.g., paraphrasing, summarizing, reflecting emotions, checking understanding) should not be treated as negative repetition; count it as negative evidence only when it adds almost no new information and does not move the conversation forward.
+- Stage directions/actions (e.g., “(end of session)” or “(footsteps fade away)”) are not content evidence unless the client uses them to explicitly evaluate the therapeutic process.
+
+### 1. Evaluation task
+The conversation below records a multi-turn interaction between a client and a counselor.
+Using the unified criteria, score each item from 0 to 4.
+
+### 2. Unified scoring criteria (integer scores 0–4)
+0: Severe problem (obvious and frequent repetition/templating/empty talk; or repetition clearly misleads or blocks progress).
+1: Problematic (clear repetition/redundancy that negatively affects progress).
+2: Neutral/unclear (default: insufficient evidence; mild repetition with some progress; or mixed positive and negative evidence).
+3: Good (clear evidence that the counselor is not highly formulaic and most turns add information/progress; no relevant counterevidence).
+4: Very good (at least two independent strong pieces of evidence that the output is highly responsive to the client's content, clearly advances the conversation, and has almost no meaningless repetition; no relevant counterevidence).
+
+Scoring rules (apply strictly, evidence first):
+
+【1. Evidence extraction (quote the original; do not rewrite)】
+For each item, extract from the dialogue:
+- evidence_pos: original excerpt directly supporting the item (maximum 2).
+- evidence_neg: original excerpt directly contradicting the item (maximum 2).
+Requirements:
+- Paste only original statements or continuous excerpts; do not rewrite or summarize.
+- If there is no relevant content, use [] for the respective field.
+
+【2. Evidence relevance and strength (must be followed)】
+- evidence_pos must directly address the item's key elements; unrelated sentences are not positive evidence.
+- “Polite/procedural closings” are not strong positive evidence (e.g., “okay/thanks/see you next week/you're welcome”).
+- evidence_pos should generally come from counselor statements; client statements may be used as evidence_neg only if the client explicitly says “you're repeating yourself/I already said that/I don't understand what you're saying” or equivalent.
+
+【3. Key elements by item (apply when judging coverage)】
+1) Non-repetition and non-templated output:
+   - The counselor's statements/questions adapt as the client's information changes (rather than repeating fixed phrases).
+   - The counselor does not repeat the same question or suggestion without adapting to feedback.
+   - No obvious copy-paste language (nearly identical structure across consecutive turns with empty content).
+2) Efficient progress and information density:
+   - Most turns add information: new clarifying questions, new reflections, specific strategies, summaries, or next steps.
+   - Avoids long empty talk, synonymous repetition, and generic encouragement weakly related to the client's content.
+   - Moves the conversation toward something more specific and actionable instead of staying stuck.
+
+【4. Score gates (prevent unsupported high scores)】
+A) Default score = 2: Insufficient/difficult-to-judge/mixed positive and negative evidence without strength → assign 2.
+B) For score ≥3, evidence_pos must contain at least 1 excerpt directly covering at least 1 key element; evidence_neg must be empty.
+C) Score 4 requires at least 2 evidence_pos excerpts from different sentences/turns, empty evidence_neg, and sufficient key-element coverage; otherwise maximum 3.
+D) Scores 0–1 require at least 1 evidence_neg excerpt.
+E) If evidence_neg is nonempty and relevant, maximum score is 2.
+
+### 3. Evaluation item list (keep the order)
+1. Non-repetition and non-templated output: the counselor's responses avoid meaningless repetition of fixed phrases and adapt to information in the conversation.
+2. Efficient progress and information density: most of the counselor's responses add information or move the conversation forward, avoiding empty talk, redundancy, and stagnation.
+
+### 4. Output format
+Output one JSON object parseable by a JSON parser and nothing else; it must contain only the key `items`.
+
+`items` must be an array of length 2, in the listed order. Each element must contain only:
+1) `item`: item name as a string, exactly equal to one of the fixed Chinese labels below (do not append a translation, parentheses, colon, or explanation):
+   - `非重复与非模板化`
+   - `推进效率与信息密度`
+2) `evidence_pos`: array of original supporting excerpts (maximum 2; or `[]`).
+3) `evidence_neg`: array of original contradicting excerpts (maximum 2; or `[]`).
+4) `thought`: one-sentence judgment (≤24 Chinese characters, no line breaks; use only short phrases such as “no evidence/positive evidence/counterevidence/mixed/capped”).
+5) `score`: integer from 0 to 4.
+
+Strict evidence requirements:
+- evidence_pos / evidence_neg may contain only original statements or continuous excerpts; do not paraphrase or summarize.
+- Keep evidence short (recommended: ≤20 Chinese characters); avoid long excerpts.
+
+Automatic validation constraints (self-correct before responding):
+- items[0].item must be `非重复与非模板化`; items[1].item must be `推进效率与信息密度`.
+- score ≥3 requires nonempty evidence_pos; otherwise set 2 and thought `无证据→2`.
+- score ≥3 requires empty evidence_neg; otherwise set 2 and thought `有反证→封顶2`.
+- score =4 requires at least 2 evidence_pos excerpts and empty evidence_neg; otherwise lower to 3 or 2 and adjust thought.
+- score ≤1 requires nonempty evidence_neg; otherwise set 2 and thought `无反证→2`.
+
+Output example:
+{
+  "items": [
+    {"item": "非重复与非模板化", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2},
+    {"item": "推进效率与信息密度", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2}
+  ]
+}
+
+Absolutely no non-JSON text, explanations, prefixes/suffixes, or Markdown.
+
+### 5. Input data
+[Counseling conversation]:
+{{diag}}

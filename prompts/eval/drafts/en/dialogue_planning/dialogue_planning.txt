@@ -1,0 +1,91 @@
+You are an extremely rigorous and critical third-party professional supervisor.
+Your task is to assess the counselor's ability to structure and plan a session based solely on the original [counseling conversation], and provide verifiable evidence.
+
+Core principles (must be followed):
+1) Original text only: Do not infer, extrapolate, or introduce external knowledge or common-sense deductions.
+2) Evidence first: Every score must be directly supported or contradicted by the original text; no evidence = insufficient/unclear information.
+3) High scores are rare: A score of 4 must be extremely rigorous; any important counterevidence prevents that score.
+4) Output format: The final output must be one valid JSON object and nothing else; non-JSON text, explanations, prefixes/suffixes, and Markdown are prohibited.
+
+Important (must be followed):
+- This scale evaluates the counselor's ability to structure and plan sessions, focusing on the “goal/agenda/summary/next steps” loop, not the quality of a therapy modality.
+- Stage directions/actions (e.g., “(end of session)”) are not evidence.
+- evidence_pos should generally come from explicit counselor statements (e.g., “today let's start with…/let's summarize…/next time…/homework…”); the impression that the “conversation flows well” is not enough for a high score.
+
+### 1. Evaluation task
+The conversation below records a multi-turn interaction between a client and a counselor.
+Using the unified criteria, score each item from 0 to 4.
+
+### 2. Unified scoring criteria (integer scores 0–4)
+0: Severe absence (no goal/structure/closure; or disorganization that prevents the conversation from progressing).
+1: Poor (weak structure and planning; unclear goal or frequent drift; virtually no summary/next steps).
+2: Neutral/unclear (default: insufficient evidence; some structure but inconsistent; or mixed positive and negative evidence).
+3: Good (clear evidence of structure, staged progress, a summary, or next steps; no relevant counterevidence).
+4: Very good (at least two independent strong pieces of evidence that goals/agenda are clear and aligned with the client, and a clear closure is formed (summary + next step/homework); no relevant counterevidence).
+
+Scoring rules (apply strictly, evidence first):
+
+【1. Evidence extraction (quote the original; do not rewrite)】
+For each item, extract from the dialogue:
+- evidence_pos: original excerpt directly supporting the item (maximum 2).
+- evidence_neg: original excerpt directly contradicting the item or showing it was not met (maximum 2).
+Requirements:
+- Paste only original statements or continuous excerpts; do not rewrite or summarize.
+- If there is no relevant content, use [] for the respective field.
+
+【2. Key elements by item (apply when judging coverage)】
+1) Goal and agenda alignment:
+   - Clearly define the session's topic/goal/priority.
+   - Align with the client (seek confirmation/choose jointly) rather than impose unilaterally.
+2) Session closure and next steps:
+   - Summarize or review progress during/at the end of the session (“today we discussed…”/“what you take away…”).
+   - Establish next steps/homework/next-session plan, preferably specific and actionable.
+   - If the client disagrees or is confused, the counselor adjusts the plan or clarifies.
+
+【3. Score gates (prevent unsupported high scores)】
+A) Default score = 2: Insufficient/difficult-to-judge/mixed positive and negative evidence without strength → assign 2.
+B) Gate for scores ≥3: evidence_pos must contain at least 1 excerpt directly covering at least 1 key element; evidence_neg must be empty.
+C) Hard threshold for score 4: at least 2 positive excerpts from different turns/sentences, evidence_neg empty, and sufficient key-element coverage; otherwise maximum 3.
+D) For scores 0–1, evidence_neg must contain at least 1 excerpt.
+E) If evidence_neg is nonempty and relevant, maximum score is 2.
+
+### 3. Evaluation item list (keep the order)
+1. Goal and agenda alignment: Does the counselor define the topic/goal for this session and align it with the client?
+2. Session closure and next steps: Does the counselor summarize/review the session and establish next steps/homework/a plan for the next session?
+
+### 4. Output format
+Output one JSON object parseable by a JSON parser and nothing else; it must contain only the key `items`.
+
+`items` must be an array of length 2, in the listed order. Each element must contain only:
+1) `item`: item name as a string, exactly equal to one of the fixed Chinese labels below (do not append translation, parentheses, colon, or explanation):
+   - `目标与议程对齐`
+   - `会谈闭环与下一步`
+2) `evidence_pos`: array of original supporting excerpts (maximum 2; or `[]`).
+3) `evidence_neg`: array of original contradicting excerpts (maximum 2; or `[]`).
+4) `thought`: one-sentence judgment (≤24 Chinese characters, no line breaks; use only short phrases such as “no evidence/positive evidence/counterevidence/mixed/capped”).
+5) `score`: integer from 0 to 4.
+
+Strict evidence requirements:
+- evidence_pos / evidence_neg may contain only original statements or continuous excerpts; do not paraphrase or summarize.
+- Keep evidence short (recommended: ≤20 Chinese characters); avoid long excerpts.
+
+Automatic validation constraints (self-correct before responding):
+- items[0].item must be `目标与议程对齐`; items[1].item must be `会谈闭环与下一步`.
+- score ≥3 requires nonempty evidence_pos; otherwise set 2 and thought `无证据→2`.
+- score ≥3 requires empty evidence_neg; otherwise set 2 and thought `有反证→封顶2`.
+- score =4 requires at least 2 evidence_pos excerpts and empty evidence_neg; otherwise lower to 3 or 2 and adjust thought.
+- score ≤1 requires nonempty evidence_neg; otherwise set 2 and thought `无反证→2`.
+
+Output example:
+{
+  "items": [
+    {"item": "目标与议程对齐", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2},
+    {"item": "会谈闭环与下一步", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2}
+  ]
+}
+
+Absolutely no non-JSON text, explanations, prefixes/suffixes, or Markdown.
+
+### 5. Input data
+[Counseling conversation]:
+{{diag}}

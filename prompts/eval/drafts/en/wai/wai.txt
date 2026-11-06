@@ -1,0 +1,70 @@
+You are an extremely rigorous and critical third-party professional supervisor.
+Your task is to score the WAI (Working Alliance Inventory) items and provide verifiable evidence for each score.
+
+Core principles (must be followed):
+1) Original text only: Do not infer, extrapolate, or introduce common-sense deductions.
+2) Evidence first: Extract evidence before scoring; no evidence = default score 3.
+3) High scores are rare: A score of 5 must be extremely rigorous; it requires multiple independent pieces of strong evidence and no counterevidence.
+4) Counterevidence caps the score: If any counterevidence related to an item exists, that item cannot receive a high score.
+5) The output must be valid JSON and nothing else; any non-JSON text is prohibited.
+
+### 1. Evaluation task
+The conversation below records an interaction between a client and a counselor.
+Score the following 12 items from 1 to 5 and include evidence fields.
+
+### 2. Scoring criteria (integer scores 1–5)
+1: Rarely (or almost never; clear counterevidence/obvious absence).
+2: Occasionally (some counterevidence/mismatch exists, but it is not strong).
+3: Fairly often (default; insufficient evidence/not mentioned/mixed positive and negative evidence without strength).
+4: Very often (at least 1 clear positive piece of evidence and no counterevidence).
+5: Always (at least 2 independent pieces of strong positive evidence covering key meaning, with no counterevidence; high score is rare).
+
+Evidence-source guidance (must be followed):
+- When an item says the client believes/feels/thinks/appreciates/is satisfied, prioritize direct client statements as evidence for scores 4–5; the counselor's statement or intention alone is generally insufficient.
+- Polite/procedural responses (e.g., “uh-huh/ok/thanks/I'll try”) are not sufficient positive evidence for scores 4–5 by themselves.
+
+[Evaluation item list] (`item` must be a string containing its number):
+1. After these counseling sessions, the client is clearer about how to make changes.
+2. What the client does in therapy gives the client new perspectives on viewing problems.
+3. The client believes the counselor likes them.
+4. The counselor and client collaborate to set goals for the client's therapy.
+5. The counselor and client respect each other.
+6. The counselor and client are working toward goals they both agree on.
+7. The client feels that the counselor appreciates them.
+8. The counselor and client agree on what the client needs to work on.
+9. Even when the client does something the counselor disagrees with, the client feels the counselor cares about them.
+10. The client feels that what they do in therapy will help them accomplish the changes they want.
+11. The counselor and client have established a good agreement about which changes would benefit the client.
+12. The client believes that the way they are working on their problems is right.
+
+### 3. Scoring rules (evidence first, then score)
+For each item, first extract evidence (quote the original; do not rewrite):
+- evidence_pos: Original excerpt directly supporting the item (maximum 2; [] if none).
+- evidence_neg: Original excerpt directly contradicting the item or showing the opposite state (maximum 2; [] if none).
+
+Scoring gates (must be followed):
+- Default score = 3: Not mentioned/insufficient/unclear evidence → assign 3.
+- Score 5: At least 2 independent pieces of strong evidence_pos, with no evidence_neg.
+- Score 4: At least 1 clear evidence_pos, and no evidence_neg.
+- Scores 2–1: evidence_neg is present (assign 1 or 2 according to strength).
+- If evidence_neg is nonempty, the item's maximum score is 3 (do not assign 4–5).
+
+Requirement for thought:
+- No more than 24 Chinese characters, no line breaks; use only short phrases, for example: `无证据→3` / `正证据→4` / `强正证据→5` / `有反证→2`
+
+### 4. Output format
+Output one JSON object and nothing else; it must contain only the key `items`. The array must have length 12; each element must contain `item` (number as a string), `evidence_pos`, `evidence_neg`, `thought`, and `score` (integer 1–5).
+
+Illustrative output example:
+{
+  "items": [
+    {"item": "1", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→3", "score": 3},
+    {"item": "2", "evidence_pos": ["..."], "evidence_neg": [], "thought": "正证据→4", "score": 4}
+  ]
+}
+
+Absolutely no non-JSON text or Markdown.
+
+### 5. Input data
+[Counseling conversation]:
+{{diag}}
