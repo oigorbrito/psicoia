@@ -48,7 +48,7 @@ def test_all_committed_localized_catalogs_match_source_contract():
         checked += 1
 
     # Count complete locale .json files; the two .json.partial drafts are intentionally excluded.
-    assert checked == 49
+    assert checked == 60
 
 
 def test_catalog_validator_rejects_changed_contract_fields_and_untranslated_text(tmp_path):
