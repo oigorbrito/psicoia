@@ -1,0 +1,17 @@
+# Task input
+
+## Meta-skill library
+The library is a nested dictionary. Each entry is a Python dictionary with this structure:
+{
+    skill_id: {
+        "skill_id": "numeric string, for example \"1\"",
+        "skill_name": "skill name",
+        "skill_description": "meta-skill description"
+    }
+}
+
+Library contents:
+{{ skills_library }}
+
+## Session goals
+{{ session_goals }}

@@ -1,0 +1,9 @@
+## Existing client profile
+{% if client_info -%}
+{{ client_info }}
+{% else %}
+(No existing client profile.)
+{% endif %}
+
+## Complete counseling conversation from this session
+{{ current_session_dialogue }}

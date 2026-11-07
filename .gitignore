@@ -1,0 +1,17 @@
+/.pytest_cache/
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+dist/
+.venv/
+data.db
+
+# Local IDE state, credentials, and generated logs
+.vs/
+.env
+.env.*
+!.env.example
+!.env.template
+*.log
+nul

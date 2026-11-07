@@ -1,0 +1,90 @@
+## Current treatment stage
+{{ session_stage }}
+
+## Client background
+{% if client_info -%}
+{% set info = client_info.static_traits or {} -%}
+{% macro line(label, value) -%}
+- {{ label }}: {{ value | default('Unknown', true) }}
+{%- endmacro -%}
+### Basic information
+{{ line('Name', info.name) }}
+{{ line('Age', info.age) }}
+{{ line('Gender', info.gender) }}
+{{ line('Occupation', info.occupation) }}
+{{ line('Education', info.educational_background) }}
+{{ line('Marital status', info.marital_status) }}
+
+### Family and social relationships
+{{ line('Family situation', info.family_status) }}
+{{ line('Social situation', info.social_status) }}
+
+### Physical and mental health
+{{ line('Medical history', info.medical_history) }}
+
+### Presenting concern and counseling goals
+{{ line('Presenting concern', client_info.main_problem) }}
+{{ line('Topic', client_info.topic) }}
+{{ line('Core expectations', client_info.core_demands) }}
+
+### Developmental experiences
+{% if client_info.growth_experiences -%}
+{% for exp in client_info.growth_experiences -%}
+- {{ loop.index }}. {{ exp }}
+{% endfor -%}
+{% else -%}
+- Unknown
+{% endif %}
+### Target behaviors
+{%- if client_info.target_behavior -%}
+{%- for s in client_info.target_behavior -%}
+  {% if s.behavior is defined %}
+- Behavior {{ loop.index }}:
+  - Name: {{ s.behavior | default('Unknown', true) }}
+  - Antecedent(s):
+    {%- if s.antecedent %}
+      {%- for a in s.antecedent if a %}
+    - {{ a }}
+      {%- endfor %}
+    {%- else %}
+    - None recorded
+    {% endif %}
+  - Core reason: {{ s.core_reason | default('Unknown', true) }}
+  - Function: {{ s.function | default('Unknown', true) }}
+  - Consequence: {{ s.consequence | default('Unknown', true) }}
+  {% else -%}
+- Behavior {{ loop.index }}: {{ s }}
+  {% endif -%}
+{% endfor -%}
+{% else -%}
+- Unknown
+{% endif -%}
+{% else %}
+(No client profile is available.)
+{% endif %}
+
+## Focus for this session
+{% for focus in session_focus %}- {{ focus }}
+{% endfor %}
+
+## Previous sessions
+{%- if history %}
+{%- for session in history %}
+### Session {{ loop.index }}
+- Stage: {{ session.session_stage }}
+- Summary: {{ session.session_summary_abstract }}
+{%- if session.client_state_analysis %}
+- Client state:
+  - Affect: {{ session.client_state_analysis.affective_state }}
+  - Target behavior: {{ session.client_state_analysis.target_behavior }}
+  - Behavioral patterns: {{ session.client_state_analysis.behavioral_patterns }}
+  - Therapeutic alliance: {{ session.client_state_analysis.therapeutic_alliance }}
+  - Unresolved issues or tensions: {{ session.client_state_analysis.unresolved_points_or_tensions }}
+{%- endif %}
+{%- endfor %}
+{%- else %}
+(No previous session history.)
+{%- endif %}
+
+## Complete counseling conversation from this session
+{{ current_session_dialogue }}

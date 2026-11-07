@@ -1,0 +1,116 @@
+## Current treatment stage
+{{ session_stage }}
+
+## Client background
+{% if client_info -%}
+{% set info = client_info.static_traits or {} -%}
+{% macro line(label, value) -%}
+- {{ label }}: {{ value | default('Unknown', true) }}
+{%- endmacro -%}
+### Basic information
+{{ line('Name', info.name) }}
+{{ line('Age', info.age) }}
+{{ line('Gender', info.gender) }}
+{{ line('Occupation', info.occupation) }}
+{{ line('Education', info.educational_background) }}
+{{ line('Marital status', info.marital_status) }}
+
+### Family and social relationships
+{{ line('Family situation', info.family_status) }}
+{{ line('Social situation', info.social_status) }}
+
+### Physical and mental health
+{{ line('Medical history', info.medical_history) }}
+
+### Presenting concern and counseling goals
+{{ line('Presenting concern', client_info.main_problem) }}
+{{ line('Topic', client_info.topic) }}
+{{ line('Core expectations', client_info.core_demands) }}
+
+### Developmental experiences
+{% if client_info.growth_experiences -%}
+{% for exp in client_info.growth_experiences -%}
+- {{ loop.index }}. {{ exp }}
+{% endfor -%}
+{% else -%}
+- Unknown
+{% endif %}
+### Existential concerns
+{%- if client_info.existentialism_topic -%}
+{%- for s in client_info.existentialism_topic -%}
+  {% if s.theme is defined %}
+- Concern {{ loop.index }}:
+  - Theme: {{ s.theme | default('Unknown', true) }}
+  - Related experiences:
+    {%- if s.manifestations %}
+      {%- for a in s.manifestations if a %}
+    - {{ a }}
+      {%- endfor %}
+    {%- else %}
+    - None recorded
+    {% endif %}
+  - Outcomes:
+    {%- if s.outcomes %}
+      {%- for a in s.outcomes if a %}
+    - {{ a }}
+      {%- endfor %}
+    {%- else %}
+    - None recorded
+    {% endif %}
+  {% else -%}
+- Concern {{ loop.index }}: {{ s }}
+  {% endif -%}
+{% endfor -%}
+{% else -%}
+- None recorded
+{% endif %}
+### Contact patterns
+{%- if client_info.contact_model -%}
+{%- for s in client_info.contact_model -%}
+  {% if s.mode is defined %}
+- Pattern {{ loop.index }}: {{ s.mode | default('Unknown', true) }}
+  - Definition: {{ s.definition | default('Unknown', true) }}
+  - Examples:
+    {%- if s.manifestations %}
+      {%- for a in s.manifestations if a %}
+    - {{ a }}
+      {%- endfor %}
+    {%- else %}
+    - None recorded
+    {% endif %}
+  {% else -%}
+- Pattern {{ loop.index }}: {{ s }}
+  {% endif -%}
+{% endfor -%}
+{% else -%}
+- None recorded
+{% endif -%}
+{% else %}
+(No client profile is available.)
+{% endif %}
+
+## Focus for this session
+{% for focus in session_focus %}- {{ focus }}
+{% endfor %}
+
+## Previous sessions
+{%- if history %}
+{%- for session in history %}
+### Session {{ loop.index }}
+- Stage: {{ session.session_stage }}
+- Summary: {{ session.session_summary_abstract }}
+{%- if session.client_state_analysis %}
+- Client state:
+  - Affect: {{ session.client_state_analysis.affective_state }}
+  - Existential concerns: {{ session.client_state_analysis.existentialism_topic }}
+  - Behavioral patterns: {{ session.client_state_analysis.behavioral_patterns }}
+  - Therapeutic alliance: {{ session.client_state_analysis.therapeutic_alliance }}
+  - Unresolved issues or tensions: {{ session.client_state_analysis.unresolved_points_or_tensions }}
+{%- endif %}
+{%- endfor %}
+{%- else %}
+(No previous session history.)
+{%- endif %}
+
+## Complete counseling conversation from this session
+{{ current_session_dialogue }}

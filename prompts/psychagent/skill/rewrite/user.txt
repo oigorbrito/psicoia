@@ -1,0 +1,15 @@
+# Task input
+
+Please process the following information:
+
+## Treatment structure
+{{Treatment_Structure}}
+
+## Session goals
+{{Session_Goals}}
+
+## Dialogue history
+{{Dialogue_History}}
+
+## Client's latest statement
+{{Current_Client_Query}}

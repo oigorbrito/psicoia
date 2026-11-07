@@ -1,0 +1,3 @@
+-r src/web/requirements.txt
+aiolimiter>=1.1.0
+tenacity>=8.2.0

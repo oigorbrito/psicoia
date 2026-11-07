@@ -1,0 +1,84 @@
+from typing import Any, Dict
+import re
+
+
+from ...core.base import EvaluationMethod
+from ...utils import load_prompt
+from jinja2 import Template
+import json
+
+from typing import List
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator  # Ensure ConfigDict is imported.
+
+class Item(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    item: str
+    score: int = Field(ge=0, le=3)
+    evidence_pos: List[str] = Field(max_length=2)
+    evidence_neg: List[str] = Field(max_length=2)
+    thought: str = Field(max_length=24, pattern=r"^[^\n\r]{0,24}$")
+
+    @field_validator("item")
+    @classmethod
+    def _validate_item(cls, v: str) -> str:
+        s = str(v).strip()
+        if not s.isdigit():
+            raise ValueError("item must be a digit string")
+        n = int(s)
+        if not (1 <= n <= 9):
+            raise ValueError("item must be between 1 and 9")
+        return s
+
+
+class Items(BaseModel):  # Wrap the items in an object.
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    items: List[Item] = Field(min_length=9, max_length=9)
+
+    @model_validator(mode="after")
+    def _validate_order(self) -> "Items":
+        expected = [str(i) for i in range(1, 10)]
+        actual = [it.item for it in self.items]
+        if actual != expected:
+            raise ValueError("items must be in the exact required order: '1'..'9'")
+        return self
+
+class PHQ_9(EvaluationMethod):
+
+    async def evaluate(self, gpt_api, dialogue: Any, profile: dict = None) -> dict[str, float]:
+        """Evaluate dialogue quality."""
+        scores: list[Item] = []
+
+        prompt = load_prompt("PHQ_9", "PHQ_9", "cn")
+        prompt = Template(prompt).render(intake_form=profile, diag=dialogue)
+        messages = [{"role": "user", "content": prompt}]
+
+        last_err: Exception | None = None
+        for attempt in range(3):
+            try:
+                criteria_output = await self.chat_api(gpt_api, messages=messages)
+                validated = Items.model_validate(json.loads(criteria_output))
+                scores.extend(validated.items)
+                break
+            except Exception as e:  # noqa: BLE001
+                last_err = e
+                if attempt >= 2:
+                    raise
+                messages = messages + [
+                    {
+                        "role": "user",
+                        "content": "The previous output failed format validation. Return only one JSON object in the required format, containing only the key `items`; `items` must contain exactly 9 entries. Each entry must contain `item`, `evidence_pos`, `evidence_neg`, `thought`, and `score`.",
+                    }
+                ]
+        else:  # pragma: no cover
+            raise RuntimeError(f"Failed to get valid PHQ_9 output: {last_err}")
+
+        mean_score = 0.0
+        for item in scores:
+            mean_score += float(item.score) * 10.0 / 3.0  # 0-3 -> 0-10
+        mean_score /= len(scores)
+        return {"client": mean_score}
+    
+    def get_name(self) -> str:
+        return "PHQ_9"

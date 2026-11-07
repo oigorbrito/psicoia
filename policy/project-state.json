@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "product_stage": "research-code",
+  "osps_baseline_version": "2026.08.28",
+  "osps_target_level": 1,
+  "project_kind": "code",
+  "maintainers_count": null,
+  "consistent_users": "unknown",
+  "release": {
+    "made": null,
+    "version": null,
+    "evidence": "Não verificado externamente; a árvore Git local não contém tags observadas."
+  },
+  "production_deployed": null,
+  "notes": "Estado conservador: fatos externos e contagens de mantenedores/usuários não foram verificados. O nível-alvo é uma referência local, não uma declaração de conformidade.",
+  "enforce_local_gaps": false
+}
