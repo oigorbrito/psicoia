@@ -1,0 +1,133 @@
+{
+  "1": {
+    "skill_id": "1",
+    "skill_name": "Avaliação por entrevista",
+    "skill_description": "Na ótica pós-moderna, a avaliação por entrevista centra-se na conversa e na linguagem, valorizando relações colaborativas e de igualdade, respeitando o cliente como especialista em si mesmo, através da exploração narrativa e orientada à resolução para esclarecer problemas e objetivos.",
+    "parent_ids": [
+      "1"
+    ],
+    "sect": "pmt"
+  },
+  "2": {
+    "skill_id": "2",
+    "skill_name": "Terapia Narrativa",
+    "skill_description": "A terapia narrativa incentiva o cliente a contar sua história de vida com suas próprias palavras, desconstruir narrativas centradas no problema, externalizar o problema e reescrever histórias mais significativas, enfatizando o papel da construção linguística e do contexto cultural.",
+    "parent_ids": [
+      "1",
+      "2"
+    ],
+    "sect": "pmt"
+  },
+  "3": {
+    "skill_id": "3",
+    "skill_name": "Narrativa",
+    "skill_description": "A narrativa é o ponto de partida da terapia narrativa; o terapeuta oferece um ambiente seguro e sem interrupções, convidando o cliente a detalhar eventos e seus impactos, com base em materiais memorativos para desenvolver desconstrução e reescrita subsequentes.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3"
+    ],
+    "sect": "pmt"
+  },
+  "4": {
+    "skill_id": "4",
+    "skill_name": "Criar uma boa atmosfera na sessão narrativa",
+    "skill_description": "Criar um ambiente seguro, respeitoso e sem julgamentos, incentivando o cliente a contar suas histórias dominantes fragmentadas e perdidas; o terapeuta estabiliza a relação com atenção positiva e escuta, aumentando a motivação para exploração e mudança.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "sect": "pmt"
+  },
+  "5": {
+    "skill_id": "5",
+    "skill_name": "Atenção ativa na entrevista narrativa",
+    "skill_description": "Na entrevista narrativa, o conselheiro presta atenção ativa ao cliente com uma atitude de apreciação e respeito, captando aguçadamente seus recursos e exceções, ampliando os pontos fortes, reduzindo as etiquetas negativas, aumentando a autoeficácia e a confiança na mudança.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "sect": "pmt"
+  },
+  "6": {
+    "skill_id": "6",
+    "skill_name": "Incentivar o cliente na entrevista narrativa",
+    "skill_description": "Aumentar a motivação do cliente para continuar narrando e reescrevendo sua história através de incentivos e validações oportunos; pode combinar-se com rituais e testemunhos para consolidar as mudanças positivas, fazendo com que a nova narrativa se implante mais firmemente na vida diária.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "sect": "pmt"
+  },
+  "7": {
+    "skill_id": "7",
+    "skill_name": "Nomear o problema",
+    "skill_description": "Convidar o cliente a nomear sua angústia (uma palavra ou frase), tornando o problema tangível, discutível e favorável à externalização; uma nomeação precisa aumenta o senso de controle, ajudando a focar nos impactos e caminhos de mudança, iniciando o processo de reescrita.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7"
+    ],
+    "sect": "pmt"
+  },
+  "8": {
+    "skill_id": "8",
+    "skill_name": "Externalizar o problema",
+    "skill_description": "Dar concretude ao princípio de 'a pessoa não é o problema, o problema é o problema', separando o problema da pessoa; explorar suas origens e impactos, reduzindo a vergonha e os conflitos, buscando cooperação e novas possibilidades, promovendo a formação de narrativas alternativas.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8"
+    ],
+    "sect": "pmt"
+  },
+  "9": {
+    "skill_id": "9",
+    "skill_name": "Personificação do Problema",
+    "skill_description": "Dar forma humana ao problema, investigar sua 'intenção', 'estratégia' e como manipula a vida; reforçar a perspectiva do cliente em relação ao problema, combinando com externalização e exploração de exceções, para aumentar a capacidade de contramedidas e escolha.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9"
+    ],
+    "sect": "pmt"
+  },
+  "10": {
+    "skill_id": "10",
+    "skill_name": "Terapia Breve Focada na Solução",
+    "skill_description": "A Terapia Breve Focada na Solução é orientada à resolução, enfatizando a cooperação e o efeito de bola de neve de pequenas mudanças; através da construção de objetivos, perguntas de exceção e milagre, avaliação e feedback positivo, promover rapidamente mudanças viáveis.",
+    "parent_ids": [
+      "1",
+      "10"
+    ],
+    "sect": "pmt"
+  },
+  "11": {
+    "skill_id": "11",
+    "skill_name": "Mudança Pré-Terapêutica (Interrogação Pré-Consultoria)",
+    "skill_description": "A Mudança Pré-Terapêutica enfatiza as mudanças positivas que já ocorreram antes da primeira sessão; através de perguntas sobre 'o que mudou', evocar e ampliar recursos existentes, aumentar a esperança e autonomia, guiando a continuação de práticas eficazes.",
+    "parent_ids": [
+      "1",
+      "10",
+      "11"
+    ],
+    "sect": "pmt"
+  },
+  "12": {
+    "skill_id": "12",
+    "skill_name": "Tarefa Pós-Sessão Inicial (FFST)",
+    "skill_description": "A Tarefa Pós-Sessão Inicial exige que o cliente observe e registre eventos 'vales para ocorrer novamente' entre duas sessões; com feedback positivo, consolidar a mudança, aumentar otimismo e ação, impulsionando a consecução contínua dos objetivos.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12"
+    ],
+    "sect": "pmt"
+  }
+}

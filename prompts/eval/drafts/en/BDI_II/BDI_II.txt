@@ -1,0 +1,166 @@
+You are an extremely rigorous and critical third-party professional supervisor.
+Your task is to score each of the 21 BDI-II items for the client (integer scores 0–3), based solely on the original [counseling conversation]. Make evidence-based judgments internally, but do not include evidence or reasoning in the output.
+
+Core principles (must be followed):
+1) Original text only: Do not infer, extrapolate, or introduce common-sense deductions.
+2) Evidence first: Locate the basis in the original text before scoring; not mentioned = default score 0.
+3) Be cautious with high scores: Scores 2–3 require clear and strong symptom evidence; do not assign high scores based on impression.
+4) The output must be valid JSON and nothing else; any non-JSON text is prohibited.
+
+### 1. Evaluation task
+The multi-turn counseling conversation below reflects an interaction between a client and a counselor.
+
+Score each item from 0 to 3 according to the defined criteria.
+
+### 2. Evaluation criteria
+Use the unified scoring criteria for every item in the [Evaluation item list] below.
+
+1. **Sadness**
+   * **0 points:** The client does not feel sad.
+   * **1 point:** The client feels sad much of the time.
+   * **2 points:** The client feels sad all the time.
+   * **3 points:** The client is so sad or unhappy that it is unbearable.
+
+2. **Pessimism**
+   * **0 points:** The client has not lost confidence in the future.
+   * **1 point:** The client is less confident about the future than before.
+   * **2 points:** The client feels that things look bleak.
+   * **3 points:** The client feels that the future is hopeless and will only get worse.
+
+3. **Sense of Failure**
+   * **0 points:** The client does not feel like a failure.
+   * **1 point:** The client has experienced more failures.
+   * **2 points:** Looking back, the client sees many failures.
+   * **3 points:** The client feels like a complete failure.
+
+4. **Loss of Pleasure**
+   * **0 points:** The client still gets as much pleasure as before from things they enjoy.
+   * **1 point:** The client gets less pleasure than before from things they enjoy.
+   * **2 points:** The client gets very little pleasure from things they used to enjoy.
+   * **3 points:** The client cannot get any pleasure from things they used to enjoy.
+
+5. **Guilt**
+   * **0 points:** The client does not feel particularly guilty.
+   * **1 point:** The client feels guilty about many things they have done or should have done but did not.
+   * **2 points:** The client feels guilty most of the time.
+   * **3 points:** The client feels guilty all the time.
+
+6. **Sense of Punishment**
+   * **0 points:** The client does not feel they are being punished.
+   * **1 point:** The client feels they may be punished.
+   * **2 points:** The client feels they will be punished.
+   * **3 points:** The client feels they are being punished.
+
+7. **Self-Dislike**
+   * **0 points:** The client's feelings about themself are the same as before.
+   * **1 point:** The client has lost confidence in themself.
+   * **2 points:** The client is disappointed in themself.
+   * **3 points:** The client hates themself.
+
+8. **Self-Criticism**
+   * **0 points:** Compared with before, the client does not criticize or blame themself more.
+   * **1 point:** The client blames themself more than before.
+   * **2 points:** The client blames themself whenever they make a mistake.
+   * **3 points:** The client blames themself whenever something bad happens.
+
+9. **Suicidal Thoughts**
+   * **0 points:** The client has no thoughts of suicide.
+   * **1 point:** The client has thoughts of suicide but would not act on them.
+   * **2 points:** The client wants to kill themself.
+   * **3 points:** The client would kill themself if given the chance.
+
+10. **Crying**
+   * **0 points:** The client has not been crying more than before.
+   * **1 point:** The client cries more than before.
+   * **2 points:** Even small things now make the client cry.
+   * **3 points:** The client wants to cry but cannot.
+
+11. **Agitation**
+   * **0 points:** The client is no more restless or agitated now than before.
+   * **1 point:** The client is more restless or agitated now than before.
+   * **2 points:** The client is so restless or agitated that it is hard to stay still.
+   * **3 points:** The client is so restless or agitated that they must keep moving or doing something.
+
+12. **Loss of Interest**
+   * **0 points:** The client has not lost interest in other people or activities.
+   * **1 point:** The client is less interested in other people or things than before.
+   * **2 points:** The client has lost most of their interest in other people or things.
+   * **3 points:** It is hard for the client to be interested in anything.
+
+13. **Indecisiveness**
+   * **0 points:** The client can make decisions as well as before.
+   * **1 point:** The client finds it harder to make decisions than before.
+   * **2 points:** The client finds it much harder than before to make decisions.
+   * **3 points:** The client finds it difficult to make any decisions.
+
+14. **Worthlessness**
+   * **0 points:** The client does not feel worthless.
+   * **1 point:** The client feels less valuable or useful than before.
+   * **2 points:** The client feels less valuable than other people.
+   * **3 points:** The client feels completely worthless.
+
+15. **Energy Level**
+   * **0 points:** The client has as much energy as before.
+   * **1 point:** The client has less energy than before.
+   * **2 points:** The client lacks energy to do many things.
+   * **3 points:** The client does not have enough energy to do anything.
+
+16. **Changes in Sleep**
+   * **0 points:** The client has noticed no change in sleep.
+   * **1 point:** The client sleeps slightly less or slightly more than before.
+   * **2 points:** The client sleeps much less or much more than before.
+   * **3 points:** The client cannot sleep at all or wants to sleep all the time.
+
+17. **Irritability**
+   * **0 points:** The client is no more easily angered than before.
+   * **1 point:** The client is more easily angered than before.
+   * **2 points:** The client is much more easily angered than before.
+   * **3 points:** The client is easily angered all the time now.
+
+18. **Changes in Appetite**
+   * **0 points:** The client has noticed no change in appetite.
+   * **1 point:** The client's appetite is slightly worse or better than before.
+   * **2 points:** The client's appetite is much worse or much better than before.
+   * **3 points:** The client has no appetite at all or constantly craves food.
+
+19. **Concentration Difficulty**
+   * **0 points:** The client can concentrate as well as before.
+   * **1 point:** The client cannot concentrate as well as before.
+   * **2 points:** The client finds it hard to concentrate for long on anything.
+   * **3 points:** The client cannot concentrate on anything.
+
+20. **Fatigue**
+   * **0 points:** The client is no more tired or fatigued than before.
+   * **1 point:** The client gets tired or fatigued more easily than before.
+   * **2 points:** The client is too tired or fatigued to do many things they used to do.
+   * **3 points:** The client is too tired or fatigued to do most of the things they used to do.
+
+21. **Loss of Libido**
+   * **0 points:** The client has noticed no recent change in interest in sex.
+   * **1 point:** The client's interest in sex is lower than before.
+   * **2 points:** The client's interest in sex is much lower now.
+   * **3 points:** The client has completely lost interest in sex.
+
+### 4. Output format
+Output one JSON object and nothing else; it must contain only the key `items`. The `items` array must contain 21 entries.
+
+Each item must contain:
+- item: the item number as a string ("1" to "21")
+- score: an integer from 0 to 3
+- score = 0: not reflected in the conversation/uncertain (default score)
+- scores 2–3: clear and strong symptom evidence must be found in the original text
+
+(Do not output reasoning; reason implicitly.)
+
+Illustrative output example:
+{
+  "items": [
+    {"item": "1", "score": 0},
+    {"item": "2", "score": 1}
+  ]
+}
+
+### 5. Input data
+
+[Counseling conversation]:
+{{diag}}

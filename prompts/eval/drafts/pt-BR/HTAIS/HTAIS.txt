@@ -1,0 +1,88 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é pontuar o terapeuta nos itens da HTAIS, com notas inteiras de 1 a 5, com base exclusivamente no texto original. Faça julgamentos baseados em evidências internamente, mas não inclua evidências nem raciocínio na saída.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: Não infira, extrapole nem introduza deduções baseadas no senso comum.
+2) Evidências primeiro: Localize internamente as evidências antes de pontuar; não use uma “impressão geral”.
+3) Notas altas são raras: A nota 5 deve ser extremamente rigorosa; exige várias evidências fortes independentes e nenhuma contraevidência.
+4) Contraevidência limita a nota: Se houver contraevidência relacionada ao item, ele não pode receber nota alta.
+5) A saída deve ser estritamente um JSON válido; qualquer texto que não seja JSON é proibido.
+
+### 1. Tarefa de avaliação
+A conversa abaixo registra a interação entre uma pessoa atendida (client) e um terapeuta (counselor).
+Avalie o desempenho do terapeuta nos 26 itens abaixo, atribuindo uma nota de 1 a 5 a cada item.
+
+### 2. Critérios de pontuação (inteiros de 1 a 5)
+1: Raramente/nunca (não se observa na conversa o comportamento ou atitude correspondente ao item).
+2: Ocasionalmente/fraco (há manifestação leve, mas é instável ou de efeito mediano; ou existe leve contraevidência).
+3: Com bastante frequência (nota padrão; evidência insuficiente/indefinida/desempenho comum).
+4: Muito frequentemente (pelo menos 1 evidência positiva clara e nenhuma contraevidência).
+5: Sempre/excepcional (pelo menos 2 evidências positivas fortes e independentes, cobrindo os aspectos centrais do item, sem contraevidência; nota alta rara).
+
+Orientação por tipo de item (evita notas altas para comportamentos que não ocorreram; deve ser seguida):
+- Tipo A [relação/atitude]: itens 1–10 e 26. Se as evidências forem insuficientes, use 3 (não atribua 4–5).
+- Tipo B [intervenção/comportamento específico]: itens 11–25. Se o comportamento específico não aparecer na conversa, atribua obrigatoriamente 1.
+
+Regras de evidência (devem ser seguidas):
+- Localize internamente trechos originais que sustentem ou contradigam cada item.
+- Respostas educadas/procedimentais (por exemplo, “uh-huh/ok/obrigado/vou tentar”) não bastam, por si sós, para notas 4–5.
+
+[Lista de itens de avaliação] (item deve ser uma string contendo o número):
+1. O terapeuta demonstra paciência.
+2. O terapeuta demonstra cordialidade e acolhimento.
+3. O terapeuta não força a pessoa atendida a mudar.
+4. O terapeuta aceita as emoções e ideias da pessoa atendida.
+5. O terapeuta não julga a pessoa atendida.
+6. O terapeuta aceita e respeita os valores e o estilo de vida da pessoa atendida.
+7. O terapeuta conversa com a pessoa atendida de maneira igualitária e respeitosa.
+8. O terapeuta observa e compreende cuidadosamente as necessidades e os sentimentos da pessoa atendida.
+9. O terapeuta respeita a maneira e o ritmo da pessoa atendida para lidar com problemas e regular emoções.
+10. O terapeuta oferece tempo e oportunidade suficientes para a pessoa atendida se expressar.
+11. O terapeuta compartilha algumas habilidades de comunicação interpessoal com a pessoa atendida.
+12. O terapeuta ajuda a pessoa atendida a representar o problema por meio de métodos visuais (por exemplo, desenho).
+13. O terapeuta ajuda a pessoa atendida e seus familiares a aprender a respeitar o espaço pessoal de cada um.
+14. O terapeuta pergunta à pessoa atendida e aos familiares o que pensam sobre o comportamento uns dos outros.
+15. O terapeuta propõe uma tarefa de casa interessante à pessoa atendida.
+16. O terapeuta pergunta se a pessoa atendida tem pensamentos ou comportamentos de automutilação e conversa diretamente sobre isso.
+17. O terapeuta conta histórias de outras pessoas em situações semelhantes às da pessoa atendida.
+18. O terapeuta conversa com a pessoa atendida sobre como lidar com conflitos com colegas de escola, de trabalho ou amigos.
+19. O terapeuta organiza informações ou situações que antes estavam vagas ou confusas.
+20. O terapeuta resume oportunamente o conteúdo da conversa e orienta a pessoa atendida a falar de modo mais profundo e específico.
+21. O terapeuta ajuda a pessoa atendida a encontrar outras perspectivas para compreender e lidar com os problemas.
+22. O terapeuta ajuda a pessoa atendida a encontrar perspectivas mais positivas sobre outras pessoas e os problemas.
+23. O terapeuta ajuda a pessoa atendida a perceber pensamentos e emoções que antes não percebia.
+24. O terapeuta ajuda a pessoa atendida a reconhecer seus pontos fortes, qualidades e capacidades.
+25. O terapeuta incentiva a pessoa atendida e seus familiares a oferecerem apoio necessário uns aos outros nas emoções e na vida cotidiana.
+26. O terapeuta percebe e reconhece as capacidades e os pontos fortes da pessoa atendida.
+
+### 3. Regras de pontuação (evidências primeiro, depois a nota)
+Para cada item, localize internamente trechos originais que o sustentem (não os reescreva):
+- Evidência positiva: trecho original que apoia diretamente o item (recomendam-se até 2).
+- Contraevidência: trecho original que contradiz diretamente o item ou demonstra o estado oposto (recomendam-se até 2).
+
+Critérios obrigatórios de pontuação:
+- Nota 5: pelo menos 2 evidências positivas fortes e independentes, sem contraevidência (nota alta rara).
+- Nota 4: pelo menos 1 evidência positiva clara e nenhuma contraevidência.
+- Notas 2–1: há contraevidência (atribua 1 ou 2 conforme a intensidade).
+- Se houver contraevidência, a nota máxima do item é 3 (não atribua 4–5).
+- Para itens do Tipo B sem o comportamento específico na conversa, atribua obrigatoriamente 1.
+- Para itens do Tipo A sem evidência positiva nem contraevidência, use a nota padrão 3.
+
+(Não exiba o raciocínio; raciocine implicitamente.)
+
+### 4. Formato de saída
+Produza um objeto JSON e nada mais; ele deve conter somente a chave `items`. O array deve ter comprimento 26; cada elemento deve conter `item` (número como string) e `score` (inteiro de 1 a 5).
+
+Exemplo ilustrativo:
+{
+  "items": [
+    {"item": "1", "score": 3},
+    {"item": "15", "score": 1}
+  ]
+}
+
+É absolutamente proibido produzir qualquer texto que não seja JSON ou Markdown.
+
+### 5. Dados de entrada
+[Conversa de aconselhamento]:
+{{diag}}

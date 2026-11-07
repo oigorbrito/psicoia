@@ -1,0 +1,644 @@
+{
+  "285": {
+    "skill_id": "285",
+    "skill_name": "Sessão de avaliação",
+    "skill_description": "Tem como objetivo, através da observação do comportamento e análise funcional, definir claramente o 'comportamento-alvo' e suas variáveis de controle (antecedentes e consequências); com base nisso, quantificar a linha basal do comportamento, estabelecer objetivos terapêuticos mensuráveis e elaborar um plano de correção comportamental sistemático.",
+    "parent_ids": [
+      "285"
+    ],
+    "sect": "bt"
+  },
+  "1": {
+    "skill_id": "1",
+    "skill_name": "Análise funcional do comportamento",
+    "skill_description": "Uma análise sistemática implementada antes do tratamento e na fase inicial, focando nos fatores internos e externos que influenciam e controlam o comportamento problemático do paciente, cobrindo sete aspectos, para fornecer base para definir o comportamento-alvo, planejar intervenções e avaliar a eficácia.",
+    "parent_ids": [
+      "285",
+      "1"
+    ],
+    "sect": "bt"
+  },
+  "2": {
+    "skill_id": "2",
+    "skill_name": "Conteúdo chave da análise funcional do comportamento",
+    "skill_description": "Inclui análise preliminar, análise de contexto, motivação, desenvolvimento, autocontrole, atitudes de outras pessoas e ambiente físico, formando um quadro de avaliação que garante uma compreensão abrangente das condições determinantes, frequência, intensidade e fatores de manutenção do comportamento problemático.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2"
+    ],
+    "sect": "bt"
+  },
+  "3": {
+    "skill_id": "3",
+    "skill_name": "Definição das condições específicas do comportamento problemático",
+    "skill_description": "Foca na identificação das condições antecedentes específicas e gatilhos que levam ao comportamento problemático, esclarecendo quando, onde, sob quem e em quais circunstâncias ele ocorre, fornecendo pontos de entrada operacionais para o controle do estímulo e treinamento oposto.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "3"
+    ],
+    "sect": "bt"
+  },
+  "4": {
+    "skill_id": "4",
+    "skill_name": "Avaliação da frequência e intensidade do comportamento problemático",
+    "skill_description": "Registra sistematicamente a frequência, intensidade, duração e generalização do comportamento, analisando a probabilidade de ocorrência em diferentes contextos e fatores influenciadores, fornecendo base para avaliar o efeito terapêutico e escolher estratégias de exposição ou reforço.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "4"
+    ],
+    "sect": "bt"
+  },
+  "5": {
+    "skill_id": "5",
+    "skill_name": "Análise da motivação e reforço do comportamento problemático",
+    "skill_description": "Avalia a motivação e os reforçadores que mantêm o comportamento problemático, identificando as consequências funcionais de evitação e busca, esclarecendo reforçadores-chave e cadeias de evitação, fornecendo base para o desenho de estratégias de reforço, extinção ou resposta oposta.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "5"
+    ],
+    "sect": "bt"
+  },
+  "6": {
+    "skill_id": "6",
+    "skill_name": "Organização da história do desenvolvimento do comportamento problemático",
+    "skill_description": "Revisa a formação e evolução do comportamento problemático, examinando os processos de condicionamento, generalização e manutenção, identificando pontos-chave de desenvolvimento e mudanças ambientais para fornecer informações sobre o estabelecimento de objetivos em fases e prevenção de recaídas.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "6"
+    ],
+    "sect": "bt"
+  },
+  "7": {
+    "skill_id": "7",
+    "skill_name": "Avaliação da capacidade de autocontrole do paciente",
+    "skill_description": "Avalia a capacidade de autovigilância e auto-reforço do paciente, organiza tentativas anteriores de autocontrole e seus resultados, define estratégias viáveis de gerenciamento de si mesmo e necessidades de suporte, melhorando a adesão ao tratamento.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "7"
+    ],
+    "sect": "bt"
+  },
+  "8": {
+    "skill_id": "8",
+    "skill_name": "Avaliar a atitude de figuras importantes em relação ao comportamento",
+    "skill_description": "Investigar a atitude e reação de figuras importantes em relação ao comportamento do cliente, identificar o papel reforçador ou punitivo da aprovação, crítica ou negligência, e ajustar os fatores mantenedores no ambiente familiar e social.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "8"
+    ],
+    "sect": "bt"
+  },
+  "9": {
+    "skill_id": "9",
+    "skill_name": "Avaliar a influência do ambiente físico no comportamento",
+    "skill_description": "Identificar detalhes-chave no ambiente físico que influenciam o comportamento, como layout do local, acessibilidade de estímulos e pistas indicativas, otimizando o ambiente para reduzir gatilhos e aumentar as pistas naturais para comportamentos esperados.",
+    "parent_ids": [
+      "285",
+      "1",
+      "2",
+      "9"
+    ],
+    "sect": "bt"
+  },
+  "10": {
+    "skill_id": "10",
+    "skill_name": "Desensibilização sistemática",
+    "skill_description": "Com base no princípio da inibição recíproca, através de treinamento de relaxamento e exposição hierárquica, reapareia o estímulo de medo com a reação de relaxamento, eliminando progressivamente a ativação ansiosa, sendo uma técnica padronizada para o tratamento de medos e ansiedades.",
+    "parent_ids": [
+      "285",
+      "10"
+    ],
+    "sect": "bt"
+  },
+  "11": {
+    "skill_id": "11",
+    "skill_name": "Avaliar o nível subjetivo de ansiedade",
+    "skill_description": "Auxiliar o cliente a usar uma escala de nível subjetivo de ansiedade de 0 a 100 para pontuar eventos típicos de medo, alcançando uma compreensão comum da intensidade da ansiedade e fornecendo uma base quantitativa para a desensibilização hierárquica subsequente.",
+    "parent_ids": [
+      "285",
+      "10",
+      "11"
+    ],
+    "sect": "bt"
+  },
+  "12": {
+    "skill_id": "12",
+    "skill_name": "Projetar uma lista de níveis de ansiedade",
+    "skill_description": "Organizar as situações de medo do mais baixo ao mais alto com base nas pontuações subjetivas, dividindo-se em uma sequência de níveis uniformes e operáveis; a amplitude dos níveis varia conforme o indivíduo, sendo um pré-requisito e roteiro para a implementação da desensibilização sistemática.",
+    "parent_ids": [
+      "285",
+      "10",
+      "12"
+    ],
+    "sect": "bt"
+  },
+  "13": {
+    "skill_id": "13",
+    "skill_name": "Terapia de inundação",
+    "skill_description": "Expor o cliente ao estímulo de medo mais forte ou inescapável ou a uma situação imaginada, mantendo-o até que o pico emocional diminua naturalmente, utilizando a habituação e a extinção para quebrar o ciclo vicioso de evitação e reforço negativo.",
+    "parent_ids": [
+      "285",
+      "13"
+    ],
+    "sect": "bt"
+  },
+  "14": {
+    "skill_id": "14",
+    "skill_name": "Realizar exame clínico pré-terapia",
+    "skill_description": "Realizar exames físicos necessários e avaliação de risco antes do tratamento, como eletrocardiograma ou EEG, excluindo contraindicações graves de doenças cardiovasculares, centrais e respiratórias para garantir a segurança da terapia de inundação.",
+    "parent_ids": [
+      "285",
+      "13",
+      "14"
+    ],
+    "sect": "bt"
+  },
+  "15": {
+    "skill_id": "15",
+    "skill_name": "Assinar um protocolo de terapia de inundação",
+    "skill_description": "Explicar plenamente os princípios, o processo e o desconforto intenso potencial, obtendo o consentimento informado do paciente e da família para assinar o protocolo; o protocolo aumenta a autocontrole e garante a realização suave do tratamento.",
+    "parent_ids": [
+      "285",
+      "13",
+      "15"
+    ],
+    "sect": "bt"
+  },
+  "16": {
+    "skill_id": "16",
+    "skill_name": "Estabelecer uma relação terapêutica autêntica de confiança",
+    "skill_description": "Estabelecer uma relação terapêutica autêntica e confiável antes da implementação de exposição intensa; a confiança pode aumentar a adesão, ajudar o paciente a não recuar durante os picos de sofrimento e completar as tarefas terapêuticas com sucesso.",
+    "parent_ids": [
+      "285",
+      "13",
+      "16"
+    ],
+    "sect": "bt"
+  },
+  "17": {
+    "skill_id": "17",
+    "skill_name": "Oferecer explicações terapêuticas e encorajamento",
+    "skill_description": "Explicar continuamente padrões reacionais, estabelecer expectativas razoáveis e oferecer encorajamento e conforto durante o processo de exposição; evitar interromper prematuramente após o pico da reação para consolidar a extinção e prevenir a evitação.",
+    "parent_ids": [
+      "285",
+      "13",
+      "17"
+    ],
+    "sect": "bt"
+  },
+  "18": {
+    "skill_id": "18",
+    "skill_name": "Terapia aversiva",
+    "skill_description": "Emparelhar repetidamente comportamentos indesejados com estímulos como choques elétricos, agentes eméticos ou imagens repulsivas para estabelecer condicionamento oposto e reduzir a probabilidade de ocorrência do comportamento; enfatizar que a intensidade dos estímulos é controlável e segura.",
+    "parent_ids": [
+      "285",
+      "18"
+    ],
+    "sect": "bt"
+  },
+  "19": {
+    "skill_id": "19",
+    "skill_name": "Confirmar o comportamento-alvo da terapia aversiva",
+    "skill_description": "Definir claramente e singularmente o comportamento indesejado a ser eliminado, exigindo que seja observável, específico e completo, facilitando o estabelecimento de reflexos condicionais e a avaliação da eficácia, evitando a inclusão de outros componentes comportamentais.",
+    "parent_ids": [
+      "285",
+      "18",
+      "19"
+    ],
+    "sect": "bt"
+  },
+  "20": {
+    "skill_id": "20",
+    "skill_name": "Técnicas de correção comportamental",
+    "skill_description": "Com base nos princípios do condicionamento operante e reforço, moldar comportamentos desejados e reduzir reações adversas através de técnicas como reforço positivo, extinção, tokens e contratos comportamentais, enfatizando reforço imediato e consistente.",
+    "parent_ids": [
+      "285",
+      "20"
+    ],
+    "sect": "bt"
+  },
+  "21": {
+    "skill_id": "21",
+    "skill_name": "Definir o comportamento-alvo da correção comportamental",
+    "skill_description": "Selecionar um comportamento-alvo observável, mensurável e passível de reforço repetido, distinguindo reações benéficas das que precisam ser alteradas, servindo como objeto direto para a correção e reforço diferencial.",
+    "parent_ids": [
+      "285",
+      "20",
+      "21"
+    ],
+    "sect": "bt"
+  },
+  "22": {
+    "skill_id": "22",
+    "skill_name": "Selecionar objetivos e etapas de correção",
+    "skill_description": "Elaborar um plano de correção progressivamente próximo ao objetivo, estabelecendo comportamentos intermediários e reforço diferencial; ajustar as etapas e critérios de reforço conforme o avanço do tratamento para garantir a formação estável da cadeia comportamental.",
+    "parent_ids": [
+      "285",
+      "20",
+      "22"
+    ],
+    "sect": "bt"
+  },
+  "23": {
+    "skill_id": "23",
+    "skill_name": "Técnica de modelagem",
+    "skill_description": "Baseada na teoria da aprendizagem social, promover a aprendizagem observacional através de demonstração, vídeo e apresentação ao vivo, combinando com role-playing e reforço imediato para adquirir e consolidar rapidamente novos comportamentos.",
+    "parent_ids": [
+      "285",
+      "23"
+    ],
+    "sect": "bt"
+  },
+  "24": {
+    "skill_id": "24",
+    "skill_name": "Avaliar a capacidade de aprendizagem por imitação do paciente",
+    "skill_description": "Ao avaliar os quatro processos subjacentes: atenção, retenção, reprodução motora e motivação, determina-se a viabilidade e dificuldade da aprendizagem observacional, fornecendo base para o gradiente de modelagem e métodos de prática.",
+    "parent_ids": [
+      "285",
+      "23",
+      "24"
+    ],
+    "sect": "bt"
+  },
+  "25": {
+    "skill_id": "25",
+    "skill_name": "Avaliar a capacidade de imitação através de testes psicológicos",
+    "skill_description": "Utiliza-se testes psicológicos e escalas para avaliar atenção, compreensão e tendência à imitação, servindo como base objetiva para a elaboração de programas de modelagem e estratégias de reforço, melhorando o alinhamento com o treino.",
+    "parent_ids": [
+      "285",
+      "23",
+      "24",
+      "25"
+    ],
+    "sect": "bt"
+  },
+  "26": {
+    "skill_id": "26",
+    "skill_name": "Avaliar a capacidade de imitação com base na experiência do paciente",
+    "skill_description": "Organizam-se as experiências passadas de aprendizagem e sociais, o histórico de exposição a modelos e casos de imitação bem-sucedidos do indivíduo, para prever a transferência de habilidades e efeitos de indução, personalizando o conteúdo da modelagem.",
+    "parent_ids": [
+      "285",
+      "23",
+      "24",
+      "26"
+    ],
+    "sect": "bt"
+  },
+  "27": {
+    "skill_id": "27",
+    "skill_name": "Treino de habilidades sociais",
+    "skill_description": "Ensina-se e pratica-se sistematicamente as habilidades sociais com base no reforço e na imitação, combinando modelagem, role-play, feedback e tarefas domésticas, promovendo a manutenção e transferência da aplicação das habilidades.",
+    "parent_ids": [
+      "285",
+      "27"
+    ],
+    "sect": "bt"
+  },
+  "28": {
+    "skill_id": "28",
+    "skill_name": "Estabelecer uma boa relação de aconselhamento",
+    "skill_description": "No início do treino, estabelece-se uma relação de aconselhamento estável, fornecendo um ambiente de interação seguro e suportivo, melhorando o envolvimento e a motivação para a prática, estabelecendo as bases para a aquisição das habilidades.",
+    "parent_ids": [
+      "285",
+      "27",
+      "28"
+    ],
+    "sect": "bt"
+  },
+  "29": {
+    "skill_id": "29",
+    "skill_name": "Gestão pessoal",
+    "skill_description": "Melhora-se a capacidade de auto-regulação através de estratégias como autovigilância, controle prévio, contratos comportamentais e reforço próprio, permitindo ao paciente transitar gradualmente do controle externo para o autocontrole, consolidando a mudança comportamental.",
+    "parent_ids": [
+      "285",
+      "29"
+    ],
+    "sect": "bt"
+  },
+  "30": {
+    "skill_id": "30",
+    "skill_name": "Estabelecer objetivos claros de gestão pessoal",
+    "skill_description": "Elabora-se objetivos específicos, mensuráveis, alcançáveis e subobjetivos, registrando o nível basal, a fim de avaliar o progresso, organizar reforços e orientar ajustes subsequentes.",
+    "parent_ids": [
+      "285",
+      "29",
+      "30"
+    ],
+    "sect": "bt"
+  },
+  "31": {
+    "skill_id": "31",
+    "skill_name": "Definir comportamentos esperados e não esperados",
+    "skill_description": "Antes de estabelecer objetivos, define-se claramente os comportamentos esperados e não esperados, registrando as circunstâncias de ocorrência e indicadores, estabelecendo as bases para autovigilância, avaliação funcional e escolha de intervenções.",
+    "parent_ids": [
+      "285",
+      "29",
+      "31"
+    ],
+    "sect": "bt"
+  },
+  "32": {
+    "skill_id": "32",
+    "skill_name": "Fortalecer a motivação para mudar e tomar decisões",
+    "skill_description": "Reforçar a motivação para mudar e adotar decisões de auto-gestão; aumentar a adesão e o sucesso através do compromisso público e lembretes ambientais, iniciando planos subsequentes.",
+    "parent_ids": [
+      "285",
+      "29",
+      "32"
+    ],
+    "sect": "bt"
+  },
+  "261": {
+    "skill_id": "261",
+    "skill_name": "Biofeedback",
+    "skill_description": "Amplificar sinais fisiológicos internos difíceis de perceber (eletromiografia, sudorese, temperatura da pele, frequência cardíaca, pressão arterial, ondas cerebrais, etc.) através de instrumentos e fornecer feedback auditivo e visual para que o cliente aprenda a regular funções involuntárias, estabeleça novos condicionamentos operatórios, alivie doenças psicossomáticas e estresse, e melhore a auto-monitorização e auto-regulação.",
+    "parent_ids": [
+      "285",
+      "261"
+    ],
+    "sect": "bt"
+  },
+  "262": {
+    "skill_id": "262",
+    "skill_name": "Questionário de avaliação do cliente",
+    "skill_description": "Preencher questionários antes do tratamento para coletar sistematicamente informações sobre histórico médico e dados psicossociais: saúde, cirurgias e medicamentos, trabalho, relações interpessoais, estilo de vida, sono e alimentação, exercício e lazer, família e casamento. Realizar exames físicos quando necessário; utilizar para analisar as causas, excluir efeitos de medicamentos ou nutrição e orientar o treinamento de feedback.",
+    "parent_ids": [
+      "285",
+      "261",
+      "262"
+    ],
+    "sect": "bt"
+  },
+  "266": {
+    "skill_id": "266",
+    "skill_name": "Estabelecimento da relação consultiva",
+    "skill_description": "No início da consulta, o consultor cria uma atmosfera segura com respeito, escuta, empatia e interesse positivo como núcleo, incentivando o cliente a expressar-se livremente, estabelecendo uma relação de confiança e cooperação que fundamenta as avaliações subsequentes e o tratamento.",
+    "parent_ids": [
+      "285",
+      "266"
+    ],
+    "sect": "bt"
+  },
+  "267": {
+    "skill_id": "267",
+    "skill_name": "Coleta de dados",
+    "skill_description": "Coletar informações gerais e detalhadas do cliente através de perguntas abertas, semi-abertas e fechadas, abrangendo sintomas, gatilhos, duração e impacto na vida escolar e profissional, fornecendo base para o diagnóstico e elaboração de planos.",
+    "parent_ids": [
+      "285",
+      "267"
+    ],
+    "sect": "bt"
+  },
+  "268": {
+    "skill_id": "268",
+    "skill_name": "Medição diagnóstica psicológica",
+    "skill_description": "Avaliar sintomas e funções utilizando testes psicológicos padronizados, como as escalas SCL-90, SDS e SAS, combinados com entrevistas clínicas para determinar níveis de ansiedade, depressão e fatores relacionados, quantificando a linha de base e fornecendo referência para avaliação da eficácia.",
+    "parent_ids": [
+      "285",
+      "268"
+    ],
+    "sect": "bt"
+  },
+  "269": {
+    "skill_id": "269",
+    "skill_name": "Definição de objetivos consultivos",
+    "skill_description": "Negociar com o cliente objetivos consultivos específicos e viáveis e planos de implementação, focando na redução da ansiedade de exames, aumento da autoconfiança e melhoria das funções sociais e de estudo, definindo tarefas em fases para orientar a dessensibilização sistemática subsequente e o treinamento.",
+    "parent_ids": [
+      "285",
+      "269"
+    ],
+    "sect": "bt"
+  },
+  "133": {
+    "skill_id": "133",
+    "skill_name": "Análise funcional do comportamento",
+    "skill_description": "Antes da terapia comportamental, analisar sistematicamente como estímulos ambientais e consequências comportamentais influenciam e controlam problemas comportamentais, esclarecendo a função do comportamento para orientar a definição de objetivos e planos terapêuticos; a falta de análise funcional pode exacerbar os problemas comportamentais, tornando-a uma etapa necessária antes da intervenção.",
+    "parent_ids": [
+      "285",
+      "133"
+    ],
+    "sect": "bt"
+  },
+  "134": {
+    "skill_id": "134",
+    "skill_name": "Função do comportamento",
+    "skill_description": "Identificar as funções de manutenção dos comportamentos problemáticos, incluindo reforço social positivo, reforço social negativo, reforço sensorial positivo e reforço sensorial negativo; localizar a relação entre eventos ambientais e comportamentos através da identificação das consequências de obtenção ou escape, fornecendo base para a seleção de intervenções.",
+    "parent_ids": [
+      "285",
+      "133",
+      "134"
+    ],
+    "sect": "bt"
+  },
+  "135": {
+    "skill_id": "135",
+    "skill_name": "Reforço social positivo",
+    "skill_description": "O comportamento problemático é mantido pelo reforço positivo fornecido por outros, como choro para obter atenção dos pais ou desobediência para obter atenção do professor. Identificar esta função ajuda a ajustar a atenção e recompensas de terceiros, reduzindo as oportunidades de obter resultados esperados através de comportamentos problemáticos.",
+    "parent_ids": [
+      "285",
+      "133",
+      "134",
+      "135"
+    ],
+    "sect": "bt"
+  },
+  "136": {
+    "skill_id": "136",
+    "skill_name": "Reforço social negativo",
+    "skill_description": "O comportamento problemático é mantido pelo escape ou avoidance de eventos aversivos, como reclamar para escapar do trabalho ou destruir a posição de castigo para evitar fazer os deveres. É necessário avaliar o valor do escape e os requisitos da situação, evitando inadvertidamente reforçar comportamentos de escape durante a intervenção.",
+    "parent_ids": [
+      "285",
+      "133",
+      "134",
+      "136"
+    ],
+    "sect": "bt"
+  },
+  "137": {
+    "skill_id": "137",
+    "skill_name": "Reforço sensorial positivo",
+    "skill_description": "O comportamento problemático é mantido por estímulos sensoriais internos ou consequências do próprio comportamento, como coçar para obter picada dolorosa confortável ou jogar para ouvir ruídos altos. Deve-se identificar as fontes de autoestimulação, modificar as consequências sensoriais ou fornecer estímulos substitutos com função equivalente.",
+    "parent_ids": [
+      "285",
+      "133",
+      "134",
+      "137"
+    ],
+    "sect": "bt"
+  },
+  "138": {
+    "skill_id": "138",
+    "skill_name": "Reforço sensorial negativo",
+    "skill_description": "Ocorre quando o comportamento objetivo automaticamente reduz ou elimina estímulos negativos, como fechar a janela ativamente para bloquear o vento frio quando está frio. A intervenção deve considerar os estímulos da situação, garantindo que as consequências de reforço de um comportamento adequado superem as consequências funcionais do comportamento problemático.",
+    "parent_ids": [
+      "285",
+      "133",
+      "134",
+      "138"
+    ],
+    "sect": "bt"
+  },
+  "139": {
+    "skill_id": "139",
+    "skill_name": "Conteúdo da análise da função do comportamento problemático",
+    "skill_description": "Cobre sete aspectos: identificação preliminar de déficits/excesso de comportamento, contexto e frequência/intensidade/duração, motivação e reforçadores, fatores de desenvolvimento/mudança, autocontrole, atitudes dos envolvidos e ambiente físico; a informação integrada forma uma declaração conclusiva.",
+    "parent_ids": [
+      "285",
+      "133",
+      "139"
+    ],
+    "sect": "bt"
+  },
+  "140": {
+    "skill_id": "140",
+    "skill_name": "Métodos da análise da função do comportamento problemático",
+    "skill_description": "Métodos comuns incluem investigação, observação e experimento: primeiro coleta indireta através de entrevistas e escalas, depois verificação direta através de observação sistemática, finalmente confirmação causal através de manipulação de variáveis em experimentos; os três métodos complementares melhoram a precisão e executabilidade das conclusões.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140"
+    ],
+    "sect": "bt"
+  },
+  "141": {
+    "skill_id": "141",
+    "skill_name": "Método de investigação",
+    "skill_description": "Coleta informações sobre comportamentos problemáticos através de entrevistas, telefone, questionários e escalas de avaliação, identificando pré-requisitos e consequências para formular hipóteses funcionais preliminares; simples de operar mas sujeito a viés de memória, sendo adequado para uso em conjunto com o método de observação para aumentar a precisão.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "141"
+    ],
+    "sect": "bt"
+  },
+  "142": {
+    "skill_id": "142",
+    "skill_name": "Observação",
+    "skill_description": "Registrar objetivamente o comportamento e os eventos sequenciais em contextos naturais, com base no objetivo do estudo e na ficha de observação; os dados são reais e podem ser usados para validar conclusões indiretas; no entanto, apenas indicam correlação, não causalidade, sendo recomendável combiná-los com métodos experimentais para testar hipóteses funcionais.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "142"
+    ],
+    "sect": "bt"
+  },
+  "143": {
+    "skill_id": "143",
+    "skill_name": "Observação direta",
+    "skill_description": "Não intervir nas atividades do sujeito, registrando a ordem dos eventos e suas consequências até que a relação comportamento-ambiente seja clara; é necessário selecionar o observador, o momento e o local e garantir a duração para obter dados-chave da análise funcional.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "142",
+      "143"
+    ],
+    "sect": "bt"
+  },
+  "144": {
+    "skill_id": "144",
+    "skill_name": "Ficha de observação de avaliação funcional",
+    "skill_description": "Registrar tempo, comportamento, eventos antecedentes, função percebida (obtenção/escape), consequências reais e anotações em torno de episódios de comportamento problemático; rastrear frequência e contexto para esclarecer a manutenção funcional e fornecer base para planos terapêuticos.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "142",
+      "144"
+    ],
+    "sect": "bt"
+  },
+  "145": {
+    "skill_id": "145",
+    "skill_name": "Registro de comportamento na observação de análise funcional",
+    "skill_description": "Registrar item por item, na ordem sequencial, o comportamento e eventos relacionados durante a observação, evitando interpretações subjetivas, focando na consistência e padrão entre antecedentes e consequências; os dados servem de base para análises funcionais subsequentes e planejamento, mas não determinam causalidade.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "142",
+      "145"
+    ],
+    "sect": "bt"
+  },
+  "146": {
+    "skill_id": "146",
+    "skill_name": "Método experimental",
+    "skill_description": "Manipular sistematicamente variáveis independentes e consequências comportamentais para testar a relação causal entre eventos ambientais e comportamento problemático; requer controle de variáveis adicionais e treinamento profissional, sendo preciso mas difícil de implementar, usado para confirmar hipóteses de avaliação funcional.",
+    "parent_ids": [
+      "285",
+      "133",
+      "140",
+      "146"
+    ],
+    "sect": "bt"
+  },
+  "147": {
+    "skill_id": "147",
+    "skill_name": "Estabelecimento de plano terapêutico de comportamento",
+    "skill_description": "O plano baseia-se nas conclusões da avaliação funcional, enfatizando a mudança de comportamentos familiares/educacionais e do contexto físico, alinhado com princípios comportamentais e compatível com as capacidades, recursos e valores do implementador; ao mesmo tempo, constrói comportamentos substitutos funcionais equivalentes para promover mudanças.",
+    "parent_ids": [
+      "285",
+      "147"
+    ],
+    "sect": "bt"
+  },
+  "148": {
+    "skill_id": "148",
+    "skill_name": "Observação e registro de comportamento",
+    "skill_description": "Obter dados de linha de base e processuais através da definição do comportamento-alvo, seleção de método de observação e método de registro, usados para julgar a necessidade terapêutica, escolha de método e avaliação de eficácia, sendo um elo fundamental do tratamento comportamental.",
+    "parent_ids": [
+      "285",
+      "148"
+    ],
+    "sect": "bt"
+  },
+  "149": {
+    "skill_id": "149",
+    "skill_name": "Definição do comportamento-alvo",
+    "skill_description": "Descrever objetivamente e claramente o comportamento visível usando verbos ativos operacionais, evitando rótulos categoriais e especulações subjetivas; estabelecido conjuntamente por terapeuta e assistente, sendo específico e responsabilizável, garantindo que observadores diferentes registrem consistentemente.",
+    "parent_ids": [
+      "285",
+      "148",
+      "149"
+    ],
+    "sect": "bt"
+  },
+  "150": {
+    "skill_id": "150",
+    "skill_name": "Observação do Comportamento",
+    "skill_description": "Observação direta para validar conclusões indiretas, selecionando observador, momento e local, definindo a duração e cobrindo o número suficiente de vezes; registro dos elementos-chave usando um sistema de tabela de observação funcional, orientando o plano de correção subsequente.",
+    "parent_ids": [
+      "285",
+      "148",
+      "150"
+    ],
+    "sect": "bt"
+  },
+  "151": {
+    "skill_id": "151",
+    "skill_name": "Registro do Comportamento",
+    "skill_description": "Os métodos de registro incluem registro contínuo, registro de resultados, registro intervalado e registro de amostras temporais, quantificando respectivamente frequência, duração, intensidade e latência ou proporção de ocorrência intercalada; estabelecendo assim a linha de base e avaliando mudanças no comportamento.",
+    "parent_ids": [
+      "285",
+      "148",
+      "151"
+    ],
+    "sect": "bt"
+  }
+}

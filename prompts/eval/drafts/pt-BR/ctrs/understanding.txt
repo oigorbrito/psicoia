@@ -1,0 +1,65 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é pontuar o terapeuta na dimensão especificada com base exclusivamente no texto original da [conversa de aconselhamento] e fornecer evidências verificáveis para a nota.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: É proibido inferir, extrapolar ou introduzir deduções baseadas no senso comum.
+2) Evidências primeiro: Extrair evidências antes de pontuar; ausência de evidências = não mencionado/incerto.
+3) Notas altas são raras: A nota 6 deve ser extremamente rigorosa; exige várias evidências fortes independentes e ausência de contraevidências.
+4) Contraevidências limitam a nota: Se houver qualquer contraevidência relacionada à dimensão, ela não pode receber uma nota alta.
+5) A saída deve ser estritamente um JSON válido; qualquer texto que não seja JSON é proibido.
+
+### 1. Tarefa de avaliação
+Avalie o desempenho do terapeuta em [understanding (compreensão)] na conversa de aconselhamento.
+A chave do item JSON para esta dimensão é: understanding
+
+### 2. Critério de avaliação
+Avalie a seguinte pergunta única:
+
+[Pergunta de avaliação]:
+Em que medida o terapeuta compreende os problemas e as preocupações da pessoa atendida?
+
+[Detalhes da escala] (inteiros de 0 a 6):
+0 pontos: Repetidamente não compreende o que a pessoa atendida expressou de forma clara e não consegue identificar o ponto principal.
+2 pontos: Consegue repetir o conteúdo superficial, mas repetidamente não responde às nuances da comunicação; a escuta empática é limitada.
+4 pontos: Geralmente compreende a “realidade interna” da pessoa atendida, inclusive informações sutis; escuta e demonstra empatia adequadamente.
+6 pontos: Parece compreender completamente a “realidade interna” e comunica claramente essa compreensão por palavras, tom de voz ou outros meios (nota alta rara).
+
+Regras para notas intermediárias (1/3/5):
+- 1: Entre 0 e 2 (interpretações equivocadas repetidas ou reformulação muito fraca).
+- 3: Entre 2 e 4 (compreensão razoável, mas instável).
+- 5: Entre 4 e 6 (compreensão muito boa e demonstrada várias vezes, mas sem alcançar “compreensão completa e comunicada ao longo de toda a conversa”).
+
+### 3. Regras de pontuação (evidências primeiro, depois a nota)
+Primeiro, extraia evidências para esta dimensão (é necessário citar o texto original sem reescrevê-lo):
+- evidence_pos: Trechos do texto original que demonstram “reformulação precisa/esclarecimento/captura dos pontos centrais e sintonia com a realidade interna” (no máximo 2; se não houver, []).
+- evidence_neg: Trechos do texto original que demonstram “incompreensão evidente/ignorar preocupações/não identificar o ponto principal” (no máximo 2; se não houver, []).
+
+Critérios obrigatórios de pontuação:
+- Nota padrão = 3: Não mencionado/evidências insuficientes/evidências positivas e negativas mistas sem força → atribuir 3.
+- Nota 6: evidence_pos contém pelo menos 2 itens (frases ou turnos diferentes) e evidence_neg está vazio.
+- Notas 5–4: Pelo menos 1 evidence_pos clara e evidence_neg vazio (atribuir 4 ou 5 conforme a força).
+- Notas 2–1: Existe evidence_neg (atribuir 1 ou 2 conforme a gravidade).
+- Nota 0: Contraevidência forte (incompreensão repetida prejudica a conversa).
+
+Requisito para thought:
+- No máximo 24 caracteres, sem quebras de linha; escrever apenas uma frase curta, por exemplo: `sem evidências→3` / `evidência positiva→4` / `forte evidência positiva→6` / `com contraevidência→2`
+
+### 4. Formato de saída
+Produza um objeto JSON e nada mais; ele deve conter somente a chave `items`:
+{
+  "items": [
+    {
+      "item": "understanding",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "sem evidências→3",
+      "score": 3
+    }
+  ]
+}
+
+É absolutamente proibido produzir qualquer texto que não seja JSON ou Markdown.
+
+### 5. Dados de entrada
+[Conversa de aconselhamento]:
+{{diag}}

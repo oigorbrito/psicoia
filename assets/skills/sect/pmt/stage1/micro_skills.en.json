@@ -1,0 +1,1087 @@
+{
+  "42": {
+    "skill_id": "42",
+    "skill_name": "Naming the Problem for the Visitor",
+    "skill_description": "Ask the visitor to name the distress with a word or phrase, offering alternatives if necessary to prompt, but the visitor confirms the final name. Naming makes the problem an object of discussion, enhances a sense of control, and initiates externalized dialogue.",
+    "when_to_use": "Early in narrative therapy, after the visitor has told the story of the 'permeativity' of the problem, move into the naming and externalization phase to start the externalization process.",
+    "trigger": "When the visitor vaguely describes the distress, conflates the self with the problem, or struggles to make it concrete; when signs of self-labeling or shame avoidance appear.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "42"
+    ]
+  },
+  "43": {
+    "skill_id": "43",
+    "skill_name": "Depicting the Problem with Personification and Third-Person Language",
+    "skill_description": "Describe the problem using personification, oppressive metaphors, and third-person narration, such as 'how anxiety oppresses you,' separating the person from the problem, making the problem an external entity, facilitating the examination of its function and strategies.",
+    "when_to_use": "In externalization conversations, when it is necessary to shift the visitor's self-narrative of 'I am the problem,' establishing a perspective of separation between the person and the problem.",
+    "trigger": "When the visitor repeatedly uses self-blame or essentializing expressions (e.g., 'I am a failure'), is dominated by the problem, shame is evident, and relational conflict is intensifying.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "43"
+    ]
+  },
+  "44": {
+    "skill_id": "44",
+    "skill_name": "Inquiring about the Scope and Intensity of the Problem's Impact",
+    "skill_description": "Structure follow-up questions around the problem's impact on life, such as how long it has affected, in which situations it is strongest, how it interferes with relationships and choices, to help map the impact and specify the problem's operational mechanism.",
+    "when_to_use": "After naming and establishing an externalized perspective, use this to deepen the understanding of the problem's specific role and intensity on daily functioning and interpersonal relationships.",
+    "trigger": "When the visitor generalizes by saying 'there is a problem everywhere,' reports impaired functioning or relationship tension, and the impact needs to be specified for subsequent intervention.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "44"
+    ]
+  },
+  "45": {
+    "skill_id": "45",
+    "skill_name": "Exploring the History and Timeline of the Problem's Emergence",
+    "skill_description": "Follow up on the time of the problem's first appearance, its evolution, and key nodes, and explore the meaning if it continues, forming a phenomenological narrative of occurrence, laying the groundwork for deconstruction and rewriting.",
+    "when_to_use": "During the externalization process, bring the problem from the present back to its historical context, helping the visitor see its developmental trajectory and situational conditions.",
+    "trigger": "When the visitor presents long-standing distress or relapse patterns, struggles to understand why the problem recurs, or expresses worry and uncertainty about the future.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "45"
+    ]
+  },
+  "46": {
+    "skill_id": "46",
+    "skill_name": "Inquiring about Moments of Resistance and Unique Events",
+    "skill_description": "Guide the visitor to recall moments when they successfully overcame or weakened the problem's control, detailing the thoughts, actions, and support at that time, identifying replicable strategies to weaken the problem's dominance.",
+    "when_to_use": "After clarifying the externalized impact, in the phase aimed at weakening the problem's power and shifting to alternative narratives and resource mobilization.",
+    "trigger": "When the visitor shows slight improvement, mentions exceptions or successful experience fragments, or expresses a desire to seek different approaches.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "46"
+    ]
+  },
+  "47": {
+    "skill_id": "47",
+    "skill_name": "Using Multiple Media for Externalized Expression",
+    "skill_description": "Combine media such as imagery, music, games, etc., to transfer the problem from internal experience to external carriers, concretizing the image and impact of the problem through non-verbal channels, reducing defenses, and promoting engagement.",
+    "when_to_use": "When the visitor cannot describe the problem in words, is overly internalized, in cases involving children and adolescents, or when the conversation is blocked and a change in expression channel is needed.",
+    "trigger": "When the visitor is silent, narrative is blocked, abstraction is severe, or resists direct dialogue; showing high tension and avoidance.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "47"
+    ]
+  },
+  "48": {
+    "skill_id": "48",
+    "skill_name": "Explaining the Benefits of Externalization and Establishing a Collaborative Stance",
+    "skill_description": "Explain the benefits of externalization to the visitor (reducing conflict, reducing feelings of failure, promoting cooperation and new possibilities), jointly agree on a stance of 'people are not the problem' to conduct the dialogue, enhancing safety and participation.",
+    "when_to_use": "In the framework setting and relationship building phase before starting externalization, or when the visitor is skeptical about the method or shame is significant.",
+    "trigger": "When the visitor resists discussion due to self-blame or labeling, worries about judgment, or interpersonal conflict is prominent and cooperation is needed to face the problem.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "48"
+    ]
+  },
+  "49": {
+    "skill_id": "49",
+    "skill_name": "Externalizing and Amplifying the Visitor's Positive Qualities",
+    "skill_description": "Externalize positive traits such as resilience, patience, and resources as visible cultural products, thickening the evidence and impact in the narrative to support the formation and maintenance of alternative stories.",
+    "when_to_use": "While externalizing the problem or after it, used to build a 'thin to thick' new narrative, strengthening feelings of capability and hope.",
+    "trigger": "When the visitor reveals strengths or mentions supportive and successful fragments; when balancing and amplifying positive traits is needed due to excessive focus on the problem.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "49"
+    ]
+  },
+  "50": {
+    "skill_id": "50",
+    "skill_name": "Guiding Naming and Personification of Issues",
+    "skill_description": "Invite the client to name the distress and describe its characteristics using role-based language; provide word prompts when necessary but retain naming authority. Precise naming aids externalization and control, facilitating subsequent exploration of the issue's action patterns.",
+    "when_to_use": "Early in narrative therapy, before and after initial externalized conversations and story expansion, separate the 'problem' from the person and establish an actionable object.",
+    "trigger": "Client's vague complaints or difficulty in clearly describing the distress; use 'always' or 'very bad' without specific reference; feeling a loss of control over the problem.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "50"
+    ]
+  },
+  "51": {
+    "skill_id": "51",
+    "skill_name": "Inquiring into the Intent and Demands of the Issue",
+    "skill_description": "Use personified questions to explore the 'purpose,' 'strategies,' and demands of the issue, such as how it controls, manipulates, or oppresses, and what happens when its demands are met, thereby revealing its control mechanisms.",
+    "when_to_use": "After naming and initial externalization, enter the phase of exploring the influence and relationship with the issue, deepening the client's perspective on the relationship with the issue.",
+    "trigger": "Client's statements using passive controlled language and emotions such as 'anxiety/anger controls me,' 'it oppresses me,' or 'I am being led by it'.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "51"
+    ]
+  },
+  "52": {
+    "skill_id": "52",
+    "skill_name": "Tracing the History of the Issue's Emergence and Development",
+    "skill_description": "Guide the client to narrate the timeline of the issue's first appearance, evolution, and persistence, discuss the meaning and scope of continuing for a period, and provide the issue's background to locate breakthrough points.",
+    "when_to_use": "When framing the issue's trajectory and evolution in externalized dialogue, or when the client lacks a clear sense of the issue's origin and persistence.",
+    "trigger": "Client's confusing timeline, absolute descriptions like 'it has always been this way,' or inability to recall when the issue started and how it worsened.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "52"
+    ]
+  },
+  "53": {
+    "skill_id": "53",
+    "skill_name": "Depicting the Issue's Impact and Power Dynamics",
+    "skill_description": "Systematically depict the intensity of the issue's effect on emotions, cognition, relationships, and behavior using 'impact' questions, and simultaneously uncover moments when the client exerts influence over the issue, presenting the dynamic of diminishing and growing power between both parties.",
+    "when_to_use": "When assessing the scope and degree of the issue's impact, used to help the client experience the bidirectional nature of being both affected and exerting influence.",
+    "trigger": "Client reports the issue spreading widely, significant functional impairment, or a narrative of helplessness and despair presented as unidirectional oppression.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "53"
+    ]
+  },
+  "54": {
+    "skill_id": "54",
+    "skill_name": "Capturing Exceptions Where the Issue Lacks Control",
+    "skill_description": "Actively search for and detail unique events where the issue did not appear or was weaker, describing the emotions, thoughts, and actions at that time, integrating the exception into the new story to weaken the dominant narrative.",
+    "when_to_use": "When the client is trapped in pervasive descriptions of the issue, and needs evidence to support change and self-efficacy.",
+    "trigger": "Client states certain moments were 'better,' 'not that bad,' or 'handled quite well,' or expresses a desire for change but feels hopeless.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "54"
+    ]
+  },
+  "55": {
+    "skill_id": "55",
+    "skill_name": "Strengthening Counter-Narratives Against the Issue",
+    "skill_description": "Based on the externalization and exceptions, guide the client to summarize how they resist, escape, or weaken the issue's influence, weaving abilities and values into alternative stories to reshape the relationship with the issue and identity positioning.",
+    "when_to_use": "After exceptions are explored, enter the phase of rewriting and enriching the new story, consolidating the client's proactivity and sense of choice.",
+    "trigger": "Client identifies resources, expresses hope for change, or recognizes clues that certain actions weakened the issue's influence.",
+    "parent_ids": [
+      "1",
+      "2",
+      "9",
+      "55"
+    ]
+  },
+  "60": {
+    "skill_id": "60",
+    "skill_name": "Assigning Tasks After the Initial Observation Session",
+    "skill_description": "Before the initial session concludes, invite the client to observe and record events in family, life, marriage, and interpersonal relationships where they 'hope to happen again' between sessions, and report the results in the next session.",
+    "when_to_use": "When the initial session is nearing its end and entering the feedback phase, used to continue change and provide concrete material for the next session.",
+    "trigger": "Client has expressed their issues, views, and experiences, and the session is entering the closing or feedback stage.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "60"
+    ]
+  },
+  "61": {
+    "skill_id": "61",
+    "skill_name": "Confirming Understanding and Empathy Before Assigning FFST",
+    "skill_description": "Before proposing changes or tasks, ensure the client receives full understanding and acceptance; first listen and confirm their narrative and feelings, then introduce the observation task to maintain cooperation and engagement.",
+    "when_to_use": "In the initial session, preparing to transition to task assignment to consolidate the relationship and sense of understanding.",
+    "trigger": "Client has just finished stating their issues, views, and experiences, expecting to be understood and responded to.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "61"
+    ]
+  },
+  "62": {
+    "skill_id": "62",
+    "skill_name": "Reviewing FFST in the Second Session and Identifying Continuable Events",
+    "skill_description": "At the start of the second session, inquire about the events the visitor observed and the parts they wish to continue in the future, focusing on specific details to lay the foundation for developing subsequent continuation and expansion plans.",
+    "when_to_use": "During the initial phase of the second session, used to transform observations into goals and plans.",
+    "trigger": "Visitor brings observation records or mentions recent positive changes and what they wish to continue.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "62"
+    ]
+  },
+  "63": {
+    "skill_id": "63",
+    "skill_name": "Explaining the Necessity of Change through the Hope Framework",
+    "skill_description": "When explaining the task purpose, clarify that 'change is inevitable, the key is when,' using positive expectations to enhance the visitor's optimism and engagement, encouraging them to focus on replicable positive events.",
+    "when_to_use": "When setting up the FFST in the first session, used to enhance expectations and motivation.",
+    "trigger": "Entering the task explanation phase, visitor asks about the prospect and meaning of change or needs encouragement.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "63"
+    ]
+  },
+  "64": {
+    "skill_id": "64",
+    "skill_name": "Translating FFST Exceptions into Concrete Action Plans",
+    "skill_description": "Convert the 'exceptions' identified in the FFST and continuable events into daily executable behavioral plans, encouraging the visitor to intentionally increase the frequency and breadth of these behaviors to consolidate and expand change.",
+    "when_to_use": "After reviewing the FFST, entering the positive feedback and task setting phase, used to promote sustained change.",
+    "trigger": "Visitor reports clear positive events or exceptional situations, expressing a desire for them to happen more often.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "64"
+    ]
+  },
+  "38": {
+    "skill_id": "38",
+    "skill_name": "Inviting the Visitor to Name the Problem",
+    "skill_description": "After telling the initial story, ask the visitor to name the distress with a word or phrase, making the problem concrete and nameable, laying the groundwork for subsequent discussion and externalization.",
+    "when_to_use": "Early in narrative therapy, in the organization and expansion phase after 'permeative description of the problem', needing to focus the topic and initiate externalization.",
+    "trigger": "Visitor naturally pauses after telling a fragmented, sad story, or the description of the distress is vague and hard to specify.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "38"
+    ]
+  },
+  "39": {
+    "skill_id": "39",
+    "skill_name": "Providing Naming Cues and Retaining the Decision-Making Power",
+    "skill_description": "When the visitor cannot think of a name immediately, provide cues or several word/phrase options to stimulate association, but clearly state that the final naming authority belongs to the visitor.",
+    "when_to_use": "When in the naming phase but the visitor hesitates, gets stuck, or repeatedly states they cannot think of a suitable name.",
+    "trigger": "Visitor is silent, says 'I can't think of a name' or 'I don't know how to describe it', showing difficulty with naming.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "39"
+    ]
+  },
+  "40": {
+    "skill_id": "40",
+    "skill_name": "Precising the Name with the Visitor",
+    "skill_description": "Collaboratively refine and polish the problem name with the visitor, making the term precise and specific, enhancing their sense of control over the problem, and preparing for the externalization of the problem.",
+    "when_to_use": "When the visitor has proposed a preliminary name, preparing to transition to externalization and exploring the impact, needing to increase the accuracy and directionality of the name.",
+    "trigger": "The initial name is too broad or ambiguous, the visitor is uncertain in their response, or wishes to express their experience more accurately.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "40"
+    ]
+  },
+  "41": {
+    "skill_id": "41",
+    "skill_name": "Consistently Using Named Problems in Externalization Questions",
+    "skill_description": "Use the named word/phrase as the subject to conduct externalization questions (e.g., 'How long has X affected you?' 'How has X oppressed you?'), consolidating the separation between person and problem.",
+    "when_to_use": "After the problem has been named, transitioning to the conversation of externalization, exploring the history and impact of the problem.",
+    "trigger": "Visitor acknowledges and accepts the name, preparing to further discuss the specific impact and trajectory of the problem on their life.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "41"
+    ]
+  },
+  "56": {
+    "skill_id": "56",
+    "skill_name": "Naturally Introducing Pre-Consultation Change Questions",
+    "skill_description": "In the first meeting, wait for the appropriate moment, and inquire in a natural and smooth tone, 'What has been different/what have you done between the appointment and today?', to open the exploration of existing positive changes and effective attempts.",
+    "when_to_use": "Early stage of initial assessment, after establishing basic trust and transitioning from the problem to the solution, used to evoke resources and hope, and open the direction of the conversation.",
+    "trigger": "Visitor has completed the initial statement about their life and distress; or mentions time intervals since the appointment, recent changes in condition, etc.",
+    "parent_ids": [
+      "1",
+      "10",
+      "11",
+      "56"
+    ]
+  },
+  "57": {
+    "skill_id": "57",
+    "skill_name": "Making concrete the positive changes that have occurred",
+    "skill_description": "When the client mentions changes before counseling, follow up with 'What was different when it happened? How did it happen? What were the effects? Was it helpful?' to reconstruct the context, steps, and impact, turning vague descriptions into replicable experiences.",
+    "when_to_use": "When the client admits or recalls signs of improvement before the appointment, and needs to transform abstract descriptions into clear, actionable practices.",
+    "trigger": "The client uses vague statements like 'it got a little better' or 'it's a bit different', or struggles to clearly describe the content and process of the change.",
+    "parent_ids": [
+      "1",
+      "10",
+      "11",
+      "57"
+    ]
+  },
+  "58": {
+    "skill_id": "58",
+    "skill_name": "Distilling and reinforcing effective practices",
+    "skill_description": "Identify the behaviors and strategies from the changes before counseling that brought improvement, pinpoint their feasible points, offer timely affirmation and encouragement, and invite the client to continue practicing and expanding along these effective attempts.",
+    "when_to_use": "After making the details of the changes concrete, to transform them into sustainable solutions, consolidate motivation and direction.",
+    "trigger": "The client describes specific attempts (e.g., a certain arrangement, coping mechanism) and reports positive effects or signs of improvement.",
+    "parent_ids": [
+      "1",
+      "10",
+      "11",
+      "58"
+    ]
+  },
+  "59": {
+    "skill_id": "59",
+    "skill_name": "Framing pre-counseling changes as resources and hope",
+    "skill_description": "In the summary, emphasize that the change stems from the client's own resources and efforts, reducing dependence on the counselor, enhancing autonomy and a sense of hope, and basing subsequent goals and action directions on this.",
+    "when_to_use": "When entering the feedback phase near the end of the first session, to integrate discoveries from that session, transition to the next plan or task.",
+    "trigger": "The client has listed several pre-counseling changes and effective practices, entering a point where the therapist needs to integrate and encourage.",
+    "parent_ids": [
+      "1",
+      "10",
+      "11",
+      "59"
+    ]
+  },
+  "13": {
+    "skill_id": "13",
+    "skill_name": "Providing a safe and private environment and inviting narration",
+    "skill_description": "At the start of the session, ensure the space is quiet and undisturbed, explain confidentiality and respect principles, and invite the client to share what they are concerned about, creating a safe space for listening and prompting the start of narration.",
+    "when_to_use": "The opening and initial stage of story narration, used to build rapport and initiate the client's sharing; when the client is visiting for the first time, is unfamiliar with the counseling setting, and is anxious.",
+    "trigger": "The client shows tension, hesitates to speak, or looks around the environment; verbal mentions of signals of vigilance and concern such as 'Is it safe here?' or 'I don't know where to start'.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "13"
+    ]
+  },
+  "14": {
+    "skill_id": "14",
+    "skill_name": "Listening to the story by respecting and actively attending",
+    "skill_description": "With a posture of respect, active attention, and empathy, patiently listen to the client's fragmented, lost, or sad 'permeating problem' narratives, without judgment or interruption, allowing emotions to flow, stabilizing the relationship, and receiving the story.",
+    "when_to_use": "The 'telling stories' stage of narrative therapy, used to receive the client's saturated descriptions of problems, promote further narration, and build trust.",
+    "trigger": "Crying, pauses, or irregular speech rate when the client narrates painful segments; repeated use of emotional words like 'uncomfortable, lost, sad' or fragmented story pieces.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "14"
+    ]
+  },
+  "15": {
+    "skill_id": "15",
+    "skill_name": "Listening with curiosity and a 'don't know' stance",
+    "skill_description": "Maintain strong interest and curiosity, ask questions from a 'don't know' stance about the client's experience, avoid presuppositions and conclusions, encourage them to elaborate and clarify, thereby reducing authority and creating a collaborative atmosphere.",
+    "when_to_use": "Throughout the narrative session, especially in the initial stages of story listening and exploration, to reduce authority imbalance, enhance a sense of safety, and increase the willingness to express.",
+    "trigger": "The client expects directive answers (e.g., 'tell me what to do'), or narrates problems in an absolute or rigid manner and frequently seeks expert judgment.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "15"
+    ]
+  },
+  "16": {
+    "skill_id": "16",
+    "skill_name": "Maintaining an equal negotiation relationship and abandoning the expert stance",
+    "skill_description": "Clarify and practice an equal, collaborative, interactive, and shared relational orientation, adopt a style of negotiation rather than instruction, do not impose mainstream values or label the client, ensuring the safety of narration with a non-judgmental stance.",
+    "when_to_use": "Throughout the establishment and maintenance of the counseling relationship, especially when the client worries about being judged or maintains distance from the counselor's authority, to reinforce safety and trust.",
+    "trigger": "The client mentions past experiences of being labeled or judged; expressions like 'afraid of being told' or 'you are the expert', indicating sensitivity and caution towards authority.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "16"
+    ]
+  },
+  "17": {
+    "skill_id": "17",
+    "skill_name": "Using metaphors to create a relaxed narrative atmosphere",
+    "skill_description": "Under the premise of respect and empathy, moderately use pleasant or moving metaphors or stories to alleviate tension and defenses, help the client find angles for narration, and encourage entry into and sustained narration.",
+    "when_to_use": "In the early stages when narration is difficult or emotions are highly tense; to lower defenses and create a relaxed atmosphere to enter story narration.",
+    "trigger": "Client silence, verbal stuttering, repeated statements like 'can't explain' or 'don't know how to start'; non-verbal tension signals such as body rigidity and avoiding eye contact.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "17"
+    ]
+  },
+  "18": {
+    "skill_id": "18",
+    "skill_name": "Gently redirect narrative back to the main theme",
+    "skill_description": "In cases of narrative wandering or self-judgment generalization, gentle adjustment guides the session back to 'problem-permeating descriptions,' more specifically depicting difficulties and their impacts, to maintain narrative focus and coherence.",
+    "when_to_use": "During the story narrative, when the client shifts from problem focus to generalized self-judgment or goes off-topic, used to maintain the coherence and depth of the main story.",
+    "trigger": "Client jumps from specific events to vague self-blame, long digressions; narrative interruption and stating 'I don't know what to say next'.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "18"
+    ]
+  },
+  "19": {
+    "skill_id": "19",
+    "skill_name": "Create a safe space and invite narration",
+    "skill_description": "Provide a safe, undisturbed session environment, inviting the client to share what they are concerned about with an attitude of respect and positive attention; focus listening and preliminarily grasp the scope of the description and impact, to provide concrete material for later reconstruction.",
+    "when_to_use": "In the 'storytelling' stage at the beginning of a narrative session, used to build rapport and collect story material; when the client is vulnerable and needs to be listened to and accepted.",
+    "trigger": "Client shows tension or hesitation, narrates 'fragmented, lost, sad' segments, language involves many pauses, tentative seeking of safety and validation.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "19"
+    ]
+  },
+  "20": {
+    "skill_id": "20",
+    "skill_name": "Capture exceptions with curiosity and 'not knowing'",
+    "skill_description": "Listen with a posture of curiosity and 'not knowing,' actively searching for exceptions and unique events in the story, appreciating small differences, and amplifying them with the client, allowing non-mainstream positive clues to enter the new narrative.",
+    "when_to_use": "When the client's narrative is dominated by problem-permeating descriptions, ignoring positive experiences; before entering exploration and rewriting.",
+    "trigger": "Client uses absolute statements like 'always/never'; or occasionally mentions moments not affected by the problem but quickly skips over them.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "20"
+    ]
+  },
+  "21": {
+    "skill_id": "21",
+    "skill_name": "Externalize the problem to reduce negative labeling",
+    "skill_description": "Guide the separation of 'person' and 'problem,' naming and externalizing the problem, discussing its origins and impact, weakening pathologization and self-blame, reducing conflict, creating space for collaborative dialogue, helping the client see their resources.",
+    "when_to_use": "When the client self-labels, equates the self with the problem, or falls into guilt and failure, before changing the problem positioning.",
+    "trigger": "Client says they 'are' a certain problem, frequent self-blame or blaming others, relationship conflict escalates, feels 'oppressed' by the problem.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "21"
+    ]
+  },
+  "22": {
+    "skill_id": "22",
+    "skill_name": "Identify and expand positive clues and resources",
+    "skill_description": "Be sensitive to any details showing the client's abilities, value, and support, promptly highlight and expand them, using them as material for developing alternative stories, prompting scattered positive experiences to transform into usable resources.",
+    "when_to_use": "During the narrative and exploration process, once success in coping, social support, personal strengths, or exceptional moments appear; in the stage of new story enrichment.",
+    "trigger": "Client mentions minor improvements, acknowledged segments, previously effective methods, or important others' support, but the tone is downplayed or quickly glossed over.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "22"
+    ]
+  },
+  "23": {
+    "skill_id": "23",
+    "skill_name": "Guide from thin to rich positive self-narrative",
+    "skill_description": "For 'thin stories' filtered by bias, encourage adding details of new experiences, restoring compressed positive self-identity, turning the positive self from 'fragments' to 'richness,' enhancing self-efficacy and sense of meaning.",
+    "when_to_use": "When long-term negative self-narrative dominates, positive identification is ignored or weakened; in the stage of rewriting and enriching new stories.",
+    "trigger": "Client devalues strengths, denies achievements, single negative self-evaluation; responds to positive feedback with 'nothing' or 'not much'.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "23"
+    ]
+  },
+  "24": {
+    "skill_id": "24",
+    "skill_name": "Accompany with equal partnership and non-pathologizing stance",
+    "skill_description": "Abandon the expert authority role, refrain from diagnostic classification and labeling, co-construct meaning with the client with a respectful, consultative, and multi-perspective open attitude, emphasizing that they are the expert of their own life, maintaining a positive, collaborative relationship.",
+    "when_to_use": "Throughout the entire process, especially in building rapport, clarifying goals, and discussing meaning; when the client worries about being diagnosed or expects instructions.",
+    "trigger": "Client asks 'What is my illness,' demands a verdict, or shows strong dependence; tension and avoidance when exposed to potential labeling.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "24"
+    ]
+  },
+  "25": {
+    "skill_id": "25",
+    "skill_name": "Use 'influence' questions to enhance control",
+    "skill_description": "Through questions describing the influence of the problem, explore the ebb and flow of the client's power and the problem's power, and areas where influence can be exerted, allowing them to experience the problem's power and choice, enhancing a sense of control and confidence.",
+    "when_to_use": "After externalization to discuss the person-problem relationship, entering the rewriting stage; when the client reports feeling controlled by the problem, feeling powerless.",
+    "trigger": "Client uses phrases like 'cannot control,' 'crushed by...' showing passive helplessness; wavering or despairing about change.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "25"
+    ]
+  },
+  "26": {
+    "skill_id": "26",
+    "skill_name": "Actively Attend to Invitation Narrative",
+    "skill_description": "In a safe, undisturbed atmosphere, use respect and active attention to invite the client to tell their experience. The therapist listens attentively, helps initiate and maintain the narrative process, reduce defenses, and prompt the unfolding of the story.",
+    "when_to_use": "Beginning and 'telling the story' stages of narrative therapy, used to build rapport and initiate narrative; for the client's first entry, to establish a sense of safety and willingness to express.",
+    "trigger": "Client appears tense, silent, or narrative is fragmented; cautious or watchful language; contracted posture, wandering gaze, showing unease or hesitation.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "26"
+    ]
+  },
+  "27": {
+    "skill_id": "27",
+    "skill_name": "Encourage Detailing the Impact of Issues",
+    "skill_description": "When the narrative naturally pauses, encourage the client to describe the difficulties and their impact on life more specifically, collecting memory details as material for subsequent work, helping them move from vague to clear.",
+    "when_to_use": "During the storytelling process or when the narrative becomes generalized, needed to accumulate situational details and impact clues for rewriting and externalization.",
+    "trigger": "Client pauses or summarizes with general terms like 'always' or 'very bad'; difficulty pointing to specific events, impacts, or situations.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "27"
+    ]
+  },
+  "28": {
+    "skill_id": "28",
+    "skill_name": "Use Externalizing Questions to Reduce Pressure and Empower",
+    "skill_description": "By naming the problem and using externalizing questions (such as 'How long did X affect you?' or 'How did it oppress you?'), separate the person from the problem, reduce self-blame, and enhance the sense of control and space for action regarding the problem.",
+    "when_to_use": "When the client equates self with the problem and gets caught in problem-permeating narratives; preparing to transition to the externalization and rewriting stages.",
+    "trigger": "Client self-blames or says 'I am the problem' or 'I am helpless'; low mood, powerlessness, language full of internalized labels.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "28"
+    ]
+  },
+  "29": {
+    "skill_id": "29",
+    "skill_name": "Uncover and Amplify Exceptional Cases",
+    "skill_description": "Consciously seek out exception situations where the problem did not occur or had a weaker impact, inviting the client to revisit the actions and internal resources at that time, amplifying their meaning to evoke confidence, as a starting point for a new story.",
+    "when_to_use": "Entering the 'rewriting the story' or 'enriching the new story' stage, needed to increase hope and provide material for the new narrative.",
+    "trigger": "Client mentions occasional improvement, having handled things well in the past, or 'that time was okay'; hesitation towards change but showing anticipation.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "29"
+    ]
+  },
+  "30": {
+    "skill_id": "30",
+    "skill_name": "Amplify Positive Identification from Thin to Thick",
+    "skill_description": "Identify the bias filtering in 'thin stories,' encourage the description of overlooked positive experiences and abilities, restore and expand compressed positive self-identification, forming a more powerful self-concept.",
+    "when_to_use": "In the rewriting stage when the client's self-narrative is singular and negative, needing to reshape the self-image and power of identity.",
+    "trigger": "Client uses absolute statements like 'I am worthless' or 'I have never succeeded', ignoring or downplaying positive fragments.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "30"
+    ]
+  },
+  "31": {
+    "skill_id": "31",
+    "skill_name": "Detail and Integrate New Narrative Details",
+    "skill_description": "After discovering exceptions, invite the client to detail the emotions, thoughts, actions, and context at that time, systematically integrating them into the new story, making the new narrative more vivid, continuous, and connecting the past with the future.",
+    "when_to_use": "In the 'enriching the new story' stage, to consolidate alternative narratives and avoid becoming slogan-like.",
+    "trigger": "Client has shown new descriptions or hope, but the content is brief, jumpy, lacking specific details and coherence.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "31"
+    ]
+  },
+  "32": {
+    "skill_id": "32",
+    "skill_name": "Use Rituals and Celebrations to Consolidate Change",
+    "skill_description": "Create a brief ritual (such as presenting a certificate, giving a card, offering congratulations) at key points to 'realize' the change, appropriately affirm and encourage, enhance motivation and maintenance effects, define phase-specific achievements.",
+    "when_to_use": "For phase-specific progress, when the old story concludes, or before and after therapy, used for consolidation and transition.",
+    "trigger": "Client reaches a milestone, expresses achievement, or hopes to commemorate a turning point; slight wavering in maintaining change.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "32"
+    ]
+  },
+  "33": {
+    "skill_id": "33",
+    "skill_name": "Invite Witnesses to Co-witness Change",
+    "skill_description": "With the client's consent, invite important others to participate in witnessing, sharing observations and support, allowing the new story to root in their social network, enhancing confidence and concretization, extending the impact of change.",
+    "when_to_use": "When the client's new narrative is formed, preparing for the ending or needing social support to maintain change.",
+    "trigger": "Client mentions family/friend support or desires to be seen; uncertainty about bringing the change back into life.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "33"
+    ]
+  },
+  "34": {
+    "skill_id": "34",
+    "skill_name": "Use reflective grouping to provide affirmation feedback",
+    "skill_description": "Use reflective grouping to express observations and feelings in a respectful, non-evaluative manner, providing the client with multiple perspectives and gentle echoes to foster new understanding and motivation, avoiding didactic instruction.",
+    "when_to_use": "When therapy deepens or external reflection is needed; when the case is stuck in a single perspective or progress is stalled.",
+    "trigger": "Client repeatedly cycles through the same narrative, feels stuck; is curious about changes in others' eyes or needs to be seen.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "34"
+    ]
+  },
+  "35": {
+    "skill_id": "35",
+    "skill_name": "Sharply capture and expand client resources",
+    "skill_description": "Maintain strong interest and curiosity, keenly identify clues in the narrative that show abilities and resources, promptly illuminate and expand them, making them basic material for developing alternative stories.",
+    "when_to_use": "Applicable throughout, especially when the story is thin, hope is insufficient, or new stories need material.",
+    "trigger": "Client unintentionally reveals values, skills, support, or small successes; self-deprecation while including positive aspects.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "35"
+    ]
+  },
+  "36": {
+    "skill_id": "36",
+    "skill_name": "Externalize positive qualities to reinforce identity",
+    "skill_description": "Externalize the client's strengths and advantages as topics for discussion and development, helping them detach from problem-dominance, helping them ally with positive qualities, and reinforce positive identity practice.",
+    "when_to_use": "During the externalization dialogue, to balance problem discourse and build a more powerful self-positioning.",
+    "trigger": "Client mentions their own strengths or qualities praised by others, but does not elaborate deeply or quickly returns to the problem.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "36"
+    ]
+  },
+  "37": {
+    "skill_id": "37",
+    "skill_name": "Use power-loss/gain questions to grant choice",
+    "skill_description": "Through questions that depict the power loss and gain between the problem and the client, allow them to experience that they can also exert influence on the problem, enhancing the sense of judgment and choice, promoting agency in language and action.",
+    "when_to_use": "When the client feels oppressed by the problem, powerless to choose; when preparing to move to feasible action steps.",
+    "trigger": "Client frequently uses powerless expressions like 'cannot control' or 'there is no way,' emotional low.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "37"
+    ]
+  },
+  "89": {
+    "skill_id": "89",
+    "skill_name": "Use externalization and separation language to distinguish person and problem",
+    "skill_description": "Explicitly state separation statements such as 'You are you, the problem is the problem' in the dialogue, use externalized expressions to attribute actions and impacts to the problem (e.g., despair made her uneasy, hurt her, said you are not good enough), reflect the client's value in a collaborative tone (e.g., sense of responsibility), distinguish personal qualities from problem impacts, maintain an externalized stance, reduce self-blame and stigma, facilitate identification of coping space.",
+    "when_to_use": "At the beginning of problem externalization or during its unfolding and subsequent narration; especially when the client strongly self-blames, internalizes failure or others' evaluations as their own traits.",
+    "trigger": "Client describes being worried about control or being affected by it, showing self-negation or passive experience; or internalizes failure or others' evaluations as self-identification, showing statements like 'The whole school is silent because of me' or 'I should be abandoned'.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "89"
+    ]
+  },
+  "77": {
+    "skill_id": "77",
+    "skill_name": "Explore the specific impact of the problem and client's response",
+    "skill_description": "Systematically inquire about the specific impact of the problem on learning, sleep, emotions, and interpersonal relationships, and jointly map out an impact list with the client (e.g., unease, inability to concentrate, irritability when talking about studies), while understanding their views and responses, expanding the narrative orientation, laying the foundation for externalized collaboration and choice, reducing pressure.",
+    "when_to_use": "In the phase of problem exploration and externalization dialogue after establishing the relationship, when initiating externalization and specifying the problem's impact, drawing an impact map, and inquiring about the client's coping.",
+    "trigger": "Client talks about difficulty sleeping, anxiety, depression, interpersonal setbacks, or self-blame, avoidance; or talks about concerns about taking a leave of absence and returning to classes, and presents learning and life difficulties driven by emotional distress.",
+    "parent_ids": [
+      "1",
+      "2",
+      "8",
+      "77"
+    ]
+  },
+  "88": {
+    "skill_id": "88",
+    "skill_name": "Invite and focus on naming the core distress",
+    "skill_description": "Through accepting questions and discussions about the specific impacts of the distress, invite the client to name the problem with their own words (e.g., 'anxiety,' 'invisible pressure'); select the most typical among multiple options and name it with a brief term, while specifying the current distress and desired goals, forming a shared term, facilitating externalization, assessment, and subsequent intervention.",
+    "when_to_use": "In the first or early sessions, during relationship building and the start of narrative intervention, when generalizing suffering and worry, or difficulty clearly describing the essence and impact of the problem; or when listing multiple concerns and wavering; or when the desired change and goals are not yet clear.",
+    "trigger": "Client generalizes suffering and worry, finds it difficult to clearly describe the essence and impact of the problem; or lists multiple concerns and wavers; or the desired change and goals are not yet clear.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "88"
+    ]
+  },
+  "73": {
+    "skill_id": "73",
+    "skill_name": "Specify the distress with nicknames or metaphors",
+    "skill_description": "Guide the client to select nicknames, concrete objects, or metaphors close to themselves to name key emotions and distress (e.g., calling loss 'lost lord,' comparing 'anxiety' to a messy ball of yarn), or attach a brief cognitive label, providing psychological and linguistic distance, making the problem visible, referable, and discussable, facilitating externalization and emotion management, opening a path for rewriting.",
+    "when_to_use": "Early to mid-stage of narrative therapy, before entering the externalization phase, when the client describes vague, hard-to-grasp distress, or needs an object for emotions and problems to be discussed.",
+    "trigger": "Client repeatedly mentions abstract feelings like 'loss,' 'confusion,' 'anxiety,' 'self-blame,' indicating 'don't know how to say it, it's messy,' or describes life and studies as messy and hard to explain the distress.",
+    "parent_ids": [
+      "1",
+      "2",
+      "7",
+      "73"
+    ]
+  },
+  "80": {
+    "skill_id": "80",
+    "skill_name": "Listening with Empathy and Positive Attention to Create a Safe Atmosphere",
+    "skill_description": "Respond to the client with focused listening, genuine empathy, and unconditional positive regard, combined with acceptance and support, affirming their efforts and persistence, conveying respect and non-judgment, enhancing feelings of understanding and safety, stabilizing the therapeutic relationship, and encouraging them to continue sharing their troubles and experiences.",
+    "when_to_use": "In the initial stages and during the storytelling phase, or during the assessment and relationship-building phase, when the client needs to be understood and supported.",
+    "trigger": "Client crying, silence, slow speech, or avoiding eye contact, appearing helpless, self-blame, self-negation, tension, anxiety, and physiological reactions such as trembling or sweating.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "80"
+    ]
+  },
+  "81": {
+    "skill_id": "81",
+    "skill_name": "Providing a Accepting Environment and Buffer Time to Stabilize Emotions",
+    "skill_description": "Provide an accepting, private psychological and physical environment, giving sufficient time and space, allowing the client to calm down from excitement to calmness before entering dialogue and narration, reducing defenses and resistance, laying a foundation of safety and trust.",
+    "when_to_use": "In the initial sessions or after acute stress, when the client's emotions are out of control and they are unable to speak, used to stabilize emotions to facilitate narration.",
+    "trigger": "Client prolonged head down without speaking, crying, unwillingness to talk, stiff movements, sad expressions, and other significant emotional agitation manifestations.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "81"
+    ]
+  },
+  "67": {
+    "skill_id": "67",
+    "skill_name": "Listening and Empathy to Promote Expression and Build Trust",
+    "skill_description": "Maintain patient and focused listening and empathetic responses at the beginning and throughout the session, accompany the client with positive attention and a humanistic attitude, inviting the client to express suppressed grievances and anger, reducing defenses and tension, creating a non-judgmental, understood, and safe relationship, promoting verbal narration and stable interaction.",
+    "when_to_use": "In the first stage or in later stages of consultation, or when the client has difficulty narrating or emotional fluctuations.",
+    "trigger": "Client silence or hesitation, tense expressions, avoiding gaze, self-identifying as social phobic, low voice, discomfort, or the appearance of hopeless speech, urgent disclosure, interpersonal conflicts, or academic anxiety.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "67"
+    ]
+  },
+  "74": {
+    "skill_id": "74",
+    "skill_name": "Explaining the Session Process and Setting Up Predictable Structure",
+    "skill_description": "At the beginning of the first consultation or session, introduce the session process, frequency, duration, location, and rules, along with registration and basic information inquiries, clarifying boundaries and order, reducing uncertainty and awkwardness, establishing a sense of safety and predictable dialogue space.",
+    "when_to_use": "For the first consultation or at the start of each session, when establishing basic safety and structure is required.",
+    "trigger": "Client's first visit, lack of clarity regarding the process and rules, or appearing tense, uneasy, hesitant, and asking about session details.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "74"
+    ]
+  },
+  "79": {
+    "skill_id": "79",
+    "skill_name": "Clarifying Confidentiality Principles and Signing Informed Consent",
+    "skill_description": "At the start, complete the informed consent and confidentiality agreement, explain the principles and exceptions of confidentiality, clarify the rights, obligations, and responsibilities of both parties, transparently record the use and privacy protection, reducing concerns and anxiety, forming a safe, trustworthy, and predictable narrative boundary.",
+    "when_to_use": "Before starting consultation and in the first session, or during phase transitions and arrangement changes, used to establish a safe and trustworthy session environment.",
+    "trigger": "Client's doubts about privacy and process, reservedness, avoiding eye contact, or high defensiveness, actively asking about diagnosis, medication, and process details, or appearing tense and worried.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "79"
+    ]
+  },
+  "90": {
+    "skill_id": "90",
+    "skill_name": "Active Listening to Clarify Narratives and Gather Information",
+    "skill_description": "In the initial session, listen patiently and attentively, meticulously observe verbal, emotional, and behavioral cues, organize the events and contexts behind the anxiety, clarify narratives and misstatements, and grasp the relationship dynamics, respond sincerely to questions, stabilize the relationship and expectations, laying the foundation for determining key issues and formulating subsequent plans.",
+    "when_to_use": "In the first session or during the storytelling and relationship-building phase of the session, when the client narrates in detail or actively asks questions.",
+    "trigger": "Client starts narrating, emotional fluctuations such as crying or tension, narrative confusion or misstatements needing clarification, or questions about the process, diagnosis, and next steps.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "90"
+    ]
+  },
+  "86": {
+    "skill_id": "86",
+    "skill_name": "Developing and Arranging Actions and Records for the Session",
+    "skill_description": "In the latter part of the session, work with the client to transform learning goals into actionable checklists, list tasks and prioritize them by importance; before the first meeting ends, arrange daily records of actual and effective learning time, books read, and knowledge points mastered; simultaneously provide clear initial action prompts (e.g., 'Complete tasks according to the plan, do not play on the phone'), and agree on the focus goal for the next consultation, to enhance actionability and efficiency, form a clear process, and carry momentum.",
+    "when_to_use": "At the end of the first meeting or at the end of any session, when goals and direction are clear and behavioral practice in the session is needed; or when a shift in emotion/stance requires clarifying the next focus.",
+    "trigger": "Client proposes feasible strategies such as 'make a plan' or 'do not play on the phone' and is willing to act; or reports difficulty in engaging in learning, unstable duration, anxiety and disorganization regarding unmastered knowledge points; or bravely expresses and shows a desire for growth during the session and prepares to end to return to daily learning tasks.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "86"
+    ]
+  },
+  "78": {
+    "skill_id": "78",
+    "skill_name": "Reviewing and Organizing Effective Actions During the Session",
+    "skill_description": "In follow-up or subsequent guidance, starting from the last completed status as agreed, guide the client to review the specific actions taken and their effectiveness between the two sessions, use focused, specific questions to clarify 'which methods were effective and how they were done,' locking in effective actions that can be continued.",
+    "when_to_use": "At the start of subsequent sessions or assessment phases, when reviewing the current situation and consolidating changes is needed; used to review actual actions and effects after the previous session.",
+    "trigger": "Client is willing to review recent learning and emotional changes, or mentions attempts made and their effectiveness/confusion, requiring further organization.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "78"
+    ]
+  },
+  "66": {
+    "skill_id": "66",
+    "skill_name": "Providing positive feedback and encouragement to consolidate change",
+    "skill_description": "When the client shows progress or effective practices in therapy and life, provide timely positive feedback and emotional affirmation, emphasizing that their efforts and changes are seen, reinforcing self-efficacy and hope, supporting the continuation and expansion of change.",
+    "when_to_use": "After phase summaries, follow-ups, or key breakthroughs; or when the client shares recent effective actions or small progress, to consolidate new changes and stimulate intrinsic motivation to continue.",
+    "trigger": "Client reports or exhibits substantial improvement and positive behavior, gains a sense of accomplishment, or persists in new learning practices; important expressions or attempts are completed in therapy, awaiting recognition.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "66"
+    ]
+  },
+  "75": {
+    "skill_id": "75",
+    "skill_name": "Distilling effective points, emphasizing resources, and generalizing",
+    "skill_description": "In subsequent sessions, provide feedback on the previous homework and practice, offer positive encouragement, distill key points of effective change; at the same time, point out the client's strengths, resources, and abilities, attribute the outcomes to their replicable internal strength, and guide the generalization of new understandings and practices to other life domains, to consolidate change, enhance self-efficacy, and optimism.",
+    "when_to_use": "At the beginning of subsequent sessions or during phase reviews, feedback and distillation based on homework completion; used to help the client identify and name their resources and encourage generalization while providing positive feedback.",
+    "trigger": "Client brings back practice experiences, receives positive feedback from others, or notices self-change; cues of ability appear in narratives (e.g., \"more focused after previewing a lecture\"), or shares successful experiences, noticeable relaxation, and pleasure, acknowledging their resources.",
+    "parent_ids": [
+      "1",
+      "10",
+      "12",
+      "75"
+    ]
+  },
+  "91": {
+    "skill_id": "91",
+    "skill_name": "Finding exceptions and unique outcomes to pivot to resources",
+    "skill_description": "When stuck in problem stories, use curious questions to backtrack to moments where the problem did not occur or had a lesser impact, compare the differences between several attempts, detail the behavior and feelings at that time, amplify positive experiences and possibilities; if exceptions cannot be found temporarily, use hypothetical scenarios to guide thinking and rehearsal.",
+    "when_to_use": "When the client narrates problem stories filled with non-acceptance, declining grades, self-negation, etc., or when needing to pivot to resources and possibilities after deconstructing negative narratives; when stuck in learned helplessness and unable to see change.",
+    "trigger": "Repeated statements like \"nobody likes me\" or \"I am terrible\" expressing helplessness and negative self-identity; emphasis on communication difficulties or presupposing hostility from others; difficulty recalling moments free from anxiety or fear; beginning to see clues of different outcomes.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "91"
+    ]
+  },
+  "76": {
+    "skill_id": "76",
+    "skill_name": "Summarizing strengths and enhancing self-identity",
+    "skill_description": "Around exception events, help the client summarize factors that attract others, personality strengths, and existing abilities, connect to positive identity, boost confidence, and shift attention from negative labels to resources.",
+    "when_to_use": "When an exception is discovered, the story is rich, or after discussing the outcomes of new relationships, to consolidate strength identity and confidence.",
+    "trigger": "Client recognizes effective behaviors or positive feedback from others, expresses self-discovery, or begins to see positive aspects beyond labels.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "76"
+    ]
+  },
+  "71": {
+    "skill_id": "71",
+    "skill_name": "Using exceptions to inquire, discover, and expand resources",
+    "skill_description": "Ask about experiences where the problem did not occur or were less severe, locate exceptions and follow up on the time, situation, behavior, and support, detail the facilitating factors and practices, judge whether they can be transferred to the present, continuously discover and amplify more exceptions, forming a positive experience bank and replicable solution paths.",
+    "when_to_use": "In the resource exploration phase of the second and subsequent sessions after externalizing or identifying the impact of the problem, or when the client generalizes the problem as unsolvable and needs to pivot to available resources and success fragments.",
+    "trigger": "Client shows generalized or absolute statements, presents helplessness; or has shared one or more exception fragments, surfaced success fragments or support cues, can recall a recent better state.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "71"
+    ]
+  },
+  "85": {
+    "skill_id": "85",
+    "skill_name": "Praising and naming strengths and progress",
+    "skill_description": "Immediately express appreciation and specifically name strengths and efforts, such as actions, attitudes, desires, and traits; give factual affirmation for the shining points and progress presented, reduce negative labels, expand attention to strengths and self-efficacy, enhance confidence in change.",
+    "when_to_use": "When a moment of the client's strength or effort is discovered in the session; during each feedback phase of the consultation or after exception exploration and homework review, used to consolidate positive narratives.",
+    "trigger": "Client demonstrates effort, completes homework, shows change, or presents positive behaviors, unique insights, or progress related to goals.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "85"
+    ]
+  },
+  "87": {
+    "skill_id": "87",
+    "skill_name": "Detailing exceptions to distill replicable strategies",
+    "skill_description": "Around success fragments inconsistent with the problem narrative, use exception questions to identify and detail the situation, facilitating factors, and specific practices at that time, continuously ask \"how was it done\" and \"are there other reasons?\", simultaneously explore and record exceptions within the week, concretize effective strategies and conditions, enhance self-efficacy, and plan replicable paths.",
+    "when_to_use": "When success fragments inconsistent with the problem narrative or high performance appear, or when entering the deep dive phase after an exception is raised, or reviewing the reasons and methods for achieving and not achieving goals.",
+    "trigger": "Client reports breakthrough moments like sustained focus or efficient learning, can recall experiences of being relaxed, focused, or praised, or certain tasks went smoother and effective strategies and support were found.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "87"
+    ]
+  },
+  "84": {
+    "skill_id": "84",
+    "skill_name": "Using rating questions to detail goals and small steps",
+    "skill_description": "Use a 0–10 rating scale to describe the ideal and the current state, determine the current score and the gap, summarize efforts made and factors that maintained no worsening, explore what specific differences \"one point more\" would bring, and jointly formulate small steps of action and self-determined indicators to monitor progress and enhance self-efficacy.",
+    "when_to_use": "When goals are vague or need to be transformed into actionable progress indicators; in the goal-oriented phase and progress assessment process of the second consultation or mid-term support.",
+    "trigger": "Client finds it difficult to describe goals or progress, feels helpless or stagnant; can provide a current score, is willing to improve, or needs to test the degree of improvement and monitor change.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "84"
+    ]
+  },
+  "92": {
+    "skill_id": "92",
+    "skill_name": "Immediate Specific Affirmation to Consolidate Motivation",
+    "skill_description": "Respond to the client's attempts and progress with timely, specific affirmations and positive feedback, discussing gains and meaning in homework and life review; point out demonstrated resources and abilities; enthusiastically affirm minor progress and probe to facilitate conditions; express sincere positive feedback with joy in the moment to enhance the motivation to continue narration and change, consolidating the new narrative.",
+    "when_to_use": "When positive engagement, action, or phase progress appears in the session or homework/practice review; or when the client is currently expressing the new narrative or showing change signals.",
+    "trigger": "Registration for competitions, participation in training, practice and score feedback; improvement in sleep/mood/social life, more specific plans; more positive and confident narration, clearly explaining terminology or techniques; small attempts such as looking up, initiating conversation, daring to raise a hand.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "92"
+    ]
+  },
+  "72": {
+    "skill_id": "72",
+    "skill_name": "Affirming Agency to Activate Hope",
+    "skill_description": "Specifically provide feedback and affirm the client's coping, knowledge, and skills in the dialogue, clarify the evidence of their agency, frame this as the beginning of hope; use positive, affirming, and appreciative language, if necessary, use the witness perspective to reinforce self-worth and the new narrative, enhancing confidence and motivation to continue narration and change.",
+    "when_to_use": "When the client self-evaluates helplessness, believes the problem cannot be solved, or lacks motivation; when external encouragement is needed to enhance self-worth and persistence.",
+    "trigger": "Expressing despair, self-denial, or only seeing difficulties while ignoring one's own efforts; lack of motivation, feeling \"nothing is worth it,\" emotional instability; mentioning important others or expecting to be seen and acknowledged.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "72"
+    ]
+  },
+  "82": {
+    "skill_id": "82",
+    "skill_name": "Affirming Courage and Taking Action Together",
+    "skill_description": "Affirm the client's courage to seek help and change, express a cooperative stance and expectation (such as \"let's work together\"), provide encouraging inspiration and support at key points, convey trust and expectation, help them maintain confidence and continued action amidst doubt and pressure, enhancing the motivation to continue narration.",
+    "when_to_use": "In the early stages of the session or when self-denial is evident and confidence is low; during the positive construction and planning phase, or at points of doubt or high pressure.",
+    "trigger": "Client expressing helplessness, increased anxiety, lack of confidence in the future; moments of doubt, high pressure, or needing support and recognition of their efforts.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "82"
+    ]
+  },
+  "83": {
+    "skill_id": "83",
+    "skill_name": "Marking Progress and Encouraging Persistence in Practice",
+    "skill_description": "Continuously encourage the client to persist in practicing the new narrative, promptly identify and point out specific progress and highlights, acknowledge their efforts and coping resources, encourage them to move forward in academics and life with these strengths, consolidate the therapeutic relationship and the new narrative, maintain action motivation.",
+    "when_to_use": "In subsequent consolidation phases or when the client shows small positive changes; during the evaluation of motivation, review of attempts and resources, or after they complete a phase of practice.",
+    "trigger": "Showing signs of change or doubting the ability to maintain change; describing efforts, practice, or progress; actively participating in consultation and training tasks; downplaying their efforts or denying achievements.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "83"
+    ]
+  },
+  "70": {
+    "skill_id": "70",
+    "skill_name": "Inviting and Promoting Specific Micro-Actions",
+    "skill_description": "Propose feasible micro-actions in a collaborative tone and inquire about willingness, convert encouragement into practice; specifically reinforce effective behaviors that bring positive energy, assist in sorting out replicable practices, encourage daily consistent practice to promote sleep and mood improvement and consolidate the new narrative.",
+    "when_to_use": "When implementable strategies are identified, to promote action and state improvement; when exceptions or successful experiences are found and started to be executed.",
+    "trigger": "Client stating methods \"maybe feasible,\" willing to try or seeking specific direction; sharing success snippets, completing social tasks, expressing willingness to continue trying.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "70"
+    ]
+  },
+  "68": {
+    "skill_id": "68",
+    "skill_name": "Emphasizing Small Steps and Setting Goal Tracking",
+    "skill_description": "Encourage starting with the easiest small tasks, believing small changes have great value; jointly set phase-specific academic and skill goals, clarify methods for achievement and set up progress tracking; combine continuous contact, maintenance, and refinement, lower the threshold for action and maintain change, accumulate visible success experiences.",
+    "when_to_use": "When motivation and persistence need to be increased in the planning and behavioral practice phase; when the third phase focuses on long-term goals and the ability to see change is difficult; when setting up practice steps or consolidating exceptions.",
+    "trigger": "Lack of confidence in change, vague goals, or loose execution; self-reporting difficulty in finding the ability to change family problems, presenting absolute pessimistic thinking, stagnation; difficulty or hesitation with action, or worry about not being able to persist.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "68"
+    ]
+  },
+  "69": {
+    "skill_id": "69",
+    "skill_name": "Affirming Growth and Encouraging Maintenance in Review",
+    "skill_description": "In the review and summary stages of the ending and consolidation phase, extract key changes, specifically affirm efforts and achievements, encourage continued practice and applying methods to life, consolidate the alternative story and confidence to continue action, support the healthy separation of consultation.",
+    "when_to_use": "In the final consultation or phase-specific summary review; at the end of a session or summary review of a milestone; in the later review and consolidation phases, or before the final summary.",
+    "trigger": "Client asking the therapist's evaluation of action ability or showing increased progress and records; emotional relief, cognitive shift, or behavioral improvement has occurred; feedback before follow-up or termination regarding recovery of life and relationships, etc.; completion of practice or report identifying unreasonable beliefs and emotional improvement; entering the summary and closing, discussing follow-up arrangements and life application.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "69"
+    ]
+  },
+  "65": {
+    "skill_id": "65",
+    "skill_name": "Rehearsing Unexpected Situations to Consolidate Change",
+    "skill_description": "In the later stages of consultation, jointly review the process and gains with the client, discuss possible unexpected situations and coping strategies, consolidate positive changes, enhance confidence to continue practicing the new narrative, and be used for relapse prevention and maintenance of change.",
+    "when_to_use": "In consolidation sessions and the ending phase, for summarizing, encouraging, and relapse prevention.",
+    "trigger": "Client has shown positive changes and consultation is nearing its end; still has worries about the future.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3",
+      "6",
+      "65"
+    ]
+  }
+}

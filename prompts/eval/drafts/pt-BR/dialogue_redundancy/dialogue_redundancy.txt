@@ -1,0 +1,97 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é avaliar a qualidade das respostas do terapeuta na conversa com base exclusivamente no texto original, com foco em repetição sem sentido, linguagem padronizada e redundância, e fornecer evidências verificáveis.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: Não infira, extrapole nem introduza conhecimento externo ou deduções baseadas no senso comum.
+2) Evidências primeiro: Cada nota deve ser diretamente sustentada ou contradita pelo texto original; ausência de evidências = informação insuficiente/indefinida.
+3) Nota rigorosa: A nota 4 deve ser extremamente exigente; qualquer ponto-chave ausente ou contraevidência impede a nota 4.
+4) Formato da saída: A saída final deve ser um objeto JSON válido e nada mais; são proibidos texto não JSON, explicações, prefixos/sufixos e Markdown.
+
+Importante (para evitar avaliações equivocadas, deve ser seguido):
+- Esta escala avalia a qualidade das respostas do counselor, sobretudo repetição sem sentido, linguagem padronizada e excesso de palavras.
+- Repetição terapêutica intencional (por exemplo, reformular, resumir, refletir emoções, confirmar entendimento) não deve ser tratada como repetição negativa; só conte como evidência negativa quando repetir quase não acrescenta informação nem faz a conversa avançar.
+- Indicações de palco/ações (como “(fim da sessão)” ou “(passos se afastando)”) não são evidência de conteúdo, exceto quando a pessoa atendida expressa uma avaliação explícita do processo terapêutico por meio delas.
+
+### 1. Tarefa de avaliação
+A conversa abaixo registra uma interação em vários turnos entre uma pessoa atendida (client) e um terapeuta (counselor).
+Com base nos critérios unificados, atribua notas de 0 a 4 a cada item.
+
+### 2. Critérios unificados de pontuação (inteiros de 0 a 4)
+0: Problema grave (repetição/padronização/conversa vazia evidente e frequente; ou a repetição causa desorientação ou impede o avanço).
+1: Problemático (há repetição/ redundância clara que prejudica o progresso).
+2: Neutro/indefinido (nota padrão: evidências insuficientes; repetição leve com algum avanço; ou evidências positivas e negativas mistas).
+3: Bom (há evidências claras de pouca linguagem padronizada e de que a maioria dos turnos acrescenta informações/avanço; sem contraevidência relevante).
+4: Muito bom (pelo menos duas evidências fortes e independentes de respostas altamente específicas ao conteúdo da pessoa atendida, que promovem claramente o avanço e quase não têm repetição sem sentido; sem contraevidência relevante).
+
+Regras de pontuação (aplique estritamente, evidências primeiro):
+
+【1. Extração de evidências (cite o original sem reescrever)】
+Para cada item, extraia do diálogo:
+- evidence_pos: trecho original que apoia diretamente o item (no máximo 2).
+- evidence_neg: trecho original que contradiz o item (no máximo 2).
+Requisitos:
+- Cole somente falas originais ou trechos contínuos; não reescreva nem resuma.
+- Se não houver conteúdo relevante, use [] no campo correspondente.
+
+【2. Relevância e força das evidências (aplique obrigatoriamente)】
+- evidence_pos deve apontar diretamente para os elementos-chave do item; frases sem relação com ele não são evidência positiva.
+- “Cortesia/encerramento procedimental” não é evidência positiva forte: por exemplo, “certo/obrigado/até semana que vem/de nada”.
+- evidence_pos normalmente deve vir de falas do counselor; falas da pessoa atendida só podem ser usadas como evidence_neg se ela disser explicitamente “você está repetindo/ já falei isso/não entendo o que você está dizendo” ou algo equivalente.
+
+【3. Elementos-chave por item (aplique ao julgar a cobertura)】
+1) Ausência de repetição e padronização:
+   - As falas/perguntas do counselor se adaptam às mudanças nas informações da pessoa atendida (não são frases prontas repetidas).
+   - Não repete a mesma pergunta ou sugestão sem ajustar-se ao feedback.
+   - Não usa falas evidentemente copiadas/coladas (estrutura quase idêntica em turnos consecutivos e conteúdo vazio).
+2) Eficiência do avanço e densidade informativa:
+   - A maioria dos turnos acrescenta informação: novas perguntas de esclarecimento, novas perspectivas, estratégias específicas, resumo ou próximos passos.
+   - Evita falas longas e vazias, paráfrases sinônimas e encorajamento genérico pouco relacionado ao conteúdo.
+   - Leva a conversa a algo mais específico e executável, em vez de permanecer estagnada.
+
+【4. Barreiras para a nota (evite notas altas sem base)】
+A) Nota padrão = 2: Evidências insuficientes/difíceis de avaliar/positivas e negativas mistas sem força → atribuir 2.
+B) Para score ≥3, evidence_pos deve conter pelo menos 1 trecho que cubra diretamente ao menos 1 elemento-chave; evidence_neg deve estar vazio.
+C) Nota 4 exige pelo menos 2 evidence_pos de frases/turnos diferentes, evidence_neg vazio e cobertura suficiente dos elementos-chave; caso contrário, no máximo 3.
+D) Para notas 0 ou 1, evidence_neg deve conter pelo menos 1 trecho.
+E) Se evidence_neg não estiver vazio e for relevante, a nota máxima é 2.
+
+### 3. Lista de itens (mantenha a ordem)
+1. Ausência de repetição e padronização: as respostas do counselor evitam repetir fórmulas fixas sem sentido e se adaptam às informações da conversa.
+2. Eficiência do avanço e densidade informativa: a maioria das respostas do counselor acrescenta informação ou promove avanço, evitando conversa vazia, redundância e estagnação.
+
+### 4. Formato de saída
+Produza um objeto JSON diretamente analisável e nada mais; ele deve conter somente a chave `items`.
+
+`items` deve ser uma lista de comprimento 2, na ordem da lista. Cada elemento deve conter somente:
+1) `item`: nome como string, exatamente igual a um dos rótulos fixos em chinês abaixo (não acrescente tradução, parênteses, dois-pontos ou explicações):
+   - `非重复与非模板化`
+   - `推进效率与信息密度`
+2) `evidence_pos`: array de trechos originais que apoiam o item (no máximo 2; ou `[]`).
+3) `evidence_neg`: array de trechos originais que o contradizem (no máximo 2; ou `[]`).
+4) `thought`: decisão em uma frase (≤24 caracteres chineses, sem quebra de linha; use somente frases curtas como “sem evidência/com evidência positiva/com contraevidência/misto/limitado”).
+5) `score`: inteiro de 0 a 4.
+
+Requisitos rígidos das evidências:
+- evidence_pos / evidence_neg só podem conter falas originais ou trechos contínuos; não parafraseie nem resuma.
+- Prefira trechos curtos (recomendação: até 20 caracteres chineses), evitando trechos longos.
+
+Restrições de validação automática (corrija antes de responder):
+- items[0].item deve ser `非重复与非模板化`; items[1].item deve ser `推进效率与信息密度`.
+- score ≥3 exige evidence_pos não vazio; caso contrário, use 2 e thought `无证据→2`.
+- score ≥3 exige evidence_neg vazio; caso contrário, use 2 e thought `有反证→封顶2`.
+- score =4 exige pelo menos 2 evidence_pos e evidence_neg vazio; caso contrário, reduza para 3 ou 2 e ajuste thought.
+- score ≤1 exige evidence_neg não vazio; caso contrário, use 2 e thought `无反证→2`.
+
+Exemplo de saída:
+{
+  "items": [
+    {"item": "非重复与非模板化", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2},
+    {"item": "推进效率与信息密度", "evidence_pos": [], "evidence_neg": [], "thought": "无证据→2", "score": 2}
+  ]
+}
+
+É absolutamente proibido produzir texto que não seja JSON, explicações, prefixos/sufixos ou Markdown.
+
+### 5. Dados de entrada
+[Conversa de aconselhamento]:
+{{diag}}

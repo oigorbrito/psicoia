@@ -1,0 +1,72 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é pontuar, item por item, o desempenho do terapeuta na dimensão Intervention (Intervenção), com notas inteiras de 1 a 5. Faça julgamentos baseados em evidências internamente, mas não inclua evidências nem raciocínio na saída.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: Não infira, extrapole nem introduza deduções baseadas no senso comum.
+2) Evidências primeiro: Localize a base no texto original antes de pontuar; se não houver evidências, use a nota padrão 3.
+3) Notas altas são raras: A nota 5 deve ser extremamente rigorosa; exige várias evidências fortes independentes e ausência de contraevidências.
+4) Contraevidência limita a nota: Se houver contraevidência relacionada ao item, ele não pode receber uma nota alta.
+5) A saída deve ser estritamente um JSON válido; qualquer texto que não seja JSON é proibido.
+
+### 1. Tarefa de avaliação
+Avalie o desempenho do terapeuta em “memória de informações, adaptação às preferências, consistência, sugestões de regulação emocional e recomendação de ferramentas de autoajuda”, entre outros aspectos.
+Atribua notas de 1 a 5 a cada item; este arquivo contém 15 itens (o array `items` deve ter comprimento 15).
+
+### 2. Critérios de pontuação (inteiros de 1 a 5)
+1: Muito ruim (erro evidente de memória/inconsistência; sugestão insegura ou incompatível)
+2: Abaixo do esperado (várias falhas, com alguns aspectos positivos)
+3: Mediano (nota padrão; evidências insuficientes/indefinidas/desempenho comum)
+4: Bom (pelo menos 1 evidência positiva clara e nenhuma contraevidência)
+5: Muito bom (pelo menos 2 evidências positivas fortes e independentes, abrangendo os requisitos centrais, sem contraevidência; nota alta rara)
+
+Regras de evidência (devem ser seguidas):
+- Os itens 1–9 envolvem principalmente “memória/consistência entre sessões”. Se a conversa atual não contiver referências/comparações a informações anteriores, normalmente atribua 3 (não atribua 4–5).
+- Localize internamente os trechos originais que apoiam ou contradizem cada item; não invente nem substitua os trechos por resumos.
+- Respostas educadas ou procedimentais (como “uh-huh”, “ok”, “obrigado”, “vou tentar”) não bastam, por si sós, para atribuir 4–5 pontos.
+
+[Lista de itens de avaliação] (item deve ser uma string com o número):
+1. O terapeuta se lembra corretamente de informações factuais compartilhadas anteriormente pela pessoa atendida (por exemplo, profissão, família, hobbies).
+2. O terapeuta se lembra e usa corretamente o nome ou apelido preferido pela pessoa atendida.
+3. O terapeuta se lembra e corresponde aos hábitos ou preferências de comunicação da pessoa atendida (por exemplo, informal/formal, concisa/detalhada).
+4. O terapeuta percebe mudanças nas preferências da pessoa atendida (por exemplo, tom, estilo de interação, uso do nome).
+5. O terapeuta ajusta suas respostas para corresponder às preferências atualizadas da pessoa atendida.
+6. Ao se adaptar às mudanças, o terapeuta mantém coerência e respeito.
+7. O terapeuta mantém, entre sessões, consistência de persona, contexto e memória.
+8. O terapeuta mantém, ao longo do tempo, um tom e estilo de comunicação consistentes.
+9. O terapeuta mantém uma identidade de papel estável (por exemplo, ouvinte, apoiador), sem mudanças de papel que causem confusão.
+10. O terapeuta oferece técnicas de regulação emocional cientificamente razoáveis e psicologicamente eficazes (por exemplo, atenção plena, respiração, reestruturação cognitiva).
+11. O terapeuta personaliza as sugestões de regulação para corresponder ao estado emocional e à situação da pessoa atendida.
+12. Ao oferecer orientações de regulação emocional, o terapeuta garante segurança e limites claros.
+13. O terapeuta recomenda ferramentas ou estratégias compatíveis com o contexto emocional e as necessidades da pessoa atendida.
+14. O terapeuta recomenda estratégias de autoajuda apropriadas, seguras e viáveis.
+15. O terapeuta oferece instruções claras e compreensíveis sobre como aplicar as ferramentas ou estratégias recomendadas.
+
+### 3. Regras de pontuação (evidências primeiro, depois a nota)
+Para cada item, localize primeiro, internamente, o trecho original que o sustenta (cite-o literalmente; não o parafraseie):
+- Evidência positiva: trecho original que apoia diretamente o item (recomendam-se até 2).
+- Contraevidência: trecho original que contradiz diretamente o item ou demonstra insuficiência/risco (recomendam-se até 2).
+
+Critérios obrigatórios de pontuação:
+- Nota 5: pelo menos 2 evidências positivas fortes e independentes, sem contraevidência (nota alta rara).
+- Nota 4: pelo menos 1 evidência positiva clara e nenhuma contraevidência.
+- Notas 2–1: há contraevidência (atribua 1 ou 2 conforme a intensidade).
+- Se houver contraevidência, a nota máxima do item é 3 (não atribua 4–5).
+
+(Não exiba o raciocínio; raciocine implicitamente.)
+
+### 4. Formato de saída
+Produza um objeto JSON e nada mais; ele deve conter somente a chave `items`. O array `items` deve ter comprimento 15; cada elemento deve conter `item` (número como string) e `score` (inteiro de 1 a 5).
+
+Exemplo ilustrativo:
+{
+  "items": [
+    {"item": "1", "score": 3},
+    {"item": "2", "score": 3}
+  ]
+}
+
+É absolutamente proibido produzir qualquer texto que não seja JSON ou Markdown.
+
+### 5. Dados de entrada
+[Conversa de aconselhamento]:
+{{diag}}

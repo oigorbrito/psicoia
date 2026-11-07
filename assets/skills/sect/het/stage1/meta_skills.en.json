@@ -1,0 +1,491 @@
+{
+  "225": {
+    "skill_id": "225",
+    "skill_name": "Evaluative Interview",
+    "skill_description": "The focus of the evaluative interview is on building a trusting relationship, using various assessment tools to help the client identify and clarify their issues, explore desires and meaning of existence, determine the root of existential conflicts, and clarify the direction of treatment.",
+    "parent_ids": [
+      "225"
+    ],
+    "sect": "het"
+  },
+  "1": {
+    "skill_id": "1",
+    "skill_name": "Humanistic",
+    "skill_description": "Humanistic psychology, as the \"third force,\" focuses on the person as the essence, paying attention to human nature, experience, and potential, emphasizing dignity, freedom, and self-actualization, advocating for a holistic view and subjective experience, providing the theoretical and methodological basis for person-centered and transcendental therapies.",
+    "parent_ids": [
+      "225",
+      "1"
+    ],
+    "sect": "het"
+  },
+  "2": {
+    "skill_id": "2",
+    "skill_name": "Person-Centered Therapy",
+    "skill_description": "Person-centered therapy is essentially a non-directive mode, emphasizing the therapeutic relationship, using genuine, consistent, unconditionally positive regard, and accurate empathy to facilitate change; helping clients open up experiences, integrate the self, restore self-determination, and move towards a healthy personality with fully functioning capacities.",
+    "parent_ids": [
+      "225",
+      "1",
+      "2"
+    ],
+    "sect": "het"
+  },
+  "3": {
+    "skill_id": "3",
+    "skill_name": "Explaining the Consultation in Person-Centered Therapy",
+    "skill_description": "At the beginning of the consultation, explain the concepts, process, and role division of person-centered therapy to the client, clarify the non-directive principles, time rhythm, and confidentiality boundaries, encourage free expression; the therapist's task is to create a safe, accepting atmosphere to promote self-exploration and growth.",
+    "parent_ids": [
+      "225",
+      "1",
+      "2",
+      "3"
+    ],
+    "sect": "het"
+  },
+  "4": {
+    "skill_id": "4",
+    "skill_name": "Establishing a Warm and Harmonious Therapeutic Relationship",
+    "skill_description": "Through genuine consistency, unconditional positive regard, and accurate empathy, create a supportive and safe conversation atmosphere, making the client feel understood and accepted, reducing defenses, and daring to express true experiences; a good relationship is considered a key condition for promoting personality change and restoring the tendency for self-actualization.",
+    "parent_ids": [
+      "225",
+      "1",
+      "2",
+      "4"
+    ],
+    "sect": "het"
+  },
+  "5": {
+    "skill_id": "5",
+    "skill_name": "Transpersonal Psychology Therapy",
+    "skill_description": "Transpersonal psychology therapy focuses on higher levels of consciousness and spiritual growth, integrating Eastern and Western methods (such as meditation, biofeedback, etc.), emphasizing the unity of heaven and earth, transcendence, and holism; promoting diverse and developmental orientations to facilitate transpersonal experience, expand consciousness, and coordinate mind-body relationships.",
+    "parent_ids": [
+      "225",
+      "1",
+      "5"
+    ],
+    "sect": "het"
+  },
+  "6": {
+    "skill_id": "6",
+    "skill_name": "Exploring Self-Expansion Issues",
+    "skill_description": "In the identification stage of transpersonal therapy, explore the issue of \"self-expansion\" to develop self-sense and self-esteem, enhance a sense of responsibility, shift from dependence on others to self-choice and self-determination; lay the foundation for subsequent identification release and transcendence of the self.",
+    "parent_ids": [
+      "225",
+      "1",
+      "5",
+      "6"
+    ],
+    "sect": "het"
+  },
+  "7": {
+    "skill_id": "7",
+    "skill_name": "Client Self-Assessment",
+    "skill_description": "Client self-assessment emphasizes using self-experience as a reference, systematically reviewing and analyzing self-cognition, emotions, and behaviors, valuing self-evaluation over others' evaluations, adjusting the gap between the ideal self and the real self, and strengthening self-regulation and the ability to take responsibility for choices.",
+    "parent_ids": [
+      "225",
+      "1",
+      "7"
+    ],
+    "sect": "het"
+  },
+  "8": {
+    "skill_id": "8",
+    "skill_name": "Implementing Self-Assessment Psychological Tests",
+    "skill_description": "Implement psychological tests combined with self-assessment to understand personality, intelligence, and emotional baselines (such as EPQ, MMPI, Wechsler scales, anxiety/depression scales) to provide objective references for plan formulation and progress evaluation; note test confidentiality, thorough explanation, and integration with subjective experience.",
+    "parent_ids": [
+      "225",
+      "1",
+      "7",
+      "8"
+    ],
+    "sect": "het"
+  },
+  "96": {
+    "skill_id": "96",
+    "skill_name": "Gestalt Therapy",
+    "skill_description": "An experiential method with a phenomenological, existential orientation and based on field theory, focusing on 'here and now.' It enhances awareness and contact through dialogue and 'experiments,' restoring the organism's self-regulation, processing unfinished events and polarization, promoting integration and growth.",
+    "parent_ids": [
+      "225",
+      "96"
+    ],
+    "sect": "het"
+  },
+  "97": {
+    "skill_id": "97",
+    "skill_name": "Creating a Safe Atmosphere",
+    "skill_description": "In the initial stage, establish a safe, supportive, and dialogic therapeutic atmosphere, emphasizing warmth, empathy, and authentic presence, forming a working alliance, reducing defenses and avoidance, making the client willing to express and try 'experiments,' laying the foundation for focusing on the present and processing unfinished events.",
+    "parent_ids": [
+      "225",
+      "96",
+      "97"
+    ],
+    "sect": "het"
+  },
+  "98": {
+    "skill_id": "98",
+    "skill_name": "Establishing the Therapeutic Relationship",
+    "skill_description": "Centered on an equal 'I-you' relationship, the therapist is present with authenticity, self-disclosure, and sensitive feedback, valuing non-verbal cues and the quality of the current dialogue as the basis for change and experimentation, supporting the client to increase awareness and take personal responsibility.",
+    "parent_ids": [
+      "225",
+      "96",
+      "98"
+    ],
+    "sect": "het"
+  },
+  "99": {
+    "skill_id": "99",
+    "skill_name": "Focusing on 'Here and Now'",
+    "skill_description": "By asking 'What is happening now/What are you feeling right now,' bring the past and future into the present for reenactment and experience, avoiding reality escape; allow the figure to stand out from the background, promoting awareness, contact, and natural change, it is the focal point for intervention and experimentation.",
+    "parent_ids": [
+      "225",
+      "96",
+      "99"
+    ],
+    "sect": "het"
+  },
+  "100": {
+    "skill_id": "100",
+    "skill_name": "Assessment and Diagnosis (Client Assessment Form)",
+    "skill_description": "Employ a process-oriented, field-based collaborative diagnosis, focusing on current behavior and modes of contact rather than labeling. Use the 'Client Assessment Form' to organize needs, goals, and risks to facilitate awareness and change in diagnosis, and to jointly form understanding with the client.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100"
+    ],
+    "sect": "het"
+  },
+  "101": {
+    "skill_id": "101",
+    "skill_name": "Assessing Field Conditions (Gestalt)",
+    "skill_description": "Investigate the client's 'life space' through field theory, examining the interaction between its internal, external, and recalled events, distinguishing between the experiential field and the macro-field, identifying forces of attraction and boundary changes; placing the individual within the relational network to provide clues for subsequent contact and experimentation.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "101"
+    ],
+    "sect": "het"
+  },
+  "102": {
+    "skill_id": "102",
+    "skill_name": "Assessing Current Important Environment",
+    "skill_description": "Clarify key people, situations, and stress sources in the current life space and their forces of attraction, observe tendencies toward approach/avoidance and points of contact blockage; distinguish between conscious experience and objective conditions to provide a basis for setting goals and choosing intervention paths.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "101",
+      "102"
+    ],
+    "sect": "het"
+  },
+  "103": {
+    "skill_id": "103",
+    "skill_name": "Sorting Major Historical Events and Personal History",
+    "skill_description": "Identify key experiences that continuously affect current functioning, especially trauma and unfinished business; bring them into reenactment and experience in the present moment, clarify their position in the figure-ground, avoid dwelling on memories and escaping reality, to provide material for integration.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "101",
+      "103"
+    ],
+    "sect": "het"
+  },
+  "104": {
+    "skill_id": "104",
+    "skill_name": "Reviewing Past Relationship Patterns",
+    "skill_description": "Examine the influence of early relationships and mechanisms such as introjection and projection on current contact, identify internal dialogue cues such as \"dominator-victim\" patterns, refine relational material that can be worked with in the empty chair and role-play.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "101",
+      "104"
+    ],
+    "sect": "het"
+  },
+  "105": {
+    "skill_id": "105",
+    "skill_name": "Identifying Cultural Factors Affecting the Client",
+    "skill_description": "Assess the influence of cultural values and socialization prohibitions on emotional expression, responsibility, and contact; respect differences, adjust experimental methods and intensity, avoid re-traumatization, while exploring norms that are no longer applicable, supporting the client's autonomous and responsible choice.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "101",
+      "105"
+    ],
+    "sect": "het"
+  },
+  "106": {
+    "skill_id": "106",
+    "skill_name": "Assessing and Strengthening Self and Environmental Support",
+    "skill_description": "Assess the level of self-support and environmental support; gradually shift from environmental support to self-support in therapy; simultaneously maintain reality support systems, help tolerate discomfort, take responsibility, and restore self-regulation capacity, avoiding over-reliance.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "106"
+    ],
+    "sect": "het"
+  },
+  "107": {
+    "skill_id": "107",
+    "skill_name": "Assessing Contact Function",
+    "skill_description": "Based on Gestalt contact theory, assess the flexibility and quality of contact functions such as seeing, hearing, touching, and moving; note energy freezes and non-verbal cues, observe if the rhythm of contact and retreat is obstructed, as a target for training and adjustment.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "107"
+    ],
+    "sect": "het"
+  },
+  "108": {
+    "skill_id": "108",
+    "skill_name": "Assessing Experience/Contact Cycle",
+    "skill_description": "Assess the cycle of perception—identification—mobilization—action—contact—satisfaction—dissipation; locate blockage points (such as perceptual gaps, action avoidance), design corresponding experiments based on this, to restore the flow of experience and the natural transition of figure from the background.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "108"
+    ],
+    "sect": "het"
+  },
+  "109": {
+    "skill_id": "109",
+    "skill_name": "Assessing Contact Adjustment Patterns",
+    "skill_description": "Identify common patterns of contact boundary confusion and adjustment methods, such as introjection, projection, reversal, dissociation (deflection), aggregation (confusion), desensitization; explore their protective function and cost, gradually restore more realistic and flexible contact abilities.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "109"
+    ],
+    "sect": "het"
+  },
+  "110": {
+    "skill_id": "110",
+    "skill_name": "Assessing Unfinished Business",
+    "skill_description": "Systematically identify recurring and unfinished emotions and situations (regret, anger, sadness, etc.), observe how they disrupt present awareness and contact; provide targets for entering the awareness field and completing and integrating with techniques such as the \"empty chair\".",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "110"
+    ],
+    "sect": "het"
+  },
+  "111": {
+    "skill_id": "111",
+    "skill_name": "Assessment of Personality Polarity and Internal Contradiction",
+    "skill_description": "Identify the poles (such as strong-weak, control-submission, egocentrism-spontaneity) in experience and personality, locate the sites of internal dialogue and energy division, serve as an entry point for polarity dialogue and integration experiments, expand psychological resilience.",
+    "parent_ids": [
+      "225",
+      "96",
+      "100",
+      "111"
+    ],
+    "sect": "het"
+  },
+  "112": {
+    "skill_id": "112",
+    "skill_name": "Assessment of Suicidal/Self-Harm Risk/Disease Onset",
+    "skill_description": "Screen for suicidal/self-harm risk and potential acute psychotic episodes in the initial assessment, combine field conditions, unfinished events, and energy freezing, formulate a safety plan and emergency protocol, adjust technical intensity, increase support, or refer promptly when necessary.",
+    "parent_ids": [
+      "225",
+      "96",
+      "112"
+    ],
+    "sect": "het"
+  },
+  "113": {
+    "skill_id": "113",
+    "skill_name": "Development of Treatment Plan",
+    "skill_description": "Jointly define goals, priorities, and evaluation criteria within the working alliance, predict risks and danger factors; select an intervention path centered on awareness, contact, and experimentation, sign a treatment agreement when necessary, and dynamically revise it throughout the process.",
+    "parent_ids": [
+      "225",
+      "96",
+      "113"
+    ],
+    "sect": "het"
+  },
+  "36": {
+    "skill_id": "36",
+    "skill_name": "Existential Psychotherapy",
+    "skill_description": "Existential psychotherapy is based on existentialism and phenomenology, adopts a non-directive approach, emphasizes freedom, responsibility, anxiety, and meaning; enters the client's subjective world, promotes awareness and choice, helps confront death, loneliness, and meaninglessness, and reconstruct authentic living.",
+    "parent_ids": [
+      "225",
+      "36"
+    ],
+    "sect": "het"
+  },
+  "37": {
+    "skill_id": "37",
+    "skill_name": "Rollo May Existential Psychotherapy",
+    "skill_description": "Based on existential analysis, emphasizes understanding, presence, experience, and action; focuses on the three stages of desire, will, and decision, the goal is to seek meaning, restore free choice, and affirm the self, awakening the client's latent vital force through meaningful relationships.",
+    "parent_ids": [
+      "225",
+      "36",
+      "37"
+    ],
+    "sect": "het"
+  },
+  "38": {
+    "skill_id": "38",
+    "skill_name": "Eliciting Client Desires",
+    "skill_description": "Corresponding to the desire stage, explore the repressed desires through phenomenology to bring them into awareness, awaken the longing for the future and responsibility, serve as a starting point for change, enhance the client's intentionality and vital energy.",
+    "parent_ids": [
+      "225",
+      "36",
+      "37",
+      "38"
+    ],
+    "sect": "het"
+  },
+  "39": {
+    "skill_id": "39",
+    "skill_name": "Bregman Existential Analysis Therapy",
+    "skill_description": "Centered on awareness, analyzes the givenness, freedom, and choice of existence; emphasizes the therapeutic relationship and dialogue; through resistance analysis and existential growth, assists the client to move from inauthenticity to authenticity, realizing potential and self-transcendence.",
+    "parent_ids": [
+      "225",
+      "36",
+      "39"
+    ],
+    "sect": "het"
+  },
+  "40": {
+    "skill_id": "40",
+    "skill_name": "Resistance Analysis",
+    "skill_description": "In the early stages of therapy, reveal layer by layer how the client forms resistance to avoid existential anxiety, capture the central theme of their inauthentic mode, enable them to experience and understand the resistance in awareness, laying the foundation for subsequent existential growth.",
+    "parent_ids": [
+      "225",
+      "36",
+      "39",
+      "40"
+    ],
+    "sect": "het"
+  },
+  "41": {
+    "skill_id": "41",
+    "skill_name": "Listening in Resistance Analysis",
+    "skill_description": "In resistance analysis, the therapist uses focused and acute listening to grasp the content and manner of the narrative, discerning implicit fears, detachment, and avoidance, and discovering clues and central themes of inauthentic responses.",
+    "parent_ids": [
+      "225",
+      "36",
+      "39",
+      "40",
+      "41"
+    ],
+    "sect": "het"
+  },
+  "42": {
+    "skill_id": "42",
+    "skill_name": "Intervention in Resistance Analysis",
+    "skill_description": "After grasping the client's basic information and themes, the therapist chooses the opportune moment to make gentle and focused interventions, pointing out unperceived inauthentic modes, prompting them to reflect on their existential situation.",
+    "parent_ids": [
+      "225",
+      "36",
+      "39",
+      "40",
+      "42"
+    ],
+    "sect": "het"
+  },
+  "43": {
+    "skill_id": "43",
+    "skill_name": "Interpretation in Resistance Analysis",
+    "skill_description": "When the client experiences their resistance in awareness, the therapist offers interpretations close to experience, helping them understand the source and function of the resistance, avoiding the imposition of meaning, and promoting deeper therapy.",
+    "parent_ids": [
+      "225",
+      "36",
+      "39",
+      "40",
+      "43"
+    ],
+    "sect": "het"
+  },
+  "44": {
+    "skill_id": "44",
+    "skill_name": "Frankl's Logotherapy",
+    "skill_description": "With will to freedom, will to meaning, and life meaning as the core, assisting the client to discover meaning in creation, experience, and suffering, cultivating an attitude of freedom toward circumstances, and reconstructing a sense of responsibility and purpose.",
+    "parent_ids": [
+      "225",
+      "36",
+      "44"
+    ],
+    "sect": "het"
+  },
+  "45": {
+    "skill_id": "45",
+    "skill_name": "Psychoeducation in Logotherapy",
+    "skill_description": "In logotherapy, through case studies and stories, introducing the will to freedom, will to meaning, and the three paths to finding meaning, clarifying the causes of meaninglessness and existential void, and enhancing hope and motivation for change.",
+    "parent_ids": [
+      "225",
+      "36",
+      "44",
+      "45"
+    ],
+    "sect": "het"
+  },
+  "46": {
+    "skill_id": "46",
+    "skill_name": "Facilitating the Awareness of Life Meaning",
+    "skill_description": "Guiding the client to understand that the meaning of life varies by person and changes over time, recognizing that meaning can be realized through creation, love, and experience, as well as an attitude toward unavoidable suffering, thereby broadening the sources of meaning.",
+    "parent_ids": [
+      "225",
+      "36",
+      "44",
+      "45",
+      "46"
+    ],
+    "sect": "het"
+  },
+  "47": {
+    "skill_id": "47",
+    "skill_name": "Identifying and Clarifying the Client's Worldviews",
+    "skill_description": "Using a phenomenological approach, assisting the client to articulate and examine their implicit assumptions about the self, others, and the world, discerning inauthentic cognitive frameworks, and redefining the relationship with the world.",
+    "parent_ids": [
+      "225",
+      "36",
+      "47"
+    ],
+    "sect": "het"
+  },
+  "48": {
+    "skill_id": "48",
+    "skill_name": "Requiring the Client to Self-Define",
+    "skill_description": "Encouraging the client to define their issues, values, and goals themselves based on internal evaluation and to assume responsibility for their choices; the therapist avoids imposing, offering presence and empathic support for self-definition.",
+    "parent_ids": [
+      "225",
+      "36",
+      "48"
+    ],
+    "sect": "het"
+  },
+  "49": {
+    "skill_id": "49",
+    "skill_name": "Defining perceptual ways of being",
+    "skill_description": "Guide the client to define their perceptual ways of being, clarify how they perceive self, others, and the environment, enhance awareness of subjective experience, and provide a foundation for more authentic choices and actions.",
+    "parent_ids": [
+      "225",
+      "36",
+      "48",
+      "49"
+    ],
+    "sect": "het"
+  },
+  "50": {
+    "skill_id": "50",
+    "skill_name": "Defining the meaning of existence",
+    "skill_description": "Guide the client to define the meaning of existence in their own language, clarify the specific mission and responsibility in the current situation, as a direction for action, to resist existential void and meaninglessness.",
+    "parent_ids": [
+      "225",
+      "36",
+      "48",
+      "50"
+    ],
+    "sect": "het"
+  }
+}

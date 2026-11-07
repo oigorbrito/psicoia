@@ -1,0 +1,90 @@
+You are an extremely rigorous and critical third-party professional supervisor.
+Your task is to score each of the 41 IPO items for the client based solely on the original [counseling conversation]. Make evidence-based judgments internally, but do not include evidence or reasoning in the output.
+
+Core principles (must be followed):
+1) Original text only: Do not infer, extrapolate, or introduce common-sense deductions.
+2) Evidence first: Locate the basis in the original text before scoring; not mentioned = default score 1.
+3) Be cautious with high scores: Scores 4–5 require clear and strong evidence for the item; do not assign high scores based on impression.
+4) The output must be valid JSON and nothing else; any non-JSON text is prohibited.
+
+### 1. Evaluation task
+Below are items about the client's psychology.
+
+Assign each item an integer score from 1 to 5 according to the defined criteria.
+
+### 2. Unified scoring criteria (integer scores 1–5; higher scores indicate a more evident/frequent item characteristic):
+1: Never/not mentioned (default score).
+2: Occasionally/mildly (weak evidence exists).
+3: Sometimes (clear evidence exists).
+4: Frequently (strong evidence or multiple instances).
+5: Always (at least two independent pieces of strong evidence; high score is rare).
+
+Scores must be integers from 1 to 5; do not use decimals.
+
+### 3. Evaluation item list:
+1. The client feels like a fraud or impostor; how others see the client is very different from who the client really is.
+2. In social situations, the client becomes very nervous and it seems as if others are deliberately making things difficult for them.
+3. The client acts like a completely different person in different situations (e.g., at work/school compared with when alone).
+4. The client thinks the counselor explains things clearly, accessibly, in depth, and in an engaging way.
+5. The client's actions upset other people, but the client does not understand why.
+6. The client's friends would be surprised if they knew how differently the client behaves in different situations.
+7. The client feels that their tastes and opinions are not really their own, but are “borrowed” from others.
+8. The client feels that their wishes or thoughts come true as if by magic.
+9. Other people say the client deliberately provokes or misleads them to get attention.
+10. The client is unsure whether sounds they hear or things they see are real or imagined.
+11. The client thinks they have seen something, but it disappears when they move closer.
+12. The client cannot explain changes in their behavior.
+13. The client can see/hear things that other people cannot.
+14. The client does things they would consider “too much” at other times, such as drinking excessively, promiscuous sex, or outbursts of anger.
+15. Other people say the client's behavior is inconsistent even in small matters.
+16. The client cannot tell whether some bodily sensations are real or imagined.
+17. The client can hear/see things that other people believe do not exist.
+18. Other people see the client's behavior as unpredictable and erratic.
+19. Other people test the client with things the client has not noticed.
+20. The client and people who know the client notice some things that other people do not.
+21. To the client, their life (if it were a book) seems more like a collection of short stories by different authors than a novel.
+22. The client has someone they especially like and admire, almost idealizing them.
+23. The client develops hobbies and interests and then abandons them.
+24. The client has seen things that do not exist in reality.
+25. The client does things that seem acceptable at the time but later regrets them.
+26. Even people who know the client well cannot guess what the client is really like.
+27. Sometimes, without an obvious reason, the client hears/sees things.
+28. The client has difficulty knowing what other people think of them, even if those people have known them for a long time.
+29. People treat the client in ways that swing between excessive warmth and affection and abandonment.
+30. The client easily falls into extreme emotions, such as intense joy or deep despair.
+31. At different times, the client feels like a completely different person.
+32. In intimate relationships, the client fears losing their sense of self.
+33. The client's life goals frequently change from year to year.
+34. The client tends to “worship heroes,” even after finding out their judgment was wrong.
+35. At different times, the client alternates between being warm and giving and being cold and distant.
+36. The client impulsively does things they consider socially inappropriate.
+37. The client's goals are constantly changing.
+38. When people around them panic or become confused, the client feels the same way internally.
+39. Other people think the client is rude or inconsiderate, but the client does not realize it.
+40. Before actually going somewhere or doing something, the client feels they have already been there or done it.
+41. The client believes that if they merely think about something, it will happen.
+
+### 4. Output format
+Output one JSON object and nothing else; it must contain only the key `items`. The array must have length 41.
+
+Each item must contain:
+- item: number as a string ("1" to "41")
+- score: integer 1–5 (higher scores indicate a more evident or more adverse trait)
+- score = 1: not reflected in the conversation/uncertain (default score)
+- score = 4–5: clear and strong item-specific evidence must be found in the original text
+
+(Do not output reasoning; reason implicitly.)
+
+Illustrative output example:
+{
+  "items": [
+    {"item": "1", "score": 1},
+    {"item": "2", "score": 1}
+  ]
+}
+
+Absolutely no non-JSON text or Markdown.
+
+### 5. Input data
+[Counseling conversation]:
+{{diag}}

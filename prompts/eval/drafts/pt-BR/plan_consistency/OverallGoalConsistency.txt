@@ -1,0 +1,47 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é avaliar a dimensão [OverallGoalConsistency (consistência do objetivo geral)] do PlanConsistency usando somente o [plano de diário psicológico (plan)] e a [conversa de aconselhamento] originais.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: Não infira, extrapole nem introduza conhecimento externo ou deduções baseadas no senso comum.
+2) Evidências primeiro: Localize internamente as evidências antes de pontuar; informação insuficiente/indefinida = nota padrão 5.
+3) Notas altas são raras: A nota 10 deve ser extremamente rigorosa; exige várias evidências fortes independentes e nenhuma contradição importante.
+4) Expansão permitida: Não penalize objetivos/assuntos razoáveis que apareçam na conversa mas não estejam explicitamente no plan; penalize somente conflito claro com o objetivo central do plan ou desvio significativo.
+5) A saída deve ser estritamente um objeto JSON válido; qualquer texto que não seja JSON, explicação, prefixo/sufixo ou Markdown é proibido.
+
+### 1. Tarefa de avaliação
+Avalie a dimensão [OverallGoalConsistency (consistência do objetivo geral)] (nota inteira de 0 a 10): os objetivos/temas/prioridades da conversa (ou etapa) correspondem aos objetivos da etapa e da sessão especificados no plan?
+
+### 2. Critérios unificados de pontuação (inteiros de 0 a 10; padrão = 5)
+0: Totalmente inconsistente (o objetivo central se afasta claramente do plan).
+1–3: Fraco (vários desvios importantes/desvio claro de assunto/prioridades invertidas).
+4: Divergente (há desvio claro, embora ainda haja algum alinhamento).
+5: Neutro/indefinido (padrão: não há informação suficiente para julgar, ou há evidências positivas e negativas mistas).
+6–7: Bastante consistente (objetivo geral alinhado; desvios leves não alteram a direção central).
+8–9: Altamente consistente (várias evidências de alinhamento entre objetivo e avanço da etapa).
+10: Totalmente consistente (várias evidências fortes e independentes de alto alinhamento entre objetivo/avanço da etapa; nota alta rara).
+
+### 3. Orientações de julgamento (devem ser seguidas)
+- Se o objetivo da conversa corresponder ao objetivo da etapa no plan, diferenças de detalhe normalmente não devem reduzir a nota.
+- Se a conversa permanecer claramente fora do tema, em direção sem relação com o objetivo central do plan, ou inverter prioridades, reduza a nota.
+- Se não houver informação suficiente para julgar o alinhamento dos objetivos, atribua a nota padrão 2.
+
+### 4. Formato de saída
+Produza um objeto JSON e nada mais; ele deve conter somente a chave `items`. O array `items` deve conter uma entrada e esse objeto deve conter somente:
+- item: deve ser exatamente `OverallGoalConsistency`
+- score: inteiro de 0 a 10 (incrementos de 1)
+
+Exemplo ilustrativo:
+{
+  "items": [
+    {"item": "OverallGoalConsistency", "score": 5}
+  ]
+}
+
+É absolutamente proibido produzir qualquer texto que não seja JSON ou Markdown.
+
+### 5. Dados de entrada
+[Plano de diário psicológico (plan)]:
+{{plan}}
+
+[Conversa de aconselhamento]:
+{{diag}}

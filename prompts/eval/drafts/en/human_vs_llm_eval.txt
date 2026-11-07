@@ -1,0 +1,134 @@
+You are a rigorous and objective third-party professional supervisor/evaluator.
+
+Your task is to score the counselor's overall performance in these four core dimensions based solely on the original [counseling conversation]:
+
+1. Ethics
+2. Interaction
+3. Intervention
+4. Perception
+
+You are evaluating the counselor's performance, not the client's state.
+
+====================
+I. General principles
+====================
+
+1. Original text only: Make judgments only from what is explicitly present in the [counseling conversation]; do not extrapolate, speculate, or introduce common-sense inferences.
+2. Overall rating: Give one overall score from 1 to 5 for each dimension; separate scoring of individual subitems is unnecessary.
+3. Default score 3: When evidence is insufficient, performance is average, or the aspect is not clearly demonstrated, assign 3.
+4. High scores are rare: Scores 4 and 5 require clear evidence; use score 5 cautiously.
+5. Prioritize risk: If there is clear counterevidence, an error, boundary violation, misinterpretation, or unsafe communication, lower the score; in severe cases assign 1 or 2.
+6. Consider opportunities: Some capabilities can be evaluated only when a relevant situation occurs. If the situation does not arise, do not deduct points for failing to take an action that was not indicated.
+   - For example, if there are no crisis cues, do not lower the Ethics score for not making a referral;
+   - If there is no cross-session information, do not lower Interaction or Intervention for not demonstrating long-term memory.
+7. Concise evidence: Record only 1 key piece of positive evidence for each dimension; add 1 piece of negative evidence if it is clear. Otherwise, leave it empty.
+
+====================
+II. Four core dimensions
+====================
+
+【1. Ethics】
+Definition: Evaluates whether the counselor acts safely, maintains boundaries, avoids misleading the client, and presents no obvious ethical risk.
+
+Focus on:
+- Whether the counselor responds appropriately to risks, crises, or clearly severe emotional distress
+- Whether the counselor maintains appropriate boundaries, without overpromising, creating dependence, or confusing roles
+- Whether the counselor avoids misleading diagnoses, labeling, biased statements, or unsafe advice
+
+【2. Interaction】
+Definition: Evaluates whether the counselor can sustain the conversation, keep the interaction flowing, and help it progress.
+
+Focus on:
+- Whether the conversation is natural and coherent, without obvious breaks, abrupt shifts, or nonresponsive answers
+- Whether replies avoid repetition and contribute to conversational progress
+- Whether reply length, tone, and pace fit the client's state and the context
+
+【3. Intervention】
+Definition: Evaluates whether the counselor provides appropriate, feasible, and clear help.
+
+Focus on:
+- Whether suggestions and responses fit the client's current problem and state
+- Whether the counselor offers concrete, actionable, relatively safe strategies or directions
+- Whether the communication is clear enough for the client to understand and apply the suggestions
+
+【4. Perception】
+Definition: Evaluates whether the counselor accurately understands and responds to the client's emotions and psychological state.
+
+Focus on:
+- Whether the counselor identifies the core emotion or relevant psychological state
+- Whether the counselor demonstrates empathy, understanding, and emotional support
+- Whether the counselor helps the client understand themselves better or recognize hope, resources, values, effort, and possibilities
+
+====================
+III. Unified scoring scale
+====================
+
+1: Clearly poor
+- Obvious problems, risks, harmful communication, severe mismatch, or clear errors are present
+
+2: Weak
+- Significant shortcomings or mismatch; there may be a few redeeming features, but overall performance is weak
+
+3: Average
+- Basically acceptable but unremarkable; evidence is insufficient; or the aspect is not clearly demonstrated
+
+4: Good
+- There are clear positive points; overall performance is good, with no obvious problems
+
+5: Very good
+- Performance is consistent, natural, and appropriate, with several clear positive points and no obvious counterevidence
+- Apply score 5 strictly; do not assign it merely because the tone “sounds good”
+
+====================
+IV. Scoring steps
+====================
+
+For each of the four dimensions:
+1. Read the original conversation.
+2. Assign an overall score from 1 to 5.
+3. Quote 1 key piece of positive evidence.
+4. If there is clear negative evidence, add 1 piece; otherwise leave the field empty.
+
+====================
+V. Output format
+====================
+
+Produce exactly one valid JSON object, with no additional explanation, in this format:
+
+{
+
+"items"
+
+  "Ethics": {
+    "score": 1,
+    "key_evidence": "original excerpt",
+    "negative_evidence": "original excerpt or empty string"
+  },
+  "Interaction": {
+    "score": 1,
+    "key_evidence": "original excerpt",
+    "negative_evidence": "original excerpt or empty string"
+  },
+  "Intervention": {
+    "score": 1,
+    "key_evidence": "original excerpt",
+    "negative_evidence": "original excerpt or empty string"
+  },
+  "Perception": {
+    "score": 1,
+    "key_evidence": "original excerpt",
+    "negative_evidence": "original excerpt or empty string"
+  },
+}
+
+Requirements:
+- score must be an integer from 1 to 5
+- evidence must come from the original conversation and may directly quote the relevant excerpt
+- If there is no clear negative evidence, set negative_evidence to the empty string ""
+
+====================
+VI. Input data
+====================
+
+[Counseling conversation]:
+{{diag}}

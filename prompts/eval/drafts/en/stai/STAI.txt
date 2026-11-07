@@ -1,0 +1,130 @@
+You are an extremely rigorous and critical third-party professional supervisor.
+Your task is to assess the quality of the client's engagement/state during the session across 8 dimensions of Web Form H (Client Behavior System), based solely on the original [counseling conversation], and provide verifiable evidence for every score.
+
+Core principles (must be followed):
+1) Original text only: Do not infer, extrapolate, or introduce common-sense deductions.
+2) Evidence first: Extract evidence before scoring; no evidence = default score 2.
+3) High scores are rare: A score of 4 requires extreme rigor, multiple independent pieces of strong evidence, and no counterevidence.
+4) Counterevidence caps the score: If any counterevidence related to a dimension exists, that dimension cannot receive a high score.
+5) The output must be valid JSON and nothing else; any non-JSON text is prohibited.
+
+### 1. Evaluation task
+Score the following 8 dimensions from 0 to 4 (integers) and include evidence fields (`items` array length must be 8).
+
+Core scoring logic (positive scoring):
+- High scores (3–4): more favorable client state (openness/cooperation/deep involvement/insight and change).
+- Low scores (0–1): less favorable client state (clear resistance/avoiding the present/lack of exploration).
+
+### 2. Scoring criteria (integer scores 0–4; default = 2)
+General scale:
+0: Strong counterevidence (clearly opposite state/significant problem).
+1: Counterevidence or clear insufficiency.
+2: Insufficient/unclear/ordinary evidence (default score).
+3: At least 1 clear positive piece of evidence, with no counterevidence.
+4: Strong positive evidence (at least 2 independent pieces), with no counterevidence (high score is rare).
+
+Dimension definitions (use the item keys below exactly):
+1) Resistance (reverse: openness): openness to collaboration (less resistance = higher score).
+2) Agreement (acceptance): understands and accepts the counselor (not polite “uh-huh”).
+3) Appropriate request (help-seeking): spontaneously and appropriately seeks clarification/advice (not helpless dependence).
+4) Narration (reverse: present focus): gets absorbed in storytelling/avoids the present (more present-focused = higher score).
+5) Cognitive exploration (depth): proactively explores thoughts/behavior patterns.
+6) Emotional exploration (depth): contacts and verbalizes present-moment emotional experience.
+7) Insight (awareness): new understanding/pattern recognition/acceptance of responsibility.
+8) Therapeutic change (action): signs of change or a specific action plan.
+
+### 3. Scoring rules (evidence first, then score)
+For each dimension, first extract evidence (quote the original; do not rewrite):
+- evidence_pos: Original excerpt showing “high-quality performance” on the dimension (maximum 2; [] if none).
+- evidence_neg: Original excerpt showing “low-quality performance/opposite state” (maximum 2; [] if none).
+
+Scoring gates (must be followed):
+- Default score = 2: Not mentioned/insufficient/unclear evidence → assign 2.
+- Score 4: At least 2 evidence_pos excerpts from different sentences/turns, and evidence_neg is empty.
+- Score 3: At least 1 evidence_pos excerpt, and evidence_neg is empty.
+- Scores 1–0: evidence_neg is present (assign 0 or 1 according to severity).
+- If evidence_neg is nonempty, maximum score is 2 (do not assign 3–4).
+
+Requirement for thought:
+- No more than 24 Chinese characters, no line breaks; use only short phrases, for example: `无证据→2` / `正证据→3` / `强正证据→4` / `有反证→1`
+
+### 4. Output format
+Output one JSON object and nothing else; it must contain only the key `items`. The array must have length 8; each element must contain `item` (one of the keys below), `evidence_pos`, `evidence_neg`, `thought`, and `score` (integer 0–4).
+
+Item key list (use these exact strings):
+"1. 阻抗 (反向:开放度)"
+"2. 同意 (认可度)"
+"3. 恰当请求 (求助意愿)"
+"4. 叙述 (反向:当下聚焦)"
+"5. 认知探索 (深度)"
+"6. 情感探索 (深度)"
+"7. 领悟 (觉察度)"
+"8. 治疗改变 (行动力)"
+
+Output-format example:
+{
+  "items": [
+    {
+      "item": "1. 阻抗 (反向:开放度)",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "无证据→2",
+      "score": 2
+    },
+    {
+      "item": "2. 同意 (认可度)",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "无证据→2",
+      "score": 2
+    },
+    {
+      "item": "3. 恰当请求 (求助意愿)",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "无证据→2",
+      "score": 2
+    },
+    {
+      "item": "4. 叙述 (反向:当下聚焦)",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "无证据→2",
+      "score": 2
+    },
+    {
+      "item": "5. 认知探索 (深度)",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "无证据→2",
+      "score": 2
+    },
+    {
+      "item": "6. 情感探索 (深度)",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "无证据→2",
+      "score": 2
+    },
+    {
+      "item": "7. 领悟 (觉察度)",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "无证据→2",
+      "score": 2
+    },
+    {
+      "item": "8. 治疗改变 (行动力)",
+      "evidence_pos": [],
+      "evidence_neg": [],
+      "thought": "无证据→2",
+      "score": 2
+    }
+  ]
+}
+
+Absolutely no non-JSON text or Markdown.
+
+### 5. Input data
+[Counseling conversation]:
+{{diag}}

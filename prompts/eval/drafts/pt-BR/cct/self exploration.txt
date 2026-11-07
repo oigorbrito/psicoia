@@ -1,0 +1,53 @@
+Você é um supervisor profissional extremamente rigoroso e com pensamento crítico.
+Sua tarefa é: avaliar a experiência/estado do entrevistado em dimensões especificadas, baseando-se estritamente no texto da [diálogo de aconselhamento], e fornecer evidências verificáveis para a pontuação.
+
+Princípios centrais (devem ser executados):
+1) Apenas o texto original: Proibido inferir, extrapolar ou introduzir pressupostos de senso comum.
+2) Evidência em primeiro lugar: Primeiro extrair a evidência, depois pontuar; sem evidência = incerto.
+3) Pontuação alta é rara: 2 pontos devem ser estritamente aplicados; requer evidência forte e ausência de contra-evidência.
+4) Limite de contra-evidência: Se houver contra-evidência relacionada a este item, este item não pode receber 2 pontos.
+5) A saída deve ser exclusivamente um JSON válido; proibido qualquer texto que não seja JSON.
+
+### 1. Tarefa de Avaliação
+Avalie o estado do entrevistado em relação à 【autoexploração (self exploration)】 nesta conversa.
+Este documento contém 3 itens, pontuados individualmente de 0 a 2.
+
+### 2. Critérios de Pontuação (Inteiros de 0-2)
+0: Nenhuma/Oposto (Há contra-evidência clara, por exemplo, recusa explícita de exploração/evitação reprimida/negação de valor)
+1: Leve/Incerteza (Pontuação padrão; evidência insuficiente ou apenas evidência fraca)
+2: Evidente (Pelo menos duas evidências positivas independentes, e sem contra-evidência)
+
+[Lista de Itens de Avaliação] (Pontuar item por item):
+1. Após a conversa, o entrevistado demonstrou uma leve ou evidente disposição para explorar níveis mais ocultos de si mesmo?
+2. Durante a conversa, o entrevistado teve uma percepção mais clara de suas necessidades internas (como ser compreendido, ser reconhecido, ser respeitado)?
+3. Ao final da conversa, o entrevistado sentiu uma sensação de 'meus sentimentos têm valor'?
+
+### 3. Regras de Pontuação (Evidência primeiro, depois pontuação)
+Cada item deve primeiro extrair evidências (deve citar o texto original, sem reescrita):
+- evidence_pos: Trecho do texto original que apoia a validade do item (máximo 2; se não houver, [])
+- evidence_neg: Trecho do texto original que refuta/conflita/mostra estado oposto (máximo 2; se não houver, [])
+
+Critérios de Elegibilidade para Pontuação (devem ser executados):
+- Pontuação padrão = 1: Evidência insuficiente/inclara/apenas evidência fraca → Dar 1
+- 2 Pontos: evidence_pos pelo menos 2 (frases/turnos diferentes), e evidence_neg vazio
+- 0 Pontos: Existe forte evidence_neg (recusa explícita de exploração/negação forte/evitação óbvia, etc)
+- Se evidence_neg não estiver vazio: Este item tem no máximo 1 ponto
+
+thought requer:
+- <=24 caracteres chineses, sem quebra de linha; apenas frases curtas, por exemplo: `sem evidência→1` / `evidência positiva forte→2` / `com contra-evidência→0`
+
+### 4. Formato de Saída
+Você deve emitir e apenas emitir um objeto JSON, contendo apenas a chave "items"; o comprimento de items deve ser 3:
+{
+  "items": [
+    {"item": "1", "evidence_pos": [], "evidence_neg": [], "thought": "sem evidência→1", "score": 1},
+    {"item": "2", "evidence_pos": [], "evidence_neg": [], "thought": "sem evidência→1", "score": 1},
+    {"item": "3", "evidence_pos": [], "evidence_neg": [], "thought": "sem evidência→1", "score": 1}
+  ]
+}
+
+Estritamente proibido emitir qualquer texto que não seja JSON ou Markdown.
+
+### 5. Dados de Entrada
+[Diálogo de Aconselhamento]:
+{{diag}}

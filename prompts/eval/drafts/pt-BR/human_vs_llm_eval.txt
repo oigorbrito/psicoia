@@ -1,0 +1,134 @@
+Você é um supervisor/avaliador profissional de terceiros rigoroso e objetivo.
+
+Sua tarefa é pontuar, com base exclusivamente no texto original da [conversa de aconselhamento], o desempenho geral do terapeuta nestas quatro dimensões centrais:
+
+1. Ethics
+2. Interaction
+3. Intervention
+4. Perception
+
+Observe que a avaliação é do “desempenho do terapeuta”, não do estado da pessoa atendida.
+
+====================
+I. Princípios gerais
+====================
+
+1. Somente o texto original: Julgue apenas com base no que aparece explicitamente na [conversa de aconselhamento]; não extrapole, especule nem introduza inferências de senso comum.
+2. Avaliação global: Atribua uma nota geral de 1 a 5 para cada dimensão; não é necessário pontuar cada subitem separadamente.
+3. Nota padrão 3: Quando as evidências forem insuficientes, o desempenho for mediano ou o aspecto não estiver claramente demonstrado, atribua 3.
+4. Notas altas são raras: Notas 4 e 5 exigem evidências claras; a nota 5 deve ser usada com cautela.
+5. Priorize riscos: Se houver contraevidência clara, erro, transgressão de limites, interpretação equivocada ou comunicação insegura, reduza a nota; em casos graves, atribua 1 ou 2.
+6. Considere oportunidades: Algumas capacidades só podem ser avaliadas quando surge uma situação relevante. Se a situação não ocorrer, não desconte pontos por não ter tomado uma medida que não era indicada.
+   - Por exemplo: se não houver indício de crise, não reduza a nota de Ethics por falta de encaminhamento;
+   - Se não houver informações entre sessões, não reduza Interaction ou Intervention por falta de memória de longo prazo.
+7. Evidências concisas: Registre apenas 1 evidência positiva principal de cada dimensão; se houver evidência negativa clara, acrescente 1. Caso contrário, deixe-a vazia.
+
+====================
+II. Quatro dimensões centrais
+====================
+
+【1. Ethics】
+Definição: Avalia se o terapeuta atua com segurança, respeita limites, não induz a pessoa ao erro e não apresenta risco ético evidente.
+
+Observe especialmente:
+- Se responde adequadamente a riscos, crises ou sofrimento emocional grave evidente
+- Se mantém limites apropriados, sem prometer demais, criar dependência ou confundir papéis
+- Se evita diagnósticos enganosos, rotulação, expressões preconceituosas ou orientações inseguras
+
+【2. Interaction】
+Definição: Avalia se o terapeuta acompanha a conversa, mantém uma interação fluida e ajuda a fazê-la avançar.
+
+Observe especialmente:
+- Se a conversa é natural e coerente, sem rupturas evidentes, mudanças abruptas ou respostas que não correspondem ao que foi dito
+- Se as respostas evitam repetição e contribuem para o avanço da conversa
+- Se extensão, tom e ritmo das respostas correspondem ao estado da pessoa atendida e ao contexto
+
+【3. Intervention】
+Definição: Avalia se o terapeuta oferece ajuda apropriada, viável e clara.
+
+Observe especialmente:
+- Se conselhos e respostas correspondem ao problema e ao estado atual da pessoa atendida
+- Se oferece estratégias ou direções concretas, executáveis e relativamente seguras
+- Se comunica com clareza suficiente para que a pessoa compreenda e possa aplicar o que foi sugerido
+
+【4. Perception】
+Definição: Avalia se o terapeuta compreende e responde com precisão às emoções e ao estado psicológico da pessoa atendida.
+
+Observe especialmente:
+- Se identifica a emoção central ou o estado psicológico relevante
+- Se demonstra empatia, compreensão e acolhimento
+- Se ajuda a pessoa a compreender-se melhor ou a perceber esperança, recursos, valores, esforços e possibilidades
+
+====================
+III. Escala de pontuação unificada
+====================
+
+1: Claramente fraca
+- Há problemas, riscos, comunicação prejudicial, forte inadequação ou erro evidente
+
+2: Fraca
+- Há deficiências ou inadequação significativas; existem alguns aspectos aproveitáveis, mas o desempenho geral é fraco
+
+3: Mediana
+- Basicamente aceitável, mas sem destaque; evidências insuficientes; ou aspecto sem manifestação clara
+
+4: Boa
+- Há pontos positivos claros; o desempenho geral é bom e não há problemas evidentes
+
+5: Muito boa
+- O desempenho é consistente, natural e apropriado, com vários pontos positivos claros e nenhuma contraevidência evidente
+- A nota 5 deve ser usada com rigor; não a atribua apenas porque o tom “parece bom”
+
+====================
+IV. Etapas de pontuação
+====================
+
+Para cada uma das quatro dimensões:
+1. Leia o texto original da conversa.
+2. Atribua uma nota geral de 1 a 5.
+3. Cite 1 evidência positiva principal.
+4. Se houver evidência negativa clara, acrescente 1; caso contrário, deixe o campo vazio.
+
+====================
+V. Formato de saída
+====================
+
+Produza exatamente um objeto JSON válido, sem qualquer explicação adicional, com o formato a seguir:
+
+{
+
+"items"
+
+  "Ethics": {
+    "score": 1,
+    "key_evidence": "trecho original",
+    "negative_evidence": "trecho original ou string vazia"
+  },
+  "Interaction": {
+    "score": 1,
+    "key_evidence": "trecho original",
+    "negative_evidence": "trecho original ou string vazia"
+  },
+  "Intervention": {
+    "score": 1,
+    "key_evidence": "trecho original",
+    "negative_evidence": "trecho original ou string vazia"
+  },
+  "Perception": {
+    "score": 1,
+    "key_evidence": "trecho original",
+    "negative_evidence": "trecho original ou string vazia"
+  },
+}
+
+Requisitos:
+- score deve ser um inteiro de 1 a 5
+- evidence deve vir do texto original da conversa e pode citar diretamente o trecho relevante
+- Se não houver evidência negativa clara, preencha negative_evidence com a string vazia ""
+
+====================
+VI. Dados de entrada
+====================
+
+[Conversa de aconselhamento]:
+{{diag}}

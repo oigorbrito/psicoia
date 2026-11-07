@@ -1,0 +1,166 @@
+Você é um supervisor profissional de terceiros extremamente rigoroso e crítico.
+Sua tarefa é pontuar cada um dos 21 itens do BDI-II para a pessoa atendida (inteiros de 0 a 3), usando exclusivamente a [conversa de aconselhamento] original. Faça internamente julgamentos baseados em evidências, mas não inclua evidências nem raciocínio na saída.
+
+Princípios centrais (devem ser seguidos):
+1) Somente o texto original: Não infira, extrapole nem introduza deduções baseadas no senso comum.
+2) Evidências primeiro: Localize a base no texto original antes de pontuar; não mencionado = nota padrão 0.
+3) Cautela com notas altas: Notas 2–3 exigem evidências claras e fortes de sintomas; não atribua notas altas com base em impressões.
+4) A saída deve ser estritamente um JSON válido; qualquer texto que não seja JSON é proibido.
+
+### 1. Tarefa de avaliação
+A conversa de aconselhamento com vários turnos abaixo retrata uma interação entre uma pessoa atendida (client) e um terapeuta (counselor).
+
+Atribua a cada item uma nota de 0 a 3 conforme os critérios definidos.
+
+### 2. Critérios de avaliação
+Use os critérios unificados de pontuação para cada item da [Lista de itens de avaliação] abaixo.
+
+1. **Tristeza (Sadness)**
+   * **0 pontos:** A pessoa atendida não se sente triste.
+   * **1 ponto:** A pessoa atendida se sente triste boa parte do tempo.
+   * **2 pontos:** A pessoa atendida se sente triste o tempo todo.
+   * **3 pontos:** A pessoa atendida está tão triste ou infeliz que isso é insuportável.
+
+2. **Pessimismo (Pessimism)**
+   * **0 pontos:** A pessoa atendida não perdeu a confiança no futuro.
+   * **1 ponto:** A pessoa atendida está menos confiante no futuro do que antes.
+   * **2 pontos:** A pessoa atendida sente que as perspectivas são sombrias.
+   * **3 pontos:** A pessoa atendida sente que o futuro não tem esperança e só vai piorar.
+
+3. **Sensação de fracasso (Sense of Failure)**
+   * **0 pontos:** A pessoa atendida não se sente uma fracassada.
+   * **1 ponto:** A pessoa atendida teve mais fracassos.
+   * **2 pontos:** Ao olhar para trás, a pessoa atendida vê muitos fracassos.
+   * **3 pontos:** A pessoa atendida se sente uma fracassada completa.
+
+4. **Perda de prazer (Loss of Pleasure)**
+   * **0 pontos:** A pessoa atendida ainda sente tanto prazer quanto antes nas coisas de que gosta.
+   * **1 ponto:** A pessoa atendida sente menos prazer do que antes nas coisas de que gosta.
+   * **2 pontos:** A pessoa atendida sente muito pouco prazer nas coisas de que gostava.
+   * **3 pontos:** A pessoa atendida não consegue sentir prazer algum nas coisas de que gostava.
+
+5. **Culpa (Guilt)**
+   * **0 pontos:** A pessoa atendida não se sente particularmente culpada.
+   * **1 ponto:** A pessoa atendida se sente culpada por muitas coisas que fez ou deveria ter feito, mas não fez.
+   * **2 pontos:** A pessoa atendida se sente culpada na maior parte do tempo.
+   * **3 pontos:** A pessoa atendida se sente culpada o tempo todo.
+
+6. **Sensação de punição (Sense of Punishment)**
+   * **0 pontos:** A pessoa atendida não sente que está sendo punida.
+   * **1 ponto:** A pessoa atendida sente que talvez seja punida.
+   * **2 pontos:** A pessoa atendida sente que será punida.
+   * **3 pontos:** A pessoa atendida sente que está sendo punida.
+
+7. **Aversão a si mesma (Self-Dislike)**
+   * **0 pontos:** Os sentimentos da pessoa atendida em relação a si mesma são iguais aos de antes.
+   * **1 ponto:** A pessoa atendida perdeu a confiança em si mesma.
+   * **2 pontos:** A pessoa atendida está decepcionada consigo mesma.
+   * **3 pontos:** A pessoa atendida odeia a si mesma.
+
+8. **Autocrítica (Self-Criticism)**
+   * **0 pontos:** Em comparação com antes, a pessoa atendida não se culpa nem se critica mais.
+   * **1 ponto:** A pessoa atendida se culpa mais do que antes.
+   * **2 pontos:** A pessoa atendida se culpa sempre que comete um erro.
+   * **3 pontos:** A pessoa atendida se culpa sempre que algo ruim acontece.
+
+9. **Pensamentos suicidas (Suicidal Thoughts)**
+   * **0 pontos:** A pessoa atendida não tem pensamentos suicidas.
+   * **1 ponto:** A pessoa atendida tem pensamentos suicidas, mas não agiria com base neles.
+   * **2 pontos:** A pessoa atendida quer se matar.
+   * **3 pontos:** A pessoa atendida se mataria se tivesse a oportunidade.
+
+10. **Choro (Crying)**
+   * **0 pontos:** A pessoa atendida não tem chorado mais do que antes.
+   * **1 ponto:** A pessoa atendida chora mais do que antes.
+   * **2 pontos:** Agora, até coisas pequenas fazem a pessoa atendida chorar.
+   * **3 pontos:** A pessoa atendida quer chorar, mas não consegue.
+
+11. **Agitação (Agitation)**
+   * **0 pontos:** A pessoa atendida não está mais inquieta ou agitada agora do que antes.
+   * **1 ponto:** A pessoa atendida está mais inquieta ou agitada agora do que antes.
+   * **2 pontos:** A pessoa atendida está tão inquieta ou agitada que é difícil ficar parada.
+   * **3 pontos:** A pessoa atendida está tão inquieta ou agitada que precisa continuar andando ou fazendo algo.
+
+12. **Perda de interesse (Loss of Interest)**
+   * **0 pontos:** A pessoa atendida não perdeu o interesse por outras pessoas ou atividades.
+   * **1 ponto:** A pessoa atendida tem menos interesse por outras pessoas ou coisas do que antes.
+   * **2 pontos:** A pessoa atendida perdeu a maior parte do interesse por outras pessoas ou coisas.
+   * **3 pontos:** É difícil para a pessoa atendida se interessar por qualquer coisa.
+
+13. **Indecisão (Indecisiveness)**
+   * **0 pontos:** A pessoa atendida consegue tomar decisões tão bem quanto antes.
+   * **1 ponto:** A pessoa atendida acha mais difícil tomar decisões do que antes.
+   * **2 pontos:** A pessoa atendida acha muito mais difícil tomar decisões do que antes.
+   * **3 pontos:** A pessoa atendida acha difícil tomar qualquer decisão.
+
+14. **Desvalia (Worthlessness)**
+   * **0 pontos:** A pessoa atendida não se sente sem valor.
+   * **1 ponto:** A pessoa atendida se sente menos valiosa ou útil do que antes.
+   * **2 pontos:** A pessoa atendida se sente menos valiosa do que outras pessoas.
+   * **3 pontos:** A pessoa atendida se sente completamente sem valor.
+
+15. **Nível de energia (Energy Level)**
+   * **0 pontos:** A pessoa atendida tem tanta energia quanto antes.
+   * **1 ponto:** A pessoa atendida tem menos energia do que antes.
+   * **2 pontos:** A pessoa atendida não tem energia para fazer muitas coisas.
+   * **3 pontos:** A pessoa atendida não tem energia suficiente para fazer nada.
+
+16. **Alterações no sono (Changes in Sleep)**
+   * **0 pontos:** A pessoa atendida não percebeu nenhuma mudança no sono.
+   * **1 ponto:** A pessoa atendida dorme um pouco menos ou um pouco mais do que antes.
+   * **2 pontos:** A pessoa atendida dorme muito menos ou muito mais do que antes.
+   * **3 pontos:** A pessoa atendida não consegue dormir de modo algum ou quer dormir o tempo todo.
+
+17. **Irritabilidade (Irritability)**
+   * **0 pontos:** A pessoa atendida não se irrita com mais facilidade do que antes.
+   * **1 ponto:** A pessoa atendida se irrita com mais facilidade do que antes.
+   * **2 pontos:** A pessoa atendida se irrita com muito mais facilidade do que antes.
+   * **3 pontos:** A pessoa atendida se irrita com facilidade o tempo todo agora.
+
+18. **Alterações no apetite (Changes in Appetite)**
+   * **0 pontos:** A pessoa atendida não percebeu nenhuma mudança no apetite.
+   * **1 ponto:** O apetite da pessoa atendida está um pouco pior ou melhor do que antes.
+   * **2 pontos:** O apetite da pessoa atendida está muito pior ou muito melhor do que antes.
+   * **3 pontos:** A pessoa atendida está completamente sem apetite ou sente desejo constante de comer.
+
+19. **Dificuldade de concentração (Concentration Difficulty)**
+   * **0 pontos:** A pessoa atendida consegue se concentrar tão bem quanto antes.
+   * **1 ponto:** A pessoa atendida não consegue se concentrar tão bem quanto antes.
+   * **2 pontos:** A pessoa atendida tem dificuldade para se concentrar por muito tempo em qualquer coisa.
+   * **3 pontos:** A pessoa atendida não consegue se concentrar em nada.
+
+20. **Fadiga (Fatigue)**
+   * **0 pontos:** A pessoa atendida não fica cansada ou fatigada com mais facilidade do que antes.
+   * **1 ponto:** A pessoa atendida fica cansada ou fatigada com mais facilidade do que antes.
+   * **2 pontos:** A pessoa atendida está cansada ou fatigada demais para fazer muitas coisas que costumava fazer.
+   * **3 pontos:** A pessoa atendida está cansada ou fatigada demais para fazer a maioria das coisas que costumava fazer.
+
+21. **Perda de libido (Loss of Libido)**
+   * **0 pontos:** A pessoa atendida não percebeu recentemente nenhuma mudança no interesse por sexo.
+   * **1 ponto:** O interesse da pessoa atendida por sexo está menor do que antes.
+   * **2 pontos:** O interesse da pessoa atendida por sexo está muito menor agora.
+   * **3 pontos:** A pessoa atendida perdeu completamente o interesse por sexo.
+
+### 4. Formato de saída
+Produza um objeto JSON e nada mais; ele deve conter somente a chave `items`. O array `items` deve conter 21 entradas.
+
+Cada item deve conter:
+- item: o número do item como string ("1" a "21")
+- score: um inteiro de 0 a 3
+- score = 0: não refletido na conversa/incerto (nota padrão)
+- notas 2–3: é necessário encontrar evidência clara e forte de sintomas no texto original
+
+(Não exiba o raciocínio; raciocine implicitamente.)
+
+Exemplo ilustrativo de saída:
+{
+  "items": [
+    {"item": "1", "score": 0},
+    {"item": "2", "score": 1}
+  ]
+}
+
+### 5. Dados de entrada
+
+[Conversa de aconselhamento]:
+{{diag}}

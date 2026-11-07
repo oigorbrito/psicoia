@@ -1,0 +1,777 @@
+{
+  "839": {
+    "skill_id": "839",
+    "skill_name": "Facilitar a expressão de luto sobre uma relação terapêutica prestes a ser perdida",
+    "skill_description": "Na fase de encerramento, em torno do término da relação, convida e apoia o cliente a expressar luto pela relação prestes a ser perdida, permitindo que as emoções sejam experimentadas e carregadas no aqui e agora, promovendo despedidas e conclusão emocional.",
+    "when_to_use": "Na fase de encerramento, quando ambas as partes se preparam para terminar a sessão ou a relação está prestes a acabar, com o objetivo de organizar e transicionar as emoções antes de deixar a terapia.",
+    "trigger": "O cliente manifesta tristeza, engasgos, silêncio evasivo ou menciona ativamente sentimentos de perda, apego e relutância ao falar sobre o término ou separação.",
+    "parent_ids": [
+      "827",
+      "833",
+      "834",
+      "839"
+    ]
+  },
+  "840": {
+    "skill_id": "840",
+    "skill_name": "Permitir a reaparição de problemas para carregar a reaparição das emoções",
+    "skill_description": "Na fase de encerramento, não interrompe a reaparição dos problemas, permitindo que o cliente traga novamente temas antigos ou eventos incompletos para o aqui e agora, apoiando sua emergência e dissipação emocional, consolidando a conclusão.",
+    "when_to_use": "Na fase de encerramento, ao revisar o curso da terapia, para lidar com emoções e temas pendentes e completar o encerramento.",
+    "trigger": "O cliente menciona novamente problemas antigos, repete temas centrais ou apresenta flutuações emocionais, retornando a situações anteriores antes do término.",
+    "parent_ids": [
+      "827",
+      "833",
+      "834",
+      "840"
+    ]
+  },
+  "848": {
+    "skill_id": "848",
+    "skill_name": "Orientar o cliente a antecipar possíveis crises futuras",
+    "skill_description": "Na fase de encerramento, convida o cliente a revisar juntos cenários de alto risco e fontes de risco que podem se repetir, esclarecendo as expectativas sobre 'crises', estabelecendo a base para a transição e preparação subsequente após deixar a terapia.",
+    "when_to_use": "Na fase de encerramento da terapia gestaltica, quando o cliente e o terapeuta revisam o processo, preparam-se para terminar a relação e retornar à vida cotidiana.",
+    "trigger": "O cliente expressa preocupação ou incerteza sobre o futuro durante discussões de encerramento, apresenta suposições como 'se isso acontecer novamente...' ou demonstra tensão e ansiedade na despedida.",
+    "parent_ids": [
+      "827",
+      "833",
+      "837",
+      "848"
+    ]
+  },
+  "849": {
+    "skill_id": "849",
+    "skill_name": "Normalizar a reaparição de problemas para identificar riscos de recaída",
+    "skill_description": "Orienta o cliente a aceitar o fato de que os problemas podem se repetir, explorando padrões de repetição e sinais de recaída, permitindo que ele identifique janelas de risco com base nisso, servindo como fundamento para expectativas de crise.",
+    "when_to_use": "Durante as etapas de resumo e despedida da fase de encerramento, para ajudar o cliente a transitar dos resultados para flutuações e possíveis reaparições em situações reais.",
+    "trigger": "O cliente manifesta ansiedade ou forte negação sobre a possibilidade de recaída ao revisar progressos, ou apresenta tom rígido e mudanças respiratórias ao falar sobre o futuro.",
+    "parent_ids": [
+      "827",
+      "833",
+      "837",
+      "849"
+    ]
+  },
+  "850": {
+    "skill_id": "850",
+    "skill_name": "Revisar e prever riscos e fatores de risco",
+    "skill_description": "Combinando as previsões sobre riscos e fatores de risco feitas em avaliações e planos de tratamento anteriores, revisar sinais de alto risco como suicídio ou surtos de psicose aguda, criando uma lista de cenários e gatilhos para futuras crises.",
+    "when_to_use": "Durante discussões sobre antecipação de crises na fase final ou durante revisões abrangentes antes do término, para transformar avaliações e planos anteriores em alertas específicos para o futuro.",
+    "trigger": "O cliente já teve pensamentos suicidas, histórico de surtos de psicose aguda ou sinais recentes relacionados em fala e comportamento; o terapeuta identifica fatores de risco não tratados durante a revisão.",
+    "parent_ids": [
+      "827",
+      "833",
+      "837",
+      "850"
+    ]
+  },
+  "845": {
+    "skill_id": "845",
+    "skill_name": "Guiar a celebração de conquistas na fase final",
+    "skill_description": "Na fase final, fazer da 'celebração das conquistas' a tarefa central, convidando o cliente a revisar os ganhos e esforços durante o tratamento, promovendo que ele reconheça e valide suas próprias mudanças de forma atual, encerrando positivamente o tratamento para iniciar uma nova vida.",
+    "when_to_use": "Na fase final da terapia gestaltica, para encerrar o tratamento, consolidar resultados e transicionar para a vida subsequente.",
+    "trigger": "O processo terapêutico está próximo ou entrou na fase final; o cliente expressa vontade de terminar o tratamento, falar sobre sair ou resumir suas experiências.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "845"
+    ]
+  },
+  "846": {
+    "skill_id": "846",
+    "skill_name": "Apontar progressos e reconhecer mudanças",
+    "skill_description": "O terapeuta aponta ativamente os progressos específicos alcançados pelo cliente, reconhece as mudanças ocorridas, ajudando-o a perceber e possuir novos padrões, reforçando o autoapoio e a capacidade de contato para aumentar a satisfação e a integridade.",
+    "when_to_use": "Da fase de assimilação e integração até a fase final, para consolidar mudanças e aumentar a autoeficácia.",
+    "trigger": "O cliente apresenta comportamentos diferentes dos anteriores em fala ou não verbal, como declarações sobre si mesmo mais claras, contato mais natural ou postura mais relaxada.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "846"
+    ]
+  },
+  "847": {
+    "skill_id": "847",
+    "skill_name": "Realizar discussões retrospectivas mútuas para resumir ganhos",
+    "skill_description": "Engajar-se em discussões retrospectivas mútuas com o cliente para resumir e avaliar mudanças, aprendizados e escolhas feitas durante o tratamento, definindo novos padrões de vida e práticas sustentáveis, tornando a celebração uma ponte para consolidação e promoção.",
+    "when_to_use": "Da fase de escolha e integração até a fase final, para resumir sistematicamente e consolidar os resultados do tratamento.",
+    "trigger": "O cliente começa a revisar o processo terapêutico, avalia ativamente o que aprendeu ou pergunta como continuar e aplicar as mudanças no futuro.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "847"
+    ]
+  },
+  "841": {
+    "skill_id": "841",
+    "skill_name": "Normalização da incompletude e recorrência de problemas",
+    "skill_description": "Informar claramente sobre a possibilidade e vulnerabilidade à incompletude, normalizar que os problemas podem reaparecer, ajudar a estabelecer expectativas realistas e permitir a existência da imperfeição para aliviar a pressão da perfeição e promover a aceitação.",
+    "when_to_use": "Na fase final do tratamento, para ajudar o cliente a aceitar o fato de que os objetivos não foram totalmente alcançados, estabelecer expectativas realistas e preparar-se para seguir em frente com as imperfeições após deixar o tratamento.",
+    "trigger": "O cliente expressa ansiedade sobre termos 'não curado completamente' ou 'que nunca mais vai acontecer', utiliza palavras perfeccionistas ou absolutas; fica tenso ou evita o término do tratamento devido à preocupação com a recorrência.",
+    "parent_ids": [
+      "827",
+      "833",
+      "835",
+      "841"
+    ]
+  },
+  "842": {
+    "skill_id": "842",
+    "skill_name": "Revisar e celebrar as mudanças alcançadas",
+    "skill_description": "Orientar o cliente a revisar e celebrar os ganhos específicos obtidos durante o tratamento, reforçar a consciência das mudanças eficazes e o autoapoio, permitindo que ele mantenha confiança e senso de responsabilidade ao reconhecer a incompletude.",
+    "when_to_use": "Na fase de encerramento, para equilibrar a atenção do cliente às partes não concluídas, consolidar o autoapoio e servir como integração e incentivo antes de deixar o tratamento.",
+    "trigger": "O cliente foca apenas nas deficiências, ignorando os progressos, apresentando um tom de autodepreciação ou depressão; demonstra perda ao encerrar o tratamento sem ver as conquistas.",
+    "parent_ids": [
+      "827",
+      "833",
+      "835",
+      "842"
+    ]
+  },
+  "843": {
+    "skill_id": "843",
+    "skill_name": "Resumo e integração dos padrões de enfrentamento e acordo sobre ajustes subsequentes e busca de ajuda novamente",
+    "skill_description": "Revisar, avaliar e integrar com o cliente os padrões de enfrentamento aprendidos, definir claramente as etapas de ajuste pessoal quando houver flutuações e os canais para buscar ajuda novamente se necessário, apoiando a continuação com as imperfeições.",
+    "when_to_use": "Na fase final do tratamento, ao aceitar o fato da incompletude, preparar-se para a vida após deixar o tratamento, consolidar novos padrões e reservar espaço para ajustes.",
+    "trigger": "O cliente pergunta 'O que farei depois de terminar?' ou sente insegurança em relação à saída do tratamento; teme flutuações futuras mas não possui um caminho claro de enfrentamento.",
+    "parent_ids": [
+      "827",
+      "833",
+      "835",
+      "843"
+    ]
+  },
+  "844": {
+    "skill_id": "844",
+    "skill_name": "Aceitar a responsabilidade pela imperfeição usando linguagem 'Eu sou responsável'",
+    "skill_description": "Pedir ao cliente que adicione 'Vou ser responsável por isso' após suas declarações, expressando escolha e consequências em primeira pessoa, reduzindo a externalização e evitação, consolidando o autoapoio e senso de responsabilidade em situações imperfeitas.",
+    "when_to_use": "Na fase de encerramento, quando o cliente tende a culpar outros ou sentir-se impotente diante de objetivos não alcançados, reforçar a responsabilidade e o autoapoio para estabilizar a autonomia após deixar o tratamento.",
+    "trigger": "O cliente usa frequentemente expressões como 'não posso', 'não há jeito', 'é culpa dos outros' ou termos impessoais como 'isso/ele', mostrando tendência a evitar responsabilidades ou excesso de autocrítica.",
+    "parent_ids": [
+      "827",
+      "833",
+      "835",
+      "844"
+    ]
+  },
+  "851": {
+    "skill_id": "851",
+    "skill_name": "Revisão de sinais de recaída e crises esperadas",
+    "skill_description": "No estágio final, orientar o cliente a ter expectativas realistas sobre possíveis crises futuras, permitir a reaparição dos problemas, revisar os sinais de alerta pessoais que podem surgir e estabelecer as bases para o autoajuste e enfrentamento subsequentes.",
+    "when_to_use": "Na fase de encerramento, ao preparar-se para sair do tratamento ou consolidar o trabalho, para transformar as percepções atuais em preparação para futuras situações e expectativas de risco.",
+    "trigger": "O cliente manifesta solidão e desesperança, pessimismo e desilusão, ou expressa preocupação sobre a possível reaparição dos problemas após o término do tratamento.",
+    "parent_ids": [
+      "827",
+      "833",
+      "838",
+      "851"
+    ]
+  },
+  "852": {
+    "skill_id": "852",
+    "skill_name": "Elaboração conjunta de estratégias prioritárias e passos de autoajuda imediatos",
+    "skill_description": "Transformar as percepções e exercícios de contato 'aqui e agora' em listas de enfrentamento executáveis, focando na assunção de responsabilidades, melhoria do contato interpessoal e ajuste ambiental, definindo estratégias prioritárias e caminhos específicos de ação de autoajuda.",
+    "when_to_use": "Da fase de seleção e integração até a fase de encerramento, para concretizar as percepções em ações, permitindo que o cliente saia do tratamento com passos implementáveis.",
+    "trigger": "O cliente, embora tenha desenvolvido compreensão sobre si mesmo, ainda carece de experiência sobre como resolver problemas específicos e necessita transformar insights em planos comportamentais.",
+    "parent_ids": [
+      "827",
+      "833",
+      "838",
+      "852"
+    ]
+  },
+  "853": {
+    "skill_id": "853",
+    "skill_name": "Definição clara do sistema de apoio e caminhos para pedir ajuda",
+    "skill_description": "Identificar e reforçar o autoapoio e o apoio ambiental, listar relacionamentos e recursos disponíveis durante crises, auxiliando na transição gradual do apoio ambiental para o autoapoio, aumentando a viabilidade e segurança do enfrentamento.",
+    "when_to_use": "Ao elaborar planos de enfrentamento, ao longo da fase final do tratamento e do encerramento, garantindo que o cliente possua uma rede de apoio utilizável no campo real.",
+    "trigger": "O cliente demonstra insuficiência de autoapoio, sente-se frequentemente fragmentado ou fraco e incapaz, necessitando identificar quem e onde pode pedir ajuda.",
+    "parent_ids": [
+      "827",
+      "833",
+      "838",
+      "853"
+    ]
+  },
+  "854": {
+    "skill_id": "854",
+    "skill_name": "Estabelecimento de critérios de avaliação e mecanismos de revisão",
+    "skill_description": "Acordar com o cliente os critérios para avaliar a eficácia da consulta e estabelecer formas regulares de resumo, avaliação e ajuste de direção, permitindo que o plano de enfrentamento seja revisado e atualizado, evitando novas fixações.",
+    "when_to_use": "Na formulação inicial do plano e na fase de encerramento para consolidar o trabalho, servindo como estrutura para autoverificação e análise posterior, apoiando crescimento contínuo e ajustes.",
+    "trigger": "O cliente pergunta 'como determinar se é eficaz' ou apresenta impasses e incerteza, necessitando calibrar a direção por meio de avaliação e revisão.",
+    "parent_ids": [
+      "827",
+      "833",
+      "838",
+      "854"
+    ]
+  },
+  "857": {
+    "skill_id": "857",
+    "skill_name": "Evidenciar e fortalecer a capacidade de desejar",
+    "skill_description": "Conforme as fases do desejo, ajudar a trazer desejos reprimidos para a consciência, focar na relação entre o eu e o mundo, fomentando o anseio por mudar o futuro; guiar a percepção do corpo e das necessidades, esclarecendo 'o que se deseja' e 'por que se deseja', estabelecendo as bases para a vontade e a ação.",
+    "when_to_use": "Na avaliação inicial e nas fases iniciais da terapia existencial, quando o cliente apresenta vazio, falta de clareza sobre suas próprias necessidades e objetivos ou falta de motivação; o objetivo é passar da confusão para desejos que podem ser percebidos.",
+    "trigger": "O cliente expressa frequentemente 'não sei o que quero', 'me sinto vazio' ou 'não tenho clareza sobre minhas necessidades', ou tem dificuldade em articular desejos específicos e direção.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "857"
+    ]
+  },
+  "858": {
+    "skill_id": "858",
+    "skill_name": "Organizar o desejo em vontade",
+    "skill_description": "Elevar os desejos percebidos ao nível da consciência do eu, reconhecendo a existência de desejos e capacidade de expressão, organizando recursos e direções para formar uma preparação volitiva orientada ao objetivo, conferindo aos desejos uma direção de ação.",
+    "when_to_use": "Fase inicial a intermediária, quando o cliente já consegue expressar o que deseja mas tem insuficiência de força de ação ou vacila, necessitando transformar o 'querer' em uma vontade interna voltada para o objetivo.",
+    "trigger": "O paciente repete 'Quero... mas não consigo/fico em dúvida' e 'sempre hesita', expressando desejos que permanecem no nível de suposições e discursos orais.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "858"
+    ]
+  },
+  "859": {
+    "skill_id": "859",
+    "skill_name": "Promover a decisão e o envolvimento com o futuro",
+    "skill_description": "Com base nos desejos e na vontade, orientar o julgamento e as escolhas, incentivando o cliente a se comprometer com o futuro, estabelecer compromissos e aceitar as consequências e responsabilidades das escolhas, caminhando para a autorrealização e integração.",
+    "when_to_use": "Fase intermediária, quando as opções e direções estão basicamente claras, mas há hesitação na decisão; o objetivo do tratamento passa a ser tomar decisões e estabelecer compromissos, promovendo mudanças práticas.",
+    "trigger": "O cliente pondera repetidamente se 'deve' ou 'não deve', 'deveria' ou 'não deveria', demora indecisa, discute as opções em ciclos sem conseguir fazer uma escolha clara.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "859"
+    ]
+  },
+  "860": {
+    "skill_id": "860",
+    "skill_name": "Apoiar na enfrentamento da ansiedade de escolha",
+    "skill_description": "Quando a escolha gera ansiedade, auxiliar o cliente a confrontar e compreender seu significado, distinguir entre evitação e tolerância construtiva, apoiá-lo a aceitar sua identidade como não determinado por forças externas e encorajá-lo a agir apesar da ansiedade para criar uma existência valiosa.",
+    "when_to_use": "Em qualquer fase, quando se enfrenta a transição do conhecido ao desconhecido ou o abandono de métodos antigos que gera inquietação significativa; o objetivo é transformar a ansiedade em um recurso que impulsiona a ação.",
+    "trigger": "Tensão ou medo evidentes ao falar sobre mudanças ou entrar em situações estranhas; evitação repetida de escolhas ou evitar novos estilos de vida, acompanhada de inquietação fisiológica.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "860"
+    ]
+  },
+  "861": {
+    "skill_id": "861",
+    "skill_name": "Auxiliar na escolha autêntica de existência",
+    "skill_description": "Auxiliar o cliente a confirmar o escopo de opções, fazer escolhas entre o natural, os outros e as necessidades próprias, voltando-se para uma existência autêntica, em vez de permitir que a lógica dos outros ou de reforço/punição substitua a escolha própria, tornando-se a forma de ser que se pode tornar.",
+    "when_to_use": "Fase inicial ao intermediária, quando o cliente é dominado por avaliações alheias ou padrões externos, precisando retornar à referência interna e a escolhas autênticas para promover mudanças.",
+    "trigger": "O cliente baseia-se frequentemente em 'todos dizem' ou 'eles decidem por mim', ou expressa culpa e sensação de impotência definida pelos outros devido à falta de vida sincera.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "861"
+    ]
+  },
+  "862": {
+    "skill_id": "862",
+    "skill_name": "Fortalecimento da Assunção de Responsabilidade e Redirecionamento para o Controle",
+    "skill_description": "Auxiliar na identificação das formas de evitar escolhas e responsabilidades, encorajar o uso da liberdade para assumir responsabilidade pelo mundo escolhido no momento presente; transformar a 'culpa aos outros/ambiente' em responsabilidade e ação controláveis, aumentando a motivação para mudar.",
+    "when_to_use": "Quando o cliente atribui completamente os problemas ao exterior, falta de motivação para mudar ou espera que os outros/ambiente mudem primeiro, é necessário voltar-se para a responsabilidade e ações controláveis.",
+    "trigger": "O cliente frequentemente diz 'é tudo culpa deles/do ambiente' ou 'não há como', atribuindo os problemas aos outros, forças externas ou fatores genéticos, demonstrando passividade.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "862"
+    ]
+  },
+  "863": {
+    "skill_id": "863",
+    "skill_name": "Iniciar a escolha inicial de ação",
+    "skill_description": "Com base no princípio da ação, ajudar o cliente a projetar e implementar pequenas escolhas de ação após definir uma direção clara; enfatizar a experiência da existência na ação ou na possibilidade de ação, consolidando mudanças e novas identidades através do comportamento.",
+    "when_to_use": "Fases intermedias e finais, quando há insights suficientes mas não há mudança comportamental; é necessário transformar as escolhas em ações concretas e experimentos para promover alterações na vida real.",
+    "trigger": "O cliente fala repetidamente sobre compreensão e significado, mas adia a ação; permanece na fase deconcepção, sem etapas concretas ou tentativas.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "863"
+    ]
+  },
+  "822": {
+    "skill_id": "822",
+    "skill_name": "Auxiliar na obtenção de informações necessárias para novos objetivos",
+    "skill_description": "Quando o cliente escolhe um novo objetivo, fornecer ou auxiliar na obtenção proativamente de materiais relevantes, canais e informações de suporte, ajudando-o a formar uma rota realista e viável e uma base para decisões, ao mesmo tempo em que esclarece as formas de uso das informações e seus limites, mantendo sua autonomia.",
+    "when_to_use": "Na fase de consolidação do tratamento tardio, quando o cliente já alcançou mudanças iniciais e começou a fazer escolhas e planejamentos para novos objetivos.",
+    "trigger": "O cliente expressa que 'tem falta de informações' ou 'não sabe por onde começar' sobre um novo objetivo, ou pergunta proativamente sobre recursos e caminhos para facilitar a tomada de decisão.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "822"
+    ]
+  },
+  "823": {
+    "skill_id": "823",
+    "skill_name": "Apoiar a tentativa independente e normalizar o fracasso",
+    "skill_description": "Incentivar o cliente a tentar resolver questões de ajuste através de comportamentos independentes, enquadrando antecipadamente possíveis falhas e frustrações como fenômenos normais, ajudando-o a aprender com a experiência e manter responsabilidade e autonomia, promovendo continuamente escolhas e ações autosselcionadas.",
+    "when_to_use": "Fase tardia do tratamento, quando o cliente começa a transferir mudanças para situações reais, tentando novos comportamentos de forma autônoma.",
+    "trigger": "O cliente relata 'falha após tentar', 'muito frustrado' ou 'quer voltar ao modo antigo', ou demonstra hesitação e recuo em relação à ação independente.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "823"
+    ]
+  },
+  "824": {
+    "skill_id": "824",
+    "skill_name": "Criar um ambiente de apoio harmonioso e reforçar a autoeficácia",
+    "skill_description": "Após contratempos, criar para o cliente um encontro e um ambiente de suporte harmônicos e estáveis, enfatizando e reforçando sua autoeficácia e recursos internos, para promover a recuperação emocional e a restauração da função, reconstruindo a confiança para continuar tentando.",
+    "when_to_use": "Fase de consolidação no final do tratamento, quando o cliente apresenta flutuações devido a contratempos em novas tentativas, necessitando de recuperação e remobilização.",
+    "trigger": "O cliente demonstra ansiedade, perda de confiança, necessidade explícita de segurança ou relata 'dificuldade em se reinvestir'.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "824"
+    ]
+  },
+  "825": {
+    "skill_id": "825",
+    "skill_name": "Orientar o uso de métodos introspectivos para consolidar e expandir os resultados",
+    "skill_description": "Sugerir e treinar o cliente a utilizar métodos introspectivos previamente aprendidos para auto-observação e esclarecimento de novas experiências, consolidar mudanças já alcançadas e, ao mesmo tempo, ampliar a compreensão clara de si mesmo, tornando as mudanças mais transferíveis.",
+    "when_to_use": "Fase tardia do tratamento, quando o cliente enfrenta novas experiências, precisa integrar mudanças anteriores e manter ou expandir os resultados.",
+    "trigger": "O cliente se sente confuso com novas experiências, tem dificuldade em organizar-se sozinho ou menciona ter aprendido técnicas introspectivas mas não consegue aplicá-las efetivamente atualmente.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "825"
+    ]
+  },
+  "826": {
+    "skill_id": "826",
+    "skill_name": "Promover a compreensão profunda e aplicação ampla",
+    "skill_description": "Com base na compreensão inicial, guiar o cliente a aprofundar sua compreensão de si mesmo e de suas experiências, expandir os contextos e escopos em que a compreensão se aplica, estender e consolidar a eficácia do tratamento de um ponto para uma superfície, formando uma trajetória de crescimento contínuo.",
+    "when_to_use": "Na fase final do tratamento ou na fase de consolidação, quando o cliente já possui uma compreensão inicial e precisa ampliar a eficácia e o escopo de aplicação.",
+    "trigger": "O cliente expressa que 'a compreensão ainda permanece superficial' ou 'só consegue fazer em um determinado contexto', ou expressa o desejo de compreender e aplicar de forma mais profunda.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "826"
+    ]
+  },
+  "828": {
+    "skill_id": "828",
+    "skill_name": "Promover a expressão de afetos negativos através da aceitação não julgadora",
+    "skill_description": "Com uma atitude amigável e sincera, aceitar genuinamente o cliente, proporcionando um ambiente seguro que incentive a livre expressão de hostilidade, ansiedade, culpa e outros afetos negativos ou ambíguos, estabelecendo as bases para esclarecimentos subsequentes.",
+    "when_to_use": "No início ao meio da terapia centrada no ser humano, após estabelecer o relacionamento e antes de entrar na fase de esclarecimento, quando é necessário abrir a expressão emocional; quando o objetivo é transitar da narrativa do evento para a experiência emocional.",
+    "trigger": "O cliente hesita, fica em silêncio ou apenas narra eventos sem tocar nas emoções; surgem pistas de sentimentos negativos ambíguos, como hostilidade, ansiedade, culpa, desconfiança, entre outros.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "828"
+    ]
+  },
+  "829": {
+    "skill_id": "829",
+    "skill_name": "Capturar e refletir emoções implícitas",
+    "skill_description": "Ouvir e identificar as implicações emocionais subjacentes no discurso, respondendo não apenas ao conteúdo superficial, verbalizando sentimentos implícitos através da reflexão emocional para promover a clareza sobre o problema e as emoções.",
+    "when_to_use": "Quando o cliente termina de compartilhar e entra na fase de esclarecimento, é necessário direcionar a atenção dos eventos para os sentimentos para compreender melhor suas preocupações.",
+    "trigger": "Sinais emocionais vagos ou indiretos na narrativa, mudanças de tom, declarações contraditórias, ou menção a ansiedade, dúvidas etc. sem desenvolvê-las.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "829"
+    ]
+  },
+  "830": {
+    "skill_id": "830",
+    "skill_name": "Usar repetição e explicitação da experiência",
+    "skill_description": "Ao repetir moderadamente as palavras-chave do cliente e explicitar sua experiência atual, tornar tangíveis os sentimentos profundos, ajudando-o a identificar e compreender as emoções negativas atuais.",
+    "when_to_use": "Quando o cliente tem consciência insuficiente de seus próprios sentimentos ou os objetiva, para trazer emoções não percebidas para o presente e aprofundar a empatia.",
+    "trigger": "O cliente descreve sensações como fatos objetivos, não expressa imediatamente emoções ou afirma 'não sei o que sinto'.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "830"
+    ]
+  },
+  "831": {
+    "skill_id": "831",
+    "skill_name": "Reforçar a identificação das emoções negativas como parte do eu",
+    "skill_description": "Após esclarecer, identificar e apoiar a compreensão do consultante de que as emoções negativas também fazem parte do eu, promovendo aceitação e unidade consigo mesmo, reduzindo defesas e negação.",
+    "when_to_use": "Quando o consultante já identificou emoções negativas, mas mantém uma atitude de negação ou distanciamento em relação a elas, sendo necessário avançar na autoaceitação e integração.",
+    "trigger": "O consultante atribui externamente as emoções negativas, as menospreza ou as separa do 'verdadeiro eu', como dizer 'isso não sou eu' ou 'não deveria sentir isso'.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "831"
+    ]
+  },
+  "832": {
+    "skill_id": "832",
+    "skill_name": "Evitar intervenções orientadoras ou avaliativas",
+    "skill_description": "Ao esclarecer emoções, não levantar questões que o cliente ainda não mencionou, não avaliar ou explicar seu comportamento, mantendo a empatia e a direção da exploração autônoma com linguagem não crítica.",
+    "when_to_use": "Usado durante as etapas de esclarecimento e exploração para evitar desviar a conversa da experiência do cliente e manter o princípio não diretivo.",
+    "trigger": "Quando o cliente solicita conselhos ou orientações específicos, ou quando surgem conteúdos auto-sabotadores que podem induzir julgamentos, é necessário retornar aos seus sentimentos e experiências.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "832"
+    ]
+  },
+  "868": {
+    "skill_id": "868",
+    "skill_name": "Revisitar a jornada e reconhecer os progressos",
+    "skill_description": "Na fase final ou de encerramento, rever com o cliente a jornada e as transformações-chave, convidando-o a avaliar suas próprias mudanças emocionais, sociais e de aprendizagem; reconhecer especificamente seus esforços e crescimento; testemunhar as novas funções e crenças adquiridas; consolidar a autoeficácia e a motivação para a melhoria contínua.",
+    "when_to_use": "Durante os momentos de consolidação nas fases finais ou de encerramento da consulta, em resumos de etapas ou quando se prepara para finalizar uma sessão.",
+    "trigger": "O cliente consegue descrever objetivamente sua situação atual e está disposto a rever as mudanças; relata avanços na etapa (estabilidade emocional, melhoria interpessoal/acadêmica); resume ativamente os ganhos ou prepara-se para encerrar a consulta.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "868"
+    ]
+  },
+  "869": {
+    "skill_id": "869",
+    "skill_name": "Estabelecer e implementar um plano de ação contínuo",
+    "skill_description": "Definir com o cliente objetivos de ação concretos e viáveis para o curto prazo e para os próximos passos, transformando estratégias eficazes em planos de continuidade executáveis (como continuar a atividade física, manter conexões de apoio e comparecer às consultas no horário agendado), acordar direções práticas e feedbacks de verificação, incentivar a ação conforme o estado ideal, mantendo e expandindo os resultados terapêuticos.",
+    "when_to_use": "Na fase de consolidação ou encerramento, quando os resultados são significativos e o cliente está disposto a olhar para o futuro, sendo necessário estabelecer ou confirmar um plano de ação.",
+    "trigger": "O cliente expressa um estado ideal e intenções de ação; está satisfeito com a situação atual e deseja continuar a melhorar; teme perder os resultados obtidos ou precisa concretizar os próximos passos; já houve progresso, mas os objetivos permanecem vagos.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "869"
+    ]
+  },
+  "883": {
+    "skill_id": "883",
+    "skill_name": "Revisar e extrair estratégias de autoapoio",
+    "skill_description": "No final da sessão, rever conjuntamente o percurso, os progressos e os resultados das autoavaliações/escalas, extrair métodos eficazes como a atenção ao corpo e às emoções, fornecer feedback específico sobre melhorias positivas e áreas que ainda requerem esforço, consolidar as funções adquiridas e formar estratégias de autoapoio transferíveis, discutindo simultaneamente os arranjos para o encerramento.",
+    "when_to_use": "Fase de revisão e encerramento no final da consulta, ou durante a consolidação e encerramento/seguimento, para resumir e confirmar os resultados.",
+    "trigger": "O cliente relata melhoria do estado ou propõe terminar a consulta; é capaz de rever e relatar mudanças e crescimento; avaliação por escalas concluída com resultados disponíveis para discussão.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "883"
+    ]
+  },
+  "864": {
+    "skill_id": "864",
+    "skill_name": "Retorno e avaliação de acompanhamento após o término",
+    "skill_description": "Realizar retornos contínuos e avaliações de acompanhamento após a consulta, avaliando mudanças emocionais e compulsão alimentar, verificando o alcance e manutenção/expansão dos objetivos, apoiando o crescimento contínuo e validando resultados de longo prazo.",
+    "when_to_use": "No final da consulta ou após sua conclusão, quando necessário avaliar os resultados e focar na manutenção a longo prazo; quando a consulta está basicamente concluída ou entrando em uma fase de consolidação e é necessário monitorar continuamente os resultados.",
+    "trigger": "Quando a sessão entra na etapa de encerramento ou meses após o término, para saber sobre a situação atual e manutenção; quando a consulta termina ou os objetivos esperados foram alcançados, sendo necessário acompanhamento contínuo e avaliação das mudanças.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "864"
+    ]
+  },
+  "870": {
+    "skill_id": "870",
+    "skill_name": "Fortalecimento do Crescimento e da Experiência de Pontos Fortes",
+    "skill_description": "Durante as sessões de consolidação ou fases posteriores, convide o cliente a relatar exemplos de harmonia com os pares, progresso nos estudos e experiências com tarefas. Forneça feedback sincero e valide seu crescimento, pontos fortes e recursos internos, reforçando a autoavaliação positiva e a autoeficácia, consolidando mudanças e confiança.",
+    "when_to_use": "Em cada sessão da fase de consolidação ou durante revisões finais, quando os efeitos começam a aparecer ou quando é necessário manter as mudanças após a conclusão das tarefas.",
+    "trigger": "O cliente relata maior harmonia com os pares, estudos mais fáceis e expressa alegria/orgulho; conclui tarefas como o diário de crescimento e relata melhora no humor ou sono; demonstra maior confiança, estabilidade emocional e consegue listar suas próprias qualidades.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "870"
+    ]
+  },
+  "885": {
+    "skill_id": "885",
+    "skill_name": "Organizar e realizar a sessão de encerramento com feedback",
+    "skill_description": "Durante a fase de consolidação do encerramento, planejar e implementar sessões de resumo e feedback mútuo conforme o plano. Revisar os pontos principais e conteúdos centrais da consulta anterior, refletir sobre objetivos, métodos e aprendizados, esclarecer a direção futura para a vida, consolidar a compreensão dos problemas e estratégias de enfrentamento, preparando-se para o encerramento.",
+    "when_to_use": "Na fase final da consulta, durante o estágio de resumo (por exemplo, na 8ª ou nas 11ª a 12ª sessões) ou na 6ª sessão da terceira fase, quando se está próximo do encerramento ou preparando-se para finalizá-lo.",
+    "trigger": "O plano de consulta estabelecido avança para o estágio de resumo ou os objetivos principais foram basicamente alcançados; o cliente tem memória vaga das mudanças e métodos, solicita uma revisão ou precisa integrar seus aprendizados; ao entrar na fase de consolidação, é necessário revisar e fornecer feedback sobre as tarefas.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "885"
+    ]
+  },
+  "865": {
+    "skill_id": "865",
+    "skill_name": "Guiar a autoavaliação e nomear mudanças e recursos",
+    "skill_description": "Convidar o cliente a revisar as mudanças específicas e os esforços realizados durante a consulta, comparar os estados antes e depois, nomear melhorias e ganhos em sua própria linguagem (como catarse emocional, recuperação do ritmo de vida, expressão ativa, ajuste de interesses e relacionamentos), acender os recursos internos e externos já mobilizados e reconhecê-los, reforçar a autoeficácia e experiências positivas, consolidar novos padrões interpessoais e comportamentais, e fornecer motivação para o encerramento e manutenção subsequente.",
+    "when_to_use": "Na fase de encerramento ou revisões periódicas, avaliação de resultados e etapas de resumo antes do término do caso, para consolidar e reforçar mudanças positivas.",
+    "trigger": "O cliente relata mudanças positivas recentes ou recuperação funcional; é necessário revisar os resultados ao entrar na fase de encerramento; ou o cliente está disposto a compartilhar e resumir suas experiências e ganhos.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "865"
+    ]
+  },
+  "867": {
+    "skill_id": "867",
+    "skill_name": "Feedback específico e reconhecimento de avanços e pontos fortes",
+    "skill_description": "O consultor, com base na narrativa do cliente e nas observações, integra as autoavaliações, os feedbacks de colegas ou professores e compara-os com objetivos estabelecidos. Identifica explicitamente melhorias e quebras em áreas como emoção, adaptação, aprendizado e interações sociais. Reconhece e nomeia qualidades como persistência, dedicação, resiliência e resistência psicológica, oferecendo encorajamento através de uma linguagem afirmativa para reforçar a autoeficácia e manter a motivação, apoiando-o na aplicação contínua de recursos e novos modelos após a sessão.",
+    "when_to_use": "Durante a fase de avaliação da eficácia do aconselhamento ou em momentos de revisão e consolidação antes do encerramento, bem como quando o cliente demonstra insights e progresso.",
+    "trigger": "O cliente relata mudanças positivas ou avaliações indicam melhora; observa-se aumento de sorrisos, estabilidade emocional e melhoria nas interações sociais; ou surgem avaliações e relatos positivos de outras pessoas.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "867"
+    ]
+  },
+  "882": {
+    "skill_id": "882",
+    "skill_name": "Guiar a narrativa de recordação de eventos e conquistas positivos",
+    "skill_description": "No estágio final de consolidação, convida-se o cliente a resumir, com suas próprias palavras, as recentes realizações de aprendizagem e fragmentos positivos da vida. Verifica-se e fornece-se feedback sobre as tarefas domiciliares, discutem-se sentimentos e mudanças, nomeiam-se forças e recursos utilizados, e expressa-se gratidão pela vida e pelos outros. Isso ajuda a visualizar e celebrar o progresso real, consolidando a cognição positiva de si mesmo e o autoapoio, aumentando a eficácia e mantendo a motivação.",
+    "when_to_use": "Quando o cliente relata progressos recentes, melhoria do humor ou resultados eficazes na conclusão de tarefas, especialmente durante as etapas de revisão e consolidação no final.",
+    "trigger": "O cliente descreve 'esta semana foi bastante boa', 'sentiu grande realização com a prova', compartilha interações positivas ou progresso no aprendizado; ou conclui as tarefas e está disposto a resumir e expressar sentimentos.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "882"
+    ]
+  },
+  "874": {
+    "skill_id": "874",
+    "skill_name": "Integrar feedbacks de múltiplas fontes para apontar melhorias visíveis",
+    "skill_description": "Na fase de revisão, antes do encerramento, aponte e nomeie de forma visual as melhorias visíveis no cliente (como sorrir, estabilidade emocional, harmonia familiar, recuperação da paixão pela vida), integrando a autoavaliação do cliente, observações do terapeuta, relatórios de pares e professores. Revise item por item as mudanças em comparação com os objetivos da consulta, oferecendo reconhecimento específico e feedback positivo para ajudá-lo a ver e celebrar seus progressos, consolidando estratégias de manutenção e motivação.",
+    "when_to_use": "Na etapa de avaliação de efeitos e resumo, perto do encerramento, usada para celebrar e consolidar conquistas.",
+    "trigger": "O cliente apresenta sinais positivos externos e fatos de melhoria na vida; ou relatórios de múltiplas partes mostram melhora e alcance dos objetivos.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "874"
+    ]
+  },
+  "879": {
+    "skill_id": "879",
+    "skill_name": "Nomear e validar melhorias específicas e força interior",
+    "skill_description": "Durante o acompanhamento ou sessões posteriores, identificar e nomear as melhorias específicas do paciente (como redução da dose medicamentosa, melhora do estado mental, melhoria na comunicação interpessoal, aumento de sorrisos), reforçando com validação sincera e encorajamento seus esforços e força interior, aumentando a confiança, autoeficácia e motivação intrínseca para manter as mudanças, apoiando sua prática contínua e promoção de novos padrões no dia a dia.",
+    "when_to_use": "Fase final do tratamento ou estágio de acompanhamento, bem como em feedback de tarefas e fase de encerramento, para consolidar conquistas e experiências positivas.",
+    "trigger": "Avaliação mostra redução de sintomas e melhoria na adaptação; o paciente relata mudanças positivas, conclui tarefas ou ganha algo interpessoal; ou observa-se sinais positivos como relaxamento e mais sorrisos.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "879"
+    ]
+  },
+  "887": {
+    "skill_id": "887",
+    "skill_name": "Resumo do Sistema e Nomeação do Crescimento e Mudança",
+    "skill_description": "No estágio final, realizar um resumo sistemático do processo de aconselhamento, auxiliando o consultante a revisar os progressos específicos em cognição, emoção e comportamento; organizar as mudanças e ganhos nas relações; promover a síntese com base na verificação e no feedback das tarefas atribuídas, formando uma narrativa clara de si mesmo; identificar e validar suas percepções e mudanças; consolidar as conquistas e recursos adquiridos; estabelecer a base para o fechamento emocional e a manutenção autônoma subsequente.",
+    "when_to_use": "Na última sessão do estágio final ou na etapa de revisão de conclusão, utilizada para resumir e consolidar os resultados.",
+    "trigger": "Próximo ao encerramento ou entrada em uma sessão de término; o consultante fala sobre suas próprias mudanças, pergunta sobre as conquistas desta vez ou apresenta sinais claros de percepção e melhoria.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "887"
+    ]
+  },
+  "884": {
+    "skill_id": "884",
+    "skill_name": "Resumir e validar a expressão de apoio social e ajuda",
+    "skill_description": "No estágio final, guiar o cliente para revisar e resumir o apoio e a ajuda específicos recebidos de amigos e familiares, nomear e validar as experiências positivas trazidas pelo seu sistema de apoio, reforçar a consciência e a sensação dos recursos de força, consolidar as experiências positivas e aumentar a autoeficácia, fortalecendo a motivação para manter e promover mudanças após a consulta.",
+    "when_to_use": "Na fase de revisão e feedback mútuo no estágio final da consulta, usada para consolidar as experiências de apoio obtidas durante o período terapêutico.",
+    "trigger": "O cliente relata calor e apoio de laços familiares e amizades na segunda metade ou no estágio final da sessão, com seu estado geral tendendo à estabilidade e disposto a revisar.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "884"
+    ]
+  },
+  "866": {
+    "skill_id": "866",
+    "skill_name": "Feedback empático e palavras que promovem a reflexão emocional",
+    "skill_description": "Ao redor da narrativa e das emoções do cliente, utilize feedback e reflexões de sentimentos suaves e precisos, aproxime-se de suas experiências de raiva, medo e impotência, foque em linguagem metafórica e dê respostas compreensivas, valide e aceite as emoções, ajude-o a perceber contradições e emoções implícitas, acolha sua experiência para promover esclarecimento e autoaceitação, permitindo uma compreensão mais clara das dificuldades.",
+    "when_to_use": "Das fases iniciais até à fase de exploração-insight, quando o cliente relata humilhação, exclusão ou eventos conflituosos recentes, precisando ser compreendido e ter emoções negativas esclarecidas; ou quando a identificação e esclarecimento emocional requerem um aprofundamento da compreensão emocional.",
+    "trigger": "Aparecimento de declarações contraditórias (como desejar ser compreendido mas não querer falar, querer ser independente mas ter medo); flutuações emocionais evidentes, silêncio evasivo ou descrição de experiências humilhantes; uso frequente de linguagem metafórica e vaga; relato de depressão, ansiedade, baixa autoestima ou ruminação/negação de si mesmo devido a término de relacionamento e dificuldades de adaptação.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "866"
+    ]
+  },
+  "872": {
+    "skill_id": "872",
+    "skill_name": "Guiar a revisão e a consciência do momento presente, nomeando as emoções",
+    "skill_description": "Revisar com o cliente o curso específico de um evento, focando nas emoções, sensações corporais e julgamentos de significado presentes naquele momento e agora; nomear as emoções através de perguntas específicas, utilizando uma linguagem próxima para tornar a experiência concreta; quando necessário, incentivar a expressão e a catarse, coletar informações e fornecer uma análise preliminar do problema, identificando medos ocultos, vergonha e necessidades, aumentando a autoconsciência e o esclarecimento.",
+    "when_to_use": "Na primeira sessão e fase de avaliação ou quando se está estabelecendo a autoconsciência inicial; após narrativas sobre o passado ou eventos importantes, é necessário retornar ao presente para identificar emoções, ou quando o cliente analisa excessivamente racionalmente e tem dificuldade em descrever seus sentimentos.",
+    "trigger": "Descrever provocações, conflitos interpessoais ou experiências de repressão, mas com dificuldade em expressar as emoções do momento; indicar incerteza sobre os sentimentos ou descrever genericamente as preocupações; enfatizar frequentemente 'Estou pensando...' mas ter dificuldade em dizer emoções específicas ou necessidades; evitar perguntas-chave, a voz fica mais fraca ou observa as reações do terapeuta.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "872"
+    ]
+  },
+  "878": {
+    "skill_id": "878",
+    "skill_name": "Atenção positiva incondicional e reflexão empática de emoções",
+    "skill_description": "Oferecer atenção positiva incondicional, respeito e apoio através de um tom caloroso, escuta atenta e reflexão precisa das emoções; utilizar linguagem compreensiva e uma perspectiva de normalização para se aproximar de sentimentos como frustração, exaustão, medo e autossabotagem; não pressupor a causa do problema imediatamente, aceitar a compreensão que o paciente tem dos seus sintomas e repetir as suas preocupações, criando um ambiente de confiança e segurança, incentivando-o a expressar-se e esclarecendo gradualmente as emoções negativas.",
+    "when_to_use": "Na fase inicial de estabelecimento de relação e exploração, ou sempre que a expressão emocional estiver bloqueada e necessite de compreensão e apoio; quando o paciente descreve experiências dolorosas ou está emocionalmente agitado.",
+    "trigger": "Narrar fracassos no trabalho, autonegação, autoavaliação baixa, sentir-se rejeitado ou abandonado; apresentar-se como suprimido e deprimido, com dificuldade em partilhar, tenso e ansioso, solitário e com medo; relatar ansiedade, irritabilidade e insónia; negar problemas psicológicos ou insistir numa causa física para os sintomas.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "878"
+    ]
+  },
+  "871": {
+    "skill_id": "871",
+    "skill_name": "Empatia, acalmar e acolher emoções intensas para facilitar a catarse",
+    "skill_description": "Quando o cliente apresenta emoções intensas ou alta ativação, acalme-o imediatamente com respeito e empatia. Ouça com paciência e responda emocionalmente, acolhendo suas experiências de tensão, ansiedade, depressão, etc., oferecendo suporte e aceitação calorosos. Normalize seus sentimentos intensos, reduza a ativação excessiva e promova sua expressão segura e descarga racional, permitindo que continuem a esclarecer emoções negativas.",
+    "when_to_use": "Quando surgirem emoções intensas como agitação, irritação ou choro durante a sessão; em sessões iniciais para estabelecer vínculo ou quando há sofrimento emocional proeminente; ou quando o cliente não consegue verbalizar ou apresenta regressão.",
+    "trigger": "Bater os punhos na mesa, levantar-se com agitação ou chorar muito; inquietação sentada, balançar de um lado para outro, falta de contato visual e respostas frequentes de 'não sei'; tensão facial e pressa para saber 'o que houve'; relato de depressão, ansiedade ou tensão acentuada.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "871"
+    ]
+  },
+  "880": {
+    "skill_id": "880",
+    "skill_name": "Refletir e nomear emoções implícitas presentes no momento",
+    "skill_description": "Convidar o cliente a descrever os sentimentos do momento e da situação específica, captando e retroalimentando emoções implícitas como negligência ou desvalorização com base em pistas verbais e não verbais. Utilizar nomenclatura exploratória e frases no modo 'você' para aproximar-se de sua experiência, identificando emoções como timidez, retraimento, queixas, ciúmes, além de crenças implícitas ou sensação de alienação do eu, auxiliando na entrada no mundo interno e aumentando a consciência e expressão emocional.",
+    "when_to_use": "Quando é necessário entrar e esclarecer as emoções ao recordar a infância ou narrar eventos recentes; ou quando o conteúdo da conversa/correspondência apresenta temas implícitos de emoção negativa e auto-negação, difíceis de perceber ou admitir diretamente.",
+    "trigger": "O cliente afirma não lembrar como se sente ou tem dificuldade em descrever as emoções atuais; expressão emocional escassa e fechada; menções como 'ninguém me ama', 'sou negado' ou 'muito solitário'; pistas não verbais de timidez e retraimento ou relatos de que 'colegas estão contra mim'; surgimento de queixas, ciúmes ou hostilidade na fala, ou crenças como 'estou apenas interpretando um papel' ou 'não mereço felicidade'.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "880"
+    ]
+  },
+  "875": {
+    "skill_id": "875",
+    "skill_name": "Incentivar o contato com apoiadores e participar de práticas sociais",
+    "skill_description": "Validar as capacidades de enfrentamento do cliente, incentivando-o a entrar em contato proativamente com colegas de classe, pais ou pessoas de confiança, participar de atividades coletivas como turmas ou grupos, observar e aprender técnicas interpessoais eficazes durante interações reais, estabelecendo uma frequência e dificuldade que aumentam gradualmente, transformando as experiências positivas da consulta em ações observáveis e suporte social.",
+    "when_to_use": "Fase intermediária até a fase de consolidação, quando há escassez de suporte social ou o cliente deseja se comunicar mas ainda hesita e evita; necessário transferir os ganhos da consulta para conexões reais.",
+    "trigger": "Participa raramente de atividades coletivas, não estabelece relacionamentos profundos, costuma ficar sozinho; sente solidão ou recua, preocupa-se com a reação dos pais; após a redução da ansiedade ainda hesita, mas expressa vontade de se comunicar e pedir ajuda.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "875"
+    ]
+  },
+  "888": {
+    "skill_id": "888",
+    "skill_name": "Negociar e definir objetivos de melhoria específicos subsequentes",
+    "skill_description": "Após a melhora do estado, negociar com o cliente e encorajá-lo a estabelecer objetivos subsequentes específicos e executáveis, focando na melhoria das habilidades de interação e na expansão das vantagens de aprendizagem, transformando o desejo de crescimento em um plano de ação contínuo.",
+    "when_to_use": "No final da terceira sessão de aconselhamento ou antes do término, ao resumir as mudanças e planejar ações contínuas.",
+    "trigger": "O cliente relata melhorias significativas, expressa a vontade de continuar a melhorar e demonstra confiança no futuro.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "888"
+    ]
+  },
+  "881": {
+    "skill_id": "881",
+    "skill_name": "Promover a escolha e implementação de ações concretas",
+    "skill_description": "Após esclarecer a relação entre eventos e avaliações, forneça explicações acessíveis e sugestões viáveis. Promova escolhas claras de vida ou estudo através de perguntas diretas, elabore e implemente passos concretos em conjunto. Incentive a expressão de necessidades razoáveis e recusas moderadas em situações reais. Enfatize a responsabilidade correspondente às escolhas feitas e transforme apelos emocionais e mudanças cognitivas em ação.",
+    "when_to_use": "Quando emoções intensas levam à estagnação ou inação; quando as cognições já foram ajustadas, mas ainda não foi formado um plano de ação; ao enfrentar desafios de vida ou conflitos interpessoais sem saber como proceder e precisar definir o próximo passo.",
+    "trigger": "Narrativa sobre necessidades insatisfeitas acompanhada de tristeza, somatização ou autonegação, mas sem ação; hesitação prolongada na evitação de tarefas ou afirmação de 'não sei para onde caminhar'; dúvida sobre o próximo passo após a conscientização e pergunta sobre 'como fazer'.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "881"
+    ]
+  },
+  "886": {
+    "skill_id": "886",
+    "skill_name": "Identificar recursos disponíveis e definir objetivos de ação a curto prazo",
+    "skill_description": "Auxiliar na organização e seleção de recursos internos e externos disponíveis, combinando com a situação atual para definir objetivos de ação a curto prazo; revisar os progressos alcançados na fase de consolidação final, agendar especificamente a continuação do uso de estratégias como exercício físico e suporte interpessoal, reforçar a autoeficácia e a confiança, aumentando a viabilidade e a sustentabilidade da ação.",
+    "when_to_use": "Na fase de consolidação final ou durante resumos periódicos, quando é necessário transformar a direção do crescimento em objetivos executáveis a curto prazo e manter a mudança de comportamento.",
+    "trigger": "O cliente expressa desejo de mudança ou menciona 'coisas que naturalmente gostaria de fazer', começando a discutir o estado ideal e caminhos viáveis; melhorias já foram alcançadas e é necessário prevenir recaídas.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "886"
+    ]
+  },
+  "877": {
+    "skill_id": "877",
+    "skill_name": "Revisar, consolidar mudanças e reforçar a crença na ação",
+    "skill_description": "Na fase de encerramento ou durante a revisão, resuma as mudanças cognitivas, emocionais e comportamentais, evidenciando o crescimento e as capacidades através de observações concretas. Conecte com recursos internos, revise tentativas reais e extraia práticas eficazes e apoios. Discuta direções futuras para a aprendizagem e vida diária, consolide a motivação e a autoeficácia, e fortaleça a crença na ação ao enfrentar dificuldades.",
+    "when_to_use": "No final da consulta ou em revisões periódicas; após cada tentativa, para consolidar mudanças existentes e manter a continuidade e expansão da ação.",
+    "trigger": "Estabilidade emocional e funcional, progresso em etapas e preparação para encerramento ou transição para o autoajuda; quando o cliente descreve tentativas comportamentais recentes, experiências de sucesso ou dificuldades enfrentadas, ou descreve mudanças positivas na expressão, interesses, emoções e avaliação de si mesmo.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "877"
+    ]
+  },
+  "873": {
+    "skill_id": "873",
+    "skill_name": "Incentivar e apoiar a interação ativa e reparação com colegas de classe",
+    "skill_description": "Com base na atenção positiva incondicional, encorajar diretamente o cliente a interagir corajosamente com colegas de classe, praticar comunicação e conexão em situações reais, implementar comportamentos operacionais como pedir ajuda nos estudos, conversar com colegas de quarto ou restaurar relacionamentos comuns com colegas que foram bloqueados anteriormente, aumentando gradualmente a confiança e a confiança interpessoal, promovendo melhorias reais na qualidade da interação e reduzindo o isolamento social.",
+    "when_to_use": "Fase intermediária da ajuda psicológica, quando o cliente está basicamente estabilizado mas ainda evita interações sociais, ou precisa de melhorias específicas na qualidade da interação após frustrações interpessoais, ou quando recursos de apoio já foram identificados mas ainda não foram colocados em prática.",
+    "trigger": "Relacionamentos ruins com colegas de classe, conflitos ou bloqueio; dificuldade em fazer amigos; medo de ser prejudicado pelos outros mas desejo de comunicação, ou expressão de vontade de tentar mas falta de etapas claras.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "873"
+    ]
+  },
+  "876": {
+    "skill_id": "876",
+    "skill_name": "Reforço positivo e incentivo à participação em atividades coletivas e comportamentos de ajuda",
+    "skill_description": "Dar elogios e reconhecimento às ações positivas e à atitude do consultante, revisitar em cada sessão eventos positivos como convívio harmonioso com colegas e progresso nos estudos, encorajar ainda mais a participar de atividades coletivas e iniciar conversas ativamente com outras pessoas, além de incentivar explicitamente a ajudar colegas, para manter e ampliar ações pró-sociais, melhorar as habilidades de interação interpessoal e a adaptação ao ambiente escolar.",
+    "when_to_use": "Fase de consolidação ou término, ou quando se observa que ações positivas já estão ocorrendo, usadas para manter e ampliar essas ações; em cada sessão da fase de consolidação pode-se revisar eventos positivos.",
+    "trigger": "O consultante demonstra comportamentos positivos ou melhoria interpessoal; ou ainda carece de participação social e precisa de objetivos de ação específicos; surgem oportunidades de interação positiva ou ajuda, necessitando estimular comportamentos pró-sociais.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "876"
+    ]
+  }
+}

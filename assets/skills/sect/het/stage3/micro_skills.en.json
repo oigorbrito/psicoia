@@ -1,0 +1,777 @@
+{
+  "839": {
+    "skill_id": "839",
+    "skill_name": "Guide the expression of grief regarding an impending loss of the therapeutic relationship",
+    "skill_description": "During the termination phase, center on the ending of the relationship; invite and support the client in expressing grief about the relationship that is about to be lost, allowing emotions to be experienced and contained in the here and now, facilitating farewell and emotional closure.",
+    "when_to_use": "In the termination phase, when both parties are preparing to end sessions or the relationship is about to conclude; the goal is emotional processing and transition before leaving therapy.",
+    "trigger": "The client exhibits sadness, choking up, silence, or avoidance when discussing ending or separation, or proactively mentions feelings of loss, attachment, and reluctance to part.",
+    "parent_ids": [
+      "827",
+      "833",
+      "834",
+      "839"
+    ]
+  },
+  "840": {
+    "skill_id": "840",
+    "skill_name": "Allow the recurrence of issues to contain re-emerging emotions",
+    "skill_description": "During the termination phase, do not block the re-emergence of issues; allow the client to bring old themes or unfinished business back into the here and now, supporting the emergence and subsiding of emotions to consolidate closure.",
+    "when_to_use": "In the termination phase, when reviewing the therapeutic journey, to process lingering emotions and themes and complete the ending.",
+    "trigger": "The client raises old issues again before termination, repeats core themes, or experiences emotional fluctuations by returning to previous predicaments.",
+    "parent_ids": [
+      "827",
+      "833",
+      "834",
+      "840"
+    ]
+  },
+  "848": {
+    "skill_id": "848",
+    "skill_name": "Guide the client to anticipate possible future crises",
+    "skill_description": "During the termination phase, invite the client to jointly review potential high-risk situations and risk sources that may recur, clarifying expectations of 'crises' to lay the foundation for transition and preparation after leaving therapy.",
+    "when_to_use": "In the ending phase of Gestalt therapy, when the client and therapist review the journey, prepare to end the relationship, and transition into daily life.",
+    "trigger": "The client expresses worry or uncertainty about the future during discussions on ending, entertains thoughts such as 'what if it happens again...', or shows tension and anxiety during farewells.",
+    "parent_ids": [
+      "827",
+      "833",
+      "837",
+      "848"
+    ]
+  },
+  "849": {
+    "skill_id": "849",
+    "skill_name": "Normalize the recurrence of issues to identify relapse risks",
+    "skill_description": "Guide the client to accept the fact that issues may recur, explore patterns of recurrence and signs of relapse, enabling them to identify risk windows as a basis for crisis anticipation.",
+    "when_to_use": "During the summary and farewell segments of the termination phase, to help the client transition from achievements to fluctuations and potential re-emergence in real-life situations.",
+    "trigger": "The client expresses anxiety or strongly denies the possibility of relapse when reviewing progress, or displays a stiff tone and changes in breathing when discussing the future.",
+    "parent_ids": [
+      "827",
+      "833",
+      "837",
+      "849"
+    ]
+  },
+  "850": {
+    "skill_id": "850",
+    "skill_name": "Review and Predict Risks and Risk Factors",
+    "skill_description": "Combine predictions of risks and risk factors from previous assessments and treatment plans, review high-risk signals such as suicide or acute psychosis, and create a list of scenarios and triggers for future crises.",
+    "when_to_use": "During crisis anticipation discussions at the termination stage, or during comprehensive assessment reviews before termination, to convert past assessments and plans into specific future warnings.",
+    "trigger": "The client has a history of suicidal ideation, acute psychotic episodes, or recent verbal and behavioral clues related to these issues; or the therapist identifies unaddressed high-risk factors during review.",
+    "parent_ids": [
+      "827",
+      "833",
+      "837",
+      "850"
+    ]
+  },
+  "845": {
+    "skill_id": "845",
+    "skill_name": "Guide Celebration of Achievements at Termination",
+    "skill_description": "Make 'celebrating achievements' the core task at the termination stage, invite the client to reflect on gains and efforts made during therapy, encourage them to recognize and affirm their own changes in the present moment, and provide a positive closure for starting a new life after leaving therapy.",
+    "when_to_use": "At the termination stage of Gestalt therapy, used to conclude therapy, consolidate outcomes, and transition to subsequent life.",
+    "trigger": "Therapy is approaching or entering the termination stage; the client expresses willingness to end therapy, discusses leaving, or summarizes their experience.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "845"
+    ]
+  },
+  "846": {
+    "skill_id": "846",
+    "skill_name": "Point Out Progress and Acknowledge Change",
+    "skill_description": "The therapist actively points out specific progress achieved by the client, acknowledges the changes that have occurred, helps them become aware of and own new patterns, strengthens self-support and contact abilities, and enhances satisfaction and wholeness.",
+    "when_to_use": "From the assimilation and integration stage to the termination stage, used to consolidate change and enhance self-efficacy.",
+    "trigger": "The client presents different behaviors from earlier stages verbally or nonverbally, such as clearer self-statement, more natural contact, or a more relaxed posture.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "846"
+    ]
+  },
+  "847": {
+    "skill_id": "847",
+    "skill_name": "Conduct Retrospective Mutual Discussion to Summarize Gains",
+    "skill_description": "Engage in retrospective mutual discussion with the client to summarize and evaluate changes, learning, and choices made during therapy, clarify new life patterns and sustainable practices, and make celebration a bridge for consolidation and promotion.",
+    "when_to_use": "From the choice and integration stage to the termination stage, used to systematically summarize and consolidate therapeutic outcomes.",
+    "trigger": "The client begins to review the therapy process, actively evaluates what they have learned, or asks how to continue and apply changes in the future.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "847"
+    ]
+  },
+  "841": {
+    "skill_id": "841",
+    "skill_name": "Normalizing unfinished work and relapse",
+    "skill_description": "Clearly inform about the possibility of unfinished tasks and vulnerability; normalize that problems can recur; help set realistic expectations; allow for imperfection to exist to reduce perfectionistic pressure and promote acceptance.",
+    "when_to_use": "In the termination phase of therapy, help the client accept the reality of unmet goals, establish realistic expectations, and prepare to leave therapy while acknowledging imperfections.",
+    "trigger": "The client expresses anxiety about 'not being fully better' or 'never happening again,' uses perfectionistic or absolutist language; appears tense or avoids termination due to concerns about relapse.",
+    "parent_ids": [
+      "827",
+      "833",
+      "835",
+      "841"
+    ]
+  },
+  "842": {
+    "skill_id": "842",
+    "skill_name": "Reviewing and celebrating achieved changes",
+    "skill_description": "Guide the client to review and celebrate specific gains made during therapy, reinforcing awareness of effective change and self-support, enabling them to maintain confidence and responsibility while acknowledging imperfection.",
+    "when_to_use": "In the termination phase, used to balance focus on unfinished aspects, consolidate self-support, and serve as integration and encouragement before leaving therapy.",
+    "trigger": "The client focuses only on shortcomings, ignores progress, displays self-deprecating or depressed tone; expresses disappointment about ending without seeing achievements.",
+    "parent_ids": [
+      "827",
+      "833",
+      "835",
+      "842"
+    ]
+  },
+  "843": {
+    "skill_id": "843",
+    "skill_name": "Summarizing integrated coping patterns and agreeing on future self-adjustment and re-seeking help",
+    "skill_description": "Collaborate with the client to summarize, evaluate, and integrate learned coping patterns; clarify steps for self-adjustment during fluctuations and channels for seeking help when necessary, supporting moving forward with imperfections.",
+    "when_to_use": "In the final stage of therapy, while accepting the reality of unfinished work, prepare for life after leaving therapy, consolidate new patterns, and reserve space for adjustment.",
+    "trigger": "The client asks 'What should I do after ending?' or feels uneasy about leaving therapy; worries about future fluctuations but lacks a clear coping path.",
+    "parent_ids": [
+      "827",
+      "833",
+      "835",
+      "843"
+    ]
+  },
+  "844": {
+    "skill_id": "844",
+    "skill_name": "Accepting responsibility in imperfection using 'I am responsible' language",
+    "skill_description": "Require the client to add 'I will be responsible for it' after statements, expressing choice and consequences in the first person, reducing externalization and avoidance, consolidating self-support and accountability in imperfect situations.",
+    "when_to_use": "In the termination phase, when facing unmet goals, reinforce responsibility and self-support to stabilize autonomy after leaving therapy.",
+    "trigger": "The client frequently uses expressions like 'cannot,' 'no way,' 'it's everyone else,' or impersonal 'it/you,' showing tendencies toward avoiding responsibility or excessive self-blame.",
+    "parent_ids": [
+      "827",
+      "833",
+      "835",
+      "844"
+    ]
+  },
+  "851": {
+    "skill_id": "851",
+    "skill_name": "Reviewing Anticipated Relapse and Crisis Warning Signs",
+    "skill_description": "Guide the client to make realistic expectations about potential crises in the future during the termination phase, allow for the recurrence of issues, identify personal warning signals, and lay the foundation for subsequent self-regulation and coping.",
+    "when_to_use": "Used during the termination phase when preparing to leave therapy or concluding work, to transform current awareness into preparation for future situations and risk anticipation.",
+    "trigger": "The client expresses feelings of loneliness and helplessness, pessimism, or disappointment during the termination or consolidation phase, or expresses concern about potential relapse after therapy ends.",
+    "parent_ids": [
+      "827",
+      "833",
+      "838",
+      "851"
+    ]
+  },
+  "852": {
+    "skill_id": "852",
+    "skill_name": "Co-developing Priority Strategies and Immediate Self-Help Steps",
+    "skill_description": "Transform awareness and contact training of 'here and now' into an actionable coping checklist, focusing on taking responsibility, improving interpersonal contact, and environmental adjustments to clarify priority strategies and specific self-help action paths.",
+    "when_to_use": "Used from the selection and integration phase to the termination phase to ground insights into action, enabling the client to leave therapy with implementable steps.",
+    "trigger": "The client has gained self-understanding but lacks experience on how to specifically solve problems and needs to translate insights into behavioral plans.",
+    "parent_ids": [
+      "827",
+      "833",
+      "838",
+      "852"
+    ]
+  },
+  "853": {
+    "skill_id": "853",
+    "skill_name": "Clarifying Support Systems and Help-Seeking Paths",
+    "skill_description": "Identify and strengthen self-support and environmental support, list relationships and resources available during crises, assist in transitioning from environmental support to self-support, and enhance the feasibility and safety of coping.",
+    "when_to_use": "Used when formulating coping plans, throughout the later stages of therapy and termination, ensuring the client has an accessible support network in real-world settings.",
+    "trigger": "The client shows insufficient self-support, often feels fragmented or weak and incapable, and needs to clarify who and where to seek help.",
+    "parent_ids": [
+      "827",
+      "833",
+      "838",
+      "853"
+    ]
+  },
+  "854": {
+    "skill_id": "854",
+    "skill_name": "Setting Evaluation Criteria and Review Mechanisms",
+    "skill_description": "Agree with the client on evaluation criteria for counseling effectiveness and establish regular methods for summary, assessment, and direction adjustment, allowing coping plans to be reviewed and revised to avoid re-fixation.",
+    "when_to_use": "Used when initially formulating plans and during termination to conclude, serving as a framework for subsequent self-checking and review to support continuous growth and adjustment.",
+    "trigger": "The client asks 'how to judge effectiveness' or experiences stalemates and uncertainty, requiring calibration of direction through evaluation and review.",
+    "parent_ids": [
+      "827",
+      "833",
+      "838",
+      "854"
+    ]
+  },
+  "857": {
+    "skill_id": "857",
+    "skill_name": "Evoke and Strengthen the Capacity for Will",
+    "skill_description": "Based on the stage of will, help bring repressed wishes into consciousness, focus on the relationship between self and world, and foster a desire to change the future; guide awareness of body and needs, clarify 'what one wants' and 'why one wants it', laying the foundation for will and action.",
+    "when_to_use": "In initial assessment and early existential therapy, when the client presents emptiness, unclear understanding of their own needs and goals, or lack of motivation; the goal is to shift from confusion to an awareness of wishes.",
+    "trigger": "The client frequently expresses 'I don't know what I want', 'I feel empty', or 'I am unclear about my needs', or struggles to articulate specific desires and directions.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "857"
+    ]
+  },
+  "858": {
+    "skill_id": "858",
+    "skill_name": "Organize Wishes into Will",
+    "skill_description": "Elevate already-recognized wishes to the level of self-awareness, acknowledge one's capacity for wishes and expression, organize resources and direction, form will preparation oriented toward goals, enabling wishes to have an action-oriented direction.",
+    "when_to_use": "In early-to-mid stages, when the client can express what they want but lacks the ability to act or is indecisive; the need is to transform 'wanting' into internal will directed toward goals.",
+    "trigger": "The client repeatedly says 'I want... but I can't/can't be sure', 'always hesitating', expressing wishes but remaining at the level of speculation and verbalization.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "858"
+    ]
+  },
+  "859": {
+    "skill_id": "859",
+    "skill_name": "Facilitate Decision-Making and Commitment to the Future",
+    "skill_description": "Based on wishes and will, guide judgment and choice, prompt the client to invest themselves in the future, establish commitment, and accept the consequences and responsibilities of choices, moving toward self-actualization and integration.",
+    "when_to_use": "In mid-stages, when options and directions are largely clear but decisions are delayed; the therapeutic goal shifts to making decisions and establishing commitments to advance actual change.",
+    "trigger": "The client repeatedly weighs 'whether to' or 'should', delays decision-making, cycles through discussions of options without making a clear choice.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "859"
+    ]
+  },
+  "860": {
+    "skill_id": "860",
+    "skill_name": "Support Facing Decision Anxiety",
+    "skill_description": "When choices trigger anxiety, assist the client in facing and understanding its meaning, distinguish between avoidance and constructive endurance, support their acceptance of being the agent of their own decisions rather than determined by external forces, and encourage taking action despite anxiety to create a valuable existence.",
+    "when_to_use": "At any stage when moving from known to unknown or abandoning old ways causes significant unease; the goal is to transform anxiety into a resource that drives action.",
+    "trigger": "Obvious tension or fear when discussing change or entering unfamiliar situations; repeated avoidance of choices or evasion of new life forms, accompanied by physiological unease.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "860"
+    ]
+  },
+  "861": {
+    "skill_id": "861",
+    "skill_name": "Assisting in Choosing Authentic Existence",
+    "skill_description": "Assist the client in confirming the range of options, making choices between nature, others, and their own needs, facing authentic existence rather than allowing others or logic of reinforcement/punishment to replace self-choice, becoming the mode of existence they are capable of.",
+    "when_to_use": "Middle to early stages, when the client is dominated by others' evaluations or external standards and needs to return to their own reference and authentic choices to advance change.",
+    "trigger": "The client frequently relies on phrases like 'everyone says so' or 'they decided for me', or expresses guilt and a sense of powerlessness defined by others due to not living authentically.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "861"
+    ]
+  },
+  "862": {
+    "skill_id": "862",
+    "skill_name": "Strengthening Responsibility Acceptance and Correcting External Attribution",
+    "skill_description": "Help identify ways of evading choice and responsibility, encourage the use of freedom to take responsibility for the world currently chosen; transform 'blaming others/environment' into controllable responsibility and action, enhancing motivation for change.",
+    "when_to_use": "When the client attributes problems entirely externally, lacks motivation for change, or waits for others/environment to change first, a shift toward responsibility and controllable action is needed.",
+    "trigger": "The client often says 'It's all caused by them/the environment' or 'There's nothing I can do', attributing problems to others, external forces, or genetic factors, displaying passivity.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "862"
+    ]
+  },
+  "863": {
+    "skill_id": "863",
+    "skill_name": "Guiding Preliminary Choices for Taking Action",
+    "skill_description": "Based on the principle of taking action, help the client design and implement small-step action choices after clarifying direction; emphasize experiencing existence in action or the possibility of action, consolidating change and new identity through behavior.",
+    "when_to_use": "Middle to late stages, when insight is sufficient but behavior has not changed, needing to convert choices into concrete actions and trials to advance changes in real life.",
+    "trigger": "The client repeatedly discusses understanding and meaning but delays action; remains at the conceptualization stage, lacking specific steps and attempts.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "863"
+    ]
+  },
+  "822": {
+    "skill_id": "822",
+    "skill_name": "Assisting in Obtaining Information Needed for New Goals",
+    "skill_description": "When the client chooses a new goal, proactively provide or assist in obtaining relevant materials, channels, and supportive information, helping them form realistic and feasible paths and decision-making foundations, while clarifying how to use information and its boundaries to maintain their autonomy.",
+    "when_to_use": "In the consolidation phase of late-stage therapy, when the client has achieved preliminary changes and begins making choices and plans for new goals.",
+    "trigger": "The client expresses 'lack of information' or 'don't know where to start' regarding new goals, or actively asks about resources and pathways to facilitate decision-making.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "822"
+    ]
+  },
+  "823": {
+    "skill_id": "823",
+    "skill_name": "Support independent attempts and normalize setbacks",
+    "skill_description": "Encourage the client to attempt resolving adjustment issues through independent actions, framing potential failures and disappointments in advance as normal phenomena, helping them learn from experience while maintaining responsibility and autonomy, and continuously promoting self-choice and action.",
+    "when_to_use": "In the later stages of therapy, when the client begins to transfer changes to real-life situations and attempts new behaviors autonomously.",
+    "trigger": "The client reports 'failure after trying', 'feeling very discouraged', or 'wanting to retreat to old ways', or shows hesitation and withdrawal regarding independent actions.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "823"
+    ]
+  },
+  "824": {
+    "skill_id": "824",
+    "skill_name": "Create harmonious support and reinforce self-efficacy",
+    "skill_description": "After setbacks, create a harmonious, stable therapeutic environment and support system for the client, emphasizing and reinforcing their sense of self-efficacy and internal resources to promote emotional recovery and functional restoration, rebuilding confidence to continue trying.",
+    "when_to_use": "In the consolidation phase of later therapy, when the client experiences fluctuations due to setbacks from new attempts and needs recovery and remobilization.",
+    "trigger": "The client shows anxiety, wavering confidence, has a clear need for safety, or states 'difficulty re-engaging'.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "824"
+    ]
+  },
+  "825": {
+    "skill_id": "825",
+    "skill_name": "Guide the use of introspective methods to solidify and expand outcomes",
+    "skill_description": "Prompt and train the client to use previously learned introspective methods to observe and clarify new experiences, consolidating achieved changes while expanding clear self-understanding, making changes more transferable.",
+    "when_to_use": "In the later stages of therapy, when the client faces new experiences, integrates existing changes, and needs to maintain and expand outcomes.",
+    "trigger": "The client feels confused about new experiences, struggles with self-organization, or mentions having learned introspective techniques but currently unable to apply them effectively.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "825"
+    ]
+  },
+  "826": {
+    "skill_id": "826",
+    "skill_name": "Promote deepened insight and broad application",
+    "skill_description": "Based on initial insights, guide the client to deepen their understanding of themselves and experiences, expand the situations and scope where insights apply, extending and stabilizing therapeutic effects from point to surface, forming a trajectory of continuous growth.",
+    "when_to_use": "In the later stages or consolidation phase of therapy, when the client already has initial insights and needs to further expand therapeutic effects and application areas.",
+    "trigger": "The client states 'understanding remains superficial' or 'can only do it in one situation', or expresses a desire for deeper understanding and application.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "826"
+    ]
+  },
+  "828": {
+    "skill_id": "828",
+    "skill_name": "Evoke Negative Affect Expression through Nonjudgmental Acceptance",
+    "skill_description": "With a friendly and sincere attitude, genuinely accept the client to provide a safe atmosphere, encouraging them to freely express hostile, anxious, guilty, or other negative or ambiguous emotions, laying the foundation for subsequent clarification.",
+    "when_to_use": "In the early to middle stages of person-centered therapy, after establishing a relationship but before entering clarification; when the goal is to shift from event narration to emotional experience.",
+    "trigger": "When the client hesitates, remains silent, or narrates events without touching on emotions; when there are ambiguous cues of negative feelings such as hostility, anxiety, guilt, suspicion, etc.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "828"
+    ]
+  },
+  "829": {
+    "skill_id": "829",
+    "skill_name": "Capture and Reflect Implicit Emotions",
+    "skill_description": "Listen to and identify the emotional implications underlying the words spoken. Not only respond to the surface content, but use emotional reflection to verbalize implicit feelings, advancing the clarification of issues and emotions.",
+    "when_to_use": "When the client finishes sharing and enters the clarification phase, attention needs to shift from events to feelings to better understand their concerns.",
+    "trigger": "When ambiguous or indirect emotional cues, tone changes, contradictory statements appear in narration, or when anxiety, suspicion, etc., are mentioned but not elaborated.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "829"
+    ]
+  },
+  "830": {
+    "skill_id": "830",
+    "skill_name": "Use Repetition and Explanation of Experience",
+    "skill_description": "Through moderately repeating the client's key words and explaining their current experience, make deep feelings concrete, helping them identify and understand current negative emotions.",
+    "when_to_use": "When the client has insufficient awareness of their own feelings or objectifies them; used to bring unacknowledged emotions into the present and deepen empathy.",
+    "trigger": "When the client describes feelings as objective facts, does not immediately express emotions, or states 'I don't know what I feel'.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "830"
+    ]
+  },
+  "831": {
+    "skill_id": "831",
+    "skill_name": "Strengthen Identification of Negative Emotions as Part of Self",
+    "skill_description": "After clarification, point out and support the client in understanding that negative emotions are also part of the self, promoting acceptance and self-integration, reducing defense and denial.",
+    "when_to_use": "When the client has identified negative emotions but holds a denying or alienating attitude towards them; needed to advance self-acceptance and integration.",
+    "trigger": "When the client externalizes negative emotions, belittles them, or cuts them off from their 'true self', such as saying 'This is not me' or 'I shouldn't feel this way'.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "831"
+    ]
+  },
+  "832": {
+    "skill_id": "832",
+    "skill_name": "Avoid Guiding and Evaluative Interventions",
+    "skill_description": "When clarifying emotions, do not raise issues the client has not discussed, avoid evaluating or explaining their behavior, and maintain empathy and a direction for autonomous exploration using non-judgmental language.",
+    "when_to_use": "Used during clarification and exploration phases to prevent steering the conversation away from the client's experience and to uphold the principle of non-directiveness.",
+    "trigger": "When the client requests specific advice or guidance, or when self-defeating content arises that may invite judgment, return focus to their feelings and experiences.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "832"
+    ]
+  },
+  "868": {
+    "skill_id": "868",
+    "skill_name": "Review Progress and Affirm Growth",
+    "skill_description": "In later or concluding stages, review the journey and key changes with the client. Invite them to self-assess emotional, social, and learning changes. Specifically affirm their efforts and growth, witness acquired functions and new beliefs, consolidate self-efficacy, and sustain motivation for continuous improvement.",
+    "when_to_use": "During consolidation or concluding phases of counseling, for periodic summaries, or when preparing to end a session.",
+    "trigger": "When the client can objectively describe recent developments and is willing to review changes; reports progress in stages (e.g., emotional stability, improved interpersonal or learning outcomes); or proactively summarizes gains or prepares to conclude counseling.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "868"
+    ]
+  },
+  "869": {
+    "skill_id": "869",
+    "skill_name": "Formulate and Implement a Sustained Action Plan",
+    "skill_description": "Clearly define specific, feasible short-term and next-step action goals with the client. Translate effective strategies into executable continuation plans (e.g., continuing exercise, connecting with support systems, attending follow-up appointments on time). Agree on practice directions and feedback mechanisms, encourage acting in alignment with ideal states, and maintain and expand therapeutic effects.",
+    "when_to_use": "During consolidation or concluding phases when effects are significant and the client is oriented toward the future; needed to formulate or confirm an action plan.",
+    "trigger": "When the client expresses ideal states and action intentions, is satisfied with current status but willing to improve further, worries about maintaining results or needs to concretize next steps, or has made progress but goals remain vague.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "869"
+    ]
+  },
+  "883": {
+    "skill_id": "883",
+    "skill_name": "Review and Refine Self-Support Strategies",
+    "skill_description": "In concluding stages, jointly review the journey, progress, and self-assessment/scale results. Extract effective methods such as attention to physical and emotional well-being. Provide specific feedback on positive improvements and areas needing further effort. Consolidate acquired functions and form transferable self-support strategies while discussing termination arrangements.",
+    "when_to_use": "During later review and concluding phases of counseling, or during consolidation and ending/follow-up sessions, for summarizing and confirming outcomes.",
+    "trigger": "When the client reports improved status or proposes ending counseling; can review and report changes and growth; scale assessments are completed with results available for discussion.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "883"
+    ]
+  },
+  "864": {
+    "skill_id": "864",
+    "skill_name": "Post-Session Follow-up and Outcome Evaluation",
+    "skill_description": "Continuously follow up and track after counseling sessions to evaluate changes in emotions, binge eating, etc., check goal achievement and maintenance/expansion, support ongoing growth, and verify long-term effectiveness.",
+    "when_to_use": "When evaluating outcomes and monitoring long-term maintenance at the end of counseling or after termination; when continuing to monitor effectiveness during the consolidation phase after basic counseling completion.",
+    "trigger": "When entering the closing phase of a session or needing to understand recent status and maintenance months after ending; when counseling has ended or expected goals are reached, requiring continuous tracking and evaluation of changes.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "864"
+    ]
+  },
+  "870": {
+    "skill_id": "870",
+    "skill_name": "Strengthening Growth and Advantaged Experiences",
+    "skill_description": "During the consolidation phase or later sessions, invite the client to share examples such as harmonious relationships with peers, learning progress, and homework experiences. Provide sincere feedback and affirm their growth, strengths, and internal resources to reinforce positive self-evaluation and self-efficacy, consolidating change and confidence.",
+    "when_to_use": "During each session in the consolidation phase or during later reviews and termination, when effects are initially visible or changes need maintenance after completing homework.",
+    "trigger": "Client reports improved harmony with peers, easier learning, and feelings of happiness/pride; completion of growth diaries or other homework with reported improved mood or sleep; increased confidence, emotional stability, and ability to list personal strengths.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "870"
+    ]
+  },
+  "885": {
+    "skill_id": "885",
+    "skill_name": "Arranging and Implementing Closing Summary Feedback",
+    "skill_description": "In the closing consolidation phase, set up and implement summaries and mutual feedback according to the plan. Review key points and core content of previous counseling, revisit goals, methods, and gains, clarify future life directions, consolidate understanding of problems and coping strategies, and prepare for termination.",
+    "when_to_use": "When entering the summary stage in later counseling sessions (e.g., 8th, 11th–12th sessions) or during the 6th session of Phase III, approaching termination or preparing to end.",
+    "trigger": "When the established counseling plan progresses to the summary stage or major goals are substantially achieved; when the client is vague about changes and methods, requests a review, or needs to integrate gains; when entering the consolidation phase and needing to review and provide feedback on homework.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "820",
+      "885"
+    ]
+  },
+  "865": {
+    "skill_id": "865",
+    "skill_name": "Guiding Self-Evaluation and Naming Changes and Resources",
+    "skill_description": "Invite the client to review specific changes and efforts during counseling, compare pre- and post-states, and name improvements and gains in their own language (e.g., emotional release, restored routine, active expression, adjustment of interests and relationships). Illuminate internal and external resources already mobilized, affirm them, reinforce self-efficacy and positive experiences, consolidate new interpersonal and behavioral patterns, and provide motivation for termination closure and subsequent maintenance.",
+    "when_to_use": "During the ending phase or periodic reviews, outcome evaluations, and summary sessions before termination, used to conclude and reinforce positive changes.",
+    "trigger": "Client self-reports recent positive changes or functional recovery; entering wrap-up requires reviewing achievements; or client is willing to share and summarize experiences and gains.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "865"
+    ]
+  },
+  "867": {
+    "skill_id": "867",
+    "skill_name": "Provide Specific Feedback and Affirm Progress and Strengths",
+    "skill_description": "Based on the client's narrative and observations, the counselor synthesizes self-assessments, peer or teacher feedback, and compares them against established goals to explicitly identify improvements and breakthroughs in areas such as emotions, adaptation, learning, and interpersonal relationships. The counselor identifies and names strengths such as persistence, diligence, resilience, and psychological resilience, offering encouragement through affirmative language to reinforce self-efficacy and maintain motivation, supporting the client's continued use of resources and new patterns after counseling.",
+    "when_to_use": "During the counseling effectiveness evaluation phase or in review and consolidation sessions before termination, particularly when the client demonstrates insight and progress.",
+    "trigger": "The client reports positive changes or evaluations show improvement; increased smiling, stable emotions, improved interpersonal relationships are observed; or positive evaluations and reports from others appear.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "867"
+    ]
+  },
+  "882": {
+    "skill_id": "882",
+    "skill_name": "Guide Self-Narrative Review of Positive Events and Achievements",
+    "skill_description": "In the termination consolidation phase, invite the client to summarize recent learning achievements and positive life segments in their own words. Check and provide feedback on homework assignments, discuss feelings and changes, name strengths and utilized resources, and express gratitude for life and others. This helps the client see and celebrate real progress, consolidating positive self-perception and self-support, enhancing efficacy, and maintaining motivation.",
+    "when_to_use": "When the client reports recent progress, improved mood, or task completion effectiveness, especially during review and consolidation sessions in the termination phase.",
+    "trigger": "The client describes 'This week went quite well' or 'I feel a sense of achievement from the exam', shares positive interactions or learning progress; or completes homework and is willing to summarize and express feelings.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "882"
+    ]
+  },
+  "874": {
+    "skill_id": "874",
+    "skill_name": "Integrate Multi-Source Feedback to Point Out Visible Improvements",
+    "skill_description": "In the pre-termination review phase, explicitly point out and name the client's visible improvements (e.g., smiling, stable emotions, harmonious family life, renewed enthusiasm for living). Synthesize self-assessments, counselor observations, peer and teacher reports, and review changes item by item against counseling goals. Provide specific affirmation and positive feedback to help the client see and celebrate progress, consolidating maintenance strategies and motivation.",
+    "when_to_use": "During effectiveness evaluation and summary sessions near termination, used for celebrating and consolidating achievements.",
+    "trigger": "The client presents overt positive signals and facts of life improvement; or multiple-party reports show improvement and goal achievement.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "874"
+    ]
+  },
+  "879": {
+    "skill_id": "879",
+    "skill_name": "Name and Affirm Specific Improvements and Inner Strength",
+    "skill_description": "In follow-up visits or later sessions, explicitly point out and name the client's specific improvements (e.g., reduced medication dosage, improved mental state, enhanced interpersonal communication, increased smiling). Use sincere and specific affirmation and encouragement to reinforce their efforts and inner strength, boosting confidence, self-efficacy, and intrinsic motivation for change. Support the client in continuously practicing and promoting new patterns in daily life.",
+    "when_to_use": "In the later stages of treatment or follow-up phases, as well as during homework feedback and termination sessions, used to consolidate achievements and positive experiences.",
+    "trigger": "Evaluations show symptom reduction and improved adaptation; the client reports positive changes, completes homework, or gains in interpersonal relationships; or signs such as relaxation and increased smiling are observed.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "879"
+    ]
+  },
+  "887": {
+    "skill_id": "887",
+    "skill_name": "Summarize and Name Growth and Change",
+    "skill_description": "At the termination phase, systematically summarize the counseling journey to assist the client in reviewing specific progress in cognition, emotions, and behaviors; organize changes and gains in relationships; facilitate summary based on checking and feedback assignments to form a clear self-narrative; explicitly acknowledge and affirm their insights and changes; consolidate achieved accomplishments and resources; lay the foundation for emotional closure and subsequent autonomous maintenance.",
+    "when_to_use": "The last counseling session or the concluding review phase of the termination stage, used to summarize and consolidate outcomes.",
+    "trigger": "Approaching case closure or entering the final session; the client discusses their own changes, asks about gains from this session, or presents clear signs of insight and improvement.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "887"
+    ]
+  },
+  "884": {
+    "skill_id": "884",
+    "skill_name": "Summarize and Affirm Social Support Experiences and Help",
+    "skill_description": "In the termination phase, guide the client to review and summarize support and specific help from friends and family; name and affirm positive experiences brought by their support system; strengthen awareness and feeling of strengths and resources; consolidate positive experiences and enhance self-efficacy; increase motivation to maintain and generalize change after counseling.",
+    "when_to_use": "The review and mutual feedback phase of the counseling termination stage, used to consolidate support experiences gained during treatment.",
+    "trigger": "The client reports warmth and support from family and friendship in the latter half or termination phase; overall state is stabilizing and they are willing to review.",
+    "parent_ids": [
+      "827",
+      "833",
+      "836",
+      "884"
+    ]
+  },
+  "866": {
+    "skill_id": "866",
+    "skill_name": "Empathic Feedback and Emotional Reflection",
+    "skill_description": "Based on the client's narrative and emotions, use gentle and accurate feedback and reflection of feelings that align with their experiences of anger, fear, powerlessness, etc.; focus on metaphorical language and provide understanding responses; validate and accept emotions; help them become aware of contradictions and implicit emotions; receive their experiences to promote clarification and self-acceptance, thereby more clearly understanding their distress.",
+    "when_to_use": "From the initial phase to the exploration-insight stage, when the client narrates experiences of humiliation, exclusion, or recent conflict events requiring understanding and clarification of negative emotions; or when emotional identification and clarification require deepening emotional understanding.",
+    "trigger": "Contradictory statements (e.g., wanting to be understood but not wanting to speak, wanting independence but fearing it); obvious emotional fluctuations, silence, avoidance, or descriptions of humiliating experiences; frequent use of metaphorical or vague vocabulary; self-reporting of depression, anxiety, inferiority, rumination, or self-denial due to breakups and adaptation difficulties.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "866"
+    ]
+  },
+  "872": {
+    "skill_id": "872",
+    "skill_name": "Guide Review, Present-Moment Awareness, and Naming Emotions",
+    "skill_description": "Review the specific events with the client together; focus on emotions, bodily sensations, and meaning judgments at that time and now; name emotions through specific questions; use language close to their experience to make it concrete; when necessary, prompt expression and catharsis; collect information and provide preliminary problem analysis; identify hidden fears, shame, and needs; enhance self-awareness and clarification.",
+    "when_to_use": "During the first session and assessment phase or when initially building self-awareness; after narrating past events or important incidents, returning to the present to identify emotions, or when the client is overly rational and difficult to express feelings.",
+    "trigger": "Describing provocation, interpersonal conflict, or enduring experiences but unable to express emotions at the time; expressing uncertainty about feelings or vaguely describing distress; frequently emphasizing \"I am thinking...\" but unable to state specific emotions or needs; avoiding key questions, voice weakening, or observing counselor reactions.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "872"
+    ]
+  },
+  "878": {
+    "skill_id": "878",
+    "skill_name": "Unconditional Positive Regard and Empathic Reflection",
+    "skill_description": "Provide unconditional positive regard, respect, and support through a warm tone, attentive listening, and precise emotional reflection; use understanding language and a normalizing perspective to connect with feelings of frustration, fatigue, fear, self-doubt, etc.; avoid rushing to debate causes, accept the client's understanding of symptoms, and restate concerns to create an atmosphere of trust and safety, facilitating expression and gradual clarification of negative emotions.",
+    "when_to_use": "During initial relationship building and exploration, or whenever emotional expression is blocked and needs understanding and support; when the client narrates painful experiences or experiences emotional turmoil.",
+    "trigger": "Narrating work failures, self-denial, low self-evaluation, feeling disliked or abandoned; displaying suppressed low mood, difficulty speaking, tension, anxiety, loneliness, fear; self-reporting anxiety, irritability, insomnia; denying psychological issues or insisting on somatic causes.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "878"
+    ]
+  },
+  "871": {
+    "skill_id": "871",
+    "skill_name": "Empathic Soothing and Containment of Intense Emotions to Facilitate Catharsis",
+    "skill_description": "When the client is experiencing intense emotions or high arousal, provide timely soothing with respect and empathy; listen patiently and respond emotionally to contain experiences of tension, anxiety, low mood, etc.; offer warm support and acceptance, normalize their intense feelings, reduce excessive arousal, facilitate safe expression and reasonable catharsis, enabling continued clarification of negative emotions.",
+    "when_to_use": "When strong emotions such as agitation, irritability, or crying appear during sessions; in early relationship-building sessions where emotional distress is prominent, or when the client cannot speak and regresses.",
+    "trigger": "Punching tables, standing up agitatedly, or crying loudly; inability to sit still, swaying back and forth, lack of eye contact, frequent responses of \"I don't know\"; facial tension, eagerness to know \"what's wrong\"; self-reporting depression, anxiety, or obvious tension.",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "871"
+    ]
+  },
+  "880": {
+    "skill_id": "880",
+    "skill_name": "Reflecting and Naming Implicit and Present Emotions",
+    "skill_description": "Invite the client to describe feelings at that moment within specific contexts; capture and feedback implicit emotions such as being ignored or belittled based on verbal and non-verbal cues; use tentative naming and \"you...\" sentence structures to align with their experience; point out emotions like shyness, withdrawal, complaint, jealousy, etc., along with implicit beliefs or feelings of self-alienation, assisting entry into the inner world and improving emotional awareness and expression.",
+    "when_to_use": "When entering and clarifying emotions is needed while recalling childhood or narrating recent events; or when conversation/letters contain implicit negative emotions and themes of self-denial that are difficult to directly perceive or admit.",
+    "trigger": "Client stating they cannot remember what they feel or find it hard to describe current emotions; sparse and closed emotional expression; statements like \"no one loves me,\" \"being denied,\" \"very lonely\"; non-verbal cues of shyness and withdrawal or statements like \"classmates are targeting me\"; complaints, jealousy, hostility appearing in speech, or concepts like \"acting a role\" or \"not worth being happy.\"",
+    "parent_ids": [
+      "827",
+      "818",
+      "819",
+      "821",
+      "880"
+    ]
+  },
+  "875": {
+    "skill_id": "875",
+    "skill_name": "Encouraging Contact with Supporters and Participation in Social Practice",
+    "skill_description": "Affirm the client's coping abilities; encourage them to actively contact classmates, parents, or trusted individuals; participate in collective activities such as classes or clubs; observe and learn effective interpersonal skills through real interactions; set gradually increasing frequency and difficulty to externalize positive experiences from counseling into observable actions and social support.",
+    "when_to_use": "In the middle to consolidation phases, when social support is lacking or the client is willing to communicate but still hesitant and avoids it, needing to transfer counseling gains to real-world connections.",
+    "trigger": "Rarely participating in collective activities, no deep interactions, often alone; feeling lonely or withdrawn, worrying about parents' reactions; anxiety reduced but still hesitant while expressing willingness to communicate and seek help.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "875"
+    ]
+  },
+  "888": {
+    "skill_id": "888",
+    "skill_name": "Negotiate and Set Specific Follow-up Improvement Goals",
+    "skill_description": "After improvement in status, negotiate with the client and encourage them to set specific, actionable follow-up goals, focusing on enhancing interpersonal skills and expanding learning strengths, turning growth aspirations into a continuous action plan.",
+    "when_to_use": "In the later stages of the third session or before concluding, when summarizing changes and planning for continued action.",
+    "trigger": "The client reports significant improvement, expresses willingness to continue improving, and shows confidence in the future.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "888"
+    ]
+  },
+  "881": {
+    "skill_id": "881",
+    "skill_name": "Facilitate Specific Action Choices and Implementation Steps",
+    "skill_description": "After clarifying the relationship between events and evaluations, provide accessible explanations and feasible suggestions. Use direct questioning to prompt the client to make clear life or learning choices. Collaboratively develop and implement specific steps, encouraging expression of reasonable needs and moderate refusal in real-life situations. Emphasize taking responsibility for choices, transforming emotional appeals and cognitive changes into action.",
+    "when_to_use": "When strong emotions lead to stagnation or inaction; when cognition has adjusted but an action plan has not yet been formed; when facing life challenges or interpersonal conflicts without knowing how to handle them and needing clear next steps.",
+    "trigger": "Expressing unmet needs accompanied by sadness, somatic symptoms, or self-denial without taking action; long-term hesitation or avoidance of tasks, or stating 'I don't know where to go'; still hesitating about the next step after awareness and asking 'What should I do?'.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "881"
+    ]
+  },
+  "886": {
+    "skill_id": "886",
+    "skill_name": "Identify Available Resources and Set Short-term Action Goals",
+    "skill_description": "Assist in sorting out and selecting internal and external resources that can be utilized, clarifying short-term action goals based on the current situation. During the consolidation phase before ending, review progress, specifically arrange continued use of strategies such as exercise and interpersonal support, strengthen self-efficacy and confidence, and enhance the feasibility and sustainability of actions.",
+    "when_to_use": "During the consolidation phase or at periodic summaries, when growth directions need to be converted into executable short-term goals and behavior change needs to be maintained.",
+    "trigger": "The client expresses a desire for change or mentions 'things they naturally want to do,' beginning discussions about ideal states and feasible paths; improvement has been achieved and regression needs to be prevented.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "886"
+    ]
+  },
+  "877": {
+    "skill_id": "877",
+    "skill_name": "Review Consolidated Changes and Strengthen Action Beliefs",
+    "skill_description": "In the concluding phase or during reviews, summarize changes in cognition, emotion, and behavior. Provide specific observations to reflect their growth and capabilities, connect with internal resources, review real-world attempts, and extract effective practices and supports. Discuss future directions in learning and life, consolidate motivation and self-efficacy, and strengthen action beliefs when facing difficulties.",
+    "when_to_use": "At the end of counseling sessions or during periodic reviews, and after each attempt for follow-up, to consolidate existing changes and maintain the continuity and extensibility of actions.",
+    "trigger": "Emotions and functioning are stable, progress has been made at a certain stage, and preparation is underway for ending or transitioning to self-help. The client narrates recent behavioral attempts, successful experiences, or difficulties encountered, or describes positive changes in expression, interests, emotions, and self-evaluation.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "877"
+    ]
+  },
+  "873": {
+    "skill_id": "873",
+    "skill_name": "Encourage and support proactive engagement and repair with classmates",
+    "skill_description": "Based on unconditional positive regard, directly encourage the client to bravely interact with classmates, practice communication and connection in real-life situations, implement actionable behaviors such as asking for academic help, confiding with roommates, or restoring ordinary relationships with previously blocked classmates, gradually boost self-confidence and interpersonal trust, promote actual improvement in interaction quality, and reduce social withdrawal.",
+    "when_to_use": "In the middle phase of psychological support, when the client is basically stable but still avoids social interactions; or after interpersonal setbacks requiring specific improvements in interaction quality; or when supportive resources have been identified but not yet acted upon.",
+    "trigger": "Poor relationships with classmates, conflicts, or being blocked; difficulty making friends; fear of being harmed by others but a desire for communication, or expressing willingness to try but lacking clear steps.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "873"
+    ]
+  },
+  "876": {
+    "skill_id": "876",
+    "skill_name": "Positively reinforce and encourage participation in collective and prosocial behaviors",
+    "skill_description": "Praise and affirm the client's positive behaviors and counseling attitude. Review each session for positive events such as harmonious interactions with classmates or academic progress. Further encourage participation in group activities, initiating conversations with others, and explicitly encourage actively helping classmates to maintain and expand prosocial actions, thereby enhancing interpersonal skills and campus adaptation.",
+    "when_to_use": "In the consolidation and termination phases, or when observing positive actions, to maintain and expand these behaviors. Each session in the consolidation phase can be used to review positive events.",
+    "trigger": "The client demonstrates positive behaviors or interpersonal improvements; or still lacks social participation and needs specific action goals; positive interactions or opportunities for helping others arise, requiring promotion of prosocial behaviors.",
+    "parent_ids": [
+      "827",
+      "855",
+      "856",
+      "876"
+    ]
+  }
+}

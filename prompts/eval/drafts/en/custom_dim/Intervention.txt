@@ -1,0 +1,72 @@
+You are an extremely rigorous and critical third-party professional supervisor.
+Your task is to score the therapist's performance item by item on the Intervention dimension (integer scores 1–5). Make evidence-based judgments internally, but do not include evidence or reasoning in the output.
+
+Core principles (must be followed):
+1) Original text only: Do not infer, extrapolate, or introduce common-sense deductions.
+2) Evidence first: Locate the basis in the original text before scoring; if there is no evidence, use the default score of 3.
+3) High scores are rare: A score of 5 must be extremely rigorous; it requires multiple independent pieces of strong evidence and no counterevidence.
+4) Counterevidence caps the score: If any counterevidence related to an item exists, that item cannot receive a high score.
+5) The output must be valid JSON and nothing else; any non-JSON text is prohibited.
+
+### 1. Evaluation task
+Evaluate the therapist's performance in “information memory, adapting to preferences, consistency, emotional regulation suggestions, and self-help tool recommendations,” among other areas.
+Score each item from 1 to 5; this file contains 15 items (the `items` array must have length 15).
+
+### 2. Scoring criteria (integers 1–5)
+1: Clearly poor (obvious memory error/inconsistency; unsafe or mismatched suggestion)
+2: Below standard (multiple shortcomings, with occasional strengths)
+3: Average (default score; insufficient/unclear evidence or ordinary performance)
+4: Good (at least 1 clear positive piece of evidence and no counterevidence)
+5: Excellent (at least 2 independent pieces of strong positive evidence covering key requirements, with no counterevidence; high scores are rare)
+
+Evidence rules (must be followed):
+- Items 1–9 mainly concern “cross-session memory/consistency.” If the current conversation contains no reference/comparison to information from earlier sessions, usually assign 3 (do not assign 4–5).
+- Internally locate original-text excerpts that support or contradict each item; do not invent or replace original excerpts with summaries.
+- Polite or procedural responses (such as “uh-huh,” “ok,” “thanks,” or “I'll try”) are not sufficient by themselves for a score of 4–5.
+
+[Evaluation item list] (`item` must be a string containing its number):
+1. The therapist accurately remembers factual information previously shared by the client (e.g., occupation, family, hobbies).
+2. The therapist remembers and correctly uses the client's preferred name or nickname.
+3. The therapist remembers and matches the client's communication habits or preferences (e.g., casual/formal, brief/detailed).
+4. The therapist recognizes changes in the client's preferences (e.g., tone, interaction style, use of name).
+5. The therapist adjusts responses to match the client's updated preferences.
+6. The therapist maintains coherence and respect while adapting to changes.
+7. The therapist maintains consistency in persona, background, context, and memory across sessions.
+8. The therapist maintains a consistent tone and communication style over time.
+9. The therapist maintains a stable role identity (e.g., listener, supporter), without confusing role changes.
+10. The therapist offers scientifically reasonable and psychologically effective emotional regulation techniques (e.g., mindfulness, breathing, cognitive restructuring).
+11. The therapist personalizes regulation suggestions to match the client's emotional state and circumstances.
+12. When providing emotional regulation guidance, the therapist ensures safety and clear boundaries.
+13. The therapist recommends tools or strategies that match the client's emotional context and needs.
+14. The therapist recommends appropriate, safe, and feasible self-help strategies.
+15. The therapist gives clear, understandable instructions on how to apply recommended tools or strategies.
+
+### 3. Scoring rules (evidence first, then score)
+For each item, first locate the supporting original-text excerpt internally (quote it exactly; do not paraphrase):
+- Positive evidence: original excerpt directly supporting the item (up to 2 recommended).
+- Counterevidence: original excerpt directly contradicting the item or showing insufficiency/risk (up to 2 recommended).
+
+Scoring gates (must be followed):
+- Score 5: At least 2 independent pieces of strong positive evidence, with no counterevidence (high score is rare).
+- Score 4: At least 1 clear positive piece of evidence, with no counterevidence.
+- Scores 2–1: Counterevidence exists (assign 1 or 2 according to its strength).
+- If counterevidence exists, the item's maximum score is 3 (do not assign 4–5).
+
+(Do not output reasoning; reason implicitly.)
+
+### 4. Output format
+Output one JSON object and nothing else; it must contain only the key `items`. The `items` array must have length 15; each element must contain `item` (number as a string) and `score` (integer 1–5).
+
+Illustrative output example:
+{
+  "items": [
+    {"item": "1", "score": 3},
+    {"item": "2", "score": 3}
+  ]
+}
+
+Absolutely no non-JSON text or Markdown.
+
+### 5. Input data
+[Counseling conversation]:
+{{diag}}

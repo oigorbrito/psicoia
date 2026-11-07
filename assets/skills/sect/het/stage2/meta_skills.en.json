@@ -1,0 +1,1000 @@
+{
+  "328": {
+    "skill_id": "328",
+    "skill_name": "Humanistic",
+    "skill_description": "Humanistic emphasizes the person as the essence, respects values and potential, values self-actualization and choice, centers on the relationship in therapy, promoting growth and health through empathic acceptance and meaning exploration.",
+    "parent_ids": [
+      "585",
+      "328"
+    ],
+    "sect": "het"
+  },
+  "329": {
+    "skill_id": "329",
+    "skill_name": "Person-Centered Therapy",
+    "skill_description": "Advocates for non-directiveness, allowing the client to lead the process; centered on genuine, unconditional positive regard and empathy to create a secure relationship, prompting congruence between self-concept and experience, leading to self-actualization.",
+    "parent_ids": [
+      "585",
+      "328",
+      "329"
+    ],
+    "sect": "het"
+  },
+  "330": {
+    "skill_id": "330",
+    "skill_name": "Unconditional Positive Regard and Acceptance",
+    "skill_description": "Accepts the client's feelings and beliefs without value judgment, respects their autonomy and expression. This attitude itself has therapeutic power, reduces defenses, creates a safe atmosphere, and promotes self-exploration and change.",
+    "parent_ids": [
+      "585",
+      "328",
+      "329",
+      "330"
+    ],
+    "sect": "het"
+  },
+  "331": {
+    "skill_id": "331",
+    "skill_name": "Congruence and Genuineness, Empathy",
+    "skill_description": "The counselor is authentic, transparently expresses their own experience, and accurately perceives and conveys the client's internal reference and emotional meaning to build a trusting relationship, deepen self-exploration, and facilitate functional change.",
+    "parent_ids": [
+      "585",
+      "328",
+      "329",
+      "331"
+    ],
+    "sect": "het"
+  },
+  "332": {
+    "skill_id": "332",
+    "skill_name": "Encouraging Free Expression",
+    "skill_description": "In a supportive, non-judgmental atmosphere, encourages the client to freely express their thoughts and feelings, values present experience and emotional expression, to reduce inhibition and distortion, opening up self-exploration and relational construction.",
+    "parent_ids": [
+      "585",
+      "328",
+      "329",
+      "332"
+    ],
+    "sect": "het"
+  },
+  "333": {
+    "skill_id": "333",
+    "skill_name": "Accepting, Understanding, Clarifying Negative Emotions",
+    "skill_description": "Through reflection and clarification, helps the client identify, name, and integrate negative emotions such as hostility, anxiety, and guilt, helping them understand that these are also part of the self, reducing defenses, and promoting insight.",
+    "parent_ids": [
+      "585",
+      "328",
+      "329",
+      "333"
+    ],
+    "sect": "het"
+  },
+  "334": {
+    "skill_id": "334",
+    "skill_name": "Accepting, Understanding Positive Emotions",
+    "skill_description": "Accept and observe positive emotions equally, without praise or moral judgment, help the client identify inner desires and values, avoid the reproduction of conditioned values, support the formation of the authentic self.",
+    "parent_ids": [
+      "585",
+      "328",
+      "329",
+      "334"
+    ],
+    "sect": "het"
+  },
+  "335": {
+    "skill_id": "335",
+    "skill_name": "Encouraging, Clarifying Choices and Behaviors",
+    "skill_description": "Based on insight, assists the client in clarifying possible choices and action paths, strengthening self-determination and commitment to responsibility; the counselor does not substitute decisions or offer prescriptive guidance, consolidating change.",
+    "parent_ids": [
+      "585",
+      "328",
+      "329",
+      "335"
+    ],
+    "sect": "het"
+  },
+  "336": {
+    "skill_id": "336",
+    "skill_name": "Transpersonal Psychotherapy",
+    "skill_description": "Emphasizes the spiritual dimension and self-transcendence, integrating meditation, body training, biofeedback, etc., to access higher consciousness and meaning, promoting mind-body unity and growth, and focusing on shifting states of consciousness.",
+    "parent_ids": [
+      "585",
+      "328",
+      "336"
+    ],
+    "sect": "het"
+  },
+  "337": {
+    "skill_id": "337",
+    "skill_name": "Contemplative Training",
+    "skill_description": "Cultivates stable attention and non-judgmental awareness through focus or open observation, evoking a 'relaxation response,' reducing physiological arousal and stress, improving mood, and supporting spiritual growth. Should be practiced regularly in a quiet environment.",
+    "parent_ids": [
+      "585",
+      "328",
+      "336",
+      "337"
+    ],
+    "sect": "het"
+  },
+  "338": {
+    "skill_id": "338",
+    "skill_name": "Focused Contemplation",
+    "skill_description": "Uses a single object (such as a mantra, word, breath) as an anchor; wandering attention is gently brought back; can reduce muscle tension, heart rate, and blood pressure, alleviate anxiety and depression, and enhance focus and calmness.",
+    "parent_ids": [
+      "585",
+      "328",
+      "336",
+      "337",
+      "338"
+    ],
+    "sect": "het"
+  },
+  "339": {
+    "skill_id": "339",
+    "skill_name": "Open Contemplation",
+    "skill_description": "Openly observes the present body, mind, and thoughts, without attachment or judgment; cultivates acceptance and self-regulation, reduces reactivity and anxiety, and expands sensitivity and integration capacity for experiences and meaning.",
+    "parent_ids": [
+      "585",
+      "328",
+      "336",
+      "337",
+      "339"
+    ],
+    "sect": "het"
+  },
+  "340": {
+    "skill_id": "340",
+    "skill_name": "Transcendental Meditation",
+    "skill_description": "Advocated by Maharishi, guides consciousness toward tranquility through silent mantra recitation; research shows it can release stress, lower blood pressure, and anxiety. Should be practiced step-by-step in a quiet, regular condition.",
+    "parent_ids": [
+      "585",
+      "328",
+      "336",
+      "337",
+      "340"
+    ],
+    "sect": "het"
+  },
+  "341": {
+    "skill_id": "341",
+    "skill_name": "Body Training",
+    "skill_description": "Based on mind-body congruence, involves relaxing key muscle groups and observing energy flow through breathing, relaxation, massage, integrating emotional memories and early trauma, enhancing self-regulation and spiritual fullness.",
+    "parent_ids": [
+      "585",
+      "328",
+      "336",
+      "341"
+    ],
+    "sect": "het"
+  },
+  "342": {
+    "skill_id": "342",
+    "skill_name": "Biofeedback",
+    "skill_description": "Utilizes instrument feedback on EEG, EMG, skin temperature, etc., combined with relaxation training; the process includes baseline assessment—stress induction—training regulation, treating anxiety and insomnia, and helping achieve more stable mind-body states.",
+    "parent_ids": [
+      "585",
+      "328",
+      "336",
+      "342"
+    ],
+    "sect": "het"
+  },
+  "585": {
+    "skill_id": "585",
+    "skill_name": "Counseling Interview",
+    "skill_description": "An evaluative interview conducted from an existential-humanistic perspective, focusing on presence and encounter. By establishing a genuine, safe relationship, it evokes the client's experience of the present moment and their capacity for choice, promoting responsibility and self-integration, laying the foundation for subsequent change.",
+    "parent_ids": [
+      "585"
+    ],
+    "sect": "het"
+  },
+  "586": {
+    "skill_id": "586",
+    "skill_name": "Therapeutic Process",
+    "skill_description": "The therapeutic process unfolds around presence: cultivating and activating personal and interpersonal presence, processing resistance, integrating meaning, intentionality, and awe, and guiding inner awareness to facilitate deep change through an experience-oriented approach.",
+    "parent_ids": [
+      "585",
+      "586"
+    ],
+    "sect": "het"
+  },
+  "587": {
+    "skill_id": "587",
+    "skill_name": "Activating Presence",
+    "skill_description": "Presence is both a method and a goal. By slowing down, focusing on the present, and embodied experience, transforming the 'reporter' into a participant. The therapist uses coordinated and phenomenological inquiry to evoke immediacy, affectivity, and kinestheticity, making limiting patterns visible and loosening them.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587"
+    ],
+    "sect": "het"
+  },
+  "588": {
+    "skill_id": "588",
+    "skill_name": "Activating Presence Strategy",
+    "skill_description": "Based on Böhntner's 'eight-tone scale,' primarily using listening and guiding, supplemented by instructive and demanding selective application. The strategy aims to expand awareness, deepen experience, maintain focus on the topic, and provide information or make forceful requests when necessary.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588"
+    ],
+    "sect": "het"
+  },
+  "589": {
+    "skill_id": "589",
+    "skill_name": "Listening",
+    "skill_description": "Encouraging the client to continuously narrate their story that has not been 'contaminated,' skillfully using silence and intervals to grasp the contours of their struggle. Therapeutic listening carries catharsis and refines experience, helping them reconnect with pain, promoting lived experience and subsequent change.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "589"
+    ],
+    "sect": "het"
+  },
+  "590": {
+    "skill_id": "590",
+    "skill_name": "Gathering Client Experience Details",
+    "skill_description": "Guiding the client to specify the narrative of person, event, time, place, experience, and emotion, avoiding premature explanation. Through detailed phenomenological inquiry, limiting patterns, conflicts, and resources emerge, laying the foundation for further guidance and revaluation.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "589",
+      "590"
+    ],
+    "sect": "het"
+  },
+  "591": {
+    "skill_id": "591",
+    "skill_name": "Understanding Client's View of Self and Projected Objects",
+    "skill_description": "Exploring the client's understanding and meaning-making regarding their life, relationships, and projected objects, clarifying their self-view and worldview. Using open-ended questions to expose potential assumptions and expectations, promoting the formation of responsibility and choice capacity.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "589",
+      "591"
+    ],
+    "sect": "het"
+  },
+  "592": {
+    "skill_id": "592",
+    "skill_name": "Listening to Client's Emotional Release",
+    "skill_description": "Accepting and using silence to contain intense emotional discharge, ensuring witnessing rather than re-traumatization. In a safe relationship, holding anger, grief, and shame, transforming them into observable and nameable experiences, entering further work.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "589",
+      "592"
+    ],
+    "sect": "het"
+  },
+  "593": {
+    "skill_id": "593",
+    "skill_name": "Guiding",
+    "skill_description": "Providing direction and support based on respect for experience, maintaining focus on the topic, inviting individualized expression and expansion. Deepening presence and loosening rigid reactions by pointing out inconsistencies in content/process, asking them to 'say a little more,' and using embodied meditation.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "593"
+    ],
+    "sect": "het"
+  },
+  "594": {
+    "skill_id": "594",
+    "skill_name": "Role-playing",
+    "skill_description": "Bring key relationships and scenes into the present moment to play, making the material vivid. Rehearse new reactions and expressions in a safe environment, examine fears and desires, enhance agency and interpersonal sensitivity, and consolidate transference and countertransference.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "593",
+      "594"
+    ],
+    "sect": "het"
+  },
+  "595": {
+    "skill_id": "595",
+    "skill_name": "Conducting Rehearsal Exercises",
+    "skill_description": "Rehearse upcoming conversations or situations to refine wording, emotions, and posture. Rehearsal transforms internal intentions into actionable actions, reducing avoidance, increasing self-assertion, and building confidence in reality.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "593",
+      "595"
+    ],
+    "sect": "het"
+  },
+  "596": {
+    "skill_id": "596",
+    "skill_name": "Conducting Guided Visualization",
+    "skill_description": "Guide the client to enter key themes through imagery and bodily sensations, connecting tense areas with images. Visualization helps bypass over-rationalization, access deep motivations and fears, and expand the experiential space for the self and the world.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "593",
+      "596"
+    ],
+    "sect": "het"
+  },
+  "597": {
+    "skill_id": "597",
+    "skill_name": "Facilitating Experiential Play",
+    "skill_description": "Use embodied methods such as hitting a pillow or kinesthetic exercises to directly express repressed impulses and emotions. Through awareness and release in action, clarify boundaries, needs, and power, making the real generated 'in action'.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "593",
+      "597"
+    ],
+    "sect": "het"
+  },
+  "598": {
+    "skill_id": "598",
+    "skill_name": "Dream Interpretation (Dream Analysis)",
+    "skill_description": "Invite the client to recount dreams in the present tense, focus on the most moving segments and feelings, explore symbolism and relational configurations. Through in-session questioning, make the core concerns in the dream explicit, gaining 'more' self-understanding and direction.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "593",
+      "598"
+    ],
+    "sect": "het"
+  },
+  "599": {
+    "skill_id": "599",
+    "skill_name": "Teaching",
+    "skill_description": "Provide evidence-based information and direction in appropriate contexts to help initial, emotionally fragile, or authority-dependent clients stabilize and learn. Used to clarify tasks, provide guidance, and re-structure, but must be restrained and not override experience.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "599"
+    ],
+    "sect": "het"
+  },
+  "600": {
+    "skill_id": "600",
+    "skill_name": "Assigning Tasks",
+    "skill_description": "Set up in-session and out-of-session exercises to reinforce presence and new skills, such as recording events, joining support groups, or designated reading. Make changes land in real situations, consolidate insights from the interview, and provide material for the next exploration.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "599",
+      "600"
+    ],
+    "sect": "het"
+  },
+  "601": {
+    "skill_id": "601",
+    "skill_name": "Making Suggestions",
+    "skill_description": "Based on assessment and alliance, propose feasible actions or resource suggestions as new paths for the client to try. Suggestions should be specific, actionable, and discussable, respecting rhythm and culture, avoiding substitution of their autonomous choices.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "599",
+      "601"
+    ],
+    "sect": "het"
+  },
+  "602": {
+    "skill_id": "602",
+    "skill_name": "Providing Guidance",
+    "skill_description": "Offering structured guidance and step-by-step instructions when learning new skills or receiving feedback, helping to focus and reduce deviation. Applicable in confused or vulnerable stages, reducing uncertainty, and building basic competence and a sense of safety.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "599",
+      "602"
+    ],
+    "sect": "het"
+  },
+  "603": {
+    "skill_id": "603",
+    "skill_name": "Painting the Changing Life Scenario",
+    "skill_description": "Assisting the client to imagine and narrate changed daily situations, relationships, and self-perceptions, concretizing the vision. Through scenario-based dialogue and detailed questioning, clarifying intentionality and priority, preparing for reality testing.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "599",
+      "603"
+    ],
+    "sect": "het"
+  },
+  "604": {
+    "skill_id": "604",
+    "skill_name": "Reframing",
+    "skill_description": "Understanding past experiences and current difficulties through a new meaning framework, loosening self-deprecation or fatalistic explanations. By naming resources, expanding perspectives, and distinguishing facts from interpretations, releasing possibilities and enhancing agency.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "599",
+      "604"
+    ],
+    "sect": "het"
+  },
+  "605": {
+    "skill_id": "605",
+    "skill_name": "Demanding",
+    "skill_description": "Using the therapist's personality and emotional resources to make a strong invitation or demand for change, applicable in impasses or stubborn resistance. Grasping the moment and the alliance, weighing risks and benefits, being firm yet respectful, preventing dependence or withdrawal.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "605"
+    ],
+    "sect": "het"
+  },
+  "606": {
+    "skill_id": "606",
+    "skill_name": "Providing Subjective Feedback",
+    "skill_description": "Honestly expressing the therapist's current feelings and reactions, serving as a mirror and anchor in the relationship. Enhancing the I-you encounter and immediacy, helping the client notice the impact of their ways, but must be moderated and prioritize their interests.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "605",
+      "606"
+    ],
+    "sect": "het"
+  },
+  "607": {
+    "skill_id": "607",
+    "skill_name": "Using Rewards and Punishments",
+    "skill_description": "Reinforcing beneficial attempts and inhibiting self-destructive patterns through behavioral consequences such as praise, rewards, or warnings. This technique requires caution and transparency, alignment with the goal, and embedding in a safe relationship, avoiding humiliation and power abuse.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "605",
+      "607"
+    ],
+    "sect": "het"
+  },
+  "608": {
+    "skill_id": "608",
+    "skill_name": "Strongly Suggesting/Promoting a Therapeutic Viewpoint",
+    "skill_description": "After weighing the timing and the alliance, clearly and powerfully stating the therapeutic stance or direction of change, prompting the client to face self-destructive choices. Higher risk, applicable in stagnation phases, requires constant assessment of reaction and adjustment.",
+    "parent_ids": [
+      "585",
+      "586",
+      "587",
+      "588",
+      "605",
+      "608"
+    ],
+    "sect": "het"
+  },
+  "609": {
+    "skill_id": "609",
+    "skill_name": "Managing Resistance",
+    "skill_description": "Viewing resistance as the external manifestation of protection and self/world structures, both granting and limiting life. By respecting, identifying the background, and moderating challenges, bringing responsibility and choice back into being gradually within a safe relationship.",
+    "parent_ids": [
+      "585",
+      "586",
+      "609"
+    ],
+    "sect": "het"
+  },
+  "610": {
+    "skill_id": "610",
+    "skill_name": "Experiencing Resistance",
+    "skill_description": "Using annotation, labeling, and depiction to allow the client to see how they obstruct and limit themselves, and to experience the consequences and the resistance to will. As a gentle mirroring, it prompts re-visitation and re-evaluation, opening a gap for change.",
+    "parent_ids": [
+      "585",
+      "586",
+      "609",
+      "610"
+    ],
+    "sect": "het"
+  },
+  "611": {
+    "skill_id": "611",
+    "skill_name": "Annotating Resistance",
+    "skill_description": "Pointing out the initial signs and ways of resistance in the present moment, such as changing the topic, smiling to mask anger, silence, or tense posture, or using non-verbal reflections. This brings hidden automatic defenses to the surface, creating space for awareness and choice.",
+    "parent_ids": [
+      "585",
+      "586",
+      "609",
+      "610",
+      "611"
+    ],
+    "sect": "het"
+  },
+  "612": {
+    "skill_id": "612",
+    "skill_name": "Labeling Resistance",
+    "skill_description": "Reminding of the repeated occurrence and inertial trajectory of resistance, such as 'we are stuck here again.' Gently challenging the cost and benefit of re-evaluating self-protection, gradually restoring agency and responsibility.",
+    "parent_ids": [
+      "585",
+      "586",
+      "609",
+      "610",
+      "612"
+    ],
+    "sect": "het"
+  },
+  "613": {
+    "skill_id": "613",
+    "skill_name": "Depicting Resistance Consequences",
+    "skill_description": "Guiding the rehearsal and imagination of the chain of consequences of persisting or letting go of resistance, detailing feelings, body, and imagery. Through the experience of reaching the 'end,' clarifying exaggerated fears and potential resources, calibrating intention and choice.",
+    "parent_ids": [
+      "585",
+      "586",
+      "609",
+      "610",
+      "613"
+    ],
+    "sect": "het"
+  },
+  "614": {
+    "skill_id": "614",
+    "skill_name": "Facial Resistance",
+    "skill_description": "At the appropriate time, awakening self-destructive protection in a more direct, expanded way, proposing clear requests for change. Must assess alliance, risk, and readiness, avoiding conflict, dependence, or withdrawal, and sincerely accepting its consequences.",
+    "parent_ids": [
+      "585",
+      "586",
+      "609",
+      "614"
+    ],
+    "sect": "het"
+  },
+  "615": {
+    "skill_id": "615",
+    "skill_name": "Integrating Meaning, Intentionality, and Awe",
+    "skill_description": "When obstacles are overcome, the client generates meaning and direction from the struggle, forming intentionality driven by the whole existence, and regaining awe for the 'unknown.' The therapist supports implementation through dialogue, imagery, role-play, and reality challenges.",
+    "parent_ids": [
+      "585",
+      "586",
+      "615"
+    ],
+    "sect": "het"
+  },
+  "616": {
+    "skill_id": "616",
+    "skill_name": "Guiding Inner Awareness",
+    "skill_description": "Promoting the client's present experience of emotional and kinesthetic features, rather than mere analysis. Accompanying them in observing self and others' responses, enhancing agency, resilience, and inclusiveness, making change more stable and transferable to life.",
+    "parent_ids": [
+      "585",
+      "586",
+      "616"
+    ],
+    "sect": "het"
+  },
+  "405": {
+    "skill_id": "405",
+    "skill_name": "Existentialism",
+    "skill_description": "Existential psychotherapy is based on the philosophy of existence, focusing on freedom, choice, responsibility, and the meaning of life. It employs non-directive conversation, emphasizes authenticity and conscious relationship, guides the client to face anxiety, death, and loneliness, assesses how freedom is compromised, makes responsible choices, and seeks meaning.",
+    "parent_ids": [
+      "585",
+      "405"
+    ],
+    "sect": "het"
+  },
+  "406": {
+    "skill_id": "406",
+    "skill_name": "Rollo May Existential Psychotherapy",
+    "skill_description": "Theoretically based on existential analysis and phenomenological in method, emphasizing understanding, presence, experience, and action. Evokes the client's sense of being through empathic relations, helping them pursue meaning, restore free choice, and affirm the self, to courageously face anxiety, with goals oriented towards maturity and integration.",
+    "parent_ids": [
+      "585",
+      "405",
+      "406"
+    ],
+    "sect": "het"
+  },
+  "407": {
+    "skill_id": "407",
+    "skill_name": "Transforming Cognition into Self-Consciousness",
+    "skill_description": "Corresponds to Rollo May's 'will phase': elevating desires and cognition to the level of self-consciousness, acknowledging the self as a subject with desires, the capacity to express, and the ability to choose; organizing will towards goal-directed action, enabling the client to take responsibility for the future, activating creativity and subjectivity.",
+    "parent_ids": [
+      "585",
+      "405",
+      "406",
+      "407"
+    ],
+    "sect": "het"
+  },
+  "408": {
+    "skill_id": "408",
+    "skill_name": "Bregman Existential Analysis Therapy",
+    "skill_description": "Highlights the 'awareness—choice—intentionality—authenticity' framework, exploring the client's subjective world through the therapeutic relationship. Through resistance analysis and existential growth stages, helping the individual move from inauthenticity to authenticity, take responsibility for choices, integrate existential anxiety, and realize potential.",
+    "parent_ids": [
+      "585",
+      "405",
+      "408"
+    ],
+    "sect": "het"
+  },
+  "409": {
+    "skill_id": "409",
+    "skill_name": "Strengthening Sense of Responsibility",
+    "skill_description": "Urges the client to face their limitations and choose reality, noticing avoidance and resistance, learning to be responsible for actions and inactions, accepting possible tragic consequences, shifting from neurotic avoidance to existential courage, thereby restoring freedom and subjectivity.",
+    "parent_ids": [
+      "585",
+      "405",
+      "408",
+      "409"
+    ],
+    "sect": "het"
+  },
+  "410": {
+    "skill_id": "410",
+    "skill_name": "Helping Review the Client's Life",
+    "skill_description": "Guides the client to review key choices, values, and relationships, identify inauthentic reactions and central themes, reevaluate meaning and direction, clarify the range of choices and commit to involvement, laying the foundation for entering the existential growth stage and authentic living.",
+    "parent_ids": [
+      "585",
+      "405",
+      "408",
+      "410"
+    ],
+    "sect": "het"
+  },
+  "411": {
+    "skill_id": "411",
+    "skill_name": "Frankl's Logotherapy",
+    "skill_description": "Based on three principles: freedom of will, will to meaning, and life meaning, assisting in discovering life meaning through creation, experience, and facing suffering, reconstructing responsibility and goals. Often used for issues such as existential emptiness, depression, anxiety, and addiction, emphasizing the freedom of attitude choice.",
+    "parent_ids": [
+      "585",
+      "405",
+      "411"
+    ],
+    "sect": "het"
+  },
+  "412": {
+    "skill_id": "412",
+    "skill_name": "Meaning Interpretation",
+    "skill_description": "Focusing on 'why live,' clarifying the client's current value and meaning schema, exploring possible meanings in creation, love, and suffering, helping them make choices and responses to life questions with a sense of responsibility, laying the groundwork for techniques such as contradictory intention and de-reflection.",
+    "parent_ids": [
+      "585",
+      "405",
+      "411",
+      "412"
+    ],
+    "sect": "het"
+  },
+  "413": {
+    "skill_id": "413",
+    "skill_name": "Paradoxical Intention",
+    "skill_description": "Actively 'anticipating' the occurrence of feared events or symptoms in a humorous or exaggerated manner, breaking the vicious cycle of anticipatory anxiety. Often used for fear, obsession, and insomnia. Through externalizing symptoms and ridicule, promoting self-transcendence and symptom remission; can be used in conjunction with persuasion or desensitization.",
+    "parent_ids": [
+      "585",
+      "405",
+      "411",
+      "412",
+      "413"
+    ],
+    "sect": "het"
+  },
+  "414": {
+    "skill_id": "414",
+    "skill_name": "De-rumination",
+    "skill_description": "For excessive intention/self-surveillance, systematically shift attention away from monitoring symptoms and manifestations, focus on activities, objects, and others, and restore natural flow. Applicable to over-reflective issues such as sexual dysfunction, OCD, and face fear syndrome.",
+    "parent_ids": [
+      "585",
+      "405",
+      "411",
+      "412",
+      "414"
+    ],
+    "sect": "het"
+  },
+  "415": {
+    "skill_id": "415",
+    "skill_name": "Shifting Attitude",
+    "skill_description": "After full listening, assist the client to discover positive aspects from the predicament, reconstruct the meaning evaluation of the event, suspend self-blame and ineffective struggle, turn toward positive resources and feasible tasks; often used to correct negative stances after depression and trauma.",
+    "parent_ids": [
+      "585",
+      "405",
+      "411",
+      "412",
+      "415"
+    ],
+    "sect": "het"
+  },
+  "416": {
+    "skill_id": "416",
+    "skill_name": "Self-Separation and Self-Transcendence",
+    "skill_description": "Train to detach the 'self' from symptoms and circumstances, adopt an observer stance (self-separation), and direct care toward values beyond the self, others, and work (self-transcendence), thereby weakening the pathological cycle, reconstructing meaning, and action.",
+    "parent_ids": [
+      "585",
+      "405",
+      "411",
+      "412",
+      "416"
+    ],
+    "sect": "het"
+  },
+  "417": {
+    "skill_id": "417",
+    "skill_name": "Educating on the Meaning of Death",
+    "skill_description": "Guide the client to confront the finitude of life and the fact of death, experience 'living toward death,' thereby strengthening responsibility and present engagement, expanding meaning choices, and promoting serious commitment to life goals, reducing avoidance, emptiness, and confusion.",
+    "parent_ids": [
+      "585",
+      "405",
+      "411",
+      "417"
+    ],
+    "sect": "het"
+  },
+  "459": {
+    "skill_id": "459",
+    "skill_name": "Gestalt",
+    "skill_description": "Gestalt therapy is a phenomenological, existential approach that focuses on the here-and-now and the 'figure-ground,' emphasizing awareness, contact, and self-responsibility. Through experiential techniques such as experiments, it promotes the presentation and integration of unfinished events, helping the individual restore self-regulation and holism.",
+    "parent_ids": [
+      "585",
+      "459"
+    ],
+    "sect": "het"
+  },
+  "460": {
+    "skill_id": "460",
+    "skill_name": "Phenomenological Approach",
+    "skill_description": "Working in the consultation from a phenomenological stance: suspend preconceptions, only describe the directly perceived experience, and treat all phenomena equally. The therapist focuses on the client's experience in the here-and-now, using a non-explanatory attitude to promote awareness and understanding of the self and the world.",
+    "parent_ids": [
+      "585",
+      "459",
+      "460"
+    ],
+    "sect": "het"
+  },
+  "461": {
+    "skill_id": "461",
+    "skill_name": "Suspension in the Phenomenological Approach",
+    "skill_description": "The therapist temporarily sets aside their own beliefs, assumptions, and judgments, maintaining an attitude of 'first-time encounter' with the client and their experience. Through suspension, avoid premature explanation or labeling, leaving space for the client's present experience, and enhancing clear observation of the current phenomenon.",
+    "parent_ids": [
+      "585",
+      "459",
+      "460",
+      "461"
+    ],
+    "sect": "het"
+  },
+  "462": {
+    "skill_id": "462",
+    "skill_name": "Description in the Phenomenological Approach",
+    "skill_description": "Without inference or analysis, make specific descriptions of the client's directly perceptible behaviors, feelings, tone of voice, and body language at this moment. Present 'what happened' in language, allowing the client to increase awareness, rather than leading to explanation or cause tracing.",
+    "parent_ids": [
+      "585",
+      "459",
+      "460",
+      "462"
+    ],
+    "sect": "het"
+  },
+  "463": {
+    "skill_id": "463",
+    "skill_name": "Leveling of Phenomenological Approaches",
+    "skill_description": "Treating all types of phenomena entering the field of awareness equally, without pre-setting priorities or urgency, avoiding premature assignment of levels. Through leveling, more possible meanings emerge, allowing the client to more comprehensively engage with their experience and discover new choices.",
+    "parent_ids": [
+      "585",
+      "459",
+      "460",
+      "463"
+    ],
+    "sect": "het"
+  },
+  "464": {
+    "skill_id": "464",
+    "skill_name": "Encouraging Full Expression",
+    "skill_description": "In the expression phase, the therapist creates a safe, supportive relationship, inviting the client to fully and directly express unspoken feelings, needs, and tensions. Through verbal and non-verbal externalization, prompting figures to emerge from the background, laying the foundation for processing unfinished events.",
+    "parent_ids": [
+      "585",
+      "459",
+      "464"
+    ],
+    "sect": "het"
+  },
+  "465": {
+    "skill_id": "465",
+    "skill_name": "Discriminating and Feedbacking Client's Manifestations",
+    "skill_description": "In the discrimination phase, the therapist keenly captures the client's non-verbal signals and subtle changes, such as breathing, tone of voice, posture, and feeds this phenomenal information back to the client. This action deepens their awareness of the present experience, identifying masking and defense patterns.",
+    "parent_ids": [
+      "585",
+      "459",
+      "465"
+    ],
+    "sect": "het"
+  },
+  "466": {
+    "skill_id": "466",
+    "skill_name": "Exploring Unfinished Events/Contact Adjustment Patterns",
+    "skill_description": "Focusing on the 'unfinished events' troubling the present, tracing their causes, related beliefs, and emotional blockages, while simultaneously identifying ways of contact blockage, such as projection, introjection, introversion, deflection/confusion, etc. Through awareness and experience, prompting unexpressed emotions to be expressed and integrated.",
+    "parent_ids": [
+      "585",
+      "459",
+      "466"
+    ],
+    "sect": "het"
+  },
+  "467": {
+    "skill_id": "467",
+    "skill_name": "Inspiring, Modeling, and Guiding to Promote Insight",
+    "skill_description": "In the choice and integration phase, the therapist uses heuristic questioning, modeling, and guiding to design appropriate 'experiments,' helping the client gain insight through experience. Focusing on 'how' and 'now,' allowing new understanding to be internalized as action choices, supporting the recovery of self-regulation.",
+    "parent_ids": [
+      "585",
+      "459",
+      "467"
+    ],
+    "sect": "het"
+  },
+  "468": {
+    "skill_id": "468",
+    "skill_name": "Restructuring Life Patterns",
+    "skill_description": "Based on new awareness and insight, assisting the client to examine existing fixed Gestalt and relational patterns, reconstructing more flexible modes of contact. Focusing on taking responsibility, developing support systems, and real interpersonal connections, making lifestyle more congruent with current needs.",
+    "parent_ids": [
+      "585",
+      "459",
+      "468"
+    ],
+    "sect": "het"
+  },
+  "469": {
+    "skill_id": "469",
+    "skill_name": "Guiding to Face Reality",
+    "skill_description": "Guiding the client back to the here and now, letting go of avoidance of the past and future, facing reality through direct experience and feeling. By asking 'what is happening now,' reducing guessing and judgment, promoting authentic contact and self-responsibility, as a starting point for change.",
+    "parent_ids": [
+      "585",
+      "459",
+      "469"
+    ],
+    "sect": "het"
+  },
+  "470": {
+    "skill_id": "470",
+    "skill_name": "Gestalt Experiment Technique",
+    "skill_description": "An 'experiment' is an experiential activity jointly generated by the therapist and the client in real-time contact, aimed at increasing awareness, amplifying figures, and attempting new behaviors. It is not mechanically used to achieve preset goals, but is achieved in a balance between safe support and moderate challenge.",
+    "parent_ids": [
+      "585",
+      "459",
+      "469",
+      "470"
+    ],
+    "sect": "het"
+  },
+  "471": {
+    "skill_id": "471",
+    "skill_name": "Empty Chair Dialogue",
+    "skill_description": "Using two chairs as roles to allow the client to engage in dialogue in the 'self poles' or with significant others in the present moment. By externalizing introjection, amplifying conflict and emotional expression, promoting the integration of opposing sides, and enhancing self-support and responsibility.",
+    "parent_ids": [
+      "585",
+      "459",
+      "469",
+      "470",
+      "471"
+    ],
+    "sect": "het"
+  },
+  "472": {
+    "skill_id": "472",
+    "skill_name": "I Am Responsible Technique",
+    "skill_description": "Requesting the client to add 'I am responsible for this' after a statement, and encouraging first-person expressions starting with 'I...'. By adjusting language, strengthening self-support and subjectivity, reducing deflection and vagueness, and increasing the bearing of emotions, choices, and actions.",
+    "parent_ids": [
+      "585",
+      "459",
+      "469",
+      "470",
+      "472"
+    ],
+    "sect": "het"
+  },
+  "473": {
+    "skill_id": "473",
+    "skill_name": "Exaggeration Exercise",
+    "skill_description": "Presenting subtle bodily movements, tone of voice, or words in a repetitive and exaggerated manner until their underlying meaning is noticed. By amplifying bodily and verbal cues, revealing overlooked emotions and needs, promoting the transformation and understanding from background to figure.",
+    "parent_ids": [
+      "585",
+      "459",
+      "469",
+      "470",
+      "473"
+    ],
+    "sect": "het"
+  },
+  "474": {
+    "skill_id": "474",
+    "skill_name": "Reversal Technique",
+    "skill_description": "Guiding the client to play the opposite of their usual pattern, such as a shy person demonstrating extroversion, or a compliant person demonstrating assertiveness, to engage with denied aspects of the self. Through experiencing opposing polarities, expanding behavioral choices, alleviating fixation and anxiety, and achieving more integrated functioning.",
+    "parent_ids": [
+      "585",
+      "459",
+      "469",
+      "470",
+      "474"
+    ],
+    "sect": "het"
+  },
+  "475": {
+    "skill_id": "475",
+    "skill_name": "Sensory Holding",
+    "skill_description": "When discomfort or fear arises, encouraging the client to stay and meticulously explore the present feelings, rather than quickly avoiding them. Through support and companionship, deep experience can release blocked emotional energy, expand the tolerance window, and promote natural change and growth.",
+    "parent_ids": [
+      "585",
+      "459",
+      "469",
+      "470",
+      "475"
+    ],
+    "sect": "het"
+  },
+  "476": {
+    "skill_id": "476",
+    "skill_name": "Acting Out Projection",
+    "skill_description": "Inviting the client to play the person they blame or distrust, to experience and claim the projected qualities and motives. By 'becoming' the other, discovering self-contradictions and unfulfilled emotions, reducing blaming the outside, and restoring ownership over one's own behavior.",
+    "parent_ids": [
+      "585",
+      "459",
+      "469",
+      "470",
+      "476"
+    ],
+    "sect": "het"
+  },
+  "477": {
+    "skill_id": "477",
+    "skill_name": "Imagined Rehearsal",
+    "skill_description": "Bringing the hidden rehearsals of social roles from daily life into the present, through acting and sharing awareness of expectations and needs to please others, reducing anxiety accumulated from repeated rehearsals. This attempts new response styles, enhancing spontaneity and real-world contact.",
+    "parent_ids": [
+      "585",
+      "459",
+      "469",
+      "470",
+      "477"
+    ],
+    "sect": "het"
+  },
+  "478": {
+    "skill_id": "478",
+    "skill_name": "Dream Completion (Dramatization Method)",
+    "skill_description": "Not analyzing the symbolic meaning of dreams, but re-enacting the dream in the present moment, allowing the client to 'become' the various parts of the dream and engage in dialogue. Using projection as a core to reveal unfinished events and conflicts, allowing fragmented parts to emerge and integrate into a more complete self.",
+    "parent_ids": [
+      "585",
+      "459",
+      "469",
+      "470",
+      "478"
+    ],
+    "sect": "het"
+  },
+  "479": {
+    "skill_id": "479",
+    "skill_name": "Face Quality",
+    "skill_description": "Pointing out inconsistencies between the visitor's words and behavior and nonverbal communication in a cooperative and respectful manner, inviting them to examine avoidance and energy blockage. Modern Gestalt emphasizes support and dialogue; face quality is used to promote awareness and choice, not to blame or force change.",
+    "parent_ids": [
+      "585",
+      "459",
+      "479"
+    ],
+    "sect": "het"
+  }
+}
