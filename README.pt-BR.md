@@ -38,7 +38,7 @@ No código, esses componentes correspondem a:
 
 - [`paper/`](paper/): PDF do artigo e figuras usadas no README;
 - [`configs/`](configs/): configurações de baseline, datasets, avaliação e RFT;
-- [`assets/profiles/`](assets/profiles/): perfis incluídos usados por `sample` e `rft`;
+- [`assets/profiles/`](assets/profiles/): fixtures sintéticas mínimas de teste para `sample` e `rft`, sem perfis reais ou equivalência clínica;
 - [`assets/skills/`](assets/skills/): biblioteca de habilidades; consulte o [guia de localização do catálogo em PT-BR](assets/skills/README.pt-BR.md);
 - [`data/eval/`](data/eval/): exemplos de avaliação no formato nativo;
 - [`prompts/`](prompts/): prompts públicos, de cliente, do PsychAgent e de avaliação;
@@ -200,7 +200,7 @@ Consulte [`configs/README.pt-BR.md`](configs/README.pt-BR.md) para detalhes sobr
 
 ## Dados e recursos incluídos
 
-O repositório inclui uma biblioteca inicial de habilidades em [`assets/skills/sect/`](assets/skills/sect/), perfis em [`assets/profiles/`](assets/profiles/), exemplos nativos de avaliação em [`data/eval/`](data/eval/), prompts para `bt`, `cbt`, `het`, `pdt` e `pmt`, prompts e implementações de métricas compartilhadas e específicas de cada abordagem, recursos do artigo em [`paper/`](paper/) e o checkpoint lançado no Hugging Face.
+O repositório inclui uma biblioteca inicial de habilidades em [`assets/skills/sect/`](assets/skills/sect/), fixtures sintéticas de teste em [`assets/profiles/`](assets/profiles/) — não são evidência clínica —, exemplos nativos de avaliação em [`data/eval/`](data/eval/), prompts para `bt`, `cbt`, `het`, `pdt` e `pmt`, prompts e implementações de métricas compartilhadas e específicas de cada abordagem, recursos do artigo em [`paper/`](paper/) e o checkpoint lançado no Hugging Face.
 
 Esta versão **não** inclui todos os recursos de treinamento e avaliação do `PsychEval` usados no artigo, o fluxo completo de extração e evolução de habilidades pós-sessão, uma receita completa de pós-treinamento para internalização reforçada nem um arquivo de licença do repositório.
 

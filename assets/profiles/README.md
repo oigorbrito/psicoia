@@ -1,6 +1,6 @@
 # `assets/profiles/`
 
-This directory stores client profile assets for different counseling modalities. They can be used by `src/sample` and `src/rft` through dataset configuration.
+This directory contains minimal synthetic smoke-test fixtures for the supported counseling modalities. They can be used by `src/sample` and `src/rft` through dataset configuration. They are not real client profiles, clinical evidence, or clinically equivalent cases.
 
 The directory structure follows the `DatasetLoader` convention:
 

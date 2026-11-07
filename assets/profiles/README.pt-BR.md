@@ -1,6 +1,6 @@
 # `assets/profiles/`
 
-Este diretório armazena arquivos de perfil de clientes para diferentes modalidades de aconselhamento psicológico. Eles podem ser usados por `src/sample` e `src/rft` por meio da configuração de datasets.
+Este diretório contém fixtures sintéticas mínimas para testes dos fluxos nas modalidades disponíveis. Elas podem ser usadas por `src/sample` e `src/rft` por meio da configuração de datasets. Não são perfis de clientes reais, evidência clínica nem casos clinicamente equivalentes.
 
 A estrutura de diretórios segue a convenção de `DatasetLoader`:
 

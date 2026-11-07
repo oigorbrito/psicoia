@@ -51,7 +51,7 @@ The most important directories are:
 
 - [`paper/`](paper/): paper PDF and figure assets used in the README
 - [`configs/`](configs/): baseline, dataset, eval, and RFT configuration files
-- [`assets/profiles/`](assets/profiles/): bundled profile assets used by `sample` and `rft`
+- [`assets/profiles/`](assets/profiles/): minimal synthetic smoke-test fixtures for `sample` and `rft`, not real or clinically equivalent profiles
 - [`data/eval/`](data/eval/): native evaluation examples
 - [`prompts/`](prompts/): public prompts, client prompts, PsychAgent prompts, and eval prompts
 - [`src/sample/`](src/sample/): multi-session generation pipeline
@@ -250,7 +250,7 @@ Use [`configs/README.md`](configs/README.md) when you need field-level detail, s
 This repository already includes:
 
 - an initialization skill library under [`assets/skills/sect/`](assets/skills/sect/)
-- bundled profile assets under [`assets/profiles/`](assets/profiles/)
+- explicitly synthetic smoke-test profile fixtures under [`assets/profiles/`](assets/profiles/), not clinical evidence
 - native evaluation examples under [`data/eval/`](data/eval/)
 - prompts for `bt`, `cbt`, `het`, `pdt`, and `pmt`
 - evaluation prompts and method implementations for shared and therapy-specific metrics

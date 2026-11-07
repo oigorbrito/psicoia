@@ -1,0 +1,17 @@
+{
+  "fixture_metadata": {
+    "kind": "synthetic_smoke_test",
+    "modality": "pmt",
+    "split": "sample",
+    "clinical_equivalence": false,
+    "notice": "Fictional test data only; not a real person or clinical profile."
+  },
+  "basic_info": {
+    "static_traits": {"name": "Synthetic test profile", "age": "not specified", "gender": "not specified"},
+    "main_problem": "Synthetic smoke-test scenario; not a real client or clinical profile.",
+    "topic": "Synthetic integration testing",
+    "core_demands": "Exercise the JSON loading and generation pipeline only.",
+    "growth_experiences": []
+  },
+  "theory": {"pmt": {"exception_events": [], "force_field": {"positive_force": [], "negative_force": []}}}
+}
