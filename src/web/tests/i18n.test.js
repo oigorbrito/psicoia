@@ -23,11 +23,16 @@ test("Brazilian Portuguese translations interpolate variables", () => {
   );
 });
 
-test("Chinese backend error details display in the selected interface language", () => {
+test("legacy Chinese backend error details remain localized for compatibility", () => {
   assert.equal(t("用户已存在", "en"), "This username is already registered.");
   assert.equal(t("用户已存在", "pt-BR"), "Este nome de usuário já está cadastrado.");
   assert.equal(t("用户名或密码错误", "en"), "Incorrect username or password.");
   assert.equal(t("用户名或密码错误", "pt-BR"), "Nome de usuário ou senha incorretos.");
+});
+
+test("PsicoIA operational errors are localized in the interface", () => {
+  assert.equal(t("This counseling approach is not supported by PsicoIA.", "en"), "This counseling approach is not supported by PsicoIA.");
+  assert.equal(t("This counseling approach is not supported by PsicoIA.", "pt-BR"), "Esta abordagem não é compatível com o PsicoIA.");
 });
 
 test("Unknown copy falls back to the source text", () => {

@@ -140,7 +140,7 @@ def pick_school(school_id: str) -> SchoolInfo:
 def school_to_psychagent_sect(school_id: str) -> str:
     sect = SCHOOL_TO_PSYCHAGENT_SECT.get(school_id)
     if not sect:
-        raise HTTPException(status_code=404, detail="Unsupported school for PsychAgent prompts")
+        raise HTTPException(status_code=404, detail="This counseling approach is not supported by PsicoIA.")
     return sect
 
 

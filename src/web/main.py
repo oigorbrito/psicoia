@@ -220,7 +220,7 @@ def health():
 def register(payload: AuthPayload, db: Session = Depends(get_db)):
     exists = db.exec(select(UserRecord).where(UserRecord.username == payload.username)).first()
     if exists:
-        raise HTTPException(status_code=400, detail="用户已存在")
+        raise HTTPException(status_code=400, detail="This username is already registered.")
     user = UserRecord(username=payload.username, password_hash=hash_password(payload.password))
     db.add(user)
     db.commit()
@@ -239,7 +239,7 @@ def register(payload: AuthPayload, db: Session = Depends(get_db)):
 def login(payload: AuthPayload, db: Session = Depends(get_db)):
     user = db.exec(select(UserRecord).where(UserRecord.username == payload.username)).first()
     if not user or user.password_hash != hash_password(payload.password):
-        raise HTTPException(status_code=401, detail="用户名或密码错误")
+        raise HTTPException(status_code=401, detail="Incorrect username or password.")
 
     token_value = create_token()
     db.add(AuthTokenRecord(token=token_value, user_id=user.id))

@@ -104,7 +104,7 @@ const PT_BR = {
   "Your session has expired. Please sign in again to continue.": "Sua sessão expirou. Entre novamente para continuar.",
   "Could not load counseling approaches.": "Não foi possível carregar as abordagens.",
   "School not found": "Abordagem não encontrada.",
-  "Unsupported school for PsychAgent prompts": "Abordagem não compatível com os prompts do PsicoIA.",
+  "This counseling approach is not supported by PsicoIA.": "Esta abordagem não é compatível com o PsicoIA.",
   "Course not found": "Curso não encontrado.",
   "Visit not found": "Sessão não encontrada.",
   Forbidden: "Acesso negado.",

@@ -29,7 +29,10 @@ def test_web_display_metadata_uses_psicoia_without_changing_compatibility_keys()
     assert web_readme_en.startswith("# PsicoIA Web\n")
     assert web_readme_pt.startswith("# PsicoIA Web\n")
     assert 'FastAPI(title="PsicoIA Web API"' in main
-    assert '"Unsupported school for PsychAgent prompts": "Abordagem não compatível com os prompts do PsicoIA."' in i18n
+    assert '"This counseling approach is not supported by PsicoIA.": "Esta abordagem não é compatível com o PsicoIA."' in i18n
+    assert 'detail="This username is already registered."' in main
+    assert 'detail="Incorrect username or password."' in main
+    assert "用户已存在" not in main and "用户名或密码错误" not in main
     assert 'export const LOCALE_STORAGE_KEY = "mindcare.locale"' in i18n
 
 
