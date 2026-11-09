@@ -1,0 +1,372 @@
+{
+  "1": {
+    "skill_id": "1",
+    "skill_name": "Sessão de avaliação",
+    "skill_description": "A sessão de avaliação é a fase inicial da aconselhamento psicológico, com o objetivo de compreender os problemas enfrentados pelo cliente, recolher sistematicamente informações relevantes, formular um julgamento preliminar (ou diagnóstico) e, com base nisso, definir os objetivos do aconselhamento e elaborar um plano subsequente. Após a conclusão da sessão de avaliação, o aconselhamento passa para a fase formal de sessão de aconselhamento.",
+    "parent_ids": [
+      "1"
+    ],
+    "sect": "cbt"
+  },
+  "2": {
+    "skill_id": "2",
+    "skill_name": "Início da sessão de avaliação",
+    "skill_description": "A primeira parte da sessão de avaliação inclui dar as boas-vindas ao cliente, criar uma atmosfera segura de aconselhamento e expressar empatia; explicar à pessoa a natureza desta sessão, suas tarefas e estrutura (ou seja, estruturar a sessão), e avisar sobre o registro e possíveis interrupções para obter compreensão e consentimento do cliente, reduzindo a vergonha e a resistência.",
+    "parent_ids": [
+      "1",
+      "2"
+    ],
+    "sect": "cbt"
+  },
+  "3": {
+    "skill_id": "3",
+    "skill_name": "Estabelecimento da relação de aconselhamento",
+    "skill_description": "Ao expressar compreensão e empatia, ouvir com paciência, respeitar os sentimentos do cliente e lidar com insatisfações ou preocupações do mesmo, oferecendo um cuidado humano acolhedor, é possível ganhar a confiança e consolidar a relação de aconselhamento — um dos fatores-chave que influenciam os resultados do aconselhamento, especialmente no início, onde deve ser priorizado o seu estabelecimento.",
+    "parent_ids": [
+      "1",
+      "2",
+      "3"
+    ],
+    "sect": "cbt"
+  },
+  "4": {
+    "skill_id": "4",
+    "skill_name": "Estruturação da sessão",
+    "skill_description": "No início da sessão, explicar claramente ao cliente o tema e as tarefas desta sessão (por exemplo: esta é uma sessão de avaliação, com a tarefa de recolha de informações e diagnóstico), e apresentar o planejamento geral das fases de aconselhamento, suas expectativas e passos subsequentes, para ajudar o cliente a compreender o agendamento, os objetivos da sessão e o processo de aconselhamento, evitando desperdício de tempo devido a narrativas desorganizadas.",
+    "parent_ids": [
+      "1",
+      "2",
+      "4"
+    ],
+    "sect": "cbt"
+  },
+  "5": {
+    "skill_id": "5",
+    "skill_name": "Fase intermediária da entrevista de avaliação",
+    "skill_description": "A principal tarefa desta fase é recolher sistematicamente todas as informações relevantes sobre os problemas do cliente e, com base nelas, formular juízos. Simultaneamente, durante o processo de recolha, aplica-se o modelo da Terapia Cognitivo-Comportamental (TCC) para conceituar o caso, a fim de compreender os mecanismos e causas do surgimento dos problemas.",
+    "parent_ids": [
+      "1",
+      "5"
+    ],
+    "sect": "cbt"
+  },
+  "6": {
+    "skill_id": "6",
+    "skill_name": "Recolha de informações relacionadas ao problema",
+    "skill_description": "Primariamente através das sessões de aconselhamento, complementadas por avaliações psicológicas e diários de monitorização, recolhe-se de forma abrangente e sistemática as informações atuais e históricas relacionadas ao problema (incluindo sintomas, gatilhos, evolução da doença, impacto funcional, contexto social e familiar, histórico médico e condições anteriores, história do desenvolvimento, etc.), a fim de apoiar um juízo e diagnóstico precisos.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6"
+    ],
+    "sect": "cbt"
+  },
+  "7": {
+    "skill_id": "7",
+    "skill_name": "Recolha de informações através das sessões de aconselhamento",
+    "skill_description": "Em sessões presenciais ou por telefone, recolhe-se as queixas principais, manifestações dos sintomas, evolução da doença, contextos relevantes e danos funcionais através de perguntas estruturadas e interrogatórios aprofundados. Utilizam-se também perguntas de acompanhamento para concretizar respostas vagas, garantindo a abrangência e sistematicidade das informações.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7"
+    ],
+    "sect": "cbt"
+  },
+  "8": {
+    "skill_id": "8",
+    "skill_name": "Recolha de dados demográficos e básicos do cliente",
+    "skill_description": "Obtem-se sistematicamente as informações pessoais do cliente (como idade, sexo, estado civil e fertilidade, profissão, nível de instrução, crenças religiosas, situação habitacional, etc.). Estas informações são utilizadas para descrever o contexto, avaliar o suporte social e a funcionalidade, bem como auxiliar no juízo sobre o possível contexto sociocultural e recursos relacionados ao problema.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "sect": "cbt"
+  },
+  "9": {
+    "skill_id": "9",
+    "skill_name": "Avaliar o impacto clínico e funcional queixa",
+    "skill_description": "Interroga em detalhes sobre as manifestações específicas do problema da queixa (emocionais, fisiológicas, comportamentais), sua gravidade, frequência e duração, bem como o impacto no aprendizado, trabalho, vida familiar e social, para avaliar a importância clínica do problema e a prioridade de intervenção.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "sect": "cbt"
+  },
+  "10": {
+    "skill_id": "10",
+    "skill_name": "Investigar os gatilhos, curso e evolução dos problemas psicológicos",
+    "skill_description": "Organizar os eventos desencadeantes do surgimento do problema, o tempo inicial, a evolução do curso e as mudanças durante esse período, ajudando a identificar os fatores de gatilho e a linha do tempo do desenvolvimento dos sintomas, fornecendo pistas causais para o diagnóstico e conceitualização.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "10"
+    ],
+    "sect": "cbt"
+  },
+  "11": {
+    "skill_id": "11",
+    "skill_name": "Avaliar sistematicamente a vida social e funções em várias áreas do consultado",
+    "skill_description": "Interroga abrangente sobre o desempenho e a interação do consultado em família, relacionamento conjugal/pais-filho, ambiente de trabalho, interações sociais, educação e outros papéis, para confirmar se existem outros problemas além da queixa principal, evitando diagnósticos perdidos e novos problemas não identificados no futuro na terapia.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "11"
+    ],
+    "sect": "cbt"
+  },
+  "12": {
+    "skill_id": "12",
+    "skill_name": "Interroga sobre saúde física e estado corporal",
+    "skill_description": "Conhecer as informações de saúde física do consultado (incluindo doenças crônicas, deficiência física, peso/estado nutricional), para determinar se existem fatores médicos que afetam o problema psicológico ou problemas físicos que requerem encaminhamento, fornecendo um contexto médico necessário para o diagnóstico e plano terapêutico.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "12"
+    ],
+    "sect": "cbt"
+  },
+  "13": {
+    "skill_id": "13",
+    "skill_name": "Coleta de histórico médico e experiência de atendimento",
+    "skill_description": "Interroga o cliente sobre antecedentes de transtornos mentais, consultas a psiquiatras ou internações, experiências anteriores de problemas psicológicos e aconselhamento, entre outros, para avaliar o histórico médico, risco de recaída, resposta ao tratamento anterior e possíveis comorbidades, auxiliando na formulação do diagnóstico atual e do plano terapêutico.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "13"
+    ],
+    "sect": "cbt"
+  },
+  "14": {
+    "skill_id": "14",
+    "skill_name": "Exploração da criação precoce e da relação com os cuidadores",
+    "skill_description": "Coleta informações sobre o ambiente de criação precoce do cliente, a impressão que ele tem dos seus cuidadores e eventos marcantes entre eles, a fim de examinar, na conceituação longitudinal, o contexto de formação das crenças centrais e a influência da experiência emocional precoce nos problemas atuais.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "14"
+    ],
+    "sect": "cbt"
+  },
+  "15": {
+    "skill_id": "15",
+    "skill_name": "Organização dos eventos-chave no histórico de crescimento",
+    "skill_description": "Revisa o histórico de crescimento do cliente por etapas etárias, registrando eventos de vida impactantes e mudanças adaptativas; essas informações são utilizadas para a conceituação longitudinal com o objetivo de rastrear as origens históricas das crenças centrais, estratégias compensatórias e a formação da personalidade.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "7",
+      "15"
+    ],
+    "sect": "cbt"
+  },
+  "16": {
+    "skill_id": "16",
+    "skill_name": "Uso de avaliações psicológicas",
+    "skill_description": "Utiliza escalas padronizadas e questionários (como os de ansiedade, depressão, personalidade, eventos de vida, suporte social e enfrentamento) para realizar uma avaliação quantitativa do cliente, servindo como complemento às informações da sessão para reduzir viés subjetivo e auxiliar na determinação da gravidade do problema e no monitoramento dos efeitos da intervenção.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "16"
+    ],
+    "sect": "cbt"
+  },
+  "17": {
+    "skill_id": "17",
+    "skill_name": "Aplicação de diários de monitoramento",
+    "skill_description": "Orientar os clientes a registrar emoções, comportamentos, pensamentos e gatilhos situacionais no cotidiano (como diários de atividades ou registros de ansiedade), para obter informações mais objetivas e contínuas, complementando a fragmentação e subjetividade das informações orais durante as sessões.",
+    "parent_ids": [
+      "1",
+      "5",
+      "6",
+      "17"
+    ],
+    "sect": "cbt"
+  },
+  "18": {
+    "skill_id": "18",
+    "skill_name": "Conceituação do caso usando o modelo TCC",
+    "skill_description": "Aplicar teoricamente o modelo da Terapia Cognitivo-Comportal para conceituar horizontalmente (causas atuais) e verticalmente (história e crenças centrais) os problemas do cliente, ao mesmo tempo em que se coletam dados ou logo após, esclarecendo a relação entre situação-cognição-emoção/comportamento e o vínculo entre crenças profundas e história de crescimento, fornecendo assim base para selecionar técnicas específicas de intervenção.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18"
+    ],
+    "sect": "cbt"
+  },
+  "19": {
+    "skill_id": "19",
+    "skill_name": "Aplicação do modelo comportamental cognitivo",
+    "skill_description": "Usar um modelo comportamental cognitivo estruturado (por exemplo, o modelo ABC) para mapear a cadeia entre situação, cognição e emoção/comportamento, facilitando a identificação de gatilhos situacionais, pensamentos automáticos e as reações emocionais e comportamentais correspondentes.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "19"
+    ],
+    "sect": "cbt"
+  },
+  "20": {
+    "skill_id": "20",
+    "skill_name": "Uso do modelo ABC",
+    "skill_description": "Aplicar o modelo ABC (Antecedente-Crença-Consequência) para analisar situações específicas (A), as crenças ou pensamentos individuais (B) e suas consequências emocionais/comportamentais resultantes (C), orientando assim estratégias de intervenção como reestruturação cognitiva e experimentação comportamental.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "19",
+      "20"
+    ],
+    "sect": "cbt"
+  },
+  "21": {
+    "skill_id": "21",
+    "skill_name": "Modelo Cognitivo-Comportamental de Stephen Hoffman",
+    "skill_description": "Analisar os mecanismos dos problemas e orientar a escolha e a sequência das técnicas terapêuticas utilizando as teorias e pontos operacionais do Modelo Cognitivo-Comportamental proposto por Stephen Hoffman (como perspectivas conceituais específicas e pontos de intervenção).",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "19",
+      "21"
+    ],
+    "sect": "cbt"
+  },
+  "22": {
+    "skill_id": "22",
+    "skill_name": "Modelo Cognitivo-Comportamental de Westbrook et al.",
+    "skill_description": "Aplicar os modelos ou perspectivas expandidas que estudiosos como Westbrook desenvolveram na conceptualização cognitivo-comportamental para compreender os mecanismos de manutenção dos problemas do cliente e auxiliar na formulação de técnicas direcionadas.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "19",
+      "22"
+    ],
+    "sect": "cbt"
+  },
+  "23": {
+    "skill_id": "23",
+    "skill_name": "Modelo Cognitivo-Comportamental Circular",
+    "skill_description": "Utilizar o Modelo Cognitivo-Comportamental Circular para representar a relação causal circular mútua entre cognição, emoção e comportamento, enfatizando os circuitos de manutenção do problema, facilitando a identificação de pontos de intervenção chave para interromper ciclos adversos.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "23"
+    ],
+    "sect": "cbt"
+  },
+  "24": {
+    "skill_id": "24",
+    "skill_name": "Modelo Básico Cognitivo-Comportamental Circular",
+    "skill_description": "Dominar o quadro básico do modelo circular, identificar as cadeias circulares que levam a emoções negativas e comportamentos inadequados (por exemplo, situação desencadeadora → pensamento → emoção → comportamento → resultado → novo desencadeamento) para projetar intervenções circulares que alterem os fatores de manutenção.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "23",
+      "24"
+    ],
+    "sect": "cbt"
+  },
+  "25": {
+    "skill_id": "25",
+    "skill_name": "Modelo de Terapia Cognitivo-Comportamental de White",
+    "skill_description": "Aplicar os pontos teóricos ou práticos específicos da teoria conceitual cíclica/sistêmica de White para a análise de casos, utilizando o modelo para orientar estratégias terapêuticas através de uma compreensão estruturada dos problemas do cliente.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "23",
+      "25"
+    ],
+    "sect": "cbt"
+  },
+  "26": {
+    "skill_id": "26",
+    "skill_name": "Modelo Cíclico Cognitivo-Comportamental de Zhuo Liang Guo",
+    "skill_description": "Adotar as formulações adaptadas e pontos técnicos do modelo cíclico cognitivo-comportamental proposto por Zhuo Liang Guo, integrando características culturais ou situacionais para compreender mais autenticamente os mecanismos de manutenção dos problemas do cliente e projetar intervenções.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "23",
+      "26"
+    ],
+    "sect": "cbt"
+  },
+  "27": {
+    "skill_id": "27",
+    "skill_name": "Modelo em Forma de T",
+    "skill_description": "Aplicar o modelo em forma de T (um método estruturado que combina conceitos horizontais e verticais) para lidar simultaneamente com fatores situacionais-cognitivos atuais e crenças verticais mais profundas, facilitando uma intervenção coordenada entre a gestão sintomática de curto prazo e a correção de crenças de longo prazo.",
+    "parent_ids": [
+      "1",
+      "5",
+      "18",
+      "27"
+    ],
+    "sect": "cbt"
+  },
+  "28": {
+    "skill_id": "28",
+    "skill_name": "Diagnóstico Psicológico",
+    "skill_description": "Com base em entrevistas abrangentes, avaliações e conceitualização, classificar e diagnosticar os problemas do cliente conforme critérios clínicos (como DSM-5, CID-10 ou sistemas diagnósticos locais) e o quadro sintoma-situacional da TCC, identificando comorbidades para determinar a prioridade de intervenção e condições de encaminhamento necessárias.",
+    "parent_ids": [
+      "1",
+      "5",
+      "28"
+    ],
+    "sect": "cbt"
+  },
+  "29": {
+    "skill_id": "29",
+    "skill_name": "Fase final da entrevista de avaliação",
+    "skill_description": "Ao coletar informações suficientes e completar a conceituação e o diagnóstico, entra-se na fase de encerramento, fornecendo ao cliente o feedback sobre as conclusões da entrevista, explicando se o aconselhamento está dentro do escopo do aconselhamento psicológico e apresentando possíveis planos de tratamento ou encaminhamento, bem como os próximos passos.",
+    "parent_ids": [
+      "1",
+      "29"
+    ],
+    "sect": "cbt"
+  },
+  "30": {
+    "skill_id": "30",
+    "skill_name": "Definição dos objetivos do aconselhamento",
+    "skill_description": "Com base nos resultados do diagnóstico e da conceituação, define-se conjuntamente com o cliente os objetivos do aconselhamento (ou seja, as mudanças ou resultados específicos desejados), geralmente expressos como o oposto do problema, servindo para orientar a direção e a definição de prioridades do tratamento subsequente.",
+    "parent_ids": [
+      "1",
+      "29",
+      "30"
+    ],
+    "sect": "cbt"
+  },
+  "31": {
+    "skill_id": "31",
+    "skill_name": "Elaboração do plano de aconselhamento",
+    "skill_description": "Após que os objetivos estejam claros, explica-se ao cliente o número previsto de sessões de aconselhamento, a frequência, a duração possível e a faixa de custos, com base no qual se elabora um plano preliminar de aconselhamento e agendamento (por exemplo, uma vez por semana, previsto 8–14 sessões), para ajudar o cliente a decidir sobre a continuidade do aconselhamento e facilitar a gestão e o ajuste subsequentes.",
+    "parent_ids": [
+      "1",
+      "29",
+      "31"
+    ],
+    "sect": "cbt"
+  }
+}

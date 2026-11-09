@@ -2,6 +2,8 @@
 
 This roadmap prioritizes work based on recorded local evidence. It is **not a delivery promise, release guarantee, clinical evaluation, or compliance claim**. Priorities may change as evidence changes; items without an owner, estimate, and completion criteria must not be treated as commitments. The migration rule is literal copying: preserve upstream code and introduce no improvements, fixes, or functional changes. Only approved translation of user-facing content (PT-BR primary, English secondary) and visible PsicoIA branding where it does not affect identifiers or attribution are allowed..
 
+**Scoped exception authorized in this task:** implement a new Android client under `android/` with supporting tests and documentation. This does not authorize changes to existing upstream application behavior, catalog wording/IDs, clinical evaluation prompts, or publication. See [Android offline client](ANDROID_OFFLINE.pt-BR.md).
+
 ## Priority 0 — preserve and integrate with provenance
 
 **Status: initial safeguard and inventory complete; integration pending.** This snapshot has 1,390 untracked paths; `master`, `original`, and `origin/main` have histories with no common ancestor. `origin/main` contains the evidence template, while `original` tracks PsychAgent upstream. A working-tree archive was created outside the repository at `../psicoia-worktree-before-integration.tar.gz` (52 MB), plus a Git bundle at `../psicoia-git-refs-before-integration.bundle` (54 MB). The archive listing and bundle were verified. SHA-256: tree `bf5ea3b95581ded2e29ff1a97243a23d63759f7a65c0086d097f6fc18b597bc0`; bundle `0fef368c5132d1bba52e8b8b08905f47df510ae837999adce8cc6150276ec939`. Both are on the same local volume; they are not independent protection against disk failure.

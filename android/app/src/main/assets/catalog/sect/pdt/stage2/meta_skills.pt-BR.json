@@ -1,0 +1,2069 @@
+{
+  "1006": {
+    "skill_id": "1006",
+    "skill_name": "Análise de Superação",
+    "skill_description": "Utiliza um modelo de três fases (consciência limitada, consciência aumentada e prática, mudança duradoura) para determinar sistematicamente a fase em que o cliente se encontra. Através da escuta de pistas como emoção, resistência, externalização, padrões e contratransferência, e combinando a reflexão entre intervenções de suporte e revelação, enfatiza a prática repetida e a paciência para promover e consolidar a formação de novos padrões.",
+    "parent_ids": [
+      "1016",
+      "1006"
+    ],
+    "sect": "pdt"
+  },
+  "720": {
+    "skill_id": "720",
+    "skill_name": "Contratransferência",
+    "skill_description": "Conjunto das respostas emocionais do terapeuta à pessoa atendida, incluindo componentes conscientes e inconscientes. Reconhecê-las pode reduzir manifestações inadequadas, orientar a avaliação e a intervenção e ajudar a compreender os padrões interpessoais da pessoa atendida e as próprias reações. Em geral, não devem ser reveladas diretamente; é preciso evitar processos paralelos e atuações que prejudiquem o enquadre terapêutico.",
+    "parent_ids": [
+      "1016",
+      "720"
+    ],
+    "sect": "pdt"
+  },
+  "721": {
+    "skill_id": "721",
+    "skill_name": "Classificação de Contratransferência",
+    "skill_description": "A contratransferência pode ser dividida em duas categorias: harmônica e complementar; a primeira é a empatia e o reconhecimento das emoções ou estados do self do cliente; a segunda é o reconhecimento da atitude de outras pessoas importantes em relação ao cliente. Pode-se distinguir a origem pela reação se ela ocorrer apenas para esse cliente.",
+    "parent_ids": [
+      "1016",
+      "720",
+      "721"
+    ],
+    "sect": "pdt"
+  },
+  "722": {
+    "skill_id": "722",
+    "skill_name": "Contratransferência Harmônica",
+    "skill_description": "O terapeuta demonstra empatia ou reconhecimento dos sentimentos e estados internos do cliente, inclusive dos sentimentos reprimidos. Esta reação pode indicar a experiência e a defesa atuais do cliente, ajudando a escolher pontos de abordagem de suporte ou revelação.",
+    "parent_ids": [
+      "1016",
+      "720",
+      "721",
+      "722"
+    ],
+    "sect": "pdt"
+  },
+  "723": {
+    "skill_id": "723",
+    "skill_name": "Contratransferência Complementar",
+    "skill_description": "O terapeuta se posiciona inconscientemente na posição de pessoa importante para o cliente, experimentando atitudes típicas em relação ao cliente (como repreensão, proteção). Ajuda a compreender o padrão de relacionamento, mas é necessário estar atento para não transformar essa atitude em ação.",
+    "parent_ids": [
+      "1016",
+      "720",
+      "721",
+      "723"
+    ],
+    "sect": "pdt"
+  },
+  "724": {
+    "skill_id": "724",
+    "skill_name": "Escuta Contratransferencial",
+    "skill_description": "Através de autoquestionamento e revisão dos momentos da sessão, observar os sentimentos e comportamentos anormais do cliente (como falar demais ou de menos, gestos excessivos, sonhos). Em supervisão ou discussão com colegas, comparar suas sensações em relação ao supervisor para identificar pistas contratransferenciais.",
+    "parent_ids": [
+      "1016",
+      "720",
+      "724"
+    ],
+    "sect": "pdt"
+  },
+  "725": {
+    "skill_id": "725",
+    "skill_name": "Reflexão Contratransferencial",
+    "skill_description": "Após confirmar a contratransferência, avaliar sua direção: sentimentos explícitos/reprimidos do cliente, resistência em curso, ou algo relacionado à sua própria história. Utilizar sinais como ansiedade para decidir quando e como intervir e confrontar, calibrando profundidade e momento.",
+    "parent_ids": [
+      "1016",
+      "720",
+      "725"
+    ],
+    "sect": "pdt"
+  },
+  "726": {
+    "skill_id": "726",
+    "skill_name": "Intervenção Contratransferencial",
+    "skill_description": "Geralmente não revela emoções pessoais diretamente, mas as utiliza para compreensão e explicação. Quando necessário, pode expressar moderadamente: respostas sociais, sugestões de risco e segurança, promoção do contato com emoções reprimidas, cultivo da psicologização; ao mesmo tempo, prestar atenção aos limites e ao enquadramento.",
+    "parent_ids": [
+      "1016",
+      "720",
+      "726"
+    ],
+    "sect": "pdt"
+  },
+  "727": {
+    "skill_id": "727",
+    "skill_name": "Exploração Ação-Orientada",
+    "skill_description": "Quando o comportamento se desvia do normal, reconhecer a realidade, investigar a experiência do cliente e refletir sobre as próprias reações e motivações, trazer o supervisor quando necessário. Utilizar a ação-orientada para revelar as dinâmicas relacionais e reparar o quadro, sem excesso de autoexposição.",
+    "parent_ids": [
+      "1016",
+      "720",
+      "726",
+      "727"
+    ],
+    "sect": "pdt"
+  },
+  "728": {
+    "skill_id": "728",
+    "skill_name": "Experimentação da Desregulação Afetiva",
+    "skill_description": "Quando o cliente intuitivamente percebe que você está zangado ou afetado, validar seus sentimentos ou suposições, reconhecer erros e fatos quando necessário; continuar a explorar o significado na revelação do padrão, e guiar a compreensão do impacto que ele tem nos outros no modo de suporte.",
+    "parent_ids": [
+      "1016",
+      "720",
+      "726",
+      "728"
+    ],
+    "sect": "pdt"
+  },
+  "729": {
+    "skill_id": "729",
+    "skill_name": "Pedir ao Cliente para Imaginar os Sentimentos do Terapeuta",
+    "skill_description": "Convidar o cliente a imaginar seus sentimentos em relação ao seu comportamento (como ausência sem motivo), para aumentar a consciência e a capacidade de mentalização do impacto nos outros. Usar isso como ponte para explorar padrões interpessoais, em vez de recorrer à culpa ou à autoexposição excessiva.",
+    "parent_ids": [
+      "1016",
+      "720",
+      "726",
+      "729"
+    ],
+    "sect": "pdt"
+  },
+  "730": {
+    "skill_id": "730",
+    "skill_name": "Suporte ou Revelação na Desregulação Afetiva",
+    "skill_description": "Escolher intervenções de suporte ou revelação como linha de raciocínio na desregulação afetiva: priorizar o suporte quando a aliança é frágil e a vulnerabilidade é alta; à medida que o relacionamento se estabiliza e a capacidade de suportar aumenta, gradualmente mudar para confrontação e explicação. Prestar atenção ao ajustar dinamicamente conforme o progresso do tratamento.",
+    "parent_ids": [
+      "1016",
+      "720",
+      "726",
+      "730"
+    ],
+    "sect": "pdt"
+  },
+  "1016": {
+    "skill_id": "1016",
+    "skill_name": "Entrevista Consultiva",
+    "skill_description": "O cerne da entrevista consultiva reside no uso da transferência e da contra-transferência, através do suporte ou revelação de intervenções para tratar a resistência e a defesa. Visa aprofundar a compreensão inconsciente dos conflitos através de associações livres e da análise dos sonhos, promovendo a profunda compreensão e mudança de personalidade do cliente através da repetição e resolução.",
+    "parent_ids": [
+      "1016"
+    ],
+    "sect": "pdt"
+  },
+  "310": {
+    "skill_id": "310",
+    "skill_name": "Passos Básicos do Tratamento Psicodinâmico",
+    "skill_description": "O método de três passos inclui escuta, reflexão e intervenção. Primeiro, escutar de maneira especial; depois, processar o que foi ouvido para determinar o foco e a estratégia; por fim, implementar intervenção verbal ou não verbal e avaliar os resultados.",
+    "parent_ids": [
+      "1016",
+      "310"
+    ],
+    "sect": "pdt"
+  },
+  "311": {
+    "skill_id": "311",
+    "skill_name": "Escuta",
+    "skill_description": "Como primeiro passo, inclui os modos de circunlocução, filtragem e focalização; ao mesmo tempo, escutar as palavras, o tom de voz e os silêncios, alternando flexivelmente para captar pistas emocionais, padrões e inconscientes.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "311"
+    ],
+    "sect": "pdt"
+  },
+  "312": {
+    "skill_id": "312",
+    "skill_name": "Escuta Circunstancial",
+    "skill_description": "Não focar intencionalmente em nenhum conteúdo, receber todo o material de forma aberta, evitando ouvir seletivamente ou perder algo; frequentemente usado na fase inicial da entrevista, para ajudar a descobrir possíveis pontos focais e pistas inconscientes.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "311",
+      "312"
+    ],
+    "sect": "pdt"
+  },
+  "313": {
+    "skill_id": "313",
+    "skill_name": "Escuta Filtrada",
+    "skill_description": "Filtrar temas repetidos ou emoções intensas do fundo para começar a identificar conteúdo importante; prestar atenção a inconsistências e interrupções de padrões, preparando para o foco subsequente e a intervenção.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "311",
+      "313"
+    ],
+    "sect": "pdt"
+  },
+  "314": {
+    "skill_id": "314",
+    "skill_name": "Escuta Focada",
+    "skill_description": "Concentrar a atenção em um tópico ou emoção específica, bloqueando a maioria do ruído de fundo; alternar flexivelmente entre o foco e a visão geral para capturar continuamente mudanças e novas pistas.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "311",
+      "314"
+    ],
+    "sect": "pdt"
+  },
+  "315": {
+    "skill_id": "315",
+    "skill_name": "Reflexão",
+    "skill_description": "Processar ativamente a informação ouvida para compreender o significado, decidir o foco e a estratégia de tratamento; aplicar os princípios de seleção e preparação, e integrar recursos teóricos e experienciais.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "315"
+    ],
+    "sect": "pdt"
+  },
+  "316": {
+    "skill_id": "316",
+    "skill_name": "Princípio das Três Escolhas",
+    "skill_description": "Usado para decidir o ponto de entrada da intervenção: primeiro selecionar material da consciência superficial; seguir a sensação com a emoção como guia; prestar atenção à contra-transferência para captar a reação interna do terapeuta.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "315",
+      "316"
+    ],
+    "sect": "pdt"
+  },
+  "317": {
+    "skill_id": "317",
+    "skill_name": "From the surface to the depths",
+    "skill_description": "Start with materials that are close to consciousness and have low anxiety, gradually approach deeper unconscious levels, avoiding the triggering of excessive defenses and resistance, to increase the acceptability of the intervention.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "315",
+      "316",
+      "317"
+    ],
+    "sect": "pdt"
+  },
+  "318": {
+    "skill_id": "318",
+    "skill_name": "Follow the feeling",
+    "skill_description": "The most real and intense emotions of the visitor in the present moment serve as navigation to determine the path to important content, prioritizing focus and intervention around emotions.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "315",
+      "316",
+      "318"
+    ],
+    "sect": "pdt"
+  },
+  "319": {
+    "skill_id": "319",
+    "skill_name": "Note countertransference",
+    "skill_description": "Awareness of the therapist's own emotional reactions, viewing them as clues to understand the importance or emotional value of the material, and using them to adjust focus and strategy.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "315",
+      "316",
+      "319"
+    ],
+    "sect": "pdt"
+  },
+  "320": {
+    "skill_id": "320",
+    "skill_name": "Three preparation principles",
+    "skill_description": "Assess the visitor's current availability and capacity: therapeutic alliance strength, therapeutic stage, current functioning level, to determine when and to what depth to intervene.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "315",
+      "320"
+    ],
+    "sect": "pdt"
+  },
+  "321": {
+    "skill_id": "321",
+    "skill_name": "Avaliar o estado da aliança terapêutica",
+    "skill_description": "Avaliar continuamente a solidez da confiança e da cooperação; quanto mais sólida a aliança, mais o cliente pode suportar o material doloroso; a aliança varia com os eventos, necessitando de ajustes correspondentes.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "315",
+      "320",
+      "321"
+    ],
+    "sect": "pdt"
+  },
+  "322": {
+    "skill_id": "322",
+    "skill_name": "Avaliar a fase do tratamento",
+    "skill_description": "Diferenciar as diferenças na aceitação entre as fases inicial, intermediária e final; a fase intermediária é mais propensa a explorar temas sensíveis, a fase inicial foca em estrutura e suporte, e a fase final foca nos temas de término.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "315",
+      "320",
+      "322"
+    ],
+    "sect": "pdt"
+  },
+  "323": {
+    "skill_id": "323",
+    "skill_name": "Avaliar o estado funcional do cliente",
+    "skill_description": "Observar as flutuações funcionais causadas por estresse, doença, etc.; na deterioração, reduzir a profundidade de revelação e mudar para técnicas de suporte, garantindo segurança e usabilidade.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "315",
+      "320",
+      "323"
+    ],
+    "sect": "pdt"
+  },
+  "324": {
+    "skill_id": "324",
+    "skill_name": "Intervenção",
+    "skill_description": "O terapeuta implementa intervenções básicas, de suporte ou de revelação através da comunicação verbal e não verbal, avaliando a resposta do cliente para medir a eficácia e ajustando a estratégia quando necessário.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324"
+    ],
+    "sect": "pdt"
+  },
+  "325": {
+    "skill_id": "325",
+    "skill_name": "Intervenção Fundamental",
+    "skill_description": "Atravessando todo o tratamento, visa coletar informações, estruturar o processo e compreender a expressão; inclui orientação e educação psicológica, questionamento, informação, empatia, associação livre, reflexão e silêncio.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "325"
+    ],
+    "sect": "pdt"
+  },
+  "326": {
+    "skill_id": "326",
+    "skill_name": "Orientação e Educação Psicológica",
+    "skill_description": "Explicar as práticas e expectativas do tratamento, ensinar associação livre, fala de sonhos e emoções, a expressão dos pensamentos do terapeuta, aprimorar o uso e o engajamento do cliente no tratamento.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "325",
+      "326"
+    ],
+    "sect": "pdt"
+  },
+  "327": {
+    "skill_id": "327",
+    "skill_name": "Perguntas Fechadas e Abertas",
+    "skill_description": "Perguntas fechadas para obter fatos específicos; perguntas abertas para guiar descrições aprofundadas e expansão emocional. Evitar perguntar 'por que', usar mais 'o quê' e 'como', promover a exploração.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "325",
+      "327"
+    ],
+    "sect": "pdt"
+  },
+  "328": {
+    "skill_id": "328",
+    "skill_name": "Injeção de Informação",
+    "skill_description": "Fornecer informações sobre agendamento, custos, licenças, encaminhamento e medicamentos; e prestar atenção ao significado da necessidade de informação para compreender o estilo defensivo e o padrão de interação.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "325",
+      "328"
+    ],
+    "sect": "pdt"
+  },
+  "329": {
+    "skill_id": "329",
+    "skill_name": "Empatia",
+    "skill_description": "Transmitir compreensão e aceitação através de linguagem empática, validar a dor e o esforço; pode apoiar a função e também pode ser um ponto de partida para a revelação, explorando seus significados potenciais.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "325",
+      "329"
+    ],
+    "sect": "pdt"
+  },
+  "330": {
+    "skill_id": "330",
+    "skill_name": "Solicitar associações",
+    "skill_description": "Convidar a associação livre de sonhos, eventos e sentimentos, aumentando a autoconsciência e a amplitude do material; pode ser usado para objetivos de suporte ou para exploração profunda do inconsciente.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "325",
+      "330"
+    ],
+    "sect": "pdt"
+  },
+  "331": {
+    "skill_id": "331",
+    "skill_name": "Declaração reflexiva",
+    "skill_description": "Fornecer feedback e generalizações sobre as emoções e pensamentos do cliente, permitindo que ele calibre e refine a experiência; promove a escuta empática e uma compreensão mútua mais precisa.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "325",
+      "331"
+    ],
+    "sect": "pdt"
+  },
+  "332": {
+    "skill_id": "332",
+    "skill_name": "Silêncio",
+    "skill_description": "O silêncio intencional incentiva a continuar a associação, diminuir o ritmo ou acalmar as emoções; deve ser aplicado com cautela de acordo com a tolerância, para evitar ansiedade excessiva ou retraimento.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "325",
+      "332"
+    ],
+    "sect": "pdt"
+  },
+  "333": {
+    "skill_id": "333",
+    "skill_name": "Intervenção de Suporte",
+    "skill_description": "Suporta funções ou comportamentos ausentes ou fracos, melhorando diretamente a função ou o comportamento; combina fornecimento e assistência, ajustado flexivelmente de acordo com o indivíduo e o momento.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "333"
+    ],
+    "sect": "pdt"
+  },
+  "334": {
+    "skill_id": "334",
+    "skill_name": "Tipo de Fornecimento",
+    "skill_description": "Suprimento direto da função ausente no momento, como incentivar, nomear, redirecionar, acalmar, proteger, aconselhar, construir e fornecer perspectivas, estabilizando rapidamente o estado.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "333",
+      "334"
+    ],
+    "sect": "pdt"
+  },
+  "335": {
+    "skill_id": "335",
+    "skill_name": "Tipo de Assistência",
+    "skill_description": "Auxiliar o uso das funções fracas do próprio indivíduo, estabelecendo metas por meio de demonstração, orientação e colaboração, testando a realidade, resolvendo problemas e organizando o planejamento, reconstruindo a capacidade.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "333",
+      "335"
+    ],
+    "sect": "pdt"
+  },
+  "336": {
+    "skill_id": "336",
+    "skill_name": "Intervenção de Revelação",
+    "skill_description": "O processo de transformar o inconsciente em consciente, geralmente progredindo através de confrontação, clarificação e explicação; introduz materiais mais profundos quando devidamente preparado para aumentar a percepção.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "336"
+    ],
+    "sect": "pdt"
+  },
+  "337": {
+    "skill_id": "337",
+    "skill_name": "Confrontação",
+    "skill_description": "Guiar a atenção para fenômenos como pausas, lapsos de fala ou mudanças de tópico, despertar a curiosidade e incentivar o entrevistado a investigar os sentimentos e significados por trás disso, abrindo o processo de revelação.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "336",
+      "337"
+    ],
+    "sect": "pdt"
+  },
+  "338": {
+    "skill_id": "338",
+    "skill_name": "Esclarecimento",
+    "skill_description": "Conectar fenômenos recorrentes com pontos no tempo, identificar padrões e perguntar sobre familiaridade, trazer o conteúdo inconsciente à vista, pavimentando o caminho para a explicação.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "336",
+      "338"
+    ],
+    "sect": "pdt"
+  },
+  "339": {
+    "skill_id": "339",
+    "skill_name": "Explicação",
+    "skill_description": "Conectar comportamentos ou emoções a fatores inconscientes através de linguagem hipotética, expandir para explicações genéticas quando necessário, ajudar o entrevistado a obter insights.",
+    "parent_ids": [
+      "1016",
+      "310",
+      "324",
+      "336",
+      "339"
+    ],
+    "sect": "pdt"
+  },
+  "772": {
+    "skill_id": "772",
+    "skill_name": "Análise do Inconsciente",
+    "skill_description": "Através de escuta, reflexão e intervenção, identificar sistematicamente fantasias inconscientes, conflitos e mecanismos de defesa, revelar e apoiar sequencialmente, reduzir a ansiedade, promover defesas mais flexíveis e funções interpessoais mais saudáveis.",
+    "parent_ids": [
+      "1016",
+      "772"
+    ],
+    "sect": "pdt"
+  },
+  "773": {
+    "skill_id": "773",
+    "skill_name": "Fantasia Inconsciente",
+    "skill_description": "Refere-se a desejos ou medos que residem no inconsciente, pequenos e com características infantis, que impulsionam o comportamento e moldam as defesas; o conjunto relacionado é chamado de \"complexos\". Revela pode aliviar a vergonha, promover a autocompreensão e escolhas mais autônomas.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "773"
+    ],
+    "sect": "pdt"
+  },
+  "774": {
+    "skill_id": "774",
+    "skill_name": "Escuta da Fantasia Inconsciente",
+    "skill_description": "Capturar \"a história por trás da história\" na narração, pensar no que o cliente deseja ou teme neste momento; focar nos desejos infantilizados e pistas anormais, em indivíduos de alta funcionalidade são mais sutis, requer escuta atenta dos temas recorrentes.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "773",
+      "774"
+    ],
+    "sect": "pdt"
+  },
+  "775": {
+    "skill_id": "775",
+    "skill_name": "Reflexão da Fantasia Inconsciente",
+    "skill_description": "Resumir a fantasia dominante em uma ou duas frases, julgar seu tipo (desejo, medo ou visão de si mesmo), avaliar a conexão com a emoção dominante; selecionar aquelas próximas à superfície, preparando para o confronto, esclarecimento e explicação subsequentes.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "773",
+      "775"
+    ],
+    "sect": "pdt"
+  },
+  "776": {
+    "skill_id": "776",
+    "skill_name": "Intervenção para a Fantasia Inconsciente",
+    "skill_description": "Seguir os princípios de escolha e preparação, iniciar lentamente, priorizar o tratamento do conteúdo próximo à superfície; introduzir a consciência gradualmente através da cadeia de confronto—esclarecimento—explicação, equilibrando segurança e aliança, evitando aprofundamento da resistência e ansiedade.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "773",
+      "776"
+    ],
+    "sect": "pdt"
+  },
+  "777": {
+    "skill_id": "777",
+    "skill_name": "Exposição da fantasia inconsciente (fantasia inconsciente)",
+    "skill_description": "Ajudar o cliente a tornar consciente da fantasia central em um contexto seguro, reduzir a vergonha, aumentar a compreensão e o espaço de escolha; o processo é lento e cauteloso, usando perguntas, confrontação e esclarecimento para preparar explicações no momento oportuno.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "773",
+      "776",
+      "777"
+    ],
+    "sect": "pdt"
+  },
+  "778": {
+    "skill_id": "778",
+    "skill_name": "Confrontação da fantasia inconsciente",
+    "skill_description": "Apontar inconsistências ou omissões na narrativa, focar nos detalhes do momento presente, para que desejos ou medos ocultos emerjam na superfície, como \"você não disse que gosta disso\"; acionar a consciência de forma suave em vez de escalar a defesa.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "773",
+      "776",
+      "777",
+      "778"
+    ],
+    "sect": "pdt"
+  },
+  "779": {
+    "skill_id": "779",
+    "skill_name": "Esclarecimento da fantasia inconsciente",
+    "skill_description": "Organizar situações repetidas e expectativas centrais através de múltiplas conversas, clarificar o ponto de perturbação real (como \"não é que ele não fez, mas que ele não pensou em si mesmo\"), para estabelecer a base semântica e emocional para a aceitação da explicação.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "773",
+      "776",
+      "777",
+      "779"
+    ],
+    "sect": "pdt"
+  },
+  "780": {
+    "skill_id": "780",
+    "skill_name": "Explicação da fantasia inconsciente",
+    "skill_description": "Conectar o comportamento manifesto com o desejo latente através de um esquema causal, nomear a \"fantasia central\" e correlacioná-la com a emoção atual; apresentar quando tolerável, para promover escolhas mais flexíveis na realidade.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "773",
+      "776",
+      "777",
+      "780"
+    ],
+    "sect": "pdt"
+  },
+  "781": {
+    "skill_id": "781",
+    "skill_name": "Conflito inconsciente",
+    "skill_description": "Gerado pela colisão de fantasias inconscientes opostas, que produzem ansiedade e ativam defesas; se não resolvido a longo prazo, leva à rigidez das funções e relacionamentos. A explicação do conflito pode reduzir a ansiedade e promover defesas mais maduras e adaptativas.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781"
+    ],
+    "sect": "pdt"
+  },
+  "782": {
+    "skill_id": "782",
+    "skill_name": "Escutar conflitos inconscientes",
+    "skill_description": "Escutar as pistas de ansiedade como um bombeiro procurando por 'fumaça'; prestar atenção a mudanças emocionais, inconsistências, lapsos de fala e sonhos, para rastrear as fantasias opostas subjacentes e as defesas em operação.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "782"
+    ],
+    "sect": "pdt"
+  },
+  "783": {
+    "skill_id": "783",
+    "skill_name": "Escutar pistas de ansiedade",
+    "skill_description": "Prestar atenção às palavras e comportamentos relacionados à ansiedade: inquietação, agitação, olhar para fora na sala de tratamento; problemas de sono e alimentação fora do tratamento, sensibilidade, procrastinação, impulsividade, declínio do julgamento e sonhos ansiosos.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "782",
+      "783"
+    ],
+    "sect": "pdt"
+  },
+  "784": {
+    "skill_id": "784",
+    "skill_name": "Escutar mudanças emocionais",
+    "skill_description": "Qualquer mudança significativa no estado emocional (irritabilidade, humor de depressão, elevação súbita do humor) pode ser uma pista de conflito e ansiedade; compará-la com a situação atual para localizar o ponto ativo das fantasias opostas.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "782",
+      "784"
+    ],
+    "sect": "pdt"
+  },
+  "785": {
+    "skill_id": "785",
+    "skill_name": "Ouvir pistas inconsistentes",
+    "skill_description": "Identificar a incompatibilidade entre experiência e emoção, emoção e pensamento, e pensamento e pensamento, como chorar em momentos de alegria, ficar deprimido ao lembrar de um amor, ou planos contraditórios, que indicam conflitos profundos em operação.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "782",
+      "785"
+    ],
+    "sect": "pdt"
+  },
+  "786": {
+    "skill_id": "786",
+    "skill_name": "Ouvir pistas de lapsos de fala",
+    "skill_description": "Lapsos de fala ocorrem quando pensamentos ou emoções reprimidas emergem, como dizer \"chefe\" como \"pai\"; tais erros frequentemente apontam para a conexão entre fantasias no relacionamento inicial e o canal de conflito atual.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "782",
+      "786"
+    ],
+    "sect": "pdt"
+  },
+  "787": {
+    "skill_id": "787",
+    "skill_name": "Ouvir pistas de sonhos",
+    "skill_description": "Sonhos ansiosos frequentemente sinalizam a existência de conflito; a exploração e interpretação dos sonhos ajudam a identificar fantasias dominantes e seus opostos, fornecendo pistas para a compreensão dos sintomas e a escolha do foco da intervenção.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "782",
+      "787"
+    ],
+    "sect": "pdt"
+  },
+  "788": {
+    "skill_id": "788",
+    "skill_name": "Refletir conflitos inconscientes",
+    "skill_description": "Refinar os dois extremos de fantasias opostas, organizar a conexão com a emoção dominante; avaliar em camadas do material superficial ao profundo, priorizando a parte \"levemente passível de entrar na consciência\", evitando gatilhos de resistência excessiva.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "788"
+    ],
+    "sect": "pdt"
+  },
+  "789": {
+    "skill_id": "789",
+    "skill_name": "Intervention for Unconscious Conflict",
+    "skill_description": "Under alliance permission, gradually reveal conflict through confrontation—clarification—explanation; include genetic or transference context when necessary to help integrate and choose more adaptive defenses, alleviating anxiety and symptoms.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "789"
+    ],
+    "sect": "pdt"
+  },
+  "790": {
+    "skill_id": "790",
+    "skill_name": "Revealing Intervention (Unconscious Conflict)",
+    "skill_description": "Bring the conflict into consciousness so it can be thought about, reducing paralysis and pathological defenses; proceed cautiously, first approaching with questions and clarification, then providing explanations when emotionally ready.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "789",
+      "790"
+    ],
+    "sect": "pdt"
+  },
+  "791": {
+    "skill_id": "791",
+    "skill_name": "Confrontation of Unconscious Conflict",
+    "skill_description": "Directly point out the dilemma and pull (e.g., \"half want to tell, half want to hide\") in words and actions, lock onto the core of the conflict, prompt a pause and observation of one's opposing motives and consequences.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "789",
+      "790",
+      "791"
+    ],
+    "sect": "pdt"
+  },
+  "792": {
+    "skill_id": "792",
+    "skill_name": "Clarification of Unconscious Conflict",
+    "skill_description": "Sort out the components of the conflict and triggering situations, distinguish the trajectories of wishes and fears, connect the present with recurring patterns, structure the problem, facilitating subsequent explanation and integration.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "789",
+      "790",
+      "792"
+    ],
+    "sect": "pdt"
+  },
+  "793": {
+    "skill_id": "793",
+    "skill_name": "Explicação de Conflito Inconsciente",
+    "skill_description": "Fornecer um mapa causal, conectar fantasias opostas, ansiedade e defesa, e pode introduzir transferência e experiências precoces; propor dentro do alcance tolerável, ajudando-o a formar novas compreensões e escolhas.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "781",
+      "789",
+      "790",
+      "793"
+    ],
+    "sect": "pdt"
+  },
+  "794": {
+    "skill_id": "794",
+    "skill_name": "Mecanismos de Defesa",
+    "skill_description": "Estratégias psicológicas desencadeadas pela ansiedade, usadas para proteger o self contra emoções e conflitos desagradáveis; podem trazer ganhos primários e secundários, mas exigem um custo, com o nível de adaptação e o impacto interpessoal variando.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794"
+    ],
+    "sect": "pdt"
+  },
+  "795": {
+    "skill_id": "795",
+    "skill_name": "Escuta de Mecanismos de Defesa",
+    "skill_description": "Ver a resistência como um sinal da presença da defesa, prestar atenção a bloqueios de fala, silêncios, atrasos, etc.; identificar a combinação de defesas individualizada e o momento ao longo do tratamento, para fornecer base para a escolha de técnicas de suporte ou de revelação.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "795"
+    ],
+    "sect": "pdt"
+  },
+  "796": {
+    "skill_id": "796",
+    "skill_name": "Reflexão sobre Mecanismos de Defesa",
+    "skill_description": "Confirmar a defesa dominante, avaliar sua adaptabilidade e 'custo', decidir reforçar ou substituir; combinando aliança e fase, selecionar o mais destrutivo e superficial como alvo de intervenção prioritária.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "796"
+    ],
+    "sect": "pdt"
+  },
+  "797": {
+    "skill_id": "797",
+    "skill_name": "Intervention targeting defense mechanisms",
+    "skill_description": "Two paths in parallel: Supportive—strengthen mature defenses, suggest low-cost alternatives; Revealing—bring defenses into awareness to reselect strategies. Always slow, respectful, avoid sudden dismantling of defenses.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797"
+    ],
+    "sect": "pdt"
+  },
+  "798": {
+    "skill_id": "798",
+    "skill_name": "Basic intervention (defense mechanism)",
+    "skill_description": "Follow 'start slowly', use questioning, association requests, and empathetic statements to prompt detail expansion; collect clues and approach surface unconscious content without triggering excessive anxiety.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797",
+      "798"
+    ],
+    "sect": "pdt"
+  },
+  "799": {
+    "skill_id": "799",
+    "skill_name": "Open-ended questioning",
+    "skill_description": "Use open-ended questions to guide the reenactment of scenes and thoughts, enrich details, help unconscious clues approach consciousness, such as 'What were you thinking then?' to pave the way for subsequent clarification and explanation.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797",
+      "798",
+      "799"
+    ],
+    "sect": "pdt"
+  },
+  "800": {
+    "skill_id": "800",
+    "skill_name": "Supportive intervention (defense mechanism)",
+    "skill_description": "Prioritize use when functioning is fragile, confirm and strengthen adaptive defenses, test reality, offer praise and suggestions, help manage emotions and conflicts in a lower-cost way, reduce interpersonal harm.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797",
+      "800"
+    ],
+    "sect": "pdt"
+  },
+  "801": {
+    "skill_id": "801",
+    "skill_name": "Confirmar o mecanismo de defesa",
+    "skill_description": "O primeiro passo é chamar gentilmente a atenção para a defesa ou comportamento problemático, nomear o padrão e o momento, ajudando o cliente a ver e reconhecer sua existência sem excesso de vergonha.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797",
+      "800",
+      "801"
+    ],
+    "sect": "pdt"
+  },
+  "802": {
+    "skill_id": "802",
+    "skill_name": "Confirmar o \"custo\" do mecanismo de defesa",
+    "skill_description": "O segundo passo é apontar as consequências negativas dessa defesa, como distanciamento, zombaria ou dano ao relacionamento; fazer o cliente avaliar os ganhos e perdas, construindo uma ponte para a motivação de mudança e as opções alternativas.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797",
+      "800",
+      "802"
+    ],
+    "sect": "pdt"
+  },
+  "803": {
+    "skill_id": "803",
+    "skill_name": "Confirmar as opções alternativas",
+    "skill_description": "O terceiro passo é explorar em conjunto opções mais saudáveis e de menor custo, como verificação da realidade, sublimação, altruísmo, etc.; apoiar a tentativa com empatia e elogios, consolidando o uso da nova defesa.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797",
+      "800",
+      "803"
+    ],
+    "sect": "pdt"
+  },
+  "804": {
+    "skill_id": "804",
+    "skill_name": "Intervenção reveladora (mecanismo de defesa)",
+    "skill_description": "Quando a aliança é sólida e o material está na superfície, confrontar gradualmente — clarificar — explicar, tornando a defesa inconsciente pensável; o objetivo é usar de forma flexível em vez de eliminar a defesa, reduzindo rigidez e custo.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797",
+      "804"
+    ],
+    "sect": "pdt"
+  },
+  "805": {
+    "skill_id": "805",
+    "skill_name": "Defesa e Confronto",
+    "skill_description": "No momento em que a defesa, como evitação ou distanciamento, é manifestada no estado de prontidão emocional, indicar a manifestação e o ciclo da defesa, para induzir a pausa na reação automática; tom respeitoso, evitando humilhação e desintegração.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797",
+      "804",
+      "805"
+    ],
+    "sect": "pdt"
+  },
+  "806": {
+    "skill_id": "806",
+    "skill_name": "Esclarecimento da Defesa",
+    "skill_description": "Detalhar o contexto, a função e os pontos de gatilho da defesa, conectar exemplos em diferentes períodos de tempo, distinguir os benefícios de curto prazo e os custos de longo prazo, para preparar a cognição para aceitar a explicação e tentar alternativas.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797",
+      "804",
+      "806"
+    ],
+    "sect": "pdt"
+  },
+  "807": {
+    "skill_id": "807",
+    "skill_name": "Explicação da Defesa",
+    "skill_description": "Explicar como essa defesa protege contra a vergonha e o medo, ao mesmo tempo que acarreta perdas no relacionamento ou na realidade; enfatizar que o objetivo é expandir as opções e a maturidade, e não privar sua autoproteção.",
+    "parent_ids": [
+      "1016",
+      "772",
+      "794",
+      "797",
+      "804",
+      "807"
+    ],
+    "sect": "pdt"
+  },
+  "340": {
+    "skill_id": "340",
+    "skill_name": "Atenção Emocional",
+    "skill_description": "Guiado pelo princípio da primazia emocional, manter-se sempre próximo das emoções explícitas e implícitas do cliente, usar a emoção como canal para o inconsciente, tanto para diagnóstico e compreensão, quanto para aprimorar a capacidade de regulação emocional e a eficácia terapêutica.",
+    "parent_ids": [
+      "1016",
+      "340"
+    ],
+    "sect": "pdt"
+  },
+  "341": {
+    "skill_id": "341",
+    "skill_name": "Escuta",
+    "skill_description": "Em torno da escuta emocional dominante: discernir se a expressão e o conteúdo correspondem, se há ausência de emoção, se a intensidade é excessiva ou insuficiente, observar o comportamento e as mudanças emocionais dentro e fora da conversa, para capturar sentimentos explícitos ou implícitos.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "341"
+    ],
+    "sect": "pdt"
+  },
+  "342": {
+    "skill_id": "342",
+    "skill_name": "Reflexão",
+    "skill_description": "Após a escuta, aplicar os princípios de escolha e preparação, combinando fase, aliança e função, para determinar qual emoção está sendo focada: primeiro a empatia superficial, emoções opressivas, ou investigar sentimentos mais profundos que estão sendo defendidos quando o relacionamento é estável.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "342"
+    ],
+    "sect": "pdt"
+  },
+  "343": {
+    "skill_id": "343",
+    "skill_name": "Intervenção",
+    "skill_description": "A intervenção emocional é dividida em básica, de suporte e de revelação: primeiro estabelecer o foco através de psicoeducação, orientação, perguntas e empatia, depois apoiar a regulação quando houver desequilíbrio, ou revelar emoções inconscientes quando as condições estiverem maduras.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343"
+    ],
+    "sect": "pdt"
+  },
+  "344": {
+    "skill_id": "344",
+    "skill_name": "Intervenção Básica",
+    "skill_description": "Começando com psicoeducação, orientação, perguntas e empatia, ajudar o cliente a identificar, nomear a experiência e ser compreendido, como plataforma para trabalho de suporte ou explicativo, conduzindo com segurança à exploração emocional mais profunda.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "344"
+    ],
+    "sect": "pdt"
+  },
+  "345": {
+    "skill_id": "345",
+    "skill_name": "Educação e Orientação Psicológica",
+    "skill_description": "Explicar de forma concisa a conexão entre comportamento e emoção (como a compulsão alimentar e sentimentos de desconforto), fornecer informações e sugestões específicas, ajudar o cliente a entender a cadeia emoção-comportamento e formar respostas e escolhas mais adaptativas.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "344",
+      "345"
+    ],
+    "sect": "pdt"
+  },
+  "346": {
+    "skill_id": "346",
+    "skill_name": "Empatia",
+    "skill_description": "Refletir com gentileza e sem julgamento a dor e a vulnerabilidade do cliente (como \"isso deve ser muito difícil\" ), transmitir cuidado e compreensão, reduzir a vergonha e a defesa, promover a expressão emocional e a exploração adicional.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "344",
+      "346"
+    ],
+    "sect": "pdt"
+  },
+  "347": {
+    "skill_id": "347",
+    "skill_name": "Questionamento",
+    "skill_description": "Usar perguntas abertas para focar nas emoções e gatilhos (como \"o que você sentiu antes?\" ), guiar o cliente a identificar, detalhar e conectar emoções com experiências, pavimentando o caminho para o manejo emocional e o trabalho explicativo.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "344",
+      "347"
+    ],
+    "sect": "pdt"
+  },
+  "348": {
+    "skill_id": "348",
+    "skill_name": "Intervenção de Suporte",
+    "skill_description": "Quando o cliente é inundado por emoções intensas, o objetivo é aliviar ou aceitar as emoções insuportáveis, e aumentar a capacidade de auto-consolo e regulação, reduzir o risco e a dependência de lidar com o sofrimento através de automutilação, substâncias, etc.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "348"
+    ],
+    "sect": "pdt"
+  },
+  "349": {
+    "skill_id": "349",
+    "skill_name": "Desarmar Emoções",
+    "skill_description": "Usar técnicas de oferta direta e imediata (nomear emoções, oferecer conforto e tranquilização, eliminar dúvidas, validação) para ajudar o cliente a reduzir rapidamente, mudar de um estado de perda de controle para um estado verbalizável, criando segurança para a exploração subsequente.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "348",
+      "349"
+    ],
+    "sect": "pdt"
+  },
+  "350": {
+    "skill_id": "350",
+    "skill_name": "Nomear Emoções",
+    "skill_description": "Transformar experiências vagas e ameaçadoras em vocabulário emocional verbalizável (como tristeza, raiva, vergonha), para delimitar e definir as emoções, aumentar o senso de controle e promover a autoobservação e reflexão adicional.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "348",
+      "349",
+      "350"
+    ],
+    "sect": "pdt"
+  },
+  "351": {
+    "skill_id": "351",
+    "skill_name": "Conforto e Tranquilização",
+    "skill_description": "Fornecer consolo e apoio emocional por meio de empatia, elogios, encorajamento e esperança, demonstrando calma e regulação, aliviando culpa e vergonha, ajudando o cliente a transitar de um estado de alta ativação para um estado reflexivo.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "348",
+      "349",
+      "351"
+    ],
+    "sect": "pdt"
+  },
+  "352": {
+    "skill_id": "352",
+    "skill_name": "Eliminar Dúvidas",
+    "skill_description": "Reduzir a catastrofização e a autocrítica por meio de explicações normalizadoras e tranquilizadoras (como \"você não enlouqueceu\"), reconstruir segurança e confiança, preparando para aprender respostas alternativas e continuar a exploração emocional, limpando obstáculos psicológicos.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "348",
+      "349",
+      "352"
+    ],
+    "sect": "pdt"
+  },
+  "353": {
+    "skill_id": "353",
+    "skill_name": "Experiential Validation",
+    "skill_description": "Validar e calibrar as emoções e o contexto do cliente, confirmar a racionalidade dos sentimentos e esclarecer os fatos, aliviar a confusão e a autocrítica, fazer a experiência se concretizar e apoiar uma autorregulação e escolha mais eficazes.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "348",
+      "349",
+      "353"
+    ],
+    "sect": "pdt"
+  },
+  "354": {
+    "skill_id": "354",
+    "skill_name": "Emotional Acceptance",
+    "skill_description": "Carregar emoções intensas em uma postura estável e acolhedora na relação terapêutica, transmitir aceitação parcialmente de forma não verbal e trazer experiências não formadas para a linguagem, e apoiar a evitação de emoções extremas com função de proteção quando necessário.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "348",
+      "354"
+    ],
+    "sect": "pdt"
+  },
+  "355": {
+    "skill_id": "355",
+    "skill_name": "Evocative Intervention",
+    "skill_description": "Visa trazer emoções inconscientes para a consciência, usar as emoções para compreender outros conteúdos inconscientes e rastrear a origem das emoções negativas; frequentemente progredindo através de confrontação, esclarecimento e explicação, especialmente quando a aliança está sólida.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "355"
+    ],
+    "sect": "pdt"
+  },
+  "356": {
+    "skill_id": "356",
+    "skill_name": "Emotional Confrontation",
+    "skill_description": "Exige que o cliente enfrente as emoções ignoradas ou ausentes, confrontar os sentimentos dominantes para promover a expressão e exploração, como apontar a inconsistência entre a ambiguidade semântica e as consequências comportamentais, ativando a atenção e a expressão das emoções.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "355",
+      "356"
+    ],
+    "sect": "pdt"
+  },
+  "357": {
+    "skill_id": "357",
+    "skill_name": "Clarificação Emocional",
+    "skill_description": "Conecta fragmentos dispersos com padrões repetitivos, aponta a conexão entre linguagem ambígua e o contexto, inclui a regularidade sob o fluxo do transferência, fornecendo um quadro mais claro para explicar as motivações inconscientes e defesas.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "355",
+      "357"
+    ],
+    "sect": "pdt"
+  },
+  "358": {
+    "skill_id": "358",
+    "skill_name": "Explicação Emocional",
+    "skill_description": "Com base em pistas suficientes, aponta as motivações inconscientes e defesas de evitação de emoções (como a identificação diferenciada dos pais), ajudando o cliente a entender a conexão entre emoção e história, gradualmente restaurando a conexão com a emoção.",
+    "parent_ids": [
+      "1016",
+      "340",
+      "343",
+      "355",
+      "358"
+    ],
+    "sect": "pdt"
+  },
+  "610": {
+    "skill_id": "610",
+    "skill_name": "Análise de Transferência",
+    "skill_description": "A análise de transferência é a tarefa central para compreender todas as emoções do cliente em relação ao terapeuta. Ela revela os padrões de relacionamento do cliente com pessoas importantes, avalia o momento de intervenção de suporte ou revelação, repara a aliança e fornece acesso à exploração de memória e conflito. No modo de suporte, pode-se acomodar e limitar a transferência; no modo de revelação, a explicação facilita a insight e a escolha.",
+    "parent_ids": [
+      "1016",
+      "610"
+    ],
+    "sect": "pdt"
+  },
+  "611": {
+    "skill_id": "611",
+    "skill_name": "Classificação dos Tipos de Transferência",
+    "skill_description": "Através da classificação da transferência em categorias (emocional, interpessoal passada, substituição), fornece um quadro para compreensão, registro e discussão, ajudando a identificar a origem e a função, orientando a escolha de escuta, reflexão e intervenção subsequentes, aumentando a consistência terapêutica.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "611"
+    ],
+    "sect": "pdt"
+  },
+  "612": {
+    "skill_id": "612",
+    "skill_name": "Transferência Emocional",
+    "skill_description": "Identificar a transferência emocional como positiva ou negativa. A transferência positiva (confiança, idealização, amor, etc.) apoia a aliança, a menos que seja excessiva e precise ser tratada; a transferência negativa (raiva, ciúme, humilhação, etc.) deve rastrear sua origem e evitar prejudicar o tratamento.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "611",
+      "612"
+    ],
+    "sect": "pdt"
+  },
+  "613": {
+    "skill_id": "613",
+    "skill_name": "Transferência de Relacionamentos Interpessoais Passados",
+    "skill_description": "O cliente projeta experiências de pessoas importantes do passado 'como se' no terapeuta, incluindo transferência materna, paterna, de irmãos, e padrões de desenvolvimento binários/ternários. Compreender sua origem ajuda a lidar com temas de vergonha, apego e competição.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "611",
+      "613"
+    ],
+    "sect": "pdt"
+  },
+  "614": {
+    "skill_id": "614",
+    "skill_name": "Transferência de Substituição",
+    "skill_description": "Quando a transferência direta é muito forte, a emoção é substituída por terceiros ou situações. Escutar comentários e histórias sobre os outros pode captar pistas, e retornar ao relacionamento terapêutico para examinar seu significado relacionado ao terapeuta, para promover a consciência e a verificação da realidade.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "611",
+      "614"
+    ],
+    "sect": "pdt"
+  },
+  "615": {
+    "skill_id": "615",
+    "skill_name": "Escutar Pistas de Transferência",
+    "skill_description": "Escutar conscientemente as pistas de transferência: captar a fala espontânea, detalhes de entrada e saída, comentários sobre os outros, roteiros interpessoais repetidos e sua contra-transferência. Registrar as pistas para estabelecer a base e o momento para reflexão e intervenção subsequentes.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "615"
+    ],
+    "sect": "pdt"
+  },
+  "616": {
+    "skill_id": "616",
+    "skill_name": "Reconhecer a resistência à transferência",
+    "skill_description": "Reconhecer a resistência à consciência da transferência: o cliente nega a relação com o terapeuta, vê a emoção como \"real\", ou usa uma emoção para mascarar outra. Observar sinais verbais e não verbais, para preparar a educação psicológica e intervenções de suporte.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "615",
+      "616"
+    ],
+    "sect": "pdt"
+  },
+  "617": {
+    "skill_id": "617",
+    "skill_name": "Reconhecer as categorias da transferência",
+    "skill_description": "Identificar categorias da transferência na escuta: positiva/negativa, maternidade/paternidade/fraterna, binária/triádica, e substituição. A categorização ajuda a delimitar a discussão, comunicar com o supervisor e selecionar as técnicas de suporte ou revelação apropriadas.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "615",
+      "617"
+    ],
+    "sect": "pdt"
+  },
+  "618": {
+    "skill_id": "618",
+    "skill_name": "Refletir sobre a transferência e o momento da intervenção",
+    "skill_description": "Após notar pistas, avaliar se o cliente está preparado, a importância atual, o momento da explicação, a exploração de substitutos ou transferência direta, incentivar a consciência ou a revelação. Prevenir tempestades de transferência, garantir a verificação da realidade e a segurança, manter a aliança.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "618"
+    ],
+    "sect": "pdt"
+  },
+  "619": {
+    "skill_id": "619",
+    "skill_name": "Estratégias de intervenção na transferência",
+    "skill_description": "Selecionar a intervenção com base na função do cliente e na aliança: básica (educação psicológica, questionamento), de suporte (acolhimento e reparação), ou de revelação (confrontação, clarificação, explicação). Considerar a intensidade e o momento, evitando sobrecarregar o cliente vulnerável.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619"
+    ],
+    "sect": "pdt"
+  },
+  "620": {
+    "skill_id": "620",
+    "skill_name": "Intervenção Fundamental",
+    "skill_description": "Usar educação e perguntas estruturadas para ajudar o cliente a entender o que é transferência, por que discutir isso é benéfico para o tratamento, reconhecer seu desconforto, e gradualmente construir a capacidade de discutir os sentimentos em relação ao terapeuta durante o tratamento, estabelecendo a base para o trabalho subsequente.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "620"
+    ],
+    "sect": "pdt"
+  },
+  "621": {
+    "skill_id": "621",
+    "skill_name": "Educação Psicológica da Transferência",
+    "skill_description": "Explicar no início do tratamento: discutir seus pensamentos e sentimentos sobre mim pode revelar padrões interpessoais. Validar suas dificuldades, reiterar seu valor; quando o desconforto surgir, interpretá-lo como resistência e encorajar gentilmente a continuar a exploração.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "620",
+      "621"
+    ],
+    "sect": "pdt"
+  },
+  "622": {
+    "skill_id": "622",
+    "skill_name": "Perguntas sobre a Transferência",
+    "skill_description": "Usar perguntas específicas e com limite de tempo para investigar a transferência, como 'Quais são seus sentimentos sobre eu atrasar?' 'Como você vivencia o cancelamento da sessão?' para promover a externalização emocional, coletar informações e fornecer material para clarificação e explicação.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "620",
+      "622"
+    ],
+    "sect": "pdt"
+  },
+  "623": {
+    "skill_id": "623",
+    "skill_name": "Intervenção de Suporte",
+    "skill_description": "Quando a função é frágil ou a transferência é intensa, usar estratégias de suporte para reduzir a interferência e manter a aliança: aprender com a transferência, mas não focar intencionalmente nela, dar feedback direto sobre o comportamento no tratamento, reparar, acolher e amortecer reações hostis.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "623"
+    ],
+    "sect": "pdt"
+  },
+  "624": {
+    "skill_id": "624",
+    "skill_name": "Técnica \"este lugar agora\"",
+    "skill_description": "Incentivar o visitante a descrever seus sentimentos e suposições atuais em relação ao terapeuta, as diferenças entre o imaginado e a realidade, aprimorar a consciência psicológica e a verificação da realidade, e assim corrigir expectativas errôneas sobre os outros, melhorando a interação interpessoal fora.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "623",
+      "624"
+    ],
+    "sect": "pdt"
+  },
+  "625": {
+    "skill_id": "625",
+    "skill_name": "Nomear emoções",
+    "skill_description": "Converter emoções em linguagem e marcá-las com precisão, como \"você se sente ignorado/irritado\". Nomear pode reduzir a intensidade da emoção, ajudar a gerenciar a transferência, fornecer uma referência comum para verificação, explicação e reparo do relacionamento.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "623",
+      "625"
+    ],
+    "sect": "pdt"
+  },
+  "626": {
+    "skill_id": "626",
+    "skill_name": "Verificação da experiência atual",
+    "skill_description": "Quando a sensação do visitante aponta para um evento real, verificar sua experiência e pedir desculpas; sob permissão da aliança, corrigir levemente percepções errôneas, abrir explicações sobre os fatos, verificar a realidade em conjunto, reduzir distorções e hostilidade, estabilizar o relacionamento terapêutico.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "623",
+      "626"
+    ],
+    "sect": "pdt"
+  },
+  "627": {
+    "skill_id": "627",
+    "skill_name": "Incentivar a consciência psicológica",
+    "skill_description": "Ajudar o visitante a distinguir a experiência subjetiva de si mesmo e dos outros, imaginar outras possibilidades, descrever as experiências no tratamento, comparar a autoavaliação com a observação do terapeuta, promover a autoavaliação e a compreensão do relacionamento, reduzir a transferência paranoica.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "623",
+      "627"
+    ],
+    "sect": "pdt"
+  },
+  "628": {
+    "skill_id": "628",
+    "skill_name": "Correção da percepção de erro",
+    "skill_description": "Corrigir gentilmente sem postura defensiva, esclarecer e pedir desculpas por palavras e ações específicas, convidar o visitante a verificar a realidade em conjunto, reduzir a impressão distorcida do terapeuta, reparar as rachaduras e proteger a aliança terapêutica.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "623",
+      "628"
+    ],
+    "sect": "pdt"
+  },
+  "629": {
+    "skill_id": "629",
+    "skill_name": "Compartilhamento da experiência subjetiva",
+    "skill_description": "Compartilhar moderadamente seus sentimentos e reações subjetivas atuais, para demonstrar que você tem uma mente e experiência independentes, apoiar a consciência psicológica do visitante e diferenciar projeção da realidade, ao mesmo tempo que mantém limites, prevenindo a autoexposição excessiva.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "623",
+      "629"
+    ],
+    "sect": "pdt"
+  },
+  "630": {
+    "skill_id": "630",
+    "skill_name": "Intervenção de revelação",
+    "skill_description": "Quando a funcionalidade do visitante é estável ou os problemas interpessoais precisam ser explorados, usar a intervenção de revelação: confrontar para trazer emoções à consciência, esclarecer padrões entre contextos, explicar a conexão da reação com o inconsciente ou relacionamentos passados, promover insight e escolha.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "630"
+    ],
+    "sect": "pdt"
+  },
+  "631": {
+    "skill_id": "631",
+    "skill_name": "Confrontação transferencial",
+    "skill_description": "Usar declarações diretas ou perguntas para guiar o visitante a notar os sentimentos e reações em relação ao terapeuta, especialmente quando perto da superfície, continuar a exploração dos detalhes após a confrontação, para que o transferência entre em um nível consciente discutível.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "630",
+      "631"
+    ],
+    "sect": "pdt"
+  },
+  "632": {
+    "skill_id": "632",
+    "skill_name": "Clarification of Transference",
+    "skill_description": "Pointing out the client's repeated reactions to the therapist in different contexts or times, connecting segments as patterns, enhancing the certainty and visibility of the transference, and providing stable material and context for further explanation.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "630",
+      "632"
+    ],
+    "sect": "pdt"
+  },
+  "633": {
+    "skill_id": "633",
+    "skill_name": "Explanation of Transference",
+    "skill_description": "Two types of explanations: viewing the current behavior as the result of unconscious transference, or linking transference to early interpersonal relationships. Explanations promote insight into the self and the relationship with others, helping the client make new coping choices.",
+    "parent_ids": [
+      "1016",
+      "610",
+      "619",
+      "630",
+      "633"
+    ],
+    "sect": "pdt"
+  },
+  "359": {
+    "skill_id": "359",
+    "skill_name": "Free Association and Resistance",
+    "skill_description": "Free association requires the client to speak their thoughts and feelings without editing, following the thought process via psychodynamic determinism to approach the unconscious. Resistance is any verbal or behavioral act that hinders association and therapeutic progress, a clue to locate 'where the injury is,' which can be conscious or unconscious.",
+    "parent_ids": [
+      "1016",
+      "359"
+    ],
+    "sect": "pdt"
+  },
+  "360": {
+    "skill_id": "360",
+    "skill_name": "Listening",
+    "skill_description": "Following the client's associative journey with balanced attending, listening to the connections between thoughts, emotions, and memories, and noticing cues such as interruptions, silences, or topic changes. Regardless of supportive or revealing orientation, this type of listening is the basis for entering unconscious work.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "360"
+    ],
+    "sect": "pdt"
+  },
+  "361": {
+    "skill_id": "361",
+    "skill_name": "Seguir o fluxo de associação",
+    "skill_description": "Seguir continuamente o fluxo de associação do cliente durante a conversa, assumindo que os pensamentos estão conectados de maneiras significativas, usando isso para levar a consciência ao inconsciente. Evitar guiar ou filtrar o conteúdo prematuramente, permitir a \"vagância\", para captar as conexões-chave e os temas ocultos.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "360",
+      "361"
+    ],
+    "sect": "pdt"
+  },
+  "362": {
+    "skill_id": "362",
+    "skill_name": "Identificar a resistência na interrupção da associação",
+    "skill_description": "Considerar qualquer fenômeno que impeça a associação livre como uma potencial resistência: silêncio, hesitação, mudança rápida de tópico, perda de pensamento, etc. Capturar o momento e o contexto da interrupção, investigar gentilmente seu significado, para localizar o conteúdo e as defesas relacionadas que são difíceis de acessar a consciência.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "360",
+      "362"
+    ],
+    "sect": "pdt"
+  },
+  "363": {
+    "skill_id": "363",
+    "skill_name": "Reflexão",
+    "skill_description": "Após identificar a resistência, avaliar se, quando e como trazê-la a atenção do cliente, levando em conta a fase da terapia, a aliança e a função do cliente. Evitar parecer acusatório, lembrar que a resistência aponta para \"pontos de dor\", e equilibrar o momento e a profundidade entre o suporte e a revelação.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "363"
+    ],
+    "sect": "pdt"
+  },
+  "364": {
+    "skill_id": "364",
+    "skill_name": "Análise da resistência",
+    "skill_description": "Fazer suposições e verificar a causa e a função da resistência, perceber seu significado protetor, combinando o material superficial, a emoção dominante e o julgamento contratransferencial. As fontes comuns incluem medo, perda, culpa, vergonha e erro do terapeuta, para selecionar a técnica apropriada.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "363",
+      "364"
+    ],
+    "sect": "pdt"
+  },
+  "365": {
+    "skill_id": "365",
+    "skill_name": "Resistência desencadeada pelo medo",
+    "skill_description": "O cliente teme a mudança ou o desconhecido, mantendo o que é familiar e adaptado, evitando a expressão de sentimentos negativos e conflitos. Manifesta-se como conformidade excessiva, positividade excessiva ou evitação de tópicos contraditórios. Compreender o medo ajuda na empatia e no ajuste da intensidade da intervenção.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "363",
+      "364",
+      "365"
+    ],
+    "sect": "pdt"
+  },
+  "366": {
+    "skill_id": "366",
+    "skill_name": "Resistência desencadeada pela perda",
+    "skill_description": "A mudança implica abrir mão de satisfações adquiridas ou ganhos implícitos no relacionamento, desencadeando uma experiência real ou imaginada de perda. O cliente ou mantém o padrão antigo para evitar a 'perda', como repetir erros para manter a compensação. Identificar os temas de perda ajuda no planejamento do suporte.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "363",
+      "364",
+      "366"
+    ],
+    "sect": "pdt"
+  },
+  "367": {
+    "skill_id": "367",
+    "skill_name": "Resistência desencadeada pela culpa",
+    "skill_description": "A culpa inconsciente leva o cliente a 'compensar' com sintomas ou falhas, para evitar sentir culpa excessiva em relação aos outros. Portanto, pode resistir à melhoria ou ao progresso. Explorar a origem da culpa e as fantasias ajuda a suportar a reparação sem se autodestruir.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "363",
+      "364",
+      "367"
+    ],
+    "sect": "pdt"
+  },
+  "368": {
+    "skill_id": "368",
+    "skill_name": "Resistência desencadeada pela vergonha",
+    "skill_description": "A experiência de vergonha por desejos, medos ou fantasias inconscientes leva à evitação da revelação e processamento, especialmente em temas de sexualidade e identidade. Uma atitude sensível e não julgadora reduz a vergonha, expande gradualmente os limites do que pode ser discutido, evitando a aproximação prematura.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "363",
+      "364",
+      "368"
+    ],
+    "sect": "pdt"
+  },
+  "369": {
+    "skill_id": "369",
+    "skill_name": "Resistência causada pelo terapeuta",
+    "skill_description": "Mal-entendidos, falha na empatia ou descuido (como atraso) podem desencadear resistência e evitação. Monitore a contra-transferência primeiro, examine os fatores que contribuem para a ruptura do relacionamento e, se necessário, reforce o trabalho; não atribua precipitadamente a reação do cliente às suas defesas.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "363",
+      "364",
+      "369"
+    ],
+    "sect": "pdt"
+  },
+  "370": {
+    "skill_id": "370",
+    "skill_name": "Intervenção",
+    "skill_description": "Escolha a intervenção com base no objetivo e na prontidão do cliente: técnicas fundamentais para promover associação e obtenção de informações; técnicas de suporte para aceitar ou reformular a resistência para manter a função; técnicas de revelação visam apreender o significado da resistência, conectar com o inconsciente e reduzir sua obstrução.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370"
+    ],
+    "sect": "pdt"
+  },
+  "371": {
+    "skill_id": "371",
+    "skill_name": "Intervenção Fundamental",
+    "skill_description": "Promova a fala livre, a obtenção de detalhes e a redução da ansiedade inicial através de psicoeducação, questionamento, orientação e empatia. Sugestões gentis descrevem pensamentos e sentimentos no silêncio, estabelecendo a base de informação e aliança para trabalho de suporte ou de revelação subsequente.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "371"
+    ],
+    "sect": "pdt"
+  },
+  "372": {
+    "skill_id": "372",
+    "skill_name": "Psicoeducação e Orientação",
+    "skill_description": "No início do tratamento, explique a importância e os métodos da associação livre, encorajando a fala o máximo possível; use sugestões gentis para guiar o início e a expressão no silêncio, definindo tópicos conversáveis (sentimentos, sonhos, pensamentos sobre o tratamento), reduzindo o desconforto do iniciante.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "371",
+      "372"
+    ],
+    "sect": "pdt"
+  },
+  "373": {
+    "skill_id": "373",
+    "skill_name": "Empatia",
+    "skill_description": "Perceber e verbalizar o constrangimento e a ansiedade do cliente ao tentar associar e entrar em contato com conteúdos dolorosos, recebendo sua defesa com uma atitude não julgadora. A empatia pode amortecer a ameaça da intervenção reveladora, aumentar a sensação de segurança e a colaboração, promovendo uma expressão mais autêntica.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "371",
+      "373"
+    ],
+    "sect": "pdt"
+  },
+  "374": {
+    "skill_id": "374",
+    "skill_name": "Questionamento",
+    "skill_description": "Fazer perguntas abertas e específicas em torno da resistência e dos detalhes da história para ajudar o cliente a expandir a narrativa e focar em eventos chave. O design da pergunta é orientado para obter material trabalhável, evitando a orientação e o julgamento, servindo à compreensão em vez de à determinação.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "371",
+      "374"
+    ],
+    "sect": "pdt"
+  },
+  "375": {
+    "skill_id": "375",
+    "skill_name": "Solicitar associação",
+    "skill_description": "Quando surgem sinais de resistência (como esquecer de pagar, não conseguir lembrar dos sonhos), convidar o cliente a fazer associações livres com seus fenômenos para direcionar a atenção ao significado por trás da defesa. Este ato frequentemente abre um processamento mais profundo, ajudando a acessar emoções e memórias relacionadas.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "371",
+      "375"
+    ],
+    "sect": "pdt"
+  },
+  "376": {
+    "skill_id": "376",
+    "skill_name": "Intervenção de suporte",
+    "skill_description": "Quando a revelação direta pode prejudicar a função, escolher aceitar ou redirecionar a resistência, ajudando a adotar formas de proteção mais adaptativas, reduzindo o impedimento ao objetivo. Pode-se melhorar a presença, a adesão e a regulação emocional através de sugestões estruturadas e orientação realista.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "376"
+    ],
+    "sect": "pdt"
+  },
+  "377": {
+    "skill_id": "377",
+    "skill_name": "Resposta à Resistência",
+    "skill_description": "Fornecer sugestões e orientação com orientação realista, mantendo a aliança, para a resistência ao tratamento de interferência (como atrasos, faltas, omissões, etc.), melhorando comportamentos e condições ambientais operáveis; adiar a revelação quando necessário, priorizando o estado estável e a recuperação da função.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "376",
+      "377"
+    ],
+    "sect": "pdt"
+  },
+  "378": {
+    "skill_id": "378",
+    "skill_name": "Sugestões na Resposta à Resistência",
+    "skill_description": "Propor estratégias viáveis para fatores de impedimento específicos (como ajustar o deslocamento, configurar lembretes, mudar para transporte por aplicativo), para reduzir o dano ao horário de trabalho e aos resultados causado por atrasos e faltas. O foco está na melhoria da função em vez de explicar as motivações, com um tom realista e de apoio.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "376",
+      "377",
+      "378"
+    ],
+    "sect": "pdt"
+  },
+  "379": {
+    "skill_id": "379",
+    "skill_name": "Orientação na Resposta à Resistência",
+    "skill_description": "Realizar redirecionamento suave quando o conteúdo for muito estimulante, evitando materiais coercitivos ou avassaladores, direcionando para tópicos e emoções toleráveis; ou indicar a estrutura e os objetivos da conversa, ajudando a manter o engajamento e reduzir a ansiedade, criando condições para umaprofundamento posterior.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "376",
+      "377",
+      "379"
+    ],
+    "sect": "pdt"
+  },
+  "380": {
+    "skill_id": "380",
+    "skill_name": "Intervenção Reveladora",
+    "skill_description": "Com o objetivo de compreender o significado inconsciente da resistência, guiar a consciência gradualmente através de confrontação, clarificação e explicação. Captar o momento e o tom, primeiro validar sua função protetora, depois supor possíveis conexões, para reduzir a interferência da resistência no trabalho futuro.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "380"
+    ],
+    "sect": "pdt"
+  },
+  "381": {
+    "skill_id": "381",
+    "skill_name": "Resistance Confrontation",
+    "skill_description": "Gently acknowledge the observed resistance phenomena (such as silence, topic change, tardiness), inviting the client to explore their occurrence and timing together; or point out disconnects in associations to test readiness. The tone is exploratory, avoiding blame and judgment.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "380",
+      "381"
+    ],
+    "sect": "pdt"
+  },
+  "382": {
+    "skill_id": "382",
+    "skill_name": "Resistance Clarification",
+    "skill_description": "Juxtapose multiple, seemingly unrelated resistance fragments to point toward potential common themes or connections, promoting client self-observation and linkage. Maintain an inquiring rather than declarative stance, allowing the unconscious contours to gradually emerge in similarities.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "380",
+      "382"
+    ],
+    "sect": "pdt"
+  },
+  "383": {
+    "skill_id": "383",
+    "skill_name": "Resistance Interpretation",
+    "skill_description": "Based on confrontation and clarification, propose hypotheses about the unconscious motivations of the resistance, linking them to the current situation and past experiences. The tone is tentative and empathetic, emphasizing possibilities and soliciting responses to avoid threatening defenses and deepen processing.",
+    "parent_ids": [
+      "1016",
+      "359",
+      "370",
+      "380",
+      "383"
+    ],
+    "sect": "pdt"
+  },
+  "916": {
+    "skill_id": "916",
+    "skill_name": "Dream Interpretation",
+    "skill_description": "In psychodynamic therapy, dream interpretation uses explicit dreams and associations as clues to reconstruct latent content through the primary process, helping to understand unconscious emotions, fantasies, and transference; it is an important technique for exploring the mind.",
+    "parent_ids": [
+      "1016",
+      "916"
+    ],
+    "sect": "pdt"
+  },
+  "917": {
+    "skill_id": "917",
+    "skill_name": "Classificação dos Sonhos",
+    "skill_description": "Diferenciar sonhos manifestos (histórias narráveis) de sonhos latentes (conteúdo inconsciente), compreender como pensamentos do dia e a fábrica de sonhos (compressão, substituição, simbolização) transformam o latente em manifesto, para direcionar o trabalho subsequente.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "917"
+    ],
+    "sect": "pdt"
+  },
+  "918": {
+    "skill_id": "918",
+    "skill_name": "Sonhos Manifestos",
+    "skill_description": "Refere-se às histórias de sonhos que o cliente pode lembrar e contar. Escuta circular, seguida pelo foco em elementos claros, emoções e temas, usando-os como ponto de partida para associações e acesso ao inconsciente, em vez de 'decodificação' direta.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "917",
+      "918"
+    ],
+    "sect": "pdt"
+  },
+  "919": {
+    "skill_id": "919",
+    "skill_name": "Sonhos Latentes",
+    "skill_description": "Refere-se às emoções, desejos, fantasias e representações relacionais inconscientes escondidas por trás da história manifesta. Através de associações e apreendendo os processos primários como compressão, substituição e simbolização, restaurar gradualmente seu significado e usá-lo para explicação.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "917",
+      "919"
+    ],
+    "sect": "pdt"
+  },
+  "920": {
+    "skill_id": "920",
+    "skill_name": "Escuta de Sonhos e Associações",
+    "skill_description": "Escutar simultaneamente a narração do sonho e todas as conversas antes e depois como associações, prestar atenção ao estado de espírito, pontos claros, temas e a conexão com os pontos da entrevista, para localizar as pistas mais próximas da superfície e os pontos de intervenção apropriados.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "920"
+    ],
+    "sect": "pdt"
+  },
+  "921": {
+    "skill_id": "921",
+    "skill_name": "Reflecting in Dreams",
+    "skill_description": "Reflecting on the unconscious emotions, fears, and fantasies of elemental representation in the 'bathing' dream, combined with repetition and emotional intensity, and deciding when and in what manner to advance intervention based on readiness and choice.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "921"
+    ],
+    "sect": "pdt"
+  },
+  "922": {
+    "skill_id": "922",
+    "skill_name": "Dream Compression Mechanism",
+    "skill_description": "Two related objects or concepts merge into a single explicit element in the unconscious, suggesting multiple sources and connections. Identifying compression helps trace key relationships and emotions, providing clues for clarification and explanation.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "921",
+      "922"
+    ],
+    "sect": "pdt"
+  },
+  "923": {
+    "skill_id": "923",
+    "skill_name": "Dream Symbolism Mechanism",
+    "skill_description": "Explicit elements symbolize desires, fears, interpersonal representations, or self-perception in the implicit. Understanding symbolism requires individual association, cautiously avoiding 'one-to-one' decoding, and grasping proximity through context.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "921",
+      "923"
+    ],
+    "sect": "pdt"
+  },
+  "924": {
+    "skill_id": "924",
+    "skill_name": "Intervention in Dreams",
+    "skill_description": "Choosing between foundational, supportive, and revealing based on self-function and anxiety tolerance. Start with education and questioning to initiate association; avoid when necessary; confront, clarify, and offer explanations when conditions are mature.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924"
+    ],
+    "sect": "pdt"
+  },
+  "925": {
+    "skill_id": "925",
+    "skill_name": "Intervenção Básica",
+    "skill_description": "Ajudar o cliente a entender o valor e os métodos do sonho através de educação psicológica e perguntas abertas, enfatizando a associação em vez do significado da narrativa, reduzindo confusão e recuo, promovendo o engajamento, o foco e a geração de material.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "925"
+    ],
+    "sect": "pdt"
+  },
+  "926": {
+    "skill_id": "926",
+    "skill_name": "Educação Psicológica sobre Interpretação de Sonhos",
+    "skill_description": "Informar que os sonhos podem levar ao inconsciente; lembrar e discutir que qualquer sonho é eficaz; não é necessário 'entender o significado' imediatamente. O foco do trabalho é fazer associações com os elementos em vez da história em si, para aumentar o engajamento e a sensação de segurança.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "925",
+      "926"
+    ],
+    "sect": "pdt"
+  },
+  "927": {
+    "skill_id": "927",
+    "skill_name": "Perguntar para Induzir Associações de Sonhos",
+    "skill_description": "Promover associações através de perguntas abertas e questionamentos focados em emoções e imagens, como 'o que você sentiu no sonho?'. Guiar moderadamente quando elementos chave forem omitidos, e prestar atenção às pistas de resistência por trás da omissão.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "925",
+      "927"
+    ],
+    "sect": "pdt"
+  },
+  "928": {
+    "skill_id": "928",
+    "skill_name": "Intervenção de Suporte",
+    "skill_description": "Quando a exploração profunda ou a revelação de algo que possa aumentar a ansiedade e a confusão, priorizar a abordagem de suporte: empatia, conforto, verificação da realidade, e conectar os elementos explícitos com as dificuldades atuais, adiando a exploração profunda para estabilizar o self.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "928"
+    ],
+    "sect": "pdt"
+  },
+  "929": {
+    "skill_id": "929",
+    "skill_name": "Associação de sonhos",
+    "skill_description": "Dentro do limite tolerável, convidar para associações livres sobre as imagens, palavras e emoções do sonho, priorizando a superfície e temas seguros, para obter pistas e evitar a ativação de ansiedade excessiva ou desrealização.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "928",
+      "929"
+    ],
+    "sect": "pdt"
+  },
+  "930": {
+    "skill_id": "930",
+    "skill_name": "Evitação de suporte",
+    "skill_description": "Quando o visitante está frágil ou não deseja falar profundamente sobre o sonho, respeitar a evitação, substituindo a revelação por evitação de suporte; usar empatia, validação e explicações alternativas para reduzir a tensão, explorando o conteúdo inconsciente após a recuperação da função.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "928",
+      "930"
+    ],
+    "sect": "pdt"
+  },
+  "931": {
+    "skill_id": "931",
+    "skill_name": "Intervenção de revelação",
+    "skill_description": "Quando a aliança está sólida e a tolerância é suficiente, avançar o trabalho em torno das hipóteses inconscientes do sonho, acumulando material através de confrontação e clarificação, propondo explicações, promovendo a entrada da emoção na consciência e aprofundando a transferência e a compreensão do conflito.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "931"
+    ],
+    "sect": "pdt"
+  },
+  "932": {
+    "skill_id": "932",
+    "skill_name": "Confrontação do sonho",
+    "skill_description": "Para atrair a atenção e estimular a curiosidade, apontar elementos específicos do sonho ou transferências sem pré-definir significado, como 'Por que aquele pássaro azul apareceu no seu sonho?', para promover associações e exploração adicionais.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "931",
+      "932"
+    ],
+    "sect": "pdt"
+  },
+  "933": {
+    "skill_id": "933",
+    "skill_name": "Clarification of Dreams",
+    "skill_description": "Indicate the relationship between the elements of the dream and the recurring situations or associations, help identify patterns and nodes, build the context for interpretation, bring unconscious clues closer to the surface, facilitating further work.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "931",
+      "933"
+    ],
+    "sect": "pdt"
+  },
+  "934": {
+    "skill_id": "934",
+    "skill_name": "Interpretation of Dreams",
+    "skill_description": "Based on sufficient association and clarification, propose hypotheses about the unconscious foundation, integrate symbolism, compression, and relational representation into meaning, promote emotional recognition and symptom improvement, avoid abrupt leaps.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "931",
+      "934"
+    ],
+    "sect": "pdt"
+  },
+  "935": {
+    "skill_id": "935",
+    "skill_name": "Resistance Confrontation",
+    "skill_description": "When the client mentions a dream but shifts or hesitates to talk about it, gently point out and inquire about the reason, while remembering that what follows may also be an association; grasp the timing, neither rush nor ignore the resistance.",
+    "parent_ids": [
+      "1016",
+      "916",
+      "924",
+      "931",
+      "935"
+    ],
+    "sect": "pdt"
+  }
+}

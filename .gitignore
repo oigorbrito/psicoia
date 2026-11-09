@@ -7,6 +7,13 @@ dist/
 .venv/
 data.db
 
+# Android build output and local SDK/model paths
+.gradle/
+**/build/
+local.properties
+*.iml
+*.gguf
+
 # Local IDE state, credentials, and generated logs
 .vs/
 .env

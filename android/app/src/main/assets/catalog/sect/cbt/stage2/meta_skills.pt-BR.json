@@ -1,0 +1,658 @@
+{
+  "660": {
+    "skill_id": "660",
+    "skill_name": "Consultation Session",
+    "skill_description": "Consultation session is the core of cognitive behavioral therapy, changing cognitions and behaviors to solve problems. It progresses step-by-step from automatic thoughts—intermediate beliefs—to core beliefs. Each session includes three parts: beginning, middle, and end.",
+    "parent_ids": [
+      "660"
+    ],
+    "sect": "cbt"
+  },
+  "661": {
+    "skill_id": "661",
+    "skill_name": "Consultation Session Beginning Phase",
+    "skill_description": "The beginning phase aims to set the tone and improve efficiency for this session. It usually involves mood assessment, obtaining the latest information, reviewing homework, and setting the agenda, to focus the discussion on the most important and manageable topics.",
+    "parent_ids": [
+      "660",
+      "661"
+    ],
+    "sect": "cbt"
+  },
+  "662": {
+    "skill_id": "662",
+    "skill_name": "Mood Assessment",
+    "skill_description": "Assessing the client's current emotional state to grasp the severity of the problem and improvement trends. Depression/anxiety scales are commonly assessed weekly. Other emotions or overall mood can be assessed using a 0-100 emotional scale, as a basis for monitoring treatment efficacy.",
+    "parent_ids": [
+      "660",
+      "661",
+      "662"
+    ],
+    "sect": "cbt"
+  },
+  "663": {
+    "skill_id": "663",
+    "skill_name": "Obtaining Latest Information",
+    "skill_description": "Understanding key events and changes since the last session. Encourage discussion of both negative and positive experiences; avoid getting into details, only use summaries. If necessary, include matters in the agenda for later discussion.",
+    "parent_ids": [
+      "660",
+      "661",
+      "663"
+    ],
+    "sect": "cbt"
+  },
+  "664": {
+    "skill_id": "664",
+    "skill_name": "Reviewing Homework",
+    "skill_description": "Jointly check the completion status of the homework assigned last time to the client. This can reinforce motivation to act, present progress, and identify difficulties and clues from the homework that are worth discussing, including them in the agenda if necessary.",
+    "parent_ids": [
+      "660",
+      "661",
+      "664"
+    ],
+    "sect": "cbt"
+  },
+  "665": {
+    "skill_id": "665",
+    "skill_name": "Determining Session Agenda",
+    "skill_description": "Jointly list the topics for today's discussion before the formal discussion, clarifying priorities. The agenda may include issues the client is concerned about, the therapeutic relationship, setting matters, and unfinished topics from the last session, ensuring the session is focused and efficient.",
+    "parent_ids": [
+      "660",
+      "661",
+      "665"
+    ],
+    "sect": "cbt"
+  },
+  "666": {
+    "skill_id": "666",
+    "skill_name": "Consultation Session Middle Phase",
+    "skill_description": "The middle phase is the core of the session, delving into the most important topics selected from the agenda: first, gather information, then conceptualize and assess. After completion, invite the recording of consultation notes and assign homework. Usually, only 1-2 items can be addressed.",
+    "parent_ids": [
+      "660",
+      "666"
+    ],
+    "sect": "cbt"
+  },
+  "667": {
+    "skill_id": "667",
+    "skill_name": "Consultation Session Ending Phase",
+    "skill_description": "The ending phase consolidates gains and alliances through session summary, homework, and session feedback. Summarize key points and gains, confirm willingness and obstacles regarding homework, and collect feelings and questions to adjust future plans promptly.",
+    "parent_ids": [
+      "660",
+      "667"
+    ],
+    "sect": "cbt"
+  },
+  "668": {
+    "skill_id": "668",
+    "skill_name": "Session Summary",
+    "skill_description": "Review the core content, insights, and gains of this discussion, clarify points to be recorded, and follow-up items. Summarization can reinforce learning and memory, help the client grasp progress, and prepare for homework.",
+    "parent_ids": [
+      "660",
+      "667",
+      "668"
+    ],
+    "sect": "cbt"
+  },
+  "669": {
+    "skill_id": "669",
+    "skill_name": "Homework",
+    "skill_description": "Clarify and confirm homework before ending, explain the goals and methods, assess willingness to complete and potential obstacles. Adjust difficulty or make optional if necessary, as homework execution is closely related to therapeutic effectiveness.",
+    "parent_ids": [
+      "660",
+      "667",
+      "669"
+    ],
+    "sect": "cbt"
+  },
+  "670": {
+    "skill_id": "670",
+    "skill_name": "Session Feedback",
+    "skill_description": "Invite the client to provide feedback on the takeaways, feelings, and confusion from this session, including important insights, homework feasibility, discomforts, and unresolved issues. Promptly address negative experiences, maintain the therapeutic relationship, and plan for the next topic.",
+    "parent_ids": [
+      "660",
+      "667",
+      "670"
+    ],
+    "sect": "cbt"
+  },
+  "536": {
+    "skill_id": "536",
+    "skill_name": "Automatic Thoughts",
+    "skill_description": "Automatic thoughts are thoughts that spontaneously arise in specific situations and directly affect emotions, behavior, and physiology. The core task in this stage is to identify and evaluate thoughts; the endpoint is when the client's emotions have significantly improved, they can effectively manage the situation, and they have learned to identify and evaluate automatic thoughts.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536"
+    ],
+    "sect": "cbt"
+  },
+  "537": {
+    "skill_id": "537",
+    "skill_name": "Identifying Automatic Thoughts and Emotions",
+    "skill_description": "First identify salient emotions, then follow up with the automatic thoughts at that time; use methods such as questioning, scenario rehearsal, prompting, or rational analysis to locate the situation, thoughts, and feelings, and distinguish between emotions and thoughts, laying the foundation for subsequent assessment and cognitive intervention.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "537"
+    ],
+    "sect": "cbt"
+  },
+  "538": {
+    "skill_id": "538",
+    "skill_name": "Evaluating Automatic Thoughts and Emotions",
+    "skill_description": "Quantify the intensity of emotions and the degree of belief in automatic thoughts using a 0-100% scale in each agenda item; compare before and after to check session effectiveness, and adjust intervention strategies and homework assignments accordingly, tracking treatment progress in a data-driven manner.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "538"
+    ],
+    "sect": "cbt"
+  },
+  "539": {
+    "skill_id": "539",
+    "skill_name": "Consolidation and Application of the Automatic Thought Stage",
+    "skill_description": "Record and consolidate new thoughts and behaviors, create consultation notes or cue cards, repeatedly practice and apply them in life situations; transfer session outcomes to daily life through homework to enhance self-help ability and maintain therapeutic effect.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "539"
+    ],
+    "sect": "cbt"
+  },
+  "540": {
+    "skill_id": "540",
+    "skill_name": "Learning to Identify and Evaluate Automatic Thoughts",
+    "skill_description": "Systematically practice through homework, first learn to identify automatic thoughts, then learn to evaluate and modify them; form skills using standardized tools and steps, enabling the client to independently cope with future problems and maintain long-term mental health.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "540"
+    ],
+    "sect": "cbt"
+  },
+  "541": {
+    "skill_id": "541",
+    "skill_name": "Automatic Thought Monitoring Form",
+    "skill_description": "A three-column form to record date/time, situation, automatic thoughts and emotions, and rate beliefs and emotion intensity; used as a foundational homework tool for capturing and practicing the identification of automatic thoughts in daily life.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "540",
+      "541"
+    ],
+    "sect": "cbt"
+  },
+  "542": {
+    "skill_id": "542",
+    "skill_name": "Thought Record Form",
+    "skill_description": "Based on the monitoring form, add 'suitable responses' and 'conclusions'; use 6 standard questions to assess the validity and usefulness of thoughts, record changes in beliefs and emotions, and intended behaviors, promoting the consolidation of cognition and behavior.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "540",
+      "542"
+    ],
+    "sect": "cbt"
+  },
+  "543": {
+    "skill_id": "543",
+    "skill_name": "Evaluating Automatic Thoughts and Emotions",
+    "skill_description": "In cognitive behavioral therapy, use shaping techniques to examine and modify automatic thoughts, synthesize evidence to form alternative thoughts, and assess belief degree and emotional intensity, to alleviate negative emotions and promote behavioral change.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "543"
+    ],
+    "sect": "cbt"
+  },
+  "544": {
+    "skill_id": "544",
+    "skill_name": "Evidence Technique for Defense",
+    "skill_description": "Borrowing from the judicial framework, collect evidence supporting automatic thoughts and opposing viewpoints; organize evidence through four typical questions, synthesize positive and negative information to derive more reasonable alternative thoughts, correcting cognitive distortions such as overgeneralization.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "543",
+      "544"
+    ],
+    "sect": "cbt"
+  },
+  "545": {
+    "skill_id": "545",
+    "skill_name": "Divergent Thinking Technique",
+    "skill_description": "Facing ambiguous situations, help the client generate multiple possible explanations, find evidence for each explanation and estimate probabilities, then use actions like reconnecting or calling a different number to verify, thereby alleviating anxiety and suspicion, and expanding cognitive perspectives.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "543",
+      "545"
+    ],
+    "sect": "cbt"
+  },
+  "546": {
+    "skill_id": "546",
+    "skill_name": "Possibility Area Technique",
+    "skill_description": "For events that have not yet happened, construct a range of outcomes from worst to best, assess the most likely outcome, and prepare for the worst-case scenario; plan actions for the ideal outcome; correct negative expectations about the future through evidence weighing, reducing anxiety and depression.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "543",
+      "546"
+    ],
+    "sect": "cbt"
+  },
+  "547": {
+    "skill_id": "547",
+    "skill_name": "Behavioral Experiment Technique",
+    "skill_description": "When evidence is insufficient, change behavior first to change cognition; design low-risk experimental situations, record actual results and the belief degree of old and new beliefs, use behavioral results to test and modify concepts; also used to encourage trying new behaviors, consolidating alternative thoughts and functional habits.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "543",
+      "547"
+    ],
+    "sect": "cbt"
+  },
+  "548": {
+    "skill_id": "548",
+    "skill_name": "Cost-Benefit Analysis Technique",
+    "skill_description": "Borrowing from economics, compare the benefits and costs of sticking to old thoughts versus adopting alternative thoughts, stimulate the choice of more favorable ideas and implement corresponding actions; also used to handle resistance, clarifying the risks, costs, and benefits of changing versus not changing.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "543",
+      "548"
+    ],
+    "sect": "cbt"
+  },
+  "549": {
+    "skill_id": "549",
+    "skill_name": "Técnicas Emocionais",
+    "skill_description": "Este capítulo foca em melhorar as emoções por meio de métodos cognitivos e comportamentais, não listando técnicas emocionais separadamente. A fase de avaliação frequentemente combina nomeação de emoções e pontuação de intensidade com testes comportamentais e pensamentos alternativos para aliviar reações emocionais como ansiedade e depressão.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "543",
+      "549"
+    ],
+    "sect": "cbt"
+  },
+  "550": {
+    "skill_id": "550",
+    "skill_name": "Técnicas de Atenção",
+    "skill_description": "O texto menciona que, em situações de exame, a atenção deve ser focada na tarefa de resposta, reduzindo a imersão em pensamentos ameaçadores. Este tipo de gerenciamento da atenção pode ser combinado com análise de custo-benefício e testes comportamentais para ajudar a estabilizar o desempenho atual e corrigir cognições indiretamente.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "543",
+      "550"
+    ],
+    "sect": "cbt"
+  },
+  "551": {
+    "skill_id": "551",
+    "skill_name": "Técnicas de Resolução de Problemas",
+    "skill_description": "O texto enfatiza várias vezes a importância de tomar ações concretas para verificar hipóteses, elaborar listas e passos para melhorar a situação, refletindo a abordagem de resolução de problemas. Esta técnica geralmente transforma pensamentos alternativos em planos acionáveis, implementados passo a passo e avaliados.",
+    "parent_ids": [
+      "660",
+      "666",
+      "536",
+      "543",
+      "551"
+    ],
+    "sect": "cbt"
+  },
+  "693": {
+    "skill_id": "693",
+    "skill_name": "Crença Intermediária",
+    "skill_description": "A crença intermediária está entre o pensamento automático e a crença central, manifestando-se como estratégias psicológicas de atitude, suposição e regra. O objetivo da consultoria é corrigir as estratégias compensatórias, transformando-as em estratégias de enfrentamento flexíveis, e formar novas formas de comportamento e hábitos através da verificação e prática.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693"
+    ],
+    "sect": "cbt"
+  },
+  "694": {
+    "skill_id": "694",
+    "skill_name": "Identificação e Apresentação da Crença Intermediária",
+    "skill_description": "Nesta fase do livro, a identificação dos componentes da crença intermediária, a realização de educação psicológica e a avaliação de prós e contras são usadas para ajudar o cliente a entender a testabilidade e a corrigibilidade de suas suposições, estabelecendo a base para avaliações subsequentes, destilação de novas crenças e mudanças de comportamento.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "694"
+    ],
+    "sect": "cbt"
+  },
+  "695": {
+    "skill_id": "695",
+    "skill_name": "Identificação da Crença Intermediária",
+    "skill_description": "Seguindo quatro passos de identificação: delimitar a área do problema/aspecto da vida; especificar a crença central através de setas descendentes; destilar atitude e regras do pensamento automático; propor e clarificar suposições positivas e negativas, para obter uma formulação da crença intermediária testável.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "694",
+      "695"
+    ],
+    "sect": "cbt"
+  },
+  "696": {
+    "skill_id": "696",
+    "skill_name": "Educação Psicológica da Crença Intermediária",
+    "skill_description": "Explicar ao cliente a estrutura e a lógica da crença intermediária (atitude—suposição—regra), explicar que as estratégias compensatórias se tornam inválidas com a mudança de situação, as suposições podem ser verificadas, e enfatizar sua natureza adquirível e corrigível, aumentando a viabilidade da mudança.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "694",
+      "696"
+    ],
+    "sect": "cbt"
+  },
+  "697": {
+    "skill_id": "697",
+    "skill_name": "Motivação para Mudar a Crença Intermediária",
+    "skill_description": "Usar a análise de custo-benefício para focar nas suposições negativas, comparando separadamente os ganhos e os custos do passado e do presente, destacando que a estratégia antiga é mais prejudicial do que benéfica na situação atual, aumentando assim a motivação intrínseca para corrigir a suposição e tentar um novo comportamento.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "694",
+      "697"
+    ],
+    "sect": "cbt"
+  },
+  "698": {
+    "skill_id": "698",
+    "skill_name": "Intermediate Belief Assessment",
+    "skill_description": "Continuously record the degree of belief in old/new beliefs on a 0–100% scale, suggest daily tracking to observe fluctuations and trends, monitor intervention effects, and guide consultation process and goal adjustment.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "698"
+    ],
+    "sect": "cbt"
+  },
+  "699": {
+    "skill_id": "699",
+    "skill_name": "Intermediate Belief Evaluation",
+    "skill_description": "Examine the evidence and boundaries of old hypotheses through Socratic questioning and various cognitive techniques, refine more adaptive alternative hypotheses, and accumulate supporting evidence to increase the credibility of new beliefs.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "699"
+    ],
+    "sect": "cbt"
+  },
+  "700": {
+    "skill_id": "700",
+    "skill_name": "Socratic Questioning",
+    "skill_description": "Use heuristic questioning to guide the client to examine hypotheses from specific instances, discover counterexamples and conditions, reduce conviction in old beliefs, and pave the way for new beliefs that are more fact-based and have limiting conditions.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "699",
+      "700"
+    ],
+    "sect": "cbt"
+  },
+  "701": {
+    "skill_id": "701",
+    "skill_name": "Proposing New Intermediate Beliefs",
+    "skill_description": "Rewrite old hypotheses into new hypotheses in the form of \"positive language + limiting conditions\" based on evidence, and assess their degree of belief; test and reinforce them with life examples and subsequent exercises to make them more feasible and adaptive.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "699",
+      "701"
+    ],
+    "sect": "cbt"
+  },
+  "702": {
+    "skill_id": "702",
+    "skill_name": "Zero Point Technique Assessment",
+    "skill_description": "For perfectionism/highest standards, set lower comparison benchmarks (assessment zero point), guide comparison with zero points rather than perfect points, immediately correct frustration caused by unreasonable comparisons, and promote flexible, diverse evaluations.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "699",
+      "702"
+    ],
+    "sect": "cbt"
+  },
+  "703": {
+    "skill_id": "703",
+    "skill_name": "Cognitive Continuum Technique",
+    "skill_description": "Replace black-and-white thinking with a 0–100% continuous scale, construct more extreme scenarios for comparison and re-evaluation, allowing the current situation to be positioned more appropriately on the continuum, reducing catastrophic evaluations of \"it's all ruined\".",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "699",
+      "703"
+    ],
+    "sect": "cbt"
+  },
+  "704": {
+    "skill_id": "704",
+    "skill_name": "Pie Chart Technique",
+    "skill_description": "Decompose event causes into multiple factors and assign weights proportionally, balance internal and external attribution, clarify the bias of \"all due to me/him,\" help form objective responsibility assessments and more reasonable subsequent countermeasures.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "699",
+      "704"
+    ],
+    "sect": "cbt"
+  },
+  "705": {
+    "skill_id": "705",
+    "skill_name": "Multiple Stages Technique",
+    "skill_description": "Decompose linear associations into multiple stages, analyze potential outcomes, conditions, and corrective measures at each stage, discover turning points and controllable points, alleviate chain catastrophe or irrational expectations of excessive optimism.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "699",
+      "705"
+    ],
+    "sect": "cbt"
+  },
+  "706": {
+    "skill_id": "706",
+    "skill_name": "Tecnologia de Visão de Futuro",
+    "skill_description": "Com base no modelo de \"curto-circuito de reforço imediato\", trazer resultados de longo prazo ao presente por meio de visualização/imaginação, estabelecendo uma conexão entre as consequências futuras e o comportamento atual, para anular o reforço imediato e apoiar escolhas razoáveis.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "699",
+      "706"
+    ],
+    "sect": "cbt"
+  },
+  "707": {
+    "skill_id": "707",
+    "skill_name": "Application of intermediate belief",
+    "skill_description": "Converter a mudança cognitiva em mudança de comportamento através de experimentos comportamentais e performances comportamentais com base em novas crenças; validação em pequenos passos, acumulação de evidências, e depois prática de alta intensidade, finalizando em hábito estável.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "707"
+    ],
+    "sect": "cbt"
+  },
+  "708": {
+    "skill_id": "708",
+    "skill_name": "Behavioral Test",
+    "skill_description": "Desenhar testes reais controlados e seguros, comparar previsões e resultados de hipóteses antigas/novas, acumular evidências gradualmente para aumentar a certeza da nova crença, aplicável à fase de certeza da nova crença de 50% a 70%.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "707",
+      "708"
+    ],
+    "sect": "cbt"
+  },
+  "709": {
+    "skill_id": "709",
+    "skill_name": "Comportamento performático",
+    "skill_description": "Com base em quase total crença (cerca de 90%), exigir ação 'como se fosse acreditar totalmente', praticar realisticamente novos scripts de comportamento para reforço experiencial de novas crenças e acelerar a habituação.",
+    "parent_ids": [
+      "660",
+      "666",
+      "693",
+      "707",
+      "709"
+    ],
+    "sect": "cbt"
+  },
+  "783": {
+    "skill_id": "783",
+    "skill_name": "Consulting for Core Belief Stage",
+    "skill_description": "A core belief stage is the curative stage of cognitive behavioral therapy, conducted based on the work on automatic thoughts and intermediate beliefs, aiming to repair negative core views of the self, others, and the world, using present experience to correct the past, promoting cognitive self, acceptance, and development.",
+    "parent_ids": [
+      "660",
+      "666",
+      "783"
+    ],
+    "sect": "cbt"
+  },
+  "784": {
+    "skill_id": "784",
+    "skill_name": "Reconhecer crenças centrais",
+    "skill_description": "Identificar crenças centrais é descobrir os julgamentos mais abrangentes do cliente sobre si mesmo, os outros e o mundo. Pode-se extrair diretamente dos pensamentos automáticos, sintetizar temas comuns por inferência entre contextos, ou chegar à crença central por questionamento em camadas usando a técnica de seta para baixo.",
+    "parent_ids": [
+      "660",
+      "666",
+      "783",
+      "784"
+    ],
+    "sect": "cbt"
+  },
+  "785": {
+    "skill_id": "785",
+    "skill_name": "Identificar crenças centrais a partir do pensamento automático",
+    "skill_description": "Quando o visitante relata pensamentos automáticos relacionados à situação, frequentemente acompanhados pela manifestação de crenças centrais. Foco na modalidade onde o sujeito é \"eu/outro/mundo\" e o predicado é uma sentença de julgamento, como \"sou incapaz\" ou \"o mundo é indiferente\".",
+    "parent_ids": [
+      "660",
+      "666",
+      "783",
+      "784",
+      "785"
+    ],
+    "sect": "cbt"
+  },
+  "786": {
+    "skill_id": "786",
+    "skill_name": "Identificar crenças centrais através da inferência de pensamento automático",
+    "skill_description": "Coletar pensamentos automáticos em múltiplos contextos, comparar seus núcleos comuns e classificá-los, como temas recorrentes de habilidade, valor próprio ou ser amado, para refinar categorias de crenças centrais negativas como \"incapaz\" ou \"não amável\".",
+    "parent_ids": [
+      "660",
+      "666",
+      "783",
+      "784",
+      "786"
+    ],
+    "sect": "cbt"
+  },
+  "787": {
+    "skill_id": "787",
+    "skill_name": "Aplicar a técnica de seta para baixo para identificar crenças centrais",
+    "skill_description": "Questionar 'Se isso for verdade/acontecer, o que isso significa?' para investigar as ideias superficiais em camadas, questionar repetidamente seu significado e consequências, até atingir julgamentos fundamentais sobre o self, os outros ou o mundo, como 'Eu não sou amável'.",
+    "parent_ids": [
+      "660",
+      "666",
+      "783",
+      "784",
+      "787"
+    ],
+    "sect": "cbt"
+  },
+  "788": {
+    "skill_id": "788",
+    "skill_name": "Avaliação das crenças centrais",
+    "skill_description": "A avaliação das crenças centrais requer a definição de seu tema e natureza (self/outros/mundo, positivo/negativo), a identificação dos mecanismos de manutenção (atenção seletiva, negação, distorção), e a determinação da ordem e do momento da intervenção, combinando a dificuldade de verificação das crenças de três níveis.",
+    "parent_ids": [
+      "660",
+      "666",
+      "783",
+      "788"
+    ],
+    "sect": "cbt"
+  },
+  "789": {
+    "skill_id": "789",
+    "skill_name": "Avaliação das crenças centrais",
+    "skill_description": "A avaliação das crenças centrais foca na causa e na avaliação da racionalidade: combinando dados da história de crescimento, examinando as expectativas e avaliações de pessoas importantes, comparações sociais, experiências traumáticas e estratégias de interpretação e compensação na infância, e examinando a base de evidências.",
+    "parent_ids": [
+      "660",
+      "666",
+      "783",
+      "789"
+    ],
+    "sect": "cbt"
+  },
+  "790": {
+    "skill_id": "790",
+    "skill_name": "Técnica de análise biográfica",
+    "skill_description": "Através da organização da história de desenvolvimento do indivíduo e das interações com pessoas importantes, rastrear expectativas e avaliações, comparações sociais, traumas, interpretações pessoais e formas de comportamento precoces, reconstruir o caminho de formação, e localizar a origem e os fatores de manutenção das crenças centrais negativas.",
+    "parent_ids": [
+      "660",
+      "666",
+      "783",
+      "789",
+      "790"
+    ],
+    "sect": "cbt"
+  },
+  "791": {
+    "skill_id": "791",
+    "skill_name": "Técnica do diálogo entre os dois eus",
+    "skill_description": "Guiar o confronto entre crenças novas e antigas, permitindo que novas crenças baseadas em experiências positivas atuais dialoguem e debatam com as crenças negativas antigas, corrigindo interpretações distorcidas precoces, aumentando a crença na autoexpressão de 'capaz/amável', e abalando os esquemas antigos.",
+    "parent_ids": [
+      "660",
+      "666",
+      "783",
+      "789",
+      "791"
+    ],
+    "sect": "cbt"
+  },
+  "792": {
+    "skill_id": "792",
+    "skill_name": "Aplicação da consultoria das fases das crenças centrais",
+    "skill_description": "Aplicar seguindo a rota de 'tratar os sintomas primeiro e depois a causa': primeiro modificar os pensamentos automáticos, corrigir as crenças intermediárias, acumular evidências positivas na resolução de problemas reais, alcançar uma compreensão suficiente para implementar o confronto entre crenças novas e antigas, substituindo as crenças centrais negativas.",
+    "parent_ids": [
+      "660",
+      "666",
+      "783",
+      "792"
+    ],
+    "sect": "cbt"
+  }
+}
