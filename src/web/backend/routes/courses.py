@@ -34,7 +34,7 @@ def create_courses_router(get_db_dep, get_current_user_dep, call_llm):
         db=Depends(get_db_dep),
         user=Depends(get_current_user_dep),
     ):
-        course = course_service.create_course(db, user.id, payload)
+        course = course_service.create_course(db, user.id, payload, commit=not payload.auto_start_first_visit)
         created_visit = None
         if payload.auto_start_first_visit:
             created_visit = await visit_service.create_visit(

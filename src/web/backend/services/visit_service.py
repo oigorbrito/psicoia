@@ -8,6 +8,8 @@ from fastapi import HTTPException
 from sqlalchemy.exc import IntegrityError
 from sqlmodel import Session, select
 
+from sample.utils import extract_public_response
+
 from ..domain import pick_school, stage_from_key, summary_stage_to_stage_key
 from ..models import (
     TherapyCourseRecord,
@@ -530,7 +532,7 @@ def build_visit_state(db: Session, visit: TherapyVisitRecord) -> VisitState:
             VisitMessageOut(
                 id=message.id,
                 role=message.role,
-                text=message.text,
+                text=extract_public_response(message.text)[0] if message.role == "assistant" else message.text,
                 created_at=message.created_at,
             )
             for message in get_visit_messages(db, visit.visit_id)
@@ -632,7 +634,6 @@ async def create_visit(
     system_opening_message = opening_messages[0]
     system_opening_message.visit_id = visit.visit_id
     db.add(system_opening_message)
-    fallback_assistant_text = opening_messages[1].text if len(opening_messages) > 1 else ""
 
     visit.message_count = 1
     course.latest_visit_no = next_visit_no
@@ -645,7 +646,7 @@ async def create_visit(
     save_visit_psych_context_snapshot(db, visit.visit_id, snapshot)
     db.flush()
 
-    assistant_text = fallback_assistant_text
+    assistant_text = ""
     if call_llm is not None:
         seed_user_text = build_opening_seed_user_text(next_visit_no, opening_note)
         opening_history: List[Dict[str, str]] = [
@@ -673,8 +674,9 @@ async def create_visit(
             generated_text, _ = _parse_assistant_payload(assistant_payload)
             if generated_text:
                 assistant_text = generated_text
-        except Exception:
-            assistant_text = fallback_assistant_text
+        except Exception as exc:
+            db.rollback()
+            raise HTTPException(status_code=502, detail="Could not generate the session opening. Please try again later.") from exc
 
     assistant_text = str(assistant_text or "").strip()
     if not assistant_text:

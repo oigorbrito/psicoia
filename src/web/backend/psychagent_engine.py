@@ -1,18 +1,21 @@
 from __future__ import annotations
 
+import asyncio
 import logging
 import os
+from dataclasses import replace
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from sample.backends.base import BackendSettings, ModelBackend
 from sample.backends.openai_api import OpenAIAPIBackend
+from sample.backends.ollama_local import OllamaLocalBackend
 from sample.core.schemas import BaselineConfig, RuntimeConfig
 from sample.io.config_loader import load_baseline_config, load_runtime_config
 from sample.models import MODALITY_MODELS
 from sample.prompt_manager import PsychAgentPromptManager
 from sample.skill_manager import SkillManager
-from sample.utils import extract_tag_content, format_transcript, safe_json_loads, strip_end_token
+from sample.utils import extract_public_response, extract_tag_content, format_transcript, safe_json_loads, strip_end_token
 
 from .domain import (
     school_to_psychagent_sect,
@@ -60,6 +63,8 @@ class PsychAgentWebBackend:
             runtime_config=self._runtime_config,
             logger=self._logger.getChild("skill"),
         )
+        self._skill_managers = {self._runtime_config.output_language: self._skill_manager}
+        self._skill_manager_lock = asyncio.Lock()
         self._started = False
 
     @property
@@ -109,14 +114,15 @@ class PsychAgentWebBackend:
                 "objective": session_focus,
             }
 
-            candidate_skills = await self._build_candidate_skills(sect, session_goals, stage_idx)
+            skill_manager = await self._skill_manager_for_language(response_language)
+            candidate_skills = await self._build_candidate_skills(sect, session_goals, stage_idx, skill_manager)
             transcript = self._build_transcript(visit_state.messages)
             user_query = self._last_user_query(transcript)
             diag_hist = self._build_diag_history(transcript[:-1])
 
             suggested_skills: List[Dict[str, Any]] = []
             if user_query:
-                suggested_skills, _ = await self._skill_manager.retrive(
+                suggested_skills, _ = await skill_manager.retrive(
                     sect=sect,
                     query=user_query,
                     session_stage=stage_idx,
@@ -124,6 +130,10 @@ class PsychAgentWebBackend:
                     diag_hist=diag_hist,
                     candidate_skills=candidate_skills,
                 )
+
+            if user_query and not suggested_skills:
+                raise RuntimeError("skill retrieval returned no results")
+            self._logger.info("Skill retrieval complete sect=%s stage=%s candidates=%d selected=%d", sect, stage_idx, len(candidate_skills), len(suggested_skills))
 
             system_prompt = prompt_manager.render(
                 "counselor_system",
@@ -143,19 +153,9 @@ class PsychAgentWebBackend:
             if text:
                 return {"text": text, "end": should_end}
             raise RuntimeError("empty response from PsychAgent prompt chain")
-        except Exception as exc:
-            self._logger.warning("PsychAgent prompt chain failed, falling back to baseline prompt: %s", exc)
-            localized_fallback = [dict(message) for message in fallback_messages]
-            if localized_fallback and localized_fallback[0].get("role") == "system":
-                localized_fallback[0]["content"] = (
-                    localized_fallback[0].get("content", "")
-                    + f" Respond in {response_language}."
-                )
-            raw = await self._chat_once(localized_fallback, output_language=response_language)
-            text, should_end = self._normalize_output_with_end(raw)
-            if not text:
-                raise RuntimeError("empty response from fallback prompt")
-            return {"text": text, "end": should_end}
+        except Exception:
+            self._logger.exception("PsychAgent prompt chain failed; refusing context-free generation")
+            raise
 
     async def _chat_once(
         self,
@@ -331,13 +331,27 @@ class PsychAgentWebBackend:
             return
         raise TypeError(f"unsupported schema model validator: {schema_model}")
 
+    async def _skill_manager_for_language(self, output_language: str) -> SkillManager:
+        manager = self._skill_managers.get(output_language)
+        if manager is not None:
+            return manager
+        async with self._skill_manager_lock:
+            manager = self._skill_managers.get(output_language)
+            if manager is None:
+                runtime = replace(self._runtime_config, output_language=output_language)
+                manager = SkillManager(self._backend, runtime, self._logger.getChild("skill"))
+                await manager.load_library()
+                self._skill_managers[output_language] = manager
+        return manager
+
     async def _build_candidate_skills(
         self,
         sect: str,
         session_goals: Dict[str, Any],
         stage_idx: int,
+        skill_manager: SkillManager,
     ) -> List[Dict[str, Any]]:
-        meta_skills, _, _, _ = await self._skill_manager.corse_filter(
+        meta_skills, _, _, _ = await skill_manager.corse_filter(
             sect=sect,
             session_goals=session_goals,
             stage=stage_idx,
@@ -345,6 +359,8 @@ class PsychAgentWebBackend:
         candidate_skills: List[Dict[str, Any]] = []
         for item in meta_skills:
             candidate_skills.extend(item.get("micro_skills", []))
+        if not candidate_skills:
+            raise RuntimeError(f"no candidate skills available for {sect} stage {stage_idx}")
         return candidate_skills
 
     def _get_prompt_manager(self, sect: str) -> PsychAgentPromptManager:
@@ -374,6 +390,8 @@ class PsychAgentWebBackend:
             base_url=baseline.base_url,
             api_key=api_key or None,
         )
+        if not baseline.api_key_env:
+            return OllamaLocalBackend(settings=settings)
         return OpenAIAPIBackend(settings=settings, logger=self._logger.getChild("counselor"))
 
     def _resolve_path(self, raw_path: str | Path) -> Path:
@@ -561,9 +579,7 @@ class PsychAgentWebBackend:
         return text
 
     def _normalize_output_with_end(self, raw_text: str) -> tuple[str, bool]:
-        text = extract_tag_content(raw_text, tag="response") or raw_text or ""
-        text, has_end = strip_end_token(text, self._baseline_config.end_token)
-        return text.strip(), has_end
+        return extract_public_response(raw_text, self._baseline_config.end_token)
 
     @staticmethod
     def _split_lines(raw_text: str) -> List[str]:

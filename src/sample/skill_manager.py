@@ -145,6 +145,10 @@ class SkillManager:
                 sect_stages[stage_key] = LoadedSkillStage(meta=meta, micro=micro, leaf=leaf)
             self.skill_lib[sect] = sect_stages
 
+        if self._runtime.psychagent_embedding_lazy:
+            self._logger.info("Skill library loaded; embeddings will be calculated on demand in memory")
+            return
+
         self._logger.info("Skill library loaded, starting embedding check and backfill...")
 
         # Iterate over all therapy approaches and stages.
@@ -225,8 +229,9 @@ class SkillManager:
                 parsed = self._extract_json_object(response)
                 raw_ids = parsed.get("skill_id", []) if isinstance(parsed, dict) else []
                 ids = [(sect, str(sid)) for sid in raw_ids]
-        except Exception as exc:  # pragma: no cover - defensive fallback
-            self._logger.warning("coarse_filter parse failed, fallback to default top skills: %s", exc)
+        except Exception:
+            self._logger.exception("coarse skill selection failed")
+            raise
 
         if not ids:
             fallback_ids = list(leaf_skills.keys())[:n]
@@ -273,16 +278,18 @@ class SkillManager:
         if not candidate_skills:
             return [], {}
 
-        rewritten_query, res_rewrite = await self.rewrite(
-            sect=sect,
-            query=query,
-            stage=stage_idx,
-            session_goals=session_goals,
-            diag_hist=diag_hist,
-            model_kwgs=model_kwgs,
-        )
-        query_text = extract_tag_content(rewritten_query, "response") or rewritten_query
+        if self._skill_locale_suffix() is None:
+            rewritten_query, res_rewrite = await self.rewrite(
+                sect=sect, query=query, stage=stage_idx, session_goals=session_goals,
+                diag_hist=diag_hist, model_kwgs=model_kwgs,
+            )
+            query_text = extract_tag_content(rewritten_query, "response") or rewritten_query
+        else:
+            query_text = query
+            res_rewrite = {"messages": [], "rewrite_skipped": "localized_query_language_preserved"}
         query_embedding = (await self._embed_by_api([query_text]))[0]
+        if not query_embedding or any(not math.isfinite(value) for value in query_embedding):
+            raise RuntimeError("query embedding is empty or contains non-finite values")
 
         await self._ensure_embeddings_for_candidates(candidate_skills)
 
@@ -290,7 +297,11 @@ class SkillManager:
         for idx, skill in enumerate(candidate_skills):
             vec = self._vector_to_list(skill.get("embedding_to_retrive"))
             if not vec:
-                continue
+                raise RuntimeError(f"candidate embedding is empty: skill_id={skill.get('skill_id')}")
+            if len(vec) != len(query_embedding):
+                raise RuntimeError(f"embedding dimension mismatch: query={len(query_embedding)} candidate={len(vec)}")
+            if any(not math.isfinite(value) for value in vec):
+                raise RuntimeError(f"candidate embedding contains non-finite values: skill_id={skill.get('skill_id')}")
             score = self._cosine_similarity(query_embedding, vec)
             if threshold is not None and score < threshold:
                 continue
@@ -454,7 +465,8 @@ class SkillManager:
         if AsyncOpenAI is None:
             raise RuntimeError("openai package is required for embedding retrieval")
 
-        client = self._build_embedding_client()
+        local_unauthenticated = not str(self._runtime.psychagent_embedding_api_key_env).strip()
+        client = None if local_unauthenticated else self._build_embedding_client()
         embeddings: List[List[float]] = []
         batch_size = max(1, int(self._runtime.psychagent_embedding_batch_size))
         max_attempts = max(1, int(self._runtime.psychagent_embedding_max_retries))
@@ -464,11 +476,26 @@ class SkillManager:
             batch = texts[start : start + batch_size]
             for attempt in range(1, max_attempts + 1):
                 try:
-                    resp = await client.embeddings.create(
-                        input=batch,
-                        model=self._runtime.psychagent_embedding_model,
-                    )
-                    embeddings.extend([list(item.embedding) for item in resp.data])
+                    if local_unauthenticated:
+                        from .backends.ollama_local import is_loopback_url
+                        url = self._runtime.psychagent_embedding_base_url
+                        if not is_loopback_url(url):
+                            raise RuntimeError("unauthenticated embeddings require HTTP loopback")
+                        async with httpx.AsyncClient(trust_env=False, timeout=120) as local_client:
+                            response = await local_client.post(url.rstrip("/") + "/embeddings", json={"input": batch, "model": self._runtime.psychagent_embedding_model})
+                            response.raise_for_status()
+                            batch_embeddings = [list(item["embedding"]) for item in response.json()["data"]]
+                    else:
+                        resp = await client.embeddings.create(input=batch, model=self._runtime.psychagent_embedding_model)
+                        batch_embeddings = [list(item.embedding) for item in resp.data]
+                    if len(batch_embeddings) != len(batch):
+                        raise RuntimeError(f"embedding response count mismatch: requested={len(batch)} returned={len(batch_embeddings)}")
+                    dimensions = {len(vector) for vector in batch_embeddings}
+                    if len(dimensions) != 1 or 0 in dimensions:
+                        raise RuntimeError(f"embedding response has inconsistent/empty dimensions: {sorted(dimensions)}")
+                    if any(not math.isfinite(float(value)) for vector in batch_embeddings for value in vector):
+                        raise RuntimeError("embedding response contains non-finite values")
+                    embeddings.extend(batch_embeddings)
                     break
                 except Exception as exc:
                     if attempt >= max_attempts:
@@ -502,7 +529,10 @@ class SkillManager:
     def _require_embedding_api_key(self) -> str:
         env_name = str(self._runtime.psychagent_embedding_api_key_env).strip()
         if not env_name:
-            raise RuntimeError("psychagent_embedding_api_key_env must be non-empty")
+            from .backends.ollama_local import is_loopback_url
+            if not is_loopback_url(self._runtime.psychagent_embedding_base_url):
+                raise RuntimeError("unauthenticated embeddings require HTTP loopback")
+            return ""
 
         api_key = os.environ.get(env_name, "").strip()
         if not api_key:

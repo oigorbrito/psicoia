@@ -22,3 +22,7 @@ local.properties
 !.env.template
 *.log
 nul
+
+**/.cxx/
+*.hprof
+

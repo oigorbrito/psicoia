@@ -141,6 +141,7 @@ class RuntimeConfig:
     psychagent_embedding_max_retries: int = 16
     psychagent_embedding_retry_sleep_sec: float = 0.5
     psychagent_embedding_verify_ssl: bool = True
+    psychagent_embedding_lazy: bool = False
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "RuntimeConfig":
@@ -203,6 +204,7 @@ class RuntimeConfig:
             psychagent_embedding_max_retries=int(raw.get("psychagent_embedding_max_retries", 16)),
             psychagent_embedding_retry_sleep_sec=float(raw.get("psychagent_embedding_retry_sleep_sec", 0.5)),
             psychagent_embedding_verify_ssl=bool(raw.get("psychagent_embedding_verify_ssl", True)),
+            psychagent_embedding_lazy=bool(raw.get("psychagent_embedding_lazy", False)),
         )
         cfg.validate()
         return cfg
@@ -246,8 +248,10 @@ class RuntimeConfig:
             raise ConfigValidationError("psychagent_embedding_retry_sleep_sec must be >= 0")
         embedding_env = str(self.psychagent_embedding_api_key_env).strip()
         if not embedding_env:
-            raise ConfigValidationError("psychagent_embedding_api_key_env must be non-empty")
-        if not os.getenv(embedding_env, "").strip():
+            from ..backends.ollama_local import is_loopback_url
+            if not is_loopback_url(self.psychagent_embedding_base_url):
+                raise ConfigValidationError("unauthenticated embeddings require an HTTP loopback URL")
+        elif not os.getenv(embedding_env, "").strip():
             raise ConfigValidationError(
                 f"missing embedding api key in environment variable: {embedding_env}"
             )

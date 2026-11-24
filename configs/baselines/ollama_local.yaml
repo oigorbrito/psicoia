@@ -1,0 +1,15 @@
+name: ollama_local
+family: specific_llm
+backend: openai_api
+model: phi4-mini:3.8b
+base_url: http://127.0.0.1:11434/v1
+api_key_env: ''
+temperature: 0.5
+max_tokens: 512
+memory_mode: public_recap
+max_sessions: 20
+max_counselor_turns: 45
+end_token: '</end>'
+timeout_sec: 240
+max_retries: 0
+retry_sleep_sec: 0.5

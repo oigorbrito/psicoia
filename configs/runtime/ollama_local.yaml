@@ -1,0 +1,12 @@
+output_language: Português (Brasil)
+client_backend: none
+psychagent_skill_base_dir: assets/skills/sect
+psychagent_skill_select_prompt_dir: prompts/psychagent/skill/select_skill
+psychagent_skill_rewrite_prompt_dir: prompts/psychagent/skill/rewrite
+psychagent_skill_sects: all
+psychagent_embedding_base_url: http://127.0.0.1:11434/v1
+psychagent_embedding_api_key_env: ''
+psychagent_embedding_model: nomic-embed-text
+psychagent_embedding_batch_size: 32
+psychagent_embedding_max_retries: 1
+psychagent_embedding_lazy: true

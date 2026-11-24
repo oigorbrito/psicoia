@@ -127,7 +127,7 @@ def list_courses(
     return [build_course_preview(course) for course in courses]
 
 
-def create_course(db: Session, user_id: str, payload) -> TherapyCourseRecord:
+def create_course(db: Session, user_id: str, payload, *, commit: bool = True) -> TherapyCourseRecord:
     school = pick_school(payload.school_id)
     now = utcnow()
     course = TherapyCourseRecord(
@@ -165,14 +165,17 @@ def create_course(db: Session, user_id: str, payload) -> TherapyCourseRecord:
         )
 
     try:
-        db.commit()
+        if commit:
+            db.commit()
+            db.refresh(course)
+        else:
+            db.flush()
     except IntegrityError:
         db.rollback()
         raise HTTPException(
             status_code=409,
             detail="Could not create course. Please try again later.",
         ) from None
-    db.refresh(course)
     return course
 
 

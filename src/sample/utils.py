@@ -10,6 +10,34 @@ RE_JSON_CODE_BLOCK = re.compile(r"```json\s*(\{.*?\})\s*```", flags=re.S)
 RE_JSON_BRACE = re.compile(r"(\{.*\})", flags=re.S)
 
 
+def extract_public_response(text: str, end_token: str = "") -> tuple[str, bool]:
+    """Return public output only; reject incomplete internal markup."""
+    raw = str(text or "").strip()
+    internal = r"think|assessment|client_state|skill|strategy"
+    if not raw or re.search(rf"</?(?:{internal})(?![\w-])[^>]*$", raw, re.I):
+        return "", False
+    opening = re.search(r"<response\s*>", raw, re.I)
+    has_end = bool(end_token and raw.endswith(end_token))
+    if opening:
+        public = raw[opening.end():]
+        boundary = re.search(rf"</response\s*>|</?end\s*>|</?(?:{internal})(?:\s[^>]*)?>", public, re.I)
+        if boundary:
+            marker = boundary.group(0)
+            has_end = has_end or bool(end_token and marker == end_token)
+            public = public[:boundary.start()]
+    else:
+        thought = re.search(r"<think\s*>.*?</think\s*>", raw, re.I | re.S)
+        if thought:
+            return extract_public_response(raw[thought.end():], end_token)
+        if re.search(rf"</?(?:{internal})(?:\s[^>]*)?>", raw, re.I):
+            return "", False
+        public = raw
+    if end_token and public.endswith(end_token):
+        public = public[:-len(end_token)]
+        has_end = True
+    return public.strip(), has_end
+
+
 def extract_tag_content(text: str, tag: str = "response") -> Optional[str]:
     if not text:
         return None
