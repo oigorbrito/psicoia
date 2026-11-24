@@ -1,0 +1,1648 @@
+{
+  "dataset_id": "psicoia-block13-retrieval-v1",
+  "synthetic_only": true,
+  "candidates": [
+    {
+      "model": "phi4-mini:3.8b",
+      "source_result": "reports\\block13\\retrieval_phi4-mini_3.8b.json",
+      "threshold_selection": {
+        "en": {
+          "threshold": 0.7,
+          "balanced_accuracy": 0.5,
+          "answerable_rate": 1.0,
+          "no_answer_specificity": 0.0,
+          "calibration_n": 4,
+          "calibration_answerable_n": 3,
+          "calibration_no_answer_n": 1,
+          "grid": [
+            {
+              "threshold": 0.1,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.15,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.2,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.25,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.3,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.35,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.4,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.45,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.5,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.55,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.6,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.65,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.7,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            }
+          ]
+        },
+        "pt-BR": {
+          "threshold": 0.7,
+          "balanced_accuracy": 0.5,
+          "answerable_rate": 1.0,
+          "no_answer_specificity": 0.0,
+          "calibration_n": 4,
+          "calibration_answerable_n": 3,
+          "calibration_no_answer_n": 1,
+          "grid": [
+            {
+              "threshold": 0.1,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.15,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.2,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.25,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.3,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.35,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.4,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.45,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.5,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.55,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.6,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.65,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.7,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            }
+          ]
+        }
+      },
+      "held_out_metrics": {
+        "en": {
+          "raw_top5": {
+            "locale": "en",
+            "threshold": null,
+            "test_n": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 0.7,
+            "recall_at_5": 0.8,
+            "recall_at_5_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "mrr": 0.75,
+            "ndcg_at_5": 0.7251150035040387,
+            "useful_context_rate": 0.8,
+            "useful_context_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "en-t01",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t02",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t03",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t04",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t05",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 0.7098097413968655,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t06",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t07",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t08",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t09",
+                "recall_at_1": false,
+                "recall_at_5": true,
+                "mrr": 0.5,
+                "ndcg_at_5": 0.5413402936435214,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 2
+              },
+              {
+                "id": "en-t10",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t11",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t12",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              }
+            ]
+          },
+          "calibrated_threshold": {
+            "locale": "en",
+            "threshold": 0.7,
+            "test_n": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 0.7,
+            "recall_at_5": 0.8,
+            "recall_at_5_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "mrr": 0.75,
+            "ndcg_at_5": 0.7251150035040387,
+            "useful_context_rate": 0.8,
+            "useful_context_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "en-t01",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t02",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t03",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t04",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t05",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 0.7098097413968655,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t06",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t07",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t08",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t09",
+                "recall_at_1": false,
+                "recall_at_5": true,
+                "mrr": 0.5,
+                "ndcg_at_5": 0.5413402936435214,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 2
+              },
+              {
+                "id": "en-t10",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t11",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t12",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              }
+            ]
+          }
+        },
+        "pt-BR": {
+          "raw_top5": {
+            "locale": "pt-BR",
+            "threshold": null,
+            "test_n": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_5_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "mrr": 1.0,
+            "ndcg_at_5": 0.919572296172318,
+            "useful_context_rate": 1.0,
+            "useful_context_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "pt-t01",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t02",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t03",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t04",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t05",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 0.7098097413968655,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t06",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t07",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t08",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t09",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 0.48591322032631384,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t10",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "pt-t11",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "pt-t12",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              }
+            ]
+          },
+          "calibrated_threshold": {
+            "locale": "pt-BR",
+            "threshold": 0.7,
+            "test_n": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_5_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "mrr": 1.0,
+            "ndcg_at_5": 0.919572296172318,
+            "useful_context_rate": 1.0,
+            "useful_context_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "pt-t01",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t02",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t03",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t04",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t05",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 0.7098097413968655,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t06",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t07",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t08",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t09",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 0.48591322032631384,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t10",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "pt-t11",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "pt-t12",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "model": "qwen3.5:4b",
+      "source_result": "reports\\block13\\retrieval_qwen3.5_4b.json",
+      "threshold_selection": {
+        "en": {
+          "threshold": 0.7,
+          "balanced_accuracy": 1.0,
+          "answerable_rate": 1.0,
+          "no_answer_specificity": 1.0,
+          "calibration_n": 4,
+          "calibration_answerable_n": 3,
+          "calibration_no_answer_n": 1,
+          "grid": [
+            {
+              "threshold": 0.1,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.15,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.2,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.25,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.3,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.35,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.4,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.45,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.5,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.55,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.6,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.65,
+              "balanced_accuracy": 1.0,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 1.0
+            },
+            {
+              "threshold": 0.7,
+              "balanced_accuracy": 1.0,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 1.0
+            }
+          ]
+        },
+        "pt-BR": {
+          "threshold": 0.7,
+          "balanced_accuracy": 0.5,
+          "answerable_rate": 1.0,
+          "no_answer_specificity": 0.0,
+          "calibration_n": 4,
+          "calibration_answerable_n": 3,
+          "calibration_no_answer_n": 1,
+          "grid": [
+            {
+              "threshold": 0.1,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.15,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.2,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.25,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.3,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.35,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.4,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.45,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.5,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.55,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.6,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.65,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            },
+            {
+              "threshold": 0.7,
+              "balanced_accuracy": 0.5,
+              "answerable_rate": 1.0,
+              "no_answer_specificity": 0.0
+            }
+          ]
+        }
+      },
+      "held_out_metrics": {
+        "en": {
+          "raw_top5": {
+            "locale": "en",
+            "threshold": null,
+            "test_n": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_5_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "mrr": 1.0,
+            "ndcg_at_5": 0.9709809741396865,
+            "useful_context_rate": 1.0,
+            "useful_context_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "en-t01",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t02",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t03",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t04",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t05",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 0.7098097413968655,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t06",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t07",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t08",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t09",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t10",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t11",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t12",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              }
+            ]
+          },
+          "calibrated_threshold": {
+            "locale": "en",
+            "threshold": 0.7,
+            "test_n": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 0.8,
+            "recall_at_5": 0.8,
+            "recall_at_5_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "mrr": 0.8,
+            "ndcg_at_5": 0.7709809741396866,
+            "useful_context_rate": 0.8,
+            "useful_context_wilson95": [
+              0.4902,
+              0.9433
+            ],
+            "no_answer_false_context_rate": 0.0,
+            "no_answer_false_context_wilson95": [
+              0.0,
+              0.6576
+            ],
+            "per_query": [
+              {
+                "id": "en-t01",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": false,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t02",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t03",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": false,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t04",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t05",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 0.7098097413968655,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t06",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t07",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t08",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t09",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "en-t10",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": false,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t11",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": false,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "en-t12",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              }
+            ]
+          }
+        },
+        "pt-BR": {
+          "raw_top5": {
+            "locale": "pt-BR",
+            "threshold": null,
+            "test_n": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 0.9,
+            "recall_at_5": 1.0,
+            "recall_at_5_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "mrr": 0.95,
+            "ndcg_at_5": 0.9604687447330289,
+            "useful_context_rate": 1.0,
+            "useful_context_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "pt-t01",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t02",
+                "recall_at_1": false,
+                "recall_at_5": true,
+                "mrr": 0.5,
+                "ndcg_at_5": 0.6309297535714575,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 2
+              },
+              {
+                "id": "pt-t03",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t04",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t05",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t06",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t07",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t08",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t09",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 0.9737576937588317,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t10",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "pt-t11",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "pt-t12",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              }
+            ]
+          },
+          "calibrated_threshold": {
+            "locale": "pt-BR",
+            "threshold": 0.7,
+            "test_n": 12,
+            "answerable_n": 10,
+            "no_answer_n": 2,
+            "recall_at_1": 0.9,
+            "recall_at_5": 1.0,
+            "recall_at_5_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "mrr": 0.95,
+            "ndcg_at_5": 0.9604687447330289,
+            "useful_context_rate": 1.0,
+            "useful_context_wilson95": [
+              0.7225,
+              1.0
+            ],
+            "no_answer_false_context_rate": 1.0,
+            "no_answer_false_context_wilson95": [
+              0.3424,
+              1.0
+            ],
+            "per_query": [
+              {
+                "id": "pt-t01",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t02",
+                "recall_at_1": false,
+                "recall_at_5": true,
+                "mrr": 0.5,
+                "ndcg_at_5": 0.6309297535714575,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 2
+              },
+              {
+                "id": "pt-t03",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t04",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t05",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t06",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t07",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t08",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t09",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 0.9737576937588317,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              },
+              {
+                "id": "pt-t10",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "pt-t11",
+                "recall_at_1": false,
+                "recall_at_5": false,
+                "mrr": 0.0,
+                "ndcg_at_5": 0.0,
+                "useful_context": false,
+                "context_inserted": true,
+                "first_relevant_rank": null
+              },
+              {
+                "id": "pt-t12",
+                "recall_at_1": true,
+                "recall_at_5": true,
+                "mrr": 1.0,
+                "ndcg_at_5": 1.0,
+                "useful_context": true,
+                "context_inserted": true,
+                "first_relevant_rank": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "paired_differences": [
+    {
+      "locale": "en",
+      "metric": "recall_at_5",
+      "comparison": "candidate_A_minus_candidate_B",
+      "n_paired_answerable_test_queries": 10,
+      "mean_difference": -0.2,
+      "paired_bootstrap_95": [
+        -0.5,
+        0.0
+      ],
+      "seed": 13013,
+      "resamples": 10000,
+      "descriptive_small_sample": true
+    },
+    {
+      "locale": "en",
+      "metric": "mrr",
+      "comparison": "candidate_A_minus_candidate_B",
+      "n_paired_answerable_test_queries": 10,
+      "mean_difference": -0.25,
+      "paired_bootstrap_95": [
+        -0.5,
+        0.0
+      ],
+      "seed": 13013,
+      "resamples": 10000,
+      "descriptive_small_sample": true
+    },
+    {
+      "locale": "en",
+      "metric": "ndcg_at_5",
+      "comparison": "candidate_A_minus_candidate_B",
+      "n_paired_answerable_test_queries": 10,
+      "mean_difference": -0.24586597063564786,
+      "paired_bootstrap_95": [
+        -0.5,
+        0.0
+      ],
+      "seed": 13013,
+      "resamples": 10000,
+      "descriptive_small_sample": true
+    },
+    {
+      "locale": "pt-BR",
+      "metric": "recall_at_5",
+      "comparison": "candidate_A_minus_candidate_B",
+      "n_paired_answerable_test_queries": 10,
+      "mean_difference": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "seed": 13013,
+      "resamples": 10000,
+      "descriptive_small_sample": true
+    },
+    {
+      "locale": "pt-BR",
+      "metric": "mrr",
+      "comparison": "candidate_A_minus_candidate_B",
+      "n_paired_answerable_test_queries": 10,
+      "mean_difference": 0.05,
+      "paired_bootstrap_95": [
+        0.0,
+        0.15
+      ],
+      "seed": 13013,
+      "resamples": 10000,
+      "descriptive_small_sample": true
+    },
+    {
+      "locale": "pt-BR",
+      "metric": "ndcg_at_5",
+      "comparison": "candidate_A_minus_candidate_B",
+      "n_paired_answerable_test_queries": 10,
+      "mean_difference": -0.04089644856071099,
+      "paired_bootstrap_95": [
+        -0.1753723678900688,
+        0.0817020480682493
+      ],
+      "seed": 13013,
+      "resamples": 10000,
+      "descriptive_small_sample": true
+    }
+  ]
+}

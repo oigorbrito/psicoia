@@ -1,0 +1,3081 @@
+{
+  "status": "PASS",
+  "mode": "real_local_embedding_retrieval_benchmark_only",
+  "chat_model_for_coarse_filter": "qwen3.5:4b",
+  "embedding_model": "qwen3.5:4b",
+  "embedding_server_start_ms": 83879.5,
+  "retrieval_metrics": [
+    {
+      "locale": "pt-BR",
+      "embedding_model": "qwen3.5:4b",
+      "chat_model_for_coarse_filter": "qwen3.5:4b",
+      "documents_indexed": 12,
+      "candidate_count_after_coarse_filter": 12,
+      "embedding_dimensions": [
+        2560
+      ],
+      "indexing_ms": 84446.0,
+      "query_latency_ms_mean": 1895.2,
+      "query_count": 16,
+      "recall_at_1": 0.6875,
+      "recall_at_3": 0.8125,
+      "recall_at_5": 0.8125,
+      "mrr": 0.75,
+      "context_relevant_rate_in_rendered_prompt": 0.8125,
+      "query_traces": [
+        {
+          "query_id": "pt-t01",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d04_bike_chain",
+            "d03_bike_flat",
+            "d08_rain_gear",
+            "d07_train_packing",
+            "d09_ingredient_substitute",
+            "d01_water_pot",
+            "d10_oven_temperature",
+            "d02_prune_basil",
+            "d12_file_search",
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d11_file_backup"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d04_bike_chain",
+            "d03_bike_flat",
+            "d08_rain_gear",
+            "d07_train_packing",
+            "d09_ingredient_substitute"
+          ],
+          "expected_ids": [
+            "d04_bike_chain"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1178.0,
+          "retrieval_total_ms": 1228.0,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t02",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d09_ingredient_substitute",
+            "d08_rain_gear",
+            "d07_train_packing",
+            "d12_file_search",
+            "d11_file_backup",
+            "d10_oven_temperature",
+            "d04_bike_chain",
+            "d01_water_pot",
+            "d03_bike_flat",
+            "d02_prune_basil"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d09_ingredient_substitute",
+            "d08_rain_gear",
+            "d07_train_packing"
+          ],
+          "expected_ids": [
+            "d05_meeting_agenda"
+          ],
+          "reciprocal_rank": 0.5,
+          "recall_at_1": false,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1363.4,
+          "retrieval_total_ms": 1418.2,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t03",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d07_train_packing",
+            "d08_rain_gear",
+            "d09_ingredient_substitute",
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d04_bike_chain",
+            "d03_bike_flat",
+            "d11_file_backup",
+            "d01_water_pot",
+            "d12_file_search",
+            "d10_oven_temperature",
+            "d02_prune_basil"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d07_train_packing",
+            "d08_rain_gear",
+            "d09_ingredient_substitute",
+            "d06_meeting_minutes",
+            "d05_meeting_agenda"
+          ],
+          "expected_ids": [
+            "d07_train_packing"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 2256.3,
+          "retrieval_total_ms": 2312.0,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t04",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d09_ingredient_substitute",
+            "d08_rain_gear",
+            "d06_meeting_minutes",
+            "d12_file_search",
+            "d07_train_packing",
+            "d10_oven_temperature",
+            "d02_prune_basil",
+            "d01_water_pot",
+            "d04_bike_chain",
+            "d11_file_backup",
+            "d05_meeting_agenda",
+            "d03_bike_flat"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d09_ingredient_substitute",
+            "d08_rain_gear",
+            "d06_meeting_minutes",
+            "d12_file_search",
+            "d07_train_packing"
+          ],
+          "expected_ids": [
+            "d09_ingredient_substitute"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 2017.8,
+          "retrieval_total_ms": 2070.8,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t05",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d11_file_backup",
+            "d12_file_search",
+            "d06_meeting_minutes",
+            "d09_ingredient_substitute",
+            "d05_meeting_agenda",
+            "d08_rain_gear",
+            "d07_train_packing",
+            "d10_oven_temperature",
+            "d04_bike_chain",
+            "d01_water_pot",
+            "d02_prune_basil",
+            "d03_bike_flat"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d11_file_backup",
+            "d12_file_search",
+            "d06_meeting_minutes",
+            "d09_ingredient_substitute",
+            "d05_meeting_agenda"
+          ],
+          "expected_ids": [
+            "d11_file_backup",
+            "d12_file_search"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 3159.3,
+          "retrieval_total_ms": 3209.4,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t06",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d02_prune_basil",
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d03_bike_flat",
+            "d07_train_packing",
+            "d12_file_search",
+            "d06_meeting_minutes",
+            "d10_oven_temperature",
+            "d05_meeting_agenda",
+            "d11_file_backup"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d02_prune_basil",
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d04_bike_chain",
+            "d09_ingredient_substitute"
+          ],
+          "expected_ids": [
+            "d02_prune_basil"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 2501.7,
+          "retrieval_total_ms": 2552.6,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t07",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d09_ingredient_substitute",
+            "d12_file_search",
+            "d08_rain_gear",
+            "d11_file_backup",
+            "d07_train_packing",
+            "d01_water_pot",
+            "d04_bike_chain",
+            "d10_oven_temperature",
+            "d02_prune_basil",
+            "d03_bike_flat"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d09_ingredient_substitute",
+            "d12_file_search",
+            "d08_rain_gear"
+          ],
+          "expected_ids": [
+            "d05_meeting_agenda",
+            "d06_meeting_minutes"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1357.9,
+          "retrieval_total_ms": 1409.1,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t08",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d08_rain_gear",
+            "d09_ingredient_substitute",
+            "d02_prune_basil",
+            "d01_water_pot",
+            "d10_oven_temperature",
+            "d11_file_backup",
+            "d12_file_search",
+            "d07_train_packing",
+            "d06_meeting_minutes",
+            "d05_meeting_agenda"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d08_rain_gear",
+            "d09_ingredient_substitute",
+            "d02_prune_basil"
+          ],
+          "expected_ids": [
+            "d03_bike_flat",
+            "d04_bike_chain"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1744.6,
+          "retrieval_total_ms": 1791.1,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t09",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d07_train_packing",
+            "d08_rain_gear",
+            "d06_meeting_minutes",
+            "d11_file_backup",
+            "d09_ingredient_substitute",
+            "d05_meeting_agenda",
+            "d12_file_search",
+            "d04_bike_chain",
+            "d10_oven_temperature",
+            "d01_water_pot",
+            "d03_bike_flat",
+            "d02_prune_basil"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d07_train_packing",
+            "d08_rain_gear",
+            "d06_meeting_minutes",
+            "d11_file_backup",
+            "d09_ingredient_substitute"
+          ],
+          "expected_ids": [
+            "d07_train_packing",
+            "d11_file_backup"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1793.8,
+          "retrieval_total_ms": 1841.9,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t10",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d08_rain_gear",
+            "d09_ingredient_substitute",
+            "d01_water_pot",
+            "d02_prune_basil",
+            "d07_train_packing",
+            "d04_bike_chain",
+            "d10_oven_temperature",
+            "d03_bike_flat",
+            "d12_file_search",
+            "d11_file_backup",
+            "d06_meeting_minutes",
+            "d05_meeting_agenda"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d08_rain_gear",
+            "d09_ingredient_substitute",
+            "d01_water_pot",
+            "d02_prune_basil",
+            "d07_train_packing"
+          ],
+          "expected_ids": [],
+          "reciprocal_rank": 0,
+          "recall_at_1": false,
+          "recall_at_3": false,
+          "recall_at_5": false,
+          "context_relevant_in_rendered_prompt": false,
+          "embedding_query_ms": 1321.8,
+          "retrieval_total_ms": 1371.0,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t11",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d08_rain_gear",
+            "d09_ingredient_substitute",
+            "d04_bike_chain",
+            "d07_train_packing",
+            "d01_water_pot",
+            "d03_bike_flat",
+            "d02_prune_basil",
+            "d10_oven_temperature",
+            "d06_meeting_minutes",
+            "d12_file_search",
+            "d05_meeting_agenda",
+            "d11_file_backup"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d08_rain_gear",
+            "d09_ingredient_substitute",
+            "d04_bike_chain",
+            "d07_train_packing",
+            "d01_water_pot"
+          ],
+          "expected_ids": [],
+          "reciprocal_rank": 0,
+          "recall_at_1": false,
+          "recall_at_3": false,
+          "recall_at_5": false,
+          "context_relevant_in_rendered_prompt": false,
+          "embedding_query_ms": 2318.7,
+          "retrieval_total_ms": 2378.1,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-t12",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d12_file_search",
+            "d11_file_backup",
+            "d06_meeting_minutes",
+            "d09_ingredient_substitute",
+            "d05_meeting_agenda",
+            "d08_rain_gear",
+            "d07_train_packing",
+            "d10_oven_temperature",
+            "d04_bike_chain",
+            "d02_prune_basil",
+            "d01_water_pot",
+            "d03_bike_flat"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d12_file_search",
+            "d11_file_backup",
+            "d06_meeting_minutes",
+            "d09_ingredient_substitute",
+            "d05_meeting_agenda"
+          ],
+          "expected_ids": [
+            "d11_file_backup",
+            "d12_file_search"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 3783.5,
+          "retrieval_total_ms": 3833.8,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-c01",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d01_water_pot",
+            "d02_prune_basil",
+            "d04_bike_chain",
+            "d08_rain_gear",
+            "d09_ingredient_substitute",
+            "d03_bike_flat",
+            "d07_train_packing",
+            "d10_oven_temperature",
+            "d12_file_search",
+            "d06_meeting_minutes",
+            "d11_file_backup",
+            "d05_meeting_agenda"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d01_water_pot",
+            "d02_prune_basil",
+            "d04_bike_chain",
+            "d08_rain_gear",
+            "d09_ingredient_substitute"
+          ],
+          "expected_ids": [
+            "d01_water_pot"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 2031.4,
+          "retrieval_total_ms": 2087.6,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-c02",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d03_bike_flat",
+            "d08_rain_gear",
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d07_train_packing",
+            "d10_oven_temperature",
+            "d11_file_backup",
+            "d01_water_pot",
+            "d06_meeting_minutes",
+            "d02_prune_basil",
+            "d12_file_search",
+            "d05_meeting_agenda"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d03_bike_flat",
+            "d08_rain_gear",
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d07_train_packing"
+          ],
+          "expected_ids": [
+            "d03_bike_flat"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1295.5,
+          "retrieval_total_ms": 1343.1,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-c03",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d02_prune_basil",
+            "d10_oven_temperature",
+            "d07_train_packing",
+            "d03_bike_flat",
+            "d12_file_search",
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d11_file_backup"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d02_prune_basil"
+          ],
+          "expected_ids": [],
+          "reciprocal_rank": 0,
+          "recall_at_1": false,
+          "recall_at_3": false,
+          "recall_at_5": false,
+          "context_relevant_in_rendered_prompt": false,
+          "embedding_query_ms": 953.3,
+          "retrieval_total_ms": 997.8,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "pt-c04",
+          "query_language": "pt-BR",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d11_file_backup",
+            "d12_file_search",
+            "d09_ingredient_substitute",
+            "d07_train_packing",
+            "d08_rain_gear",
+            "d10_oven_temperature",
+            "d04_bike_chain",
+            "d01_water_pot",
+            "d03_bike_flat",
+            "d02_prune_basil"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d11_file_backup",
+            "d12_file_search",
+            "d09_ingredient_substitute"
+          ],
+          "expected_ids": [
+            "d05_meeting_agenda",
+            "d11_file_backup"
+          ],
+          "reciprocal_rank": 0.5,
+          "recall_at_1": false,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1246.7,
+          "retrieval_total_ms": 1295.8,
+          "rewrite_skipped_for_locale": true
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "embedding_model": "qwen3.5:4b",
+      "chat_model_for_coarse_filter": "qwen3.5:4b",
+      "documents_indexed": 12,
+      "candidate_count_after_coarse_filter": 12,
+      "embedding_dimensions": [
+        2560
+      ],
+      "indexing_ms": 94086.8,
+      "query_latency_ms_mean": 1864.9,
+      "query_count": 16,
+      "recall_at_1": 0.75,
+      "recall_at_3": 0.8125,
+      "recall_at_5": 0.8125,
+      "mrr": 0.7812,
+      "context_relevant_rate_in_rendered_prompt": 0.8125,
+      "query_traces": [
+        {
+          "query_id": "en-t01",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d04_bike_chain",
+            "d03_bike_flat",
+            "d08_rain_gear",
+            "d01_water_pot",
+            "d10_oven_temperature",
+            "d07_train_packing",
+            "d02_prune_basil",
+            "d09_ingredient_substitute",
+            "d11_file_backup",
+            "d12_file_search",
+            "d05_meeting_agenda",
+            "d06_meeting_minutes"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d04_bike_chain",
+            "d03_bike_flat",
+            "d08_rain_gear",
+            "d01_water_pot",
+            "d10_oven_temperature"
+          ],
+          "expected_ids": [
+            "d04_bike_chain"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1211.2,
+          "retrieval_total_ms": 1269.7,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t02",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d05_meeting_agenda",
+            "d06_meeting_minutes",
+            "d07_train_packing",
+            "d08_rain_gear",
+            "d12_file_search",
+            "d11_file_backup",
+            "d09_ingredient_substitute",
+            "d10_oven_temperature",
+            "d03_bike_flat",
+            "d01_water_pot",
+            "d04_bike_chain",
+            "d02_prune_basil"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d05_meeting_agenda",
+            "d06_meeting_minutes",
+            "d07_train_packing",
+            "d08_rain_gear",
+            "d12_file_search"
+          ],
+          "expected_ids": [
+            "d05_meeting_agenda"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1768.8,
+          "retrieval_total_ms": 1823.4,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t03",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d07_train_packing",
+            "d08_rain_gear",
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d01_water_pot",
+            "d05_meeting_agenda",
+            "d11_file_backup",
+            "d02_prune_basil",
+            "d10_oven_temperature",
+            "d12_file_search",
+            "d06_meeting_minutes"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d07_train_packing",
+            "d08_rain_gear",
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d09_ingredient_substitute"
+          ],
+          "expected_ids": [
+            "d07_train_packing"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1074.8,
+          "retrieval_total_ms": 1128.8,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t04",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d09_ingredient_substitute",
+            "d10_oven_temperature",
+            "d01_water_pot",
+            "d07_train_packing",
+            "d02_prune_basil",
+            "d08_rain_gear",
+            "d04_bike_chain",
+            "d12_file_search",
+            "d03_bike_flat",
+            "d05_meeting_agenda",
+            "d06_meeting_minutes",
+            "d11_file_backup"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d09_ingredient_substitute",
+            "d10_oven_temperature",
+            "d01_water_pot",
+            "d07_train_packing",
+            "d02_prune_basil"
+          ],
+          "expected_ids": [
+            "d09_ingredient_substitute"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1806.2,
+          "retrieval_total_ms": 1856.9,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t05",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d12_file_search",
+            "d11_file_backup",
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d09_ingredient_substitute",
+            "d10_oven_temperature",
+            "d07_train_packing",
+            "d04_bike_chain",
+            "d03_bike_flat",
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d02_prune_basil"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d12_file_search",
+            "d11_file_backup",
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d09_ingredient_substitute"
+          ],
+          "expected_ids": [
+            "d11_file_backup",
+            "d12_file_search"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 3267.2,
+          "retrieval_total_ms": 3317.4,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t06",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d02_prune_basil",
+            "d01_water_pot",
+            "d09_ingredient_substitute",
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d08_rain_gear",
+            "d07_train_packing",
+            "d10_oven_temperature",
+            "d12_file_search",
+            "d11_file_backup",
+            "d05_meeting_agenda",
+            "d06_meeting_minutes"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d02_prune_basil",
+            "d01_water_pot",
+            "d09_ingredient_substitute",
+            "d03_bike_flat",
+            "d04_bike_chain"
+          ],
+          "expected_ids": [
+            "d02_prune_basil"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1716.6,
+          "retrieval_total_ms": 1767.4,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t07",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d12_file_search",
+            "d07_train_packing",
+            "d11_file_backup",
+            "d09_ingredient_substitute",
+            "d10_oven_temperature",
+            "d08_rain_gear",
+            "d01_water_pot",
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d02_prune_basil"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d12_file_search",
+            "d07_train_packing",
+            "d11_file_backup"
+          ],
+          "expected_ids": [
+            "d05_meeting_agenda",
+            "d06_meeting_minutes"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1996.0,
+          "retrieval_total_ms": 2051.1,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t08",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d07_train_packing",
+            "d10_oven_temperature",
+            "d09_ingredient_substitute",
+            "d12_file_search",
+            "d11_file_backup",
+            "d02_prune_basil",
+            "d05_meeting_agenda",
+            "d06_meeting_minutes"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d07_train_packing"
+          ],
+          "expected_ids": [
+            "d03_bike_flat",
+            "d04_bike_chain"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1772.6,
+          "retrieval_total_ms": 1821.9,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t09",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d07_train_packing",
+            "d11_file_backup",
+            "d08_rain_gear",
+            "d12_file_search",
+            "d06_meeting_minutes",
+            "d03_bike_flat",
+            "d05_meeting_agenda",
+            "d09_ingredient_substitute",
+            "d10_oven_temperature",
+            "d01_water_pot",
+            "d04_bike_chain",
+            "d02_prune_basil"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d07_train_packing",
+            "d11_file_backup",
+            "d08_rain_gear",
+            "d12_file_search",
+            "d06_meeting_minutes"
+          ],
+          "expected_ids": [
+            "d07_train_packing",
+            "d11_file_backup"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1250.7,
+          "retrieval_total_ms": 1298.5,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t10",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d02_prune_basil",
+            "d10_oven_temperature",
+            "d07_train_packing",
+            "d09_ingredient_substitute",
+            "d11_file_backup",
+            "d12_file_search",
+            "d05_meeting_agenda",
+            "d06_meeting_minutes"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d02_prune_basil"
+          ],
+          "expected_ids": [],
+          "reciprocal_rank": 0,
+          "recall_at_1": false,
+          "recall_at_3": false,
+          "recall_at_5": false,
+          "context_relevant_in_rendered_prompt": false,
+          "embedding_query_ms": 2244.7,
+          "retrieval_total_ms": 2294.1,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t11",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d03_bike_flat",
+            "d07_train_packing",
+            "d10_oven_temperature",
+            "d02_prune_basil",
+            "d12_file_search",
+            "d11_file_backup",
+            "d05_meeting_agenda",
+            "d06_meeting_minutes"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d01_water_pot",
+            "d08_rain_gear",
+            "d03_bike_flat"
+          ],
+          "expected_ids": [],
+          "reciprocal_rank": 0,
+          "recall_at_1": false,
+          "recall_at_3": false,
+          "recall_at_5": false,
+          "context_relevant_in_rendered_prompt": false,
+          "embedding_query_ms": 2283.8,
+          "retrieval_total_ms": 2333.0,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-t12",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d12_file_search",
+            "d11_file_backup",
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d09_ingredient_substitute",
+            "d07_train_packing",
+            "d04_bike_chain",
+            "d10_oven_temperature",
+            "d03_bike_flat",
+            "d08_rain_gear",
+            "d01_water_pot",
+            "d02_prune_basil"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d12_file_search",
+            "d11_file_backup",
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d09_ingredient_substitute"
+          ],
+          "expected_ids": [
+            "d11_file_backup",
+            "d12_file_search"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 3454.4,
+          "retrieval_total_ms": 3505.8,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-c01",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d01_water_pot",
+            "d02_prune_basil",
+            "d03_bike_flat",
+            "d08_rain_gear",
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d10_oven_temperature",
+            "d07_train_packing",
+            "d11_file_backup",
+            "d12_file_search",
+            "d05_meeting_agenda",
+            "d06_meeting_minutes"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d01_water_pot",
+            "d02_prune_basil",
+            "d03_bike_flat",
+            "d08_rain_gear",
+            "d04_bike_chain"
+          ],
+          "expected_ids": [
+            "d01_water_pot"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1340.9,
+          "retrieval_total_ms": 1389.6,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-c02",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d07_train_packing",
+            "d08_rain_gear",
+            "d01_water_pot",
+            "d10_oven_temperature",
+            "d11_file_backup",
+            "d12_file_search",
+            "d02_prune_basil",
+            "d05_meeting_agenda",
+            "d06_meeting_minutes"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d03_bike_flat",
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d07_train_packing",
+            "d08_rain_gear"
+          ],
+          "expected_ids": [
+            "d03_bike_flat"
+          ],
+          "reciprocal_rank": 1.0,
+          "recall_at_1": true,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1585.1,
+          "retrieval_total_ms": 1631.4,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-c03",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d08_rain_gear",
+            "d10_oven_temperature",
+            "d01_water_pot",
+            "d03_bike_flat",
+            "d11_file_backup",
+            "d07_train_packing",
+            "d04_bike_chain",
+            "d09_ingredient_substitute",
+            "d12_file_search",
+            "d02_prune_basil",
+            "d05_meeting_agenda",
+            "d06_meeting_minutes"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d08_rain_gear",
+            "d10_oven_temperature",
+            "d01_water_pot",
+            "d03_bike_flat",
+            "d11_file_backup"
+          ],
+          "expected_ids": [],
+          "reciprocal_rank": 0,
+          "recall_at_1": false,
+          "recall_at_3": false,
+          "recall_at_5": false,
+          "context_relevant_in_rendered_prompt": false,
+          "embedding_query_ms": 1677.8,
+          "retrieval_total_ms": 1727.5,
+          "rewrite_skipped_for_locale": true
+        },
+        {
+          "query_id": "en-c04",
+          "query_language": "en",
+          "query_dimension": 2560,
+          "query_norm": 1.0,
+          "candidate_count": 12,
+          "ranked_ids": [
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d12_file_search",
+            "d11_file_backup",
+            "d07_train_packing",
+            "d10_oven_temperature",
+            "d08_rain_gear",
+            "d09_ingredient_substitute",
+            "d01_water_pot",
+            "d04_bike_chain",
+            "d03_bike_flat",
+            "d02_prune_basil"
+          ],
+          "top_k": 5,
+          "selected_ids": [
+            "d06_meeting_minutes",
+            "d05_meeting_agenda",
+            "d12_file_search",
+            "d11_file_backup",
+            "d07_train_packing"
+          ],
+          "expected_ids": [
+            "d05_meeting_agenda",
+            "d11_file_backup"
+          ],
+          "reciprocal_rank": 0.5,
+          "recall_at_1": false,
+          "recall_at_3": true,
+          "recall_at_5": true,
+          "context_relevant_in_rendered_prompt": true,
+          "embedding_query_ms": 1387.2,
+          "retrieval_total_ms": 1438.0,
+          "rewrite_skipped_for_locale": true
+        }
+      ]
+    }
+  ],
+  "pipeline_wall_time_ms": 456439.4,
+  "experiment": {
+    "experiment_id": "psicoia-block13-retrieval-v1",
+    "dataset_id": "psicoia-block13-retrieval-v1",
+    "dataset_sha256": "4adc0e7174c35ebf2d3d76605cb77cbd69c446f7f8676cf586d351a8165a7656",
+    "criteria_sha256": "4ad61092a03235ca7c7782302e8bc1e51a98e97a6fbbc59ed1b1bc36d2ea8ed4",
+    "code_head": "cfbac98a7b47e3c9f088a5edb923613a1473ef16",
+    "embedding_model": "qwen3.5:4b",
+    "chat_model_for_coarse_filter": "qwen3.5:4b",
+    "samples_per_locale": {
+      "en": {
+        "test": 12,
+        "calibration": 4
+      },
+      "pt-BR": {
+        "test": 12,
+        "calibration": 4
+      }
+    },
+    "elapsed_wall_ms": 458238.4,
+    "synthetic_only": true
+  },
+  "query_score_traces": [
+    {
+      "query": "Como limpo e lubrifico uma corrente barulhenta de bicicleta?",
+      "embedding_ms": 1177.95,
+      "ranked": [
+        {
+          "id": "d04_bike_chain",
+          "score": 0.87128624
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.80582783
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.7821164
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.77408668
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.77071183
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.7657088
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.75649778
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.75327006
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.71839849
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.71821055
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.71672993
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.71483946
+        }
+      ]
+    },
+    {
+      "query": "O que deve entrar na pauta de uma reunião?",
+      "embedding_ms": 1363.42,
+      "ranked": [
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.84097804
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.81555418
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.76417471
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.74294011
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.73788497
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.72821065
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.72608274
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.70228844
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.68675542
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.66945848
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.64358109
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.6320637
+        }
+      ]
+    },
+    {
+      "query": "Quais itens levar numa bolsa pequena para uma viagem noturna de trem?",
+      "embedding_ms": 2256.32,
+      "ranked": [
+        {
+          "id": "d07_train_packing",
+          "score": 0.86655184
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.80913776
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.74509182
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.73717772
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.72394759
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.72297357
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.70938569
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.70810649
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.70380924
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.69739116
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.68807364
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.67064339
+        }
+      ]
+    },
+    {
+      "query": "A receita pede um ingrediente que acabou. Como escolho algo para colocar no lugar sem estragar o preparo?",
+      "embedding_ms": 2017.78,
+      "ranked": [
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.84501557
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.76086994
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.72814891
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.72686629
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.72627883
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.7255968
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.72225071
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.71581888
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.71553436
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.70088948
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.69564484
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.6879821
+        }
+      ]
+    },
+    {
+      "query": "Tenho várias versões do mesmo documento de trabalho em pastas diferentes. Quero protegê-las antes de decidir qual é a atual e preciso conferir se as cópias salvas podem ser abertas.",
+      "embedding_ms": 3159.29,
+      "ranked": [
+        {
+          "id": "d11_file_backup",
+          "score": 0.852872
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.8514185
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.80894458
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.76042038
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.75515988
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.73407157
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.72181865
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.69500885
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.68863205
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.68433082
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.67306703
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.64390868
+        }
+      ]
+    },
+    {
+      "query": "Meu manjericão ficou com um caule comprido e sem folhas. Onde corto para ele ficar mais cheio?",
+      "embedding_ms": 2501.68,
+      "ranked": [
+        {
+          "id": "d02_prune_basil",
+          "score": 0.85933211
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.7596146
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.73940227
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.73148393
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.72671736
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.70477093
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.68275341
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.67937839
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.66467317
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.65576797
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.64192797
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.64110651
+        }
+      ]
+    },
+    {
+      "query": "Perdi a reunião. Quero saber quais assuntos estavam previstos e quais decisões foram tomadas.",
+      "embedding_ms": 1357.91,
+      "ranked": [
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.85065632
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.81191788
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.74739091
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.73938296
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.73314862
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.72338067
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.72236502
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.68337799
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.67966323
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.67395868
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.65498521
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.63069843
+        }
+      ]
+    },
+    {
+      "query": "O pneu traseiro está perdendo ar. Como localizo e remendo o furo? A corrente também está suja.",
+      "embedding_ms": 1744.55,
+      "ranked": [
+        {
+          "id": "d03_bike_flat",
+          "score": 0.84101242
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.81595157
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.77605812
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.76903596
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.75931067
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.73807611
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.73051289
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.72833835
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.72754898
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.72694477
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.71972397
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.69600957
+        }
+      ]
+    },
+    {
+      "query": "Quero fazer backup da minha lista de bagagem antes da viagem noturna de trem.",
+      "embedding_ms": 1793.8,
+      "ranked": [
+        {
+          "id": "d07_train_packing",
+          "score": 0.86089349
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.81021092
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.80650943
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.80264066
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.79103914
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.78724985
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.78469339
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.75122245
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.74231887
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.71922789
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.70352921
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.68643531
+        }
+      ]
+    },
+    {
+      "query": "Como preparo o filtro de um aquário novo antes de colocar os peixes?",
+      "embedding_ms": 1321.83,
+      "ranked": [
+        {
+          "id": "d08_rain_gear",
+          "score": 0.76271804
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.75810248
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.75413874
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.74318038
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.72617886
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.7236096
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.7193177
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.71570249
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.70434168
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.69350796
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.69336196
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.67309356
+        }
+      ]
+    },
+    {
+      "query": "Derramei uma bebida em um casaco de lã e preciso saber qual solvente e sequência de remoção de manchas são seguros para esse tecido específico.",
+      "embedding_ms": 2318.65,
+      "ranked": [
+        {
+          "id": "d08_rain_gear",
+          "score": 0.81527537
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.80043027
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.79543402
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.77098097
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.76287664
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.76058136
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.75979347
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.7477578
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.73326721
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.72644827
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.7182914
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.71640669
+        }
+      ]
+    },
+    {
+      "query": "Uma pasta compartilhada do projeto tem exportações antigas, rascunhos e arquivos com nomes quase iguais. Lembro algumas palavras do documento, mas não o nome exato. Quero restringir a busca, comparar versões possíveis e confirmar o conteúdo antes de alterar ou apagar qualquer arquivo.",
+      "embedding_ms": 3783.52,
+      "ranked": [
+        {
+          "id": "d12_file_search",
+          "score": 0.87629996
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.85588457
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.80496152
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.76091369
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.75310822
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.74569607
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.73100035
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.70477835
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.70265437
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.69610778
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.69156402
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.65772885
+        }
+      ]
+    },
+    {
+      "query": "Quando devo regar uma planta em vaso se a parte de cima do substrato está seca?",
+      "embedding_ms": 2031.41,
+      "ranked": [
+        {
+          "id": "d01_water_pot",
+          "score": 0.81843484
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.79979725
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.7620484
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.75415247
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.74987287
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.74065452
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.71475945
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.70829509
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.66929764
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.66499455
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.64908013
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.64544833
+        }
+      ]
+    },
+    {
+      "query": "A câmara da bicicleta furou e tenho um kit de remendo. Como faço o conserto?",
+      "embedding_ms": 1295.47,
+      "ranked": [
+        {
+          "id": "d03_bike_flat",
+          "score": 0.844003
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.79396482
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.79058145
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.7873611
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.77254129
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.74452922
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.73869609
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.73753444
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.73317301
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.72223526
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.71876884
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.70387456
+        }
+      ]
+    },
+    {
+      "query": "Como ajusto a água de um aquário de peixes tropicais?",
+      "embedding_ms": 953.32,
+      "ranked": [
+        {
+          "id": "d01_water_pot",
+          "score": 0.77187724
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.76216476
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.75224299
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.74522064
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.74278681
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.74234682
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.74042667
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.72791893
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.69669727
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.68552419
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.68314551
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.67989823
+        }
+      ]
+    },
+    {
+      "query": "Faça backup do arquivo da pauta antes da reunião de amanhã.",
+      "embedding_ms": 1246.65,
+      "ranked": [
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.86211426
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.84650961
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.824396
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.81837482
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.81406305
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.79889955
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.79307143
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.76665105
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.73948038
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.72015029
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.68175684
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.68109792
+        }
+      ]
+    },
+    {
+      "query": "How do I clean and oil a noisy bicycle chain?",
+      "embedding_ms": 1211.18,
+      "ranked": [
+        {
+          "id": "d04_bike_chain",
+          "score": 0.66884148
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.63300698
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.59410652
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.5562816
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.54650341
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.54493741
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.51942104
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.51402356
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.50818441
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.4778191
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.427516
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.42224099
+        }
+      ]
+    },
+    {
+      "query": "What should go on a meeting agenda?",
+      "embedding_ms": 1768.75,
+      "ranked": [
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.70235558
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.69545288
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.67192998
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.66845883
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.65331205
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.63290244
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.62575407
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.62557491
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.62080461
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.60406902
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.60072736
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.58000292
+        }
+      ]
+    },
+    {
+      "query": "What essentials belong in a small bag for an overnight train?",
+      "embedding_ms": 1074.77,
+      "ranked": [
+        {
+          "id": "d07_train_packing",
+          "score": 0.68196965
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.62104003
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.54009813
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.50977014
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.50601889
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.49019146
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.47643132
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.47344002
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.47303332
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.46246738
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.45593427
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.45196472
+        }
+      ]
+    },
+    {
+      "query": "The recipe calls for something I don't have. How can I choose a replacement without ruining the bake?",
+      "embedding_ms": 1806.18,
+      "ranked": [
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.80562223
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.70392994
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.66770937
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.64325162
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.64142932
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.61650125
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.61149663
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.61064653
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.60914985
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.59280435
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.58538647
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.57170319
+        }
+      ]
+    },
+    {
+      "query": "I have several versions of the same work document spread across folders. I want to protect them before I decide which copy is current, and I need a way to confirm that the saved copies are readable.",
+      "embedding_ms": 3267.15,
+      "ranked": [
+        {
+          "id": "d12_file_search",
+          "score": 0.76573395
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.73642777
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.67836277
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.63521011
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.60219774
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.5988187
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.59486366
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.57418047
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.569304
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.55347731
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.55274674
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.53619586
+        }
+      ]
+    },
+    {
+      "query": "My basil has one tall bare stem. Where should I snip it so it grows fuller?",
+      "embedding_ms": 1716.64,
+      "ranked": [
+        {
+          "id": "d02_prune_basil",
+          "score": 0.83564035
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.74318374
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.61340522
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.60041301
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.59427055
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.56976991
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.56975326
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.56395005
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.54781934
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.51652617
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.51401395
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.50847275
+        }
+      ]
+    },
+    {
+      "query": "I missed the meeting. I need to know the planned topics and what decisions people made.",
+      "embedding_ms": 1995.95,
+      "ranked": [
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.81670376
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.81235025
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.70861433
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.70687358
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.66128453
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.65376899
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.65040324
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.64985267
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.62032665
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.6116545
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.60610513
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.57609663
+        }
+      ]
+    },
+    {
+      "query": "The rear tire keeps losing air. How do I find and patch the hole? The chain is also dirty.",
+      "embedding_ms": 1772.64,
+      "ranked": [
+        {
+          "id": "d03_bike_flat",
+          "score": 0.82297595
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.76642095
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.64630233
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.64571918
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.64082251
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.62999429
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.61960722
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.61818403
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.61236453
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.60518149
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.56589598
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.56443273
+        }
+      ]
+    },
+    {
+      "query": "I want to back up my packing checklist before my overnight train trip.",
+      "embedding_ms": 1250.73,
+      "ranked": [
+        {
+          "id": "d07_train_packing",
+          "score": 0.80714604
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.75041951
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.73691881
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.72226594
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.68472135
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.68279936
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.68131678
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.68042681
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.67629086
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.66426728
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.65793153
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.60943842
+        }
+      ]
+    },
+    {
+      "query": "How should I cycle a new aquarium filter before adding fish?",
+      "embedding_ms": 2244.71,
+      "ranked": [
+        {
+          "id": "d01_water_pot",
+          "score": 0.58527751
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.55467004
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.54661348
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.54035373
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.53312654
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.52074026
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.51086573
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.50981481
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.47450508
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.43723917
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.41544113
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.40490036
+        }
+      ]
+    },
+    {
+      "query": "I spilled a drink on a wool coat and need to know which cleaning solvent and stain-removal sequence is safe for this particular fabric.",
+      "embedding_ms": 2283.76,
+      "ranked": [
+        {
+          "id": "d04_bike_chain",
+          "score": 0.6327321
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.63088245
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.61919995
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.61865454
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.61561636
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.59729614
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.58783124
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.568748
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.54176281
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.53821082
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.51156903
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.50549159
+        }
+      ]
+    },
+    {
+      "query": "A shared project folder contains many old exports, drafts, and files with nearly identical names. I remember a few words from the document but not its exact filename. I want to narrow down the search, compare possible versions, and confirm the contents before changing or deleting anything.",
+      "embedding_ms": 3454.44,
+      "ranked": [
+        {
+          "id": "d12_file_search",
+          "score": 0.77280713
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.70885649
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.65294855
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.61297466
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.57590579
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.56470536
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.55574735
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.55435003
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.53381156
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.52202084
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.51087371
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.50753581
+        }
+      ]
+    },
+    {
+      "query": "When should I water a potted plant if the top of its soil is dry?",
+      "embedding_ms": 1340.91,
+      "ranked": [
+        {
+          "id": "d01_water_pot",
+          "score": 0.72373804
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.6668265
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.56072332
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.55150419
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.54168238
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.52388105
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.52184379
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.49915964
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.4438715
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.443464
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.40900008
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.4069271
+        }
+      ]
+    },
+    {
+      "query": "My bicycle tube has a puncture and I have a patch kit. What are the repair steps?",
+      "embedding_ms": 1585.14,
+      "ranked": [
+        {
+          "id": "d03_bike_flat",
+          "score": 0.77437818
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.66421917
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.58218636
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.57699368
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.56554775
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.56328818
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.55889402
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.5327357
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.5314009
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.53020451
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.49123096
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.48592667
+        }
+      ]
+    },
+    {
+      "query": "How do I set the water chemistry for a tropical fish tank?",
+      "embedding_ms": 1677.8,
+      "ranked": [
+        {
+          "id": "d08_rain_gear",
+          "score": 0.60203166
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.59931859
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.59921088
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.56900678
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.55949825
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.55209035
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.5509971
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.54286532
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.53904144
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.53764164
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.49379353
+        },
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.48714224
+        }
+      ]
+    },
+    {
+      "query": "Please back up my meeting agenda file before tomorrow's meeting.",
+      "embedding_ms": 1387.17,
+      "ranked": [
+        {
+          "id": "d06_meeting_minutes",
+          "score": 0.81500016
+        },
+        {
+          "id": "d05_meeting_agenda",
+          "score": 0.80094725
+        },
+        {
+          "id": "d12_file_search",
+          "score": 0.79297976
+        },
+        {
+          "id": "d11_file_backup",
+          "score": 0.7915965
+        },
+        {
+          "id": "d07_train_packing",
+          "score": 0.73269731
+        },
+        {
+          "id": "d10_oven_temperature",
+          "score": 0.6856434
+        },
+        {
+          "id": "d08_rain_gear",
+          "score": 0.68269615
+        },
+        {
+          "id": "d09_ingredient_substitute",
+          "score": 0.68116377
+        },
+        {
+          "id": "d01_water_pot",
+          "score": 0.64347276
+        },
+        {
+          "id": "d04_bike_chain",
+          "score": 0.63653635
+        },
+        {
+          "id": "d03_bike_flat",
+          "score": 0.63044304
+        },
+        {
+          "id": "d02_prune_basil",
+          "score": 0.58910409
+        }
+      ]
+    }
+  ]
+}
